@@ -14,3 +14,4 @@ build/
 *.swo
 
 # OS
+.DS_Store
