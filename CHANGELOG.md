@@ -19,3 +19,5 @@
 - **Counter 端到端验证**: dev 模式热重载、生产构建 6.22 kB gzipped
 
 ### ✨ 新增功能
+
+#### @upfault/ssr - 服务端渲染
