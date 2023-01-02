@@ -32,3 +32,4 @@
 #### @upfault/diff - AeroDiff 算法
 - O(n) 双端扩散 + Key 索引匹配 + 类型兜底
 - Block 树结构 + PatchFlags 编译时优化
+- 10000 节点 < 200ms 性能基准
