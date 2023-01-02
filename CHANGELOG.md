@@ -17,3 +17,4 @@
 - **10 个核心包完整构建**: shared, scheduler, diff, reactivity, predict-cache, compiler, cli, devtools, ssr, runtime
 - **185 单元测试通过**: Diff 算法、调度器、响应式、预测缓存、SSR 水合全覆盖
 - **Counter 端到端验证**: dev 模式热重载、生产构建 6.22 kB gzipped
+
