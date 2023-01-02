@@ -30,3 +30,4 @@
 - `isHydrated` / `markHydrated` / `getHydrationState` - 水合状态管理
 
 #### @upfault/diff - AeroDiff 算法
+- O(n) 双端扩散 + Key 索引匹配 + 类型兜底
