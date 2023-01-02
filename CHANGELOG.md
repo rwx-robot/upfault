@@ -6,3 +6,4 @@
 > 依据 `version-plan.md`：v0.1 规划仅 7 个包（shared / compiler / reactivity /
 > scheduler / diff / runtime / cli），而本次实际交付 **10 个包**，已包含 v0.2 的核心
 > 新增包 `@upfault/predict-cache`，故按包清单对齐 v0.2。
+> v0.3 的 `optimizer`、`@upfault/ssr` 与 `@upfault/devtools` 虽已交付，但 v0.2 / v0.3 的
