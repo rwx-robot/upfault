@@ -15,3 +15,4 @@
 ### 🎉 核心里程碑
 - **SSR 水合修复**: 修复 `hydration.ts` TS1005 编译错误，支持流式/部分/懒加载水合
 - **10 个核心包完整构建**: shared, scheduler, diff, reactivity, predict-cache, compiler, cli, devtools, ssr, runtime
+- **185 单元测试通过**: Diff 算法、调度器、响应式、预测缓存、SSR 水合全覆盖
