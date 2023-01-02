@@ -35,3 +35,4 @@
 - 10000 节点 < 200ms 性能基准
 
 #### @upfault/reactivity - 细粒度响应式
+- `ref` / `computed` / `watch` / `effect` 完整 API
