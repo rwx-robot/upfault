@@ -21,3 +21,4 @@
 ### ✨ 新增功能
 
 #### @upfault/ssr - 服务端渲染
+- `renderToString` / `renderToNodeStream` / `renderToWebStream` - 核心渲染
