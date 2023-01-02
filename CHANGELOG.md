@@ -24,3 +24,4 @@
 - `renderToString` / `renderToNodeStream` / `renderToWebStream` - 核心渲染
 - `renderToPipeableStream` / `renderToReadableStream` - 流式渲染
 - `hydrate` / `hydrateRoot` - 完整水合
+- `hydrateNodeStream` / `hydrateWebStream` - 流式水合
