@@ -39,3 +39,4 @@
 - Proxy 依赖追踪 + Dep 图管理
 - `batch` 批量更新优化
 
+#### @upfault/scheduler - 优先级调度器
