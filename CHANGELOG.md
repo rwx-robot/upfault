@@ -29,3 +29,4 @@
 - `lazyHydrate` - IntersectionObserver 懒加载水合
 - `isHydrated` / `markHydrated` / `getHydrationState` - 水合状态管理
 
+#### @upfault/diff - AeroDiff 算法
