@@ -25,3 +25,4 @@
 - `renderToPipeableStream` / `renderToReadableStream` - 流式渲染
 - `hydrate` / `hydrateRoot` - 完整水合
 - `hydrateNodeStream` / `hydrateWebStream` - 流式水合
+- `partialHydrate` - 选择器级部分水合
