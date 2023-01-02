@@ -23,3 +23,4 @@
 #### @upfault/ssr - 服务端渲染
 - `renderToString` / `renderToNodeStream` / `renderToWebStream` - 核心渲染
 - `renderToPipeableStream` / `renderToReadableStream` - 流式渲染
+- `hydrate` / `hydrateRoot` - 完整水合
