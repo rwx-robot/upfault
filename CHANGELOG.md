@@ -48,3 +48,4 @@
 - 智能跳过 + 误报纠正机制
 
 #### @upfault/runtime - 运行时核心
+- `h()` / `Fragment` / `Text` / `Comment` VNode 创建
