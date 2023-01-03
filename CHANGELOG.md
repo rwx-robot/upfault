@@ -44,3 +44,4 @@
 - `flushSync` 同步刷新支持
 
 #### @upfault/predict-cache - 预测缓存层
+- UpdateFingerprint 指纹 + 自适应阈值
