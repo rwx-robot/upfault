@@ -49,3 +49,4 @@
 
 #### @upfault/runtime - 运行时核心
 - `h()` / `Fragment` / `Text` / `Comment` VNode 创建
+- 生命周期钩子完整支持
