@@ -56,3 +56,4 @@
 - 模板解析 + 代码生成 + Block 树构建
 - PatchFlags 静态分析
 
+#### @upfault/shared - 共享基础
