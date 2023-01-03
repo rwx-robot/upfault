@@ -53,3 +53,4 @@
 - DOM Renderer + SSR Renderer 双模式
 
 #### @upfault/compiler - 编译器
+- 模板解析 + 代码生成 + Block 树构建
