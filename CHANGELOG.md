@@ -64,3 +64,4 @@
 - hydration.ts `lazyHydrate` IntersectionObserver 回调语法错误
 - VNodeType const enum → const object 兼容性修复
 - 循环依赖消除：renderer 独立构建 + 外部化依赖
+- esbuild external 配置修正避免重复打包
