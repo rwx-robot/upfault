@@ -61,3 +61,4 @@
 - VNodeType / PatchFlags / DiffOpType 核心枚举
 
 ### 🔧 修复
+- hydration.ts `lazyHydrate` IntersectionObserver 回调语法错误
