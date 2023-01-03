@@ -57,3 +57,4 @@
 - PatchFlags 静态分析
 
 #### @upfault/shared - 共享基础
+- 类型系统、工具函数、常量统一导出
