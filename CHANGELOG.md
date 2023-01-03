@@ -58,3 +58,4 @@
 
 #### @upfault/shared - 共享基础
 - 类型系统、工具函数、常量统一导出
+- VNodeType / PatchFlags / DiffOpType 核心枚举
