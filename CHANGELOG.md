@@ -67,3 +67,4 @@
 - esbuild external 配置修正避免重复打包
 
 ### 📦 包体积 (gzipped)
+- runtime: ~3.2 kB
