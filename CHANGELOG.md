@@ -45,3 +45,4 @@
 
 #### @upfault/predict-cache - 预测缓存层
 - UpdateFingerprint 指纹 + 自适应阈值
+- 智能跳过 + 误报纠正机制
