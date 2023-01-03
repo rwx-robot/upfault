@@ -77,3 +77,4 @@
 - diff: 20 测试 (核心算法、Key匹配、复杂场景、性能)
 - shared: 100 测试 (工具函数、Flags、调度器类型、Diff 类型、响应式类型)
 - scheduler: 21 测试 (工作循环、队列、优先级、定时器)
+- reactivity: 22 测试 (ref、computed、watch、effect、readonly)
