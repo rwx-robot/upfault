@@ -69,3 +69,4 @@
 ### 📦 包体积 (gzipped)
 - runtime: ~3.2 kB
 - reactivity: ~2.8 kB  
+- diff: ~2.1 kB
