@@ -42,3 +42,5 @@
 #### @upfault/scheduler - 优先级调度器
 - 5 级优先级 + 时间分片 + 定时器队列
 - `flushSync` 同步刷新支持
+
+#### @upfault/predict-cache - 预测缓存层
