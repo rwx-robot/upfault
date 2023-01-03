@@ -79,3 +79,4 @@
 - scheduler: 21 测试 (工作循环、队列、优先级、定时器)
 - reactivity: 22 测试 (ref、computed、watch、effect、readonly)
 - predict-cache: 10 测试 (指纹、衰减、自适应阈值)
+- ssr hydration: 7 测试 (状态追踪、部分水合、懒加载水合)
