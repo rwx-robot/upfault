@@ -8,3 +8,4 @@
     "test": "pnpm -r --filter=./packages/** run test",
     "typecheck": "pnpm -r --filter=./packages/** run typecheck",
     "lint": "pnpm -r --filter=./packages/** run lint",
+    "clean": "pnpm -r --filter=./packages/** run clean",
