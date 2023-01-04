@@ -3,3 +3,4 @@
   "version": "0.2.0",
   "private": true,
   "description": "UpFault Framework - 高性能全栈响应式框架",
+  "scripts": {
