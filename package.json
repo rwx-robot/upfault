@@ -10,3 +10,4 @@
     "lint": "pnpm -r --filter=./packages/** run lint",
     "clean": "pnpm -r --filter=./packages/** run clean",
     "prepare": "pnpm install"
+  },
