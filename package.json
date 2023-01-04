@@ -11,3 +11,4 @@
     "clean": "pnpm -r --filter=./packages/** run clean",
     "prepare": "pnpm install"
   },
+  "devDependencies": {
