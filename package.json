@@ -12,3 +12,4 @@
     "prepare": "pnpm install"
   },
   "devDependencies": {
+    "typescript": "^5.4.0",
