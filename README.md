@@ -9,3 +9,4 @@
 ## ✨ 特性
 
 - **⚡ AeroDiff O(n) 算法** - 双端扩散 + Key 索引 + 类型兜底，10000 节点 < 200ms
+- **🔄 细粒度响应式** - Proxy + Dep 图，`ref`/`computed`/`watch`/`effect` 完整 API
