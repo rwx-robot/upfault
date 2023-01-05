@@ -4,3 +4,4 @@
 
 [![npm version](https://img.shields.io/npm/v/@upfault/runtime.svg)](https://www.npmjs.com/package/@upfault/runtime)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue.svg)](https://www.typescriptlang.org/)
