@@ -10,3 +10,4 @@
 
 - **⚡ AeroDiff O(n) 算法** - 双端扩散 + Key 索引 + 类型兜底，10000 节点 < 200ms
 - **🔄 细粒度响应式** - Proxy + Dep 图，`ref`/`computed`/`watch`/`effect` 完整 API
+- **🎯 优先级调度器** - 5 级优先级 + 时间分片 + 定时器队列
