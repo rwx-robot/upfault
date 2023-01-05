@@ -7,3 +7,5 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue.svg)](https://www.typescriptlang.org/)
 
 ## ✨ 特性
+
+- **⚡ AeroDiff O(n) 算法** - 双端扩散 + Key 索引 + 类型兜底，10000 节点 < 200ms
