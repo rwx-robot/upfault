@@ -20,3 +20,4 @@
 | 包 | 描述 | 体积 (gzipped) |
 |-----|------|----------------|
 | `@upfault/runtime` | 核心运行时：VNode、组件、Renderer | ~3.2 kB |
+| `@upfault/reactivity` | 细粒度响应式系统 | ~2.8 kB |
