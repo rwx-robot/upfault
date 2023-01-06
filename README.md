@@ -37,3 +37,4 @@
 npm i @upfault/runtime @upfault/reactivity @upfault/shared
 
 # 或完整安装
+npm i @upfault/runtime @upfault/reactivity @upfault/diff @upfault/scheduler @upfault/ssr @upfault/shared
