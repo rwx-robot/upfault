@@ -58,3 +58,5 @@ function Counter() {
 const renderer = createRenderer(defaultRendererOptions);
 renderer.render(h(Counter), document.getElementById('app')!);
 ```
+
+## 🌊 SSR 使用
