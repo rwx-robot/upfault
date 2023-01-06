@@ -23,3 +23,4 @@
 | `@upfault/reactivity` | 细粒度响应式系统 | ~2.8 kB |
 | `@upfault/diff` | AeroDiff O(n) Diff 算法 | ~2.1 kB |
 | `@upfault/scheduler` | 优先级任务调度器 | ~1.9 kB |
+| `@upfault/predict-cache` | 更新预测缓存 | ~1.5 kB |
