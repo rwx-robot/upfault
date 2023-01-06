@@ -48,3 +48,4 @@ import { createRenderer, defaultRendererOptions } from '@upfault/runtime';
 function Counter() {
   const count = ref(0);
   onMounted(() => console.log('Mounted!'));
+  
