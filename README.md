@@ -34,3 +34,4 @@
 
 ```bash
 # 安装核心运行时
+npm i @upfault/runtime @upfault/reactivity @upfault/shared
