@@ -46,3 +46,4 @@ import { h, ref, onMounted } from '@upfault/runtime';
 import { createRenderer, defaultRendererOptions } from '@upfault/runtime';
 
 function Counter() {
+  const count = ref(0);
