@@ -64,3 +64,4 @@ renderer.render(h(Counter), document.getElementById('app')!);
 ```ts
 import { renderToString, hydrate } from '@upfault/ssr';
 import { h } from '@upfault/runtime';
+
