@@ -26,3 +26,4 @@
 | `@upfault/predict-cache` | 更新预测缓存 | ~1.5 kB |
 | `@upfault/ssr` | 服务端渲染 + 客户端水合 | ~8.4 kB |
 | `@upfault/compiler` | 模板编译器 | ~12 kB |
+| `@upfault/cli` | 脚手架工具 | - |
