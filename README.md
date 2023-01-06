@@ -28,3 +28,4 @@
 | `@upfault/compiler` | 模板编译器 | ~12 kB |
 | `@upfault/cli` | 脚手架工具 | - |
 | `@upfault/devtools` | 开发调试工具 | ~2.5 kB |
+| `@upfault/shared` | 共享类型与工具 | - |
