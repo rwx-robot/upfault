@@ -62,3 +62,4 @@ renderer.render(h(Counter), document.getElementById('app')!);
 ## 🌊 SSR 使用
 
 ```ts
+import { renderToString, hydrate } from '@upfault/ssr';
