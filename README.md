@@ -27,3 +27,4 @@
 | `@upfault/ssr` | 服务端渲染 + 客户端水合 | ~8.4 kB |
 | `@upfault/compiler` | 模板编译器 | ~12 kB |
 | `@upfault/cli` | 脚手架工具 | - |
+| `@upfault/devtools` | 开发调试工具 | ~2.5 kB |
