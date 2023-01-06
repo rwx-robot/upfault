@@ -44,3 +44,5 @@ npm i @upfault/runtime @upfault/reactivity @upfault/diff @upfault/scheduler @upf
 // Counter 示例
 import { h, ref, onMounted } from '@upfault/runtime';
 import { createRenderer, defaultRendererOptions } from '@upfault/runtime';
+
+function Counter() {
