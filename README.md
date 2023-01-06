@@ -24,3 +24,4 @@
 | `@upfault/diff` | AeroDiff O(n) Diff 算法 | ~2.1 kB |
 | `@upfault/scheduler` | 优先级任务调度器 | ~1.9 kB |
 | `@upfault/predict-cache` | 更新预测缓存 | ~1.5 kB |
+| `@upfault/ssr` | 服务端渲染 + 客户端水合 | ~8.4 kB |
