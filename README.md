@@ -54,3 +54,5 @@ function Counter() {
     h('button', { onClick: () => count.value++ }, 'Increment'),
   ]);
 }
+
+const renderer = createRenderer(defaultRendererOptions);
