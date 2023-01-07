@@ -85,3 +85,4 @@ lazyHydrate('[data-lazy]', (el) => h(LazyComponent));
 pnpm test
 
 # 单包测试
+pnpm --filter @upfault/diff test
