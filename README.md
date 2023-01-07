@@ -96,3 +96,5 @@ pnpm --filter @upfault/ssr test
 - [迁移指南](./docs/migration.md) - 版本升级指南
 
 ## 🤝 贡献
+
+欢迎 PR 和 Issue！
