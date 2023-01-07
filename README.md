@@ -93,3 +93,4 @@ pnpm --filter @upfault/ssr test
 
 - [CHANGELOG](./CHANGELOG.md) - 版本历史
 - [API 参考](./docs/api.md) - 完整 API 文档
+- [迁移指南](./docs/migration.md) - 版本升级指南
