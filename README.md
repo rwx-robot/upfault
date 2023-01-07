@@ -78,3 +78,4 @@ partialHydrate('[data-island]', () => h(InteractiveIsland));
 lazyHydrate('[data-lazy]', (el) => h(LazyComponent));
 ```
 
+## 🧪 测试
