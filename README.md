@@ -72,3 +72,4 @@ const html = renderToString(h(App));
 hydrate(appVNode, document.getElementById('app')!);
 
 // 部分水合
+partialHydrate('[data-island]', () => h(InteractiveIsland));
