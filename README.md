@@ -70,3 +70,5 @@ const html = renderToString(h(App));
 
 // 客户端水合
 hydrate(appVNode, document.getElementById('app')!);
+
+// 部分水合
