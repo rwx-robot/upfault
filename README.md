@@ -100,3 +100,5 @@ pnpm --filter @upfault/ssr test
 欢迎 PR 和 Issue！
 
 ## 📄 许可证
+
+MIT License © 2024 UpFault Team
