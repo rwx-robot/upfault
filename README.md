@@ -90,3 +90,5 @@ pnpm --filter @upfault/ssr test
 ```
 
 ## 📚 文档
+
+- [CHANGELOG](./CHANGELOG.md) - 版本历史
