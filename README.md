@@ -73,3 +73,5 @@ hydrate(appVNode, document.getElementById('app')!);
 
 // 部分水合
 partialHydrate('[data-island]', () => h(InteractiveIsland));
+
+// 懒加载水合
