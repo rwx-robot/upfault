@@ -83,3 +83,4 @@ lazyHydrate('[data-lazy]', (el) => h(LazyComponent));
 ```bash
 # 运行所有测试
 pnpm test
+
