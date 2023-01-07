@@ -84,3 +84,4 @@ lazyHydrate('[data-lazy]', (el) => h(LazyComponent));
 # 运行所有测试
 pnpm test
 
+# 单包测试
