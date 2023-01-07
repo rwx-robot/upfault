@@ -69,3 +69,4 @@ import { h } from '@upfault/runtime';
 const html = renderToString(h(App));
 
 // 客户端水合
+hydrate(appVNode, document.getElementById('app')!);
