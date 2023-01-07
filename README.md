@@ -66,3 +66,4 @@ import { renderToString, hydrate } from '@upfault/ssr';
 import { h } from '@upfault/runtime';
 
 // 服务端渲染
+const html = renderToString(h(App));
