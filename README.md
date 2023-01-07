@@ -86,3 +86,4 @@ pnpm test
 
 # 单包测试
 pnpm --filter @upfault/diff test
+pnpm --filter @upfault/ssr test
