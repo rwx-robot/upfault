@@ -10,3 +10,4 @@ console.log('🔍 UpFault v0.2.0 发布验证\n');
 const checks = [];
 
 // 1. 包版本检查
+const pkgs = ['shared', 'scheduler', 'diff', 'reactivity', 'predict-cache', 'compiler', 'cli', 'devtools', 'ssr', 'runtime'];
