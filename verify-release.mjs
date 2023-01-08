@@ -30,3 +30,4 @@ for (const pkg of pkgs) {
     console.log(`✅ ${pkg}/dist/index.mjs: ${(size/1024).toFixed(1)} kB`);
     checks.push(true);
   } else {
+    console.log(`❌ ${pkg}: 缺少构建产物`);
