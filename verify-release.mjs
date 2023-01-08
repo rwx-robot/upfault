@@ -23,3 +23,4 @@ for (const pkg of pkgs) {
 }
 
 // 2. 构建产物检查
+for (const pkg of pkgs) {
