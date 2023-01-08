@@ -40,3 +40,4 @@ const ssrDist = fs.readFileSync('packages/ssr/dist/index.mjs', 'utf-8');
 const requiredExports = ['hydrate', 'hydrateRoot', 'hydrateNodeStream', 'hydrateWebStream', 'partialHydrate', 'lazyHydrate', 'isHydrated', 'markHydrated', 'getHydrationState'];
 for (const exp of requiredExports) {
   if (ssrDist.includes(exp)) {
+    console.log(`✅ SSR 导出: ${exp}`);
