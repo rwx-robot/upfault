@@ -17,3 +17,4 @@ for (const pkg of pkgs) {
     console.log(`✅ ${pkg}: v${pkgJson.version}`);
     checks.push(true);
   } else {
+    console.log(`❌ ${pkg}: 版本不匹配 (${pkgJson.version})`);
