@@ -28,3 +28,4 @@ for (const pkg of pkgs) {
   if (fs.existsSync(distPath)) {
     const size = fs.statSync(distPath).size;
     console.log(`✅ ${pkg}/dist/index.mjs: ${(size/1024).toFixed(1)} kB`);
+    checks.push(true);
