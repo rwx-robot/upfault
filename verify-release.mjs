@@ -16,3 +16,4 @@ for (const pkg of pkgs) {
   if (pkgJson.version === '0.2.0') {
     console.log(`✅ ${pkg}: v${pkgJson.version}`);
     checks.push(true);
+  } else {
