@@ -45,3 +45,4 @@ for (const exp of requiredExports) {
   } else {
     console.log(`❌ SSR 缺少导出: ${exp}`);
     checks.push(false);
+  }
