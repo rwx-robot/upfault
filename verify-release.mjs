@@ -37,3 +37,4 @@ for (const pkg of pkgs) {
 
 // 3. SSR hydration 导出检查
 const ssrDist = fs.readFileSync('packages/ssr/dist/index.mjs', 'utf-8');
+const requiredExports = ['hydrate', 'hydrateRoot', 'hydrateNodeStream', 'hydrateWebStream', 'partialHydrate', 'lazyHydrate', 'isHydrated', 'markHydrated', 'getHydrationState'];
