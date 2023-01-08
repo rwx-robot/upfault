@@ -21,3 +21,5 @@ for (const pkg of pkgs) {
     checks.push(false);
   }
 }
+
+// 2. 构建产物检查
