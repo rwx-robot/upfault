@@ -33,3 +33,4 @@ for (const pkg of pkgs) {
     console.log(`❌ ${pkg}: 缺少构建产物`);
     checks.push(false);
   }
+}
