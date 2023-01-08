@@ -15,3 +15,4 @@ for (const pkg of pkgs) {
   const pkgJson = JSON.parse(fs.readFileSync(`packages/${pkg}/package.json`, 'utf-8'));
   if (pkgJson.version === '0.2.0') {
     console.log(`✅ ${pkg}: v${pkgJson.version}`);
+    checks.push(true);
