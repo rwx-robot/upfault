@@ -11,3 +11,4 @@ const checks = [];
 
 // 1. 包版本检查
 const pkgs = ['shared', 'scheduler', 'diff', 'reactivity', 'predict-cache', 'compiler', 'cli', 'devtools', 'ssr', 'runtime'];
+for (const pkg of pkgs) {
