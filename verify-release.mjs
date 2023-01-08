@@ -26,3 +26,4 @@ for (const pkg of pkgs) {
 for (const pkg of pkgs) {
   const distPath = `packages/${pkg}/dist/index.mjs`;
   if (fs.existsSync(distPath)) {
+    const size = fs.statSync(distPath).size;
