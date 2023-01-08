@@ -35,3 +35,4 @@ for (const pkg of pkgs) {
   }
 }
 
+// 3. SSR hydration 导出检查
