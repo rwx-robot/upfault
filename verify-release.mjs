@@ -8,3 +8,5 @@ const ESBUILD = '/Users/Wang/Code/webfault-lib/faultless-all/faultless/node_modu
 console.log('🔍 UpFault v0.2.0 发布验证\n');
 
 const checks = [];
+
+// 1. 包版本检查
