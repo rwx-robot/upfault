@@ -19,3 +19,4 @@ for (const pkg of pkgs) {
   } else {
     console.log(`❌ ${pkg}: 版本不匹配 (${pkgJson.version})`);
     checks.push(false);
+  }
