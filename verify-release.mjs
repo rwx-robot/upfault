@@ -42,3 +42,4 @@ for (const exp of requiredExports) {
   if (ssrDist.includes(exp)) {
     console.log(`✅ SSR 导出: ${exp}`);
     checks.push(true);
+  } else {
