@@ -50,3 +50,4 @@ for (const exp of requiredExports) {
 
 // 4. CHANGELOG 存在
 if (fs.existsSync('CHANGELOG.md')) {
+  console.log('✅ CHANGELOG.md 存在');
