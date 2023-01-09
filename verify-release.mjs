@@ -73,3 +73,4 @@ try {
 console.log(`\n📊 总计: ${checks.filter(c => c).length}/${checks.length} 检查通过`);
 
 if (checks.every(c => c)) {
+  console.log('\n🎉 v0.2.0 发布就绪！');
