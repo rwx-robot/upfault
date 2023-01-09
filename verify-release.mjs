@@ -58,3 +58,4 @@ if (fs.existsSync('CHANGELOG.md')) {
 }
 
 // 5. Counter 示例构建 (使用 esbuild)
+try {
