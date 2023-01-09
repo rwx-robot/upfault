@@ -64,3 +64,4 @@ try {
     stdio: 'pipe' 
   });
   console.log('✅ Counter 示例构建通过');
+  checks.push(true);
