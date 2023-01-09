@@ -72,3 +72,4 @@ try {
 
 console.log(`\n📊 总计: ${checks.filter(c => c).length}/${checks.length} 检查通过`);
 
+if (checks.every(c => c)) {
