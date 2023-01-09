@@ -76,3 +76,4 @@ if (checks.every(c => c)) {
   console.log('\n🎉 v0.2.0 发布就绪！');
   process.exit(0);
 } else {
+  console.log('\n⚠️  存在问题，请检查');
