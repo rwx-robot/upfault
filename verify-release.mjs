@@ -60,3 +60,4 @@ if (fs.existsSync('CHANGELOG.md')) {
 // 5. Counter 示例构建 (使用 esbuild)
 try {
   execSync(`${ESBUILD} src/main.ts --bundle --format=esm --outfile=dist/index.mjs --external:@upfault/* --platform=browser`, { 
+    cwd: 'examples/counter', 
