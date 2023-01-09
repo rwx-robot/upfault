@@ -68,3 +68,4 @@ try {
 } catch (e) {
   console.log('❌ Counter 示例构建失败');
   checks.push(false);
+}
