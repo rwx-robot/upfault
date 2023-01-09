@@ -78,3 +78,4 @@ if (checks.every(c => c)) {
 } else {
   console.log('\n⚠️  存在问题，请检查');
   process.exit(1);
+}
