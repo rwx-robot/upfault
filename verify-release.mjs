@@ -62,3 +62,4 @@ try {
   execSync(`${ESBUILD} src/main.ts --bundle --format=esm --outfile=dist/index.mjs --external:@upfault/* --platform=browser`, { 
     cwd: 'examples/counter', 
     stdio: 'pipe' 
+  });
