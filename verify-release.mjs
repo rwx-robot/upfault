@@ -69,3 +69,5 @@ try {
   console.log('❌ Counter 示例构建失败');
   checks.push(false);
 }
+
+console.log(`\n📊 总计: ${checks.filter(c => c).length}/${checks.length} 检查通过`);
