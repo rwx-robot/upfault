@@ -53,3 +53,4 @@ if (fs.existsSync('CHANGELOG.md')) {
   console.log('✅ CHANGELOG.md 存在');
   checks.push(true);
 } else {
+  console.log('❌ 缺少 CHANGELOG.md');
