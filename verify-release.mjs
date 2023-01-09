@@ -48,3 +48,4 @@ for (const exp of requiredExports) {
   }
 }
 
+// 4. CHANGELOG 存在
