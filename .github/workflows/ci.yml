@@ -34,3 +34,4 @@ jobs:
       - name: Typecheck all packages
         run: pnpm -r --filter=./upfault/packages/** run typecheck
       
+      - name: Lint all packages
