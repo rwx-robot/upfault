@@ -11,3 +11,4 @@ env:
   PNPM_VERSION: '9'
 
 jobs:
+  lint-and-typecheck:
