@@ -8,3 +8,4 @@ on:
 
 env:
   NODE_VERSION: '20'
+  PNPM_VERSION: '9'
