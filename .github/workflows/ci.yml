@@ -31,3 +31,4 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       
+      - name: Typecheck all packages
