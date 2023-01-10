@@ -12,3 +12,4 @@ env:
 
 jobs:
   lint-and-typecheck:
+    name: Lint & Typecheck
