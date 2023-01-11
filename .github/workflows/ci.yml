@@ -86,3 +86,4 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
       
+      - name: Install dependencies
