@@ -62,3 +62,4 @@ jobs:
           pnpm -r --filter=./upfault/packages/** run test || true
           # Check specific packages that should pass
           pnpm --filter @upfault/diff test
+          pnpm --filter @upfault/shared test
