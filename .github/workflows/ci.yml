@@ -67,3 +67,4 @@ jobs:
           pnpm --filter @upfault/reactivity test
           pnpm --filter @upfault/predict-cache test
           pnpm --filter @upfault/ssr test
+
