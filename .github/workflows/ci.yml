@@ -95,3 +95,4 @@ jobs:
       - name: Verify Counter example builds
         run: |
           cd upfault/examples/counter
+          npm ci
