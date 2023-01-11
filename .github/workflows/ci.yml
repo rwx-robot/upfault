@@ -64,3 +64,4 @@ jobs:
           pnpm --filter @upfault/diff test
           pnpm --filter @upfault/shared test
           pnpm --filter @upfault/scheduler test
+          pnpm --filter @upfault/reactivity test
