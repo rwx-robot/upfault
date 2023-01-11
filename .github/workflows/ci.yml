@@ -80,3 +80,4 @@ jobs:
         with:
           version: ${{ env.PNPM_VERSION }}
       
+      - name: Setup Node.js
