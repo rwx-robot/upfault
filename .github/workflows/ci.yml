@@ -69,3 +69,4 @@ jobs:
           pnpm --filter @upfault/ssr test
 
   build:
+    name: Build All Packages
