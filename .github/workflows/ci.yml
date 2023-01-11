@@ -63,3 +63,4 @@ jobs:
           # Check specific packages that should pass
           pnpm --filter @upfault/diff test
           pnpm --filter @upfault/shared test
+          pnpm --filter @upfault/scheduler test
