@@ -138,3 +138,4 @@ jobs:
           cd ../ssr && npm publish --access public
           cd ../runtime && npm publish --access public
         env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
