@@ -104,3 +104,4 @@ jobs:
     needs: [lint-and-typecheck, test, build]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
+      - uses: actions/checkout@v4
