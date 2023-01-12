@@ -97,3 +97,5 @@ jobs:
           cd upfault/examples/counter
           npm ci
           npm run build
+
+  release:
