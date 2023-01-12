@@ -136,3 +136,4 @@ jobs:
           cd ../cli && npm publish --access public
           cd ../devtools && npm publish --access public
           cd ../ssr && npm publish --access public
+          cd ../runtime && npm publish --access public
