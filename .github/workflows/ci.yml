@@ -114,3 +114,4 @@ jobs:
           version: ${{ env.PNPM_VERSION }}
       
       - name: Setup Node.js
+        uses: actions/setup-node@v4
