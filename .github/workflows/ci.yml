@@ -132,3 +132,4 @@ jobs:
           cd ../diff && npm publish --access public
           cd ../reactivity && npm publish --access public
           cd ../predict-cache && npm publish --access public
+          cd ../compiler && npm publish --access public
