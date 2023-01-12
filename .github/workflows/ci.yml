@@ -127,3 +127,4 @@ jobs:
       
       - name: Publish to npm
         run: |
+          cd upfault/packages/shared && npm publish --access public
