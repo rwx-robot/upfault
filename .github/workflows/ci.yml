@@ -130,3 +130,4 @@ jobs:
           cd upfault/packages/shared && npm publish --access public
           cd ../scheduler && npm publish --access public
           cd ../diff && npm publish --access public
+          cd ../reactivity && npm publish --access public
