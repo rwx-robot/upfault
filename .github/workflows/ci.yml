@@ -126,3 +126,4 @@ jobs:
         run: pnpm -r --filter=./upfault/packages/** run build
       
       - name: Publish to npm
+        run: |
