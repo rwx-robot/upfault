@@ -99,3 +99,4 @@ jobs:
           npm run build
 
   release:
+    name: Release
