@@ -7,3 +7,4 @@ export function Counter() {
     console.log('Counter mounted!');
   });
   
+  return () => h('div', { class: 'counter' }, [
