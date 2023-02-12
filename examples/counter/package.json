@@ -16,3 +16,4 @@
     "@upfault/scheduler": "workspace:*",
     "@upfault/diff": "workspace:*"
   },
+  "devDependencies": {
