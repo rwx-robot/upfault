@@ -20,3 +20,4 @@ export function Counter() {
     h('button', { 
       onClick: () => count.value = 0,
       class: 'reset-btn'
+    }, 'Reset'),
