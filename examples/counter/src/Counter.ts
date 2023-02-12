@@ -18,3 +18,4 @@ export function Counter() {
       class: 'decrement-btn'
     }, 'Decrement'),
     h('button', { 
+      onClick: () => count.value = 0,
