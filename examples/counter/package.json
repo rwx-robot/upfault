@@ -11,3 +11,4 @@
   "dependencies": {
     "@upfault/runtime": "workspace:*",
     "@upfault/ssr": "workspace:*",
+    "@upfault/shared": "workspace:*",
