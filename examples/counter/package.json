@@ -14,3 +14,4 @@
     "@upfault/shared": "workspace:*",
     "@upfault/reactivity": "workspace:*",
     "@upfault/scheduler": "workspace:*",
+    "@upfault/diff": "workspace:*"
