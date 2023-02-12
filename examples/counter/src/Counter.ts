@@ -9,3 +9,4 @@ export function Counter() {
   
   return () => h('div', { class: 'counter' }, [
     h('p', null, `Count: ${count.value}`),
+    h('button', { 
