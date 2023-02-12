@@ -13,3 +13,4 @@ export function Counter() {
       onClick: () => count.value++,
       class: 'increment-btn'
     }, 'Increment'),
+    h('button', { 
