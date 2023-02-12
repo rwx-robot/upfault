@@ -10,3 +10,4 @@
   },
   "dependencies": {
     "@upfault/runtime": "workspace:*",
+    "@upfault/ssr": "workspace:*",
