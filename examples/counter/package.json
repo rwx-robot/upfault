@@ -12,3 +12,4 @@
     "@upfault/runtime": "workspace:*",
     "@upfault/ssr": "workspace:*",
     "@upfault/shared": "workspace:*",
+    "@upfault/reactivity": "workspace:*",
