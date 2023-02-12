@@ -21,3 +21,4 @@ export function Counter() {
       onClick: () => count.value = 0,
       class: 'reset-btn'
     }, 'Reset'),
+  ]);
