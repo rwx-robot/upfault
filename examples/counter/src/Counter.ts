@@ -22,3 +22,4 @@ export function Counter() {
       class: 'reset-btn'
     }, 'Reset'),
   ]);
+}
