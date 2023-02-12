@@ -4,3 +4,4 @@ export function Counter() {
   const count = ref(0);
   
   onMounted(() => {
+    console.log('Counter mounted!');
