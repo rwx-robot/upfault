@@ -13,3 +13,4 @@
     "@upfault/ssr": "workspace:*",
     "@upfault/shared": "workspace:*",
     "@upfault/reactivity": "workspace:*",
+    "@upfault/scheduler": "workspace:*",
