@@ -11,3 +11,4 @@ export function Counter() {
     h('p', null, `Count: ${count.value}`),
     h('button', { 
       onClick: () => count.value++,
+      class: 'increment-btn'
