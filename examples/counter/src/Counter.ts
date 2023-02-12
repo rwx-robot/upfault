@@ -19,3 +19,4 @@ export function Counter() {
     }, 'Decrement'),
     h('button', { 
       onClick: () => count.value = 0,
+      class: 'reset-btn'
