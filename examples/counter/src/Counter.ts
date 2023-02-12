@@ -15,3 +15,4 @@ export function Counter() {
     }, 'Increment'),
     h('button', { 
       onClick: () => count.value--,
+      class: 'decrement-btn'
