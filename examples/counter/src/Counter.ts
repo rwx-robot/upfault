@@ -5,3 +5,4 @@ export function Counter() {
   
   onMounted(() => {
     console.log('Counter mounted!');
+  });
