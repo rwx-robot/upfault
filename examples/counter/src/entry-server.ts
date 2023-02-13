@@ -12,3 +12,4 @@ export function renderToString(app: VNode): string {
     createComment: (text) => ({ type: 'comment', text }),
     setElementText: (el, text) => { el.children = text; },
     setText: (node, text) => { node.text = text; },
+    insert: (child, parent, anchor) => {
