@@ -19,3 +19,4 @@ export function renderToString(app: VNode): string {
         parent.children.splice(idx, 0, child);
       } else {
         parent.children.push(child);
+      }
