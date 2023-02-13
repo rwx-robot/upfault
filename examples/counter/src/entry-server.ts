@@ -17,3 +17,4 @@ export function renderToString(app: VNode): string {
       if (anchor) {
         const idx = parent.children.indexOf(anchor);
         parent.children.splice(idx, 0, child);
+      } else {
