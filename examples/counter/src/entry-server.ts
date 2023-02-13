@@ -20,3 +20,4 @@ export function renderToString(app: VNode): string {
       } else {
         parent.children.push(child);
       }
+    },
