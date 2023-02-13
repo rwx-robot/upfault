@@ -15,3 +15,4 @@ export function renderToString(app: VNode): string {
     insert: (child, parent, anchor) => {
       if (!parent.children) parent.children = [];
       if (anchor) {
+        const idx = parent.children.indexOf(anchor);
