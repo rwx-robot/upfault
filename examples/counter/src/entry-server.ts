@@ -28,3 +28,4 @@ export function renderToString(app: VNode): string {
         delete el.props[key];
       } else {
         el.props[key] = next;
+      }
