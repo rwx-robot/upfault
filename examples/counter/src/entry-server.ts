@@ -22,3 +22,4 @@ export function renderToString(app: VNode): string {
       }
     },
     remove: (child) => { /* no-op */ },
+    patchProp: (el, key, prev, next) => {
