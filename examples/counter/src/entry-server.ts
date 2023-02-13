@@ -4,3 +4,4 @@ import { Counter } from './Counter';
 
 export function renderToString(app: VNode): string {
   let html = '';
+  
