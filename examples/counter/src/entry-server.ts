@@ -29,3 +29,4 @@ export function renderToString(app: VNode): string {
       } else {
         el.props[key] = next;
       }
+    },
