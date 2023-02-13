@@ -34,3 +34,4 @@ export function renderToString(app: VNode): string {
     nextSibling: () => null,
   });
   
+  renderer.render(app, { children: [], tag: 'html' });
