@@ -18,3 +18,4 @@ export function renderToString(app: VNode): string {
         const idx = parent.children.indexOf(anchor);
         parent.children.splice(idx, 0, child);
       } else {
+        parent.children.push(child);
