@@ -14,3 +14,4 @@ export function renderToString(app: VNode): string {
     setText: (node, text) => { node.text = text; },
     insert: (child, parent, anchor) => {
       if (!parent.children) parent.children = [];
+      if (anchor) {
