@@ -9,3 +9,4 @@ export function renderToString(app: VNode): string {
     ...defaultRendererOptions,
     createElement: (tag, isSVG) => ({ tag, isSVG, props: {}, children: [] }),
     createText: (text) => ({ type: 'text', text }),
+    createComment: (text) => ({ type: 'comment', text }),
