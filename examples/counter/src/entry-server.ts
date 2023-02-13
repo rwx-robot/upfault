@@ -30,3 +30,4 @@ export function renderToString(app: VNode): string {
         el.props[key] = next;
       }
     },
+    parentNode: () => null,
