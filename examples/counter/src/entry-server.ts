@@ -31,3 +31,4 @@ export function renderToString(app: VNode): string {
       }
     },
     parentNode: () => null,
+    nextSibling: () => null,
