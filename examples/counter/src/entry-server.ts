@@ -21,3 +21,4 @@ export function renderToString(app: VNode): string {
         parent.children.push(child);
       }
     },
+    remove: (child) => { /* no-op */ },
