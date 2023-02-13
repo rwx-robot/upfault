@@ -25,3 +25,4 @@ export function renderToString(app: VNode): string {
     patchProp: (el, key, prev, next) => {
       if (!el.props) el.props = {};
       if (next == null || next === false) {
+        delete el.props[key];
