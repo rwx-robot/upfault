@@ -8,3 +8,4 @@ export function renderToString(app: VNode): string {
   const renderer = createRenderer({
     ...defaultRendererOptions,
     createElement: (tag, isSVG) => ({ tag, isSVG, props: {}, children: [] }),
+    createText: (text) => ({ type: 'text', text }),
