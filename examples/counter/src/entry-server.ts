@@ -27,3 +27,4 @@ export function renderToString(app: VNode): string {
       if (next == null || next === false) {
         delete el.props[key];
       } else {
+        el.props[key] = next;
