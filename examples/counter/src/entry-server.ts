@@ -45,3 +45,4 @@ function serializeNode(node: any): string {
   
   let attrs = '';
   if (node.props) {
+    for (const [key, value] of Object.entries(node.props)) {
