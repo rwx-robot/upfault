@@ -50,3 +50,4 @@ function serializeNode(node: any): string {
       if (value === true) {
         attrs += ` ${key}`;
       } else if (value !== false && value != null) {
+        attrs += ` ${key}="${String(value).replace(/"/g, '"')}"`;
