@@ -7,3 +7,4 @@ console.log('has hydrateRoot:', 'hydrateRoot' in ssr);
 console.log('has hydrateNodeStream:', 'hydrateNodeStream' in ssr);
 console.log('has hydrateWebStream:', 'hydrateWebStream' in ssr);
 console.log('has partialHydrate:', 'partialHydrate' in ssr);
+console.log('has lazyHydrate:', 'lazyHydrate' in ssr);
