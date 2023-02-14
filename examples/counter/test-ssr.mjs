@@ -5,3 +5,4 @@ console.log('SSR exports:', Object.keys(ssr));
 console.log('has hydrate:', 'hydrate' in ssr);
 console.log('has hydrateRoot:', 'hydrateRoot' in ssr);
 console.log('has hydrateNodeStream:', 'hydrateNodeStream' in ssr);
+console.log('has hydrateWebStream:', 'hydrateWebStream' in ssr);
