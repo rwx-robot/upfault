@@ -55,3 +55,4 @@ function serializeNode(node: any): string {
     }
   }
   
+  const children = node.children ? node.children.map(serializeNode).join('') : '';
