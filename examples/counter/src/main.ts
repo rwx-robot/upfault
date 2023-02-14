@@ -3,3 +3,5 @@ import { Counter } from './Counter';
 
 const renderer = createRenderer(defaultRendererOptions);
 const container = document.getElementById('app')!;
+
+renderer.render(h(Counter), container);
