@@ -41,3 +41,4 @@ export function renderToString(app: VNode): string {
 function serializeNode(node: any): string {
   if (!node) return '';
   if (node.type === 'text') return node.text;
+  if (node.type === 'comment') return `<!--${node.text}-->`;
