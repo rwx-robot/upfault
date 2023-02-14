@@ -3,3 +3,4 @@ import * as ssr from '../../packages/ssr/dist/index.mjs';
 
 console.log('SSR exports:', Object.keys(ssr));
 console.log('has hydrate:', 'hydrate' in ssr);
+console.log('has hydrateRoot:', 'hydrateRoot' in ssr);
