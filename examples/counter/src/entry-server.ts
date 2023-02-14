@@ -39,3 +39,4 @@ export function renderToString(app: VNode): string {
 }
 
 function serializeNode(node: any): string {
+  if (!node) return '';
