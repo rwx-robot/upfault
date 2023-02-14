@@ -58,3 +58,5 @@ function serializeNode(node: any): string {
   const children = node.children ? node.children.map(serializeNode).join('') : '';
   return `<${node.tag}${attrs}>${children}</${node.tag}>`;
 }
+
+// For testing
