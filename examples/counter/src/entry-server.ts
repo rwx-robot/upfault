@@ -43,3 +43,4 @@ function serializeNode(node: any): string {
   if (node.type === 'text') return node.text;
   if (node.type === 'comment') return `<!--${node.text}-->`;
   
+  let attrs = '';
