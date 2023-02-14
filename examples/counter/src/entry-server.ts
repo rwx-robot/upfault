@@ -53,3 +53,4 @@ function serializeNode(node: any): string {
         attrs += ` ${key}="${String(value).replace(/"/g, '"')}"`;
       }
     }
+  }
