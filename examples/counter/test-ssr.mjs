@@ -1,0 +1,1 @@
+// Test SSR package directly from dist
