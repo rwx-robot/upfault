@@ -36,3 +36,4 @@ export function renderToString(app: VNode): string {
   
   renderer.render(app, { children: [], tag: 'html' });
   return serializeNode({ children: [], tag: 'html' });
+}
