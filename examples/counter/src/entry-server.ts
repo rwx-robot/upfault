@@ -60,3 +60,4 @@ function serializeNode(node: any): string {
 }
 
 // For testing
+const app = Counter() as unknown as VNode;
