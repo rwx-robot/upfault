@@ -48,3 +48,4 @@ function serializeNode(node: any): string {
     for (const [key, value] of Object.entries(node.props)) {
       if (key.startsWith('on')) continue;
       if (value === true) {
+        attrs += ` ${key}`;
