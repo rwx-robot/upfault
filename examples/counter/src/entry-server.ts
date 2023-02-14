@@ -49,3 +49,4 @@ function serializeNode(node: any): string {
       if (key.startsWith('on')) continue;
       if (value === true) {
         attrs += ` ${key}`;
+      } else if (value !== false && value != null) {
