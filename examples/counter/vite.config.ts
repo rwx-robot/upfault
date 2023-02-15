@@ -9,3 +9,4 @@ export default defineConfig({
       '@upfault/ssr': path.resolve(__dirname, '../../packages/ssr/dist'),
       '@upfault/shared': path.resolve(__dirname, '../../packages/shared/dist'),
       '@upfault/reactivity': path.resolve(__dirname, '../../packages/reactivity/dist'),
+      '@upfault/scheduler': path.resolve(__dirname, '../../packages/scheduler/dist'),
