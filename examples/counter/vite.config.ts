@@ -6,3 +6,4 @@ export default defineConfig({
   resolve: {
     alias: {
       '@upfault/runtime': path.resolve(__dirname, '../../packages/runtime/dist'),
+      '@upfault/ssr': path.resolve(__dirname, '../../packages/ssr/dist'),
