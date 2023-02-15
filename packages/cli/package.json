@@ -1,3 +1,4 @@
 {
   "name": "@upfault/cli",
   "version": "0.2.0",
+  "description": "UpFault CLI 脚手架工具",
