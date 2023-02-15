@@ -20,3 +20,4 @@ export default defineConfig({
       input: 'index.html',
     },
   },
+  server: {
