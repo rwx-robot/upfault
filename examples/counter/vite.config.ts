@@ -12,3 +12,4 @@ export default defineConfig({
       '@upfault/scheduler': path.resolve(__dirname, '../../packages/scheduler/dist'),
       '@upfault/diff': path.resolve(__dirname, '../../packages/diff/dist'),
     },
+  },
