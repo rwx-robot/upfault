@@ -5,3 +5,4 @@ export default defineConfig({
   root: '.',
   resolve: {
     alias: {
+      '@upfault/runtime': path.resolve(__dirname, '../../packages/runtime/dist'),
