@@ -13,3 +13,4 @@ export default defineConfig({
       '@upfault/diff': path.resolve(__dirname, '../../packages/diff/dist'),
     },
   },
+  build: {
