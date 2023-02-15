@@ -4,3 +4,4 @@ import path from 'path';
 export default defineConfig({
   root: '.',
   resolve: {
+    alias: {
