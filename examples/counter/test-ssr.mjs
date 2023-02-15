@@ -9,3 +9,4 @@ console.log('has hydrateWebStream:', 'hydrateWebStream' in ssr);
 console.log('has partialHydrate:', 'partialHydrate' in ssr);
 console.log('has lazyHydrate:', 'lazyHydrate' in ssr);
 console.log('has isHydrated:', 'isHydrated' in ssr);
+console.log('has markHydrated:', 'markHydrated' in ssr);
