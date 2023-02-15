@@ -17,3 +17,4 @@ export default defineConfig({
     target: 'esnext',
     outDir: 'dist',
     rollupOptions: {
+      input: 'index.html',
