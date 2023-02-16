@@ -24,3 +24,4 @@
   "dependencies": {
     "@upfault/runtime": "workspace:*",
     "@upfault/shared": "workspace:*",
+    "@upfault/compiler": "workspace:*",
