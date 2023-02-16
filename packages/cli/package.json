@@ -25,3 +25,4 @@
     "@upfault/runtime": "workspace:*",
     "@upfault/shared": "workspace:*",
     "@upfault/compiler": "workspace:*",
+    "chokidar": "^3.6.0",
