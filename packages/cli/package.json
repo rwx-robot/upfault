@@ -29,3 +29,4 @@
     "esbuild": "^0.20.0",
     "picocolors": "^1.0.0",
     "prompts": "^2.4.2"
+  },
