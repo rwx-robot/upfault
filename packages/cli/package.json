@@ -16,3 +16,4 @@
     "build": "tsc -p tsconfig.build.json && pnpm run build:esm",
     "build:esm": "esbuild src/index.ts --bundle --format=esm --outfile=dist/index.mjs --external:@upfault/* --external:open --external:fsevents --platform=node",
     "dev": "tsc -w -p tsconfig.build.json",
+    "test": "vitest run",
