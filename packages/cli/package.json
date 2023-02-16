@@ -26,3 +26,4 @@
     "@upfault/shared": "workspace:*",
     "@upfault/compiler": "workspace:*",
     "chokidar": "^3.6.0",
+    "esbuild": "^0.20.0",
