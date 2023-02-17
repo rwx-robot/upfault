@@ -44,3 +44,5 @@ export async function build(options: BuildOptions = {}): Promise<void> {
     }
 
     console.log(pc.gray(`入口文件: ${entryPoints.join(', ')}`));
+
+    // 构建配置
