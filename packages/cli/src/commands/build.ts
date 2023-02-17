@@ -11,3 +11,4 @@ export interface BuildOptions {
   outDir?: string;
   minify?: boolean;
   sourcemap?: boolean;
+  config?: string;
