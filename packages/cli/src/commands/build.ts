@@ -43,3 +43,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       process.exit(1);
     }
 
+    console.log(pc.gray(`入口文件: ${entryPoints.join(', ')}`));
