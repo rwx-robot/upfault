@@ -12,3 +12,4 @@ export interface BuildOptions {
   minify?: boolean;
   sourcemap?: boolean;
   config?: string;
+}
