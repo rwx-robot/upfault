@@ -10,3 +10,4 @@ import pc from 'picocolors';
 export interface BuildOptions {
   outDir?: string;
   minify?: boolean;
+  sourcemap?: boolean;
