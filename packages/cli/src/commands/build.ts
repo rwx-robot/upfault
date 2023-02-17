@@ -25,3 +25,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   console.log(pc.gray(`输出目录: ${outDir}`));
 
   // 读取配置
+  const config = await loadConfig(options.config);
