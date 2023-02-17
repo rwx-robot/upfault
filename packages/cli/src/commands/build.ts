@@ -29,3 +29,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   
   // 确保输出目录存在
   const outPath = resolve(cwd, outDir);
+  if (!existsSync(outPath)) {
