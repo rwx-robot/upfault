@@ -14,3 +14,4 @@ export interface BuildOptions {
   config?: string;
 }
 
+export async function build(options: BuildOptions = {}): Promise<void> {
