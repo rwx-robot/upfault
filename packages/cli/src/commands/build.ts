@@ -42,3 +42,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       console.log(pc.yellow('请确保项目中有 index.html 或 main.ts 文件'));
       process.exit(1);
     }
+
