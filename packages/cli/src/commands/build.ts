@@ -16,3 +16,4 @@ export interface BuildOptions {
 
 export async function build(options: BuildOptions = {}): Promise<void> {
   const cwd = process.cwd();
+  const outDir = options.outDir || 'dist';
