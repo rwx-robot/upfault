@@ -32,3 +32,5 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   if (!existsSync(outPath)) {
     mkdirSync(outPath, { recursive: true });
   }
+
+  try {
