@@ -28,3 +28,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   const config = await loadConfig(options.config);
   
   // 确保输出目录存在
+  const outPath = resolve(cwd, outDir);
