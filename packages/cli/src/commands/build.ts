@@ -19,3 +19,5 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   const outDir = options.outDir || 'dist';
   const minify = options.minify ?? true;
   const sourcemap = options.sourcemap ?? true;
+
+  console.log(pc.cyan('🔨 开始构建...'));
