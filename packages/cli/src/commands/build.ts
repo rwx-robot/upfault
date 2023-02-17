@@ -8,3 +8,4 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import pc from 'picocolors';
 
 export interface BuildOptions {
+  outDir?: string;
