@@ -23,3 +23,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   console.log(pc.cyan('🔨 开始构建...'));
   console.log(pc.gray(`工作目录: ${cwd}`));
   console.log(pc.gray(`输出目录: ${outDir}`));
+
