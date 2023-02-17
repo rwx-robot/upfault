@@ -24,3 +24,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   console.log(pc.gray(`工作目录: ${cwd}`));
   console.log(pc.gray(`输出目录: ${outDir}`));
 
+  // 读取配置
