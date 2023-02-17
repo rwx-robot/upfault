@@ -27,3 +27,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   // 读取配置
   const config = await loadConfig(options.config);
   
+  // 确保输出目录存在
