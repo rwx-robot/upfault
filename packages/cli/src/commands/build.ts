@@ -37,3 +37,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
     // 入口文件
     const entryPoints = findEntryPoints(cwd, config);
     
+    if (entryPoints.length === 0) {
