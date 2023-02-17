@@ -31,3 +31,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   const outPath = resolve(cwd, outDir);
   if (!existsSync(outPath)) {
     mkdirSync(outPath, { recursive: true });
+  }
