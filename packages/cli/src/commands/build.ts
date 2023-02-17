@@ -21,3 +21,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   const sourcemap = options.sourcemap ?? true;
 
   console.log(pc.cyan('🔨 开始构建...'));
+  console.log(pc.gray(`工作目录: ${cwd}`));
