@@ -79,3 +79,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
             });
             build.onEnd((result) => {
               if (result.errors.length > 0) {
+                console.error(pc.red('❌ 构建失败:'));
