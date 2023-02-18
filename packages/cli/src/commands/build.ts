@@ -65,3 +65,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
         '.json': 'json',
       },
       define: {
+        'process.env.NODE_ENV': '"production"',
