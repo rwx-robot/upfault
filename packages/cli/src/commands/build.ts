@@ -47,3 +47,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
 
     // 构建配置
     const buildOptions: any = {
+      entryPoints,
