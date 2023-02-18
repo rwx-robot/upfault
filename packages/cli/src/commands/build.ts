@@ -64,3 +64,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
         '.css': 'css',
         '.json': 'json',
       },
+      define: {
