@@ -60,3 +60,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       loader: {
         '.ts': 'ts',
         '.tsx': 'tsx',
+        '.vue': 'text',
