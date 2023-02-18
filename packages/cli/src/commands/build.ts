@@ -68,3 +68,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
         'process.env.NODE_ENV': '"production"',
         'process.env.UPF_VERSION': JSON.stringify(config.version || '0.2.0'),
       },
+      external: ['@upfault/runtime', '@upfault/reactivity', '@upfault/shared', '@upfault/diff', '@upfault/scheduler'],
