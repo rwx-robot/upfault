@@ -81,3 +81,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
               if (result.errors.length > 0) {
                 console.error(pc.red('❌ 构建失败:'));
                 result.errors.forEach(e => console.error(pc.red(`  ${e.text}`)));
+              } else {
