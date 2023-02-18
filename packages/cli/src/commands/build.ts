@@ -74,3 +74,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
         {
           name: 'upfault-progress',
           setup(build) {
+            build.onStart(() => {
