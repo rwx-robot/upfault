@@ -73,3 +73,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
         // 自定义插件
         {
           name: 'upfault-progress',
+          setup(build) {
