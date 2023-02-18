@@ -72,3 +72,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       plugins: [
         // 自定义插件
         {
+          name: 'upfault-progress',
