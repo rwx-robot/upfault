@@ -52,3 +52,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       outdir: outPath,
       platform: 'browser',
       format: 'esm',
+      target: 'es2020',
