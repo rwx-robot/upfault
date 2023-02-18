@@ -50,3 +50,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       entryPoints,
       bundle: true,
       outdir: outPath,
+      platform: 'browser',
