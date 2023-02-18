@@ -83,3 +83,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
                 result.errors.forEach(e => console.error(pc.red(`  ${e.text}`)));
               } else {
                 console.log(pc.green('✅ 构建成功!'));
+                printBuildStats(result);
