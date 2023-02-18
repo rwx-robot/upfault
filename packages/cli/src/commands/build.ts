@@ -53,3 +53,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       platform: 'browser',
       format: 'esm',
       target: 'es2020',
+      minify,
