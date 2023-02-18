@@ -51,3 +51,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       bundle: true,
       outdir: outPath,
       platform: 'browser',
+      format: 'esm',
