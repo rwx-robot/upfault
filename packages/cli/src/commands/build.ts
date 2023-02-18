@@ -77,3 +77,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
             build.onStart(() => {
               console.log(pc.blue('⏳ 正在打包...'));
             });
+            build.onEnd((result) => {
