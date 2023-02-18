@@ -70,3 +70,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       },
       external: ['@upfault/runtime', '@upfault/reactivity', '@upfault/shared', '@upfault/diff', '@upfault/scheduler'],
       plugins: [
+        // 自定义插件
