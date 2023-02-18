@@ -56,3 +56,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       minify,
       sourcemap,
       splitting: true,
+      outExtension: { '.js': '.mjs', '.css': '.css' },
