@@ -54,3 +54,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       format: 'esm',
       target: 'es2020',
       minify,
+      sourcemap,
