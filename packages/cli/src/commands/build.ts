@@ -61,3 +61,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
         '.ts': 'ts',
         '.tsx': 'tsx',
         '.vue': 'text',
+        '.css': 'css',
