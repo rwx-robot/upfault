@@ -49,3 +49,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
     const buildOptions: any = {
       entryPoints,
       bundle: true,
+      outdir: outPath,
