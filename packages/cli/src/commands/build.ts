@@ -58,3 +58,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       splitting: true,
       outExtension: { '.js': '.mjs', '.css': '.css' },
       loader: {
+        '.ts': 'ts',
