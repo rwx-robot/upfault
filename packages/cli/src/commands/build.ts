@@ -108,3 +108,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
     process.exit(1);
   }
 }
+
