@@ -120,3 +120,4 @@ export async function loadConfig(configPath?: string): Promise<any> {
 
   if (configPath) {
     const configFile = resolve(cwd, configPath);
+    if (existsSync(configFile)) {
