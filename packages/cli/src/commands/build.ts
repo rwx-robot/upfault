@@ -116,3 +116,4 @@ export async function loadConfig(configPath?: string): Promise<any> {
     publicDir: 'public',
     generateHtml: true,
     version: '0.2.0',
+  };
