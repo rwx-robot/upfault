@@ -90,3 +90,5 @@ export async function build(options: BuildOptions = {}): Promise<void> {
         },
       ],
     };
+
+    await esbuildBuild(buildOptions);
