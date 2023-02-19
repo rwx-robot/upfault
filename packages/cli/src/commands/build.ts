@@ -114,3 +114,4 @@ export async function loadConfig(configPath?: string): Promise<any> {
   const defaultConfig = {
     entryPoints: ['src/main.ts', 'src/main.tsx', 'src/index.ts', 'src/index.tsx'],
     publicDir: 'public',
+    generateHtml: true,
