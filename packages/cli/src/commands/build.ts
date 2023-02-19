@@ -85,3 +85,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
                 console.log(pc.green('✅ 构建成功!'));
                 printBuildStats(result);
               }
+            });
