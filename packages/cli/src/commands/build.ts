@@ -97,3 +97,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
     if (config.publicDir) {
       copyPublicAssets(cwd, config.publicDir, outPath);
     }
+
