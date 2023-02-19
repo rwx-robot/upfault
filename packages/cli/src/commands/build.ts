@@ -96,3 +96,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
     // 复制静态资源
     if (config.publicDir) {
       copyPublicAssets(cwd, config.publicDir, outPath);
+    }
