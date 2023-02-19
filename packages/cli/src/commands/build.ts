@@ -89,3 +89,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
           },
         },
       ],
+    };
