@@ -102,3 +102,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
     if (config.generateHtml !== false) {
       generateIndexHtml(cwd, outPath, config, entryPoints);
     }
+
