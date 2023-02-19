@@ -111,3 +111,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
 
 export async function loadConfig(configPath?: string): Promise<any> {
   const cwd = process.cwd();
+  const defaultConfig = {
