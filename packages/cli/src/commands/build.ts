@@ -100,3 +100,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
 
     // 生成 index.html
     if (config.generateHtml !== false) {
+      generateIndexHtml(cwd, outPath, config, entryPoints);
