@@ -106,3 +106,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
   } catch (error) {
     console.error(pc.red('❌ 构建失败:'), error);
     process.exit(1);
+  }
