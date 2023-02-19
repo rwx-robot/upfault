@@ -118,3 +118,4 @@ export async function loadConfig(configPath?: string): Promise<any> {
     version: '0.2.0',
   };
 
+  if (configPath) {
