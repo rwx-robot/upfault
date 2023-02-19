@@ -98,3 +98,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       copyPublicAssets(cwd, config.publicDir, outPath);
     }
 
+    // 生成 index.html
