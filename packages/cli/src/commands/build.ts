@@ -92,3 +92,5 @@ export async function build(options: BuildOptions = {}): Promise<void> {
     };
 
     await esbuildBuild(buildOptions);
+
+    // 复制静态资源
