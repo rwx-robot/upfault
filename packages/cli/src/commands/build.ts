@@ -103,3 +103,4 @@ export async function build(options: BuildOptions = {}): Promise<void> {
       generateIndexHtml(cwd, outPath, config, entryPoints);
     }
 
+  } catch (error) {
