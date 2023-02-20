@@ -129,3 +129,4 @@ export async function loadConfig(configPath?: string): Promise<any> {
   const configFile = resolve(cwd, 'upfault.config.json');
   if (existsSync(configFile)) {
     return { ...defaultConfig, ...JSON.parse(readFileSync(configFile, 'utf-8')) };
+  }
