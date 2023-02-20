@@ -160,3 +160,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
   // 尝试读取模板
   let template = '';
   const templatePath = resolve(cwd, 'index.html');
+  if (existsSync(templatePath)) {
