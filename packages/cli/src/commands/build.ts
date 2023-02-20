@@ -137,3 +137,4 @@ export async function loadConfig(configPath?: string): Promise<any> {
 export function findEntryPoints(cwd: string, config: any): string[] {
   if (config.entryPoints) {
     return config.entryPoints.filter((p: string) => existsSync(resolve(process.cwd(), p)));
+  }
