@@ -153,3 +153,5 @@ export function copyPublicAssets(cwd: string, publicDir: string, outDir: string)
     console.warn(pc.yellow(`⚠️ 复制静态资源失败: ${e}`));
   }
 }
+
+export function generateIndexHtml(cwd: string, outDir: string, config: any, entryPoints: string[]): void {
