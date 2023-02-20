@@ -139,3 +139,4 @@ export function findEntryPoints(cwd: string, config: any): string[] {
     return config.entryPoints.filter((p: string) => existsSync(resolve(process.cwd(), p)));
   }
   return [];
+}
