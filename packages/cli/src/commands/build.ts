@@ -132,3 +132,4 @@ export async function loadConfig(configPath?: string): Promise<any> {
   }
 
   return defaultConfig;
+}
