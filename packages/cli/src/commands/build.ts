@@ -157,3 +157,4 @@ export function copyPublicAssets(cwd: string, publicDir: string, outDir: string)
 export function generateIndexHtml(cwd: string, outDir: string, config: any, entryPoints: string[]): void {
   const indexPath = resolve(outDir, 'index.html');
   
+  // 尝试读取模板
