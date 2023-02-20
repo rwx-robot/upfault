@@ -124,3 +124,5 @@ export async function loadConfig(configPath?: string): Promise<any> {
       return { ...defaultConfig, ...JSON.parse(readFileSync(configFile, 'utf-8')) };
     }
   }
+
+  // 尝试读取 upfault.config.json
