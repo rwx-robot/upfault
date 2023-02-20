@@ -133,3 +133,5 @@ export async function loadConfig(configPath?: string): Promise<any> {
 
   return defaultConfig;
 }
+
+export function findEntryPoints(cwd: string, config: any): string[] {
