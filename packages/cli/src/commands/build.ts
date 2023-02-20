@@ -151,3 +151,4 @@ export function copyPublicAssets(cwd: string, publicDir: string, outDir: string)
     console.log(pc.gray(`已复制静态资源: ${publicDir}`));
   } catch (e) {
     console.warn(pc.yellow(`⚠️ 复制静态资源失败: ${e}`));
+  }
