@@ -145,3 +145,4 @@ export function copyPublicAssets(cwd: string, publicDir: string, outDir: string)
   const publicPath = resolve(cwd, publicDir);
   if (!existsSync(publicPath)) return;
 
+  const { cpSync } = require('fs');
