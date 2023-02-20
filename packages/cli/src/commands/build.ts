@@ -143,3 +143,4 @@ export function findEntryPoints(cwd: string, config: any): string[] {
 
 export function copyPublicAssets(cwd: string, publicDir: string, outDir: string): void {
   const publicPath = resolve(cwd, publicDir);
+  if (!existsSync(publicPath)) return;
