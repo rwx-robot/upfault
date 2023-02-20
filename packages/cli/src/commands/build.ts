@@ -158,3 +158,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
   const indexPath = resolve(outDir, 'index.html');
   
   // 尝试读取模板
+  let template = '';
