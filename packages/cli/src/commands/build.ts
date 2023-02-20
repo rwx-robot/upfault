@@ -127,3 +127,4 @@ export async function loadConfig(configPath?: string): Promise<any> {
 
   // 尝试读取 upfault.config.json
   const configFile = resolve(cwd, 'upfault.config.json');
+  if (existsSync(configFile)) {
