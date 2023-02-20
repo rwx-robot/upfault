@@ -141,3 +141,4 @@ export function findEntryPoints(cwd: string, config: any): string[] {
   return [];
 }
 
+export function copyPublicAssets(cwd: string, publicDir: string, outDir: string): void {
