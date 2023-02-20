@@ -149,3 +149,4 @@ export function copyPublicAssets(cwd: string, publicDir: string, outDir: string)
   try {
     cpSync(publicPath, resolve(outDir, publicDir), { recursive: true });
     console.log(pc.gray(`已复制静态资源: ${publicDir}`));
+  } catch (e) {
