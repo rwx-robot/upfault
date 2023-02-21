@@ -177,3 +177,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
   <title>${config.title || 'UpFault App'}</title>
 </head>
 <body>
+  <div id="app"></div>
