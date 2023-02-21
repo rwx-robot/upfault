@@ -190,3 +190,4 @@ function printBuildStats(result: any): void {
   console.log(pc.gray('📦 构建统计:'));
   if (result.metafile) {
     const outputs = Object.keys(result.metafile.outputs);
+    let totalSize = 0;
