@@ -196,3 +196,4 @@ function printBuildStats(result: any): void {
       totalSize += bytes;
       console.log(pc.gray(`  ${output}: ${formatBytes(bytes)}`));
     });
+    console.log(pc.gray(`  总计: ${formatBytes(totalSize)}`));
