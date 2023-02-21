@@ -166,3 +166,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
 
   const scripts = entryPoints
     .map(p => p.replace(/\.tsx?$/, '.mjs'))
+    .map(p => `<script type="module" src="/${relative(outDir, resolve(process.cwd(), p))}"></script>`)
