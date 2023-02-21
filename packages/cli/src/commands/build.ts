@@ -163,3 +163,5 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
   if (existsSync(templatePath)) {
     template = readFileSync(templatePath, 'utf-8');
   }
+
+  const scripts = entryPoints
