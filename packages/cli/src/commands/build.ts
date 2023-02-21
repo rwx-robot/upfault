@@ -185,3 +185,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
   writeFileSync(indexPath, html);
   console.log(pc.gray(`已生成: index.html`));
 }
+
