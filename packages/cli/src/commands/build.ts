@@ -192,3 +192,4 @@ function printBuildStats(result: any): void {
     const outputs = Object.keys(result.metafile.outputs);
     let totalSize = 0;
     outputs.forEach(output => {
+      const bytes = result.metafile.outputs[output].bytes;
