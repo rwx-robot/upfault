@@ -188,3 +188,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
 
 function printBuildStats(result: any): void {
   console.log(pc.gray('📦 构建统计:'));
+  if (result.metafile) {
