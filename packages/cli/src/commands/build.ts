@@ -186,3 +186,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
   console.log(pc.gray(`已生成: index.html`));
 }
 
+function printBuildStats(result: any): void {
