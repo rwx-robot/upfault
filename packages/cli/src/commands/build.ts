@@ -198,3 +198,4 @@ function printBuildStats(result: any): void {
     });
     console.log(pc.gray(`  总计: ${formatBytes(totalSize)}`));
   }
+}
