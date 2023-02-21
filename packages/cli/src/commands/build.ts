@@ -172,3 +172,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
   const html = template || `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+  <meta charset="UTF-8">
