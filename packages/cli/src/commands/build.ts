@@ -175,3 +175,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${config.title || 'UpFault App'}</title>
+</head>
