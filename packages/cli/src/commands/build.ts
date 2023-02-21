@@ -182,3 +182,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
 </body>
 </html>`;
 
+  writeFileSync(indexPath, html);
