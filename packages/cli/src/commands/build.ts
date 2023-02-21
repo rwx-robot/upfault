@@ -180,3 +180,4 @@ export function generateIndexHtml(cwd: string, outDir: string, config: any, entr
   <div id="app"></div>
   ${scripts}
 </body>
+</html>`;
