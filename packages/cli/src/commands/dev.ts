@@ -16,3 +16,5 @@ export interface DevOptions {
   host?: string;
   config?: string;
 }
+
+export async function dev(options: DevOptions = {}): Promise<void> {
