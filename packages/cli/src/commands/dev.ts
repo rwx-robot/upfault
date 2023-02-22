@@ -10,3 +10,4 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import pc from 'picocolors';
 import { loadConfig, findEntryPoints, copyPublicAssets, generateIndexHtml } from './build';
 
+export interface DevOptions {
