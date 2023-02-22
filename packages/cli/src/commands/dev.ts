@@ -25,3 +25,5 @@ export async function dev(options: DevOptions = {}): Promise<void> {
 
   console.log(pc.cyan('🚀 启动开发服务器...'));
   console.log(pc.gray(`监听地址: http://${host}:${port}`));
+
+  const config = await loadConfig(options.config);
