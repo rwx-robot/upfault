@@ -14,3 +14,4 @@ export interface DevOptions {
   port?: number;
   open?: boolean;
   host?: string;
+  config?: string;
