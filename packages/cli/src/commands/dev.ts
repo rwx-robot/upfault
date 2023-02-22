@@ -12,3 +12,4 @@ import { loadConfig, findEntryPoints, copyPublicAssets, generateIndexHtml } from
 
 export interface DevOptions {
   port?: number;
+  open?: boolean;
