@@ -19,3 +19,4 @@ export interface DevOptions {
 
 export async function dev(options: DevOptions = {}): Promise<void> {
   const cwd = process.cwd();
+  const port = options.port || 3000;
