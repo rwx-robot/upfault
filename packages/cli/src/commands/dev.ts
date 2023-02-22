@@ -28,3 +28,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
 
   const config = await loadConfig(options.config);
   const entryPoints = findEntryPoints(cwd, config);
+
