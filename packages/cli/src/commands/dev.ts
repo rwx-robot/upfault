@@ -23,3 +23,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   const host = options.host || 'localhost';
   const open = options.open || false;
 
+  console.log(pc.cyan('🚀 启动开发服务器...'));
