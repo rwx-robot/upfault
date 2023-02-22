@@ -3,3 +3,4 @@
  */
 
 import { build as esbuildBuild } from 'esbuild';
+import { serve } from 'esbuild';
