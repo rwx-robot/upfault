@@ -201,3 +201,4 @@ function printBuildStats(result: any): void {
 }
 
 function formatBytes(bytes: number): string {
+  if (bytes < 1024) return `${bytes} B`;
