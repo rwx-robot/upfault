@@ -7,3 +7,4 @@ import { serve } from 'esbuild';
 import chokidar from 'chokidar';
 import { resolve, relative } from 'path';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
+import pc from 'picocolors';
