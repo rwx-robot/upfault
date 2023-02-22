@@ -24,3 +24,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   const open = options.open || false;
 
   console.log(pc.cyan('🚀 启动开发服务器...'));
+  console.log(pc.gray(`监听地址: http://${host}:${port}`));
