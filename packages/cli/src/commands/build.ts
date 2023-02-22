@@ -200,3 +200,4 @@ function printBuildStats(result: any): void {
   }
 }
 
+function formatBytes(bytes: number): string {
