@@ -15,3 +15,4 @@ export interface DevOptions {
   open?: boolean;
   host?: string;
   config?: string;
+}
