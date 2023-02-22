@@ -21,3 +21,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   const cwd = process.cwd();
   const port = options.port || 3000;
   const host = options.host || 'localhost';
+  const open = options.open || false;
