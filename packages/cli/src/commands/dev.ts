@@ -11,3 +11,4 @@ import pc from 'picocolors';
 import { loadConfig, findEntryPoints, copyPublicAssets, generateIndexHtml } from './build';
 
 export interface DevOptions {
+  port?: number;
