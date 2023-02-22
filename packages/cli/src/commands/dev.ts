@@ -30,3 +30,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   const entryPoints = findEntryPoints(cwd, config);
 
   if (entryPoints.length === 0) {
+    console.error(pc.red('❌ 未找到入口文件'));
