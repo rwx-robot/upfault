@@ -61,3 +61,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     }, {
       entryPoints,
       bundle: true,
+      outdir: outDir,
