@@ -40,3 +40,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     mkdirSync(outDir, { recursive: true });
   }
 
+  // 复制静态资源
