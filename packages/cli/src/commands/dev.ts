@@ -51,3 +51,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   try {
     // 启动 esbuild 开发服务器
     const server = await serve({
+      servedir: outDir,
