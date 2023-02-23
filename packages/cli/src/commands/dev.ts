@@ -33,3 +33,5 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     console.error(pc.red('❌ 未找到入口文件'));
     process.exit(1);
   }
+
+  // 确保输出目录存在
