@@ -53,3 +53,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     const server = await serve({
       servedir: outDir,
       port,
+      host,
