@@ -67,3 +67,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       target: 'es2020',
       sourcemap: 'inline',
       splitting: true,
+      outExtension: { '.js': '.mjs', '.css': '.css' },
