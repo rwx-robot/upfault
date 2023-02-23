@@ -58,3 +58,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
         // 开发模式下的请求日志
         console.log(pc.gray(`  ${args.method} ${args.path}`));
       },
+    }, {
