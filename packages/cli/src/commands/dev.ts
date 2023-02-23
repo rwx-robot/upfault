@@ -66,3 +66,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       format: 'esm',
       target: 'es2020',
       sourcemap: 'inline',
+      splitting: true,
