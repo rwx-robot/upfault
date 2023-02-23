@@ -59,3 +59,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
         console.log(pc.gray(`  ${args.method} ${args.path}`));
       },
     }, {
+      entryPoints,
