@@ -65,3 +65,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       platform: 'browser',
       format: 'esm',
       target: 'es2020',
+      sourcemap: 'inline',
