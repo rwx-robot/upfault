@@ -64,3 +64,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       outdir: outDir,
       platform: 'browser',
       format: 'esm',
+      target: 'es2020',
