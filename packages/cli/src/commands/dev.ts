@@ -56,3 +56,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       host,
       onRequest: (args: any) => {
         // 开发模式下的请求日志
+        console.log(pc.gray(`  ${args.method} ${args.path}`));
