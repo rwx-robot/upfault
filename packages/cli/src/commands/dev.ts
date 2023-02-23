@@ -68,3 +68,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       sourcemap: 'inline',
       splitting: true,
       outExtension: { '.js': '.mjs', '.css': '.css' },
+      loader: {
