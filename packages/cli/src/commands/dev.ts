@@ -38,3 +38,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   const outDir = resolve(cwd, '.upfault-dev');
   if (!existsSync(outDir)) {
     mkdirSync(outDir, { recursive: true });
+  }
