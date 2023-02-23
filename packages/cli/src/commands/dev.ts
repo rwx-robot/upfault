@@ -70,3 +70,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       outExtension: { '.js': '.mjs', '.css': '.css' },
       loader: {
         '.ts': 'ts',
+        '.tsx': 'tsx',
