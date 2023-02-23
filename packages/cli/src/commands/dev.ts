@@ -49,3 +49,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   generateIndexHtml(cwd, outDir, config, entryPoints);
 
   try {
+    // 启动 esbuild 开发服务器
