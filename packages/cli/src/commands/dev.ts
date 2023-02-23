@@ -69,3 +69,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       splitting: true,
       outExtension: { '.js': '.mjs', '.css': '.css' },
       loader: {
+        '.ts': 'ts',
