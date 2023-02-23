@@ -37,3 +37,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   // 确保输出目录存在
   const outDir = resolve(cwd, '.upfault-dev');
   if (!existsSync(outDir)) {
+    mkdirSync(outDir, { recursive: true });
