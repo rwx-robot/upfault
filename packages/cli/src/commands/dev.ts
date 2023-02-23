@@ -63,3 +63,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       bundle: true,
       outdir: outDir,
       platform: 'browser',
+      format: 'esm',
