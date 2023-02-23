@@ -41,3 +41,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   }
 
   // 复制静态资源
+  if (config.publicDir) {
