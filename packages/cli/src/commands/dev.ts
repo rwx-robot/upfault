@@ -39,3 +39,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   if (!existsSync(outDir)) {
     mkdirSync(outDir, { recursive: true });
   }
+
