@@ -54,3 +54,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       servedir: outDir,
       port,
       host,
+      onRequest: (args: any) => {
