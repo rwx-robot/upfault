@@ -44,3 +44,5 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   if (config.publicDir) {
     copyPublicAssets(cwd, config.publicDir, outDir);
   }
+
+  // 生成 index.html
