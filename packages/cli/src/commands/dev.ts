@@ -46,3 +46,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
   }
 
   // 生成 index.html
+  generateIndexHtml(cwd, outDir, config, entryPoints);
