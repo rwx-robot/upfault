@@ -110,3 +110,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       resolve(cwd, 'public/**/*'),
     ], {
       ignored: /(^|[/\\])\../,
+      persistent: true,
