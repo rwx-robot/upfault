@@ -87,3 +87,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
             build.onStart(() => {
               console.log(pc.blue('🔄 重新构建...'));
             });
+            build.onEnd((result) => {
