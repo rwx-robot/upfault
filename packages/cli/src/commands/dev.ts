@@ -93,3 +93,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
                 result.errors.forEach(e => console.error(pc.red(`  ${e.text}`)));
               } else {
                 console.log(pc.green('✅ 热更新完成'));
+              }
