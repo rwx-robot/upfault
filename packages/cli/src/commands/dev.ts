@@ -82,3 +82,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       external: ['@upfault/runtime', '@upfault/reactivity', '@upfault/shared', '@upfault/diff', '@upfault/scheduler'],
       plugins: [
         {
+          name: 'upfault-hmr',
