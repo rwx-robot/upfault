@@ -83,3 +83,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       plugins: [
         {
           name: 'upfault-hmr',
+          setup(build) {
