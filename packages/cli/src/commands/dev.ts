@@ -85,3 +85,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
           name: 'upfault-hmr',
           setup(build) {
             build.onStart(() => {
+              console.log(pc.blue('🔄 重新构建...'));
