@@ -90,3 +90,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
             build.onEnd((result) => {
               if (result.errors.length > 0) {
                 console.error(pc.red('❌ 构建错误:'));
+                result.errors.forEach(e => console.error(pc.red(`  ${e.text}`)));
