@@ -101,3 +101,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     });
 
     console.log(pc.green(`✅ 开发服务器已启动: http://${host}:${port}`));
+    console.log(pc.gray('按 Ctrl+C 停止服务器'));
