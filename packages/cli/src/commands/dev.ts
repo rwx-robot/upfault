@@ -106,3 +106,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     // 监听文件变化（用于 HMR 触发）
     const watcher = chokidar.watch([
       resolve(cwd, 'src/**/*'),
+      resolve(cwd, 'index.html'),
