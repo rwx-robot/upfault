@@ -94,3 +94,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
               } else {
                 console.log(pc.green('✅ 热更新完成'));
               }
+            });
