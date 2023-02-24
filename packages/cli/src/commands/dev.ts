@@ -96,3 +96,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
               }
             });
           },
+        },
