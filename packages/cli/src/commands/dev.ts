@@ -112,3 +112,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       ignored: /(^|[/\\])\../,
       persistent: true,
       ignoreInitial: true,
+    });
