@@ -100,3 +100,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       ],
     });
 
+    console.log(pc.green(`✅ 开发服务器已启动: http://${host}:${port}`));
