@@ -84,3 +84,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
         {
           name: 'upfault-hmr',
           setup(build) {
+            build.onStart(() => {
