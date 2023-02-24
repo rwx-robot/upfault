@@ -88,3 +88,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
               console.log(pc.blue('🔄 重新构建...'));
             });
             build.onEnd((result) => {
+              if (result.errors.length > 0) {
