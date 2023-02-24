@@ -76,3 +76,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
         '.json': 'json',
       },
       define: {
+        'process.env.NODE_ENV': '"development"',
