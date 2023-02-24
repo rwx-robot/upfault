@@ -71,3 +71,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       loader: {
         '.ts': 'ts',
         '.tsx': 'tsx',
+        '.vue': 'text',
