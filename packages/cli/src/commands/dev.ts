@@ -107,3 +107,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     const watcher = chokidar.watch([
       resolve(cwd, 'src/**/*'),
       resolve(cwd, 'index.html'),
+      resolve(cwd, 'public/**/*'),
