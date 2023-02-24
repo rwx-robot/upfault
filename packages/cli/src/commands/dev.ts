@@ -74,3 +74,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
         '.vue': 'text',
         '.css': 'css',
         '.json': 'json',
+      },
