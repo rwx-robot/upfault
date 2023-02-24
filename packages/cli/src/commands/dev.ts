@@ -104,3 +104,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     console.log(pc.gray('按 Ctrl+C 停止服务器'));
 
     // 监听文件变化（用于 HMR 触发）
+    const watcher = chokidar.watch([
