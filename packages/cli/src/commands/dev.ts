@@ -75,3 +75,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
         '.css': 'css',
         '.json': 'json',
       },
+      define: {
