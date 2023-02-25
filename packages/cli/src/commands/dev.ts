@@ -149,3 +149,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     }
 
   } catch (error) {
+    console.error(pc.red('❌ 启动失败:'), error);
