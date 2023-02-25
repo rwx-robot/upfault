@@ -118,3 +118,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       const relativePath = relative(cwd, path);
       console.log(pc.yellow(`📝 文件变更: ${relativePath}`));
       // esbuild serve 会自动处理重新构建
+    });
