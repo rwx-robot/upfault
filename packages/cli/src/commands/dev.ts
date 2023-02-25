@@ -122,3 +122,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
 
     watcher.on('add', (path) => {
       const relativePath = relative(cwd, path);
+      console.log(pc.green(`➕ 新增文件: ${relativePath}`));
