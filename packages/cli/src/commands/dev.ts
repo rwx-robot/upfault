@@ -136,3 +136,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       await watcher.close();
       await server.stop();
       console.log(pc.gray('开发服务器已停止'));
+      process.exit(0);
