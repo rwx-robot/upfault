@@ -129,3 +129,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       const relativePath = relative(cwd, path);
       console.log(pc.red(`🗑️ 删除文件: ${relativePath}`));
     });
+
