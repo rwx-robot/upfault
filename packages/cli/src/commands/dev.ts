@@ -144,3 +144,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       setTimeout(() => {
         import('open').then(({ default: open }) => {
           open(`http://${host}:${port}`).catch(() => {});
+        });
