@@ -152,3 +152,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     console.error(pc.red('❌ 启动失败:'), error);
     process.exit(1);
   }
+}
