@@ -140,3 +140,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     });
 
     // 自动打开浏览器
+    if (open) {
