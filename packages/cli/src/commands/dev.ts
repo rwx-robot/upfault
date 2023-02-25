@@ -120,3 +120,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       // esbuild serve 会自动处理重新构建
     });
 
+    watcher.on('add', (path) => {
