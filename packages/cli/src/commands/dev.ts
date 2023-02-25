@@ -125,3 +125,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       console.log(pc.green(`➕ 新增文件: ${relativePath}`));
     });
 
+    watcher.on('unlink', (path) => {
