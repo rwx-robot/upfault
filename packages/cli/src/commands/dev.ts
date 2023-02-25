@@ -130,3 +130,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       console.log(pc.red(`🗑️ 删除文件: ${relativePath}`));
     });
 
+    // 优雅关闭
