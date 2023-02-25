@@ -126,3 +126,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     });
 
     watcher.on('unlink', (path) => {
+      const relativePath = relative(cwd, path);
