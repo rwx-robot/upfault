@@ -131,3 +131,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     });
 
     // 优雅关闭
+    process.on('SIGINT', async () => {
