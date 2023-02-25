@@ -147,3 +147,5 @@ export async function dev(options: DevOptions = {}): Promise<void> {
         });
       }, 500);
     }
+
+  } catch (error) {
