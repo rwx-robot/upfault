@@ -113,3 +113,5 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       persistent: true,
       ignoreInitial: true,
     });
+
+    watcher.on('change', (path) => {
