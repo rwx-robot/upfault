@@ -138,3 +138,5 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       console.log(pc.gray('开发服务器已停止'));
       process.exit(0);
     });
+
+    // 自动打开浏览器
