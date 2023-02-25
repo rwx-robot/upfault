@@ -145,3 +145,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
         import('open').then(({ default: open }) => {
           open(`http://${host}:${port}`).catch(() => {});
         });
+      }, 500);
