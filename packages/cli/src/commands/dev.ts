@@ -121,3 +121,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     });
 
     watcher.on('add', (path) => {
+      const relativePath = relative(cwd, path);
