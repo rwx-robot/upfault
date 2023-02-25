@@ -135,3 +135,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
       console.log(pc.cyan('\n🛑 正在关闭开发服务器...'));
       await watcher.close();
       await server.stop();
+      console.log(pc.gray('开发服务器已停止'));
