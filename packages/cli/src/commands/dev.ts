@@ -146,3 +146,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
           open(`http://${host}:${port}`).catch(() => {});
         });
       }, 500);
+    }
