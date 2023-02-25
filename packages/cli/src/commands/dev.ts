@@ -134,3 +134,4 @@ export async function dev(options: DevOptions = {}): Promise<void> {
     process.on('SIGINT', async () => {
       console.log(pc.cyan('\n🛑 正在关闭开发服务器...'));
       await watcher.close();
+      await server.stop();
