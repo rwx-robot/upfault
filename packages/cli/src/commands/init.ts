@@ -28,3 +28,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
     const response = await prompts({
       type: 'confirm',
       name: 'overwrite',
+      message: `目录 "${dirName}" 已存在，是否覆盖？`,
