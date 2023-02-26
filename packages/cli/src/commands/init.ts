@@ -29,3 +29,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
       type: 'confirm',
       name: 'overwrite',
       message: `目录 "${dirName}" 已存在，是否覆盖？`,
+      initial: false,
