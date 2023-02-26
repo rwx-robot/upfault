@@ -13,3 +13,4 @@ export interface InitOptions {
 }
 
 export async function init(projectName: string, options: InitOptions = {}): Promise<void> {
+  const template = options.template || 'vanilla';
