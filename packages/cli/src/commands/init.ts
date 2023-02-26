@@ -21,3 +21,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
 
   console.log(pc.cyan('🎉 初始化 UpFault 项目...'));
   console.log(pc.gray(`模板: ${template}`));
+  console.log(pc.gray(`目标目录: ${targetDir}`));
