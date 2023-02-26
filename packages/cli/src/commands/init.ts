@@ -33,3 +33,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
     });
     if (!response.overwrite) {
       console.log(pc.yellow('操作已取消'));
+      return;
