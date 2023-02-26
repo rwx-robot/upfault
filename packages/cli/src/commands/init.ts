@@ -19,3 +19,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   const targetDir = projectName ? resolve(cwd, projectName) : cwd;
   const dirName = projectName || '.';
 
+  console.log(pc.cyan('🎉 初始化 UpFault 项目...'));
