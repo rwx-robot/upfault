@@ -8,3 +8,4 @@ import pc from 'picocolors';
 
 export interface InitOptions {
   template?: 'vanilla' | 'react' | 'vue';
+  force?: boolean;
