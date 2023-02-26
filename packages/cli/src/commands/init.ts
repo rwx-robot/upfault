@@ -18,3 +18,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   const cwd = process.cwd();
   const targetDir = projectName ? resolve(cwd, projectName) : cwd;
   const dirName = projectName || '.';
+
