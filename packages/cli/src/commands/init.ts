@@ -36,3 +36,5 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
       return;
     }
   }
+
+  if (!existsSync(targetDir)) {
