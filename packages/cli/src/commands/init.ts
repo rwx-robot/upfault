@@ -35,3 +35,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
       console.log(pc.yellow('操作已取消'));
       return;
     }
+  }
