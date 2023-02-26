@@ -16,3 +16,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   const template = options.template || 'vanilla';
   const force = options.force || false;
   const cwd = process.cwd();
+  const targetDir = projectName ? resolve(cwd, projectName) : cwd;
