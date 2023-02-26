@@ -15,3 +15,4 @@ export interface InitOptions {
 export async function init(projectName: string, options: InitOptions = {}): Promise<void> {
   const template = options.template || 'vanilla';
   const force = options.force || false;
+  const cwd = process.cwd();
