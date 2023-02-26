@@ -27,3 +27,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
     const { default: prompts } = await import('prompts');
     const response = await prompts({
       type: 'confirm',
+      name: 'overwrite',
