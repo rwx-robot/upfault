@@ -20,3 +20,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   const dirName = projectName || '.';
 
   console.log(pc.cyan('🎉 初始化 UpFault 项目...'));
+  console.log(pc.gray(`模板: ${template}`));
