@@ -5,3 +5,5 @@
 import { resolve } from 'path';
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import pc from 'picocolors';
+
+export interface InitOptions {
