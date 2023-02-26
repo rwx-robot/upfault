@@ -30,3 +30,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
       name: 'overwrite',
       message: `目录 "${dirName}" 已存在，是否覆盖？`,
       initial: false,
+    });
