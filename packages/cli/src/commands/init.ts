@@ -7,3 +7,4 @@ import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import pc from 'picocolors';
 
 export interface InitOptions {
+  template?: 'vanilla' | 'react' | 'vue';
