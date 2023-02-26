@@ -11,3 +11,5 @@ export interface InitOptions {
   force?: boolean;
   config?: string;
 }
+
+export async function init(projectName: string, options: InitOptions = {}): Promise<void> {
