@@ -25,3 +25,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
 
   if (existsSync(targetDir) && !force) {
     const { default: prompts } = await import('prompts');
+    const response = await prompts({
