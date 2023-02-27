@@ -73,3 +73,4 @@ function getTemplateFiles(template: string): Record<string, string> {
       private: true,
       type: 'module',
       scripts: {
+        dev: 'upfault dev',
