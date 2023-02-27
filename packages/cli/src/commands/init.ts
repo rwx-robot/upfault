@@ -76,3 +76,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         dev: 'upfault dev',
         build: 'upfault build',
         preview: 'upfault preview',
+      },
