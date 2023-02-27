@@ -59,3 +59,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   console.log(pc.cyan('\n📋 下一步:'));
   if (projectName) {
     console.log(pc.gray(`  cd ${projectName}`));
+  }
