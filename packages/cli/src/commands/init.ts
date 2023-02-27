@@ -70,3 +70,4 @@ function getTemplateFiles(template: string): Record<string, string> {
     'package.json': JSON.stringify({
       name: 'upfault-app',
       version: '0.2.0',
+      private: true,
