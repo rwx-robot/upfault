@@ -66,3 +66,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
 }
 
 function getTemplateFiles(template: string): Record<string, string> {
+  const baseFiles = {
