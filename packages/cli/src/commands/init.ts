@@ -78,3 +78,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         preview: 'upfault preview',
       },
       dependencies: {
+        '@upfault/runtime': 'workspace:*',
