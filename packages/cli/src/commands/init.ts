@@ -51,3 +51,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
       mkdirSync(dir, { recursive: true });
     }
     
+    writeFileSync(filePath, content);
