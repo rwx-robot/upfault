@@ -65,3 +65,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   console.log(pc.cyan('\n📚 更多信息请访问: https://upfault.dev'));
 }
 
+function getTemplateFiles(template: string): Record<string, string> {
