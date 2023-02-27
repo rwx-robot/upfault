@@ -54,3 +54,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
     writeFileSync(filePath, content);
     console.log(pc.gray(`  创建: ${file}`));
   }
+
