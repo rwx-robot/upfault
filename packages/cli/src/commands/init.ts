@@ -44,3 +44,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   const templateFiles = getTemplateFiles(template);
   
   for (const [file, content] of Object.entries(templateFiles)) {
+    const filePath = resolve(targetDir, file);
