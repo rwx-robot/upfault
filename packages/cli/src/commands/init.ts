@@ -71,3 +71,4 @@ function getTemplateFiles(template: string): Record<string, string> {
       name: 'upfault-app',
       version: '0.2.0',
       private: true,
+      type: 'module',
