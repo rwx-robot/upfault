@@ -47,3 +47,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
     const filePath = resolve(targetDir, file);
     const dir = resolve(targetDir, file.split('/').slice(0, -1).join('/'));
     
+    if (!existsSync(dir)) {
