@@ -56,3 +56,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   }
 
   console.log(pc.green('\n✅ 项目初始化完成!'));
+  console.log(pc.cyan('\n📋 下一步:'));
