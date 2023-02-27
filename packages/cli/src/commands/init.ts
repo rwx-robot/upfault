@@ -45,3 +45,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   
   for (const [file, content] of Object.entries(templateFiles)) {
     const filePath = resolve(targetDir, file);
+    const dir = resolve(targetDir, file.split('/').slice(0, -1).join('/'));
