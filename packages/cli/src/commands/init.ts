@@ -81,3 +81,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         '@upfault/runtime': 'workspace:*',
         '@upfault/reactivity': 'workspace:*',
         '@upfault/shared': 'workspace:*',
+      },
