@@ -40,3 +40,5 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   if (!existsSync(targetDir)) {
     mkdirSync(targetDir, { recursive: true });
   }
+
+  const templateFiles = getTemplateFiles(template);
