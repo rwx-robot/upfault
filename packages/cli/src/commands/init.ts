@@ -79,3 +79,4 @@ function getTemplateFiles(template: string): Record<string, string> {
       },
       dependencies: {
         '@upfault/runtime': 'workspace:*',
+        '@upfault/reactivity': 'workspace:*',
