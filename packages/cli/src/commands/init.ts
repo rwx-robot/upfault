@@ -50,3 +50,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
     if (!existsSync(dir)) {
       mkdirSync(dir, { recursive: true });
     }
+    
