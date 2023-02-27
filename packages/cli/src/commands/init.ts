@@ -72,3 +72,4 @@ function getTemplateFiles(template: string): Record<string, string> {
       version: '0.2.0',
       private: true,
       type: 'module',
+      scripts: {
