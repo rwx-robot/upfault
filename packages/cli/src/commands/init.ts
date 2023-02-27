@@ -74,3 +74,4 @@ function getTemplateFiles(template: string): Record<string, string> {
       type: 'module',
       scripts: {
         dev: 'upfault dev',
+        build: 'upfault build',
