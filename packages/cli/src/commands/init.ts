@@ -55,3 +55,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
     console.log(pc.gray(`  创建: ${file}`));
   }
 
+  console.log(pc.green('\n✅ 项目初始化完成!'));
