@@ -42,3 +42,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   }
 
   const templateFiles = getTemplateFiles(template);
+  
