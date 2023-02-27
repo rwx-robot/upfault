@@ -60,3 +60,4 @@ export async function init(projectName: string, options: InitOptions = {}): Prom
   if (projectName) {
     console.log(pc.gray(`  cd ${projectName}`));
   }
+  console.log(pc.gray('  pnpm install'));
