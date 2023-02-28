@@ -114,3 +114,4 @@ function getTemplateFiles(template: string): Record<string, string> {
     }, null, 2),
     'index.html': `<!DOCTYPE html>
 <html lang="zh-CN">
+<head>
