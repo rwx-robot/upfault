@@ -101,3 +101,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         skipLibCheck: true,
         esModuleInterop: true,
         allowSyntheticDefaultImports: true,
+        forceConsistentCasingInFileNames: true,
