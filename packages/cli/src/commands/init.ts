@@ -109,3 +109,4 @@ function getTemplateFiles(template: string): Record<string, string> {
           '@/*': ['src/*'],
         },
       },
+      include: ['src/**/*', 'index.html'],
