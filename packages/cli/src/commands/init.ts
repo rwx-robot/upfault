@@ -92,3 +92,4 @@ function getTemplateFiles(template: string): Record<string, string> {
       compilerOptions: {
         target: 'ES2020',
         module: 'ESNext',
+        moduleResolution: 'bundler',
