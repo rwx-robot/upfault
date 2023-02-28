@@ -84,3 +84,4 @@ function getTemplateFiles(template: string): Record<string, string> {
       },
       devDependencies: {
         '@upfault/cli': 'workspace:*',
+        'typescript': '^5.4.0',
