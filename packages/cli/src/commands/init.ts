@@ -93,3 +93,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         target: 'ES2020',
         module: 'ESNext',
         moduleResolution: 'bundler',
+        lib: ['ES2020', 'DOM', 'DOM.Iterable'],
