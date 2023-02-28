@@ -107,3 +107,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         baseUrl: '.',
         paths: {
           '@/*': ['src/*'],
+        },
