@@ -98,3 +98,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         jsxImportSource: '@upfault/runtime',
         strict: true,
         noEmit: true,
+        skipLibCheck: true,
