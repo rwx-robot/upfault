@@ -102,3 +102,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         esModuleInterop: true,
         allowSyntheticDefaultImports: true,
         forceConsistentCasingInFileNames: true,
+        resolveJsonModule: true,
