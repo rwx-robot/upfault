@@ -105,3 +105,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         resolveJsonModule: true,
         isolatedModules: true,
         baseUrl: '.',
+        paths: {
