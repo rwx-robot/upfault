@@ -112,3 +112,4 @@ function getTemplateFiles(template: string): Record<string, string> {
       include: ['src/**/*', 'index.html'],
       exclude: ['node_modules', 'dist'],
     }, null, 2),
+    'index.html': `<!DOCTYPE html>
