@@ -88,3 +88,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         'vitest': '^1.4.0',
       },
     }, null, 2),
+    'tsconfig.json': JSON.stringify({
