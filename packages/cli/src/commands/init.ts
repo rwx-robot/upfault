@@ -97,3 +97,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         jsx: 'react-jsx',
         jsxImportSource: '@upfault/runtime',
         strict: true,
+        noEmit: true,
