@@ -83,3 +83,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         '@upfault/shared': 'workspace:*',
       },
       devDependencies: {
+        '@upfault/cli': 'workspace:*',
