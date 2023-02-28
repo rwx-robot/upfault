@@ -86,3 +86,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         '@upfault/cli': 'workspace:*',
         'typescript': '^5.4.0',
         'vitest': '^1.4.0',
+      },
