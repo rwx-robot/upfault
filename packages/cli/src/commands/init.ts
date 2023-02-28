@@ -103,3 +103,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         allowSyntheticDefaultImports: true,
         forceConsistentCasingInFileNames: true,
         resolveJsonModule: true,
+        isolatedModules: true,
