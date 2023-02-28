@@ -96,3 +96,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         lib: ['ES2020', 'DOM', 'DOM.Iterable'],
         jsx: 'react-jsx',
         jsxImportSource: '@upfault/runtime',
+        strict: true,
