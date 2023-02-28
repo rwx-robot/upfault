@@ -89,3 +89,4 @@ function getTemplateFiles(template: string): Record<string, string> {
       },
     }, null, 2),
     'tsconfig.json': JSON.stringify({
+      compilerOptions: {
