@@ -106,3 +106,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         isolatedModules: true,
         baseUrl: '.',
         paths: {
+          '@/*': ['src/*'],
