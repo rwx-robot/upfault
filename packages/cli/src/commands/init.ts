@@ -104,3 +104,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         forceConsistentCasingInFileNames: true,
         resolveJsonModule: true,
         isolatedModules: true,
+        baseUrl: '.',
