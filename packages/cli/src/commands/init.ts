@@ -120,3 +120,4 @@ function getTemplateFiles(template: string): Record<string, string> {
   <title>UpFault App</title>
 </head>
 <body>
+  <div id="app"></div>
