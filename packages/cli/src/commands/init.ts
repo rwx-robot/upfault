@@ -100,3 +100,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         noEmit: true,
         skipLibCheck: true,
         esModuleInterop: true,
+        allowSyntheticDefaultImports: true,
