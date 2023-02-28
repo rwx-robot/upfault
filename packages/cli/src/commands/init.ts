@@ -82,3 +82,4 @@ function getTemplateFiles(template: string): Record<string, string> {
         '@upfault/reactivity': 'workspace:*',
         '@upfault/shared': 'workspace:*',
       },
+      devDependencies: {
