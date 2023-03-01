@@ -129,3 +129,5 @@ import { ref } from '@upfault/reactivity';
 
 // 创建渲染器
 const renderer = createRenderer(defaultRendererOptions);
+
+const container = document.getElementById('app')!;
