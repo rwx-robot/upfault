@@ -149,3 +149,5 @@ function App() {
 }
 
 renderer.render(h(App), container);
+
+// 热更新支持
