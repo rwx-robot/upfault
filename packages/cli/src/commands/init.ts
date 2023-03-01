@@ -162,3 +162,4 @@ if (import.meta.hot) {
   --text-color: #1e293b;
   --border-radius: 8px;
 }
+
