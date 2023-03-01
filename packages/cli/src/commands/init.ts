@@ -138,3 +138,4 @@ function App() {
     h('h1', null, 'UpFault App'),
     h('p', null, \`计数: \${count.value}\`),
     h('button', { 
+      onClick: () => count.value++,
