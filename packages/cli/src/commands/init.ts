@@ -126,3 +126,5 @@ function getTemplateFiles(template: string): Record<string, string> {
 </html>`,
     'src/main.ts': `import { h, createRenderer, defaultRendererOptions } from '@upfault/runtime';
 import { ref } from '@upfault/reactivity';
+
+// 创建渲染器
