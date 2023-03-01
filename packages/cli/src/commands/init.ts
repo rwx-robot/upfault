@@ -159,3 +159,4 @@ if (import.meta.hot) {
     'src/style.css': `:root {
   --primary-color: #3b82f6;
   --bg-color: #f8fafc;
+  --text-color: #1e293b;
