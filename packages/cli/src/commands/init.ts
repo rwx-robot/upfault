@@ -146,3 +146,4 @@ function App() {
       class: 'btn'
     }, '减少'),
   ]);
+}
