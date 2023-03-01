@@ -124,3 +124,4 @@ function getTemplateFiles(template: string): Record<string, string> {
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>`,
+    'src/main.ts': `import { h, createRenderer, defaultRendererOptions } from '@upfault/runtime';
