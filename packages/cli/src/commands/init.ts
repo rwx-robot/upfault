@@ -123,3 +123,4 @@ function getTemplateFiles(template: string): Record<string, string> {
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
 </body>
+</html>`,
