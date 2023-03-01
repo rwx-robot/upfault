@@ -156,3 +156,4 @@ if (import.meta.hot) {
     renderer.render(h(App), container);
   });
 }`,
+    'src/style.css': `:root {
