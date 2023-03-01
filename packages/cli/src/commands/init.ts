@@ -153,3 +153,4 @@ renderer.render(h(App), container);
 // 热更新支持
 if (import.meta.hot) {
   import.meta.hot.accept(() => {
+    renderer.render(h(App), container);
