@@ -125,3 +125,4 @@ function getTemplateFiles(template: string): Record<string, string> {
 </body>
 </html>`,
     'src/main.ts': `import { h, createRenderer, defaultRendererOptions } from '@upfault/runtime';
+import { ref } from '@upfault/reactivity';
