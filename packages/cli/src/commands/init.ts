@@ -148,3 +148,4 @@ function App() {
   ]);
 }
 
+renderer.render(h(App), container);
