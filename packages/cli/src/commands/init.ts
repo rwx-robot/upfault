@@ -128,3 +128,4 @@ function getTemplateFiles(template: string): Record<string, string> {
 import { ref } from '@upfault/reactivity';
 
 // 创建渲染器
+const renderer = createRenderer(defaultRendererOptions);
