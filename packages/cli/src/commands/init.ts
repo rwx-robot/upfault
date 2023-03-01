@@ -137,3 +137,4 @@ function App() {
   return h('div', { class: 'app' }, [
     h('h1', null, 'UpFault App'),
     h('p', null, \`计数: \${count.value}\`),
+    h('button', { 
