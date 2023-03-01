@@ -142,3 +142,4 @@ function App() {
       class: 'btn'
     }, '增加'),
     h('button', { 
+      onClick: () => count.value--,
