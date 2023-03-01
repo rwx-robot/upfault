@@ -134,3 +134,4 @@ const container = document.getElementById('app')!;
 const count = ref(0);
 
 function App() {
+  return h('div', { class: 'app' }, [
