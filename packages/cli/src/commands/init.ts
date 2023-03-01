@@ -161,3 +161,4 @@ if (import.meta.hot) {
   --bg-color: #f8fafc;
   --text-color: #1e293b;
   --border-radius: 8px;
+}
