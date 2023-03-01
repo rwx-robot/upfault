@@ -163,3 +163,4 @@ if (import.meta.hot) {
   --border-radius: 8px;
 }
 
+* {
