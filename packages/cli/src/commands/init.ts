@@ -196,3 +196,4 @@ h1 {
 
 .btn {
   background: var(--primary-color);
+  color: white;
