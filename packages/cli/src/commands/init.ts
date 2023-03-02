@@ -173,3 +173,4 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   min-height: 100vh;
+  display: flex;
