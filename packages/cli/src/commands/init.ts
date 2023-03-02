@@ -178,3 +178,5 @@ body {
   align-items: center;
   padding: 2rem;
 }
+
+.app {
