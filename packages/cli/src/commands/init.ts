@@ -203,3 +203,4 @@ h1 {
   cursor: pointer;
   margin: 0 0.25rem;
   font-size: 1rem;
+  transition: background 0.2s;
