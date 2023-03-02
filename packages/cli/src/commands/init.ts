@@ -168,3 +168,4 @@ if (import.meta.hot) {
 }
 
 body {
+  margin: 0;
