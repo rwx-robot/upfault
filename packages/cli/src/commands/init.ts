@@ -172,3 +172,4 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: var(--bg-color);
   color: var(--text-color);
+  min-height: 100vh;
