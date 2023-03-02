@@ -182,3 +182,4 @@ body {
 .app {
   background: white;
   padding: 2rem;
+  border-radius: var(--border-radius);
