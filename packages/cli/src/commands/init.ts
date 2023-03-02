@@ -201,3 +201,4 @@ h1 {
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
   cursor: pointer;
+  margin: 0 0.25rem;
