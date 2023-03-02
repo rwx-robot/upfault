@@ -176,3 +176,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
