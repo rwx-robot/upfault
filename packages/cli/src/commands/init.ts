@@ -181,3 +181,4 @@ body {
 
 .app {
   background: white;
+  padding: 2rem;
