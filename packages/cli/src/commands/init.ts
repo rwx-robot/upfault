@@ -198,3 +198,4 @@ h1 {
   background: var(--primary-color);
   color: white;
   border: none;
+  padding: 0.5rem 1rem;
