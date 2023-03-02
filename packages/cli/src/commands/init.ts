@@ -165,3 +165,4 @@ if (import.meta.hot) {
 
 * {
   box-sizing: border-box;
+}
