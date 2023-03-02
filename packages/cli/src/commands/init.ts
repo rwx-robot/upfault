@@ -180,3 +180,4 @@ body {
 }
 
 .app {
+  background: white;
