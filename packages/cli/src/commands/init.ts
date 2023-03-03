@@ -219,3 +219,4 @@ h1 {
       generateHtml: true,
       title: 'UpFault App',
     }, null, 2),
+    '.gitignore': `node_modules
