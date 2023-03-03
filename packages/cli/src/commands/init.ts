@@ -222,3 +222,4 @@ h1 {
     '.gitignore': `node_modules
 dist
 .upfault-dev
+*.log
