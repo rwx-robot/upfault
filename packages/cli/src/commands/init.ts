@@ -223,3 +223,4 @@ h1 {
 dist
 .upfault-dev
 *.log
+.DS_Store
