@@ -224,3 +224,4 @@ dist
 .upfault-dev
 *.log
 .DS_Store
+*.local`,
