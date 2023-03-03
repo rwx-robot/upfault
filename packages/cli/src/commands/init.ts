@@ -238,3 +238,4 @@ dist
         scripts: {
           dev: 'upfault dev',
           build: 'upfault build',
+          preview: 'upfault preview',
