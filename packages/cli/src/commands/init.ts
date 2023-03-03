@@ -230,3 +230,4 @@ dist
   if (template === 'react') {
     return {
       ...baseFiles,
+      'package.json': JSON.stringify({
