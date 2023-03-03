@@ -217,3 +217,4 @@ h1 {
       entryPoints: ['src/main.ts'],
       publicDir: 'public',
       generateHtml: true,
+      title: 'UpFault App',
