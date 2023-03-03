@@ -228,3 +228,4 @@ dist
   };
 
   if (template === 'react') {
+    return {
