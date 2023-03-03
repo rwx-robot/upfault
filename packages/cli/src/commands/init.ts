@@ -237,3 +237,4 @@ dist
         type: 'module',
         scripts: {
           dev: 'upfault dev',
+          build: 'upfault build',
