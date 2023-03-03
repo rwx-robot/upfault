@@ -231,3 +231,4 @@ dist
     return {
       ...baseFiles,
       'package.json': JSON.stringify({
+        name: 'upfault-react-app',
