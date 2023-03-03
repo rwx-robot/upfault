@@ -236,3 +236,4 @@ dist
         private: true,
         type: 'module',
         scripts: {
+          dev: 'upfault dev',
