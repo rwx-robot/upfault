@@ -241,3 +241,4 @@ dist
           preview: 'upfault preview',
         },
         dependencies: {
+          'react': '^18.2.0',
