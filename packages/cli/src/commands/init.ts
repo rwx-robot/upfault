@@ -221,3 +221,4 @@ h1 {
     }, null, 2),
     '.gitignore': `node_modules
 dist
+.upfault-dev
