@@ -229,3 +229,4 @@ dist
 
   if (template === 'react') {
     return {
+      ...baseFiles,
