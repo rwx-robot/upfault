@@ -213,3 +213,4 @@ h1 {
 .btn:active {
   transform: scale(0.98);
 }`,
+    'upfault.config.json': JSON.stringify({
