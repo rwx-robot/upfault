@@ -232,3 +232,4 @@ dist
       ...baseFiles,
       'package.json': JSON.stringify({
         name: 'upfault-react-app',
+        version: '0.2.0',
