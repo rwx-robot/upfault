@@ -206,3 +206,4 @@ h1 {
   transition: background 0.2s;
 }
 
+.btn:hover {
