@@ -240,3 +240,4 @@ dist
           build: 'upfault build',
           preview: 'upfault preview',
         },
+        dependencies: {
