@@ -216,3 +216,4 @@ h1 {
     'upfault.config.json': JSON.stringify({
       entryPoints: ['src/main.ts'],
       publicDir: 'public',
+      generateHtml: true,
