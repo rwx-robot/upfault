@@ -226,3 +226,5 @@ dist
 .DS_Store
 *.local`,
   };
+
+  if (template === 'react') {
