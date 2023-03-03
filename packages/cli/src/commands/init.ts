@@ -225,3 +225,4 @@ dist
 *.log
 .DS_Store
 *.local`,
+  };
