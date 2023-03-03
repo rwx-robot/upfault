@@ -239,3 +239,4 @@ dist
           dev: 'upfault dev',
           build: 'upfault build',
           preview: 'upfault preview',
+        },
