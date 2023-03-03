@@ -218,3 +218,4 @@ h1 {
       publicDir: 'public',
       generateHtml: true,
       title: 'UpFault App',
+    }, null, 2),
