@@ -220,3 +220,4 @@ h1 {
       title: 'UpFault App',
     }, null, 2),
     '.gitignore': `node_modules
+dist
