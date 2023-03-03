@@ -208,3 +208,4 @@ h1 {
 
 .btn:hover {
   background: #2563eb;
+}
