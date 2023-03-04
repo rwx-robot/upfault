@@ -248,3 +248,4 @@ dist
           '@upfault/shared': 'workspace:*',
         },
         devDependencies: {
+          '@upfault/cli': 'workspace:*',
