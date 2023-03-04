@@ -281,3 +281,4 @@ if (import.meta.hot) {
   });
 }`,
     };
+  }
