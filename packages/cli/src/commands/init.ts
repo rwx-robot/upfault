@@ -249,3 +249,4 @@ dist
         },
         devDependencies: {
           '@upfault/cli': 'workspace:*',
+          '@types/react': '^18.2.0',
