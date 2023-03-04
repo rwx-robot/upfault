@@ -255,3 +255,4 @@ dist
           'vitest': '^1.4.0',
         },
       }, null, 2),
+      'src/main.tsx': `import { h, createRenderer, defaultRendererOptions } from '@upfault/runtime';
