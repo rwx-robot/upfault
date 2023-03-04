@@ -252,3 +252,4 @@ dist
           '@types/react': '^18.2.0',
           '@types/react-dom': '^18.2.0',
           'typescript': '^5.4.0',
+          'vitest': '^1.4.0',
