@@ -270,3 +270,4 @@ function App() {
       <button onClick={() => count.value++} className="btn">增加</button>
       <button onClick={() => count.value--} className="btn">减少</button>
     </div>
+  );
