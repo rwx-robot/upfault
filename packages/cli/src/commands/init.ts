@@ -287,3 +287,4 @@ if (import.meta.hot) {
     return {
       ...baseFiles,
       'package.json': JSON.stringify({
+        name: 'upfault-vue-app',
