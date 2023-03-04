@@ -266,3 +266,4 @@ function App() {
   return (
     <div className="app">
       <h1>UpFault React App</h1>
+      <p>计数: {count.value}</p>
