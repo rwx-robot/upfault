@@ -265,3 +265,4 @@ const count = ref(0);
 function App() {
   return (
     <div className="app">
+      <h1>UpFault React App</h1>
