@@ -268,3 +268,4 @@ function App() {
       <h1>UpFault React App</h1>
       <p>计数: {count.value}</p>
       <button onClick={() => count.value++} className="btn">增加</button>
+      <button onClick={() => count.value--} className="btn">减少</button>
