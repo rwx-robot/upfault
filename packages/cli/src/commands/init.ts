@@ -254,3 +254,4 @@ dist
           'typescript': '^5.4.0',
           'vitest': '^1.4.0',
         },
+      }, null, 2),
