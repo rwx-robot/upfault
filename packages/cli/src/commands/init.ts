@@ -272,3 +272,5 @@ function App() {
     </div>
   );
 }
+
+renderer.render(h(App), container);
