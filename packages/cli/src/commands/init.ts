@@ -282,3 +282,5 @@ if (import.meta.hot) {
 }`,
     };
   }
+
+  if (template === 'vue') {
