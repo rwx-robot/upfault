@@ -261,3 +261,4 @@ import { ref } from '@upfault/reactivity';
 const renderer = createRenderer(defaultRendererOptions);
 const container = document.getElementById('app')!;
 const count = ref(0);
+
