@@ -245,3 +245,4 @@ dist
           'react-dom': '^18.2.0',
           '@upfault/runtime': 'workspace:*',
           '@upfault/reactivity': 'workspace:*',
+          '@upfault/shared': 'workspace:*',
