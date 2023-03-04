@@ -247,3 +247,4 @@ dist
           '@upfault/reactivity': 'workspace:*',
           '@upfault/shared': 'workspace:*',
         },
+        devDependencies: {
