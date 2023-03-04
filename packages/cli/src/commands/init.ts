@@ -286,3 +286,4 @@ if (import.meta.hot) {
   if (template === 'vue') {
     return {
       ...baseFiles,
+      'package.json': JSON.stringify({
