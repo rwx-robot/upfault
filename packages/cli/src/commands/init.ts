@@ -257,3 +257,5 @@ dist
       }, null, 2),
       'src/main.tsx': `import { h, createRenderer, defaultRendererOptions } from '@upfault/runtime';
 import { ref } from '@upfault/reactivity';
+
+const renderer = createRenderer(defaultRendererOptions);
