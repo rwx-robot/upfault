@@ -291,3 +291,4 @@ if (import.meta.hot) {
         version: '0.2.0',
         private: true,
         type: 'module',
+        scripts: {
