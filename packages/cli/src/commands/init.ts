@@ -296,3 +296,4 @@ if (import.meta.hot) {
           build: 'upfault build',
           preview: 'upfault preview',
         },
+        dependencies: {
