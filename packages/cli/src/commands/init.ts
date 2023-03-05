@@ -303,3 +303,4 @@ if (import.meta.hot) {
           '@upfault/shared': 'workspace:*',
         },
         devDependencies: {
+          '@upfault/cli': 'workspace:*',
