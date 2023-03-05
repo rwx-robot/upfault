@@ -322,3 +322,4 @@ const App = {
     return { count };
   },
   render() {
+    return h('div', { class: 'app' }, [
