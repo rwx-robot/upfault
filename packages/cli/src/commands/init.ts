@@ -295,3 +295,4 @@ if (import.meta.hot) {
           dev: 'upfault dev',
           build: 'upfault build',
           preview: 'upfault preview',
+        },
