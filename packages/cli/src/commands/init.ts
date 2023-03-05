@@ -289,3 +289,4 @@ if (import.meta.hot) {
       'package.json': JSON.stringify({
         name: 'upfault-vue-app',
         version: '0.2.0',
+        private: true,
