@@ -321,3 +321,4 @@ const App = {
     const count = ref(0);
     return { count };
   },
+  render() {
