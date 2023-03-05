@@ -313,3 +313,4 @@ if (import.meta.hot) {
 import { ref } from '@upfault/reactivity';
 import { createApp } from 'vue';
 
+const renderer = createRenderer(defaultRendererOptions);
