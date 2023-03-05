@@ -307,3 +307,4 @@ if (import.meta.hot) {
           '@vitejs/plugin-vue': '^5.0.0',
           'typescript': '^5.4.0',
           'vitest': '^1.4.0',
+        },
