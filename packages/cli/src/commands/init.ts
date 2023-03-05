@@ -324,3 +324,4 @@ const App = {
   render() {
     return h('div', { class: 'app' }, [
       h('h1', null, 'UpFault Vue App'),
+      h('p', null, \`计数: \${this.count.value}\`),
