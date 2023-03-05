@@ -305,3 +305,4 @@ if (import.meta.hot) {
         devDependencies: {
           '@upfault/cli': 'workspace:*',
           '@vitejs/plugin-vue': '^5.0.0',
+          'typescript': '^5.4.0',
