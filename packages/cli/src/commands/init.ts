@@ -312,3 +312,4 @@ if (import.meta.hot) {
       'src/main.ts': `import { h, createRenderer, defaultRendererOptions } from '@upfault/runtime';
 import { ref } from '@upfault/reactivity';
 import { createApp } from 'vue';
+
