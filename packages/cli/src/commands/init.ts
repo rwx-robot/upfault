@@ -290,3 +290,4 @@ if (import.meta.hot) {
         name: 'upfault-vue-app',
         version: '0.2.0',
         private: true,
+        type: 'module',
