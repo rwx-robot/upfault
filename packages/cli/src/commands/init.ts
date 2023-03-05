@@ -299,3 +299,4 @@ if (import.meta.hot) {
         dependencies: {
           'vue': '^3.4.0',
           '@upfault/runtime': 'workspace:*',
+          '@upfault/reactivity': 'workspace:*',
