@@ -320,3 +320,4 @@ const App = {
   setup() {
     const count = ref(0);
     return { count };
+  },
