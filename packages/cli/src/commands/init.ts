@@ -297,3 +297,4 @@ if (import.meta.hot) {
           preview: 'upfault preview',
         },
         dependencies: {
+          'vue': '^3.4.0',
