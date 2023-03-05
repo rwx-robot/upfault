@@ -314,3 +314,4 @@ import { ref } from '@upfault/reactivity';
 import { createApp } from 'vue';
 
 const renderer = createRenderer(defaultRendererOptions);
+const container = document.getElementById('app')!;
