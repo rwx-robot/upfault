@@ -301,3 +301,4 @@ if (import.meta.hot) {
           '@upfault/runtime': 'workspace:*',
           '@upfault/reactivity': 'workspace:*',
           '@upfault/shared': 'workspace:*',
+        },
