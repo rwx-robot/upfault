@@ -294,3 +294,4 @@ if (import.meta.hot) {
         scripts: {
           dev: 'upfault dev',
           build: 'upfault build',
+          preview: 'upfault preview',
