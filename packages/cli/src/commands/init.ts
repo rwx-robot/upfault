@@ -318,3 +318,4 @@ const container = document.getElementById('app')!;
 
 const App = {
   setup() {
+    const count = ref(0);
