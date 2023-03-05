@@ -302,3 +302,4 @@ if (import.meta.hot) {
           '@upfault/reactivity': 'workspace:*',
           '@upfault/shared': 'workspace:*',
         },
+        devDependencies: {
