@@ -323,3 +323,4 @@ const App = {
   },
   render() {
     return h('div', { class: 'app' }, [
+      h('h1', null, 'UpFault Vue App'),
