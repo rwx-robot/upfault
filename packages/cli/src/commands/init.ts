@@ -326,3 +326,4 @@ const App = {
       h('h1', null, 'UpFault Vue App'),
       h('p', null, \`计数: \${this.count.value}\`),
       h('button', { 
+        onClick: () => this.count.value++,
