@@ -300,3 +300,4 @@ if (import.meta.hot) {
           'vue': '^3.4.0',
           '@upfault/runtime': 'workspace:*',
           '@upfault/reactivity': 'workspace:*',
+          '@upfault/shared': 'workspace:*',
