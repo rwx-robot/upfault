@@ -309,3 +309,4 @@ if (import.meta.hot) {
           'vitest': '^1.4.0',
         },
       }, null, 2),
+      'src/main.ts': `import { h, createRenderer, defaultRendererOptions } from '@upfault/runtime';
