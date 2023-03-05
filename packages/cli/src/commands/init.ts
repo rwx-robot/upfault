@@ -292,3 +292,4 @@ if (import.meta.hot) {
         private: true,
         type: 'module',
         scripts: {
+          dev: 'upfault dev',
