@@ -334,3 +334,4 @@ const App = {
         class: 'btn'
       }, '减少'),
     ]);
+  }
