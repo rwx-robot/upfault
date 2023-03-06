@@ -345,3 +345,4 @@ if (import.meta.hot) {
   });
 }`,
     };
+  }
