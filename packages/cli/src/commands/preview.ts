@@ -12,3 +12,5 @@ export interface PreviewOptions {
   host?: string;
   config?: string;
 }
+
+export async function preview(options: PreviewOptions = {}): Promise<void> {
