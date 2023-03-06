@@ -20,3 +20,5 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
   const distDir = resolve(cwd, 'dist');
 
   console.log(pc.cyan('🔍 启动预览服务器...'));
+
+  if (!existsSync(distDir)) {
