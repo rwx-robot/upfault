@@ -341,3 +341,4 @@ renderer.render(h(App), container);
 
 if (import.meta.hot) {
   import.meta.hot.accept(() => {
+    renderer.render(h(App), container);
