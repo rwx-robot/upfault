@@ -333,3 +333,4 @@ const App = {
         onClick: () => this.count.value--,
         class: 'btn'
       }, '减少'),
+    ]);
