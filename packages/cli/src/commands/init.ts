@@ -336,3 +336,5 @@ const App = {
     ]);
   }
 };
+
+renderer.render(h(App), container);
