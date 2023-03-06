@@ -8,3 +8,4 @@ import { existsSync } from 'fs';
 import pc from 'picocolors';
 
 export interface PreviewOptions {
+  port?: number;
