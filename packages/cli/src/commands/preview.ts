@@ -22,3 +22,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
   console.log(pc.cyan('🔍 启动预览服务器...'));
 
   if (!existsSync(distDir)) {
+    console.error(pc.red('❌ 未找到 dist 目录'));
