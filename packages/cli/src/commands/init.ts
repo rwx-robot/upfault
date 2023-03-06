@@ -344,3 +344,4 @@ if (import.meta.hot) {
     renderer.render(h(App), container);
   });
 }`,
+    };
