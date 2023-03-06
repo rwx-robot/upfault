@@ -332,3 +332,4 @@ const App = {
       h('button', { 
         onClick: () => this.count.value--,
         class: 'btn'
+      }, '减少'),
