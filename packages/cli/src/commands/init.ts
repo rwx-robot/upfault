@@ -339,3 +339,4 @@ const App = {
 
 renderer.render(h(App), container);
 
+if (import.meta.hot) {
