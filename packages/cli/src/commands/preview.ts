@@ -3,3 +3,4 @@
  */
 
 import { serve } from 'esbuild';
+import { resolve } from 'path';
