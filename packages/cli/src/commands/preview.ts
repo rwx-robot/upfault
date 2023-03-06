@@ -15,3 +15,4 @@ export interface PreviewOptions {
 
 export async function preview(options: PreviewOptions = {}): Promise<void> {
   const cwd = process.cwd();
+  const port = options.port || 4173;
