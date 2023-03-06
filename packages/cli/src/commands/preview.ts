@@ -11,3 +11,4 @@ export interface PreviewOptions {
   port?: number;
   host?: string;
   config?: string;
+}
