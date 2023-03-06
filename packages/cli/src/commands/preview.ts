@@ -18,3 +18,5 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
   const port = options.port || 4173;
   const host = options.host || 'localhost';
   const distDir = resolve(cwd, 'dist');
+
+  console.log(pc.cyan('🔍 启动预览服务器...'));
