@@ -9,3 +9,4 @@ import pc from 'picocolors';
 
 export interface PreviewOptions {
   port?: number;
+  host?: string;
