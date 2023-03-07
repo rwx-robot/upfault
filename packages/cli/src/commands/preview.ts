@@ -33,3 +33,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
   try {
     // For preview, we just serve static files - pass empty build options
     const server = await serve({
+      servedir: distDir,
