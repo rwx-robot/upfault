@@ -34,3 +34,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
     // For preview, we just serve static files - pass empty build options
     const server = await serve({
       servedir: distDir,
+      port: options.port || 4173,
