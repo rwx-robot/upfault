@@ -51,3 +51,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
       console.log(pc.cyan('\n🛑 正在关闭预览服务器...'));
       await server.stop();
       console.log(pc.gray('预览服务器已停止'));
+      process.exit(0);
