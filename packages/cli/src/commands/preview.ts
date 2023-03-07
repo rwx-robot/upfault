@@ -49,3 +49,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
 
     process.on('SIGINT', async () => {
       console.log(pc.cyan('\n🛑 正在关闭预览服务器...'));
+      await server.stop();
