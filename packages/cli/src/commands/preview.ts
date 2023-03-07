@@ -40,3 +40,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
       entryPoints: [], // No entry points for static serving
       bundle: false,
       outdir: distDir,
+      platform: 'browser',
