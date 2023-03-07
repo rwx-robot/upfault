@@ -48,3 +48,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
     console.log(pc.gray('按 Ctrl+C 停止服务器'));
 
     process.on('SIGINT', async () => {
+      console.log(pc.cyan('\n🛑 正在关闭预览服务器...'));
