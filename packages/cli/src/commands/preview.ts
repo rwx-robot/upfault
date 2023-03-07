@@ -42,3 +42,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
       outdir: distDir,
       platform: 'browser',
       format: 'esm',
+    });
