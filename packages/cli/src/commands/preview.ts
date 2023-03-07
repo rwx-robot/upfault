@@ -43,3 +43,5 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
       platform: 'browser',
       format: 'esm',
     });
+
+    console.log(pc.green(`✅ 预览服务器已启动: http://${host}:${port}`));
