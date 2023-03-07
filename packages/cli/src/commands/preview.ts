@@ -58,3 +58,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
     console.error(pc.red('❌ 启动失败:'), error);
     process.exit(1);
   }
+}
