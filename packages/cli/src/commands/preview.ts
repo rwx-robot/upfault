@@ -36,3 +36,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
       servedir: distDir,
       port: options.port || 4173,
       host: options.host || 'localhost',
+    }, {
