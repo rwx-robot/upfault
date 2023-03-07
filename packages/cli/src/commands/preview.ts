@@ -31,3 +31,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
   console.log(pc.gray(`监听地址: http://${host}:${options.port || 4173}`));
 
   try {
+    // For preview, we just serve static files - pass empty build options
