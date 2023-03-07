@@ -27,3 +27,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
     process.exit(1);
   }
 
+  console.log(pc.gray(`服务目录: ${distDir}`));
