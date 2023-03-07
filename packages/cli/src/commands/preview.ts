@@ -38,3 +38,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
       host: options.host || 'localhost',
     }, {
       entryPoints: [], // No entry points for static serving
+      bundle: false,
