@@ -30,3 +30,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
   console.log(pc.gray(`服务目录: ${distDir}`));
   console.log(pc.gray(`监听地址: http://${host}:${options.port || 4173}`));
 
+  try {
