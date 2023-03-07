@@ -37,3 +37,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
       port: options.port || 4173,
       host: options.host || 'localhost',
     }, {
+      entryPoints: [], // No entry points for static serving
