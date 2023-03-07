@@ -26,3 +26,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
     console.log(pc.yellow('请先运行 `upfault build` 构建项目'));
     process.exit(1);
   }
+
