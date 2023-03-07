@@ -23,3 +23,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
 
   if (!existsSync(distDir)) {
     console.error(pc.red('❌ 未找到 dist 目录'));
+    console.log(pc.yellow('请先运行 `upfault build` 构建项目'));
