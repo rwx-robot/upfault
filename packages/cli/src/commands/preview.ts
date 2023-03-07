@@ -47,3 +47,4 @@ export async function preview(options: PreviewOptions = {}): Promise<void> {
     console.log(pc.green(`✅ 预览服务器已启动: http://${host}:${port}`));
     console.log(pc.gray('按 Ctrl+C 停止服务器'));
 
+    process.on('SIGINT', async () => {
