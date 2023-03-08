@@ -31,3 +31,4 @@ program
 
 program
   .command('dev')
+  .description('启动开发服务器')
