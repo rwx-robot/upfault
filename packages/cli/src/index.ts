@@ -18,3 +18,4 @@ program
   .name('upfault')
   .description('UpFault 前端框架 CLI 工具')
   .version(VERSION)
+  .option('-c, --config <path>', '配置文件路径')
