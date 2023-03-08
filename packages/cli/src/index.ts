@@ -39,3 +39,4 @@ program
 
 program
   .command('preview')
+  .description('预览生产构建')
