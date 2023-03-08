@@ -15,3 +15,4 @@ import { VERSION } from './version';
 const program = new Command();
 
 program
+  .name('upfault')
