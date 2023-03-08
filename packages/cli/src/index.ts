@@ -33,3 +33,4 @@ program
   .command('dev')
   .description('启动开发服务器')
   .option('-p, --port <port>', '端口号', '3000')
+  .option('-o, --open', '自动打开浏览器', false)
