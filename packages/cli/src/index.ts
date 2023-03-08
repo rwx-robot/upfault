@@ -36,3 +36,5 @@ program
   .option('-o, --open', '自动打开浏览器', false)
   .option('--host <host>', '监听地址', 'localhost')
   .action(dev);
+
+program
