@@ -24,3 +24,4 @@ program
 program
   .command('build')
   .description('构建生产环境包')
+  .option('-o, --out-dir <dir>', '输出目录', 'dist')
