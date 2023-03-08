@@ -41,3 +41,4 @@ program
   .command('preview')
   .description('预览生产构建')
   .option('-p, --port <port>', '端口号', '4173')
+  .option('--host <host>', '监听地址', 'localhost')
