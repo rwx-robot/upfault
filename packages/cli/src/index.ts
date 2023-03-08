@@ -12,3 +12,4 @@ import { preview } from './commands/preview';
 import { init } from './commands/init';
 import { VERSION } from './version';
 
+const program = new Command();
