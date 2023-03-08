@@ -38,3 +38,4 @@ program
   .action(dev);
 
 program
+  .command('preview')
