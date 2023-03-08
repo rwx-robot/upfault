@@ -30,3 +30,4 @@ program
   .action(build);
 
 program
+  .command('dev')
