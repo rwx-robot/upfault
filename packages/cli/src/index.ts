@@ -13,3 +13,5 @@ import { init } from './commands/init';
 import { VERSION } from './version';
 
 const program = new Command();
+
+program
