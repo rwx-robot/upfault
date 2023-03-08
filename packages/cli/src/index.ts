@@ -29,3 +29,4 @@ program
   .option('--sourcemap', '生成 sourcemap', true)
   .action(build);
 
+program
