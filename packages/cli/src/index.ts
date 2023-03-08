@@ -16,3 +16,4 @@ const program = new Command();
 
 program
   .name('upfault')
+  .description('UpFault 前端框架 CLI 工具')
