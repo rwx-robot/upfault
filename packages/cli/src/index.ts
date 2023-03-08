@@ -8,3 +8,4 @@
 import { Command } from 'commander';
 import { build } from './commands/build';
 import { dev } from './commands/dev';
+import { preview } from './commands/preview';
