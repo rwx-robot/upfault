@@ -26,3 +26,4 @@ program
   .description('构建生产环境包')
   .option('-o, --out-dir <dir>', '输出目录', 'dist')
   .option('--minify', '启用压缩', true)
+  .option('--sourcemap', '生成 sourcemap', true)
