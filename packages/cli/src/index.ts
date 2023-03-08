@@ -23,3 +23,4 @@ program
 
 program
   .command('build')
+  .description('构建生产环境包')
