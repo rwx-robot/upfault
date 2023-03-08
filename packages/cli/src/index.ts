@@ -20,3 +20,5 @@ program
   .version(VERSION)
   .option('-c, --config <path>', '配置文件路径')
   .option('-v, --verbose', '详细输出');
+
+program
