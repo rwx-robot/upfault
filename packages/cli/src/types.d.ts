@@ -3,3 +3,4 @@ declare module 'esbuild' {
     entryPoints: string | string[];
     bundle?: boolean;
     outdir?: string;
+    platform?: 'browser' | 'node' | 'neutral';
