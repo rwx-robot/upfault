@@ -22,3 +22,4 @@ declare module 'esbuild' {
     warnings: any[];
     metafile?: any;
     outputFiles?: { path: string; contents: Uint8Array }[];
+  }
