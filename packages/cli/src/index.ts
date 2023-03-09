@@ -50,3 +50,4 @@ program
   .argument('[name]', '项目名称')
   .option('-t, --template <template>', '模板: vanilla | react | vue', 'vanilla')
   .option('--force', '强制覆盖现有文件')
+  .action(init);
