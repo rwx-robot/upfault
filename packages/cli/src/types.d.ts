@@ -19,3 +19,4 @@ declare module 'esbuild' {
 
   export interface BuildResult {
     errors: { text: string; location?: any }[];
+    warnings: any[];
