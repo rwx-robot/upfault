@@ -8,3 +8,4 @@ declare module 'esbuild' {
     target?: string | string[];
     minify?: boolean;
     sourcemap?: boolean | 'inline' | 'external' | 'linked';
+    splitting?: boolean;
