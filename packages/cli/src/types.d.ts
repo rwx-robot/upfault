@@ -9,3 +9,4 @@ declare module 'esbuild' {
     minify?: boolean;
     sourcemap?: boolean | 'inline' | 'external' | 'linked';
     splitting?: boolean;
+    outExtension?: { '.js': string; '.css': string };
