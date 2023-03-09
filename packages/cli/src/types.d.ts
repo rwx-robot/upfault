@@ -16,3 +16,5 @@ declare module 'esbuild' {
     plugins?: any[];
     [key: string]: any;
   }
+
+  export interface BuildResult {
