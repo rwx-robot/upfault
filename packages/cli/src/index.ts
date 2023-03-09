@@ -45,3 +45,4 @@ program
   .action(preview);
 
 program
+  .command('init')
