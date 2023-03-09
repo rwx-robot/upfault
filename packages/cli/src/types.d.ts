@@ -5,3 +5,4 @@ declare module 'esbuild' {
     outdir?: string;
     platform?: 'browser' | 'node' | 'neutral';
     format?: 'iife' | 'cjs' | 'esm';
+    target?: string | string[];
