@@ -6,3 +6,4 @@ declare module 'esbuild' {
     platform?: 'browser' | 'node' | 'neutral';
     format?: 'iife' | 'cjs' | 'esm';
     target?: string | string[];
+    minify?: boolean;
