@@ -23,3 +23,5 @@ declare module 'esbuild' {
     metafile?: any;
     outputFiles?: { path: string; contents: Uint8Array }[];
   }
+
+  export function build(options: BuildOptions): Promise<BuildResult>;
