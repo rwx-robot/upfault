@@ -48,3 +48,4 @@ program
   .command('init')
   .description('初始化新项目')
   .argument('[name]', '项目名称')
+  .option('-t, --template <template>', '模板: vanilla | react | vue', 'vanilla')
