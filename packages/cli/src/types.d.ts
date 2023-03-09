@@ -7,3 +7,4 @@ declare module 'esbuild' {
     format?: 'iife' | 'cjs' | 'esm';
     target?: string | string[];
     minify?: boolean;
+    sourcemap?: boolean | 'inline' | 'external' | 'linked';
