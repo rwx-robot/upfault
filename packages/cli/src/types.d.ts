@@ -14,3 +14,4 @@ declare module 'esbuild' {
     define?: Record<string, string>;
     external?: string[];
     plugins?: any[];
+    [key: string]: any;
