@@ -4,3 +4,4 @@ declare module 'esbuild' {
     bundle?: boolean;
     outdir?: string;
     platform?: 'browser' | 'node' | 'neutral';
+    format?: 'iife' | 'cjs' | 'esm';
