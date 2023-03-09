@@ -13,3 +13,4 @@ declare module 'esbuild' {
     loader?: Record<string, 'js' | 'jsx' | 'ts' | 'tsx' | 'css' | 'json' | 'text' | 'base64' | 'file' | 'dataurl' | 'empty' | 'copy' | 'binary'>;
     define?: Record<string, string>;
     external?: string[];
+    plugins?: any[];
