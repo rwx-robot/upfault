@@ -25,3 +25,5 @@ declare module 'esbuild' {
   }
 
   export function build(options: BuildOptions): Promise<BuildResult>;
+
+  export interface ServeOptions {
