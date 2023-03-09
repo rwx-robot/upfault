@@ -46,3 +46,4 @@ program
 
 program
   .command('init')
+  .description('初始化新项目')
