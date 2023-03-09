@@ -55,3 +55,4 @@ program
 program.parseAsync(process.argv).catch((err) => {
   console.error('❌ 命令执行失败:', err.message);
   process.exit(1);
+});
