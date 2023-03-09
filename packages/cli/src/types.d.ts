@@ -10,3 +10,4 @@ declare module 'esbuild' {
     sourcemap?: boolean | 'inline' | 'external' | 'linked';
     splitting?: boolean;
     outExtension?: { '.js': string; '.css': string };
+    loader?: Record<string, 'js' | 'jsx' | 'ts' | 'tsx' | 'css' | 'json' | 'text' | 'base64' | 'file' | 'dataurl' | 'empty' | 'copy' | 'binary'>;
