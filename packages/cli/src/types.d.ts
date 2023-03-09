@@ -15,3 +15,4 @@ declare module 'esbuild' {
     external?: string[];
     plugins?: any[];
     [key: string]: any;
+  }
