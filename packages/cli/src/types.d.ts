@@ -55,3 +55,4 @@ declare module 'commander' {
     option(flags: string, desc: string, defaultValue?: any): this;
     argument(name: string, desc: string, defaultValue?: any): this;
     action(handler: (...args: any[]) => Promise<void>): this;
+    parseAsync(argv: string[]): Promise<this>;
