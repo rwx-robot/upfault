@@ -53,3 +53,4 @@ declare module 'commander' {
     description(desc: string): this;
     version(ver: string, flags?: string): this;
     option(flags: string, desc: string, defaultValue?: any): this;
+    argument(name: string, desc: string, defaultValue?: any): this;
