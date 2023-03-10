@@ -46,3 +46,5 @@ declare module 'esbuild' {
 
   export function context(options: BuildOptions): Promise<{ build: () => Promise<BuildResult>; watch: () => Promise<any>; serve: (options: ServeOptions) => Promise<ServeResult>; dispose: () => Promise<void> }>;
 }
+
+declare module 'commander' {
