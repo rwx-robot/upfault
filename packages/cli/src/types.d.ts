@@ -37,3 +37,4 @@ declare module 'esbuild' {
   }
 
   export interface ServeResult {
+    port: number;
