@@ -40,3 +40,4 @@ declare module 'esbuild' {
     port: number;
     host: string;
     stop(): Promise<void>;
+  }
