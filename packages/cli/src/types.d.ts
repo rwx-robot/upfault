@@ -34,3 +34,4 @@ declare module 'esbuild' {
     certfile?: string;
     fallback?: string;
     onRequest?: (args: any) => void;
+  }
