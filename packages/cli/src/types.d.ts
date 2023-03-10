@@ -48,3 +48,4 @@ declare module 'esbuild' {
 }
 
 declare module 'commander' {
+  export class Command {
