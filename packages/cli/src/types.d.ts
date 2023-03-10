@@ -54,3 +54,4 @@ declare module 'commander' {
     version(ver: string, flags?: string): this;
     option(flags: string, desc: string, defaultValue?: any): this;
     argument(name: string, desc: string, defaultValue?: any): this;
+    action(handler: (...args: any[]) => Promise<void>): this;
