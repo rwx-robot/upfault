@@ -36,3 +36,4 @@ declare module 'esbuild' {
     onRequest?: (args: any) => void;
   }
 
+  export interface ServeResult {
