@@ -57,3 +57,4 @@ declare module 'commander' {
     action(handler: (...args: any[]) => Promise<void>): this;
     parseAsync(argv: string[]): Promise<this>;
     parse(argv: string[]): this;
+    command(name: string, desc?: string, opts?: { isDefault?: boolean }): Command;
