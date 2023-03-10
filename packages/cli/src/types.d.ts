@@ -51,3 +51,4 @@ declare module 'commander' {
   export class Command {
     name(name: string): this;
     description(desc: string): this;
+    version(ver: string, flags?: string): this;
