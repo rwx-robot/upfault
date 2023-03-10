@@ -60,3 +60,4 @@ declare module 'commander' {
     command(name: string, desc?: string, opts?: { isDefault?: boolean }): Command;
     addCommand(cmd: Command): this;
   }
+}
