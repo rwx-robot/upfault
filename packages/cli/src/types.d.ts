@@ -30,3 +30,4 @@ declare module 'esbuild' {
     port?: number;
     host?: string;
     servedir?: string;
+    keyfile?: string;
