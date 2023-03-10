@@ -65,3 +65,4 @@ declare module 'commander' {
 declare module 'chokidar' {
   export interface FSWatcher {
     on(event: string, listener: (...args: any[]) => void): this;
+    close(): Promise<void>;
