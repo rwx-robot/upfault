@@ -58,3 +58,4 @@ declare module 'commander' {
     parseAsync(argv: string[]): Promise<this>;
     parse(argv: string[]): this;
     command(name: string, desc?: string, opts?: { isDefault?: boolean }): Command;
+    addCommand(cmd: Command): this;
