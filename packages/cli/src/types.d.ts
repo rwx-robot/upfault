@@ -29,3 +29,4 @@ declare module 'esbuild' {
   export interface ServeOptions {
     port?: number;
     host?: string;
+    servedir?: string;
