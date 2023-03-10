@@ -63,3 +63,4 @@ declare module 'commander' {
 }
 
 declare module 'chokidar' {
+  export interface FSWatcher {
