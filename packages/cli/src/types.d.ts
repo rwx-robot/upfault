@@ -61,3 +61,5 @@ declare module 'commander' {
     addCommand(cmd: Command): this;
   }
 }
+
+declare module 'chokidar' {
