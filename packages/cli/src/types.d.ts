@@ -52,3 +52,4 @@ declare module 'commander' {
     name(name: string): this;
     description(desc: string): this;
     version(ver: string, flags?: string): this;
+    option(flags: string, desc: string, defaultValue?: any): this;
