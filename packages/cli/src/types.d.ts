@@ -41,3 +41,5 @@ declare module 'esbuild' {
     host: string;
     stop(): Promise<void>;
   }
+
+  export function serve(serveOptions: ServeOptions, buildOptions: BuildOptions): Promise<ServeResult>;
