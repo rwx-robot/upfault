@@ -32,3 +32,4 @@ declare module 'esbuild' {
     servedir?: string;
     keyfile?: string;
     certfile?: string;
+    fallback?: string;
