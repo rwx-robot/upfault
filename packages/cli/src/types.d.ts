@@ -59,3 +59,4 @@ declare module 'commander' {
     parse(argv: string[]): this;
     command(name: string, desc?: string, opts?: { isDefault?: boolean }): Command;
     addCommand(cmd: Command): this;
+  }
