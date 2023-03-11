@@ -69,3 +69,4 @@ declare module 'chokidar' {
   }
 
   export function watch(paths: string | string[], options?: any): FSWatcher;
+}
