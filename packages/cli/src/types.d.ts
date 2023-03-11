@@ -73,3 +73,4 @@ declare module 'chokidar' {
 
 declare module 'open' {
   export default function open(target: string, options?: { wait?: boolean }): Promise<any>;
+}
