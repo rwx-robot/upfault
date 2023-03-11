@@ -68,3 +68,4 @@ declare module 'chokidar' {
     close(): Promise<void>;
   }
 
+  export function watch(paths: string | string[], options?: any): FSWatcher;
