@@ -11,3 +11,4 @@
     "rootDir": "./src",
     "strict": false,
     "esModuleInterop": true,
+    "skipLibCheck": true,
