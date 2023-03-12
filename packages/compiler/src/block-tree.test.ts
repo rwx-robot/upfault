@@ -7,3 +7,4 @@ describe('Block Tree Builder', () => {
     filename,
     source: '',
     flags: {
+      flags: 0,
