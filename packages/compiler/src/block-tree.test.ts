@@ -4,3 +4,4 @@ import { buildBlockTree, BlockGranularity } from './block-tree';
 
 describe('Block Tree Builder', () => {
   const createContext = (filename = 'test.uf') => ({
+    filename,
