@@ -1,3 +1,4 @@
 {
   "name": "@upfault/compiler",
   "version": "0.2.0",
+  "description": "UpFault 编译器",
