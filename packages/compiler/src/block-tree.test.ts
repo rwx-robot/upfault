@@ -6,3 +6,4 @@ describe('Block Tree Builder', () => {
   const createContext = (filename = 'test.uf') => ({
     filename,
     source: '',
+    flags: {
