@@ -46,3 +46,4 @@ describe('Block Tree Builder', () => {
       const { ast, context } = parse('<div><span>{{ a }}</span>{{ b }}</div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Coarse });
       
+      expect(result.allBlocks).toHaveLength(1); // 只有根 Block
