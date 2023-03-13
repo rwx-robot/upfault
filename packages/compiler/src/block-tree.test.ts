@@ -14,3 +14,4 @@ describe('Block Tree Builder', () => {
       staticKeys: new Set(),
       dynamicSlots: [],
     },
+    imports: [],
