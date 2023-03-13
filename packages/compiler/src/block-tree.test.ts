@@ -19,3 +19,4 @@ describe('Block Tree Builder', () => {
     errors: [],
     warnings: [],
   });
+
