@@ -15,3 +15,4 @@ describe('Block Tree Builder', () => {
       dynamicSlots: [],
     },
     imports: [],
+    scope: { variables: new Map(), parent: null, level: 0 },
