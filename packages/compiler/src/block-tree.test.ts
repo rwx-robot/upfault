@@ -31,3 +31,5 @@ describe('Block Tree Builder', () => {
       expect(result.dynamicNodeCount).toBe(0);
       expect(result.staticNodeCount).toBeGreaterThan(0);
     });
+
+    it('应为动态内容创建动态节点', () => {
