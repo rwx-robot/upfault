@@ -28,3 +28,4 @@ describe('Block Tree Builder', () => {
       expect(result.rootBlock).toBeDefined();
       expect(result.rootBlock.type).toBe('root');
       expect(result.allBlocks).toHaveLength(1);
+      expect(result.dynamicNodeCount).toBe(0);
