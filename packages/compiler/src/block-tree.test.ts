@@ -12,3 +12,4 @@ describe('Block Tree Builder', () => {
       hasEvent: false,
       hasSlot: false,
       staticKeys: new Set(),
+      dynamicSlots: [],
