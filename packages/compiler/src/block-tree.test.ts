@@ -36,3 +36,4 @@ describe('Block Tree Builder', () => {
       const { ast, context } = parse('<div>{{ count }}</div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
       
+      expect(result.dynamicNodeCount).toBeGreaterThan(0);
