@@ -18,3 +18,4 @@ describe('Block Tree Builder', () => {
     scope: { variables: new Map(), parent: null, level: 0 },
     errors: [],
     warnings: [],
+  });
