@@ -22,3 +22,4 @@ describe('Block Tree Builder', () => {
 
   describe('基础 Block Tree 构建', () => {
     it('应为简单模板创建根 Block', () => {
+      const { ast, context } = parse('<div>Hello</div>');
