@@ -45,3 +45,4 @@ describe('Block Tree Builder', () => {
     it('Coarse 粒度：仅根 Block', () => {
       const { ast, context } = parse('<div><span>{{ a }}</span>{{ b }}</div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Coarse });
+      
