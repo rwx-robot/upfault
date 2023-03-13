@@ -8,3 +8,4 @@ describe('Block Tree Builder', () => {
     source: '',
     flags: {
       flags: 0,
+      dynamicProps: [],
