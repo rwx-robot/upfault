@@ -39,3 +39,4 @@ describe('Block Tree Builder', () => {
       expect(result.dynamicNodeCount).toBeGreaterThan(0);
       expect(result.rootBlock.compileFlags).toBeGreaterThan(0);
     });
+  });
