@@ -33,3 +33,4 @@ describe('Block Tree Builder', () => {
     });
 
     it('应为动态内容创建动态节点', () => {
+      const { ast, context } = parse('<div>{{ count }}</div>');
