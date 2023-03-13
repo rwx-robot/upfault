@@ -40,3 +40,4 @@ describe('Block Tree Builder', () => {
       expect(result.rootBlock.compileFlags).toBeGreaterThan(0);
     });
   });
+
