@@ -47,3 +47,4 @@ describe('Block Tree Builder', () => {
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Coarse });
       
       expect(result.allBlocks).toHaveLength(1); // 只有根 Block
+    });
