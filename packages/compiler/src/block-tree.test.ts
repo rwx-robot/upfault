@@ -9,3 +9,4 @@ describe('Block Tree Builder', () => {
     flags: {
       flags: 0,
       dynamicProps: [],
+      hasEvent: false,
