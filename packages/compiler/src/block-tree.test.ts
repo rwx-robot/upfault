@@ -24,3 +24,4 @@ describe('Block Tree Builder', () => {
     it('应为简单模板创建根 Block', () => {
       const { ast, context } = parse('<div>Hello</div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Coarse });
+      
