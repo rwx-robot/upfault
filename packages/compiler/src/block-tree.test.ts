@@ -41,3 +41,4 @@ describe('Block Tree Builder', () => {
     });
   });
 
+  describe('粒度控制', () => {
