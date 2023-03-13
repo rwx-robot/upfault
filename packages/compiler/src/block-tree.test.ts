@@ -25,3 +25,4 @@ describe('Block Tree Builder', () => {
       const { ast, context } = parse('<div>Hello</div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Coarse });
       
+      expect(result.rootBlock).toBeDefined();
