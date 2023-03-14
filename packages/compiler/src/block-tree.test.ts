@@ -54,3 +54,4 @@ describe('Block Tree Builder', () => {
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
       
       // v-for 应创建单独 Block
+      const forBlocks = result.allBlocks.filter(b => b.type === 'for');
