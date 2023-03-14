@@ -48,3 +48,4 @@ describe('Block Tree Builder', () => {
       
       expect(result.allBlocks).toHaveLength(1); // 只有根 Block
     });
+
