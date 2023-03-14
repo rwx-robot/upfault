@@ -60,3 +60,4 @@ describe('Block Tree Builder', () => {
 
     it('Fine 粒度：每个动态节点创建 Block', () => {
       const { ast, context } = parse('<div>{{ a }}{{ b }}</div>');
+      const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Fine });
