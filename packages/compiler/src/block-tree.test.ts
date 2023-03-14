@@ -63,3 +63,4 @@ describe('Block Tree Builder', () => {
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Fine });
       
       // 两个插值各自创建 Block
+      expect(result.allBlocks.length).toBeGreaterThanOrEqual(2);
