@@ -66,3 +66,4 @@ describe('Block Tree Builder', () => {
       expect(result.allBlocks.length).toBeGreaterThanOrEqual(2);
     });
   });
+
