@@ -57,3 +57,5 @@ describe('Block Tree Builder', () => {
       const forBlocks = result.allBlocks.filter(b => b.type === 'for');
       expect(forBlocks.length).toBeGreaterThanOrEqual(1);
     });
+
+    it('Fine 粒度：每个动态节点创建 Block', () => {
