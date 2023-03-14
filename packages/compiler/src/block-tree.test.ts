@@ -86,3 +86,4 @@ describe('Block Tree Builder', () => {
     });
 
     it('Block 应标记插槽', () => {
+      const { ast, context } = parse('<div><slot name="header" /></div>');
