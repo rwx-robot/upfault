@@ -78,3 +78,4 @@ describe('Block Tree Builder', () => {
     });
 
     it('Block 应收集动态属性', () => {
+      const { ast, context } = parse('<div :class="cls" @click="fn">{{ text }}</div>');
