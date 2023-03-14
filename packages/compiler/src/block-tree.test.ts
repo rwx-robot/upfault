@@ -50,3 +50,4 @@ describe('Block Tree Builder', () => {
     });
 
     it('Medium 粒度：为控制流创建 Block', () => {
+      const { ast, context } = parse('<div v-for="item in items">{{ item }}</div>');
