@@ -73,3 +73,4 @@ describe('Block Tree Builder', () => {
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
       
       const forBlock = result.allBlocks.find(b => b.type === 'for');
+      expect(forBlock).toBeDefined();
