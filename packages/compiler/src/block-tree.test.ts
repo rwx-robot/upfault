@@ -62,3 +62,4 @@ describe('Block Tree Builder', () => {
       const { ast, context } = parse('<div>{{ a }}{{ b }}</div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Fine });
       
+      // 两个插值各自创建 Block
