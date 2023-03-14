@@ -83,3 +83,4 @@ describe('Block Tree Builder', () => {
       
       expect(result.rootBlock.dynamicProps.has('class')).toBe(true);
       expect(result.rootBlock.hasEvent).toBe(true);
+    });
