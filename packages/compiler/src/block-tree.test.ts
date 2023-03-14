@@ -69,3 +69,4 @@ describe('Block Tree Builder', () => {
 
   describe('Block 属性', () => {
     it('Block 应包含正确的优先级', () => {
+      const { ast, context } = parse('<div v-for="i in items">{{ i }}</div>');
