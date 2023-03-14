@@ -49,3 +49,4 @@ describe('Block Tree Builder', () => {
       expect(result.allBlocks).toHaveLength(1); // 只有根 Block
     });
 
+    it('Medium 粒度：为控制流创建 Block', () => {
