@@ -53,3 +53,4 @@ describe('Block Tree Builder', () => {
       const { ast, context } = parse('<div v-for="item in items">{{ item }}</div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
       
+      // v-for 应创建单独 Block
