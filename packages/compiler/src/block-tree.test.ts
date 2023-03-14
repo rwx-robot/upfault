@@ -56,3 +56,4 @@ describe('Block Tree Builder', () => {
       // v-for 应创建单独 Block
       const forBlocks = result.allBlocks.filter(b => b.type === 'for');
       expect(forBlocks.length).toBeGreaterThanOrEqual(1);
+    });
