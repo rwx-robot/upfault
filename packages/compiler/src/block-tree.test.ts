@@ -65,3 +65,4 @@ describe('Block Tree Builder', () => {
       // 两个插值各自创建 Block
       expect(result.allBlocks.length).toBeGreaterThanOrEqual(2);
     });
+  });
