@@ -89,3 +89,4 @@ describe('Block Tree Builder', () => {
       const { ast, context } = parse('<div><slot name="header" /></div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
       
+      // 暂时跳过：slot 检测在 block-tree 中尚未完全实现
