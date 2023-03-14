@@ -82,3 +82,4 @@ describe('Block Tree Builder', () => {
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
       
       expect(result.rootBlock.dynamicProps.has('class')).toBe(true);
+      expect(result.rootBlock.hasEvent).toBe(true);
