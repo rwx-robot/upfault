@@ -80,3 +80,4 @@ describe('Block Tree Builder', () => {
     it('Block 应收集动态属性', () => {
       const { ast, context } = parse('<div :class="cls" @click="fn">{{ text }}</div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
+      
