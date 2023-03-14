@@ -85,3 +85,4 @@ describe('Block Tree Builder', () => {
       expect(result.rootBlock.hasEvent).toBe(true);
     });
 
+    it('Block 应标记插槽', () => {
