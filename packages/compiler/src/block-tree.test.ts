@@ -76,3 +76,5 @@ describe('Block Tree Builder', () => {
       expect(forBlock).toBeDefined();
       expect(forBlock!.priority).toBeGreaterThan(100);
     });
+
+    it('Block 应收集动态属性', () => {
