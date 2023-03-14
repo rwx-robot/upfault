@@ -67,3 +67,4 @@ describe('Block Tree Builder', () => {
     });
   });
 
+  describe('Block 属性', () => {
