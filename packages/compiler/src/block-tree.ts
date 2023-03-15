@@ -11,3 +11,5 @@ import type { TemplateAST, TemplateNode, ElementNode, ComponentNode, SlotNode, I
 // ============================================================================
 // Block 类型定义
 // ============================================================================
+
+export const enum BlockGranularity {
