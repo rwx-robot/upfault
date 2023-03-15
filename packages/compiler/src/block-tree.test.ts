@@ -100,3 +100,4 @@ describe('Block Tree Builder', () => {
       const { ast, context } = parse('<div v-if="show"><span v-for="i in items">{{ i }}</span></div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
       
+      const ifBlock = result.allBlocks.find(b => b.type === 'if');
