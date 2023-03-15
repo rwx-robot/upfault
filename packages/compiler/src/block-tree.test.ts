@@ -90,3 +90,4 @@ describe('Block Tree Builder', () => {
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
       
       // 暂时跳过：slot 检测在 block-tree 中尚未完全实现
+      // expect(result.rootBlock.hasSlot).toBe(true);
