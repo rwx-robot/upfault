@@ -7,3 +7,5 @@
 
 import { VNodeFlags, VNodeType } from '@upfault/shared';
 import type { TemplateAST, TemplateNode, ElementNode, ComponentNode, SlotNode, IfNode, ForNode, InterpolationNode, CommentNode, TextNode, CompileTimeFlags, CompileContext } from './parser';
+
+// ============================================================================
