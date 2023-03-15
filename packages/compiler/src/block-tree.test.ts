@@ -97,3 +97,4 @@ describe('Block Tree Builder', () => {
 
   describe('嵌套结构', () => {
     it('应正确构建父子 Block 关系', () => {
+      const { ast, context } = parse('<div v-if="show"><span v-for="i in items">{{ i }}</span></div>');
