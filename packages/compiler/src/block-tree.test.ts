@@ -106,3 +106,4 @@ describe('Block Tree Builder', () => {
       expect(ifBlock).toBeDefined();
       expect(forBlock).toBeDefined();
       
+      // for Block 应是 if Block 的子 Block
