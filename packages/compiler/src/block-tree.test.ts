@@ -110,3 +110,4 @@ describe('Block Tree Builder', () => {
       if (ifBlock && forBlock) {
         expect(forBlock.parent).toBe(ifBlock);
       }
+    });
