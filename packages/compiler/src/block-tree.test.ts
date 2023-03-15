@@ -102,3 +102,4 @@ describe('Block Tree Builder', () => {
       
       const ifBlock = result.allBlocks.find(b => b.type === 'if');
       const forBlock = result.allBlocks.find(b => b.type === 'for');
+      
