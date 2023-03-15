@@ -14,3 +14,4 @@ import type { TemplateAST, TemplateNode, ElementNode, ComponentNode, SlotNode, I
 
 export const enum BlockGranularity {
   /** 粗粒度：整个组件为一个 Block */
+  Coarse = 'coarse',
