@@ -108,3 +108,4 @@ describe('Block Tree Builder', () => {
       
       // for Block 应是 if Block 的子 Block
       if (ifBlock && forBlock) {
+        expect(forBlock.parent).toBe(ifBlock);
