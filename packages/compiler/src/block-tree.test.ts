@@ -94,3 +94,5 @@ describe('Block Tree Builder', () => {
       expect(result.rootBlock).toBeDefined();
     });
   });
+
+  describe('嵌套结构', () => {
