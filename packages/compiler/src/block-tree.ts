@@ -5,3 +5,4 @@
  * 参考 Vue 3 Block Tree 设计，但简化为三档粒度
  */
 
+import { VNodeFlags, VNodeType } from '@upfault/shared';
