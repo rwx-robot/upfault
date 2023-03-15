@@ -16,3 +16,4 @@ export const enum BlockGranularity {
   /** 粗粒度：整个组件为一个 Block */
   Coarse = 'coarse',
   /** 中粒度：按控制流结构分块 (if/for/组件) */
+  Medium = 'medium',
