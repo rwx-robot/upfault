@@ -101,3 +101,4 @@ describe('Block Tree Builder', () => {
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
       
       const ifBlock = result.allBlocks.find(b => b.type === 'if');
+      const forBlock = result.allBlocks.find(b => b.type === 'for');
