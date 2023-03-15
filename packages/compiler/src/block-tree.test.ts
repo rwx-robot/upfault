@@ -104,3 +104,4 @@ describe('Block Tree Builder', () => {
       const forBlock = result.allBlocks.find(b => b.type === 'for');
       
       expect(ifBlock).toBeDefined();
+      expect(forBlock).toBeDefined();
