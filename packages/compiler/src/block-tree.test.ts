@@ -92,3 +92,4 @@ describe('Block Tree Builder', () => {
       // 暂时跳过：slot 检测在 block-tree 中尚未完全实现
       // expect(result.rootBlock.hasSlot).toBe(true);
       expect(result.rootBlock).toBeDefined();
+    });
