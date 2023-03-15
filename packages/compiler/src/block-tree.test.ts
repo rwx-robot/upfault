@@ -105,3 +105,4 @@ describe('Block Tree Builder', () => {
       
       expect(ifBlock).toBeDefined();
       expect(forBlock).toBeDefined();
+      
