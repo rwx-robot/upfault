@@ -99,3 +99,4 @@ describe('Block Tree Builder', () => {
     it('应正确构建父子 Block 关系', () => {
       const { ast, context } = parse('<div v-if="show"><span v-for="i in items">{{ i }}</span></div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
+      
