@@ -93,3 +93,4 @@ describe('Block Tree Builder', () => {
       // expect(result.rootBlock.hasSlot).toBe(true);
       expect(result.rootBlock).toBeDefined();
     });
+  });
