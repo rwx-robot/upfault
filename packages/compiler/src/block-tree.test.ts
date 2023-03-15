@@ -96,3 +96,4 @@ describe('Block Tree Builder', () => {
   });
 
   describe('嵌套结构', () => {
+    it('应正确构建父子 Block 关系', () => {
