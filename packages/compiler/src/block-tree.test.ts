@@ -112,3 +112,4 @@ describe('Block Tree Builder', () => {
       }
     });
   });
+});
