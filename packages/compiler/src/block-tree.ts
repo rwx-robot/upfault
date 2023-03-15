@@ -19,3 +19,4 @@ export const enum BlockGranularity {
   Medium = 'medium',
   /** 细粒度：每个动态节点独立 Block */
   Fine = 'fine',
+}
