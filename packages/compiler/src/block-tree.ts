@@ -60,3 +60,4 @@ export interface BlockNode {
   // 动态性分析
   isDynamic: boolean;
   dynamicProps: string[];
+  patchFlags: number; // PatchFlags 运行时优化
