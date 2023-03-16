@@ -37,3 +37,5 @@ export interface Block {
   hasEvent: boolean;
   hasSlot: boolean;
 }
+
+export const enum BlockType {
