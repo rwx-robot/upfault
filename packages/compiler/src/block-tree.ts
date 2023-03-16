@@ -27,3 +27,4 @@ export interface Block {
   granularity: BlockGranularity;
   root: BlockNode;
   dynamicNodes: BlockNode[]; // 编译时确定的动态节点
+  priority: number; // 0-255
