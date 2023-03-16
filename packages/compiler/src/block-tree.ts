@@ -39,3 +39,4 @@ export interface Block {
 }
 
 export const enum BlockType {
+  Root = 'root',           // 组件根 Block
