@@ -47,3 +47,5 @@ export const enum BlockType {
   For = 'for',             // v-for Block
   Fragment = 'fragment',   // Fragment Block
 }
+
+export interface BlockNode {
