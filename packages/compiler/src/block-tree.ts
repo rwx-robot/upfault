@@ -44,3 +44,4 @@ export const enum BlockType {
   Component = 'component', // 组件 Block
   Slot = 'slot',           // 插槽 Block
   If = 'if',               // v-if Block
+  For = 'for',             // v-for Block
