@@ -25,3 +25,4 @@ export interface Block {
   id: string;
   type: BlockType;
   granularity: BlockGranularity;
+  root: BlockNode;
