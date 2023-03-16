@@ -24,3 +24,4 @@ export const enum BlockGranularity {
 export interface Block {
   id: string;
   type: BlockType;
+  granularity: BlockGranularity;
