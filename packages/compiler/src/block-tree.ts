@@ -34,3 +34,4 @@ export interface Block {
   compileFlags: number; // 聚合的 VNodeFlags
   staticKeys: Set<string>;
   dynamicProps: Set<string>;
+  hasEvent: boolean;
