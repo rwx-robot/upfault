@@ -61,3 +61,4 @@ export interface BlockNode {
   isDynamic: boolean;
   dynamicProps: string[];
   patchFlags: number; // PatchFlags 运行时优化
+  textContent?: string; // 静态文本内容
