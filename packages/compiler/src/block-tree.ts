@@ -36,3 +36,4 @@ export interface Block {
   dynamicProps: Set<string>;
   hasEvent: boolean;
   hasSlot: boolean;
+}
