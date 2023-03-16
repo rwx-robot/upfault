@@ -46,3 +46,4 @@ export const enum BlockType {
   If = 'if',               // v-if Block
   For = 'for',             // v-for Block
   Fragment = 'fragment',   // Fragment Block
+}
