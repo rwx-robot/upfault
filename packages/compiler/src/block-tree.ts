@@ -45,3 +45,4 @@ export const enum BlockType {
   Slot = 'slot',           // 插槽 Block
   If = 'if',               // v-if Block
   For = 'for',             // v-for Block
+  Fragment = 'fragment',   // Fragment Block
