@@ -33,3 +33,4 @@ export interface Block {
   // 编译时元数据
   compileFlags: number; // 聚合的 VNodeFlags
   staticKeys: Set<string>;
+  dynamicProps: Set<string>;
