@@ -35,3 +35,4 @@ export interface Block {
   staticKeys: Set<string>;
   dynamicProps: Set<string>;
   hasEvent: boolean;
+  hasSlot: boolean;
