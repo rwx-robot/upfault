@@ -52,3 +52,4 @@ export interface BlockNode {
   id: string;
   nodeType: VNodeType;
   tag: string;
+  flags: number; // VNodeFlags
