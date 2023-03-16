@@ -30,3 +30,4 @@ export interface Block {
   priority: number; // 0-255
   parent: Block | null;
   children: Block[];
+  // 编译时元数据
