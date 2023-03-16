@@ -56,3 +56,4 @@ export interface BlockNode {
   props: PropMeta[];
   children: BlockNode[];
   parent: BlockNode | null;
+  block: Block | null; // 归属的 Block
