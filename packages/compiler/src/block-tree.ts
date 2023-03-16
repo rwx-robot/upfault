@@ -55,3 +55,4 @@ export interface BlockNode {
   flags: number; // VNodeFlags
   props: PropMeta[];
   children: BlockNode[];
+  parent: BlockNode | null;
