@@ -31,3 +31,4 @@ export interface Block {
   parent: Block | null;
   children: Block[];
   // 编译时元数据
+  compileFlags: number; // 聚合的 VNodeFlags
