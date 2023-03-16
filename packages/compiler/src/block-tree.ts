@@ -51,3 +51,4 @@ export const enum BlockType {
 export interface BlockNode {
   id: string;
   nodeType: VNodeType;
+  tag: string;
