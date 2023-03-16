@@ -59,3 +59,4 @@ export interface BlockNode {
   block: Block | null; // 归属的 Block
   // 动态性分析
   isDynamic: boolean;
+  dynamicProps: string[];
