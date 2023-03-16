@@ -40,3 +40,4 @@ export interface Block {
 
 export const enum BlockType {
   Root = 'root',           // 组件根 Block
+  Element = 'element',     // 普通元素 Block
