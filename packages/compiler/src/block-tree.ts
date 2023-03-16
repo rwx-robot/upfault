@@ -20,3 +20,5 @@ export const enum BlockGranularity {
   /** 细粒度：每个动态节点独立 Block */
   Fine = 'fine',
 }
+
+export interface Block {
