@@ -92,3 +92,5 @@ export interface BlockTreeResult {
   dynamicNodeCount: number;
   staticNodeCount: number;
 }
+
+export function buildBlockTree(
