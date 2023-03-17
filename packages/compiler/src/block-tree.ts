@@ -70,3 +70,4 @@ export interface PropMeta {
   name: string;
   isDynamic: boolean;
   isEvent: boolean;
+  isKey: boolean;
