@@ -72,3 +72,4 @@ export interface PropMeta {
   isEvent: boolean;
   isKey: boolean;
   isRef: boolean;
+  isSlot: boolean;
