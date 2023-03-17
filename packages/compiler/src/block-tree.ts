@@ -85,3 +85,5 @@ export interface BlockTreeBuilderOptions {
   maxBlockDepth: number;
   enableFineGrained: boolean;
 }
+
+export interface BlockTreeResult {
