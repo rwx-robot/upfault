@@ -103,3 +103,4 @@ export function buildBlockTree(
 }
 
 class BlockTreeBuilder {
+  private ast: TemplateAST;
