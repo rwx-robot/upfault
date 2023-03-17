@@ -102,3 +102,4 @@ export function buildBlockTree(
   return builder.build();
 }
 
+class BlockTreeBuilder {
