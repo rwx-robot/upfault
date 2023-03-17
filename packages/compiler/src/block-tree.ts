@@ -71,3 +71,4 @@ export interface PropMeta {
   isDynamic: boolean;
   isEvent: boolean;
   isKey: boolean;
+  isRef: boolean;
