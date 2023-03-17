@@ -96,3 +96,4 @@ export interface BlockTreeResult {
 export function buildBlockTree(
   ast: TemplateAST, 
   context: CompileContext,
+  options: BlockTreeBuilderOptions = { granularity: BlockGranularity.Medium, maxBlockDepth: 10, enableFineGrained: true }
