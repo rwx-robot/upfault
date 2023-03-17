@@ -65,3 +65,5 @@ export interface BlockNode {
   // 代码生成用
   hoisted?: string;
 }
+
+export interface PropMeta {
