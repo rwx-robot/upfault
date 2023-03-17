@@ -100,3 +100,4 @@ export function buildBlockTree(
 ): BlockTreeResult {
   const builder = new BlockTreeBuilder(ast, context, options);
   return builder.build();
+}
