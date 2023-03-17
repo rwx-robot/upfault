@@ -74,3 +74,4 @@ export interface PropMeta {
   isRef: boolean;
   isSlot: boolean;
   valueType: 'static' | 'expression' | 'dynamic';
+}
