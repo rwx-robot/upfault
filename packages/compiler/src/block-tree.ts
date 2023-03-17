@@ -64,3 +64,4 @@ export interface BlockNode {
   textContent?: string; // 静态文本内容
   // 代码生成用
   hoisted?: string;
+}
