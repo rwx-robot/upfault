@@ -89,3 +89,4 @@ export interface BlockTreeBuilderOptions {
 export interface BlockTreeResult {
   rootBlock: Block;
   allBlocks: Block[];
+  dynamicNodeCount: number;
