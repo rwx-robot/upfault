@@ -90,3 +90,4 @@ export interface BlockTreeResult {
   rootBlock: Block;
   allBlocks: Block[];
   dynamicNodeCount: number;
+  staticNodeCount: number;
