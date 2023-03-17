@@ -68,3 +68,4 @@ export interface BlockNode {
 
 export interface PropMeta {
   name: string;
+  isDynamic: boolean;
