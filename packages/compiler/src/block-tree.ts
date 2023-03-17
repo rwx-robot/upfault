@@ -94,3 +94,4 @@ export interface BlockTreeResult {
 }
 
 export function buildBlockTree(
+  ast: TemplateAST, 
