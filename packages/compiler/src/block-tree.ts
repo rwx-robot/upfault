@@ -87,3 +87,4 @@ export interface BlockTreeBuilderOptions {
 }
 
 export interface BlockTreeResult {
+  rootBlock: Block;
