@@ -83,3 +83,4 @@ export interface PropMeta {
 export interface BlockTreeBuilderOptions {
   granularity: BlockGranularity;
   maxBlockDepth: number;
+  enableFineGrained: boolean;
