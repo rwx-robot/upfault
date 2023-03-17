@@ -99,3 +99,4 @@ export function buildBlockTree(
   options: BlockTreeBuilderOptions = { granularity: BlockGranularity.Medium, maxBlockDepth: 10, enableFineGrained: true }
 ): BlockTreeResult {
   const builder = new BlockTreeBuilder(ast, context, options);
+  return builder.build();
