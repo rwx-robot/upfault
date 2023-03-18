@@ -143,3 +143,4 @@ class BlockTreeBuilder {
       type,
       granularity,
       root: null!,
+      dynamicNodes: [],
