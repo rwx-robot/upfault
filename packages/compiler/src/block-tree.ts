@@ -137,3 +137,4 @@ class BlockTreeBuilder {
   }
 
   private createBlock(type: BlockType, granularity: BlockGranularity): Block {
+    const id = `block_${++this.blockIdCounter}`;
