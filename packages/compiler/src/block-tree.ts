@@ -108,3 +108,4 @@ class BlockTreeBuilder {
   private options: BlockTreeBuilderOptions;
   private blockIdCounter: number = 0;
   private nodeIdCounter: number = 0;
+  private allBlocks: Block[] = [];
