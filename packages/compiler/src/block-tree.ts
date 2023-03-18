@@ -141,3 +141,4 @@ class BlockTreeBuilder {
     const block: Block = {
       id,
       type,
+      granularity,
