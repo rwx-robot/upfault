@@ -122,3 +122,4 @@ class BlockTreeBuilder {
     const rootBlock = this.createBlock(BlockType.Root, BlockGranularity.Coarse);
     this.currentBlock = rootBlock;
     
+    // 递归构建 Block Tree
