@@ -118,3 +118,4 @@ class BlockTreeBuilder {
   }
 
   build(): BlockTreeResult {
+    // 创建根 Block
