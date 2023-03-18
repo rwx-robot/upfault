@@ -121,3 +121,4 @@ class BlockTreeBuilder {
     // 创建根 Block
     const rootBlock = this.createBlock(BlockType.Root, BlockGranularity.Coarse);
     this.currentBlock = rootBlock;
+    
