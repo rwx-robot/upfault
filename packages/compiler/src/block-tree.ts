@@ -140,3 +140,4 @@ class BlockTreeBuilder {
     const id = `block_${++this.blockIdCounter}`;
     const block: Block = {
       id,
+      type,
