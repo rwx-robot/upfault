@@ -112,3 +112,4 @@ class BlockTreeBuilder {
   private currentBlock: Block | null = null;
 
   constructor(ast: TemplateAST, context: CompileContext, options: BlockTreeBuilderOptions) {
+    this.ast = ast;
