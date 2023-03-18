@@ -126,3 +126,4 @@ class BlockTreeBuilder {
     const rootNode = this.buildBlockNodes(this.ast.children, rootBlock);
     
     rootBlock.root = rootNode;
+    this.collectDynamicNodes(rootBlock);
