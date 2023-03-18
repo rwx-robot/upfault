@@ -135,3 +135,5 @@ class BlockTreeBuilder {
       staticNodeCount: this.countStaticNodes(rootBlock),
     };
   }
+
+  private createBlock(type: BlockType, granularity: BlockGranularity): Block {
