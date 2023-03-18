@@ -115,3 +115,4 @@ class BlockTreeBuilder {
     this.ast = ast;
     this.context = context;
     this.options = options;
+  }
