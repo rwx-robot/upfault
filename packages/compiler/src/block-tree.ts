@@ -130,3 +130,4 @@ class BlockTreeBuilder {
     
     return {
       rootBlock,
+      allBlocks: this.allBlocks,
