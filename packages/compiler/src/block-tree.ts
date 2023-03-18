@@ -131,3 +131,4 @@ class BlockTreeBuilder {
     return {
       rootBlock,
       allBlocks: this.allBlocks,
+      dynamicNodeCount: this.countDynamicNodes(rootBlock),
