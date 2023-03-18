@@ -117,3 +117,4 @@ class BlockTreeBuilder {
     this.options = options;
   }
 
+  build(): BlockTreeResult {
