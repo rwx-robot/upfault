@@ -106,3 +106,4 @@ class BlockTreeBuilder {
   private ast: TemplateAST;
   private context: CompileContext;
   private options: BlockTreeBuilderOptions;
+  private blockIdCounter: number = 0;
