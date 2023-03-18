@@ -105,3 +105,4 @@ export function buildBlockTree(
 class BlockTreeBuilder {
   private ast: TemplateAST;
   private context: CompileContext;
+  private options: BlockTreeBuilderOptions;
