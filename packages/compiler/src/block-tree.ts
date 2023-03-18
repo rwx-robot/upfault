@@ -110,3 +110,5 @@ class BlockTreeBuilder {
   private nodeIdCounter: number = 0;
   private allBlocks: Block[] = [];
   private currentBlock: Block | null = null;
+
+  constructor(ast: TemplateAST, context: CompileContext, options: BlockTreeBuilderOptions) {
