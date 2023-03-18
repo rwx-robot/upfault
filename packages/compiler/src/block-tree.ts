@@ -144,3 +144,4 @@ class BlockTreeBuilder {
       granularity,
       root: null!,
       dynamicNodes: [],
+      priority: this.calculatePriority(type),
