@@ -134,3 +134,4 @@ class BlockTreeBuilder {
       dynamicNodeCount: this.countDynamicNodes(rootBlock),
       staticNodeCount: this.countStaticNodes(rootBlock),
     };
+  }
