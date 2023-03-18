@@ -113,3 +113,4 @@ class BlockTreeBuilder {
 
   constructor(ast: TemplateAST, context: CompileContext, options: BlockTreeBuilderOptions) {
     this.ast = ast;
+    this.context = context;
