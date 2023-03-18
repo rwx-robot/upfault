@@ -129,3 +129,4 @@ class BlockTreeBuilder {
     this.collectDynamicNodes(rootBlock);
     
     return {
+      rootBlock,
