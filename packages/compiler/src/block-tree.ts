@@ -142,3 +142,4 @@ class BlockTreeBuilder {
       id,
       type,
       granularity,
+      root: null!,
