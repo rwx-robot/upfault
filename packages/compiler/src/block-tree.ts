@@ -124,3 +124,4 @@ class BlockTreeBuilder {
     
     // 递归构建 Block Tree
     const rootNode = this.buildBlockNodes(this.ast.children, rootBlock);
+    
