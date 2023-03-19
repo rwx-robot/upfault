@@ -160,3 +160,4 @@ class BlockTreeBuilder {
       this.currentBlock.children.push(block);
     }
     
+    return block;
