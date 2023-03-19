@@ -158,3 +158,4 @@ class BlockTreeBuilder {
     
     if (this.currentBlock) {
       this.currentBlock.children.push(block);
+    }
