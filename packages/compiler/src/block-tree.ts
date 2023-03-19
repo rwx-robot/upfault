@@ -162,3 +162,5 @@ class BlockTreeBuilder {
     
     return block;
   }
+
+  private calculatePriority(type: BlockType): number {
