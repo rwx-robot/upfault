@@ -150,3 +150,4 @@ class BlockTreeBuilder {
       compileFlags: 0,
       staticKeys: new Set(),
       dynamicProps: new Set(),
+      hasEvent: false,
