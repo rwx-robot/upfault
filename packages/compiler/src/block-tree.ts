@@ -153,3 +153,4 @@ class BlockTreeBuilder {
       hasEvent: false,
       hasSlot: false,
     };
+    
