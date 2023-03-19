@@ -180,3 +180,4 @@ class BlockTreeBuilder {
     // 根据粒度决定是否创建子 Block
     const childNodes: BlockNode[] = [];
     
+    for (const node of nodes) {
