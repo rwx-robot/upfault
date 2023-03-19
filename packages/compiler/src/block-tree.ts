@@ -167,3 +167,4 @@ class BlockTreeBuilder {
     // 优先级：交互 > 列表 > 条件 > 静态
     switch (type) {
       case BlockType.Component: return 200;
+      case BlockType.For: return 150;
