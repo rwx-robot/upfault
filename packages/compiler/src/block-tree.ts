@@ -175,3 +175,4 @@ class BlockTreeBuilder {
       case BlockType.Root: return 10;
     }
   }
+
