@@ -168,3 +168,4 @@ class BlockTreeBuilder {
     switch (type) {
       case BlockType.Component: return 200;
       case BlockType.For: return 150;
+      case BlockType.If: return 100;
