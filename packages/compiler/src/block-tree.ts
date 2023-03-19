@@ -148,3 +148,4 @@ class BlockTreeBuilder {
       parent: this.currentBlock,
       children: [],
       compileFlags: 0,
+      staticKeys: new Set(),
