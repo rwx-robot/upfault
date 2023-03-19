@@ -164,3 +164,4 @@ class BlockTreeBuilder {
   }
 
   private calculatePriority(type: BlockType): number {
+    // 优先级：交互 > 列表 > 条件 > 静态
