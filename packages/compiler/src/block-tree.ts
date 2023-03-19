@@ -169,3 +169,4 @@ class BlockTreeBuilder {
       case BlockType.Component: return 200;
       case BlockType.For: return 150;
       case BlockType.If: return 100;
+      case BlockType.Slot: return 80;
