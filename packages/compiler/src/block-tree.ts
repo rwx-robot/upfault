@@ -174,3 +174,4 @@ class BlockTreeBuilder {
       case BlockType.Fragment: return 30;
       case BlockType.Root: return 10;
     }
+  }
