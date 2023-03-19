@@ -181,3 +181,4 @@ class BlockTreeBuilder {
     const childNodes: BlockNode[] = [];
     
     for (const node of nodes) {
+      const blockNode = this.convertToBlockNode(node, parentBlock);
