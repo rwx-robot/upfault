@@ -151,3 +151,4 @@ class BlockTreeBuilder {
       staticKeys: new Set(),
       dynamicProps: new Set(),
       hasEvent: false,
+      hasSlot: false,
