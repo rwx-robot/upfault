@@ -147,3 +147,4 @@ class BlockTreeBuilder {
       priority: this.calculatePriority(type),
       parent: this.currentBlock,
       children: [],
+      compileFlags: 0,
