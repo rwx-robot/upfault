@@ -176,3 +176,4 @@ class BlockTreeBuilder {
     }
   }
 
+  private buildBlockNodes(nodes: TemplateNode[], parentBlock: Block): BlockNode {
