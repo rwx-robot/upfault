@@ -154,3 +154,4 @@ class BlockTreeBuilder {
       hasSlot: false,
     };
     
+    this.allBlocks.push(block);
