@@ -146,3 +146,4 @@ class BlockTreeBuilder {
       dynamicNodes: [],
       priority: this.calculatePriority(type),
       parent: this.currentBlock,
+      children: [],
