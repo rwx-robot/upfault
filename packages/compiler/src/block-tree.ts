@@ -172,3 +172,4 @@ class BlockTreeBuilder {
       case BlockType.Slot: return 80;
       case BlockType.Element: return 50;
       case BlockType.Fragment: return 30;
+      case BlockType.Root: return 10;
