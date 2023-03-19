@@ -179,3 +179,4 @@ class BlockTreeBuilder {
   private buildBlockNodes(nodes: TemplateNode[], parentBlock: Block): BlockNode {
     // 根据粒度决定是否创建子 Block
     const childNodes: BlockNode[] = [];
+    
