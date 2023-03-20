@@ -190,3 +190,4 @@ class BlockTreeBuilder {
         this.currentBlock = childBlock;
         childBlock.parent = parentBlock;
         
+        // 递归构建子节点
