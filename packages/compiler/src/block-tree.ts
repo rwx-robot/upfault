@@ -210,3 +210,4 @@ class BlockTreeBuilder {
       if (node) return node;
     }
     
+    return this.createFragmentNode(childNodes, parentBlock);
