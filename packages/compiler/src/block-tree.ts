@@ -199,3 +199,4 @@ class BlockTreeBuilder {
         blockNode.block = childBlock;
       } else {
         blockNode.block = parentBlock;
+      }
