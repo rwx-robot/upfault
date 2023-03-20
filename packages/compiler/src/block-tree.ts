@@ -195,3 +195,4 @@ class BlockTreeBuilder {
         childBlock.root = childRoot;
         this.collectDynamicNodes(childBlock);
         
+        this.currentBlock = prevBlock;
