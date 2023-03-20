@@ -214,3 +214,4 @@ class BlockTreeBuilder {
   }
 
   private shouldCreateBlock(node: TemplateNode): boolean {
+    if (this.options.granularity === BlockGranularity.Fine) {
