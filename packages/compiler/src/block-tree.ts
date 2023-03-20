@@ -194,3 +194,4 @@ class BlockTreeBuilder {
         const childRoot = this.buildBlockNodes(this.getNodeChildren(node), childBlock);
         childBlock.root = childRoot;
         this.collectDynamicNodes(childBlock);
+        
