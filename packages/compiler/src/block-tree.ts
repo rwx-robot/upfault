@@ -203,3 +203,4 @@ class BlockTreeBuilder {
       
       childNodes.push(blockNode);
     }
+    
