@@ -209,3 +209,4 @@ class BlockTreeBuilder {
       const node = childNodes[0];
       if (node) return node;
     }
+    
