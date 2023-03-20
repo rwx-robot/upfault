@@ -219,3 +219,4 @@ class BlockTreeBuilder {
       return this.isDynamicNode(node);
     }
     
+    if (this.options.granularity === BlockGranularity.Coarse) {
