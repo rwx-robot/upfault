@@ -208,3 +208,4 @@ class BlockTreeBuilder {
     if (childNodes.length === 1) {
       const node = childNodes[0];
       if (node) return node;
+    }
