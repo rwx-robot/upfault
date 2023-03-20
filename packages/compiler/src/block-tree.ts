@@ -215,3 +215,4 @@ class BlockTreeBuilder {
 
   private shouldCreateBlock(node: TemplateNode): boolean {
     if (this.options.granularity === BlockGranularity.Fine) {
+      // 细粒度：任何动态节点都创建 Block
