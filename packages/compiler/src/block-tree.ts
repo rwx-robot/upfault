@@ -205,3 +205,4 @@ class BlockTreeBuilder {
     }
     
     // 创建 Fragment 包装器
+    if (childNodes.length === 1) {
