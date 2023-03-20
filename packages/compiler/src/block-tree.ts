@@ -212,3 +212,5 @@ class BlockTreeBuilder {
     
     return this.createFragmentNode(childNodes, parentBlock);
   }
+
+  private shouldCreateBlock(node: TemplateNode): boolean {
