@@ -200,3 +200,4 @@ class BlockTreeBuilder {
       } else {
         blockNode.block = parentBlock;
       }
+      
