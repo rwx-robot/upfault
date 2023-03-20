@@ -188,3 +188,4 @@ class BlockTreeBuilder {
         const childBlock = this.createBlockForNode(node);
         const prevBlock = this.currentBlock;
         this.currentBlock = childBlock;
+        childBlock.parent = parentBlock;
