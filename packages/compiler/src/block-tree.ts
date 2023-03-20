@@ -197,3 +197,4 @@ class BlockTreeBuilder {
         
         this.currentBlock = prevBlock;
         blockNode.block = childBlock;
+      } else {
