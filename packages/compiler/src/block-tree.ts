@@ -207,3 +207,4 @@ class BlockTreeBuilder {
     // 创建 Fragment 包装器
     if (childNodes.length === 1) {
       const node = childNodes[0];
+      if (node) return node;
