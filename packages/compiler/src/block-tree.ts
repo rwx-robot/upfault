@@ -184,3 +184,4 @@ class BlockTreeBuilder {
       const blockNode = this.convertToBlockNode(node, parentBlock);
       
       // 决定是否为该节点创建新 Block
+      if (this.shouldCreateBlock(node)) {
