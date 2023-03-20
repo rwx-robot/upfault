@@ -193,3 +193,4 @@ class BlockTreeBuilder {
         // 递归构建子节点
         const childRoot = this.buildBlockNodes(this.getNodeChildren(node), childBlock);
         childBlock.root = childRoot;
+        this.collectDynamicNodes(childBlock);
