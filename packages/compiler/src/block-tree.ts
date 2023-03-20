@@ -186,3 +186,4 @@ class BlockTreeBuilder {
       // 决定是否为该节点创建新 Block
       if (this.shouldCreateBlock(node)) {
         const childBlock = this.createBlockForNode(node);
+        const prevBlock = this.currentBlock;
