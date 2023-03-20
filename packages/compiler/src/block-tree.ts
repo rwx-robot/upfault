@@ -187,3 +187,4 @@ class BlockTreeBuilder {
       if (this.shouldCreateBlock(node)) {
         const childBlock = this.createBlockForNode(node);
         const prevBlock = this.currentBlock;
+        this.currentBlock = childBlock;
