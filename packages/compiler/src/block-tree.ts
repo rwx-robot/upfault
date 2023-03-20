@@ -191,3 +191,4 @@ class BlockTreeBuilder {
         childBlock.parent = parentBlock;
         
         // 递归构建子节点
+        const childRoot = this.buildBlockNodes(this.getNodeChildren(node), childBlock);
