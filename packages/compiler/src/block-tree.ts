@@ -204,3 +204,4 @@ class BlockTreeBuilder {
       childNodes.push(blockNode);
     }
     
+    // 创建 Fragment 包装器
