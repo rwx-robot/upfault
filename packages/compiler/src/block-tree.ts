@@ -235,3 +235,4 @@ class BlockTreeBuilder {
     );
   }
   
+  private isSlotElement(node: TemplateNode): boolean {
