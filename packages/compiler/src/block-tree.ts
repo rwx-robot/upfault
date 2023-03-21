@@ -244,3 +244,4 @@ class BlockTreeBuilder {
       node.type === 'Interpolation' ||
       node.type === 'Component' ||
       node.type === 'Slot' ||
+      node.type === 'If' ||
