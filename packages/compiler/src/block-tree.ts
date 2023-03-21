@@ -250,3 +250,4 @@ class BlockTreeBuilder {
     );
   }
   
+  private isDynamicElement(node: TemplateNode): boolean {
