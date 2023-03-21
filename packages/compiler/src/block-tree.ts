@@ -229,3 +229,4 @@ class BlockTreeBuilder {
       node.type === 'Component' ||
       node.type === 'Slot' ||
       node.type === 'If' ||
+      node.type === 'For' ||
