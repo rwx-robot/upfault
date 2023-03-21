@@ -259,3 +259,5 @@ class BlockTreeBuilder {
       node.children.some(c => this.isDynamicNode(c))
     );
   }
+
+  private createBlockForNode(node: TemplateNode): Block {
