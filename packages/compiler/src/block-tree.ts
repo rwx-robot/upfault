@@ -228,3 +228,4 @@ class BlockTreeBuilder {
     return (
       node.type === 'Component' ||
       node.type === 'Slot' ||
+      node.type === 'If' ||
