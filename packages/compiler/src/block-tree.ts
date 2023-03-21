@@ -256,3 +256,4 @@ class BlockTreeBuilder {
     if (node.tag === 'slot' || node.tag.startsWith('slot:')) return true;
     return (
       node.props.some(p => p.isDynamic || p.isEvent) ||
+      node.children.some(c => this.isDynamicNode(c))
