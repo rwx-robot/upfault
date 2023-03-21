@@ -238,3 +238,5 @@ class BlockTreeBuilder {
   private isSlotElement(node: TemplateNode): boolean {
     return node.type === 'Element' && (node.tag === 'slot' || node.tag.startsWith('slot:'));
   }
+
+  private isDynamicNode(node: TemplateNode): boolean {
