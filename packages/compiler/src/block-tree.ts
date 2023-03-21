@@ -262,3 +262,4 @@ class BlockTreeBuilder {
 
   private createBlockForNode(node: TemplateNode): Block {
     switch (node.type) {
+      case 'Component':
