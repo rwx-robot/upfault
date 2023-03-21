@@ -240,3 +240,4 @@ class BlockTreeBuilder {
   }
 
   private isDynamicNode(node: TemplateNode): boolean {
+    return (
