@@ -252,3 +252,4 @@ class BlockTreeBuilder {
   
   private isDynamicElement(node: TemplateNode): boolean {
     if (node.type !== 'Element') return false;
+    // slot 元素总是动态的
