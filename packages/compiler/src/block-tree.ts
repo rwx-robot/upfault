@@ -226,3 +226,4 @@ class BlockTreeBuilder {
     
     // 中粒度：为控制流、组件、插槽创建 Block
     return (
+      node.type === 'Component' ||
