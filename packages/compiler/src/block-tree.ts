@@ -251,3 +251,4 @@ class BlockTreeBuilder {
   }
   
   private isDynamicElement(node: TemplateNode): boolean {
+    if (node.type !== 'Element') return false;
