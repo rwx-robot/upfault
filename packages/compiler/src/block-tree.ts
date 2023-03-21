@@ -223,3 +223,4 @@ class BlockTreeBuilder {
       // 粗粒度：只为根组件创建 Block
       return false;
     }
+    
