@@ -249,3 +249,4 @@ class BlockTreeBuilder {
       (node.type === 'Element' && this.isDynamicElement(node))
     );
   }
+  
