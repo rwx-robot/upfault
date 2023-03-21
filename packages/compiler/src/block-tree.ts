@@ -255,3 +255,4 @@ class BlockTreeBuilder {
     // slot 元素总是动态的
     if (node.tag === 'slot' || node.tag.startsWith('slot:')) return true;
     return (
+      node.props.some(p => p.isDynamic || p.isEvent) ||
