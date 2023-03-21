@@ -241,3 +241,4 @@ class BlockTreeBuilder {
 
   private isDynamicNode(node: TemplateNode): boolean {
     return (
+      node.type === 'Interpolation' ||
