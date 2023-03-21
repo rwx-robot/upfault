@@ -234,3 +234,4 @@ class BlockTreeBuilder {
       (node.type === 'Element' && this.isSlotElement(node))
     );
   }
+  
