@@ -224,3 +224,4 @@ class BlockTreeBuilder {
       return false;
     }
     
+    // 中粒度：为控制流、组件、插槽创建 Block
