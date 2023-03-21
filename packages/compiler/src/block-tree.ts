@@ -254,3 +254,4 @@ class BlockTreeBuilder {
     if (node.type !== 'Element') return false;
     // slot 元素总是动态的
     if (node.tag === 'slot' || node.tag.startsWith('slot:')) return true;
+    return (
