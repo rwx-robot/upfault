@@ -222,3 +222,4 @@ class BlockTreeBuilder {
     if (this.options.granularity === BlockGranularity.Coarse) {
       // 粗粒度：只为根组件创建 Block
       return false;
+    }
