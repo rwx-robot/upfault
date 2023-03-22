@@ -269,3 +269,4 @@ class BlockTreeBuilder {
       case 'If':
         return this.createBlock(BlockType.If, BlockGranularity.Medium);
       case 'For':
+        return this.createBlock(BlockType.For, BlockGranularity.Medium);
