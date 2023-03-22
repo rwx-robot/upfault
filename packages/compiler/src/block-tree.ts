@@ -273,3 +273,4 @@ class BlockTreeBuilder {
       case 'Element':
         return this.createBlock(BlockType.Element, BlockGranularity.Medium);
       default:
+        return this.createBlock(BlockType.Fragment, BlockGranularity.Medium);
