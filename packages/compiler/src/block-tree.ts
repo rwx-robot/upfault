@@ -283,3 +283,4 @@ class BlockTreeBuilder {
     switch (node.type) {
       case 'Element':
         return this.convertElement(node, id, parentBlock);
+      case 'Component':
