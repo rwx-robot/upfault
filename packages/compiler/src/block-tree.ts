@@ -264,3 +264,4 @@ class BlockTreeBuilder {
     switch (node.type) {
       case 'Component':
         return this.createBlock(BlockType.Component, BlockGranularity.Medium);
+      case 'Slot':
