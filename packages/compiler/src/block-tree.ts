@@ -300,3 +300,4 @@ class BlockTreeBuilder {
       default:
         return this.createFragmentNode([], parentBlock);
     }
+  }
