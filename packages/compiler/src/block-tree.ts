@@ -303,3 +303,4 @@ class BlockTreeBuilder {
   }
 
   private convertElement(node: ElementNode, id: string, parentBlock: Block): BlockNode {
+    const props = node.props.map(p => this.convertProp(p));
