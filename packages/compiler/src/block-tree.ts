@@ -271,3 +271,4 @@ class BlockTreeBuilder {
       case 'For':
         return this.createBlock(BlockType.For, BlockGranularity.Medium);
       case 'Element':
+        return this.createBlock(BlockType.Element, BlockGranularity.Medium);
