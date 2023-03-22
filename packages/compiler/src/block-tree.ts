@@ -276,3 +276,5 @@ class BlockTreeBuilder {
         return this.createBlock(BlockType.Fragment, BlockGranularity.Medium);
     }
   }
+
+  private convertToBlockNode(node: TemplateNode, parentBlock: Block): BlockNode {
