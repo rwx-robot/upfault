@@ -284,3 +284,4 @@ class BlockTreeBuilder {
       case 'Element':
         return this.convertElement(node, id, parentBlock);
       case 'Component':
+        return this.convertComponent(node, id, parentBlock);
