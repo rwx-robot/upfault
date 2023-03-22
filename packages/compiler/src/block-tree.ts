@@ -293,3 +293,4 @@ class BlockTreeBuilder {
         return this.convertFor(node, id, parentBlock);
       case 'Text':
         return this.convertText(node, id, parentBlock);
+      case 'Interpolation':
