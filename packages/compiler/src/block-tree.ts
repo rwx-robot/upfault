@@ -263,3 +263,4 @@ class BlockTreeBuilder {
   private createBlockForNode(node: TemplateNode): Block {
     switch (node.type) {
       case 'Component':
+        return this.createBlock(BlockType.Component, BlockGranularity.Medium);
