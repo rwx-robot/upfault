@@ -275,3 +275,4 @@ class BlockTreeBuilder {
       default:
         return this.createBlock(BlockType.Fragment, BlockGranularity.Medium);
     }
+  }
