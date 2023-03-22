@@ -266,3 +266,4 @@ class BlockTreeBuilder {
         return this.createBlock(BlockType.Component, BlockGranularity.Medium);
       case 'Slot':
         return this.createBlock(BlockType.Slot, BlockGranularity.Medium);
+      case 'If':
