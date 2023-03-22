@@ -281,3 +281,4 @@ class BlockTreeBuilder {
     const id = `node_${++this.nodeIdCounter}`;
     
     switch (node.type) {
+      case 'Element':
