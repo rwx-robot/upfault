@@ -289,3 +289,4 @@ class BlockTreeBuilder {
         return this.convertSlot(node, id, parentBlock);
       case 'If':
         return this.convertIf(node, id, parentBlock);
+      case 'For':
