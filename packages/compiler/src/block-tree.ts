@@ -302,3 +302,4 @@ class BlockTreeBuilder {
     }
   }
 
+  private convertElement(node: ElementNode, id: string, parentBlock: Block): BlockNode {
