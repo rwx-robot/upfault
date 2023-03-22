@@ -295,3 +295,4 @@ class BlockTreeBuilder {
         return this.convertText(node, id, parentBlock);
       case 'Interpolation':
         return this.convertInterpolation(node, id, parentBlock);
+      case 'Comment':
