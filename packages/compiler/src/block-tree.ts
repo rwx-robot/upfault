@@ -298,3 +298,4 @@ class BlockTreeBuilder {
       case 'Comment':
         return this.convertComment(node, id, parentBlock);
       default:
+        return this.createFragmentNode([], parentBlock);
