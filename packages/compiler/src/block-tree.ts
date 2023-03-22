@@ -280,3 +280,4 @@ class BlockTreeBuilder {
   private convertToBlockNode(node: TemplateNode, parentBlock: Block): BlockNode {
     const id = `node_${++this.nodeIdCounter}`;
     
+    switch (node.type) {
