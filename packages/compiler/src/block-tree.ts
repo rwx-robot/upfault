@@ -315,3 +315,4 @@ class BlockTreeBuilder {
       tag: node.tag,
       flags,
       props,
+      children: node.children.map(c => this.convertToBlockNode(c, parentBlock)),
