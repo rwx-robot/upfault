@@ -317,3 +317,4 @@ class BlockTreeBuilder {
       props,
       children: node.children.map(c => this.convertToBlockNode(c, parentBlock)),
       parent: null,
+      block: parentBlock,
