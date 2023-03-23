@@ -334,3 +334,4 @@ class BlockTreeBuilder {
       tag: node.name,
       flags,
       props,
+      children: node.children.map(c => this.convertToBlockNode(c, parentBlock)),
