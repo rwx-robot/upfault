@@ -342,3 +342,4 @@ class BlockTreeBuilder {
       patchFlags: 512, // PatchFlags.COMPONENT
     };
   }
+
