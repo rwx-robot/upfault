@@ -310,3 +310,4 @@ class BlockTreeBuilder {
     const patchFlags = this.calculatePatchFlags(node, props);
     
     return {
+      id,
