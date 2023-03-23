@@ -329,3 +329,4 @@ class BlockTreeBuilder {
     const flags = 4 | 64; // COMPONENT | HAS_SLOT (简化)
     
     return {
+      id,
