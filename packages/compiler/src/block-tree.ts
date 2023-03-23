@@ -338,3 +338,4 @@ class BlockTreeBuilder {
       parent: null,
       block: parentBlock,
       isDynamic: true,
+      dynamicProps: props.filter(p => p.isDynamic).map(p => p.name),
