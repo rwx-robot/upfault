@@ -309,3 +309,4 @@ class BlockTreeBuilder {
     const dynamicProps = props.filter(p => p.isDynamic).map(p => p.name);
     const patchFlags = this.calculatePatchFlags(node, props);
     
+    return {
