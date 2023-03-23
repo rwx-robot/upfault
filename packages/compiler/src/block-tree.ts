@@ -341,3 +341,4 @@ class BlockTreeBuilder {
       dynamicProps: props.filter(p => p.isDynamic).map(p => p.name),
       patchFlags: 512, // PatchFlags.COMPONENT
     };
+  }
