@@ -320,3 +320,4 @@ class BlockTreeBuilder {
       block: parentBlock,
       isDynamic,
       dynamicProps,
+      patchFlags,
