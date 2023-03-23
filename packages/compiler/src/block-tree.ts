@@ -328,3 +328,4 @@ class BlockTreeBuilder {
     const props = node.props.map(p => this.convertProp(p));
     const flags = 4 | 64; // COMPONENT | HAS_SLOT (简化)
     
+    return {
