@@ -333,3 +333,4 @@ class BlockTreeBuilder {
       nodeType: VNodeType.COMPONENT,
       tag: node.name,
       flags,
+      props,
