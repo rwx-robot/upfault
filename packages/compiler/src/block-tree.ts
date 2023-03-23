@@ -323,3 +323,5 @@ class BlockTreeBuilder {
       patchFlags,
     };
   }
+
+  private convertComponent(node: ComponentNode, id: string, parentBlock: Block): BlockNode {
