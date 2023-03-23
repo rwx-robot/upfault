@@ -312,3 +312,4 @@ class BlockTreeBuilder {
     return {
       id,
       nodeType: VNodeType.ELEMENT,
+      tag: node.tag,
