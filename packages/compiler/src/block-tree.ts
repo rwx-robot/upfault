@@ -330,3 +330,4 @@ class BlockTreeBuilder {
     
     return {
       id,
+      nodeType: VNodeType.COMPONENT,
