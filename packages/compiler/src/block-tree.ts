@@ -382,3 +382,4 @@ class BlockTreeBuilder {
         isSlot: false,
         valueType: 'expression',
       });
+    }
