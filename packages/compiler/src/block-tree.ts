@@ -372,3 +372,4 @@ class BlockTreeBuilder {
     // v-for 生成 Fragment，标记为 keyed fragment
     const flags = 16; // MULTI_DYNAMIC
     const props: PropMeta[] = [];
+    if (node.key) {
