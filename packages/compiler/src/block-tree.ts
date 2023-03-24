@@ -358,3 +358,5 @@ class BlockTreeBuilder {
       patchFlags: 256, // PatchFlags.DYNAMIC_SLOTS
     };
   }
+
+  private convertIf(node: IfNode, id: string, parentBlock: Block): BlockNode {
