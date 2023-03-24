@@ -345,3 +345,4 @@ class BlockTreeBuilder {
 
   private convertSlot(node: SlotNode, id: string, parentBlock: Block): BlockNode {
     return {
+      id,
