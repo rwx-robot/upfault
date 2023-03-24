@@ -381,3 +381,4 @@ class BlockTreeBuilder {
         isRef: false,
         isSlot: false,
         valueType: 'expression',
+      });
