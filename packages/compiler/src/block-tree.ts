@@ -356,3 +356,4 @@ class BlockTreeBuilder {
       isDynamic: true,
       dynamicProps: [],
       patchFlags: 256, // PatchFlags.DYNAMIC_SLOTS
+    };
