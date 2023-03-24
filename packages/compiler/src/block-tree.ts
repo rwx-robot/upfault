@@ -348,3 +348,4 @@ class BlockTreeBuilder {
       id,
       nodeType: VNodeType.ELEMENT,
       tag: 'slot',
+      flags: 64, // HAS_SLOT
