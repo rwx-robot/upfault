@@ -364,3 +364,4 @@ class BlockTreeBuilder {
     const branchNodes = node.branches.map(branch => 
       this.createFragmentNode(branch.children.map(c => this.convertToBlockNode(c, parentBlock)), parentBlock)
     );
+    
