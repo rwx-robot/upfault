@@ -384,3 +384,4 @@ class BlockTreeBuilder {
       });
     }
     
+    return {
