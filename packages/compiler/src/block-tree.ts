@@ -380,3 +380,4 @@ class BlockTreeBuilder {
         isKey: true,
         isRef: false,
         isSlot: false,
+        valueType: 'expression',
