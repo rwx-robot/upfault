@@ -367,3 +367,5 @@ class BlockTreeBuilder {
     
     return this.createFragmentNode(branchNodes, parentBlock);
   }
+
+  private convertFor(node: ForNode, id: string, parentBlock: Block): BlockNode {
