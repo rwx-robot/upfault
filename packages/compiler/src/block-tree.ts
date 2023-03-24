@@ -353,3 +353,4 @@ class BlockTreeBuilder {
       children: node.fallback.map(c => this.convertToBlockNode(c, parentBlock)),
       parent: null,
       block: parentBlock,
+      isDynamic: true,
