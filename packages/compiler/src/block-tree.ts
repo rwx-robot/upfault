@@ -365,3 +365,4 @@ class BlockTreeBuilder {
       this.createFragmentNode(branch.children.map(c => this.convertToBlockNode(c, parentBlock)), parentBlock)
     );
     
+    return this.createFragmentNode(branchNodes, parentBlock);
