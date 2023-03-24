@@ -379,3 +379,4 @@ class BlockTreeBuilder {
         isEvent: false,
         isKey: true,
         isRef: false,
+        isSlot: false,
