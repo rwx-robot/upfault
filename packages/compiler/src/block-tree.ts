@@ -360,3 +360,4 @@ class BlockTreeBuilder {
   }
 
   private convertIf(node: IfNode, id: string, parentBlock: Block): BlockNode {
+    // v-if 生成 Fragment，包含所有分支
