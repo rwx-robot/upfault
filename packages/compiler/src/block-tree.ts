@@ -374,3 +374,4 @@ class BlockTreeBuilder {
     const props: PropMeta[] = [];
     if (node.key) {
       props.push({
+        name: 'key',
