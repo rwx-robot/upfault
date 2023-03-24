@@ -373,3 +373,4 @@ class BlockTreeBuilder {
     const flags = 16; // MULTI_DYNAMIC
     const props: PropMeta[] = [];
     if (node.key) {
+      props.push({
