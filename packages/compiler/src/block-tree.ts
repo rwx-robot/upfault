@@ -386,3 +386,4 @@ class BlockTreeBuilder {
     
     return {
       id,
+      nodeType: VNodeType.FRAGMENT,
