@@ -375,3 +375,4 @@ class BlockTreeBuilder {
     if (node.key) {
       props.push({
         name: 'key',
+        isDynamic: true,
