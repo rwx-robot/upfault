@@ -376,3 +376,4 @@ class BlockTreeBuilder {
       props.push({
         name: 'key',
         isDynamic: true,
+        isEvent: false,
