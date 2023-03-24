@@ -350,3 +350,4 @@ class BlockTreeBuilder {
       tag: 'slot',
       flags: 64, // HAS_SLOT
       props: [],
+      children: node.fallback.map(c => this.convertToBlockNode(c, parentBlock)),
