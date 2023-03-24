@@ -377,3 +377,4 @@ class BlockTreeBuilder {
         name: 'key',
         isDynamic: true,
         isEvent: false,
+        isKey: true,
