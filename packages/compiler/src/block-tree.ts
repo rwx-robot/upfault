@@ -370,3 +370,4 @@ class BlockTreeBuilder {
 
   private convertFor(node: ForNode, id: string, parentBlock: Block): BlockNode {
     // v-for 生成 Fragment，标记为 keyed fragment
+    const flags = 16; // MULTI_DYNAMIC
