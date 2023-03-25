@@ -397,3 +397,4 @@ class BlockTreeBuilder {
       dynamicProps: node.key ? ['key'] : [],
       patchFlags: 64, // PatchFlags.KEYED_FRAGMENT
     };
+  }
