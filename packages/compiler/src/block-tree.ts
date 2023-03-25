@@ -422,3 +422,4 @@ class BlockTreeBuilder {
       nodeType: VNodeType.TEXT,
       tag: '#text',
       flags: 8, // PURE_DYNAMIC
+      props: [],
