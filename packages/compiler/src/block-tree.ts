@@ -393,3 +393,4 @@ class BlockTreeBuilder {
       children: node.children.map(c => this.convertToBlockNode(c, parentBlock)),
       parent: null,
       block: parentBlock,
+      isDynamic: true,
