@@ -390,3 +390,4 @@ class BlockTreeBuilder {
       tag: 'for',
       flags,
       props,
+      children: node.children.map(c => this.convertToBlockNode(c, parentBlock)),
