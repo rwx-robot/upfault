@@ -403,3 +403,4 @@ class BlockTreeBuilder {
     return {
       id,
       nodeType: VNodeType.TEXT,
+      tag: '#text',
