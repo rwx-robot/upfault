@@ -418,3 +418,4 @@ class BlockTreeBuilder {
 
   private convertInterpolation(node: InterpolationNode, id: string, parentBlock: Block): BlockNode {
     return {
+      id,
