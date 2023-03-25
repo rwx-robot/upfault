@@ -389,3 +389,4 @@ class BlockTreeBuilder {
       nodeType: VNodeType.FRAGMENT,
       tag: 'for',
       flags,
+      props,
