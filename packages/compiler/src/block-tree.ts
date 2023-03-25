@@ -424,3 +424,4 @@ class BlockTreeBuilder {
       flags: 8, // PURE_DYNAMIC
       props: [],
       children: [],
+      parent: null,
