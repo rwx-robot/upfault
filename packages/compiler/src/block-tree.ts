@@ -425,3 +425,4 @@ class BlockTreeBuilder {
       props: [],
       children: [],
       parent: null,
+      block: parentBlock,
