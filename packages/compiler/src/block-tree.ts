@@ -415,3 +415,5 @@ class BlockTreeBuilder {
       textContent: node.content, // 存储文本内容
     };
   }
+
+  private convertInterpolation(node: InterpolationNode, id: string, parentBlock: Block): BlockNode {
