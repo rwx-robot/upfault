@@ -423,3 +423,4 @@ class BlockTreeBuilder {
       tag: '#text',
       flags: 8, // PURE_DYNAMIC
       props: [],
+      children: [],
