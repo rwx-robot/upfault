@@ -395,3 +395,4 @@ class BlockTreeBuilder {
       block: parentBlock,
       isDynamic: true,
       dynamicProps: node.key ? ['key'] : [],
+      patchFlags: 64, // PatchFlags.KEYED_FRAGMENT
