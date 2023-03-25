@@ -414,3 +414,4 @@ class BlockTreeBuilder {
       patchFlags: 0,
       textContent: node.content, // 存储文本内容
     };
+  }
