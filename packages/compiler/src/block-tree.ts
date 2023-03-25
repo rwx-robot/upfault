@@ -402,3 +402,4 @@ class BlockTreeBuilder {
   private convertText(node: TextNode, id: string, parentBlock: Block): BlockNode {
     return {
       id,
+      nodeType: VNodeType.TEXT,
