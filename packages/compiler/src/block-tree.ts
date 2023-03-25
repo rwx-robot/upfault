@@ -421,3 +421,4 @@ class BlockTreeBuilder {
       id,
       nodeType: VNodeType.TEXT,
       tag: '#text',
+      flags: 8, // PURE_DYNAMIC
