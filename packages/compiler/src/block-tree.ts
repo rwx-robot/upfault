@@ -412,3 +412,4 @@ class BlockTreeBuilder {
       isDynamic: false,
       dynamicProps: [],
       patchFlags: 0,
+      textContent: node.content, // 存储文本内容
