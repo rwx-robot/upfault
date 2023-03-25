@@ -407,3 +407,4 @@ class BlockTreeBuilder {
       flags: 1, // STATIC_TEXT
       props: [],
       children: [],
+      parent: null,
