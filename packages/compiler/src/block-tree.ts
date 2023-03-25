@@ -406,3 +406,4 @@ class BlockTreeBuilder {
       tag: '#text',
       flags: 1, // STATIC_TEXT
       props: [],
+      children: [],
