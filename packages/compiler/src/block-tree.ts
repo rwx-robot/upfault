@@ -405,3 +405,4 @@ class BlockTreeBuilder {
       nodeType: VNodeType.TEXT,
       tag: '#text',
       flags: 1, // STATIC_TEXT
+      props: [],
