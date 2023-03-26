@@ -451,3 +451,4 @@ class BlockTreeBuilder {
   private createFragmentNode(nodes: BlockNode[], parentBlock: Block): BlockNode {
     return {
       id: `fragment_${++this.nodeIdCounter}`,
+      nodeType: VNodeType.FRAGMENT,
