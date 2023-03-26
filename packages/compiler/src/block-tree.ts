@@ -438,3 +438,4 @@ class BlockTreeBuilder {
       nodeType: VNodeType.COMMENT,
       tag: '!--',
       flags: 1, // STATIC_TEXT (简化)
+      props: [],
