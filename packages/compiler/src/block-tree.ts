@@ -455,3 +455,4 @@ class BlockTreeBuilder {
       tag: 'fragment',
       flags: 0,
       props: [],
+      children: nodes,
