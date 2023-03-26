@@ -442,3 +442,4 @@ class BlockTreeBuilder {
       children: [],
       parent: null,
       block: parentBlock,
+      isDynamic: false,
