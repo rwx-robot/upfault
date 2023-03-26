@@ -461,3 +461,4 @@ class BlockTreeBuilder {
       isDynamic: nodes.some(n => n.isDynamic),
       dynamicProps: [],
       patchFlags: nodes.some(n => n.patchFlags === 64) ? 64 : 0, // KEYED_FRAGMENT
+    };
