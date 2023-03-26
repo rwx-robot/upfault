@@ -446,3 +446,4 @@ class BlockTreeBuilder {
       dynamicProps: [],
       patchFlags: 0,
     };
+  }
