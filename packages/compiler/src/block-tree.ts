@@ -466,3 +466,4 @@ class BlockTreeBuilder {
 
   private convertProp(prop: any): PropMeta {
     return {
+      name: prop.name,
