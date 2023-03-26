@@ -447,3 +447,5 @@ class BlockTreeBuilder {
       patchFlags: 0,
     };
   }
+
+  private createFragmentNode(nodes: BlockNode[], parentBlock: Block): BlockNode {
