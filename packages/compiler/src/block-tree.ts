@@ -468,3 +468,4 @@ class BlockTreeBuilder {
     return {
       name: prop.name,
       isDynamic: prop.isDynamic,
+      isEvent: prop.isEvent,
