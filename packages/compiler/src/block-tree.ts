@@ -449,3 +449,4 @@ class BlockTreeBuilder {
   }
 
   private createFragmentNode(nodes: BlockNode[], parentBlock: Block): BlockNode {
+    return {
