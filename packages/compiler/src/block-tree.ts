@@ -427,3 +427,4 @@ class BlockTreeBuilder {
       parent: null,
       block: parentBlock,
       isDynamic: true,
+      dynamicProps: [node.expression], // 使用实际表达式
