@@ -469,3 +469,4 @@ class BlockTreeBuilder {
       name: prop.name,
       isDynamic: prop.isDynamic,
       isEvent: prop.isEvent,
+      isKey: prop.name === 'key',
