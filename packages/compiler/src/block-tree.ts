@@ -456,3 +456,4 @@ class BlockTreeBuilder {
       flags: 0,
       props: [],
       children: nodes,
+      parent: null,
