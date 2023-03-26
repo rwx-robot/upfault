@@ -432,3 +432,4 @@ class BlockTreeBuilder {
     };
   }
 
+  private convertComment(node: CommentNode, id: string, parentBlock: Block): BlockNode {
