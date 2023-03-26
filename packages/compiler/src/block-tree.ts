@@ -452,3 +452,4 @@ class BlockTreeBuilder {
     return {
       id: `fragment_${++this.nodeIdCounter}`,
       nodeType: VNodeType.FRAGMENT,
+      tag: 'fragment',
