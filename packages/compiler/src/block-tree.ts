@@ -444,3 +444,4 @@ class BlockTreeBuilder {
       block: parentBlock,
       isDynamic: false,
       dynamicProps: [],
+      patchFlags: 0,
