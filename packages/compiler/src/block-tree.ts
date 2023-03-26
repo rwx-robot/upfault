@@ -431,3 +431,4 @@ class BlockTreeBuilder {
       patchFlags: 1, // PatchFlags.TEXT
     };
   }
+
