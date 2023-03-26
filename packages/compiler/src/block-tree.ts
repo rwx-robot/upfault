@@ -430,3 +430,4 @@ class BlockTreeBuilder {
       dynamicProps: [node.expression], // 使用实际表达式
       patchFlags: 1, // PatchFlags.TEXT
     };
+  }
