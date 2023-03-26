@@ -465,3 +465,4 @@ class BlockTreeBuilder {
   }
 
   private convertProp(prop: any): PropMeta {
+    return {
