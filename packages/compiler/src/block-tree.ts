@@ -436,3 +436,4 @@ class BlockTreeBuilder {
     return {
       id,
       nodeType: VNodeType.COMMENT,
+      tag: '!--',
