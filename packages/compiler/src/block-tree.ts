@@ -459,3 +459,4 @@ class BlockTreeBuilder {
       parent: null,
       block: parentBlock,
       isDynamic: nodes.some(n => n.isDynamic),
+      dynamicProps: [],
