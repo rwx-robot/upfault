@@ -510,3 +510,4 @@ class BlockTreeBuilder {
         } else {
           patchFlags |= 8; // PROPS
         }
+      }
