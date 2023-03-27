@@ -492,3 +492,4 @@ class BlockTreeBuilder {
     if (flags === 0) flags |= 2; // STATIC_ELEMENT
     
     return flags;
+  }
