@@ -471,3 +471,4 @@ class BlockTreeBuilder {
       isEvent: prop.isEvent,
       isKey: prop.name === 'key',
       isRef: prop.name === 'ref',
+      isSlot: prop.name.startsWith('slot') || prop.name === 'v-slot',
