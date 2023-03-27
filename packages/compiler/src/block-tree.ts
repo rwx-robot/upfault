@@ -504,3 +504,4 @@ class BlockTreeBuilder {
         if (prop.name === 'class') {
           patchFlags |= 2; // CLASS
         } else if (prop.name === 'style') {
+          patchFlags |= 4; // STYLE
