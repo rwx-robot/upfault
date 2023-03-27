@@ -486,3 +486,4 @@ class BlockTreeBuilder {
     }
     
     if (props.some(p => p.isEvent)) flags |= 32; // HAS_EVENT
+    if (props.some(p => p.isSlot)) flags |= 64; // HAS_SLOT
