@@ -509,3 +509,4 @@ class BlockTreeBuilder {
           // key 不直接 patch
         } else {
           patchFlags |= 8; // PROPS
+        }
