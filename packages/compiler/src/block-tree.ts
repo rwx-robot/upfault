@@ -500,3 +500,4 @@ class BlockTreeBuilder {
     for (const prop of props) {
       if (prop.isEvent) {
         patchFlags |= 32; // EVENTS
+      } else if (prop.isDynamic) {
