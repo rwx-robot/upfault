@@ -476,3 +476,5 @@ class BlockTreeBuilder {
                prop.value?.type === 'Expression' ? 'expression' : 'dynamic',
     };
   }
+
+  private calculateNodeFlags(node: ElementNode, props: PropMeta[]): number {
