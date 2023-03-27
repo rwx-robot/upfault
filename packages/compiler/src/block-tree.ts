@@ -487,3 +487,4 @@ class BlockTreeBuilder {
     
     if (props.some(p => p.isEvent)) flags |= 32; // HAS_EVENT
     if (props.some(p => p.isSlot)) flags |= 64; // HAS_SLOT
+    if (props.some(p => p.isDynamic && !p.isEvent && !p.isSlot)) flags |= 8; // PURE_DYNAMIC
