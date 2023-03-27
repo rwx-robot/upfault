@@ -470,3 +470,4 @@ class BlockTreeBuilder {
       isDynamic: prop.isDynamic,
       isEvent: prop.isEvent,
       isKey: prop.name === 'key',
+      isRef: prop.name === 'ref',
