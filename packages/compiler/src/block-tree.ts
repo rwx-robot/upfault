@@ -498,3 +498,4 @@ class BlockTreeBuilder {
     let patchFlags = 0;
     
     for (const prop of props) {
+      if (prop.isEvent) {
