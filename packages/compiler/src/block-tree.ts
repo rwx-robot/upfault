@@ -484,3 +484,4 @@ class BlockTreeBuilder {
     if (node.tag === 'slot' || node.tag.startsWith('slot:')) {
       flags |= 64; // HAS_SLOT
     }
+    
