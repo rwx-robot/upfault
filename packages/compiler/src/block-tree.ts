@@ -501,3 +501,4 @@ class BlockTreeBuilder {
       if (prop.isEvent) {
         patchFlags |= 32; // EVENTS
       } else if (prop.isDynamic) {
+        if (prop.name === 'class') {
