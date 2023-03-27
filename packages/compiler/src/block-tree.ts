@@ -497,3 +497,4 @@ class BlockTreeBuilder {
   private calculatePatchFlags(node: ElementNode, props: PropMeta[]): number {
     let patchFlags = 0;
     
+    for (const prop of props) {
