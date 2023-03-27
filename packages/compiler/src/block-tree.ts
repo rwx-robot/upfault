@@ -475,3 +475,4 @@ class BlockTreeBuilder {
       valueType: prop.value?.type === 'Literal' ? 'static' : 
                prop.value?.type === 'Expression' ? 'expression' : 'dynamic',
     };
+  }
