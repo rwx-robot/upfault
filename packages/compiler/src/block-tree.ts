@@ -490,3 +490,4 @@ class BlockTreeBuilder {
     if (props.some(p => p.isDynamic && !p.isEvent && !p.isSlot)) flags |= 8; // PURE_DYNAMIC
     if (props.filter(p => p.isDynamic).length > 1) flags |= 16; // MULTI_DYNAMIC
     if (flags === 0) flags |= 2; // STATIC_ELEMENT
+    
