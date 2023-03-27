@@ -479,3 +479,4 @@ class BlockTreeBuilder {
 
   private calculateNodeFlags(node: ElementNode, props: PropMeta[]): number {
     let flags = 0;
+    
