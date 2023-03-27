@@ -493,3 +493,5 @@ class BlockTreeBuilder {
     
     return flags;
   }
+
+  private calculatePatchFlags(node: ElementNode, props: PropMeta[]): number {
