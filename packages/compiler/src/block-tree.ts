@@ -481,3 +481,4 @@ class BlockTreeBuilder {
     let flags = 0;
     
     // 检查节点本身是否为 slot
+    if (node.tag === 'slot' || node.tag.startsWith('slot:')) {
