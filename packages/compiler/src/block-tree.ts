@@ -472,3 +472,4 @@ class BlockTreeBuilder {
       isKey: prop.name === 'key',
       isRef: prop.name === 'ref',
       isSlot: prop.name.startsWith('slot') || prop.name === 'v-slot',
+      valueType: prop.value?.type === 'Literal' ? 'static' : 
