@@ -506,3 +506,4 @@ class BlockTreeBuilder {
         } else if (prop.name === 'style') {
           patchFlags |= 4; // STYLE
         } else if (prop.name === 'key') {
+          // key 不直接 patch
