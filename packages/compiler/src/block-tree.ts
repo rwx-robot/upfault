@@ -480,3 +480,4 @@ class BlockTreeBuilder {
   private calculateNodeFlags(node: ElementNode, props: PropMeta[]): number {
     let flags = 0;
     
+    // 检查节点本身是否为 slot
