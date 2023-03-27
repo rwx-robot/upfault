@@ -503,3 +503,4 @@ class BlockTreeBuilder {
       } else if (prop.isDynamic) {
         if (prop.name === 'class') {
           patchFlags |= 2; // CLASS
+        } else if (prop.name === 'style') {
