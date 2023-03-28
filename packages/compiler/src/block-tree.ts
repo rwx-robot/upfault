@@ -528,3 +528,4 @@ class BlockTreeBuilder {
       case 'For':
         return node.children;
       default:
+        return [];
