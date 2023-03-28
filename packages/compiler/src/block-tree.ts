@@ -547,3 +547,4 @@ class BlockTreeBuilder {
         if (prop.isEvent) block.hasEvent = true;
         if (prop.isSlot) block.hasSlot = true;
       }
+    }
