@@ -551,3 +551,4 @@ class BlockTreeBuilder {
     
     for (const child of node.children) {
       this.collectDynamicNodesRecursive(child, block);
+    }
