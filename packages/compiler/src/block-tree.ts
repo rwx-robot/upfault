@@ -543,3 +543,4 @@ class BlockTreeBuilder {
       
       // 收集动态属性
       for (const prop of node.props) {
+        if (prop.isDynamic) block.dynamicProps.add(prop.name);
