@@ -514,3 +514,4 @@ class BlockTreeBuilder {
     }
     
     return patchFlags || 8; // 默认 PROPS
+  }
