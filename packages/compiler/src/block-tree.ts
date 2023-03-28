@@ -546,3 +546,4 @@ class BlockTreeBuilder {
         if (prop.isDynamic) block.dynamicProps.add(prop.name);
         if (prop.isEvent) block.hasEvent = true;
         if (prop.isSlot) block.hasSlot = true;
+      }
