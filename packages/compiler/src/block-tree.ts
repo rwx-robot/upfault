@@ -527,3 +527,4 @@ class BlockTreeBuilder {
         return node.branches.flatMap(b => b.children);
       case 'For':
         return node.children;
+      default:
