@@ -522,3 +522,4 @@ class BlockTreeBuilder {
       case 'Component':
         return node.children;
       case 'Slot':
+        return node.fallback;
