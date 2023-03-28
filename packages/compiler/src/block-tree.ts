@@ -523,3 +523,4 @@ class BlockTreeBuilder {
         return node.children;
       case 'Slot':
         return node.fallback;
+      case 'If':
