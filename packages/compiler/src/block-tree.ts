@@ -530,3 +530,4 @@ class BlockTreeBuilder {
       default:
         return [];
     }
+  }
