@@ -520,3 +520,4 @@ class BlockTreeBuilder {
     switch (node.type) {
       case 'Element':
       case 'Component':
+        return node.children;
