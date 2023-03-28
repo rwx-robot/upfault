@@ -531,3 +531,5 @@ class BlockTreeBuilder {
         return [];
     }
   }
+
+  private collectDynamicNodes(block: Block): void {
