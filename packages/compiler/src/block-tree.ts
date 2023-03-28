@@ -521,3 +521,4 @@ class BlockTreeBuilder {
       case 'Element':
       case 'Component':
         return node.children;
+      case 'Slot':
