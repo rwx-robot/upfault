@@ -549,3 +549,4 @@ class BlockTreeBuilder {
       }
     }
     
+    for (const child of node.children) {
