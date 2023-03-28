@@ -517,3 +517,4 @@ class BlockTreeBuilder {
   }
 
   private getNodeChildren(node: TemplateNode): TemplateNode[] {
+    switch (node.type) {
