@@ -529,3 +529,4 @@ class BlockTreeBuilder {
         return node.children;
       default:
         return [];
+    }
