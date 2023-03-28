@@ -541,3 +541,4 @@ class BlockTreeBuilder {
       block.dynamicNodes.push(node);
       block.compileFlags |= node.flags;
       
+      // 收集动态属性
