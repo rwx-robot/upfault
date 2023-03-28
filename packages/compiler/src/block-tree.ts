@@ -525,3 +525,4 @@ class BlockTreeBuilder {
         return node.fallback;
       case 'If':
         return node.branches.flatMap(b => b.children);
+      case 'For':
