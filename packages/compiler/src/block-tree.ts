@@ -524,3 +524,4 @@ class BlockTreeBuilder {
       case 'Slot':
         return node.fallback;
       case 'If':
+        return node.branches.flatMap(b => b.children);
