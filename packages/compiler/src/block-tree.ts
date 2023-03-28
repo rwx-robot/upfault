@@ -542,3 +542,4 @@ class BlockTreeBuilder {
       block.compileFlags |= node.flags;
       
       // 收集动态属性
+      for (const prop of node.props) {
