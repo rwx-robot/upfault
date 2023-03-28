@@ -540,3 +540,4 @@ class BlockTreeBuilder {
     if (node.isDynamic) {
       block.dynamicNodes.push(node);
       block.compileFlags |= node.flags;
+      
