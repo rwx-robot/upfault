@@ -539,3 +539,4 @@ class BlockTreeBuilder {
   private collectDynamicNodesRecursive(node: BlockNode, block: Block): void {
     if (node.isDynamic) {
       block.dynamicNodes.push(node);
+      block.compileFlags |= node.flags;
