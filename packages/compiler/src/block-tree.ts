@@ -533,3 +533,4 @@ class BlockTreeBuilder {
   }
 
   private collectDynamicNodes(block: Block): void {
+    this.collectDynamicNodesRecursive(block.root, block);
