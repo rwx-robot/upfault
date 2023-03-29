@@ -11,3 +11,4 @@ describe('Code Generator', () => {
       flags: 0,
       dynamicProps: [],
       hasEvent: false,
+      hasSlot: false,
