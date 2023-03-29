@@ -6,3 +6,4 @@ import { generateRenderFunction } from './codegen';
 describe('Code Generator', () => {
   const createContext = (filename = 'test.uf') => ({
     filename,
+    source: '',
