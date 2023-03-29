@@ -555,3 +555,4 @@ class BlockTreeBuilder {
   }
 
   private countDynamicNodes(block: Block): number {
+    return block.dynamicNodes.length + block.children.reduce((sum, b) => sum + this.countDynamicNodes(b), 0);
