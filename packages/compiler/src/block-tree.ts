@@ -553,3 +553,5 @@ class BlockTreeBuilder {
       this.collectDynamicNodesRecursive(child, block);
     }
   }
+
+  private countDynamicNodes(block: Block): number {
