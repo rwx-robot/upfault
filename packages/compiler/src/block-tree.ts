@@ -567,3 +567,5 @@ class BlockTreeBuilder {
     return 1 + node.children.reduce((sum, c) => sum + this.countAllNodes(c), 0);
   }
 }
+
+// ============================================================================
