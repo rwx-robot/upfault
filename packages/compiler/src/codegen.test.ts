@@ -13,3 +13,4 @@ describe('Code Generator', () => {
       hasEvent: false,
       hasSlot: false,
       staticKeys: new Set(),
+      dynamicSlots: [],
