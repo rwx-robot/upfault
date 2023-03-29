@@ -566,3 +566,4 @@ class BlockTreeBuilder {
   private countAllNodes(node: BlockNode): number {
     return 1 + node.children.reduce((sum, c) => sum + this.countAllNodes(c), 0);
   }
+}
