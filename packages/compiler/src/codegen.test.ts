@@ -9,3 +9,4 @@ describe('Code Generator', () => {
     source: '',
     flags: {
       flags: 0,
+      dynamicProps: [],
