@@ -10,3 +10,4 @@ describe('Code Generator', () => {
     flags: {
       flags: 0,
       dynamicProps: [],
+      hasEvent: false,
