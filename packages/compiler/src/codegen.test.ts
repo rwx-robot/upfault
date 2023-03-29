@@ -19,3 +19,4 @@ describe('Code Generator', () => {
     scope: { variables: new Map(), parent: null, level: 0 },
     errors: [],
     warnings: [],
+  });
