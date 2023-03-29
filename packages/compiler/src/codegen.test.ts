@@ -4,3 +4,4 @@ import { buildBlockTree, BlockGranularity } from './block-tree';
 import { generateRenderFunction } from './codegen';
 
 describe('Code Generator', () => {
+  const createContext = (filename = 'test.uf') => ({
