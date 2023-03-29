@@ -560,3 +560,4 @@ class BlockTreeBuilder {
 
   private countStaticNodes(block: Block): number {
     // 简化：总节点 - 动态节点
+    return this.countAllNodes(block.root) - this.countDynamicNodes(block);
