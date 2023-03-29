@@ -8,3 +8,4 @@ describe('Code Generator', () => {
     filename,
     source: '',
     flags: {
+      flags: 0,
