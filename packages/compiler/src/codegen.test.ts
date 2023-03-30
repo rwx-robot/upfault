@@ -23,3 +23,4 @@ describe('Code Generator', () => {
 
   const compileTemplate = (template: string, granularity = BlockGranularity.Medium) => {
     const { ast, context } = parse(template);
+    const blockTree = buildBlockTree(ast, context, { granularity });
