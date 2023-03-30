@@ -57,3 +57,4 @@ describe('Code Generator', () => {
 
     it('应生成事件处理渲染代码', () => {
       const result = compileTemplate('<button @click="handleClick">Click</button>');
+      
