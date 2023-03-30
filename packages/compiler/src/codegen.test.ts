@@ -59,3 +59,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<button @click="handleClick">Click</button>');
       
       expect(result.code).toContain('createElementVNode');
+      expect(result.code).toContain('button');
