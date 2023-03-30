@@ -63,3 +63,4 @@ describe('Code Generator', () => {
       // 事件处理
       expect(result.code).toContain('click');
     });
+  });
