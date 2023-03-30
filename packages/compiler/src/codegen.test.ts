@@ -25,3 +25,4 @@ describe('Code Generator', () => {
     const { ast, context } = parse(template);
     const blockTree = buildBlockTree(ast, context, { granularity });
     return generateRenderFunction(ast, context, blockTree);
+  };
