@@ -33,3 +33,4 @@ describe('Code Generator', () => {
       
       expect(result.code).toContain('createVNode');
       expect(result.code).toContain('div');
+      // 静态文本渲染
