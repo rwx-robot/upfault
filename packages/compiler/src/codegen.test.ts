@@ -49,3 +49,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<div :class="cls" :id="id"></div>');
       
       expect(result.code).toContain('createElementVNode');
+      expect(result.code).toContain('div');
