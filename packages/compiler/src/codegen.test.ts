@@ -54,3 +54,5 @@ describe('Code Generator', () => {
       expect(result.code).toContain('class');
       expect(result.code).toContain('id');
     });
+
+    it('应生成事件处理渲染代码', () => {
