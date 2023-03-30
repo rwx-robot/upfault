@@ -44,3 +44,5 @@ describe('Code Generator', () => {
       // 插值表达式渲染为表达式值
       expect(result.code).toContain('_ctx.count');
     });
+
+    it('应生成动态属性渲染代码', () => {
