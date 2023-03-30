@@ -20,3 +20,5 @@ describe('Code Generator', () => {
     errors: [],
     warnings: [],
   });
+
+  const compileTemplate = (template: string, granularity = BlockGranularity.Medium) => {
