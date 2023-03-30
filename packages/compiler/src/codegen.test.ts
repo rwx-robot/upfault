@@ -40,3 +40,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<div>{{ count }}</div>');
       
       expect(result.code).toContain('createElementVNode');
+      expect(result.code).toContain('div');
