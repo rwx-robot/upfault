@@ -37,3 +37,4 @@ describe('Code Generator', () => {
     });
 
     it('应生成动态插值渲染代码', () => {
+      const result = compileTemplate('<div>{{ count }}</div>');
