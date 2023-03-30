@@ -46,3 +46,4 @@ describe('Code Generator', () => {
     });
 
     it('应生成动态属性渲染代码', () => {
+      const result = compileTemplate('<div :class="cls" :id="id"></div>');
