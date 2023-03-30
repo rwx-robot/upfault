@@ -32,3 +32,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<div>Hello</div>');
       
       expect(result.code).toContain('createVNode');
+      expect(result.code).toContain('div');
