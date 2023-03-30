@@ -28,3 +28,4 @@ describe('Code Generator', () => {
   };
 
   describe('基础代码生成', () => {
+    it('应生成简单元素渲染代码', () => {
