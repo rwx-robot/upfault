@@ -41,3 +41,4 @@ describe('Code Generator', () => {
       
       expect(result.code).toContain('createElementVNode');
       expect(result.code).toContain('div');
+      // 插值表达式渲染为表达式值
