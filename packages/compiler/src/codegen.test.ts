@@ -53,3 +53,4 @@ describe('Code Generator', () => {
       // 动态属性渲染
       expect(result.code).toContain('class');
       expect(result.code).toContain('id');
+    });
