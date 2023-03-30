@@ -26,3 +26,5 @@ describe('Code Generator', () => {
     const blockTree = buildBlockTree(ast, context, { granularity });
     return generateRenderFunction(ast, context, blockTree);
   };
+
+  describe('基础代码生成', () => {
