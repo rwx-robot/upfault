@@ -60,3 +60,4 @@ describe('Code Generator', () => {
       
       expect(result.code).toContain('createElementVNode');
       expect(result.code).toContain('button');
+      // 事件处理
