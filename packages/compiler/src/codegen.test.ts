@@ -51,3 +51,4 @@ describe('Code Generator', () => {
       expect(result.code).toContain('createElementVNode');
       expect(result.code).toContain('div');
       // 动态属性渲染
+      expect(result.code).toContain('class');
