@@ -31,3 +31,4 @@ describe('Code Generator', () => {
     it('应生成简单元素渲染代码', () => {
       const result = compileTemplate('<div>Hello</div>');
       
+      expect(result.code).toContain('createVNode');
