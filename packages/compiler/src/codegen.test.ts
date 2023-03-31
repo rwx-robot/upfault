@@ -102,3 +102,4 @@ describe('Code Generator', () => {
   });
 
   describe('静态提升', () => {
+    it('应提升静态子树', () => {
