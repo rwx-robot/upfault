@@ -92,3 +92,5 @@ describe('Code Generator', () => {
       // v-for 片段渲染
       expect(result.code).toContain('64'); // KEYED_FRAGMENT
     });
+
+    it('应生成嵌套渲染代码', () => {
