@@ -79,3 +79,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<Child @emit="onEmit" />');
       
       expect(result.code).toContain('Child');
+      // 组件事件
