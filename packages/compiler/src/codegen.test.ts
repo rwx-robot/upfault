@@ -99,3 +99,4 @@ describe('Code Generator', () => {
       expect(result.code).toContain('ul');
       expect(result.code).toContain('Fragment');
     });
+  });
