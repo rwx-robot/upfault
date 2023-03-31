@@ -70,3 +70,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<MyComponent :prop="value" />');
       
       expect(result.code).toContain('createVNode');
+      expect(result.code).toContain('MyComponent');
