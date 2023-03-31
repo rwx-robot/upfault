@@ -67,3 +67,4 @@ describe('Code Generator', () => {
 
   describe('组件渲染', () => {
     it('应生成组件渲染代码', () => {
+      const result = compileTemplate('<MyComponent :prop="value" />');
