@@ -81,3 +81,4 @@ describe('Code Generator', () => {
       expect(result.code).toContain('Child');
       // 组件事件
       expect(result.code).toContain('emit');
+    });
