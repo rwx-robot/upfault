@@ -97,3 +97,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<ul><li v-for="i in list">{{ i }}</li></ul>');
       
       expect(result.code).toContain('ul');
+      expect(result.code).toContain('Fragment');
