@@ -76,3 +76,4 @@ describe('Code Generator', () => {
     });
 
     it('应处理组件事件', () => {
+      const result = compileTemplate('<Child @emit="onEmit" />');
