@@ -94,3 +94,4 @@ describe('Code Generator', () => {
     });
 
     it('应生成嵌套渲染代码', () => {
+      const result = compileTemplate('<ul><li v-for="i in list">{{ i }}</li></ul>');
