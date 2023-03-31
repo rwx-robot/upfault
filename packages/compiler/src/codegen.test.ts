@@ -89,3 +89,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<li v-for="item in items" :key="item.id">{{ item.name }}</li>');
       
       expect(result.code).toContain('Fragment');
+      // v-for 片段渲染
