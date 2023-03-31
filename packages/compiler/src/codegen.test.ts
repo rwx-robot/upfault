@@ -106,3 +106,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<div><span>Static</span>{{ dynamic }}</div>');
       
       // 静态提升逻辑
+      expect(result.code).toContain('createVNode');
