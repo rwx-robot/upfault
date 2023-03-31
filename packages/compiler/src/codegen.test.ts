@@ -82,3 +82,4 @@ describe('Code Generator', () => {
       // 组件事件
       expect(result.code).toContain('emit');
     });
+  });
