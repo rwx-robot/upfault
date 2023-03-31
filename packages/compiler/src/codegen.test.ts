@@ -91,3 +91,4 @@ describe('Code Generator', () => {
       expect(result.code).toContain('Fragment');
       // v-for 片段渲染
       expect(result.code).toContain('64'); // KEYED_FRAGMENT
+    });
