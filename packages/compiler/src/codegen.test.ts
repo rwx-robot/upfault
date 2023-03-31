@@ -100,3 +100,5 @@ describe('Code Generator', () => {
       expect(result.code).toContain('Fragment');
     });
   });
+
+  describe('静态提升', () => {
