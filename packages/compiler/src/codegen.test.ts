@@ -83,3 +83,5 @@ describe('Code Generator', () => {
       expect(result.code).toContain('emit');
     });
   });
+
+  describe('控制流渲染', () => {
