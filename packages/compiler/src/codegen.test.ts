@@ -74,3 +74,5 @@ describe('Code Generator', () => {
       // 组件 props
       expect(result.code).toContain('prop');
     });
+
+    it('应处理组件事件', () => {
