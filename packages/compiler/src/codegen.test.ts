@@ -65,3 +65,4 @@ describe('Code Generator', () => {
     });
   });
 
+  describe('组件渲染', () => {
