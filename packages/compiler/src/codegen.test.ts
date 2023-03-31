@@ -69,3 +69,4 @@ describe('Code Generator', () => {
     it('应生成组件渲染代码', () => {
       const result = compileTemplate('<MyComponent :prop="value" />');
       
+      expect(result.code).toContain('createVNode');
