@@ -85,3 +85,4 @@ describe('Code Generator', () => {
   });
 
   describe('控制流渲染', () => {
+    it('应生成 v-for 渲染代码', () => {
