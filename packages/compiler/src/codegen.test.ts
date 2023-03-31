@@ -105,3 +105,4 @@ describe('Code Generator', () => {
     it('应提升静态子树', () => {
       const result = compileTemplate('<div><span>Static</span>{{ dynamic }}</div>');
       
+      // 静态提升逻辑
