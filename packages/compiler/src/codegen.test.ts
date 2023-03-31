@@ -71,3 +71,4 @@ describe('Code Generator', () => {
       
       expect(result.code).toContain('createVNode');
       expect(result.code).toContain('MyComponent');
+      // 组件 props
