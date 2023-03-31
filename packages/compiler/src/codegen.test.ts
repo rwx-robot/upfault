@@ -107,3 +107,4 @@ describe('Code Generator', () => {
       
       // 静态提升逻辑
       expect(result.code).toContain('createVNode');
+      expect(result.code).toContain('Static');
