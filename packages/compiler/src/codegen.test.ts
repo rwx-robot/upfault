@@ -141,3 +141,4 @@ describe('Code Generator', () => {
       
       const result = compileTemplate(template);
       
+      expect(result.code).toContain('class');
