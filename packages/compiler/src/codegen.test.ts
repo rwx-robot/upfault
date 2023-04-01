@@ -116,3 +116,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<div>{{ count }}</div>');
       
       expect(result.metadata).toBeDefined();
+      // 组件名从文件名提取
