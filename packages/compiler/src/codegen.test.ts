@@ -118,3 +118,4 @@ describe('Code Generator', () => {
       expect(result.metadata).toBeDefined();
       // 组件名从文件名提取
       expect(result.metadata.templateHash).toMatch(/^0x[0-9a-f]{8}$/);
+      expect(result.metadata.compileFlags).toBeGreaterThan(0);
