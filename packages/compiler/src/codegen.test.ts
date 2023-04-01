@@ -129,3 +129,4 @@ describe('Code Generator', () => {
         <div class="container">
           <header>
             <h1>{{ title }}</h1>
+            <nav>
