@@ -139,3 +139,4 @@ describe('Code Generator', () => {
         </div>
       `;
       
+      const result = compileTemplate(template);
