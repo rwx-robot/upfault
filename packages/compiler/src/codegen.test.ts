@@ -136,3 +136,4 @@ describe('Code Generator', () => {
           <main>
             <slot name="content" />
           </main>
+        </div>
