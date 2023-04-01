@@ -122,3 +122,4 @@ describe('Code Generator', () => {
       expect(result.metadata.helpers).toContain('h');
     });
   });
+
