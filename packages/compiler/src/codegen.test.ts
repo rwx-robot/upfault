@@ -140,3 +140,4 @@ describe('Code Generator', () => {
       `;
       
       const result = compileTemplate(template);
+      
