@@ -111,3 +111,4 @@ describe('Code Generator', () => {
     });
   });
 
+  describe('Metadata', () => {
