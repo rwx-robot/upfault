@@ -143,3 +143,4 @@ describe('Code Generator', () => {
       
       expect(result.code).toContain('class');
       expect(result.code).toContain('title');
+      expect(result.code).toContain('Fragment');
