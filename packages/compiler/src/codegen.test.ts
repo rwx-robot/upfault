@@ -109,3 +109,4 @@ describe('Code Generator', () => {
       expect(result.code).toContain('createVNode');
       expect(result.code).toContain('Static');
     });
+  });
