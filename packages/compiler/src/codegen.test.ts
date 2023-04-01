@@ -133,3 +133,4 @@ describe('Code Generator', () => {
               <a v-for="link in links" :href="link.url" :key="link.id">{{ link.text }}</a>
             </nav>
           </header>
+          <main>
