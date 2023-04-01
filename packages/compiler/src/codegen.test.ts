@@ -126,3 +126,4 @@ describe('Code Generator', () => {
   describe('复杂模板', () => {
     it('应处理复杂嵌套模板', () => {
       const template = `
+        <div class="container">
