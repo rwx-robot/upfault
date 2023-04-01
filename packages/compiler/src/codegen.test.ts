@@ -128,3 +128,4 @@ describe('Code Generator', () => {
       const template = `
         <div class="container">
           <header>
+            <h1>{{ title }}</h1>
