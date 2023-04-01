@@ -113,3 +113,4 @@ describe('Code Generator', () => {
 
   describe('Metadata', () => {
     it('应生成正确的元数据', () => {
+      const result = compileTemplate('<div>{{ count }}</div>');
