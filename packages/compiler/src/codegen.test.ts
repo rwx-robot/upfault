@@ -146,3 +146,4 @@ describe('Code Generator', () => {
       expect(result.code).toContain('Fragment');
       expect(result.code).toContain('slot');
     });
+  });
