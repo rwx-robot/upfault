@@ -121,3 +121,4 @@ describe('Code Generator', () => {
       expect(result.metadata.compileFlags).toBeGreaterThan(0);
       expect(result.metadata.helpers).toContain('h');
     });
+  });
