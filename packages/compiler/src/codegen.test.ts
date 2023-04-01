@@ -120,3 +120,4 @@ describe('Code Generator', () => {
       expect(result.metadata.templateHash).toMatch(/^0x[0-9a-f]{8}$/);
       expect(result.metadata.compileFlags).toBeGreaterThan(0);
       expect(result.metadata.helpers).toContain('h');
+    });
