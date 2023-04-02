@@ -23,3 +23,4 @@ export interface CodegenOptions {
   hoistStatic: boolean;
   cacheHandlers: boolean;
   generateAnnotations: boolean; // 生成 DevTools 注解
+}
