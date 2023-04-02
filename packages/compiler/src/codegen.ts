@@ -20,3 +20,4 @@ export interface CodegenOptions {
   sourceMap: boolean;
   filename: string;
   optimizeImports: boolean;
+  hoistStatic: boolean;
