@@ -21,3 +21,4 @@ export interface CodegenOptions {
   filename: string;
   optimizeImports: boolean;
   hoistStatic: boolean;
+  cacheHandlers: boolean;
