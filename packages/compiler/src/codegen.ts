@@ -6,3 +6,4 @@
  */
 
 import { BlockType, type Block, type BlockNode, type BlockTreeResult, type BlockGranularity } from './block-tree';
+import type { TemplateAST, CompileContext, ImportSpec, CompileError, CompileWarning } from './parser';
