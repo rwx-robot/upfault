@@ -152,3 +152,4 @@ describe('Code Generator', () => {
     it('应生成必要的运行时导入', () => {
       const result = compileTemplate('<div>{{ x }}</div>');
       
+      expect(result.code).toContain("import {");
