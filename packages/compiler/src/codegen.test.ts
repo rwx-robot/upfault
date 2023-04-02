@@ -158,3 +158,4 @@ describe('Code Generator', () => {
       expect(result.code).toContain('createElementVNode');
       expect(result.code).toContain('openBlock');
     });
+  });
