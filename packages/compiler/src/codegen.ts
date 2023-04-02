@@ -15,3 +15,4 @@ import type { VNodeFlags } from '@upfault/shared';
 // ============================================================================
 
 export interface CodegenOptions {
+  mode: 'module' | 'function';
