@@ -10,3 +10,4 @@ import type { TemplateAST, CompileContext, ImportSpec, CompileError, CompileWarn
 import { VNodeType, PatchFlags } from '@upfault/shared';
 import type { VNodeFlags } from '@upfault/shared';
 
+// ============================================================================
