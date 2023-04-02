@@ -153,3 +153,4 @@ describe('Code Generator', () => {
       const result = compileTemplate('<div>{{ x }}</div>');
       
       expect(result.code).toContain("import {");
+      expect(result.code).toContain('@upfault/runtime');
