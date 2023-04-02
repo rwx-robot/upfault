@@ -24,3 +24,5 @@ export interface CodegenOptions {
   cacheHandlers: boolean;
   generateAnnotations: boolean; // 生成 DevTools 注解
 }
+
+export interface CodegenResult {
