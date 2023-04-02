@@ -16,3 +16,4 @@ import type { VNodeFlags } from '@upfault/shared';
 
 export interface CodegenOptions {
   mode: 'module' | 'function';
+  target: 'es2020' | 'es2015';
