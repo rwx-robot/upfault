@@ -18,3 +18,4 @@ export interface CodegenOptions {
   mode: 'module' | 'function';
   target: 'es2020' | 'es2015';
   sourceMap: boolean;
+  filename: string;
