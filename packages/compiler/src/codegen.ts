@@ -11,3 +11,4 @@ import { VNodeType, PatchFlags } from '@upfault/shared';
 import type { VNodeFlags } from '@upfault/shared';
 
 // ============================================================================
+// 代码生成配置
