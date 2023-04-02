@@ -19,3 +19,4 @@ export interface CodegenOptions {
   target: 'es2020' | 'es2015';
   sourceMap: boolean;
   filename: string;
+  optimizeImports: boolean;
