@@ -8,3 +8,4 @@
 import { BlockType, type Block, type BlockNode, type BlockTreeResult, type BlockGranularity } from './block-tree';
 import type { TemplateAST, CompileContext, ImportSpec, CompileError, CompileWarning } from './parser';
 import { VNodeType, PatchFlags } from '@upfault/shared';
+import type { VNodeFlags } from '@upfault/shared';
