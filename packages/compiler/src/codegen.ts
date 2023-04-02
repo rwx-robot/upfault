@@ -26,3 +26,4 @@ export interface CodegenOptions {
 }
 
 export interface CodegenResult {
+  code: string;
