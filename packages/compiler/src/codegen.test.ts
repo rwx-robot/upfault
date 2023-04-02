@@ -159,3 +159,4 @@ describe('Code Generator', () => {
       expect(result.code).toContain('openBlock');
     });
   });
+});
