@@ -27,3 +27,4 @@ export interface CodegenOptions {
 
 export interface CodegenResult {
   code: string;
+  ast: TemplateAST;
