@@ -154,3 +154,4 @@ describe('Code Generator', () => {
       
       expect(result.code).toContain("import {");
       expect(result.code).toContain('@upfault/runtime');
+      expect(result.code).toContain('createVNode');
