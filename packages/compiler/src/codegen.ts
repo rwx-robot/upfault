@@ -42,3 +42,4 @@ export interface RenderMetadata {
   hasHoisted: boolean;
   helpers: string[];
 }
+
