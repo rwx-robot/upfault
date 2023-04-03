@@ -53,3 +53,4 @@ export function generateRenderFunction(
   blockTree: BlockTreeResult,
   options: CodegenOptions = {
     mode: 'module',
+    target: 'es2020',
