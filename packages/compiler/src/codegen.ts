@@ -68,3 +68,4 @@ export function generateRenderFunction(
 
 class CodeGenerator {
   private ast: TemplateAST;
+  private context: CompileContext;
