@@ -60,3 +60,4 @@ export function generateRenderFunction(
     hoistStatic: true,
     cacheHandlers: true,
     generateAnnotations: true,
+  }
