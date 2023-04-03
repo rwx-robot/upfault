@@ -52,3 +52,4 @@ export function generateRenderFunction(
   context: CompileContext,
   blockTree: BlockTreeResult,
   options: CodegenOptions = {
+    mode: 'module',
