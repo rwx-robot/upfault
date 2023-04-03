@@ -40,3 +40,4 @@ export interface RenderMetadata {
   compileFlags: number;
   hasDynamicSlots: boolean;
   hasHoisted: boolean;
+  helpers: string[];
