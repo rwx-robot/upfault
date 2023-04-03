@@ -30,3 +30,4 @@ export interface CodegenResult {
   ast: TemplateAST;
   imports: ImportSpec[];
   metadata: RenderMetadata;
+  sourceMap?: string;
