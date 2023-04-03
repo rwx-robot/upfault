@@ -65,3 +65,5 @@ export function generateRenderFunction(
   const generator = new CodeGenerator(ast, context, blockTree, options);
   return generator.generate();
 }
+
+class CodeGenerator {
