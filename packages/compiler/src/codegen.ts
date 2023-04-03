@@ -34,3 +34,4 @@ export interface CodegenResult {
 }
 
 export interface RenderMetadata {
+  blockTree: BlockTreeResult;
