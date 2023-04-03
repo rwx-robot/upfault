@@ -38,3 +38,4 @@ export interface RenderMetadata {
   componentName: string;
   templateHash: string;
   compileFlags: number;
+  hasDynamicSlots: boolean;
