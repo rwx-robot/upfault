@@ -36,3 +36,4 @@ export interface CodegenResult {
 export interface RenderMetadata {
   blockTree: BlockTreeResult;
   componentName: string;
+  templateHash: string;
