@@ -55,3 +55,4 @@ export function generateRenderFunction(
     mode: 'module',
     target: 'es2020',
     sourceMap: false,
+    filename: 'anonymous.uf',
