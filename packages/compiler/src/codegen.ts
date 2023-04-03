@@ -37,3 +37,4 @@ export interface RenderMetadata {
   blockTree: BlockTreeResult;
   componentName: string;
   templateHash: string;
+  compileFlags: number;
