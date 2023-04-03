@@ -56,3 +56,4 @@ export function generateRenderFunction(
     target: 'es2020',
     sourceMap: false,
     filename: 'anonymous.uf',
+    optimizeImports: true,
