@@ -32,3 +32,5 @@ export interface CodegenResult {
   metadata: RenderMetadata;
   sourceMap?: string;
 }
+
+export interface RenderMetadata {
