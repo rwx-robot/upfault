@@ -64,3 +64,4 @@ export function generateRenderFunction(
 ): CodegenResult {
   const generator = new CodeGenerator(ast, context, blockTree, options);
   return generator.generate();
+}
