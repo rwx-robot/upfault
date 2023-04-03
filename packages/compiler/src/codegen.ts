@@ -48,3 +48,4 @@ export interface RenderMetadata {
 // ============================================================================
 
 export function generateRenderFunction(
+  ast: TemplateAST,
