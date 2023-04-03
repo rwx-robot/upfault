@@ -31,3 +31,4 @@ export interface CodegenResult {
   imports: ImportSpec[];
   metadata: RenderMetadata;
   sourceMap?: string;
+}
