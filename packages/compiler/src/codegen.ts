@@ -62,3 +62,4 @@ export function generateRenderFunction(
     generateAnnotations: true,
   }
 ): CodegenResult {
+  const generator = new CodeGenerator(ast, context, blockTree, options);
