@@ -41,3 +41,4 @@ export interface RenderMetadata {
   hasDynamicSlots: boolean;
   hasHoisted: boolean;
   helpers: string[];
+}
