@@ -61,3 +61,4 @@ export function generateRenderFunction(
     cacheHandlers: true,
     generateAnnotations: true,
   }
+): CodegenResult {
