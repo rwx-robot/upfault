@@ -58,3 +58,4 @@ export function generateRenderFunction(
     filename: 'anonymous.uf',
     optimizeImports: true,
     hoistStatic: true,
+    cacheHandlers: true,
