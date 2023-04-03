@@ -54,3 +54,4 @@ export function generateRenderFunction(
   options: CodegenOptions = {
     mode: 'module',
     target: 'es2020',
+    sourceMap: false,
