@@ -29,3 +29,4 @@ export interface CodegenResult {
   code: string;
   ast: TemplateAST;
   imports: ImportSpec[];
+  metadata: RenderMetadata;
