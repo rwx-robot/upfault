@@ -70,3 +70,4 @@ class CodeGenerator {
   private ast: TemplateAST;
   private context: CompileContext;
   private blockTree: BlockTreeResult;
+  private options: CodegenOptions;
