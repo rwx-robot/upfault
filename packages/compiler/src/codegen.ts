@@ -39,3 +39,4 @@ export interface RenderMetadata {
   templateHash: string;
   compileFlags: number;
   hasDynamicSlots: boolean;
+  hasHoisted: boolean;
