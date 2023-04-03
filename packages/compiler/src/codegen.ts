@@ -51,3 +51,4 @@ export function generateRenderFunction(
   ast: TemplateAST,
   context: CompileContext,
   blockTree: BlockTreeResult,
+  options: CodegenOptions = {
