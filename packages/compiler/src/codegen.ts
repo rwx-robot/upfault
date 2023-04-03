@@ -59,3 +59,4 @@ export function generateRenderFunction(
     optimizeImports: true,
     hoistStatic: true,
     cacheHandlers: true,
+    generateAnnotations: true,
