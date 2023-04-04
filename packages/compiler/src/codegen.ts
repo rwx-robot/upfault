@@ -88,3 +88,5 @@ class CodeGenerator {
     this.blockTree = blockTree;
     this.options = options;
   }
+
+  generate(): CodegenResult {
