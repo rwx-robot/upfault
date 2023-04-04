@@ -96,3 +96,4 @@ class CodeGenerator {
     // 2. 生成 hoisted 静态节点
     if (this.options.hoistStatic) {
       this.generateHoisted(this.blockTree.rootBlock);
+    }
