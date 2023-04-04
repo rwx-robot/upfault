@@ -107,3 +107,4 @@ class CodeGenerator {
     return {
       code: this.code.join('\n'),
       ast: this.ast,
+      imports: this.context.imports,
