@@ -71,3 +71,4 @@ class CodeGenerator {
   private context: CompileContext;
   private blockTree: BlockTreeResult;
   private options: CodegenOptions;
+  private code: string[] = [];
