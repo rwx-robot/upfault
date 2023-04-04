@@ -75,3 +75,4 @@ class CodeGenerator {
   private indentLevel: number = 0;
   private helpers: Set<string> = new Set();
   private hoisted: string[] = [];
+  private hoistId: number = 0;
