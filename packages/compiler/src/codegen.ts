@@ -105,3 +105,4 @@ class CodeGenerator {
     const metadata = this.generateMetadata();
     
     return {
+      code: this.code.join('\n'),
