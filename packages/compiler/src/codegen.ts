@@ -80,3 +80,4 @@ class CodeGenerator {
   constructor(
     ast: TemplateAST,
     context: CompileContext,
+    blockTree: BlockTreeResult,
