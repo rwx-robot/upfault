@@ -83,3 +83,4 @@ class CodeGenerator {
     blockTree: BlockTreeResult,
     options: CodegenOptions
   ) {
+    this.ast = ast;
