@@ -108,3 +108,4 @@ class CodeGenerator {
       code: this.code.join('\n'),
       ast: this.ast,
       imports: this.context.imports,
+      metadata,
