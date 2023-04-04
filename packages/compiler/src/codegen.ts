@@ -79,3 +79,4 @@ class CodeGenerator {
 
   constructor(
     ast: TemplateAST,
+    context: CompileContext,
