@@ -84,3 +84,4 @@ class CodeGenerator {
     options: CodegenOptions
   ) {
     this.ast = ast;
+    this.context = context;
