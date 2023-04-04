@@ -97,3 +97,4 @@ class CodeGenerator {
     if (this.options.hoistStatic) {
       this.generateHoisted(this.blockTree.rootBlock);
     }
+    
