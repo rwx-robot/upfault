@@ -87,3 +87,4 @@ class CodeGenerator {
     this.context = context;
     this.blockTree = blockTree;
     this.options = options;
+  }
