@@ -98,3 +98,4 @@ class CodeGenerator {
       this.generateHoisted(this.blockTree.rootBlock);
     }
     
+    // 3. 生成渲染函数
