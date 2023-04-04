@@ -78,3 +78,4 @@ class CodeGenerator {
   private hoistId: number = 0;
 
   constructor(
+    ast: TemplateAST,
