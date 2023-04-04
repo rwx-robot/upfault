@@ -93,3 +93,4 @@ class CodeGenerator {
     // 1. 生成 imports
     this.generateImports();
     
+    // 2. 生成 hoisted 静态节点
