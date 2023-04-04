@@ -85,3 +85,4 @@ class CodeGenerator {
   ) {
     this.ast = ast;
     this.context = context;
+    this.blockTree = blockTree;
