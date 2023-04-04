@@ -81,3 +81,4 @@ class CodeGenerator {
     ast: TemplateAST,
     context: CompileContext,
     blockTree: BlockTreeResult,
+    options: CodegenOptions
