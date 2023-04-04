@@ -104,3 +104,4 @@ class CodeGenerator {
     // 4. 生成 metadata
     const metadata = this.generateMetadata();
     
+    return {
