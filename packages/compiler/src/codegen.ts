@@ -99,3 +99,4 @@ class CodeGenerator {
     }
     
     // 3. 生成渲染函数
+    this.generateRenderFunction();
