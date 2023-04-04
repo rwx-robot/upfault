@@ -72,3 +72,4 @@ class CodeGenerator {
   private blockTree: BlockTreeResult;
   private options: CodegenOptions;
   private code: string[] = [];
+  private indentLevel: number = 0;
