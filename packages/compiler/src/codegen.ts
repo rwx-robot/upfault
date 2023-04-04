@@ -109,3 +109,4 @@ class CodeGenerator {
       ast: this.ast,
       imports: this.context.imports,
       metadata,
+    };
