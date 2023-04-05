@@ -143,3 +143,4 @@ class CodeGenerator {
       this.helpers.add(imp.name);
     }
     
+    if (this.helpers.size > 0) {
