@@ -118,3 +118,4 @@ class CodeGenerator {
       'h',
       'Fragment',
       'Text',
+      'Comment',
