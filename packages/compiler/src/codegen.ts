@@ -126,3 +126,4 @@ class CodeGenerator {
       'createTextVNode',
       'createCommentVNode',
       'withDirectives',
+      'vShow',
