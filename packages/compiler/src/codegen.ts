@@ -115,3 +115,4 @@ class CodeGenerator {
   private generateImports(): void {
     // 核心运行时 imports
     const coreImports = [
+      'h',
