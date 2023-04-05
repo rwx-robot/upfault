@@ -121,3 +121,4 @@ class CodeGenerator {
       'Comment',
       'openBlock',
       'createBlock',
+      'createVNode',
