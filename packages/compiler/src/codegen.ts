@@ -119,3 +119,4 @@ class CodeGenerator {
       'Fragment',
       'Text',
       'Comment',
+      'openBlock',
