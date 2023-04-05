@@ -132,3 +132,4 @@ class CodeGenerator {
       'normalizeClass',
       'normalizeStyle',
       'toHandlers',
+    ];
