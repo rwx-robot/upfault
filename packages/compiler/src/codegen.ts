@@ -144,3 +144,4 @@ class CodeGenerator {
     }
     
     if (this.helpers.size > 0) {
+      const imports = Array.from(this.helpers)
