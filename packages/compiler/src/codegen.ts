@@ -127,3 +127,4 @@ class CodeGenerator {
       'createCommentVNode',
       'withDirectives',
       'vShow',
+      'vModel',
