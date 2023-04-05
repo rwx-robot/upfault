@@ -129,3 +129,4 @@ class CodeGenerator {
       'vShow',
       'vModel',
       'mergeProps',
+      'normalizeClass',
