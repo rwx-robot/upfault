@@ -116,3 +116,4 @@ class CodeGenerator {
     // 核心运行时 imports
     const coreImports = [
       'h',
+      'Fragment',
