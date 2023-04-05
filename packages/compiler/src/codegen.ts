@@ -120,3 +120,4 @@ class CodeGenerator {
       'Text',
       'Comment',
       'openBlock',
+      'createBlock',
