@@ -123,3 +123,4 @@ class CodeGenerator {
       'createBlock',
       'createVNode',
       'createElementVNode',
+      'createTextVNode',
