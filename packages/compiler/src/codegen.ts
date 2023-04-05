@@ -134,3 +134,4 @@ class CodeGenerator {
       'toHandlers',
     ];
     
+    for (const helper of coreImports) {
