@@ -135,3 +135,4 @@ class CodeGenerator {
     ];
     
     for (const helper of coreImports) {
+      this.helpers.add(helper);
