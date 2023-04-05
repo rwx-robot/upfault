@@ -128,3 +128,4 @@ class CodeGenerator {
       'withDirectives',
       'vShow',
       'vModel',
+      'mergeProps',
