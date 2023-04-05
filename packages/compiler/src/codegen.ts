@@ -122,3 +122,4 @@ class CodeGenerator {
       'openBlock',
       'createBlock',
       'createVNode',
+      'createElementVNode',
