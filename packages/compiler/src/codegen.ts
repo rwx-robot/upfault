@@ -141,3 +141,4 @@ class CodeGenerator {
     // 用户导入
     for (const imp of this.context.imports) {
       this.helpers.add(imp.name);
+    }
