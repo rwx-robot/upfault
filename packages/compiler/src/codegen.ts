@@ -130,3 +130,4 @@ class CodeGenerator {
       'vModel',
       'mergeProps',
       'normalizeClass',
+      'normalizeStyle',
