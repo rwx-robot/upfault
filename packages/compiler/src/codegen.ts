@@ -110,3 +110,4 @@ class CodeGenerator {
       imports: this.context.imports,
       metadata,
     };
+  }
