@@ -131,3 +131,4 @@ class CodeGenerator {
       'mergeProps',
       'normalizeClass',
       'normalizeStyle',
+      'toHandlers',
