@@ -111,3 +111,5 @@ class CodeGenerator {
       metadata,
     };
   }
+
+  private generateImports(): void {
