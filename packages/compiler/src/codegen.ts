@@ -117,3 +117,4 @@ class CodeGenerator {
     const coreImports = [
       'h',
       'Fragment',
+      'Text',
