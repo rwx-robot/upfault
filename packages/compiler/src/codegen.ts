@@ -164,3 +164,4 @@ class CodeGenerator {
   }
 
   private hoistStaticSubtree(node: BlockNode, block: Block): void {
+    // 查找纯静态子树
