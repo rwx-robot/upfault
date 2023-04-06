@@ -167,3 +167,4 @@ class CodeGenerator {
     // 查找纯静态子树
     const staticChildren = this.findStaticChildren(node);
     
+    for (const child of staticChildren) {
