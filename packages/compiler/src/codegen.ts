@@ -179,3 +179,4 @@ class CodeGenerator {
   private findStaticChildren(node: BlockNode): BlockNode[] {
     const result: BlockNode[] = [];
     
+    for (const child of node.children) {
