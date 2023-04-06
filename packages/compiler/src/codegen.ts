@@ -175,3 +175,5 @@ class CodeGenerator {
       }
     }
   }
+
+  private findStaticChildren(node: BlockNode): BlockNode[] {
