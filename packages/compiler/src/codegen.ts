@@ -182,3 +182,4 @@ class CodeGenerator {
     for (const child of node.children) {
       if (!child.isDynamic && child.children.length > 0) {
         result.push(child);
+      }
