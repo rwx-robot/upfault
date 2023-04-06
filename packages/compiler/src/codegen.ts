@@ -151,3 +151,5 @@ class CodeGenerator {
       this.code.push('');
     }
   }
+
+  private generateHoisted(block: Block): void {
