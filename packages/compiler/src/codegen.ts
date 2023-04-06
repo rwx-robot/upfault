@@ -163,3 +163,4 @@ class CodeGenerator {
     }
   }
 
+  private hoistStaticSubtree(node: BlockNode, block: Block): void {
