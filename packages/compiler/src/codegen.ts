@@ -188,3 +188,5 @@ class CodeGenerator {
     
     return result;
   }
+
+  private generateHoistedNode(node: BlockNode): string {
