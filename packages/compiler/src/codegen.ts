@@ -161,3 +161,4 @@ class CodeGenerator {
     for (const childBlock of block.children) {
       this.generateHoisted(childBlock);
     }
+  }
