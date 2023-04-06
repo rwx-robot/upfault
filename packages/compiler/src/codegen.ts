@@ -170,3 +170,4 @@ class CodeGenerator {
     for (const child of staticChildren) {
       const hoistCode = this.generateHoistedNode(child);
       if (hoistCode) {
+        this.hoisted.push(`const _hoisted_${++this.hoistId} = ${hoistCode}`);
