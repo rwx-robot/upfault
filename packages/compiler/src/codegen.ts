@@ -157,3 +157,4 @@ class CodeGenerator {
       // 静态子树提升
       this.hoistStaticSubtree(node, block);
     }
+    
