@@ -183,3 +183,4 @@ class CodeGenerator {
       if (!child.isDynamic && child.children.length > 0) {
         result.push(child);
       }
+      result.push(...this.findStaticChildren(child));
