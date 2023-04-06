@@ -148,3 +148,4 @@ class CodeGenerator {
         .map(h => `import { ${h} } from '@upfault/runtime'`)
         .join('\n');
       this.code.push(imports);
+      this.code.push('');
