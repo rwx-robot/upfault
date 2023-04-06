@@ -162,3 +162,4 @@ class CodeGenerator {
       this.generateHoisted(childBlock);
     }
   }
+
