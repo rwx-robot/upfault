@@ -172,3 +172,4 @@ class CodeGenerator {
       if (hoistCode) {
         this.hoisted.push(`const _hoisted_${++this.hoistId} = ${hoistCode}`);
         child.hoisted = `_hoisted_${this.hoistId}`;
+      }
