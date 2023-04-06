@@ -186,3 +186,4 @@ class CodeGenerator {
       result.push(...this.findStaticChildren(child));
     }
     
+    return result;
