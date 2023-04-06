@@ -149,3 +149,4 @@ class CodeGenerator {
         .join('\n');
       this.code.push(imports);
       this.code.push('');
+    }
