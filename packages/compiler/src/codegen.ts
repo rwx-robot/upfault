@@ -191,3 +191,4 @@ class CodeGenerator {
 
   private generateHoistedNode(node: BlockNode): string {
     // 生成静态节点的创建代码
+    return this.generateNodeCode(node, { hoisted: true });
