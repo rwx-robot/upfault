@@ -180,3 +180,4 @@ class CodeGenerator {
     const result: BlockNode[] = [];
     
     for (const child of node.children) {
+      if (!child.isDynamic && child.children.length > 0) {
