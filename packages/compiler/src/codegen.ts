@@ -158,3 +158,4 @@ class CodeGenerator {
       this.hoistStaticSubtree(node, block);
     }
     
+    for (const childBlock of block.children) {
