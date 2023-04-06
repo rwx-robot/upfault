@@ -174,3 +174,4 @@ class CodeGenerator {
         child.hoisted = `_hoisted_${this.hoistId}`;
       }
     }
+  }
