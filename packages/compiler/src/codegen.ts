@@ -168,3 +168,4 @@ class CodeGenerator {
     const staticChildren = this.findStaticChildren(node);
     
     for (const child of staticChildren) {
+      const hoistCode = this.generateHoistedNode(child);
