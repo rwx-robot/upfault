@@ -154,3 +154,4 @@ class CodeGenerator {
 
   private generateHoisted(block: Block): void {
     for (const node of block.dynamicNodes) {
+      // 静态子树提升
