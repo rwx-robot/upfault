@@ -150,3 +150,4 @@ class CodeGenerator {
       this.code.push(imports);
       this.code.push('');
     }
+  }
