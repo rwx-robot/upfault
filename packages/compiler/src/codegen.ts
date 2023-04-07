@@ -215,3 +215,4 @@ class CodeGenerator {
     if (block.type === BlockType.Root) {
       this.generateNodeRender(block.root);
     } else {
+      this.code.push(`openBlock(${block.priority})`);
