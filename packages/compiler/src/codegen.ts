@@ -206,3 +206,4 @@ class CodeGenerator {
     this.generateBlockRender(this.blockTree.rootBlock);
     
     this.indentLevel--;
+    this.code.push(`)`);
