@@ -217,3 +217,4 @@ class CodeGenerator {
     } else {
       this.code.push(`openBlock(${block.priority})`);
       this.code.push(`createBlock(`);
+      this.indentLevel++;
