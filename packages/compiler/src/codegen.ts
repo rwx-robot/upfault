@@ -218,3 +218,4 @@ class CodeGenerator {
       this.code.push(`openBlock(${block.priority})`);
       this.code.push(`createBlock(`);
       this.indentLevel++;
+      this.generateNodeRender(block.root);
