@@ -197,3 +197,4 @@ class CodeGenerator {
   private generateRenderFunction(): void {
     const componentName = this.extractComponentName();
     
+    this.code.push(`export function render(_ctx, _cache) {`);
