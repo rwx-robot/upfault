@@ -198,3 +198,4 @@ class CodeGenerator {
     const componentName = this.extractComponentName();
     
     this.code.push(`export function render(_ctx, _cache) {`);
+    this.indentLevel++;
