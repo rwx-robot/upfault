@@ -223,3 +223,5 @@ class CodeGenerator {
       this.code.push(`)`);
     }
   }
+
+  private generateNodeRender(node: BlockNode): void {
