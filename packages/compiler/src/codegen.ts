@@ -225,3 +225,4 @@ class CodeGenerator {
   }
 
   private generateNodeRender(node: BlockNode): void {
+    if (node.hoisted) {
