@@ -208,3 +208,4 @@ class CodeGenerator {
     this.indentLevel--;
     this.code.push(`)`);
     this.indentLevel--;
+    this.code.push(`}`);
