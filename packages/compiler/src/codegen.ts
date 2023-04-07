@@ -220,3 +220,4 @@ class CodeGenerator {
       this.indentLevel++;
       this.generateNodeRender(block.root);
       this.indentLevel--;
+      this.code.push(`)`);
