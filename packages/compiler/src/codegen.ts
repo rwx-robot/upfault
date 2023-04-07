@@ -196,3 +196,4 @@ class CodeGenerator {
 
   private generateRenderFunction(): void {
     const componentName = this.extractComponentName();
+    
