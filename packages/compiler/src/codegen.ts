@@ -231,3 +231,4 @@ class CodeGenerator {
     }
     
     const code = this.generateNodeCode(node);
+    this.code.push(code);
