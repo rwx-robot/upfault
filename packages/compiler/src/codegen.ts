@@ -233,3 +233,5 @@ class CodeGenerator {
     const code = this.generateNodeCode(node);
     this.code.push(code);
   }
+
+  private generateNodeCode(node: BlockNode, options: { hoisted?: boolean } = {}): string {
