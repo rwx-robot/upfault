@@ -230,3 +230,4 @@ class CodeGenerator {
       return;
     }
     
+    const code = this.generateNodeCode(node);
