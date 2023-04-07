@@ -216,3 +216,4 @@ class CodeGenerator {
       this.generateNodeRender(block.root);
     } else {
       this.code.push(`openBlock(${block.priority})`);
+      this.code.push(`createBlock(`);
