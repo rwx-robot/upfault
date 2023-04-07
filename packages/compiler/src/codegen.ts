@@ -226,3 +226,4 @@ class CodeGenerator {
 
   private generateNodeRender(node: BlockNode): void {
     if (node.hoisted) {
+      this.code.push(node.hoisted);
