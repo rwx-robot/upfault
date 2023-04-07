@@ -193,3 +193,5 @@ class CodeGenerator {
     // 生成静态节点的创建代码
     return this.generateNodeCode(node, { hoisted: true });
   }
+
+  private generateRenderFunction(): void {
