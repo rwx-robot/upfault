@@ -222,3 +222,4 @@ class CodeGenerator {
       this.indentLevel--;
       this.code.push(`)`);
     }
+  }
