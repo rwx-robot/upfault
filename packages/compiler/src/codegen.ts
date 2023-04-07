@@ -214,3 +214,4 @@ class CodeGenerator {
   private generateBlockRender(block: Block): void {
     if (block.type === BlockType.Root) {
       this.generateNodeRender(block.root);
+    } else {
