@@ -199,3 +199,4 @@ class CodeGenerator {
     
     this.code.push(`export function render(_ctx, _cache) {`);
     this.indentLevel++;
+    
