@@ -229,3 +229,4 @@ class CodeGenerator {
       this.code.push(node.hoisted);
       return;
     }
+    
