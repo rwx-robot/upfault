@@ -244,3 +244,4 @@ class CodeGenerator {
         return this.generateComponentCode(node, hoisted);
       case VNodeType.TEXT:
         return this.generateTextCode(node, hoisted);
+      case VNodeType.COMMENT:
