@@ -238,3 +238,4 @@ class CodeGenerator {
     const { hoisted } = options;
     
     switch (node.nodeType) {
+      case VNodeType.ELEMENT:
