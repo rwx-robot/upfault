@@ -248,3 +248,4 @@ class CodeGenerator {
         return this.generateCommentCode(node, hoisted);
       case VNodeType.FRAGMENT:
         return this.generateFragmentCode(node, hoisted);
+      case VNodeType.BLOCK:
