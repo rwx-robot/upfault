@@ -259,3 +259,4 @@ class CodeGenerator {
     const { tag, props, children, patchFlags, dynamicProps, isDynamic } = node;
     
     const args: string[] = [this.quote(tag)];
+    
