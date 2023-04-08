@@ -255,3 +255,4 @@ class CodeGenerator {
     }
   }
 
+  private generateElementCode(node: BlockNode, hoisted?: boolean): string {
