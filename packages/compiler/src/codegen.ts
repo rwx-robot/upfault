@@ -256,3 +256,4 @@ class CodeGenerator {
   }
 
   private generateElementCode(node: BlockNode, hoisted?: boolean): string {
+    const { tag, props, children, patchFlags, dynamicProps, isDynamic } = node;
