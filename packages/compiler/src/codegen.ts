@@ -252,3 +252,4 @@ class CodeGenerator {
         return this.generateBlockCode(node, hoisted);
       default:
         return 'null';
+    }
