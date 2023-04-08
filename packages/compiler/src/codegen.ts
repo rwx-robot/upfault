@@ -268,3 +268,4 @@ class CodeGenerator {
       args.push('null');
     }
     
+    // Children
