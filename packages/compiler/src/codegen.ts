@@ -277,3 +277,4 @@ class CodeGenerator {
     }
     
     // Patch flags
+    if (patchFlags > 0) {
