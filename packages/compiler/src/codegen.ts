@@ -269,3 +269,4 @@ class CodeGenerator {
     }
     
     // Children
+    const childrenCode = this.generateChildrenCode(children);
