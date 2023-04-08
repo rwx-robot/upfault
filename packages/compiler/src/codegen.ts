@@ -260,3 +260,4 @@ class CodeGenerator {
     
     const args: string[] = [this.quote(tag)];
     
+    // Props
