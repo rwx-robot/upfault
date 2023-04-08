@@ -236,3 +236,4 @@ class CodeGenerator {
 
   private generateNodeCode(node: BlockNode, options: { hoisted?: boolean } = {}): string {
     const { hoisted } = options;
+    
