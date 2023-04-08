@@ -276,3 +276,4 @@ class CodeGenerator {
       args.push('null');
     }
     
+    // Patch flags
