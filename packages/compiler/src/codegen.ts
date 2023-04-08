@@ -261,3 +261,4 @@ class CodeGenerator {
     const args: string[] = [this.quote(tag)];
     
     // Props
+    const propsCode = this.generatePropsCode(props, dynamicProps);
