@@ -253,3 +253,4 @@ class CodeGenerator {
       default:
         return 'null';
     }
+  }
