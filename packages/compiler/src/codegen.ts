@@ -241,3 +241,4 @@ class CodeGenerator {
       case VNodeType.ELEMENT:
         return this.generateElementCode(node, hoisted);
       case VNodeType.COMPONENT:
+        return this.generateComponentCode(node, hoisted);
