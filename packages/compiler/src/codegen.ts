@@ -254,3 +254,4 @@ class CodeGenerator {
         return 'null';
     }
   }
+
