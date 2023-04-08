@@ -240,3 +240,4 @@ class CodeGenerator {
     switch (node.nodeType) {
       case VNodeType.ELEMENT:
         return this.generateElementCode(node, hoisted);
+      case VNodeType.COMPONENT:
