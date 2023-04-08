@@ -251,3 +251,4 @@ class CodeGenerator {
       case VNodeType.BLOCK:
         return this.generateBlockCode(node, hoisted);
       default:
+        return 'null';
