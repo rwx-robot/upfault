@@ -263,3 +263,4 @@ class CodeGenerator {
     // Props
     const propsCode = this.generatePropsCode(props, dynamicProps);
     if (propsCode) {
+      args.push(propsCode);
