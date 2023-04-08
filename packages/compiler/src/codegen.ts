@@ -250,3 +250,4 @@ class CodeGenerator {
         return this.generateFragmentCode(node, hoisted);
       case VNodeType.BLOCK:
         return this.generateBlockCode(node, hoisted);
+      default:
