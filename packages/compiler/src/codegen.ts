@@ -304,3 +304,4 @@ class CodeGenerator {
       args.push('null');
     }
     
+    if (patchFlags > 0) {
