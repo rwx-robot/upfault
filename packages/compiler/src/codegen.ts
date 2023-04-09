@@ -284,3 +284,4 @@ class CodeGenerator {
     const fn = isDynamic ? 'createElementVNode' : 'createVNode';
     return `${fn}(${args.join(', ')})`;
   }
+
