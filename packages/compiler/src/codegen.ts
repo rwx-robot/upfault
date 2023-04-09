@@ -314,3 +314,4 @@ class CodeGenerator {
   private generateTextCode(node: BlockNode, hoisted?: boolean): string {
     if (node.isDynamic) {
       return `createTextVNode(_ctx.${node.dynamicProps[0] || 'textContent'})`;
+    }
