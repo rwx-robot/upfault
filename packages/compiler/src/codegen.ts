@@ -302,3 +302,4 @@ class CodeGenerator {
       args.push(childrenCode);
     } else {
       args.push('null');
+    }
