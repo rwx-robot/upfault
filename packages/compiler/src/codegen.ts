@@ -289,3 +289,4 @@ class CodeGenerator {
     const { tag, props, children, patchFlags } = node;
     
     const args: string[] = [this.quote(tag)];
+    
