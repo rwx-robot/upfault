@@ -297,3 +297,4 @@ class CodeGenerator {
       args.push('null');
     }
     
+    const childrenCode = this.generateChildrenCode(children);
