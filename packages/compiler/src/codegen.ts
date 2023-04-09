@@ -294,3 +294,4 @@ class CodeGenerator {
     if (propsCode) {
       args.push(propsCode);
     } else {
+      args.push('null');
