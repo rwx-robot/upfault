@@ -309,3 +309,4 @@ class CodeGenerator {
     }
     
     return `createVNode(${args.join(', ')})`;
+  }
