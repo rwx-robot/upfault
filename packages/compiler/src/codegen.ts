@@ -285,3 +285,4 @@ class CodeGenerator {
     return `${fn}(${args.join(', ')})`;
   }
 
+  private generateComponentCode(node: BlockNode, hoisted?: boolean): string {
