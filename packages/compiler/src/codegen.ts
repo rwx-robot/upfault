@@ -286,3 +286,4 @@ class CodeGenerator {
   }
 
   private generateComponentCode(node: BlockNode, hoisted?: boolean): string {
+    const { tag, props, children, patchFlags } = node;
