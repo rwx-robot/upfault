@@ -317,3 +317,5 @@ class CodeGenerator {
     }
     return `createTextVNode(${this.quote(node.textContent || '')})`;
   }
+
+  private generateCommentCode(node: BlockNode, hoisted?: boolean): string {
