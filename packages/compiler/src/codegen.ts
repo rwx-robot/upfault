@@ -312,3 +312,4 @@ class CodeGenerator {
   }
 
   private generateTextCode(node: BlockNode, hoisted?: boolean): string {
+    if (node.isDynamic) {
