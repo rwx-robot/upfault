@@ -279,3 +279,4 @@ class CodeGenerator {
     // Patch flags
     if (patchFlags > 0) {
       args.push(patchFlags.toString());
+    }
