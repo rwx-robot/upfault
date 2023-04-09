@@ -320,3 +320,4 @@ class CodeGenerator {
 
   private generateCommentCode(node: BlockNode, hoisted?: boolean): string {
     return `createCommentVNode(${this.quote(node.tag)})`;
+  }
