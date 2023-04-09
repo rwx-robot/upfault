@@ -296,3 +296,4 @@ class CodeGenerator {
     } else {
       args.push('null');
     }
+    
