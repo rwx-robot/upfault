@@ -310,3 +310,5 @@ class CodeGenerator {
     
     return `createVNode(${args.join(', ')})`;
   }
+
+  private generateTextCode(node: BlockNode, hoisted?: boolean): string {
