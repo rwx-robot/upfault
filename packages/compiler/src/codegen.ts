@@ -316,3 +316,4 @@ class CodeGenerator {
       return `createTextVNode(_ctx.${node.dynamicProps[0] || 'textContent'})`;
     }
     return `createTextVNode(${this.quote(node.textContent || '')})`;
+  }
