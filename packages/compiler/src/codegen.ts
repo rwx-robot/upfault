@@ -298,3 +298,4 @@ class CodeGenerator {
     }
     
     const childrenCode = this.generateChildrenCode(children);
+    if (childrenCode) {
