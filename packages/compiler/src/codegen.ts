@@ -281,3 +281,4 @@ class CodeGenerator {
       args.push(patchFlags.toString());
     }
     
+    const fn = isDynamic ? 'createElementVNode' : 'createVNode';
