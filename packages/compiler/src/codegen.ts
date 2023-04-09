@@ -308,3 +308,4 @@ class CodeGenerator {
       args.push(patchFlags.toString());
     }
     
+    return `createVNode(${args.join(', ')})`;
