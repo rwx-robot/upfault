@@ -301,3 +301,4 @@ class CodeGenerator {
     if (childrenCode) {
       args.push(childrenCode);
     } else {
+      args.push('null');
