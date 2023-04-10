@@ -357,3 +357,4 @@ class CodeGenerator {
         value = this.quote(prop.name); // 简化
       }
       
+      obj.push(`${key}: ${value}`);
