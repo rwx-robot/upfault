@@ -355,3 +355,4 @@ class CodeGenerator {
         value = `_ctx.${prop.name}`;
       } else {
         value = this.quote(prop.name); // 简化
+      }
