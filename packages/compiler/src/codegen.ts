@@ -326,3 +326,4 @@ class CodeGenerator {
     const childrenCode = this.generateChildrenCode(node.children);
     const patchFlag = node.patchFlags === 64 ? 64 : 0; // KEYED_FRAGMENT
     
+    if (childrenCode) {
