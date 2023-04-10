@@ -348,3 +348,4 @@ class CodeGenerator {
       let value: string;
       
       if (prop.isEvent) {
+        value = `_ctx.${prop.name.replace('on', '').toLowerCase()}`;
