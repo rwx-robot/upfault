@@ -359,3 +359,4 @@ class CodeGenerator {
       
       obj.push(`${key}: ${value}`);
     }
+    
