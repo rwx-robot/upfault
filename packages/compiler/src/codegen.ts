@@ -342,3 +342,4 @@ class CodeGenerator {
     if (props.length === 0) return '';
     
     const obj: string[] = [];
+    
