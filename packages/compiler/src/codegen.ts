@@ -343,3 +343,4 @@ class CodeGenerator {
     
     const obj: string[] = [];
     
+    for (const prop of props) {
