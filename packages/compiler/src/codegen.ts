@@ -347,3 +347,4 @@ class CodeGenerator {
       const key = this.quote(prop.name);
       let value: string;
       
+      if (prop.isEvent) {
