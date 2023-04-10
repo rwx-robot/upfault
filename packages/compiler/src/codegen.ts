@@ -337,3 +337,4 @@ class CodeGenerator {
     
     return `openBlock(${node.block.priority})`;
   }
+
