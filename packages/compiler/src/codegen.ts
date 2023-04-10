@@ -323,3 +323,4 @@ class CodeGenerator {
   }
 
   private generateFragmentCode(node: BlockNode, hoisted?: boolean): string {
+    const childrenCode = this.generateChildrenCode(node.children);
