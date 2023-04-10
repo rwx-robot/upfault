@@ -354,3 +354,4 @@ class CodeGenerator {
       } else if (prop.valueType === 'dynamic') {
         value = `_ctx.${prop.name}`;
       } else {
+        value = this.quote(prop.name); // 简化
