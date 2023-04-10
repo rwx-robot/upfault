@@ -344,3 +344,4 @@ class CodeGenerator {
     const obj: string[] = [];
     
     for (const prop of props) {
+      const key = this.quote(prop.name);
