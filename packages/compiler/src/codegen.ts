@@ -361,3 +361,4 @@ class CodeGenerator {
     }
     
     return `{ ${obj.join(', ')} }`;
+  }
