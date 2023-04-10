@@ -356,3 +356,4 @@ class CodeGenerator {
       } else {
         value = this.quote(prop.name); // 简化
       }
+      
