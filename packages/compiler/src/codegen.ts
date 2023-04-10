@@ -360,3 +360,4 @@ class CodeGenerator {
       obj.push(`${key}: ${value}`);
     }
     
+    return `{ ${obj.join(', ')} }`;
