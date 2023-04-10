@@ -350,3 +350,4 @@ class CodeGenerator {
       if (prop.isEvent) {
         value = `_ctx.${prop.name.replace('on', '').toLowerCase()}`;
       } else if (prop.valueType === 'expression') {
+        value = `_ctx.${prop.name}`;
