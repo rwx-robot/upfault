@@ -353,3 +353,4 @@ class CodeGenerator {
         value = `_ctx.${prop.name}`;
       } else if (prop.valueType === 'dynamic') {
         value = `_ctx.${prop.name}`;
+      } else {
