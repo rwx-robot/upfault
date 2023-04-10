@@ -351,3 +351,4 @@ class CodeGenerator {
         value = `_ctx.${prop.name.replace('on', '').toLowerCase()}`;
       } else if (prop.valueType === 'expression') {
         value = `_ctx.${prop.name}`;
+      } else if (prop.valueType === 'dynamic') {
