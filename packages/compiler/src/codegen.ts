@@ -341,3 +341,4 @@ class CodeGenerator {
   private generatePropsCode(props: any[], dynamicProps: string[]): string {
     if (props.length === 0) return '';
     
+    const obj: string[] = [];
