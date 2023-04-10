@@ -329,3 +329,4 @@ class CodeGenerator {
     if (childrenCode) {
       return `Fragment(${childrenCode}${patchFlag ? `, ${patchFlag}` : ''})`;
     }
+    return `Fragment(null${patchFlag ? `, ${patchFlag}` : ''})`;
