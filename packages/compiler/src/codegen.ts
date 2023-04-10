@@ -325,3 +325,4 @@ class CodeGenerator {
   private generateFragmentCode(node: BlockNode, hoisted?: boolean): string {
     const childrenCode = this.generateChildrenCode(node.children);
     const patchFlag = node.patchFlags === 64 ? 64 : 0; // KEYED_FRAGMENT
+    
