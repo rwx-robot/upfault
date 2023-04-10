@@ -338,3 +338,4 @@ class CodeGenerator {
     return `openBlock(${node.block.priority})`;
   }
 
+  private generatePropsCode(props: any[], dynamicProps: string[]): string {
