@@ -335,3 +335,4 @@ class CodeGenerator {
   private generateBlockCode(node: BlockNode, hoisted?: boolean): string {
     if (!node.block) return 'null';
     
+    return `openBlock(${node.block.priority})`;
