@@ -331,3 +331,5 @@ class CodeGenerator {
     }
     return `Fragment(null${patchFlag ? `, ${patchFlag}` : ''})`;
   }
+
+  private generateBlockCode(node: BlockNode, hoisted?: boolean): string {
