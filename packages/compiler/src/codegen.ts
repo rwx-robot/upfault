@@ -327,3 +327,4 @@ class CodeGenerator {
     const patchFlag = node.patchFlags === 64 ? 64 : 0; // KEYED_FRAGMENT
     
     if (childrenCode) {
+      return `Fragment(${childrenCode}${patchFlag ? `, ${patchFlag}` : ''})`;
