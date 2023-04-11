@@ -373,3 +373,4 @@ class CodeGenerator {
     }
     
     const codes = children.map(c => this.generateNodeCode(c));
+    return `[${codes.join(', ')}]`;
