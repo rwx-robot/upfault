@@ -402,3 +402,4 @@ class CodeGenerator {
     return `0x${(hash >>> 0).toString(16).padStart(8, '0')}`;
   }
 
+  private quote(str: string): string {
