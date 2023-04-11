@@ -382,3 +382,4 @@ class CodeGenerator {
       componentName: this.extractComponentName(),
       templateHash: this.hashTemplate(this.ast.source),
       compileFlags: this.blockTree.rootBlock.compileFlags,
+      hasDynamicSlots: this.blockTree.rootBlock.hasSlot,
