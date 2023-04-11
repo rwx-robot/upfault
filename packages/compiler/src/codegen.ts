@@ -377,3 +377,4 @@ class CodeGenerator {
   }
 
   private generateMetadata(): RenderMetadata {
+    return {
