@@ -387,3 +387,4 @@ class CodeGenerator {
       helpers: Array.from(this.helpers),
     };
   }
+
