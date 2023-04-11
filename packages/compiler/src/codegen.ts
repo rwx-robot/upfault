@@ -372,3 +372,4 @@ class CodeGenerator {
       return this.generateNodeCode(child);
     }
     
+    const codes = children.map(c => this.generateNodeCode(c));
