@@ -388,3 +388,4 @@ class CodeGenerator {
     };
   }
 
+  private extractComponentName(): string {
