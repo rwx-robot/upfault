@@ -370,3 +370,4 @@ class CodeGenerator {
       const child = children[0];
       if (!child) return '';
       return this.generateNodeCode(child);
+    }
