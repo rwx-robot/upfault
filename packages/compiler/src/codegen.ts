@@ -384,3 +384,4 @@ class CodeGenerator {
       compileFlags: this.blockTree.rootBlock.compileFlags,
       hasDynamicSlots: this.blockTree.rootBlock.hasSlot,
       hasHoisted: this.hoisted.length > 0,
+      helpers: Array.from(this.helpers),
