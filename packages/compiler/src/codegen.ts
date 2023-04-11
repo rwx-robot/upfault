@@ -399,3 +399,4 @@ class CodeGenerator {
       hash ^= source.charCodeAt(i);
       hash = (hash * 0x01000193) >>> 0;
     }
+    return `0x${(hash >>> 0).toString(16).padStart(8, '0')}`;
