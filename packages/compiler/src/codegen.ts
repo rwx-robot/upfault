@@ -369,3 +369,4 @@ class CodeGenerator {
     if (children.length === 1) {
       const child = children[0];
       if (!child) return '';
+      return this.generateNodeCode(child);
