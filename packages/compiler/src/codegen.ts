@@ -392,3 +392,5 @@ class CodeGenerator {
     const match = this.options.filename.match(/([^/]+)\.uf$/);
     return match && match[1] ? match[1] : 'Anonymous';
   }
+
+  private hashTemplate(source: string): string {
