@@ -389,3 +389,4 @@ class CodeGenerator {
   }
 
   private extractComponentName(): string {
+    const match = this.options.filename.match(/([^/]+)\.uf$/);
