@@ -380,3 +380,4 @@ class CodeGenerator {
     return {
       blockTree: this.blockTree,
       componentName: this.extractComponentName(),
+      templateHash: this.hashTemplate(this.ast.source),
