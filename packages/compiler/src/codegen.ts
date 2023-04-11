@@ -394,3 +394,4 @@ class CodeGenerator {
   }
 
   private hashTemplate(source: string): string {
+    let hash = 0x811c9dc5;
