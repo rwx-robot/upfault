@@ -362,3 +362,5 @@ class CodeGenerator {
     
     return `{ ${obj.join(', ')} }`;
   }
+
+  private generateChildrenCode(children: BlockNode[]): string {
