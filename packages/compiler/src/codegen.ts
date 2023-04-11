@@ -379,3 +379,4 @@ class CodeGenerator {
   private generateMetadata(): RenderMetadata {
     return {
       blockTree: this.blockTree,
+      componentName: this.extractComponentName(),
