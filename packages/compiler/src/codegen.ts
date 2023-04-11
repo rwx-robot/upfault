@@ -366,3 +366,4 @@ class CodeGenerator {
   private generateChildrenCode(children: BlockNode[]): string {
     if (children.length === 0) return '';
     
+    if (children.length === 1) {
