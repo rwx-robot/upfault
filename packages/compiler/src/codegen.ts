@@ -386,3 +386,4 @@ class CodeGenerator {
       hasHoisted: this.hoisted.length > 0,
       helpers: Array.from(this.helpers),
     };
+  }
