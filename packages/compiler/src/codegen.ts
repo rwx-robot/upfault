@@ -371,3 +371,4 @@ class CodeGenerator {
       if (!child) return '';
       return this.generateNodeCode(child);
     }
+    
