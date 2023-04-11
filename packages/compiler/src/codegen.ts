@@ -403,3 +403,4 @@ class CodeGenerator {
   }
 
   private quote(str: string): string {
+    return JSON.stringify(str);
