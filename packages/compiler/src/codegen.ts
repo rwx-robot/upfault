@@ -422,3 +422,4 @@ export interface CompilerOptions {
 
 export interface CompilerResult {
   code: string;
+  ast: TemplateAST;
