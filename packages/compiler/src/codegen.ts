@@ -420,3 +420,4 @@ export interface CompilerOptions {
   devTools?: boolean;
 }
 
+export interface CompilerResult {
