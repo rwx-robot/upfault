@@ -425,3 +425,4 @@ export interface CompilerResult {
   ast: TemplateAST;
   blockTree: BlockTreeResult;
   metadata: RenderMetadata;
+  sourceMap?: string;
