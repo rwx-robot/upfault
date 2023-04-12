@@ -439,3 +439,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
   });
   
   // 2. Build Block Tree
+  const { buildBlockTree } = require('./block-tree');
