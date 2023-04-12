@@ -424,3 +424,4 @@ export interface CompilerResult {
   code: string;
   ast: TemplateAST;
   blockTree: BlockTreeResult;
+  metadata: RenderMetadata;
