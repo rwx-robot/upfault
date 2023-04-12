@@ -416,3 +416,4 @@ export interface CompilerOptions {
   sourceMap?: boolean;
   hoistStatic?: boolean;
   cacheHandlers?: boolean;
+  granularity?: BlockGranularity;
