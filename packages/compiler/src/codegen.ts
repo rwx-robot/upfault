@@ -415,3 +415,4 @@ export interface CompilerOptions {
   filename: string;
   sourceMap?: boolean;
   hoistStatic?: boolean;
+  cacheHandlers?: boolean;
