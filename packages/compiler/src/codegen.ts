@@ -414,3 +414,4 @@ class CodeGenerator {
 export interface CompilerOptions {
   filename: string;
   sourceMap?: boolean;
+  hoistStatic?: boolean;
