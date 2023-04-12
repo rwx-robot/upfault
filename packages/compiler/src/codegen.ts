@@ -434,3 +434,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
   // 1. Parse
   const { parse } = require('./parser');
   const { ast, context } = parse(template, { 
+    filename: options.filename, 
