@@ -428,3 +428,4 @@ export interface CompilerResult {
   sourceMap?: string;
   errors: CompileError[];
   warnings: CompileWarning[];
+}
