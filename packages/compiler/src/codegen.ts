@@ -443,3 +443,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
   const blockTree = buildBlockTree(ast, context, { 
     granularity: options.granularity || 'medium',
     maxBlockDepth: 10,
+    enableFineGrained: true,
