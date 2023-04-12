@@ -445,3 +445,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     maxBlockDepth: 10,
     enableFineGrained: true,
   });
+  
