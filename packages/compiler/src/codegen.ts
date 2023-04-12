@@ -429,3 +429,4 @@ export interface CompilerResult {
   errors: CompileError[];
   warnings: CompileWarning[];
 }
+
