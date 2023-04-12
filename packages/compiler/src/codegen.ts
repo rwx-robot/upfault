@@ -427,3 +427,4 @@ export interface CompilerResult {
   metadata: RenderMetadata;
   sourceMap?: string;
   errors: CompileError[];
+  warnings: CompileWarning[];
