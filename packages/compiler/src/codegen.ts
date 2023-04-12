@@ -442,3 +442,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
   const { buildBlockTree } = require('./block-tree');
   const blockTree = buildBlockTree(ast, context, { 
     granularity: options.granularity || 'medium',
+    maxBlockDepth: 10,
