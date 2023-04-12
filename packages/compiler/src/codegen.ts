@@ -431,3 +431,4 @@ export interface CompilerResult {
 }
 
 export function compile(template: string, options: CompilerOptions): CompilerResult {
+  // 1. Parse
