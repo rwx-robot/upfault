@@ -417,3 +417,4 @@ export interface CompilerOptions {
   hoistStatic?: boolean;
   cacheHandlers?: boolean;
   granularity?: BlockGranularity;
+  devTools?: boolean;
