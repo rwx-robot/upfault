@@ -436,3 +436,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
   const { ast, context } = parse(template, { 
     filename: options.filename, 
     sourceMap: options.sourceMap 
+  });
