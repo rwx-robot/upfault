@@ -419,3 +419,4 @@ export interface CompilerOptions {
   granularity?: BlockGranularity;
   devTools?: boolean;
 }
+
