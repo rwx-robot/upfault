@@ -438,3 +438,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     sourceMap: options.sourceMap 
   });
   
+  // 2. Build Block Tree
