@@ -406,3 +406,4 @@ class CodeGenerator {
     return JSON.stringify(str);
   }
 }
+
