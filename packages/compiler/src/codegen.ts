@@ -426,3 +426,4 @@ export interface CompilerResult {
   blockTree: BlockTreeResult;
   metadata: RenderMetadata;
   sourceMap?: string;
+  errors: CompileError[];
