@@ -437,3 +437,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     filename: options.filename, 
     sourceMap: options.sourceMap 
   });
+  
