@@ -444,3 +444,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     granularity: options.granularity || 'medium',
     maxBlockDepth: 10,
     enableFineGrained: true,
+  });
