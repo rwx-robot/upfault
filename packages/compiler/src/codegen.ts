@@ -446,3 +446,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     enableFineGrained: true,
   });
   
+  // 3. Generate Code
