@@ -430,3 +430,4 @@ export interface CompilerResult {
   warnings: CompileWarning[];
 }
 
+export function compile(template: string, options: CompilerOptions): CompilerResult {
