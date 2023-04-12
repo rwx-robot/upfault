@@ -418,3 +418,4 @@ export interface CompilerOptions {
   cacheHandlers?: boolean;
   granularity?: BlockGranularity;
   devTools?: boolean;
+}
