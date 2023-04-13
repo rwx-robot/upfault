@@ -9,3 +9,4 @@ export {
   // Parser
   parse,
   createCompileContext,
+  analyzeTemplate,
