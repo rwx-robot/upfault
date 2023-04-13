@@ -456,3 +456,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     optimizeImports: true,
     hoistStatic: options.hoistStatic !== false,
     cacheHandlers: options.cacheHandlers !== false,
+    generateAnnotations: options.devTools !== false,
