@@ -12,3 +12,4 @@ export {
   analyzeTemplate,
   type TemplateAST,
   type TemplateNode,
+  type ElementNode,
