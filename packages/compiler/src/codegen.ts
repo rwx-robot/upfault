@@ -461,3 +461,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
   
   return {
     code: result.code,
+    ast: result.ast,
