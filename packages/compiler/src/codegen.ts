@@ -470,3 +470,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
 }
 
 // 重新导出类型
+export type { TemplateAST, CompileContext, ImportSpec, CompileError, CompileWarning } from './parser';
