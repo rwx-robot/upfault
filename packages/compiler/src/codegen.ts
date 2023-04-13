@@ -469,3 +469,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
   };
 }
 
+// 重新导出类型
