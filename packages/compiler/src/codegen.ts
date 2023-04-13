@@ -466,3 +466,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     metadata: result.metadata,
     errors: context.errors,
     warnings: context.warnings,
+  };
