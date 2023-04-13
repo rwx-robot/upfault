@@ -455,3 +455,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     filename: options.filename,
     optimizeImports: true,
     hoistStatic: options.hoistStatic !== false,
+    cacheHandlers: options.cacheHandlers !== false,
