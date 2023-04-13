@@ -459,3 +459,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     generateAnnotations: options.devTools !== false,
   });
   
+  return {
