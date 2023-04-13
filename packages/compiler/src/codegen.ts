@@ -458,3 +458,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     cacheHandlers: options.cacheHandlers !== false,
     generateAnnotations: options.devTools !== false,
   });
+  
