@@ -450,3 +450,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
   const { generateRenderFunction } = require('./codegen');
   const result = generateRenderFunction(ast, context, blockTree, {
     mode: 'module',
+    target: 'es2020',
