@@ -8,3 +8,4 @@
 export {
   // Parser
   parse,
+  createCompileContext,
