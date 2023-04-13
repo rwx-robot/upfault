@@ -453,3 +453,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     target: 'es2020',
     sourceMap: options.sourceMap || false,
     filename: options.filename,
+    optimizeImports: true,
