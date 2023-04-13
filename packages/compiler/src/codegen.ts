@@ -463,3 +463,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     code: result.code,
     ast: result.ast,
     blockTree: result.metadata.blockTree,
+    metadata: result.metadata,
