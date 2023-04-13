@@ -454,3 +454,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     sourceMap: options.sourceMap || false,
     filename: options.filename,
     optimizeImports: true,
+    hoistStatic: options.hoistStatic !== false,
