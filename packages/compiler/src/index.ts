@@ -11,3 +11,4 @@ export {
   createCompileContext,
   analyzeTemplate,
   type TemplateAST,
+  type TemplateNode,
