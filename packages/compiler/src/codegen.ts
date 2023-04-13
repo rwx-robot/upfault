@@ -468,3 +468,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     warnings: context.warnings,
   };
 }
+
