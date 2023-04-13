@@ -449,3 +449,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
   // 3. Generate Code
   const { generateRenderFunction } = require('./codegen');
   const result = generateRenderFunction(ast, context, blockTree, {
+    mode: 'module',
