@@ -452,3 +452,4 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     mode: 'module',
     target: 'es2020',
     sourceMap: options.sourceMap || false,
+    filename: options.filename,
