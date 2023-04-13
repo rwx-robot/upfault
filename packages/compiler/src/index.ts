@@ -7,3 +7,4 @@
 
 export {
   // Parser
+  parse,
