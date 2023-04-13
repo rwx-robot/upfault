@@ -13,3 +13,4 @@ export {
   type TemplateAST,
   type TemplateNode,
   type ElementNode,
+  type TextNode,
