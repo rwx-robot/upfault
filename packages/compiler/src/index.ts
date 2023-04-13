@@ -10,3 +10,4 @@ export {
   parse,
   createCompileContext,
   analyzeTemplate,
+  type TemplateAST,
