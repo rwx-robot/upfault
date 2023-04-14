@@ -45,3 +45,4 @@ export {
   type BlockGranularity,
   type BlockTreeBuilderOptions,
   type BlockTreeResult,
+} from './block-tree';
