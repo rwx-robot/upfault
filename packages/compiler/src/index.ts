@@ -31,3 +31,4 @@ export {
   type CompileError,
   type CompileWarning,
   type ParseOptions,
+  type ParseResult,
