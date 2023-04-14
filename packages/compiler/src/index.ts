@@ -37,3 +37,4 @@ export {
 
 export {
   // Block Tree
+  buildBlockTree,
