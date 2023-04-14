@@ -19,3 +19,4 @@ export {
   type ComponentNode,
   type SlotNode,
   type IfNode,
+  type ForNode,
