@@ -49,3 +49,4 @@ export {
 
 export {
   // Codegen
+  generateRenderFunction,
