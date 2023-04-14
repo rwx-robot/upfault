@@ -43,3 +43,4 @@ export {
   type PropMeta,
   BlockType,
   type BlockGranularity,
+  type BlockTreeBuilderOptions,
