@@ -30,3 +30,4 @@ export {
   type VariableInfo,
   type CompileError,
   type CompileWarning,
+  type ParseOptions,
