@@ -27,3 +27,4 @@ export {
   type CompileContext,
   type ImportSpec,
   type ScopeContext,
+  type VariableInfo,
