@@ -16,3 +16,4 @@ export {
   type TextNode,
   type InterpolationNode,
   type CommentNode,
+  type ComponentNode,
