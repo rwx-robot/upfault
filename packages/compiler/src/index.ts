@@ -26,3 +26,4 @@ export {
   type Position,
   type CompileContext,
   type ImportSpec,
+  type ScopeContext,
