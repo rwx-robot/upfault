@@ -44,3 +44,4 @@ export {
   BlockType,
   type BlockGranularity,
   type BlockTreeBuilderOptions,
+  type BlockTreeResult,
