@@ -32,3 +32,4 @@ export {
   type CompileWarning,
   type ParseOptions,
   type ParseResult,
+  type CompileTimeFlags,
