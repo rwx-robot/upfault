@@ -17,3 +17,4 @@ export {
   type InterpolationNode,
   type CommentNode,
   type ComponentNode,
+  type SlotNode,
