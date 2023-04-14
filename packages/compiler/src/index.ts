@@ -22,3 +22,4 @@ export {
   type ForNode,
   type PropNode,
   type PropValue,
+  type SourceLocation,
