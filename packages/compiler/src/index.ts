@@ -50,3 +50,4 @@ export {
 export {
   // Codegen
   generateRenderFunction,
+  compile,
