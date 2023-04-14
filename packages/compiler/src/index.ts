@@ -15,3 +15,4 @@ export {
   type ElementNode,
   type TextNode,
   type InterpolationNode,
+  type CommentNode,
