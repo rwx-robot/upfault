@@ -42,3 +42,4 @@ export {
   type BlockNode,
   type PropMeta,
   BlockType,
+  type BlockGranularity,
