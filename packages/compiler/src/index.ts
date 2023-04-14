@@ -33,3 +33,4 @@ export {
   type ParseOptions,
   type ParseResult,
   type CompileTimeFlags,
+} from './parser';
