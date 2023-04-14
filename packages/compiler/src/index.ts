@@ -28,3 +28,4 @@ export {
   type ImportSpec,
   type ScopeContext,
   type VariableInfo,
+  type CompileError,
