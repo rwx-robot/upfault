@@ -14,3 +14,4 @@ export {
   type TemplateNode,
   type ElementNode,
   type TextNode,
+  type InterpolationNode,
