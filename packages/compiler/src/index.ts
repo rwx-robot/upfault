@@ -39,3 +39,4 @@ export {
   // Block Tree
   buildBlockTree,
   type Block,
+  type BlockNode,
