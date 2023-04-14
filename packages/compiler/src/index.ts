@@ -24,3 +24,4 @@ export {
   type PropValue,
   type SourceLocation,
   type Position,
+  type CompileContext,
