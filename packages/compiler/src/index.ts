@@ -21,3 +21,4 @@ export {
   type IfNode,
   type ForNode,
   type PropNode,
+  type PropValue,
