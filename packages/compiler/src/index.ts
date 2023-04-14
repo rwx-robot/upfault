@@ -29,3 +29,4 @@ export {
   type ScopeContext,
   type VariableInfo,
   type CompileError,
+  type CompileWarning,
