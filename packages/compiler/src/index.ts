@@ -40,3 +40,4 @@ export {
   buildBlockTree,
   type Block,
   type BlockNode,
+  type PropMeta,
