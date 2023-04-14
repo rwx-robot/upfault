@@ -18,3 +18,4 @@ export {
   type CommentNode,
   type ComponentNode,
   type SlotNode,
+  type IfNode,
