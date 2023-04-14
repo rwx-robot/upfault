@@ -25,3 +25,4 @@ export {
   type SourceLocation,
   type Position,
   type CompileContext,
+  type ImportSpec,
