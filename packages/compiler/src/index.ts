@@ -41,3 +41,4 @@ export {
   type Block,
   type BlockNode,
   type PropMeta,
+  BlockType,
