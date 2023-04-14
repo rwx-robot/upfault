@@ -23,3 +23,4 @@ export {
   type PropNode,
   type PropValue,
   type SourceLocation,
+  type Position,
