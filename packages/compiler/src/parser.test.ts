@@ -24,3 +24,4 @@ describe('Template Parser', () => {
       const el = ast.children[0] as any;
       expect(el.type).toBe('Element');
       expect(el.tag).toBe('img');
+      expect(el.isSelfClosing).toBe(true);
