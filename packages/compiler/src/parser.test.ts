@@ -6,3 +6,4 @@ describe('Template Parser', () => {
     it('应解析简单文本', () => {
       const { ast } = parse('Hello World');
       expect(ast.children).toHaveLength(1);
+      expect(ast.children[0].type).toBe('Text');
