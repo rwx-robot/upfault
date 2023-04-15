@@ -26,3 +26,5 @@ describe('Template Parser', () => {
       expect(el.tag).toBe('img');
       expect(el.isSelfClosing).toBe(true);
     });
+
+    it('应解析插值表达式', () => {
