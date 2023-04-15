@@ -55,3 +55,4 @@ export {
   type CodegenResult,
   type CompilerOptions,
   type CompilerResult,
+  type RenderMetadata,
