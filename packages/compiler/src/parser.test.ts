@@ -4,3 +4,4 @@ import { parse } from './parser';
 describe('Template Parser', () => {
   describe('基础解析', () => {
     it('应解析简单文本', () => {
+      const { ast } = parse('Hello World');
