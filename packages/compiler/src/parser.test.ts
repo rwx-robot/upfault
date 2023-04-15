@@ -21,3 +21,4 @@ describe('Template Parser', () => {
     it('应解析自闭合元素', () => {
       const { ast } = parse('<img src="test.jpg" />');
       expect(ast.children).toHaveLength(1);
+      const el = ast.children[0] as any;
