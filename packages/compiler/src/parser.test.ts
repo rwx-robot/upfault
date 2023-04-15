@@ -22,3 +22,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<img src="test.jpg" />');
       expect(ast.children).toHaveLength(1);
       const el = ast.children[0] as any;
+      expect(el.type).toBe('Element');
