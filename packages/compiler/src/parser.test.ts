@@ -25,3 +25,4 @@ describe('Template Parser', () => {
       expect(el.type).toBe('Element');
       expect(el.tag).toBe('img');
       expect(el.isSelfClosing).toBe(true);
+    });
