@@ -10,3 +10,4 @@ describe('Template Parser', () => {
       expect((ast.children[0] as any).content).toBe('Hello World');
     });
 
+    it('应解析简单元素', () => {
