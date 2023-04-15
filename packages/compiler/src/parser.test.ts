@@ -19,3 +19,4 @@ describe('Template Parser', () => {
     });
 
     it('应解析自闭合元素', () => {
+      const { ast } = parse('<img src="test.jpg" />');
