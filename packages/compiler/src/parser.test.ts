@@ -14,3 +14,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<div>Hello</div>');
       expect(ast.children).toHaveLength(1);
       expect(ast.children[0].type).toBe('Element');
+      expect((ast.children[0] as any).tag).toBe('div');
