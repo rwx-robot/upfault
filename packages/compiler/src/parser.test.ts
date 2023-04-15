@@ -5,3 +5,4 @@ describe('Template Parser', () => {
   describe('基础解析', () => {
     it('应解析简单文本', () => {
       const { ast } = parse('Hello World');
+      expect(ast.children).toHaveLength(1);
