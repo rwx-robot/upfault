@@ -57,3 +57,5 @@ export {
   type CompilerResult,
   type RenderMetadata,
 } from './codegen';
+
+// 版本信息
