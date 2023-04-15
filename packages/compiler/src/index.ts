@@ -52,3 +52,4 @@ export {
   generateRenderFunction,
   compile,
   type CodegenOptions,
+  type CodegenResult,
