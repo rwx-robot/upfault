@@ -54,3 +54,4 @@ export {
   type CodegenOptions,
   type CodegenResult,
   type CompilerOptions,
+  type CompilerResult,
