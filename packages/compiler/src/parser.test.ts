@@ -12,3 +12,4 @@ describe('Template Parser', () => {
 
     it('应解析简单元素', () => {
       const { ast } = parse('<div>Hello</div>');
+      expect(ast.children).toHaveLength(1);
