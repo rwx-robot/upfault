@@ -17,3 +17,5 @@ describe('Template Parser', () => {
       expect((ast.children[0] as any).tag).toBe('div');
       expect((ast.children[0] as any).children).toHaveLength(1);
     });
+
+    it('应解析自闭合元素', () => {
