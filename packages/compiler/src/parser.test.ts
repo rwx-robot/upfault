@@ -7,3 +7,4 @@ describe('Template Parser', () => {
       const { ast } = parse('Hello World');
       expect(ast.children).toHaveLength(1);
       expect(ast.children[0].type).toBe('Text');
+      expect((ast.children[0] as any).content).toBe('Hello World');
