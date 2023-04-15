@@ -9,3 +9,4 @@ describe('Template Parser', () => {
       expect(ast.children[0].type).toBe('Text');
       expect((ast.children[0] as any).content).toBe('Hello World');
     });
+
