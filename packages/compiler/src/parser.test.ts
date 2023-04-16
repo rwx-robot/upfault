@@ -46,3 +46,4 @@ describe('Template Parser', () => {
 
   describe('属性解析', () => {
     it('应解析静态属性', () => {
+      const { ast } = parse('<div class="container" id="app"></div>');
