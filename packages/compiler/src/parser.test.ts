@@ -63,3 +63,5 @@ describe('Template Parser', () => {
       expect(el.props[1].name).toBe('id');
       expect(el.props[1].isDynamic).toBe(true);
     });
+
+    it('应解析事件 (@ 或 v-on:)', () => {
