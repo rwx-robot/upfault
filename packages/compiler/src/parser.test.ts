@@ -65,3 +65,4 @@ describe('Template Parser', () => {
     });
 
     it('应解析事件 (@ 或 v-on:)', () => {
+      const { ast } = parse('<button @click="handleClick" v-on:submit.prevent="onSubmit"></button>');
