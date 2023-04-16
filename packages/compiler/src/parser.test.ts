@@ -30,3 +30,4 @@ describe('Template Parser', () => {
     it('应解析插值表达式', () => {
       const { ast } = parse('{{ count }}');
       expect(ast.children).toHaveLength(1);
+      expect(ast.children[0].type).toBe('Interpolation');
