@@ -36,3 +36,4 @@ describe('Template Parser', () => {
 
     it('应解析混合内容', () => {
       const { ast } = parse('<div>Hello {{ name }}</div>');
+      expect(ast.children).toHaveLength(1);
