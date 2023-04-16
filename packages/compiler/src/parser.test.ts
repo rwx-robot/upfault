@@ -31,3 +31,4 @@ describe('Template Parser', () => {
       const { ast } = parse('{{ count }}');
       expect(ast.children).toHaveLength(1);
       expect(ast.children[0].type).toBe('Interpolation');
+      expect((ast.children[0] as any).expression).toBe('count');
