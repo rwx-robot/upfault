@@ -45,3 +45,4 @@ describe('Template Parser', () => {
   });
 
   describe('属性解析', () => {
+    it('应解析静态属性', () => {
