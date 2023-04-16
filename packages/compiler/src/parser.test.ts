@@ -28,3 +28,4 @@ describe('Template Parser', () => {
     });
 
     it('应解析插值表达式', () => {
+      const { ast } = parse('{{ count }}');
