@@ -52,3 +52,4 @@ describe('Template Parser', () => {
       expect(el.props[0].name).toBe('class');
       expect(el.props[0].isDynamic).toBe(false);
       expect(el.props[1].name).toBe('id');
+    });
