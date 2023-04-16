@@ -33,3 +33,5 @@ describe('Template Parser', () => {
       expect(ast.children[0].type).toBe('Interpolation');
       expect((ast.children[0] as any).expression).toBe('count');
     });
+
+    it('应解析混合内容', () => {
