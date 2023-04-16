@@ -55,3 +55,4 @@ describe('Template Parser', () => {
     });
 
     it('应解析动态属性 (: 或 v-bind:)', () => {
+      const { ast } = parse('<div :class="cls" v-bind:id="id"></div>');
