@@ -40,3 +40,4 @@ describe('Template Parser', () => {
       const el = ast.children[0] as any;
       expect(el.children).toHaveLength(2);
       expect(el.children[0].type).toBe('Text');
+      expect(el.children[1].type).toBe('Interpolation');
