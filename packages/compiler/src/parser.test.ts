@@ -42,3 +42,4 @@ describe('Template Parser', () => {
       expect(el.children[0].type).toBe('Text');
       expect(el.children[1].type).toBe('Interpolation');
     });
+  });
