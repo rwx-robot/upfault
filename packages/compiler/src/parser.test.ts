@@ -38,3 +38,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<div>Hello {{ name }}</div>');
       expect(ast.children).toHaveLength(1);
       const el = ast.children[0] as any;
+      expect(el.children).toHaveLength(2);
