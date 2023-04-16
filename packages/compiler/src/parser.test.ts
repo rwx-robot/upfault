@@ -53,3 +53,5 @@ describe('Template Parser', () => {
       expect(el.props[0].isDynamic).toBe(false);
       expect(el.props[1].name).toBe('id');
     });
+
+    it('应解析动态属性 (: 或 v-bind:)', () => {
