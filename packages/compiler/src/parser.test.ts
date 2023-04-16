@@ -49,3 +49,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<div class="container" id="app"></div>');
       const el = ast.children[0] as any;
       expect(el.props).toHaveLength(2);
+      expect(el.props[0].name).toBe('class');
