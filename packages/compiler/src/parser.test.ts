@@ -39,3 +39,4 @@ describe('Template Parser', () => {
       expect(ast.children).toHaveLength(1);
       const el = ast.children[0] as any;
       expect(el.children).toHaveLength(2);
+      expect(el.children[0].type).toBe('Text');
