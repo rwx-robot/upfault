@@ -43,3 +43,5 @@ describe('Template Parser', () => {
       expect(el.children[1].type).toBe('Interpolation');
     });
   });
+
+  describe('属性解析', () => {
