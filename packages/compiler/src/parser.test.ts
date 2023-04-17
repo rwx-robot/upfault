@@ -106,3 +106,4 @@ describe('Template Parser', () => {
       expect(el.isComponent).toBe(true);
       expect(el.props).toHaveLength(2);
       expect(el.props[0].isDynamic).toBe(true);
+      expect(el.props[1].isEvent).toBe(true);
