@@ -84,3 +84,5 @@ describe('Template Parser', () => {
       expect(el.props[1].name).toBe('required');
     });
   });
+
+  describe('组件解析', () => {
