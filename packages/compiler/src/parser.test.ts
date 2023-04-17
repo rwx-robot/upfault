@@ -105,3 +105,4 @@ describe('Template Parser', () => {
       const el = ast.children[0] as any;
       expect(el.isComponent).toBe(true);
       expect(el.props).toHaveLength(2);
+      expect(el.props[0].isDynamic).toBe(true);
