@@ -75,3 +75,4 @@ describe('Template Parser', () => {
       expect(el.props[1].eventModifiers).toContain('prevent');
     });
 
+    it('应解析布尔属性简写', () => {
