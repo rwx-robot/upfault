@@ -76,3 +76,4 @@ describe('Template Parser', () => {
     });
 
     it('应解析布尔属性简写', () => {
+      const { ast } = parse('<input disabled required />');
