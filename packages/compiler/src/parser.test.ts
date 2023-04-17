@@ -93,3 +93,5 @@ describe('Template Parser', () => {
       expect(el.name).toBe('MyComponent');
       expect(el.isComponent).toBe(true);
     });
+
+    it('应识别含连字符标签为组件', () => {
