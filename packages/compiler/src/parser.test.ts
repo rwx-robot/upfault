@@ -81,3 +81,4 @@ describe('Template Parser', () => {
       expect(el.props).toHaveLength(2);
       expect(el.props[0].name).toBe('disabled');
       expect(el.props[0].value).toBeNull();
+      expect(el.props[1].name).toBe('required');
