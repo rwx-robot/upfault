@@ -78,3 +78,4 @@ describe('Template Parser', () => {
     it('应解析布尔属性简写', () => {
       const { ast } = parse('<input disabled required />');
       const el = ast.children[0] as any;
+      expect(el.props).toHaveLength(2);
