@@ -72,3 +72,4 @@ describe('Template Parser', () => {
       expect(el.props[0].isEvent).toBe(true);
       expect(el.props[1].name).toBe('submit');
       expect(el.props[1].isEvent).toBe(true);
+      expect(el.props[1].eventModifiers).toContain('prevent');
