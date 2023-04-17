@@ -89,3 +89,4 @@ describe('Template Parser', () => {
     it('应识别大写开头标签为组件', () => {
       const { ast } = parse('<MyComponent />');
       const el = ast.children[0] as any;
+      expect(el.type).toBe('Component');
