@@ -103,3 +103,4 @@ describe('Template Parser', () => {
     it('应解析组件 props 和事件', () => {
       const { ast } = parse('<UserCard :name="user.name" @select="onSelect" />');
       const el = ast.children[0] as any;
+      expect(el.isComponent).toBe(true);
