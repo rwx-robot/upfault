@@ -70,3 +70,4 @@ describe('Template Parser', () => {
       expect(el.props).toHaveLength(2);
       expect(el.props[0].name).toBe('click');
       expect(el.props[0].isEvent).toBe(true);
+      expect(el.props[1].name).toBe('submit');
