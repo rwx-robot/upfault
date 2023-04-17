@@ -86,3 +86,4 @@ describe('Template Parser', () => {
   });
 
   describe('组件解析', () => {
+    it('应识别大写开头标签为组件', () => {
