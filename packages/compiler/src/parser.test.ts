@@ -91,3 +91,4 @@ describe('Template Parser', () => {
       const el = ast.children[0] as any;
       expect(el.type).toBe('Component');
       expect(el.name).toBe('MyComponent');
+      expect(el.isComponent).toBe(true);
