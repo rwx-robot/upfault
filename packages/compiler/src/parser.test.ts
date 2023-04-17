@@ -104,3 +104,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<UserCard :name="user.name" @select="onSelect" />');
       const el = ast.children[0] as any;
       expect(el.isComponent).toBe(true);
+      expect(el.props).toHaveLength(2);
