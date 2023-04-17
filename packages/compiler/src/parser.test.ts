@@ -79,3 +79,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<input disabled required />');
       const el = ast.children[0] as any;
       expect(el.props).toHaveLength(2);
+      expect(el.props[0].name).toBe('disabled');
