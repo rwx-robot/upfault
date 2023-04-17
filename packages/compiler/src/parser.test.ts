@@ -92,3 +92,4 @@ describe('Template Parser', () => {
       expect(el.type).toBe('Component');
       expect(el.name).toBe('MyComponent');
       expect(el.isComponent).toBe(true);
+    });
