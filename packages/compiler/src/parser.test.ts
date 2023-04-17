@@ -99,3 +99,5 @@ describe('Template Parser', () => {
       const el = ast.children[0] as any;
       expect(el.isComponent).toBe(true);
     });
+
+    it('应解析组件 props 和事件', () => {
