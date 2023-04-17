@@ -96,3 +96,4 @@ describe('Template Parser', () => {
 
     it('应识别含连字符标签为组件', () => {
       const { ast } = parse('<my-component />');
+      const el = ast.children[0] as any;
