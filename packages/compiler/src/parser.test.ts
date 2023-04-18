@@ -125,3 +125,4 @@ describe('Template Parser', () => {
       expect(el.type).toBe('For');
       expect(el.source).toBe('items');
       expect(el.value).toBe('item');
+      expect(el.key).toBe('item.id');
