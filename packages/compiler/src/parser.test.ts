@@ -139,3 +139,4 @@ describe('Template Parser', () => {
 
   describe('注释', () => {
     it('应解析 HTML 注释', () => {
+      const { ast } = parse('<!-- This is a comment -->');
