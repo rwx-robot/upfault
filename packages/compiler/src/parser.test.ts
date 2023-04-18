@@ -117,3 +117,4 @@ describe('Template Parser', () => {
       expect(el.type).toBe('If');
       expect(el.branches).toHaveLength(2);
       expect(el.branches[0].condition).toBe('show');
+    });
