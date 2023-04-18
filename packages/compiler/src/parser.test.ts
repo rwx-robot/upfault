@@ -133,3 +133,4 @@ describe('Template Parser', () => {
     it('应解析默认插槽', () => {
       const { ast } = parse('<slot>Fallback</slot>');
       const el = ast.children[0] as any;
+      // slot 被识别为元素，标记为 slot
