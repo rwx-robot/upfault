@@ -128,3 +128,5 @@ describe('Template Parser', () => {
       expect(el.key).toBe('item.id');
     });
   });
+
+  describe('插槽', () => {
