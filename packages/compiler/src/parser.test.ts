@@ -112,3 +112,4 @@ describe('Template Parser', () => {
 
   describe('控制流', () => {
     it('应解析 v-if', () => {
+      const { ast } = parse('<div v-if="show">Content</div>');
