@@ -143,3 +143,4 @@ describe('Template Parser', () => {
       expect(ast.children).toHaveLength(1);
       expect(ast.children[0].type).toBe('Comment');
       expect((ast.children[0] as any).content).toBe(' This is a comment ');
+    });
