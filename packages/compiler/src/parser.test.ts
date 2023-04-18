@@ -149,3 +149,4 @@ describe('Template Parser', () => {
   describe('位置信息', () => {
     it('应生成正确的位置信息', () => {
       const { ast } = parse('<div>Test</div>');
+      const el = ast.children[0] as any;
