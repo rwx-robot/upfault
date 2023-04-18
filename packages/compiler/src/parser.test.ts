@@ -146,3 +146,4 @@ describe('Template Parser', () => {
     });
   });
 
+  describe('位置信息', () => {
