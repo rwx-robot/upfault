@@ -124,3 +124,4 @@ describe('Template Parser', () => {
       const el = ast.children[0] as any;
       expect(el.type).toBe('For');
       expect(el.source).toBe('items');
+      expect(el.value).toBe('item');
