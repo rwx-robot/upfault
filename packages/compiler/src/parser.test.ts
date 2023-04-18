@@ -123,3 +123,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<li v-for="item in items" :key="item.id">{{ item.name }}</li>');
       const el = ast.children[0] as any;
       expect(el.type).toBe('For');
+      expect(el.source).toBe('items');
