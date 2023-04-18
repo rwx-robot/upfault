@@ -150,3 +150,4 @@ describe('Template Parser', () => {
     it('应生成正确的位置信息', () => {
       const { ast } = parse('<div>Test</div>');
       const el = ast.children[0] as any;
+      expect(el.loc).toBeDefined();
