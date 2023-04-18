@@ -109,3 +109,5 @@ describe('Template Parser', () => {
       expect(el.props[1].isEvent).toBe(true);
     });
   });
+
+  describe('控制流', () => {
