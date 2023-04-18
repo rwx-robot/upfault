@@ -138,3 +138,4 @@ describe('Template Parser', () => {
   });
 
   describe('注释', () => {
+    it('应解析 HTML 注释', () => {
