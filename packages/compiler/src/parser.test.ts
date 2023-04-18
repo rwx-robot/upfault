@@ -136,3 +136,5 @@ describe('Template Parser', () => {
       // slot 被识别为元素，标记为 slot
     });
   });
+
+  describe('注释', () => {
