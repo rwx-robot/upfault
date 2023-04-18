@@ -116,3 +116,4 @@ describe('Template Parser', () => {
       const el = ast.children[0] as any;
       expect(el.type).toBe('If');
       expect(el.branches).toHaveLength(2);
+      expect(el.branches[0].condition).toBe('show');
