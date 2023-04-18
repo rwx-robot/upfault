@@ -118,3 +118,5 @@ describe('Template Parser', () => {
       expect(el.branches).toHaveLength(2);
       expect(el.branches[0].condition).toBe('show');
     });
+
+    it('应解析 v-for', () => {
