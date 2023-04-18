@@ -134,3 +134,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<slot>Fallback</slot>');
       const el = ast.children[0] as any;
       // slot 被识别为元素，标记为 slot
+    });
