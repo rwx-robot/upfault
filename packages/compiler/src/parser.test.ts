@@ -130,3 +130,4 @@ describe('Template Parser', () => {
   });
 
   describe('插槽', () => {
+    it('应解析默认插槽', () => {
