@@ -115,3 +115,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<div v-if="show">Content</div>');
       const el = ast.children[0] as any;
       expect(el.type).toBe('If');
+      expect(el.branches).toHaveLength(2);
