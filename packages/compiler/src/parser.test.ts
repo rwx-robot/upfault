@@ -141,3 +141,4 @@ describe('Template Parser', () => {
     it('应解析 HTML 注释', () => {
       const { ast } = parse('<!-- This is a comment -->');
       expect(ast.children).toHaveLength(1);
+      expect(ast.children[0].type).toBe('Comment');
