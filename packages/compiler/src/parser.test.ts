@@ -120,3 +120,4 @@ describe('Template Parser', () => {
     });
 
     it('应解析 v-for', () => {
+      const { ast } = parse('<li v-for="item in items" :key="item.id">{{ item.name }}</li>');
