@@ -153,3 +153,4 @@ describe('Template Parser', () => {
       expect(el.loc).toBeDefined();
       expect(el.loc.start.line).toBe(1);
       expect(el.loc.start.column).toBe(1);
+      expect(el.loc.end.line).toBe(1);
