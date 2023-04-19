@@ -34,3 +34,4 @@ export interface BaseNode {
 
 export interface SourceLocation {
   start: Position;
+  end: Position;
