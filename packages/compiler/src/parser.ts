@@ -32,3 +32,4 @@ export interface BaseNode {
   loc: SourceLocation;
 }
 
+export interface SourceLocation {
