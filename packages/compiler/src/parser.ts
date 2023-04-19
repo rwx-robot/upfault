@@ -14,3 +14,4 @@ import type { VNodeFlags, VNodeType } from '@upfault/shared';
 export interface TemplateAST {
   type: 'Template';
   children: TemplateNode[];
+  source: string;
