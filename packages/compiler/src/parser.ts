@@ -25,3 +25,4 @@ export type TemplateNode =
   | ComponentNode
   | SlotNode
   | IfNode
+  | ForNode;
