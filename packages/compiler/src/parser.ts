@@ -19,3 +19,4 @@ export interface TemplateAST {
 
 export type TemplateNode = 
   | ElementNode 
+  | TextNode 
