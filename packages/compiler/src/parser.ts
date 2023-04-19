@@ -16,3 +16,5 @@ export interface TemplateAST {
   children: TemplateNode[];
   source: string;
 }
+
+export type TemplateNode = 
