@@ -151,3 +151,4 @@ describe('Template Parser', () => {
       const { ast } = parse('<div>Test</div>');
       const el = ast.children[0] as any;
       expect(el.loc).toBeDefined();
+      expect(el.loc.start.line).toBe(1);
