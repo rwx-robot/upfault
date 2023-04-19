@@ -156,3 +156,4 @@ describe('Template Parser', () => {
       expect(el.loc.end.line).toBe(1);
     });
   });
+});
