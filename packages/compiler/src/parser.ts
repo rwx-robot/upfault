@@ -27,3 +27,4 @@ export type TemplateNode =
   | IfNode
   | ForNode;
 
+export interface BaseNode {
