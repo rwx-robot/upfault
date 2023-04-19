@@ -8,3 +8,4 @@
 import type { VNodeFlags, VNodeType } from '@upfault/shared';
 
 // ============================================================================
+// AST 节点类型
