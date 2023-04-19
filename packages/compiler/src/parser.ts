@@ -23,3 +23,4 @@ export type TemplateNode =
   | InterpolationNode 
   | CommentNode
   | ComponentNode
+  | SlotNode
