@@ -30,3 +30,4 @@ export type TemplateNode =
 export interface BaseNode {
   type: string;
   loc: SourceLocation;
+}
