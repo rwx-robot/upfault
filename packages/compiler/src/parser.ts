@@ -24,3 +24,4 @@ export type TemplateNode =
   | CommentNode
   | ComponentNode
   | SlotNode
+  | IfNode
