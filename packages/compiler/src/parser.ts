@@ -28,3 +28,4 @@ export type TemplateNode =
   | ForNode;
 
 export interface BaseNode {
+  type: string;
