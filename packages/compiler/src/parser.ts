@@ -60,3 +60,4 @@ export interface TextNode extends BaseNode {
 }
 
 export interface InterpolationNode extends BaseNode {
+  type: 'Interpolation';
