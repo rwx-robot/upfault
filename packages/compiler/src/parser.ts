@@ -37,3 +37,4 @@ export interface SourceLocation {
   end: Position;
   source: string;
 }
+
