@@ -53,3 +53,5 @@ export interface ElementNode extends BaseNode {
   isComponent: boolean;
   componentName?: string;
 }
+
+export interface TextNode extends BaseNode {
