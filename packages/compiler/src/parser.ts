@@ -46,3 +46,4 @@ export interface Position {
 
 export interface ElementNode extends BaseNode {
   type: 'Element';
+  tag: string;
