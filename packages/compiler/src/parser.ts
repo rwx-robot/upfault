@@ -38,3 +38,4 @@ export interface SourceLocation {
   source: string;
 }
 
+export interface Position {
