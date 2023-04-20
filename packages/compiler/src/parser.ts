@@ -58,3 +58,5 @@ export interface TextNode extends BaseNode {
   type: 'Text';
   content: string;
 }
+
+export interface InterpolationNode extends BaseNode {
