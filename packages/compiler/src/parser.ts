@@ -39,3 +39,4 @@ export interface SourceLocation {
 }
 
 export interface Position {
+  offset: number;
