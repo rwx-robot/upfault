@@ -52,3 +52,4 @@ export interface ElementNode extends BaseNode {
   isSelfClosing: boolean;
   isComponent: boolean;
   componentName?: string;
+}
