@@ -66,3 +66,4 @@ export interface InterpolationNode extends BaseNode {
 
 export interface CommentNode extends BaseNode {
   type: 'Comment';
+  content: string;
