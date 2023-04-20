@@ -48,3 +48,4 @@ export interface ElementNode extends BaseNode {
   type: 'Element';
   tag: string;
   props: PropNode[];
+  children: TemplateNode[];
