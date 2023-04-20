@@ -51,3 +51,4 @@ export interface ElementNode extends BaseNode {
   children: TemplateNode[];
   isSelfClosing: boolean;
   isComponent: boolean;
+  componentName?: string;
