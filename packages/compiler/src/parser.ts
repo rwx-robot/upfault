@@ -44,3 +44,4 @@ export interface Position {
   column: number;
 }
 
+export interface ElementNode extends BaseNode {
