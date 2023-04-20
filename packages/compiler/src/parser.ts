@@ -73,3 +73,4 @@ export interface ComponentNode extends BaseNode {
   type: 'Component';
   name: string;
   props: PropNode[];
+  children: TemplateNode[];
