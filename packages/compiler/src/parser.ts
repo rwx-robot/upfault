@@ -74,3 +74,4 @@ export interface ComponentNode extends BaseNode {
   name: string;
   props: PropNode[];
   children: TemplateNode[];
+  isSelfClosing: boolean;
