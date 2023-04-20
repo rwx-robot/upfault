@@ -40,3 +40,4 @@ export interface SourceLocation {
 
 export interface Position {
   offset: number;
+  line: number;
