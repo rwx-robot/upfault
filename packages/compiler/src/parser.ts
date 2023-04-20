@@ -49,3 +49,4 @@ export interface ElementNode extends BaseNode {
   tag: string;
   props: PropNode[];
   children: TemplateNode[];
+  isSelfClosing: boolean;
