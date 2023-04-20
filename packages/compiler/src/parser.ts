@@ -72,3 +72,4 @@ export interface CommentNode extends BaseNode {
 export interface ComponentNode extends BaseNode {
   type: 'Component';
   name: string;
+  props: PropNode[];
