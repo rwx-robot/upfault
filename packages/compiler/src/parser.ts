@@ -69,3 +69,4 @@ export interface CommentNode extends BaseNode {
   content: string;
 }
 
+export interface ComponentNode extends BaseNode {
