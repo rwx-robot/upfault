@@ -55,3 +55,4 @@ export interface ElementNode extends BaseNode {
 }
 
 export interface TextNode extends BaseNode {
+  type: 'Text';
