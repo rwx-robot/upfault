@@ -104,3 +104,4 @@ export interface ForNode extends BaseNode {
 }
 
 export interface PropNode extends BaseNode {
+  type: 'Prop';
