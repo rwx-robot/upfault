@@ -83,3 +83,4 @@ export interface SlotNode extends BaseNode {
   fallback: TemplateNode[];
 }
 
+export interface IfNode extends BaseNode {
