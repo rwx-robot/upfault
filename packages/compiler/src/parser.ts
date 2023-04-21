@@ -101,3 +101,4 @@ export interface ForNode extends BaseNode {
   key: string | null; // e.g. "item.id"
   children: TemplateNode[];
   indexAlias: string | null;
+}
