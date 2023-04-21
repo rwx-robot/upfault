@@ -78,3 +78,4 @@ export interface ComponentNode extends BaseNode {
 }
 
 export interface SlotNode extends BaseNode {
+  type: 'Slot';
