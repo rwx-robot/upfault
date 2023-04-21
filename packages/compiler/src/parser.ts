@@ -87,3 +87,4 @@ export interface IfNode extends BaseNode {
   type: 'If';
   branches: IfBranchNode[];
 }
+
