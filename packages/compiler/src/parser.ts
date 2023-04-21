@@ -80,3 +80,4 @@ export interface ComponentNode extends BaseNode {
 export interface SlotNode extends BaseNode {
   type: 'Slot';
   name: string | null; // null = default slot
+  fallback: TemplateNode[];
