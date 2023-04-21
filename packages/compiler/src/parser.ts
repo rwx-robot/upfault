@@ -97,3 +97,4 @@ export interface IfBranchNode {
 export interface ForNode extends BaseNode {
   type: 'For';
   source: string; // e.g. "item in items"
+  value: string;  // e.g. "item"
