@@ -102,3 +102,5 @@ export interface ForNode extends BaseNode {
   children: TemplateNode[];
   indexAlias: string | null;
 }
+
+export interface PropNode extends BaseNode {
