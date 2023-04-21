@@ -109,3 +109,4 @@ export interface PropNode extends BaseNode {
   value: PropValue | null; // null = boolean shorthand
   isDynamic: boolean; // v-bind or :
   isEvent: boolean; // @click or v-on
+  isDirective: boolean; // v-if, v-for, v-slot 等指令
