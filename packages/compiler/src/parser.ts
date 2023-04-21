@@ -85,3 +85,4 @@ export interface SlotNode extends BaseNode {
 
 export interface IfNode extends BaseNode {
   type: 'If';
+  branches: IfBranchNode[];
