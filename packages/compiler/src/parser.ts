@@ -108,3 +108,4 @@ export interface PropNode extends BaseNode {
   name: string;
   value: PropValue | null; // null = boolean shorthand
   isDynamic: boolean; // v-bind or :
+  isEvent: boolean; // @click or v-on
