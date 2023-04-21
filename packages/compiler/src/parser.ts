@@ -90,3 +90,4 @@ export interface IfNode extends BaseNode {
 
 export interface IfBranchNode {
   condition: string | null; // null = else
+  children: TemplateNode[];
