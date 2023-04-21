@@ -114,3 +114,4 @@ export interface PropNode extends BaseNode {
 }
 
 export type PropValue = 
+  | { type: 'Literal'; value: string | number | boolean }
