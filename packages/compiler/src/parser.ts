@@ -106,3 +106,4 @@ export interface ForNode extends BaseNode {
 export interface PropNode extends BaseNode {
   type: 'Prop';
   name: string;
+  value: PropValue | null; // null = boolean shorthand
