@@ -93,3 +93,5 @@ export interface IfBranchNode {
   children: TemplateNode[];
   loc: SourceLocation;
 }
+
+export interface ForNode extends BaseNode {
