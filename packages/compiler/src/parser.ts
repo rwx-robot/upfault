@@ -75,3 +75,4 @@ export interface ComponentNode extends BaseNode {
   props: PropNode[];
   children: TemplateNode[];
   isSelfClosing: boolean;
+}
