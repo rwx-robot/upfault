@@ -95,3 +95,4 @@ export interface IfBranchNode {
 }
 
 export interface ForNode extends BaseNode {
+  type: 'For';
