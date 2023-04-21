@@ -112,3 +112,5 @@ export interface PropNode extends BaseNode {
   isDirective: boolean; // v-if, v-for, v-slot 等指令
   eventModifiers: string[]; // .stop .prevent .once etc
 }
+
+export type PropValue = 
