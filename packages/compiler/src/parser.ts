@@ -81,3 +81,4 @@ export interface SlotNode extends BaseNode {
   type: 'Slot';
   name: string | null; // null = default slot
   fallback: TemplateNode[];
+}
