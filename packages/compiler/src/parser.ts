@@ -76,3 +76,5 @@ export interface ComponentNode extends BaseNode {
   children: TemplateNode[];
   isSelfClosing: boolean;
 }
+
+export interface SlotNode extends BaseNode {
