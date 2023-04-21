@@ -88,3 +88,4 @@ export interface IfNode extends BaseNode {
   branches: IfBranchNode[];
 }
 
+export interface IfBranchNode {
