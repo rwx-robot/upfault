@@ -110,3 +110,4 @@ export interface PropNode extends BaseNode {
   isDynamic: boolean; // v-bind or :
   isEvent: boolean; // @click or v-on
   isDirective: boolean; // v-if, v-for, v-slot 等指令
+  eventModifiers: string[]; // .stop .prevent .once etc
