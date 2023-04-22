@@ -123,3 +123,4 @@ export type PropValue =
 // ============================================================================
 
 export interface CompileTimeFlags {
+  flags: number; // VNodeFlags 位掩码
