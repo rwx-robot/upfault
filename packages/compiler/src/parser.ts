@@ -159,3 +159,4 @@ export interface VariableInfo {
   type: 'ref' | 'computed' | 'prop' | 'local' | 'const';
   isReactive: boolean;
   declaredAt: Position;
+}
