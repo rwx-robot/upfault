@@ -147,3 +147,5 @@ export interface ImportSpec {
   from: string;
   as?: string;
 }
+
+export interface ScopeContext {
