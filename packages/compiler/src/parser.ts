@@ -134,3 +134,4 @@ export interface CompileTimeFlags {
 export interface CompileContext {
   filename: string;
   source: string;
+  flags: CompileTimeFlags;
