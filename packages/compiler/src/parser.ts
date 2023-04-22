@@ -138,3 +138,4 @@ export interface CompileContext {
   imports: ImportSpec[];
   scope: ScopeContext;
   errors: CompileError[];
+  warnings: CompileWarning[];
