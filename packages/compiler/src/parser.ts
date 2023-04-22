@@ -156,3 +156,4 @@ export interface ScopeContext {
 
 export interface VariableInfo {
   name: string;
+  type: 'ref' | 'computed' | 'prop' | 'local' | 'const';
