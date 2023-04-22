@@ -155,3 +155,4 @@ export interface ScopeContext {
 }
 
 export interface VariableInfo {
+  name: string;
