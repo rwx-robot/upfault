@@ -127,3 +127,4 @@ export interface CompileTimeFlags {
   dynamicProps: string[]; // 动态属性名列表
   hasEvent: boolean;
   hasSlot: boolean;
+  staticKeys: Set<string>; // 编译时确定的 key
