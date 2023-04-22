@@ -130,3 +130,4 @@ export interface CompileTimeFlags {
   staticKeys: Set<string>; // 编译时确定的 key
   dynamicSlots: string[]; // 动态插槽名
 }
+
