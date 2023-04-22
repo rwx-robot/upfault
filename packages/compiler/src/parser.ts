@@ -146,3 +146,4 @@ export interface ImportSpec {
   name: string;
   from: string;
   as?: string;
+}
