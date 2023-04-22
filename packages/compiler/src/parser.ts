@@ -137,3 +137,4 @@ export interface CompileContext {
   flags: CompileTimeFlags;
   imports: ImportSpec[];
   scope: ScopeContext;
+  errors: CompileError[];
