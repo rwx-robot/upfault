@@ -135,3 +135,4 @@ export interface CompileContext {
   filename: string;
   source: string;
   flags: CompileTimeFlags;
+  imports: ImportSpec[];
