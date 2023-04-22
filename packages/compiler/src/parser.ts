@@ -151,3 +151,4 @@ export interface ImportSpec {
 export interface ScopeContext {
   variables: Map<string, VariableInfo>;
   parent: ScopeContext | null;
+  level: number;
