@@ -126,3 +126,4 @@ export interface CompileTimeFlags {
   flags: number; // VNodeFlags 位掩码
   dynamicProps: string[]; // 动态属性名列表
   hasEvent: boolean;
+  hasSlot: boolean;
