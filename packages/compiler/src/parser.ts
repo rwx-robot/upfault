@@ -143,3 +143,4 @@ export interface CompileContext {
 
 export interface ImportSpec {
   type: 'component' | 'directive' | 'helper';
+  name: string;
