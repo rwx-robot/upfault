@@ -131,3 +131,4 @@ export interface CompileTimeFlags {
   dynamicSlots: string[]; // 动态插槽名
 }
 
+export interface CompileContext {
