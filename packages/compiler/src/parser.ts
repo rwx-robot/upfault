@@ -141,3 +141,4 @@ export interface CompileContext {
   warnings: CompileWarning[];
 }
 
+export interface ImportSpec {
