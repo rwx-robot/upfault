@@ -139,3 +139,4 @@ export interface CompileContext {
   scope: ScopeContext;
   errors: CompileError[];
   warnings: CompileWarning[];
+}
