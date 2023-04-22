@@ -132,3 +132,4 @@ export interface CompileTimeFlags {
 }
 
 export interface CompileContext {
+  filename: string;
