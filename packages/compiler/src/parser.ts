@@ -160,3 +160,5 @@ export interface VariableInfo {
   isReactive: boolean;
   declaredAt: Position;
 }
+
+export interface CompileError {
