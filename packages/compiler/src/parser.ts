@@ -154,3 +154,4 @@ export interface ScopeContext {
   level: number;
 }
 
+export interface VariableInfo {
