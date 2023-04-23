@@ -166,3 +166,5 @@ export interface CompileError {
   loc: SourceLocation;
   code: string;
 }
+
+export interface CompileWarning {
