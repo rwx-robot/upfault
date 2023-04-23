@@ -184,3 +184,5 @@ export interface ParseOptions {
   delimiters?: [string, string];
   comments?: boolean;
 }
+
+export interface ParseResult {
