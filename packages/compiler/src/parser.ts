@@ -195,3 +195,4 @@ export function parse(template: string, options: ParseOptions = {}): ParseResult
   const ast = parseTemplate(template, context);
   return { ast, context };
 }
+
