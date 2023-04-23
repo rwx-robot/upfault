@@ -182,3 +182,4 @@ export interface ParseOptions {
   sourceMap?: boolean;
   preserveWhitespace?: boolean;
   delimiters?: [string, string];
+  comments?: boolean;
