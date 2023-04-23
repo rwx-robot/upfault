@@ -178,3 +178,4 @@ export interface CompileWarning {
 // ============================================================================
 
 export interface ParseOptions {
+  filename?: string;
