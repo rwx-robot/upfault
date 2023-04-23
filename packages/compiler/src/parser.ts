@@ -186,3 +186,4 @@ export interface ParseOptions {
 }
 
 export interface ParseResult {
+  ast: TemplateAST;
