@@ -193,3 +193,4 @@ export interface ParseResult {
 export function parse(template: string, options: ParseOptions = {}): ParseResult {
   const context = createCompileContext(template, options);
   const ast = parseTemplate(template, context);
+  return { ast, context };
