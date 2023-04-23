@@ -165,3 +165,4 @@ export interface CompileError {
   message: string;
   loc: SourceLocation;
   code: string;
+}
