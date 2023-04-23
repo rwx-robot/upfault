@@ -196,3 +196,4 @@ export function parse(template: string, options: ParseOptions = {}): ParseResult
   return { ast, context };
 }
 
+export function createCompileContext(source: string, options: ParseOptions): CompileContext {
