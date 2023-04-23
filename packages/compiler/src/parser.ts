@@ -181,3 +181,4 @@ export interface ParseOptions {
   filename?: string;
   sourceMap?: boolean;
   preserveWhitespace?: boolean;
+  delimiters?: [string, string];
