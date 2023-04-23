@@ -180,3 +180,4 @@ export interface CompileWarning {
 export interface ParseOptions {
   filename?: string;
   sourceMap?: boolean;
+  preserveWhitespace?: boolean;
