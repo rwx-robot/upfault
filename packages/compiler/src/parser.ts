@@ -202,3 +202,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
     source,
     flags: {
       flags: 0,
+      dynamicProps: [],
