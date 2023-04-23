@@ -198,3 +198,4 @@ export function parse(template: string, options: ParseOptions = {}): ParseResult
 
 export function createCompileContext(source: string, options: ParseOptions): CompileContext {
   return {
+    filename: options.filename || 'anonymous.uf',
