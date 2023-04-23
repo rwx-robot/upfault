@@ -203,3 +203,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
     flags: {
       flags: 0,
       dynamicProps: [],
+      hasEvent: false,
