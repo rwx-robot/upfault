@@ -201,3 +201,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
     filename: options.filename || 'anonymous.uf',
     source,
     flags: {
+      flags: 0,
