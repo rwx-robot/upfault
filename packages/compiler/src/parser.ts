@@ -162,3 +162,4 @@ export interface VariableInfo {
 }
 
 export interface CompileError {
+  message: string;
