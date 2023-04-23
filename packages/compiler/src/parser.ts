@@ -170,3 +170,4 @@ export interface CompileError {
 export interface CompileWarning {
   message: string;
   loc: SourceLocation;
+  code: string;
