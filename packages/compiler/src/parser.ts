@@ -168,3 +168,4 @@ export interface CompileError {
 }
 
 export interface CompileWarning {
+  message: string;
