@@ -183,3 +183,4 @@ export interface ParseOptions {
   preserveWhitespace?: boolean;
   delimiters?: [string, string];
   comments?: boolean;
+}
