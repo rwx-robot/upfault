@@ -189,3 +189,5 @@ export interface ParseResult {
   ast: TemplateAST;
   context: CompileContext;
 }
+
+export function parse(template: string, options: ParseOptions = {}): ParseResult {
