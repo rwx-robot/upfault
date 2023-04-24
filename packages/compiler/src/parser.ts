@@ -237,3 +237,4 @@ class TemplateParser {
   private pos: number = 0;
   private line: number = 1;
   private column: number = 1;
+  private ast: TemplateAST | null = null;
