@@ -240,3 +240,4 @@ class TemplateParser {
   private ast: TemplateAST | null = null;
 
   constructor(source: string, context: CompileContext) {
+    this.source = source;
