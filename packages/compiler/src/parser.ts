@@ -241,3 +241,4 @@ class TemplateParser {
 
   constructor(source: string, context: CompileContext) {
     this.source = source;
+    this.context = context;
