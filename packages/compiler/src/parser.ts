@@ -215,3 +215,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
       level: 0,
     },
     errors: [],
+    warnings: [],
