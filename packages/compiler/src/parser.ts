@@ -206,3 +206,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
       hasEvent: false,
       hasSlot: false,
       staticKeys: new Set(),
+      dynamicSlots: [],
