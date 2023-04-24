@@ -228,3 +228,4 @@ function parseTemplate(source: string, context: CompileContext): TemplateAST {
   const parser = new TemplateParser(source, context);
   const ast = parser.parse();
   parser.analyze(ast);
+  return ast;
