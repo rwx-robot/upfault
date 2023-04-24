@@ -223,3 +223,5 @@ export function analyzeTemplate(source: string, options: ParseOptions = {}): Tem
   const context = createCompileContext(source, options);
   return parseTemplate(source, context);
 }
+
+function parseTemplate(source: string, context: CompileContext): TemplateAST {
