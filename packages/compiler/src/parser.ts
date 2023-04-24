@@ -212,3 +212,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
     scope: {
       variables: new Map(),
       parent: null,
+      level: 0,
