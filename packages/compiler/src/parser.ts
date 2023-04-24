@@ -232,3 +232,4 @@ function parseTemplate(source: string, context: CompileContext): TemplateAST {
 }
 
 class TemplateParser {
+  private source: string;
