@@ -209,3 +209,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
       dynamicSlots: [],
     },
     imports: [],
+    scope: {
