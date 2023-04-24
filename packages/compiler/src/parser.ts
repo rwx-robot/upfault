@@ -219,3 +219,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
   };
 }
 
+export function analyzeTemplate(source: string, options: ParseOptions = {}): TemplateAST {
