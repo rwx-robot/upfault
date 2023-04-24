@@ -216,3 +216,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
     },
     errors: [],
     warnings: [],
+  };
