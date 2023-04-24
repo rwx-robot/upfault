@@ -211,3 +211,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
     imports: [],
     scope: {
       variables: new Map(),
+      parent: null,
