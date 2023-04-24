@@ -213,3 +213,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
       variables: new Map(),
       parent: null,
       level: 0,
+    },
