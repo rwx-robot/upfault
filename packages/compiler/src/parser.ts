@@ -238,3 +238,5 @@ class TemplateParser {
   private line: number = 1;
   private column: number = 1;
   private ast: TemplateAST | null = null;
+
+  constructor(source: string, context: CompileContext) {
