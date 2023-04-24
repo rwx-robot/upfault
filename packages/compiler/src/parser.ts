@@ -204,3 +204,4 @@ export function createCompileContext(source: string, options: ParseOptions): Com
       flags: 0,
       dynamicProps: [],
       hasEvent: false,
+      hasSlot: false,
