@@ -235,3 +235,4 @@ class TemplateParser {
   private source: string;
   private context: CompileContext;
   private pos: number = 0;
+  private line: number = 1;
