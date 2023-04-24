@@ -225,3 +225,4 @@ export function analyzeTemplate(source: string, options: ParseOptions = {}): Tem
 }
 
 function parseTemplate(source: string, context: CompileContext): TemplateAST {
+  const parser = new TemplateParser(source, context);
