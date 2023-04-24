@@ -230,3 +230,5 @@ function parseTemplate(source: string, context: CompileContext): TemplateAST {
   parser.analyze(ast);
   return ast;
 }
+
+class TemplateParser {
