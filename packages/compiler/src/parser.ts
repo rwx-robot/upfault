@@ -236,3 +236,4 @@ class TemplateParser {
   private context: CompileContext;
   private pos: number = 0;
   private line: number = 1;
+  private column: number = 1;
