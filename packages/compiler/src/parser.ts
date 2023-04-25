@@ -272,3 +272,4 @@ class TemplateParser {
     return nodes;
   }
 
+private parseElement(): TemplateNode | null {
