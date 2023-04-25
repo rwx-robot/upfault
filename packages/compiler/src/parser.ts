@@ -249,3 +249,4 @@ class TemplateParser {
     const ast: TemplateAST = {
       type: 'Template',
       children,
+      source: this.source,
