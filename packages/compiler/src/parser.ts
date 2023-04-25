@@ -280,3 +280,4 @@ private parseElement(): TemplateNode | null {
     const start = this.getPosition();
     this.expect('<');
     
+    // 处理闭合标签
