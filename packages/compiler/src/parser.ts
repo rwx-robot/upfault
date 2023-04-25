@@ -285,3 +285,4 @@ private parseElement(): TemplateNode | null {
       this.skipTag();
       return null;
     }
+    
