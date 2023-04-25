@@ -255,3 +255,4 @@ class TemplateParser {
     return ast;
   }
 
+  private parseChildren(): TemplateNode[] {
