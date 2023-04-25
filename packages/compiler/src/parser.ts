@@ -246,3 +246,4 @@ class TemplateParser {
 
   parse(): TemplateAST {
     const children = this.parseChildren();
+    const ast: TemplateAST = {
