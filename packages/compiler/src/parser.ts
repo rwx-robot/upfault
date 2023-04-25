@@ -270,3 +270,4 @@ class TemplateParser {
       }
     }
     return nodes;
+  }
