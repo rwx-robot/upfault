@@ -245,3 +245,4 @@ class TemplateParser {
   }
 
   parse(): TemplateAST {
+    const children = this.parseChildren();
