@@ -244,3 +244,4 @@ class TemplateParser {
     this.context = context;
   }
 
+  parse(): TemplateAST {
