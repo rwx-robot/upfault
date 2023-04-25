@@ -269,3 +269,4 @@ class TemplateParser {
         nodes.push(this.parseText());
       }
     }
+    return nodes;
