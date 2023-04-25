@@ -252,3 +252,4 @@ class TemplateParser {
       source: this.source,
     };
     this.ast = ast;
+    return ast;
