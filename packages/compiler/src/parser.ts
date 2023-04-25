@@ -284,3 +284,4 @@ private parseElement(): TemplateNode | null {
     if (this.startsWith('</')) {
       this.skipTag();
       return null;
+    }
