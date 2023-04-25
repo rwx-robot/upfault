@@ -276,3 +276,4 @@ private parseElement(): TemplateNode | null {
     return this.parseElementImpl();
   }
   
+  private parseElementImpl(): TemplateNode | null {
