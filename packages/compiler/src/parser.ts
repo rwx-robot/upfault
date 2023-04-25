@@ -259,3 +259,4 @@ class TemplateParser {
     const nodes: TemplateNode[] = [];
     while (!this.isEnd()) {
       if (this.startsWith('{{')) {
+        nodes.push(this.parseInterpolation());
