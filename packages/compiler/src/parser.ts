@@ -261,3 +261,4 @@ class TemplateParser {
       if (this.startsWith('{{')) {
         nodes.push(this.parseInterpolation());
       } else if (this.startsWith('<!--')) {
+        nodes.push(this.parseComment());
