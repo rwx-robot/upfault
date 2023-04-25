@@ -286,3 +286,4 @@ private parseElement(): TemplateNode | null {
       return null;
     }
     
+    const tag = this.parseTagName();
