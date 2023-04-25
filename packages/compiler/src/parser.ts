@@ -266,3 +266,4 @@ class TemplateParser {
         const node = this.parseElement();
         if (node) nodes.push(node);
       } else {
+        nodes.push(this.parseText());
