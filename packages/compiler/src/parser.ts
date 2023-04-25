@@ -265,3 +265,4 @@ class TemplateParser {
       } else if (this.startsWith('<')) {
         const node = this.parseElement();
         if (node) nodes.push(node);
+      } else {
