@@ -250,3 +250,4 @@ class TemplateParser {
       type: 'Template',
       children,
       source: this.source,
+    };
