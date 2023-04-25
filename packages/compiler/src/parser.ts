@@ -256,3 +256,4 @@ class TemplateParser {
   }
 
   private parseChildren(): TemplateNode[] {
+    const nodes: TemplateNode[] = [];
