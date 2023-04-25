@@ -274,3 +274,4 @@ class TemplateParser {
 
 private parseElement(): TemplateNode | null {
     return this.parseElementImpl();
+  }
