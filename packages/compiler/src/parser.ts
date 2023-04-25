@@ -278,3 +278,4 @@ private parseElement(): TemplateNode | null {
   
   private parseElementImpl(): TemplateNode | null {
     const start = this.getPosition();
+    this.expect('<');
