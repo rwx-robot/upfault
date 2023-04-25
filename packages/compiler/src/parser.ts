@@ -254,3 +254,4 @@ class TemplateParser {
     this.ast = ast;
     return ast;
   }
+
