@@ -281,3 +281,4 @@ private parseElement(): TemplateNode | null {
     this.expect('<');
     
     // 处理闭合标签
+    if (this.startsWith('</')) {
