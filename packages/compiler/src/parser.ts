@@ -263,3 +263,4 @@ class TemplateParser {
       } else if (this.startsWith('<!--')) {
         nodes.push(this.parseComment());
       } else if (this.startsWith('<')) {
+        const node = this.parseElement();
