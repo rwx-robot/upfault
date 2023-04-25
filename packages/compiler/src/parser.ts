@@ -283,3 +283,4 @@ private parseElement(): TemplateNode | null {
     // 处理闭合标签
     if (this.startsWith('</')) {
       this.skipTag();
+      return null;
