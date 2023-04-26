@@ -321,3 +321,4 @@ const forValue = forProp.value?.type === 'Expression' ? forProp.value.value : fo
 const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.value : keyProp?.value?.value?.toString() || null;
         
         return {
+          type: 'For',
