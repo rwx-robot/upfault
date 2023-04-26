@@ -287,3 +287,4 @@ private parseElement(): TemplateNode | null {
     }
     
     const tag = this.parseTagName();
+    const isComponent = tag.length > 0 && tag[0] !== undefined && tag[0] === tag[0].toUpperCase() && tag.length > 1;
