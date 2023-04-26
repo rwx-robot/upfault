@@ -313,3 +313,4 @@ private parseElement(): TemplateNode | null {
       // v-for 转换为 ForNode
       const forProp = props.find(p => p.name === 'for' || p.name === 'v-for');
       if (forProp) {
+const forValue = forProp.value?.type === 'Expression' ? forProp.value.value : forProp.value?.value?.toString() || '';
