@@ -307,3 +307,4 @@ private parseElement(): TemplateNode | null {
             { condition: null, children: [], loc: ifProp.loc },
           ],
           loc: this.makeLoc(start, end),
+        } as IfNode;
