@@ -308,3 +308,4 @@ private parseElement(): TemplateNode | null {
           ],
           loc: this.makeLoc(start, end),
         } as IfNode;
+      }
