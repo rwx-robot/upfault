@@ -310,3 +310,4 @@ private parseElement(): TemplateNode | null {
         } as IfNode;
       }
       
+      // v-for 转换为 ForNode
