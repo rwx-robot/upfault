@@ -318,3 +318,4 @@ const forValue = forProp.value?.type === 'Expression' ? forProp.value.value : fo
         const value = match ? match[1] : 'item';
         const source = match ? match[2] : forValue;
         const keyProp = props.find(p => p.name === 'key');
+const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.value : keyProp?.value?.value?.toString() || null;
