@@ -301,3 +301,4 @@ private parseElement(): TemplateNode | null {
       const ifProp = props.find(p => p.name === 'if' || p.name === 'v-if');
       if (ifProp) {
         return {
+          type: 'If',
