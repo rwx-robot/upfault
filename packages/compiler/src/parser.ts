@@ -315,3 +315,4 @@ private parseElement(): TemplateNode | null {
       if (forProp) {
 const forValue = forProp.value?.type === 'Expression' ? forProp.value.value : forProp.value?.value?.toString() || '';
         const match = forValue.match(/^\s*(\w+)\s+(?:in|of)\s+(.+)\s*$/);
+        const value = match ? match[1] : 'item';
