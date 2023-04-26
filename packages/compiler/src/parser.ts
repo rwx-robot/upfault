@@ -302,3 +302,4 @@ private parseElement(): TemplateNode | null {
       if (ifProp) {
         return {
           type: 'If',
+          branches: [
