@@ -292,3 +292,4 @@ private parseElement(): TemplateNode | null {
     const props = this.parseProps();
     
     // 检查自闭合
+    const isSelfClosing = this.startsWith('/>');
