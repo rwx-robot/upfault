@@ -294,3 +294,4 @@ private parseElement(): TemplateNode | null {
     // 检查自闭合
     const isSelfClosing = this.startsWith('/>');
     if (isSelfClosing) {
+      this.expect('/>');
