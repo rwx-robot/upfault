@@ -295,3 +295,4 @@ private parseElement(): TemplateNode | null {
     const isSelfClosing = this.startsWith('/>');
     if (isSelfClosing) {
       this.expect('/>');
+      const end = this.getPosition();
