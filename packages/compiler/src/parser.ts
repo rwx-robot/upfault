@@ -311,3 +311,4 @@ private parseElement(): TemplateNode | null {
       }
       
       // v-for 转换为 ForNode
+      const forProp = props.find(p => p.name === 'for' || p.name === 'v-for');
