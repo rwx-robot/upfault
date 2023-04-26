@@ -303,3 +303,4 @@ private parseElement(): TemplateNode | null {
         return {
           type: 'If',
           branches: [
+            { condition: ifProp.value?.type === 'Expression' ? ifProp.value.value : ifProp.value?.value?.toString() || 'true', children: [], loc: ifProp.loc },
