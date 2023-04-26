@@ -320,3 +320,4 @@ const forValue = forProp.value?.type === 'Expression' ? forProp.value.value : fo
         const keyProp = props.find(p => p.name === 'key');
 const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.value : keyProp?.value?.value?.toString() || null;
         
+        return {
