@@ -347,3 +347,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.expect('>');
     
     // 解析子节点
+    const children = this.parseChildren();
