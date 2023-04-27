@@ -362,3 +362,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     if (ifProp) {
       return {
         type: 'If',
+        branches: [
