@@ -327,3 +327,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
           key,
           children: [],
           indexAlias: null,
+          loc: this.makeLoc(start, end),
