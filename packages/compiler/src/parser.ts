@@ -339,3 +339,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         children: [],
         isSelfClosing: true,
         isComponent,
+        componentName: isComponent ? tag : undefined,
