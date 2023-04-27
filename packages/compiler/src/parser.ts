@@ -355,3 +355,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.skipWhitespace();
     this.expect('>');
     
+    const end = this.getPosition();
