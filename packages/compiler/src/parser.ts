@@ -344,3 +344,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       } as TemplateNode;
     }
     
+    this.expect('>');
