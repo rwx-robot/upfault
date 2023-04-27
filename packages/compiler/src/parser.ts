@@ -361,3 +361,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     const ifProp = props.find(p => p.name === 'if' || p.name === 'v-if');
     if (ifProp) {
       return {
+        type: 'If',
