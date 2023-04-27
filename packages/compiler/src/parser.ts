@@ -350,3 +350,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     const children = this.parseChildren();
     
     // 解析闭合标签
+    this.expect('</');
