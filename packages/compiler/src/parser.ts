@@ -357,3 +357,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     
     const end = this.getPosition();
     
+    // v-if 转换为 IfNode
