@@ -328,3 +328,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
           children: [],
           indexAlias: null,
           loc: this.makeLoc(start, end),
+        } as ForNode;
