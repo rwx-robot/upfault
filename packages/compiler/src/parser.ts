@@ -352,3 +352,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     // 解析闭合标签
     this.expect('</');
     this.expect(tag);
+    this.skipWhitespace();
