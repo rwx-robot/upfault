@@ -342,3 +342,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         componentName: isComponent ? tag : undefined,
         loc: this.makeLoc(start, end),
       } as TemplateNode;
+    }
