@@ -353,3 +353,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.expect('</');
     this.expect(tag);
     this.skipWhitespace();
+    this.expect('>');
