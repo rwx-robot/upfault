@@ -338,3 +338,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         props: props.filter(p => !p.isDirective),
         children: [],
         isSelfClosing: true,
+        isComponent,
