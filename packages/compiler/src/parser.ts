@@ -393,3 +393,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     
     // 普通元素或组件
     return {
+      type: isComponent ? 'Component' : 'Element',
