@@ -395,3 +395,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     return {
       type: isComponent ? 'Component' : 'Element',
       name: isComponent ? tag : undefined,
+      tag: isComponent ? undefined : tag,
