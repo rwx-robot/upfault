@@ -377,3 +377,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       const match = forValue.match(/^\s*(\w+)\s+(?:in|of)\s+(.+)\s*$/);
       const value = match ? match[1] : 'item';
       const source = match ? match[2] : forValue;
+      const keyProp = props.find(p => p.name === 'key');
