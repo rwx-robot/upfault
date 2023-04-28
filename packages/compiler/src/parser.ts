@@ -385,3 +385,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         source,
         value,
         key,
+        children,
