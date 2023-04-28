@@ -400,3 +400,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       children,
       isSelfClosing: false,
       isComponent,
+      componentName: isComponent ? tag : undefined,
