@@ -380,3 +380,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       const keyProp = props.find(p => p.name === 'key');
       const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.value : keyProp?.value?.value?.toString() || null;
       
+      return {
