@@ -370,3 +370,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       } as IfNode;
     }
     
+    // v-for 转换为 ForNode
