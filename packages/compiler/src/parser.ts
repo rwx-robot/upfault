@@ -374,3 +374,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     const forProp = props.find(p => p.name === 'for' || p.name === 'v-for');
     if (forProp) {
       const forValue = forProp.value?.type === 'Expression' ? forProp.value.value : forProp.value?.value?.toString() || '';
+      const match = forValue.match(/^\s*(\w+)\s+(?:in|of)\s+(.+)\s*$/);
