@@ -367,3 +367,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
           { condition: null, children: [], loc: ifProp.loc },
         ],
         loc: this.makeLoc(start, end),
+      } as IfNode;
