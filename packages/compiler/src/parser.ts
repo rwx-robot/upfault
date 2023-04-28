@@ -363,3 +363,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       return {
         type: 'If',
         branches: [
+          { condition: ifProp.value?.type === 'Expression' ? ifProp.value.value : ifProp.value?.value?.toString() || 'true', children, loc: ifProp.loc },
