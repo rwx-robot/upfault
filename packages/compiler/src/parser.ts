@@ -396,3 +396,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       type: isComponent ? 'Component' : 'Element',
       name: isComponent ? tag : undefined,
       tag: isComponent ? undefined : tag,
+      props: props.filter(p => !p.isDirective),
