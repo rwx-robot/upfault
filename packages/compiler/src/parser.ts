@@ -384,3 +384,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         type: 'For',
         source,
         value,
+        key,
