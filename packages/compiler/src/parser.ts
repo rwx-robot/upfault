@@ -365,3 +365,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         branches: [
           { condition: ifProp.value?.type === 'Expression' ? ifProp.value.value : ifProp.value?.value?.toString() || 'true', children, loc: ifProp.loc },
           { condition: null, children: [], loc: ifProp.loc },
+        ],
