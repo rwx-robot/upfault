@@ -401,3 +401,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       isSelfClosing: false,
       isComponent,
       componentName: isComponent ? tag : undefined,
+      loc: this.makeLoc(start, end),
