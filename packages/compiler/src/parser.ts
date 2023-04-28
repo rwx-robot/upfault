@@ -390,3 +390,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         loc: this.makeLoc(start, end),
       } as ForNode;
     }
+    
