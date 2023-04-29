@@ -415,3 +415,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       const name = this.parseAttributeName();
       
       // 指令
+      const isDirective = name.startsWith('v-') || name.startsWith(':') || name.startsWith('@');
