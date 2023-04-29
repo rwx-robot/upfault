@@ -409,3 +409,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     const props: PropNode[] = [];
     while (!this.isEnd() && !this.startsWith('>') && !this.startsWith('/>')) {
       this.skipWhitespace();
+      if (this.isEnd() || this.startsWith('>') || this.startsWith('/>')) break;
