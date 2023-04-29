@@ -425,3 +425,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         isDynamic = true;
       } else if (name.startsWith(':')) {
         isDynamic = true;
+      } else if (name.startsWith('v-')) {
