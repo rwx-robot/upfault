@@ -418,3 +418,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       const isDirective = name.startsWith('v-') || name.startsWith(':') || name.startsWith('@');
       let isDynamic = false;
       let isEvent = false;
+      let isSlot = false;
