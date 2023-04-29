@@ -417,3 +417,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       // 指令
       const isDirective = name.startsWith('v-') || name.startsWith(':') || name.startsWith('@');
       let isDynamic = false;
+      let isEvent = false;
