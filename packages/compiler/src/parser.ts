@@ -421,3 +421,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       let isSlot = false;
       
       if (name.startsWith('@')) {
+        isEvent = true;
