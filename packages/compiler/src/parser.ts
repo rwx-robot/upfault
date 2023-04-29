@@ -447,3 +447,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       const eventModifiers: string[] = [];
       if (isEvent) {
         const parts = name.split('.');
+        if (parts.length > 1) {
