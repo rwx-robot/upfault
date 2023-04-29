@@ -424,3 +424,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         isEvent = true;
         isDynamic = true;
       } else if (name.startsWith(':')) {
+        isDynamic = true;
