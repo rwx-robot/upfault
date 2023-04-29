@@ -410,3 +410,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     while (!this.isEnd() && !this.startsWith('>') && !this.startsWith('/>')) {
       this.skipWhitespace();
       if (this.isEnd() || this.startsWith('>') || this.startsWith('/>')) break;
+      
