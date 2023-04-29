@@ -437,3 +437,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       if (this.startsWith('=')) {
         this.expect('=');
         this.skipWhitespace();
+        value = this.parseAttributeValue();
