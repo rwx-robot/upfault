@@ -431,3 +431,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         isDynamic = true;
       }
       
+      let value: PropValue | null = null;
