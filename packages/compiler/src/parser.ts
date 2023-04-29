@@ -428,3 +428,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       } else if (name.startsWith('v-')) {
         isDynamic = true;
       } else if (name.startsWith('v-bind:') || name.startsWith(':')) {
+        isDynamic = true;
