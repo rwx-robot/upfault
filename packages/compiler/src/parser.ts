@@ -407,3 +407,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
 
   private parseProps(): PropNode[] {
     const props: PropNode[] = [];
+    while (!this.isEnd() && !this.startsWith('>') && !this.startsWith('/>')) {
