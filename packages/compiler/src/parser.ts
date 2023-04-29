@@ -441,3 +441,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       } else {
         // 布尔简写
         value = { type: 'Literal', value: true };
+      }
