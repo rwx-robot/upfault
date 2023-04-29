@@ -439,3 +439,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         this.skipWhitespace();
         value = this.parseAttributeValue();
       } else {
+        // 布尔简写
