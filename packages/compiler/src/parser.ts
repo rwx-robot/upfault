@@ -443,3 +443,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         value = { type: 'Literal', value: true };
       }
       
+      // 处理修饰符
