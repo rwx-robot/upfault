@@ -423,3 +423,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       if (name.startsWith('@')) {
         isEvent = true;
         isDynamic = true;
+      } else if (name.startsWith(':')) {
