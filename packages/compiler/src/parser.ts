@@ -446,3 +446,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       // 处理修饰符
       const eventModifiers: string[] = [];
       if (isEvent) {
+        const parts = name.split('.');
