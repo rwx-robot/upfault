@@ -412,3 +412,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       if (this.isEnd() || this.startsWith('>') || this.startsWith('/>')) break;
       
       const start = this.getPosition();
+      const name = this.parseAttributeName();
