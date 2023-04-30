@@ -468,3 +468,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
 
   private parseAttributeValue(): PropValue {
     this.skipWhitespace();
+    const quote = this.current();
