@@ -465,3 +465,5 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     }
     return props;
   }
+
+  private parseAttributeValue(): PropValue {
