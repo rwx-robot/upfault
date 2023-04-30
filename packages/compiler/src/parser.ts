@@ -455,3 +455,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       props.push({
         type: 'Prop',
         name: name.replace(/^[@:]/, '').replace(/^v-/, ''),
+        value,
