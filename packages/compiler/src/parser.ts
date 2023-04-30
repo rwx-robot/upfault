@@ -483,3 +483,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     // 表达式
     let value = '';
     while (!this.isEnd() && !this.current().match(/[\s>]/)) {
+      value += this.current();
