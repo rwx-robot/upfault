@@ -473,3 +473,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       this.advance();
       let value = '';
       while (!this.isEnd() && this.current() !== quote) {
+        value += this.current();
