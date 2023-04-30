@@ -456,3 +456,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         type: 'Prop',
         name: name.replace(/^[@:]/, '').replace(/^v-/, ''),
         value,
+        isDynamic,
