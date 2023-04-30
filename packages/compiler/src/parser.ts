@@ -484,3 +484,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     let value = '';
     while (!this.isEnd() && !this.current().match(/[\s>]/)) {
       value += this.current();
+      this.advance();
