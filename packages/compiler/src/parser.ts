@@ -458,3 +458,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         value,
         isDynamic,
         isEvent,
+        isDirective,
