@@ -449,3 +449,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         const parts = name.split('.');
         if (parts.length > 1) {
           eventModifiers.push(...parts.slice(1));
+        }
