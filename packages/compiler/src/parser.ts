@@ -476,3 +476,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         value += this.current();
         this.advance();
       }
+      this.expect(quote);
