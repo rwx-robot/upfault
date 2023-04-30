@@ -461,3 +461,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         isDirective,
         eventModifiers,
         loc: this.makeLoc(start, this.getPosition()),
+      });
