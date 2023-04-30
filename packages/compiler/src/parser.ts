@@ -470,3 +470,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.skipWhitespace();
     const quote = this.current();
     if (quote === '"' || quote === "'") {
+      this.advance();
