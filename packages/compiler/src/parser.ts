@@ -451,3 +451,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
           eventModifiers.push(...parts.slice(1));
         }
       }
+      
