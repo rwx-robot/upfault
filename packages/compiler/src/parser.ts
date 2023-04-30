@@ -450,3 +450,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         if (parts.length > 1) {
           eventModifiers.push(...parts.slice(1));
         }
+      }
