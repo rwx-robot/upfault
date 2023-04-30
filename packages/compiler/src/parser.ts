@@ -486,3 +486,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       value += this.current();
       this.advance();
     }
+    return { type: 'Expression', value: value.trim() };
