@@ -479,3 +479,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       this.expect(quote);
       return { type: 'Literal', value };
     }
+    
