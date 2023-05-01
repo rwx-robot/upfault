@@ -525,3 +525,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.expect('<!--');
     let content = '';
     while (!this.isEnd() && !this.startsWith('-->')) {
+      content += this.current();
