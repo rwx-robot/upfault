@@ -515,3 +515,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.expect('}}');
     return {
       type: 'Interpolation',
+      expression: expression.trim(),
