@@ -517,3 +517,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       type: 'Interpolation',
       expression: expression.trim(),
       loc: this.makeLoc(start, this.getPosition()),
+    };
