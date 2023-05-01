@@ -528,3 +528,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       content += this.current();
       this.advance();
     }
+    this.expect('-->');
