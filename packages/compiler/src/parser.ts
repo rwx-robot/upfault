@@ -518,3 +518,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       expression: expression.trim(),
       loc: this.makeLoc(start, this.getPosition()),
     };
+  }
