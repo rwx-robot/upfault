@@ -498,3 +498,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     }
     return {
       type: 'Text',
+      content: content.trim(),
