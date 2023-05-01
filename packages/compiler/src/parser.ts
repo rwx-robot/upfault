@@ -493,3 +493,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     const start = this.getPosition();
     let content = '';
     while (!this.isEnd() && !this.startsWith('<') && !this.startsWith('{{')) {
+      content += this.current();
