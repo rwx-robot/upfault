@@ -500,3 +500,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       type: 'Text',
       content: content.trim(),
       loc: this.makeLoc(start, this.getPosition()),
+    };
