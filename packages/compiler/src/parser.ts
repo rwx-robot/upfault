@@ -508,3 +508,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.expect('{{');
     this.skipWhitespace();
     let expression = '';
+    while (!this.isEnd() && !this.startsWith('}}')) {
