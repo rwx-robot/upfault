@@ -505,3 +505,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
 
   private parseInterpolation(): InterpolationNode {
     const start = this.getPosition();
+    this.expect('{{');
