@@ -509,3 +509,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.skipWhitespace();
     let expression = '';
     while (!this.isEnd() && !this.startsWith('}}')) {
+      expression += this.current();
