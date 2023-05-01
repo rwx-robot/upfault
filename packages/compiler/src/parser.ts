@@ -522,3 +522,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
 
   private parseComment(): CommentNode {
     const start = this.getPosition();
+    this.expect('<!--');
