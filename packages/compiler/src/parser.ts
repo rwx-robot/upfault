@@ -507,3 +507,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     const start = this.getPosition();
     this.expect('{{');
     this.skipWhitespace();
+    let expression = '';
