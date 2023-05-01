@@ -495,3 +495,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     while (!this.isEnd() && !this.startsWith('<') && !this.startsWith('{{')) {
       content += this.current();
       this.advance();
+    }
