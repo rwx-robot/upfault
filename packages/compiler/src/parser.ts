@@ -526,3 +526,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     let content = '';
     while (!this.isEnd() && !this.startsWith('-->')) {
       content += this.current();
+      this.advance();
