@@ -558,3 +558,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
 
   private getPosition(): Position {
     return { offset: this.pos, line: this.line, column: this.column };
+  }
