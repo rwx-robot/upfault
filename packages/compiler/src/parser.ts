@@ -572,3 +572,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     const char = this.source[this.pos];
     if (char === '\n') {
       this.line++;
+      this.column = 1;
