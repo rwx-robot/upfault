@@ -543,3 +543,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       name += this.current();
       this.advance();
     }
+    return name;
