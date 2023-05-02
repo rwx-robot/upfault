@@ -539,3 +539,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private parseTagName(): string {
     this.skipWhitespace();
     let name = '';
+    while (!this.isEnd() && this.current().match(/[a-zA-Z0-9-_:]/)) {
