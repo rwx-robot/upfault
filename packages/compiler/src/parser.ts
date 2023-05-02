@@ -538,3 +538,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
 
   private parseTagName(): string {
     this.skipWhitespace();
+    let name = '';
