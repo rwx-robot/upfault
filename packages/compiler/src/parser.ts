@@ -552,3 +552,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     while (!this.isEnd() && this.current().match(/[a-zA-Z0-9-_:.]/)) {
       name += this.current();
       this.advance();
+    }
