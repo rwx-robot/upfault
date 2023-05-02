@@ -533,3 +533,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       type: 'Comment',
       content: content.trim(),
       loc: this.makeLoc(start, this.getPosition()),
+    };
