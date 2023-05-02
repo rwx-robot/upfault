@@ -563,3 +563,5 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private makeLoc(start: Position, end: Position): SourceLocation {
     return { start, end, source: this.source.slice(start.offset, this.pos) };
   }
+
+  private current(): string {
