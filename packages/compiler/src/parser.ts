@@ -565,3 +565,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   }
 
   private current(): string {
+    return this.source[this.pos] || '';
