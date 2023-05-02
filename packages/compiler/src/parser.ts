@@ -569,3 +569,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   }
 
   private advance(): void {
+    const char = this.source[this.pos];
