@@ -603,3 +603,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private skipTag(): void {
     while (!this.isEnd() && this.current() !== '>') {
       this.advance();
+    }
