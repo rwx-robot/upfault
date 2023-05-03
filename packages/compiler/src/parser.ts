@@ -592,3 +592,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       throw new Error(`Expected "${str}" at position ${this.pos}`);
     }
     this.pos += str.length;
+  }
