@@ -608,3 +608,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   }
   
   // ============================================================================
+  // 编译时 Flags 分析
