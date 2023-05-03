@@ -582,3 +582,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private isEnd(): boolean {
     return this.pos >= this.source.length;
   }
+
