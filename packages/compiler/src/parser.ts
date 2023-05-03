@@ -596,3 +596,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
 
   private skipWhitespace(): void {
     while (!this.isEnd() && this.current().match(/\s/)) {
+      this.advance();
