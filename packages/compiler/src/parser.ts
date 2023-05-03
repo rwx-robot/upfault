@@ -600,3 +600,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     }
   }
 
+  private skipTag(): void {
