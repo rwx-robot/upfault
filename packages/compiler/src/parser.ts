@@ -574,3 +574,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       this.line++;
       this.column = 1;
     } else {
+      this.column++;
