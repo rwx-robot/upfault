@@ -587,3 +587,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     return this.source.slice(this.pos, this.pos + str.length) === str;
   }
 
+  private expect(str: string): void {
