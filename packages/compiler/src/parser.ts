@@ -594,3 +594,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.pos += str.length;
   }
 
+  private skipWhitespace(): void {
