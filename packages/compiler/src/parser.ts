@@ -588,3 +588,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   }
 
   private expect(str: string): void {
+    if (!this.startsWith(str)) {
