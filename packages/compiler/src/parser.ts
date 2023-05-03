@@ -586,3 +586,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private startsWith(str: string): boolean {
     return this.source.slice(this.pos, this.pos + str.length) === str;
   }
+
