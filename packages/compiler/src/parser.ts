@@ -634,3 +634,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       case 'Slot':
         this.analyzeSlot(node);
         break;
+      case 'If':
