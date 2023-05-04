@@ -637,3 +637,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       case 'If':
         this.analyzeIf(node);
         break;
+      case 'For':
