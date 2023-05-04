@@ -616,3 +616,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.mergeFlags();
     return this.context.flags;
   }
+  
