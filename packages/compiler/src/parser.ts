@@ -617,3 +617,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     return this.context.flags;
   }
   
+  private analyzeChildren(nodes: TemplateNode[]): void {
