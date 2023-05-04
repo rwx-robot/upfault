@@ -644,3 +644,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         this.analyzeInterpolation(node);
         break;
       case 'Text':
+      case 'Comment':
