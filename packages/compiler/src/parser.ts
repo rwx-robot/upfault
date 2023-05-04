@@ -647,3 +647,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       case 'Comment':
         break;
     }
+  }
