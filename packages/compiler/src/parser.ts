@@ -614,3 +614,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   analyze(ast: TemplateAST): CompileTimeFlags {
     this.analyzeChildren(ast.children);
     this.mergeFlags();
+    return this.context.flags;
