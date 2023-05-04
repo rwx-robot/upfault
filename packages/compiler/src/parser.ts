@@ -626,3 +626,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private analyzeNode(node: TemplateNode): void {
     switch (node.type) {
       case 'Element':
+        this.analyzeElement(node);
