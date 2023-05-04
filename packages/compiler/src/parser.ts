@@ -621,3 +621,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     for (const node of nodes) {
       this.analyzeNode(node);
     }
+  }
