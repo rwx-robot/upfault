@@ -631,3 +631,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       case 'Component':
         this.analyzeComponent(node);
         break;
+      case 'Slot':
