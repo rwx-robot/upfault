@@ -657,3 +657,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       }
       if (prop.isEvent) {
         this.context.flags.hasEvent = true;
+      }
