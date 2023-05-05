@@ -693,3 +693,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       this.context.flags.flags |= 16; // MULTI_DYNAMIC
     }
   }
+}
