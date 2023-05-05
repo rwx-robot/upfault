@@ -671,3 +671,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.context.flags.hasSlot = true;
     this.context.flags.dynamicSlots.push(node.name || 'default');
     this.analyzeChildren(node.fallback);
+  }
