@@ -653,3 +653,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     // 分析 props
     for (const prop of node.props) {
       if (prop.isDynamic) {
+        this.context.flags.dynamicProps.push(prop.name);
