@@ -679,3 +679,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     }
   }
   
+  private analyzeFor(node: ForNode): void {
