@@ -659,3 +659,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         this.context.flags.hasEvent = true;
       }
     }
+    this.analyzeChildren(node.children);
