@@ -677,3 +677,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     for (const branch of node.branches) {
       this.analyzeChildren(branch.children);
     }
+  }
