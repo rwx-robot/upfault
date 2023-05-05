@@ -682,3 +682,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private analyzeFor(node: ForNode): void {
     this.context.flags.flags |= 16; // VNodeFlags.MULTI_DYNAMIC
     this.analyzeChildren(node.children);
+  }
