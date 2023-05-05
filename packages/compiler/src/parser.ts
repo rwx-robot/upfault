@@ -666,3 +666,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.context.flags.hasSlot = true;
     this.analyzeChildren(node.children);
   }
+  
