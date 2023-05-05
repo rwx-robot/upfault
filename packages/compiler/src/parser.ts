@@ -688,3 +688,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.context.flags.dynamicProps.push(node.expression);
   }
   
+  private mergeFlags(): void {
