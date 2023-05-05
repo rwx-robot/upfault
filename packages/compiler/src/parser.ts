@@ -687,3 +687,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private analyzeInterpolation(node: InterpolationNode): void {
     this.context.flags.dynamicProps.push(node.expression);
   }
+  
