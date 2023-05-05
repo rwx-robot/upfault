@@ -654,3 +654,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     for (const prop of node.props) {
       if (prop.isDynamic) {
         this.context.flags.dynamicProps.push(prop.name);
+      }
