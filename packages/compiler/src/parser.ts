@@ -675,3 +675,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   
   private analyzeIf(node: IfNode): void {
     for (const branch of node.branches) {
+      this.analyzeChildren(branch.children);
