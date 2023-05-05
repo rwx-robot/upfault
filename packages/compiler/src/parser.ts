@@ -670,3 +670,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private analyzeSlot(node: SlotNode): void {
     this.context.flags.hasSlot = true;
     this.context.flags.dynamicSlots.push(node.name || 'default');
+    this.analyzeChildren(node.fallback);
