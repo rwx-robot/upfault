@@ -656,3 +656,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         this.context.flags.dynamicProps.push(prop.name);
       }
       if (prop.isEvent) {
+        this.context.flags.hasEvent = true;
