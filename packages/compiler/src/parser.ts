@@ -678,3 +678,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       this.analyzeChildren(branch.children);
     }
   }
+  
