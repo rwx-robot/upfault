@@ -692,3 +692,4 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     if (this.context.flags.dynamicProps.length > 1) {
       this.context.flags.flags |= 16; // MULTI_DYNAMIC
     }
+  }
