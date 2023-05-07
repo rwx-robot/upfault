@@ -4,3 +4,4 @@
   "description": "UpFault AeroDiff 算法",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
