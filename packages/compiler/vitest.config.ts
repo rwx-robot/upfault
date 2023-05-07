@@ -10,3 +10,4 @@ export default defineConfig({
       exclude: ['**/*.d.ts', '**/*.test.ts', 'dist/**'],
     },
     globals: true,
+  },
