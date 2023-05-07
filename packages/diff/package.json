@@ -2,3 +2,4 @@
   "name": "@upfault/diff",
   "version": "0.2.0",
   "description": "UpFault AeroDiff 算法",
+  "main": "dist/index.js",
