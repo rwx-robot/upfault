@@ -25,3 +25,4 @@
     "@upfault/shared": "workspace:*",
     "@upfault/predict-cache": "workspace:*"
   },
+  "devDependencies": {
