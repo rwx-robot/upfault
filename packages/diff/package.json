@@ -15,3 +15,4 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json && pnpm run build:esm",
     "build:esm": "esbuild src/index.ts --bundle --format=esm --outfile=dist/index.mjs --platform=neutral",
+    "dev": "tsc -w -p tsconfig.build.json",
