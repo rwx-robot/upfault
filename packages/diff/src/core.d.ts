@@ -19,3 +19,4 @@ interface BlockWithChildren extends Block {
  *
  * @param oldChildren 旧子节点数组
  * @param newChildren 新子节点数组
+ * @param options 算法配置
