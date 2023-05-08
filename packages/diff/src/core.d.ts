@@ -31,3 +31,4 @@ export declare function blockDiff(oldBlock: BlockWithChildren, newBlock: BlockWi
 /**
  * 递归 Block Tree Diff
  */
+export declare function diffBlockTree(oldBlock: BlockWithChildren, newBlock: BlockWithChildren, results?: DiffResult[], options?: Partial<AeroDiffOptions>): DiffResult[];
