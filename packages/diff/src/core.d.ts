@@ -8,3 +8,4 @@
  * 4. 清理未使用节点 O(n-k)
  * 总复杂度：O(n)
  *
+ * 设计参考：Vue 3 双端 Diff + React Fiber 优先级 + 自研 Type 兜底
