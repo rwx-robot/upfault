@@ -13,3 +13,4 @@
 import { VNode, DiffResult, AeroDiffOptions, Block } from '@upfault/shared';
 interface BlockWithChildren extends Block {
     children: BlockWithChildren[];
+}
