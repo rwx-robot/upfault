@@ -23,3 +23,4 @@ interface BlockWithChildren extends Block {
  * @returns DiffResult 包含操作序列和统计信息
  */
 export declare function aeroDiff(oldChildren: VNode[], newChildren: VNode[], options?: Partial<AeroDiffOptions>): DiffResult;
+/**
