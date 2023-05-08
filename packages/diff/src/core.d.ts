@@ -24,3 +24,4 @@ interface BlockWithChildren extends Block {
  */
 export declare function aeroDiff(oldChildren: VNode[], newChildren: VNode[], options?: Partial<AeroDiffOptions>): DiffResult;
 /**
+ * Block 级别的 Diff
