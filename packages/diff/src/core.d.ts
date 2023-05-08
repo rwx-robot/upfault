@@ -29,3 +29,4 @@ export declare function aeroDiff(oldChildren: VNode[], newChildren: VNode[], opt
  */
 export declare function blockDiff(oldBlock: BlockWithChildren, newBlock: BlockWithChildren, options?: Partial<AeroDiffOptions>): DiffResult;
 /**
+ * 递归 Block Tree Diff
