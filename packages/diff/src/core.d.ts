@@ -27,3 +27,4 @@ export declare function aeroDiff(oldChildren: VNode[], newChildren: VNode[], opt
  * Block 级别的 Diff
  * 对比两个 Block 的动态节点数组
  */
+export declare function blockDiff(oldBlock: BlockWithChildren, newBlock: BlockWithChildren, options?: Partial<AeroDiffOptions>): DiffResult;
