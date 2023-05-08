@@ -33,3 +33,4 @@ export declare function blockDiff(oldBlock: BlockWithChildren, newBlock: BlockWi
  */
 export declare function diffBlockTree(oldBlock: BlockWithChildren, newBlock: BlockWithChildren, results?: DiffResult[], options?: Partial<AeroDiffOptions>): DiffResult[];
 /**
+ * 计算两个 VNode 间的 PatchFlags
