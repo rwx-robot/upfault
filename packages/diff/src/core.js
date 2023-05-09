@@ -30,3 +30,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     const newLen = newChildren.length;
     // 统计信息
     const stats = {
+        oldCount: oldLen,
