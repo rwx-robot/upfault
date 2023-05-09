@@ -37,3 +37,4 @@ export declare function diffBlockTree(oldBlock: BlockWithChildren, newBlock: Blo
  */
 export declare function computePatchFlags(oldVNode: VNode, newVNode: VNode): number;
 /**
+ * 生成带 PatchFlags 的 VNode（用于编译时优化）
