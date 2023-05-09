@@ -23,3 +23,4 @@ import { isSameNode } from '@upfault/shared';
  * @param options 算法配置
  * @returns DiffResult 包含操作序列和统计信息
  */
+export function aeroDiff(oldChildren, newChildren, options = {}) {
