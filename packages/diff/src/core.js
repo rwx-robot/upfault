@@ -18,3 +18,4 @@ import { isSameNode } from '@upfault/shared';
 /**
  * AeroDiff 主入口 - 双端扩散算法
  *
+ * @param oldChildren 旧子节点数组
