@@ -39,3 +39,4 @@ export declare function computePatchFlags(oldVNode: VNode, newVNode: VNode): num
 /**
  * 生成带 PatchFlags 的 VNode（用于编译时优化）
  */
+export declare function cloneWithPatchFlags(vnode: VNode, flags: number): VNode;
