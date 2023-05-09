@@ -26,3 +26,4 @@ import { isSameNode } from '@upfault/shared';
 export function aeroDiff(oldChildren, newChildren, options = {}) {
     const config = { ...DEFAULT_AERODIFF_OPTIONS, ...options };
     const timer = { start: performance.now() };
+    const oldLen = oldChildren.length;
