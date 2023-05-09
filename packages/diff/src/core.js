@@ -28,3 +28,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     const timer = { start: performance.now() };
     const oldLen = oldChildren.length;
     const newLen = newChildren.length;
+    // 统计信息
