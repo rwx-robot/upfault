@@ -42,3 +42,4 @@ export declare function computePatchFlags(oldVNode: VNode, newVNode: VNode): num
 export declare function cloneWithPatchFlags(vnode: VNode, flags: number): VNode;
 export { DiffOpType, PatchFlags, VNodeType } from '@upfault/shared';
 export type { VNode, DiffOp, DiffResult, DiffStats, DiffIndex, AeroDiffOptions, Block } from '@upfault/shared';
+//# sourceMappingURL=core.d.ts.map
