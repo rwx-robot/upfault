@@ -50,3 +50,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     // 从头部向后跳过相同节点
     while (oldStart <= oldEnd && newStart <= newEnd) {
         const oldNode = oldChildrenExt[oldStart];
+        const newNode = newChildrenExt[newStart];
