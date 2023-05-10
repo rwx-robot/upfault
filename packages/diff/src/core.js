@@ -54,3 +54,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         if (!isSameNode(oldNode, newNode))
             break;
         // 节点相同，生成 UPDATE 操作
+        ops.push({
