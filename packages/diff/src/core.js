@@ -31,3 +31,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     // 统计信息
     const stats = {
         oldCount: oldLen,
+        newCount: newLen,
