@@ -72,3 +72,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         if (!isSameNode(oldNode, newNode))
             break;
         ops.push({
+            type: DiffOpType.UPDATE,
