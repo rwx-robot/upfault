@@ -36,3 +36,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         createdCount: 0,
         deletedCount: 0,
         movedCount: 0,
+        duration: 0,
