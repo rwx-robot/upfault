@@ -73,3 +73,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
             break;
         ops.push({
             type: DiffOpType.UPDATE,
+            oldNode,
