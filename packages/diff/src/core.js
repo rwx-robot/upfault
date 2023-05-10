@@ -43,3 +43,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     const oldChildrenExt = oldChildren;
     const newChildrenExt = newChildren;
     // ===== 第一阶段：双端预处理 =====
+    let oldStart = 0;
