@@ -42,3 +42,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     // Cast to extended type for _used marker
     const oldChildrenExt = oldChildren;
     const newChildrenExt = newChildren;
+    // ===== 第一阶段：双端预处理 =====
