@@ -33,3 +33,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         oldCount: oldLen,
         newCount: newLen,
         reusedCount: 0,
+        createdCount: 0,
