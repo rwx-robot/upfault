@@ -32,3 +32,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     const stats = {
         oldCount: oldLen,
         newCount: newLen,
+        reusedCount: 0,
