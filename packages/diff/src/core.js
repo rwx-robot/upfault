@@ -66,3 +66,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         newStart++;
     }
     // 从尾部向前跳过相同节点
+    while (oldStart <= oldEnd && newStart <= newEnd) {
