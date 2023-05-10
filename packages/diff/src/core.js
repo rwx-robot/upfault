@@ -58,3 +58,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
             type: DiffOpType.UPDATE,
             oldNode,
             newNode,
+            fromIndex: oldStart,
