@@ -39,3 +39,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         duration: 0,
     };
     const ops = [];
+    // Cast to extended type for _used marker
