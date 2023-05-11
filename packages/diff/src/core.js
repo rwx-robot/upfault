@@ -98,3 +98,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         stats.duration = performance.now() - timer.start;
         return { ops, changed: hasChanges, stats };
     }
+    // 如果新节点已耗尽，剩余旧节点全是 REMOVE
