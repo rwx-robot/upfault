@@ -93,3 +93,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
             });
             stats.createdCount++;
             newStart++;
+        }
