@@ -86,3 +86,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     // 如果旧节点已耗尽，剩余新节点全是 INSERT
     if (oldStart > oldEnd) {
         while (newStart <= newEnd) {
+            ops.push({
