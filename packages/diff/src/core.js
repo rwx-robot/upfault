@@ -109,3 +109,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
             stats.deletedCount++;
             oldStart++;
         }
+        const hasChanges = stats.createdCount > 0 || stats.deletedCount > 0 || stats.movedCount > 0;
