@@ -99,3 +99,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         return { ops, changed: hasChanges, stats };
     }
     // 如果新节点已耗尽，剩余旧节点全是 REMOVE
+    if (newStart > newEnd) {
