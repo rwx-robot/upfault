@@ -78,3 +78,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
             fromIndex: oldEnd,
             toIndex: newEnd,
         });
+        stats.reusedCount++;
