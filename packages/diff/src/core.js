@@ -107,3 +107,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
                 fromIndex: oldStart,
             });
             stats.deletedCount++;
+            oldStart++;
