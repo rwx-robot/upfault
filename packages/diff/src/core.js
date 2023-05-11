@@ -82,3 +82,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         oldEnd--;
         newEnd--;
     }
+    // ===== 第二阶段：处理中间未知序列 =====
