@@ -104,3 +104,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
             ops.push({
                 type: DiffOpType.REMOVE,
                 oldNode: oldChildrenExt[oldStart],
+                fromIndex: oldStart,
