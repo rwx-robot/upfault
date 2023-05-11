@@ -87,3 +87,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     if (oldStart > oldEnd) {
         while (newStart <= newEnd) {
             ops.push({
+                type: DiffOpType.CREATE,
