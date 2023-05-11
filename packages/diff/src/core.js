@@ -95,3 +95,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
             newStart++;
         }
         const hasChanges = stats.createdCount > 0 || stats.deletedCount > 0 || stats.movedCount > 0;
+        stats.duration = performance.now() - timer.start;
