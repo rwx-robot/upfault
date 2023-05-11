@@ -77,3 +77,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
             newNode,
             fromIndex: oldEnd,
             toIndex: newEnd,
+        });
