@@ -117,3 +117,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     const index = buildDiffIndex(oldChildrenExt, oldStart, oldEnd);
     const moves = performGreedyMatch(oldChildrenExt, newChildrenExt, newStart, newEnd, index, ops, stats, config);
     stats.movedCount = moves;
+    // ===== 第四阶段：清理未使用的旧节点 =====
