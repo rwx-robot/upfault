@@ -121,3 +121,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     cleanupUnusedOldNodes(oldChildrenExt, oldStart, oldEnd, ops, stats);
     stats.duration = performance.now() - timer.start;
     return { ops, changed: ops.length > 0, stats };
+}
