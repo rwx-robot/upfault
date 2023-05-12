@@ -141,3 +141,4 @@ function buildDiffIndex(oldChildren, start, end) {
     }
     return {
         keyMap,
+        typeMap,
