@@ -122,3 +122,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     stats.duration = performance.now() - timer.start;
     return { ops, changed: ops.length > 0, stats };
 }
+/**
