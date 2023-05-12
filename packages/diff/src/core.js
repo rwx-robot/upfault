@@ -114,3 +114,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
         return { ops, changed: hasChanges, stats };
     }
     // ===== 第三阶段：建立索引并贪心匹配 =====
+    const index = buildDiffIndex(oldChildrenExt, oldStart, oldEnd);
