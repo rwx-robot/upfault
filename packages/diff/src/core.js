@@ -145,3 +145,4 @@ function buildDiffIndex(oldChildren, start, end) {
         oldNodes: oldChildren,
         start,
         end,
+    };
