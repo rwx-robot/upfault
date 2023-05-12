@@ -147,3 +147,4 @@ function buildDiffIndex(oldChildren, start, end) {
         end,
     };
 }
+/**
