@@ -130,3 +130,4 @@ function buildDiffIndex(oldChildren, start, end) {
     const typeMap = new Map();
     for (let i = start; i <= end; i++) {
         const node = oldChildren[i];
+        // Key 索引
