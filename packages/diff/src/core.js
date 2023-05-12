@@ -127,3 +127,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
  */
 function buildDiffIndex(oldChildren, start, end) {
     const keyMap = new Map();
+    const typeMap = new Map();
