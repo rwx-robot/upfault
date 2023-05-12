@@ -135,3 +135,4 @@ function buildDiffIndex(oldChildren, start, end) {
             keyMap.set(node.key, i);
         }
         // Type 索引
+        const typeList = typeMap.get(node.type) || [];
