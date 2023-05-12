@@ -116,3 +116,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     // ===== 第三阶段：建立索引并贪心匹配 =====
     const index = buildDiffIndex(oldChildrenExt, oldStart, oldEnd);
     const moves = performGreedyMatch(oldChildrenExt, newChildrenExt, newStart, newEnd, index, ops, stats, config);
+    stats.movedCount = moves;
