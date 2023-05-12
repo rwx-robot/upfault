@@ -149,3 +149,4 @@ function buildDiffIndex(oldChildren, start, end) {
 }
 /**
  * 贪心匹配：优先 Key 匹配，回退 Type 匹配
+ */
