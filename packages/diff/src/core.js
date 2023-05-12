@@ -153,3 +153,4 @@ function buildDiffIndex(oldChildren, start, end) {
 function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, ops, stats, config) {
     let movedCount = 0;
     for (let i = newStart; i <= newEnd; i++) {
+        const newNode = newChildren[i];
