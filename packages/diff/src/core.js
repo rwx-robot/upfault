@@ -134,3 +134,4 @@ function buildDiffIndex(oldChildren, start, end) {
         if (node.key != null) {
             keyMap.set(node.key, i);
         }
+        // Type 索引
