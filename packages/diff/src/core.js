@@ -140,3 +140,4 @@ function buildDiffIndex(oldChildren, start, end) {
         typeMap.set(node.type, typeList);
     }
     return {
+        keyMap,
