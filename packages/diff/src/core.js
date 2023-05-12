@@ -119,3 +119,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     stats.movedCount = moves;
     // ===== 第四阶段：清理未使用的旧节点 =====
     cleanupUnusedOldNodes(oldChildrenExt, oldStart, oldEnd, ops, stats);
+    stats.duration = performance.now() - timer.start;
