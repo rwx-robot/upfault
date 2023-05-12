@@ -131,3 +131,4 @@ function buildDiffIndex(oldChildren, start, end) {
     for (let i = start; i <= end; i++) {
         const node = oldChildren[i];
         // Key 索引
+        if (node.key != null) {
