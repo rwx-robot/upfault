@@ -139,3 +139,4 @@ function buildDiffIndex(oldChildren, start, end) {
         typeList.push(i);
         typeMap.set(node.type, typeList);
     }
+    return {
