@@ -123,3 +123,4 @@ export function aeroDiff(oldChildren, newChildren, options = {}) {
     return { ops, changed: ops.length > 0, stats };
 }
 /**
+ * 构建双索引：Key Map + Type Map
