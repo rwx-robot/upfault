@@ -133,3 +133,4 @@ function buildDiffIndex(oldChildren, start, end) {
         // Key 索引
         if (node.key != null) {
             keyMap.set(node.key, i);
+        }
