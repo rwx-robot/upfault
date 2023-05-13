@@ -195,3 +195,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
         else {
             // 无匹配：INSERT
             ops.push({
+                type: DiffOpType.CREATE,
