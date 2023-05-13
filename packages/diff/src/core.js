@@ -171,3 +171,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                     if (config.enableShapeMatching && !shapeMatch(oldChildren[candidateIdx], newNode)) {
                         continue;
                     }
+                    oldIdx = candidateIdx;
