@@ -176,3 +176,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                 }
             }
         }
+        if (oldIdx >= 0) {
