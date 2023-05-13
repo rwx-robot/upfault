@@ -175,3 +175,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                     break;
                 }
             }
+        }
