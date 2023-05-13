@@ -189,3 +189,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                 newNode,
                 fromIndex: oldIdx,
                 toIndex: i,
+            });
