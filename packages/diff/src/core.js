@@ -196,3 +196,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
             // 无匹配：INSERT
             ops.push({
                 type: DiffOpType.CREATE,
+                newNode,
