@@ -199,3 +199,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                 newNode,
                 toIndex: i,
             });
+            stats.createdCount++;
