@@ -178,3 +178,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
         }
         if (oldIdx >= 0) {
             const oldNode = oldChildren[oldIdx];
+            oldNode._used = true;
