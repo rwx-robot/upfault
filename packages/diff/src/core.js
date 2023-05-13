@@ -169,3 +169,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                 if (!oldChildren[candidateIdx]._used) {
                     // 可选：Shape 匹配检查
                     if (config.enableShapeMatching && !shapeMatch(oldChildren[candidateIdx], newNode)) {
+                        continue;
