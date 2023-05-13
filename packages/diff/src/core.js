@@ -162,3 +162,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                 oldIdx = keyMatch;
             }
         }
+        // 优先级 2：Type + Shape 兜底匹配
