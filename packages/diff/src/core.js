@@ -182,3 +182,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
             // 判断是否需要移动
             const isMove = oldIdx !== i;
             if (isMove)
+                movedCount++;
