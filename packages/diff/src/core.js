@@ -183,3 +183,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
             const isMove = oldIdx !== i;
             if (isMove)
                 movedCount++;
+            ops.push({
