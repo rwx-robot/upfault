@@ -165,3 +165,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
         // 优先级 2：Type + Shape 兜底匹配
         if (oldIdx === -1 && config.enableTypeFallback) {
             const typeMatches = index.typeMap.get(newNode.type) || [];
+            for (const candidateIdx of typeMatches) {
