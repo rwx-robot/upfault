@@ -159,3 +159,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
         if (newNode.key != null) {
             const keyMatch = index.keyMap.get(newNode.key);
             if (keyMatch !== undefined && !oldChildren[keyMatch]._used) {
+                oldIdx = keyMatch;
