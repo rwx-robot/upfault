@@ -200,3 +200,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                 toIndex: i,
             });
             stats.createdCount++;
+        }
