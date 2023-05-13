@@ -190,3 +190,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                 fromIndex: oldIdx,
                 toIndex: i,
             });
+            stats.reusedCount++;
