@@ -193,3 +193,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
             stats.reusedCount++;
         }
         else {
+            // 无匹配：INSERT
