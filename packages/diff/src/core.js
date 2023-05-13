@@ -166,3 +166,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
         if (oldIdx === -1 && config.enableTypeFallback) {
             const typeMatches = index.typeMap.get(newNode.type) || [];
             for (const candidateIdx of typeMatches) {
+                if (!oldChildren[candidateIdx]._used) {
