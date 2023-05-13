@@ -188,3 +188,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
                 oldNode,
                 newNode,
                 fromIndex: oldIdx,
+                toIndex: i,
