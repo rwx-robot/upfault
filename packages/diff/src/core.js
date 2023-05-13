@@ -186,3 +186,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
             ops.push({
                 type: isMove ? DiffOpType.MOVE : DiffOpType.UPDATE,
                 oldNode,
+                newNode,
