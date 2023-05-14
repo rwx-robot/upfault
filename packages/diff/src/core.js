@@ -219,3 +219,4 @@ function shapeMatch(oldNode, newNode) {
 /**
  * 清理未使用的旧节点
  */
+function cleanupUnusedOldNodes(oldChildren, start, end, ops, stats) {
