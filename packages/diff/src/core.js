@@ -214,3 +214,4 @@ function shapeMatch(oldNode, newNode) {
     // 简单启发式：比较动态 props 数量
     const oldDynCount = oldNode.dynamicProps?.length || 0;
     const newDynCount = newNode.dynamicProps?.length || 0;
+    return Math.abs(oldDynCount - newDynCount) <= 1;
