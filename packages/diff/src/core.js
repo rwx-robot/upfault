@@ -217,3 +217,4 @@ function shapeMatch(oldNode, newNode) {
     return Math.abs(oldDynCount - newDynCount) <= 1;
 }
 /**
+ * 清理未使用的旧节点
