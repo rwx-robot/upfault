@@ -216,3 +216,4 @@ function shapeMatch(oldNode, newNode) {
     const newDynCount = newNode.dynamicProps?.length || 0;
     return Math.abs(oldDynCount - newDynCount) <= 1;
 }
+/**
