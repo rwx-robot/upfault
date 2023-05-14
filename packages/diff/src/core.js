@@ -228,3 +228,4 @@ function cleanupUnusedOldNodes(oldChildren, start, end, ops, stats) {
                 oldNode: node,
                 fromIndex: i,
             });
+            stats.deletedCount++;
