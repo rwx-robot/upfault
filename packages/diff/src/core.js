@@ -209,3 +209,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
  */
 function shapeMatch(oldNode, newNode) {
     // 类型不同直接 false
+    if (oldNode.type !== newNode.type)
