@@ -221,3 +221,4 @@ function shapeMatch(oldNode, newNode) {
  */
 function cleanupUnusedOldNodes(oldChildren, start, end, ops, stats) {
     for (let i = start; i <= end; i++) {
+        const node = oldChildren[i];
