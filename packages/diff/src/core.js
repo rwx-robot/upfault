@@ -208,3 +208,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
  * 简单的 Shape 匹配：比较 children 结构深度
  */
 function shapeMatch(oldNode, newNode) {
+    // 类型不同直接 false
