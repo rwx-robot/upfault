@@ -225,3 +225,4 @@ function cleanupUnusedOldNodes(oldChildren, start, end, ops, stats) {
         if (!node._used) {
             ops.push({
                 type: DiffOpType.REMOVE,
+                oldNode: node,
