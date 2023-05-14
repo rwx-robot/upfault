@@ -203,3 +203,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
         }
     }
     return movedCount;
+}
