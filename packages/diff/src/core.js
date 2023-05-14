@@ -234,3 +234,4 @@ function cleanupUnusedOldNodes(oldChildren, start, end, ops, stats) {
         delete node._used;
     }
 }
+// ============================================================================
