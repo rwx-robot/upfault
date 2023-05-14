@@ -205,3 +205,4 @@ function performGreedyMatch(oldChildren, newChildren, newStart, newEnd, index, o
     return movedCount;
 }
 /**
+ * 简单的 Shape 匹配：比较 children 结构深度
