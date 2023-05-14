@@ -226,3 +226,4 @@ function cleanupUnusedOldNodes(oldChildren, start, end, ops, stats) {
             ops.push({
                 type: DiffOpType.REMOVE,
                 oldNode: node,
+                fromIndex: i,
