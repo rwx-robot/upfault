@@ -231,3 +231,4 @@ function cleanupUnusedOldNodes(oldChildren, start, end, ops, stats) {
             stats.deletedCount++;
         }
         // 清理标记
+        delete node._used;
