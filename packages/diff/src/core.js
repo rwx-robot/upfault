@@ -248,3 +248,4 @@ export function blockDiff(oldBlock, newBlock, options = {}) {
 /**
  * 递归 Block Tree Diff
  */
+export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
