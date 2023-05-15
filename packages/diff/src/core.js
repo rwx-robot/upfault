@@ -272,3 +272,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
         }
     }
     // 新增的子 Block
+    for (const newChild of newChildMap.values()) {
