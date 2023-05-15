@@ -261,3 +261,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
         if (newChild) {
             diffBlockTree(oldChild, newChild, results, options);
             newChildMap.delete(id);
+        }
