@@ -258,3 +258,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
     // 处理共有的子 Block
     for (const [id, oldChild] of oldChildMap) {
         const newChild = newChildMap.get(id);
+        if (newChild) {
