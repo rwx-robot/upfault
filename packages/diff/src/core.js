@@ -264,3 +264,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
         }
         else {
             // 子 Block 被删除
+            results.push({
