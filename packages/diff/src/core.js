@@ -252,3 +252,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
     // 当前 Block Diff
     const result = blockDiff(oldBlock, newBlock, options);
     results.push(result);
+    // 递归子 Block
