@@ -271,3 +271,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
             });
         }
     }
+    // 新增的子 Block
