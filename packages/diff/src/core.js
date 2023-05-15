@@ -250,3 +250,4 @@ export function blockDiff(oldBlock, newBlock, options = {}) {
  */
 export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
     // 当前 Block Diff
+    const result = blockDiff(oldBlock, newBlock, options);
