@@ -246,3 +246,4 @@ export function blockDiff(oldBlock, newBlock, options = {}) {
     return aeroDiff(oldBlock.dynamicNodes, newBlock.dynamicNodes, options);
 }
 /**
+ * 递归 Block Tree Diff
