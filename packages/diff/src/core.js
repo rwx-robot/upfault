@@ -242,3 +242,4 @@ function cleanupUnusedOldNodes(oldChildren, start, end, ops, stats) {
  * 对比两个 Block 的动态节点数组
  */
 export function blockDiff(oldBlock, newBlock, options = {}) {
+    // 只对比动态节点数组
