@@ -280,3 +280,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
         });
     }
     return results;
+}
