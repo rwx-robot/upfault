@@ -292,3 +292,4 @@ export function computePatchFlags(oldVNode, newVNode) {
         return PatchFlags.FULL_DIFF;
     }
     let flags = PatchFlags.NONE;
+    // Props 对比
