@@ -317,3 +317,4 @@ export function computePatchFlags(oldVNode, newVNode) {
             }
         }
     }
+    // Children 对比（简化）
