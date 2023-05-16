@@ -309,3 +309,4 @@ export function computePatchFlags(oldVNode, newVNode) {
             else if (key === 'style') {
                 flags |= PatchFlags.STYLE;
             }
+            else if (key === 'key') {
