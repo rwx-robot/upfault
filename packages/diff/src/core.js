@@ -300,3 +300,4 @@ export function computePatchFlags(oldVNode, newVNode) {
         const oldVal = oldProps[key];
         const newVal = newProps[key];
         if (oldVal !== newVal) {
+            if (key.startsWith('on')) {
