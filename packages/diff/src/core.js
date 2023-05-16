@@ -307,3 +307,4 @@ export function computePatchFlags(oldVNode, newVNode) {
                 flags |= PatchFlags.CLASS;
             }
             else if (key === 'style') {
+                flags |= PatchFlags.STYLE;
