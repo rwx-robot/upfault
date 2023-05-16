@@ -311,3 +311,4 @@ export function computePatchFlags(oldVNode, newVNode) {
             }
             else if (key === 'key') {
                 // key 变化特殊处理
+            }
