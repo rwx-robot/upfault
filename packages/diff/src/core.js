@@ -277,3 +277,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
             ops: [{ type: DiffOpType.CREATE, newNode: newChild.root }],
             changed: true,
             stats: { oldCount: 0, newCount: 1, reusedCount: 0, createdCount: 1, deletedCount: 0, movedCount: 0, duration: 0 },
+        });
