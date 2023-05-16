@@ -315,3 +315,4 @@ export function computePatchFlags(oldVNode, newVNode) {
             else {
                 flags |= PatchFlags.PROPS;
             }
+        }
