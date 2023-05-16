@@ -291,3 +291,4 @@ export function computePatchFlags(oldVNode, newVNode) {
     if (oldVNode.type !== newVNode.type) {
         return PatchFlags.FULL_DIFF;
     }
+    let flags = PatchFlags.NONE;
