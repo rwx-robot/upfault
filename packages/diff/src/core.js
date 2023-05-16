@@ -297,3 +297,4 @@ export function computePatchFlags(oldVNode, newVNode) {
     const newProps = newVNode.props || {};
     const allKeys = new Set([...Object.keys(oldProps), ...Object.keys(newProps)]);
     for (const key of allKeys) {
+        const oldVal = oldProps[key];
