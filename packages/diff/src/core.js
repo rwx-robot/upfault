@@ -310,3 +310,4 @@ export function computePatchFlags(oldVNode, newVNode) {
                 flags |= PatchFlags.STYLE;
             }
             else if (key === 'key') {
+                // key 变化特殊处理
