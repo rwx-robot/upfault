@@ -275,3 +275,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
     for (const newChild of newChildMap.values()) {
         results.push({
             ops: [{ type: DiffOpType.CREATE, newNode: newChild.root }],
+            changed: true,
