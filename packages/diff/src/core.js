@@ -302,3 +302,4 @@ export function computePatchFlags(oldVNode, newVNode) {
         if (oldVal !== newVal) {
             if (key.startsWith('on')) {
                 flags |= PatchFlags.EVENTS;
+            }
