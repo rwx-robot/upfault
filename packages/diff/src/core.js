@@ -299,3 +299,4 @@ export function computePatchFlags(oldVNode, newVNode) {
     for (const key of allKeys) {
         const oldVal = oldProps[key];
         const newVal = newProps[key];
+        if (oldVal !== newVal) {
