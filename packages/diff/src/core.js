@@ -285,3 +285,4 @@ export function diffBlockTree(oldBlock, newBlock, results = [], options = {}) {
 // Patch 标记工具
 // ============================================================================
 /**
+ * 计算两个 VNode 间的 PatchFlags
