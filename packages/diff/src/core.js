@@ -342,3 +342,4 @@ export function cloneWithPatchFlags(vnode, flags) {
             ? Object.keys(vnode.props || {}).filter(k => !(vnode.props[k] === vnode.props?.[k]))
             : [],
     };
+}
