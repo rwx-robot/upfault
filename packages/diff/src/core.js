@@ -332,3 +332,4 @@ export function computePatchFlags(oldVNode, newVNode) {
     return flags || PatchFlags.NONE;
 }
 /**
+ * 生成带 PatchFlags 的 VNode（用于编译时优化）
