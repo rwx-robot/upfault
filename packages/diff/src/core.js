@@ -337,3 +337,4 @@ export function computePatchFlags(oldVNode, newVNode) {
 export function cloneWithPatchFlags(vnode, flags) {
     return {
         ...vnode,
+        patchFlag: flags,
