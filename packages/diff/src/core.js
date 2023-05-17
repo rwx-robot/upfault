@@ -338,3 +338,4 @@ export function cloneWithPatchFlags(vnode, flags) {
     return {
         ...vnode,
         patchFlag: flags,
+        dynamicProps: flags & PatchFlags.PROPS
