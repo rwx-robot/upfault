@@ -320,3 +320,4 @@ export function computePatchFlags(oldVNode, newVNode) {
     // Children 对比（简化）
     if (oldVNode.children !== newVNode.children) {
         if (Array.isArray(oldVNode.children) && Array.isArray(newVNode.children)) {
+            // Keyed children
