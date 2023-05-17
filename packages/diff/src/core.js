@@ -329,3 +329,4 @@ export function computePatchFlags(oldVNode, newVNode) {
             flags |= PatchFlags.TEXT;
         }
     }
+    return flags || PatchFlags.NONE;
