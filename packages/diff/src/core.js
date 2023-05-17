@@ -322,3 +322,4 @@ export function computePatchFlags(oldVNode, newVNode) {
         if (Array.isArray(oldVNode.children) && Array.isArray(newVNode.children)) {
             // Keyed children
             const hasKeyed = oldVNode.children.some((c) => c.key != null) ||
+                newVNode.children.some((c) => c.key != null);
