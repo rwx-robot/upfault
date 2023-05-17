@@ -331,3 +331,4 @@ export function computePatchFlags(oldVNode, newVNode) {
     }
     return flags || PatchFlags.NONE;
 }
+/**
