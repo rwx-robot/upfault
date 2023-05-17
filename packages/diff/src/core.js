@@ -326,3 +326,4 @@ export function computePatchFlags(oldVNode, newVNode) {
             flags |= hasKeyed ? PatchFlags.KEYED_FRAGMENT : PatchFlags.UNKEYED_FRAGMENT;
         }
         else {
+            flags |= PatchFlags.TEXT;
