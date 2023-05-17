@@ -325,3 +325,4 @@ export function computePatchFlags(oldVNode, newVNode) {
                 newVNode.children.some((c) => c.key != null);
             flags |= hasKeyed ? PatchFlags.KEYED_FRAGMENT : PatchFlags.UNKEYED_FRAGMENT;
         }
+        else {
