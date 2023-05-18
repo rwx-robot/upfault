@@ -4,3 +4,4 @@ import {
   blockDiff, 
   diffBlockTree, 
   computePatchFlags, 
+  DiffOpType,
