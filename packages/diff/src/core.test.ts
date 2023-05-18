@@ -15,3 +15,4 @@ function createVNode(overrides: Partial<any> = {}): any {
   return {
     type: VNodeType.ELEMENT,
     tag: 'div',
+    props: null,
