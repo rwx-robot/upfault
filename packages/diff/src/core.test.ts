@@ -39,3 +39,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     flags: 1, // STATIC_TEXT
     el: null,
     parent: null,
+    component: null,
