@@ -3,3 +3,4 @@ import {
   aeroDiff, 
   blockDiff, 
   diffBlockTree, 
+  computePatchFlags, 
