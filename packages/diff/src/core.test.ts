@@ -8,3 +8,4 @@ import {
   PatchFlags,
   VNodeType 
 } from './core';
+import { createFingerprint } from '@upfault/predict-cache';
