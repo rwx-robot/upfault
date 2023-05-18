@@ -5,3 +5,4 @@ import {
   diffBlockTree, 
   computePatchFlags, 
   DiffOpType,
+  PatchFlags,
