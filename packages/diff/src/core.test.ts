@@ -6,3 +6,4 @@ import {
   computePatchFlags, 
   DiffOpType,
   PatchFlags,
+  VNodeType 
