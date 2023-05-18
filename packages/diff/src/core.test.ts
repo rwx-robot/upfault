@@ -31,3 +31,4 @@ function createVNode(overrides: Partial<any> = {}): any {
 
 function createTextNode(content: string, key: string | number | null = null): any {
   return {
+    type: VNodeType.TEXT,
