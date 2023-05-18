@@ -35,3 +35,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     tag: '#text',
     props: null,
     children: content,
+    key,
