@@ -11,3 +11,4 @@ import {
 import { createFingerprint } from '@upfault/predict-cache';
 
 // 简单的 VNode 创建工厂
+function createVNode(overrides: Partial<any> = {}): any {
