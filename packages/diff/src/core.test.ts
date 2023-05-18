@@ -27,3 +27,4 @@ function createVNode(overrides: Partial<any> = {}): any {
     dynamicProps: null,
     ...overrides,
   };
+}
