@@ -10,3 +10,4 @@ import {
 } from './core';
 import { createFingerprint } from '@upfault/predict-cache';
 
+// 简单的 VNode 创建工厂
