@@ -18,3 +18,4 @@ function createVNode(overrides: Partial<any> = {}): any {
     props: null,
     children: null,
     key: null,
+    flags: 0,
