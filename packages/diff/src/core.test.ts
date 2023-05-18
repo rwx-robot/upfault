@@ -25,3 +25,4 @@ function createVNode(overrides: Partial<any> = {}): any {
     block: null,
     patchFlag: 0,
     dynamicProps: null,
+    ...overrides,
