@@ -14,3 +14,4 @@ import { createFingerprint } from '@upfault/predict-cache';
 function createVNode(overrides: Partial<any> = {}): any {
   return {
     type: VNodeType.ELEMENT,
+    tag: 'div',
