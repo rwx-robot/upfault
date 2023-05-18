@@ -34,3 +34,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     type: VNodeType.TEXT,
     tag: '#text',
     props: null,
+    children: content,
