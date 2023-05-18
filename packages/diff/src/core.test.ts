@@ -37,3 +37,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     children: content,
     key,
     flags: 1, // STATIC_TEXT
+    el: null,
