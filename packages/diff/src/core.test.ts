@@ -23,3 +23,4 @@ function createVNode(overrides: Partial<any> = {}): any {
     parent: null,
     component: null,
     block: null,
+    patchFlag: 0,
