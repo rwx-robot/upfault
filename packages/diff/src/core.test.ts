@@ -22,3 +22,4 @@ function createVNode(overrides: Partial<any> = {}): any {
     el: null,
     parent: null,
     component: null,
+    block: null,
