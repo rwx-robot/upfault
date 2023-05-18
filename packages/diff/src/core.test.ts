@@ -40,3 +40,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     el: null,
     parent: null,
     component: null,
+    block: null,
