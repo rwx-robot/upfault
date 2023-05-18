@@ -26,3 +26,4 @@ function createVNode(overrides: Partial<any> = {}): any {
     patchFlag: 0,
     dynamicProps: null,
     ...overrides,
+  };
