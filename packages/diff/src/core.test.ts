@@ -7,3 +7,4 @@ import {
   DiffOpType,
   PatchFlags,
   VNodeType 
+} from './core';
