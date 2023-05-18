@@ -41,3 +41,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     parent: null,
     component: null,
     block: null,
+    patchFlag: 0,
