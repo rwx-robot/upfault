@@ -70,3 +70,4 @@ describe('AeroDiff Core Algorithm', () => {
     });
 
     it('应正确处理头部新增', () => {
+      const oldChildren = [
