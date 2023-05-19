@@ -48,3 +48,4 @@ function createTextNode(content: string, key: string | number | null = null): an
 
 describe('AeroDiff Core Algorithm', () => {
   describe('基础双端扩散', () => {
+    it('应正确处理完全相同的列表', () => {
