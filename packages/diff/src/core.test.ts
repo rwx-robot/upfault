@@ -42,3 +42,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     component: null,
     block: null,
     patchFlag: 0,
+    dynamicProps: null,
