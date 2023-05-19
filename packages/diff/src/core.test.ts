@@ -77,3 +77,4 @@ describe('AeroDiff Core Algorithm', () => {
       const newChildren = [
         createVNode({ key: 'a' }),
         createVNode({ key: 'b' }),
+        createVNode({ key: 'c' }),
