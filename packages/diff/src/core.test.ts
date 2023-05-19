@@ -66,3 +66,4 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.reusedCount).toBe(3);
       expect(result.stats.createdCount).toBe(0);
       expect(result.stats.deletedCount).toBe(0);
+      expect(result.stats.movedCount).toBe(0);
