@@ -63,3 +63,4 @@ describe('AeroDiff Core Algorithm', () => {
       const result = aeroDiff(oldChildren, newChildren);
       
       expect(result.changed).toBe(false);
+      expect(result.stats.reusedCount).toBe(3);
