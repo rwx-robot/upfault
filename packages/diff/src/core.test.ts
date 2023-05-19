@@ -45,3 +45,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     dynamicProps: null,
   };
 }
+
