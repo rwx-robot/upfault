@@ -43,3 +43,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     block: null,
     patchFlag: 0,
     dynamicProps: null,
+  };
