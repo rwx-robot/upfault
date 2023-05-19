@@ -72,3 +72,4 @@ describe('AeroDiff Core Algorithm', () => {
     it('应正确处理头部新增', () => {
       const oldChildren = [
         createVNode({ key: 'b' }),
+        createVNode({ key: 'c' }),
