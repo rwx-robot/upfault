@@ -46,3 +46,4 @@ function createTextNode(content: string, key: string | number | null = null): an
   };
 }
 
+describe('AeroDiff Core Algorithm', () => {
