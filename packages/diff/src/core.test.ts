@@ -69,3 +69,4 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.movedCount).toBe(0);
     });
 
+    it('应正确处理头部新增', () => {
