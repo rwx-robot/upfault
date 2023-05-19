@@ -44,3 +44,4 @@ function createTextNode(content: string, key: string | number | null = null): an
     patchFlag: 0,
     dynamicProps: null,
   };
+}
