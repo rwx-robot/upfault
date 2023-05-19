@@ -51,3 +51,4 @@ describe('AeroDiff Core Algorithm', () => {
     it('应正确处理完全相同的列表', () => {
       const oldChildren = [
         createVNode({ key: 'a' }),
+        createVNode({ key: 'b' }),
