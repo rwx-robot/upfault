@@ -121,3 +121,4 @@ describe('AeroDiff Core Algorithm', () => {
         createVNode({ key: 'c' }),
       ];
       
+      const result = aeroDiff(oldChildren, newChildren);
