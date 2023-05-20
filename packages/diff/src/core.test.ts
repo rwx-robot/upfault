@@ -89,3 +89,4 @@ describe('AeroDiff Core Algorithm', () => {
       const inserts = result.ops.filter(op => op.type === 'CREATE');
       expect(inserts).toHaveLength(1);
       expect(inserts[0].toIndex).toBe(0);
+    });
