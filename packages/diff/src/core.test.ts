@@ -90,3 +90,5 @@ describe('AeroDiff Core Algorithm', () => {
       expect(inserts).toHaveLength(1);
       expect(inserts[0].toIndex).toBe(0);
     });
+
+    it('应正确处理尾部新增', () => {
