@@ -87,3 +87,4 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.reusedCount).toBe(2);
       // 找到 INSERT 操作
       const inserts = result.ops.filter(op => op.type === 'CREATE');
+      expect(inserts).toHaveLength(1);
