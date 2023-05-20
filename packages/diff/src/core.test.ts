@@ -109,3 +109,5 @@ describe('AeroDiff Core Algorithm', () => {
       const inserts = result.ops.filter(op => op.type === 'CREATE');
       expect(inserts[0].toIndex).toBe(2);
     });
+
+    it('应正确处理头部删除', () => {
