@@ -162,3 +162,4 @@ describe('AeroDiff Core Algorithm', () => {
       // 类型不同但 Key 相同，算法会尝试 UPDATE（类型不匹配由运行时处理）
       // 这里验证算法至少尝试了匹配
       expect(result.stats.reusedCount + result.stats.deletedCount + result.stats.createdCount).toBeGreaterThan(0);
+    });
