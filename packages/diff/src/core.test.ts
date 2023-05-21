@@ -152,3 +152,4 @@ describe('AeroDiff Core Algorithm', () => {
     it('应正确处理替换（类型不同）', () => {
       const oldChildren = [
         createVNode({ key: 'a', type: VNodeType.ELEMENT }),
+      ];
