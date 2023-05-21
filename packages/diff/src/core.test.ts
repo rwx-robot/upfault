@@ -149,3 +149,4 @@ describe('AeroDiff Core Algorithm', () => {
       expect(moves.length).toBeGreaterThan(0);
     });
 
+    it('应正确处理替换（类型不同）', () => {
