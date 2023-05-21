@@ -155,3 +155,4 @@ describe('AeroDiff Core Algorithm', () => {
       ];
       const newChildren = [
         createTextNode('text', 'a'),
+      ];
