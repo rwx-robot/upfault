@@ -148,3 +148,4 @@ describe('AeroDiff Core Algorithm', () => {
       const moves = result.ops.filter(op => op.type === 'MOVE');
       expect(moves.length).toBeGreaterThan(0);
     });
+
