@@ -163,3 +163,4 @@ describe('AeroDiff Core Algorithm', () => {
       // 这里验证算法至少尝试了匹配
       expect(result.stats.reusedCount + result.stats.deletedCount + result.stats.createdCount).toBeGreaterThan(0);
     });
+  });
