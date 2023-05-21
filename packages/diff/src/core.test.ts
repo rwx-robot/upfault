@@ -143,3 +143,4 @@ describe('AeroDiff Core Algorithm', () => {
       
       const result = aeroDiff(oldChildren, newChildren);
       
+      expect(result.stats.movedCount).toBeGreaterThan(0);
