@@ -131,3 +131,4 @@ describe('AeroDiff Core Algorithm', () => {
 
     it('应正确处理移动', () => {
       const oldChildren = [
+        createVNode({ key: 'a' }),
