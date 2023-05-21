@@ -159,3 +159,4 @@ describe('AeroDiff Core Algorithm', () => {
       
       const result = aeroDiff(oldChildren, newChildren);
       
+      // 类型不同但 Key 相同，算法会尝试 UPDATE（类型不匹配由运行时处理）
