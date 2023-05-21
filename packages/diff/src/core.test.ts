@@ -128,3 +128,5 @@ describe('AeroDiff Core Algorithm', () => {
       const removes = result.ops.filter(op => op.type === 'REMOVE');
       expect(removes).toHaveLength(1);
     });
+
+    it('应正确处理移动', () => {
