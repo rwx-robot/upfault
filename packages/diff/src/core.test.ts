@@ -134,3 +134,4 @@ describe('AeroDiff Core Algorithm', () => {
         createVNode({ key: 'a' }),
         createVNode({ key: 'b' }),
         createVNode({ key: 'c' }),
+      ];
