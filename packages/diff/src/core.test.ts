@@ -127,3 +127,4 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.reusedCount).toBe(2);
       const removes = result.ops.filter(op => op.type === 'REMOVE');
       expect(removes).toHaveLength(1);
+    });
