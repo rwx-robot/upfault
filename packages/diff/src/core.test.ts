@@ -165,3 +165,4 @@ describe('AeroDiff Core Algorithm', () => {
     });
   });
 
+  describe('Key 索引匹配', () => {
