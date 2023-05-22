@@ -201,3 +201,4 @@ describe('AeroDiff Core Algorithm', () => {
       // 无 Key 时通过 Type 兜底匹配
       expect(result.stats.reusedCount).toBe(2);
     });
+  });
