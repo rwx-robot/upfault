@@ -205,3 +205,4 @@ describe('AeroDiff Core Algorithm', () => {
 
   describe('Type 兜底匹配', () => {
     it('Key 找不到时应使用 Type 匹配', () => {
+      const oldChildren = [
