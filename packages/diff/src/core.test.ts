@@ -181,3 +181,4 @@ describe('AeroDiff Core Algorithm', () => {
       const result = aeroDiff(oldChildren, newChildren);
       
       // 通过 Key 匹配，应该复用所有节点
+      expect(result.stats.reusedCount).toBe(3);
