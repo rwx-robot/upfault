@@ -199,3 +199,4 @@ describe('AeroDiff Core Algorithm', () => {
       const result = aeroDiff(oldChildren, newChildren);
       
       // 无 Key 时通过 Type 兜底匹配
+      expect(result.stats.reusedCount).toBe(2);
