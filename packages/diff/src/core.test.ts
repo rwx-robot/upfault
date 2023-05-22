@@ -182,3 +182,4 @@ describe('AeroDiff Core Algorithm', () => {
       
       // 通过 Key 匹配，应该复用所有节点
       expect(result.stats.reusedCount).toBe(3);
+      // c: 2->0, a: 0->1, b: 1->2 = 3 个移动
