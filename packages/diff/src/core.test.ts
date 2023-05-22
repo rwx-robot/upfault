@@ -184,3 +184,4 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.reusedCount).toBe(3);
       // c: 2->0, a: 0->1, b: 1->2 = 3 个移动
       expect(result.stats.movedCount).toBe(3);
+    });
