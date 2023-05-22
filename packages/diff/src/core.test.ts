@@ -188,3 +188,4 @@ describe('AeroDiff Core Algorithm', () => {
 
     it('无 Key 时应回退 Type 匹配', () => {
       const oldChildren = [
+        createVNode({ key: null }),
