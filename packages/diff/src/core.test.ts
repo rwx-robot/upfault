@@ -185,3 +185,5 @@ describe('AeroDiff Core Algorithm', () => {
       // c: 2->0, a: 0->1, b: 1->2 = 3 个移动
       expect(result.stats.movedCount).toBe(3);
     });
+
+    it('无 Key 时应回退 Type 匹配', () => {
