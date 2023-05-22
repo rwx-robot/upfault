@@ -169,3 +169,4 @@ describe('AeroDiff Core Algorithm', () => {
     it('应优先使用 Key 匹配', () => {
       const oldChildren = [
         createVNode({ key: 'a' }),
+        createVNode({ key: 'b' }),
