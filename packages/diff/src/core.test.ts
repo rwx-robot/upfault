@@ -237,3 +237,4 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.duration).toBeLessThan(50); // 性能要求：< 50ms
     });
 
+    it('应处理混合增删改', () => {
