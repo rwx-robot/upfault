@@ -236,3 +236,4 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.movedCount).toBe(100); // 全部移动
       expect(result.stats.duration).toBeLessThan(50); // 性能要求：< 50ms
     });
+
