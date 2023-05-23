@@ -218,3 +218,4 @@ describe('AeroDiff Core Algorithm', () => {
       
       // 应该通过 Type 匹配复用
       expect(result.stats.reusedCount).toBe(2);
+    });
