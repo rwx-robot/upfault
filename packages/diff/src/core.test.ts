@@ -210,3 +210,4 @@ describe('AeroDiff Core Algorithm', () => {
         createVNode({ key: 'b', type: VNodeType.TEXT }),
       ];
       const newChildren = [
+        createVNode({ key: 'c', type: VNodeType.ELEMENT }), // Key 不同，但 Type 相同
