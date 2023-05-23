@@ -217,3 +217,4 @@ describe('AeroDiff Core Algorithm', () => {
       const result = aeroDiff(oldChildren, newChildren, { enableTypeFallback: true });
       
       // 应该通过 Type 匹配复用
+      expect(result.stats.reusedCount).toBe(2);
