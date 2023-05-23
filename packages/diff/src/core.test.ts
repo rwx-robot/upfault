@@ -230,3 +230,4 @@ describe('AeroDiff Core Algorithm', () => {
         createVNode({ key: `item-${99 - i}` }) // 反序
       );
       
+      const result = aeroDiff(oldChildren, newChildren);
