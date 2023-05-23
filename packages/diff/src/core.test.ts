@@ -240,3 +240,4 @@ describe('AeroDiff Core Algorithm', () => {
     it('应处理混合增删改', () => {
       const oldChildren = [
         createVNode({ key: 'a' }),
+        createVNode({ key: 'b' }),
