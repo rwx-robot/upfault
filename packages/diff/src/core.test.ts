@@ -233,3 +233,4 @@ describe('AeroDiff Core Algorithm', () => {
       const result = aeroDiff(oldChildren, newChildren);
       
       expect(result.stats.reusedCount).toBe(100);
+      expect(result.stats.movedCount).toBe(100); // 全部移动
