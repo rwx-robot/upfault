@@ -220,3 +220,5 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.reusedCount).toBe(2);
     });
   });
+
+  describe('复杂场景', () => {
