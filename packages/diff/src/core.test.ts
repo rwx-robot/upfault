@@ -222,3 +222,4 @@ describe('AeroDiff Core Algorithm', () => {
   });
 
   describe('复杂场景', () => {
+    it('应处理大列表重排', () => {
