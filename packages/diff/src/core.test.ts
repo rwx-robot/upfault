@@ -225,3 +225,4 @@ describe('AeroDiff Core Algorithm', () => {
     it('应处理大列表重排', () => {
       const oldChildren = Array.from({ length: 100 }, (_, i) => 
         createVNode({ key: `item-${i}` })
+      );
