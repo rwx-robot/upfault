@@ -229,3 +229,4 @@ describe('AeroDiff Core Algorithm', () => {
       const newChildren = Array.from({ length: 100 }, (_, i) => 
         createVNode({ key: `item-${99 - i}` }) // 反序
       );
+      
