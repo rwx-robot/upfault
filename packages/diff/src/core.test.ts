@@ -207,3 +207,4 @@ describe('AeroDiff Core Algorithm', () => {
     it('Key 找不到时应使用 Type 匹配', () => {
       const oldChildren = [
         createVNode({ key: 'a', type: VNodeType.ELEMENT }),
+        createVNode({ key: 'b', type: VNodeType.TEXT }),
