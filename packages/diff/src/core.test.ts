@@ -214,3 +214,4 @@ describe('AeroDiff Core Algorithm', () => {
         createVNode({ key: 'd', type: VNodeType.TEXT }),
       ];
       
+      const result = aeroDiff(oldChildren, newChildren, { enableTypeFallback: true });
