@@ -273,3 +273,4 @@ describe('AeroDiff Core Algorithm', () => {
       // Hello 位置 0 匹配，World 通过 Type 匹配到 UpFault
       expect(result.stats.reusedCount).toBe(2);
       expect(result.stats.createdCount).toBe(0);
+      expect(result.stats.deletedCount).toBe(0);
