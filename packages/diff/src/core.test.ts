@@ -264,3 +264,4 @@ describe('AeroDiff Core Algorithm', () => {
       ];
       const newChildren = [
         createTextNode('Hello'),
+        createTextNode('UpFault'),
