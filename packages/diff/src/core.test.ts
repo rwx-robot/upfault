@@ -267,3 +267,4 @@ describe('AeroDiff Core Algorithm', () => {
         createTextNode('UpFault'),
       ];
       
+      const result = aeroDiff(oldChildren, newChildren);
