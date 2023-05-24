@@ -249,3 +249,4 @@ describe('AeroDiff Core Algorithm', () => {
         createVNode({ key: 'c' }),        // 保留
       ];
       
+      const result = aeroDiff(oldChildren, newChildren);
