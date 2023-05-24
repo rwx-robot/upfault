@@ -271,3 +271,4 @@ describe('AeroDiff Core Algorithm', () => {
       
       // 文本节点无 Key，通过位置 + Type 匹配
       // Hello 位置 0 匹配，World 通过 Type 匹配到 UpFault
+      expect(result.stats.reusedCount).toBe(2);
