@@ -251,3 +251,4 @@ describe('AeroDiff Core Algorithm', () => {
       
       const result = aeroDiff(oldChildren, newChildren);
       
+      // 算法会将 'b' 通过 Type 兜底匹配到 'd'（都是 ELEMENT），所以复用 3 个
