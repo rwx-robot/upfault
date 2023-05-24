@@ -281,3 +281,4 @@ describe('AeroDiff Core Algorithm', () => {
     it('10000 节点应在 200ms 内完成', () => {
       const oldChildren = Array.from({ length: 10000 }, (_, i) => 
         createVNode({ key: `item-${i}` })
+      );
