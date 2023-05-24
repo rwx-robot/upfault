@@ -270,3 +270,4 @@ describe('AeroDiff Core Algorithm', () => {
       const result = aeroDiff(oldChildren, newChildren);
       
       // 文本节点无 Key，通过位置 + Type 匹配
+      // Hello 位置 0 匹配，World 通过 Type 匹配到 UpFault
