@@ -269,3 +269,4 @@ describe('AeroDiff Core Algorithm', () => {
       
       const result = aeroDiff(oldChildren, newChildren);
       
+      // 文本节点无 Key，通过位置 + Type 匹配
