@@ -260,3 +260,4 @@ describe('AeroDiff Core Algorithm', () => {
     it('文本节点 Diff', () => {
       const oldChildren = [
         createTextNode('Hello'),
+        createTextNode('World'),
