@@ -285,3 +285,4 @@ describe('AeroDiff Core Algorithm', () => {
       const newChildren = Array.from({ length: 10000 }, (_, i) => 
         createVNode({ key: `item-${i + 100}` }) // Key 不重叠，但 Type 相同
       );
+      
