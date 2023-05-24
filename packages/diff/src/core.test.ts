@@ -256,3 +256,5 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.createdCount).toBe(0); // d 复用了 b
       expect(result.stats.deletedCount).toBe(0);
     });
+
+    it('文本节点 Diff', () => {
