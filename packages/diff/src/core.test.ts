@@ -276,3 +276,5 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.deletedCount).toBe(0);
     });
   });
+
+  describe('性能要求', () => {
