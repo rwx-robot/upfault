@@ -302,3 +302,4 @@ describe('Block Diff', () => {
       const oldBlock = {
         id: 'block-1',
         type: 'root',
+        dynamicNodes: [
