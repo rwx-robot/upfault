@@ -301,3 +301,4 @@ describe('Block Diff', () => {
     it('应只对比动态节点', () => {
       const oldBlock = {
         id: 'block-1',
+        type: 'root',
