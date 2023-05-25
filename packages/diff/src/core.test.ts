@@ -306,3 +306,4 @@ describe('Block Diff', () => {
           createVNode({ key: 'a' }),
           createVNode({ key: 'b' }),
         ],
+      };
