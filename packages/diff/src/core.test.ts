@@ -325,3 +325,5 @@ describe('Block Diff', () => {
     });
   });
 });
+
+describe('PatchFlags 计算', () => {
