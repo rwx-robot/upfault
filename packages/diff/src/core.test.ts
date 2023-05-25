@@ -292,3 +292,4 @@ describe('AeroDiff Core Algorithm', () => {
       // Key 不重叠但 Type 相同，Type 兜底会全部复用（作为移动）
       expect(result.stats.reusedCount).toBe(10000);
       expect(result.stats.movedCount).toBe(10000);
+    });
