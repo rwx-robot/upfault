@@ -304,3 +304,4 @@ describe('Block Diff', () => {
         type: 'root',
         dynamicNodes: [
           createVNode({ key: 'a' }),
+          createVNode({ key: 'b' }),
