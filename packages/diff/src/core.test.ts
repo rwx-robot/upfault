@@ -328,3 +328,4 @@ describe('Block Diff', () => {
 
 describe('PatchFlags 计算', () => {
   it('类型不同应返回 FULL_DIFF', () => {
+    const oldVNode = createVNode({ type: VNodeType.ELEMENT });
