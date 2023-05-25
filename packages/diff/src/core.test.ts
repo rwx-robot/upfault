@@ -295,3 +295,5 @@ describe('AeroDiff Core Algorithm', () => {
     });
   });
 });
+
+describe('Block Diff', () => {
