@@ -290,3 +290,4 @@ describe('AeroDiff Core Algorithm', () => {
       
       expect(result.stats.duration).toBeLessThan(200);
       // Key 不重叠但 Type 相同，Type 兜底会全部复用（作为移动）
+      expect(result.stats.reusedCount).toBe(10000);
