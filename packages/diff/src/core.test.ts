@@ -289,3 +289,4 @@ describe('AeroDiff Core Algorithm', () => {
       const result = aeroDiff(oldChildren, newChildren);
       
       expect(result.stats.duration).toBeLessThan(200);
+      // Key 不重叠但 Type 相同，Type 兜底会全部复用（作为移动）
