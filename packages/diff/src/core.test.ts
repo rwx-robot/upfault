@@ -317,3 +317,4 @@ describe('Block Diff', () => {
       };
       
       const result = blockDiff(oldBlock, newBlock);
+      
