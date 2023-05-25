@@ -288,3 +288,4 @@ describe('AeroDiff Core Algorithm', () => {
       
       const result = aeroDiff(oldChildren, newChildren);
       
+      expect(result.stats.duration).toBeLessThan(200);
