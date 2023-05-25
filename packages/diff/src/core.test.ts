@@ -318,3 +318,4 @@ describe('Block Diff', () => {
       
       const result = blockDiff(oldBlock, newBlock);
       
+      // 'b' 通过 Type 兜底匹配到 'c'
