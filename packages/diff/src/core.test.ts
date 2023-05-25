@@ -299,3 +299,4 @@ describe('AeroDiff Core Algorithm', () => {
 describe('Block Diff', () => {
   describe('基础 Block Diff', () => {
     it('应只对比动态节点', () => {
+      const oldBlock = {
