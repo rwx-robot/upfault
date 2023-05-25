@@ -322,3 +322,4 @@ describe('Block Diff', () => {
       expect(result.stats.reusedCount).toBe(2);
       expect(result.stats.createdCount).toBe(0);
       expect(result.stats.deletedCount).toBe(0);
+    });
