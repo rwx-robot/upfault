@@ -307,3 +307,4 @@ describe('Block Diff', () => {
           createVNode({ key: 'b' }),
         ],
       };
+      const newBlock = {
