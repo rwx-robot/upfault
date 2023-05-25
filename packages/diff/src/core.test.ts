@@ -321,3 +321,4 @@ describe('Block Diff', () => {
       // 'b' 通过 Type 兜底匹配到 'c'
       expect(result.stats.reusedCount).toBe(2);
       expect(result.stats.createdCount).toBe(0);
+      expect(result.stats.deletedCount).toBe(0);
