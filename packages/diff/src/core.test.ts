@@ -308,3 +308,4 @@ describe('Block Diff', () => {
         ],
       };
       const newBlock = {
+        id: 'block-1',
