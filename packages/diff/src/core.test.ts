@@ -294,3 +294,4 @@ describe('AeroDiff Core Algorithm', () => {
       expect(result.stats.movedCount).toBe(10000);
     });
   });
+});
