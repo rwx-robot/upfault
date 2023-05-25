@@ -297,3 +297,4 @@ describe('AeroDiff Core Algorithm', () => {
 });
 
 describe('Block Diff', () => {
+  describe('基础 Block Diff', () => {
