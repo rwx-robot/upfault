@@ -331,3 +331,4 @@ describe('PatchFlags 计算', () => {
     const oldVNode = createVNode({ type: VNodeType.ELEMENT });
     const newVNode = createVNode({ type: VNodeType.COMPONENT });
     
+    const flags = computePatchFlags(oldVNode, newVNode);
