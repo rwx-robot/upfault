@@ -335,3 +335,5 @@ describe('PatchFlags 计算', () => {
     
     expect(flags & PatchFlags.FULL_DIFF).toBeTruthy();
   });
+
+  it('Props 变化应标记 PROPS', () => {
