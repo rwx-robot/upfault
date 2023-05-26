@@ -348,3 +348,5 @@ describe('PatchFlags 计算', () => {
     
     expect(flags & PatchFlags.CLASS).toBeTruthy();
   });
+
+  it('Class 变化应标记 CLASS', () => {
