@@ -367,3 +367,4 @@ describe('PatchFlags 计算', () => {
     expect(flags & PatchFlags.STYLE).toBeTruthy();
   });
 
+  it('事件变化应标记 EVENTS', () => {
