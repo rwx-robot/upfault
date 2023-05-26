@@ -357,3 +357,5 @@ describe('PatchFlags 计算', () => {
     
     expect(flags & PatchFlags.CLASS).toBeTruthy();
   });
+
+  it('Style 变化应标记 STYLE', () => {
