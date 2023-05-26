@@ -372,3 +372,4 @@ describe('PatchFlags 计算', () => {
     const newVNode = createVNode({ props: { onClick: () => {}, onHover: () => {} } });
     
     const flags = computePatchFlags(oldVNode, newVNode);
+    
