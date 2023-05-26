@@ -368,3 +368,4 @@ describe('PatchFlags 计算', () => {
   });
 
   it('事件变化应标记 EVENTS', () => {
+    const oldVNode = createVNode({ props: { onClick: () => {} } });
