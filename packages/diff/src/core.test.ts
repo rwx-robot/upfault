@@ -359,3 +359,4 @@ describe('PatchFlags 计算', () => {
   });
 
   it('Style 变化应标记 STYLE', () => {
+    const oldVNode = createVNode({ props: { style: 'color: red' } });
