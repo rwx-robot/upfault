@@ -353,3 +353,4 @@ describe('PatchFlags 计算', () => {
     const oldVNode = createVNode({ props: { class: 'old' } });
     const newVNode = createVNode({ props: { class: 'new' } });
     
+    const flags = computePatchFlags(oldVNode, newVNode);
