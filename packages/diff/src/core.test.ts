@@ -380,3 +380,4 @@ describe('PatchFlags 计算', () => {
     const oldVNode = createVNode({ 
       children: [{ key: 'a' }, { key: 'b' }] 
     });
+    const newVNode = createVNode({ 
