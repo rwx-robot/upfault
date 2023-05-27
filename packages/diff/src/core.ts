@@ -14,3 +14,4 @@
 import { 
   VNode, 
   VNodeType, 
+  DiffOp, 
