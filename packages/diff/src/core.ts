@@ -18,3 +18,4 @@ import {
   DiffResult, 
   DiffStats, 
   DiffOpType,
+  DiffIndex,
