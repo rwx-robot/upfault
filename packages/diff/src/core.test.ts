@@ -384,3 +384,4 @@ describe('PatchFlags 计算', () => {
       children: [{ key: 'b' }, { key: 'a' }] 
     });
     
+    const flags = computePatchFlags(oldVNode, newVNode);
