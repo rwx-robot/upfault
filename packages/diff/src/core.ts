@@ -21,3 +21,4 @@ import {
   DiffIndex,
   AeroDiffOptions,
   DEFAULT_AERODIFF_OPTIONS,
+  PatchFlags,
