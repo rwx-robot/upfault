@@ -376,3 +376,4 @@ describe('PatchFlags 计算', () => {
     expect(flags & PatchFlags.EVENTS).toBeTruthy();
   });
 
+  it('Keyed children 应标记 KEYED_FRAGMENT', () => {
