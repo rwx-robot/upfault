@@ -6,3 +6,4 @@
  * 2. 建立索引：Key Map + Type Map O(n)
  * 3. 贪心匹配：优先 Key 精确匹配，回退 Type+Shape 匹配 O(m)
  * 4. 清理未使用节点 O(n-k)
+ * 总复杂度：O(n)
