@@ -19,3 +19,4 @@ import {
   DiffStats, 
   DiffOpType,
   DiffIndex,
+  AeroDiffOptions,
