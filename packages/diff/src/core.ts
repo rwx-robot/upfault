@@ -20,3 +20,4 @@ import {
   DiffOpType,
   DiffIndex,
   AeroDiffOptions,
+  DEFAULT_AERODIFF_OPTIONS,
