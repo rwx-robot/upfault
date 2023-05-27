@@ -388,3 +388,4 @@ describe('PatchFlags 计算', () => {
     
     expect(flags & PatchFlags.KEYED_FRAGMENT).toBeTruthy();
   });
+});
