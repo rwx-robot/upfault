@@ -15,3 +15,4 @@ import {
   VNode, 
   VNodeType, 
   DiffOp, 
+  DiffResult, 
