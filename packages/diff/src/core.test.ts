@@ -386,3 +386,4 @@ describe('PatchFlags 计算', () => {
     
     const flags = computePatchFlags(oldVNode, newVNode);
     
+    expect(flags & PatchFlags.KEYED_FRAGMENT).toBeTruthy();
