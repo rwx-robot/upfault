@@ -17,3 +17,4 @@ import {
   DiffOp, 
   DiffResult, 
   DiffStats, 
+  DiffOpType,
