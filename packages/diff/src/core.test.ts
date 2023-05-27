@@ -381,3 +381,4 @@ describe('PatchFlags 计算', () => {
       children: [{ key: 'a' }, { key: 'b' }] 
     });
     const newVNode = createVNode({ 
+      children: [{ key: 'b' }, { key: 'a' }] 
