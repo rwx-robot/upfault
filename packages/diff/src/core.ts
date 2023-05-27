@@ -24,3 +24,5 @@ import {
   PatchFlags,
   Block 
 } from '@upfault/shared';
+
+import { defaultFastHash, isSameNode } from '@upfault/shared';
