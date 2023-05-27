@@ -379,3 +379,4 @@ describe('PatchFlags 计算', () => {
   it('Keyed children 应标记 KEYED_FRAGMENT', () => {
     const oldVNode = createVNode({ 
       children: [{ key: 'a' }, { key: 'b' }] 
+    });
