@@ -60,3 +60,4 @@ export function aeroDiff(
 ): DiffResult {
   const config = { ...DEFAULT_AERODIFF_OPTIONS, ...options };
   const timer = { start: performance.now() };
+  
