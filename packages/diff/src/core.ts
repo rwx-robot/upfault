@@ -61,3 +61,4 @@ export function aeroDiff(
   const config = { ...DEFAULT_AERODIFF_OPTIONS, ...options };
   const timer = { start: performance.now() };
   
+  const oldLen = oldChildren.length;
