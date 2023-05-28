@@ -36,3 +36,4 @@ interface VNodeWithUsed extends VNode {
 }
 
 interface BlockWithChildren extends Block {
+  children: BlockWithChildren[];
