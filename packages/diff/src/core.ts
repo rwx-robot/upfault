@@ -55,3 +55,4 @@ type VNodeLike = { type: unknown; key: string | number | null };
  */
 export function aeroDiff(
   oldChildren: VNode[], 
+  newChildren: VNode[], 
