@@ -51,3 +51,4 @@ type VNodeLike = { type: unknown; key: string | number | null };
  * @param oldChildren 旧子节点数组
  * @param newChildren 新子节点数组
  * @param options 算法配置
+ * @returns DiffResult 包含操作序列和统计信息
