@@ -40,3 +40,5 @@ interface BlockWithChildren extends Block {
 }
 
 type VNodeLike = { type: unknown; key: string | number | null };
+
+// ============================================================================
