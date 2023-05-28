@@ -30,3 +30,5 @@ import { defaultFastHash, isSameNode } from '@upfault/shared';
 // ============================================================================
 // 类型扩展（用于 Diff 算法内部标记）
 // ============================================================================
+
+interface VNodeWithUsed extends VNode {
