@@ -62,3 +62,4 @@ export function aeroDiff(
   const timer = { start: performance.now() };
   
   const oldLen = oldChildren.length;
+  const newLen = newChildren.length;
