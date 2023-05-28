@@ -57,3 +57,4 @@ export function aeroDiff(
   oldChildren: VNode[], 
   newChildren: VNode[], 
   options: Partial<AeroDiffOptions> = {}
+): DiffResult {
