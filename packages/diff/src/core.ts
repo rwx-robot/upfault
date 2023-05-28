@@ -65,3 +65,4 @@ export function aeroDiff(
   const newLen = newChildren.length;
   
   // 统计信息
+  const stats: DiffStats = {
