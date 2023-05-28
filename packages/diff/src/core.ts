@@ -58,3 +58,4 @@ export function aeroDiff(
   newChildren: VNode[], 
   options: Partial<AeroDiffOptions> = {}
 ): DiffResult {
+  const config = { ...DEFAULT_AERODIFF_OPTIONS, ...options };
