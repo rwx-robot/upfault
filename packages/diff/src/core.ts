@@ -68,3 +68,4 @@ export function aeroDiff(
   const stats: DiffStats = {
     oldCount: oldLen,
     newCount: newLen,
+    reusedCount: 0,
