@@ -42,3 +42,4 @@ interface BlockWithChildren extends Block {
 type VNodeLike = { type: unknown; key: string | number | null };
 
 // ============================================================================
+// 核心 Diff 算法
