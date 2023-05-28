@@ -33,3 +33,4 @@ import { defaultFastHash, isSameNode } from '@upfault/shared';
 
 interface VNodeWithUsed extends VNode {
   _used?: boolean;
+}
