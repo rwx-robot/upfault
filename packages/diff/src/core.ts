@@ -46,3 +46,4 @@ type VNodeLike = { type: unknown; key: string | number | null };
 // ============================================================================
 
 /**
+ * AeroDiff 主入口 - 双端扩散算法
