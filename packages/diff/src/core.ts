@@ -38,3 +38,5 @@ interface VNodeWithUsed extends VNode {
 interface BlockWithChildren extends Block {
   children: BlockWithChildren[];
 }
+
+type VNodeLike = { type: unknown; key: string | number | null };
