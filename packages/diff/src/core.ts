@@ -66,3 +66,4 @@ export function aeroDiff(
   
   // 统计信息
   const stats: DiffStats = {
+    oldCount: oldLen,
