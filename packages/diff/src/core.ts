@@ -85,3 +85,4 @@ export function aeroDiff(
   let oldStart = 0;
   let oldEnd = oldLen - 1;
   let newStart = 0;
+  let newEnd = newLen - 1;
