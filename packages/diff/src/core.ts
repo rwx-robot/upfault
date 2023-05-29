@@ -91,3 +91,4 @@ export function aeroDiff(
   while (oldStart <= oldEnd && newStart <= newEnd) {
     const oldNode = oldChildrenExt[oldStart]!;
     const newNode = newChildrenExt[newStart]!;
+    
