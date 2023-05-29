@@ -107,3 +107,4 @@ export function aeroDiff(
     newStart++;
   }
   
+  // 从尾部向前跳过相同节点
