@@ -82,3 +82,4 @@ export function aeroDiff(
   const newChildrenExt = newChildren as VNodeWithUsed[];
   
   // ===== 第一阶段：双端预处理 =====
+  let oldStart = 0;
