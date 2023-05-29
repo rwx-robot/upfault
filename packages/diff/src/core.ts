@@ -75,3 +75,4 @@ export function aeroDiff(
     duration: 0,
   };
   
+  const ops: DiffOp[] = [];
