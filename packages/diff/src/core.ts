@@ -70,3 +70,4 @@ export function aeroDiff(
     newCount: newLen,
     reusedCount: 0,
     createdCount: 0,
+    deletedCount: 0,
