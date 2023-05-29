@@ -79,3 +79,4 @@ export function aeroDiff(
   
   // Cast to extended type for _used marker
   const oldChildrenExt = oldChildren as VNodeWithUsed[];
+  const newChildrenExt = newChildren as VNodeWithUsed[];
