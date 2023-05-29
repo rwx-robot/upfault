@@ -98,3 +98,4 @@ export function aeroDiff(
     ops.push({
       type: DiffOpType.UPDATE,
       oldNode,
+      newNode,
