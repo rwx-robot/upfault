@@ -83,3 +83,4 @@ export function aeroDiff(
   
   // ===== 第一阶段：双端预处理 =====
   let oldStart = 0;
+  let oldEnd = oldLen - 1;
