@@ -87,3 +87,4 @@ export function aeroDiff(
   let newStart = 0;
   let newEnd = newLen - 1;
   
+  // 从头部向后跳过相同节点
