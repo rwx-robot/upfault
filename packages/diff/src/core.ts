@@ -112,3 +112,4 @@ export function aeroDiff(
     const oldNode = oldChildrenExt[oldEnd]!;
     const newNode = newChildrenExt[newEnd]!;
     
+    if (!isSameNode(oldNode, newNode)) break;
