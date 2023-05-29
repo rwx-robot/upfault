@@ -72,3 +72,4 @@ export function aeroDiff(
     createdCount: 0,
     deletedCount: 0,
     movedCount: 0,
+    duration: 0,
