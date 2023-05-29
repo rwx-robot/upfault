@@ -99,3 +99,4 @@ export function aeroDiff(
       type: DiffOpType.UPDATE,
       oldNode,
       newNode,
+      fromIndex: oldStart,
