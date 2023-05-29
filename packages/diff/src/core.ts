@@ -96,3 +96,4 @@ export function aeroDiff(
     
     // 节点相同，生成 UPDATE 操作
     ops.push({
+      type: DiffOpType.UPDATE,
