@@ -71,3 +71,4 @@ export function aeroDiff(
     reusedCount: 0,
     createdCount: 0,
     deletedCount: 0,
+    movedCount: 0,
