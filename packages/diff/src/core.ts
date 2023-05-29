@@ -104,3 +104,4 @@ export function aeroDiff(
     });
     stats.reusedCount++;
     oldStart++;
+    newStart++;
