@@ -102,3 +102,4 @@ export function aeroDiff(
       fromIndex: oldStart,
       toIndex: newStart,
     });
+    stats.reusedCount++;
