@@ -120,3 +120,4 @@ export function aeroDiff(
       newNode,
       fromIndex: oldEnd,
       toIndex: newEnd,
+    });
