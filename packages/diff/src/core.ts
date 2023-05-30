@@ -136,3 +136,4 @@ export function aeroDiff(
         toIndex: newStart,
       });
       stats.createdCount++;
+      newStart++;
