@@ -150,3 +150,4 @@ export function aeroDiff(
         type: DiffOpType.REMOVE,
         oldNode: oldChildrenExt[oldStart]!,
         fromIndex: oldStart,
+      });
