@@ -138,3 +138,4 @@ export function aeroDiff(
       stats.createdCount++;
       newStart++;
     }
+    const hasChanges = stats.createdCount > 0 || stats.deletedCount > 0 || stats.movedCount > 0;
