@@ -133,3 +133,4 @@ export function aeroDiff(
       ops.push({
         type: DiffOpType.CREATE,
         newNode: newChildrenExt[newStart]!,
+        toIndex: newStart,
