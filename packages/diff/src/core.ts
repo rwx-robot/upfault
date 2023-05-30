@@ -146,3 +146,4 @@ export function aeroDiff(
   // 如果新节点已耗尽，剩余旧节点全是 REMOVE
   if (newStart > newEnd) {
     while (oldStart <= oldEnd) {
+      ops.push({
