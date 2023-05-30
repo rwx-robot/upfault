@@ -126,3 +126,4 @@ export function aeroDiff(
     newEnd--;
   }
   
+  // ===== 第二阶段：处理中间未知序列 =====
