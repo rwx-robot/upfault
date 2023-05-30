@@ -132,3 +132,4 @@ export function aeroDiff(
     while (newStart <= newEnd) {
       ops.push({
         type: DiffOpType.CREATE,
+        newNode: newChildrenExt[newStart]!,
