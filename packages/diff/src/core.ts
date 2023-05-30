@@ -114,3 +114,4 @@ export function aeroDiff(
     
     if (!isSameNode(oldNode, newNode)) break;
     
+    ops.push({
