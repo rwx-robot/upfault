@@ -137,3 +137,4 @@ export function aeroDiff(
       });
       stats.createdCount++;
       newStart++;
+    }
