@@ -127,3 +127,4 @@ export function aeroDiff(
   }
   
   // ===== 第二阶段：处理中间未知序列 =====
+  // 如果旧节点已耗尽，剩余新节点全是 INSERT
