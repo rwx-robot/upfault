@@ -135,3 +135,4 @@ export function aeroDiff(
         newNode: newChildrenExt[newStart]!,
         toIndex: newStart,
       });
+      stats.createdCount++;
