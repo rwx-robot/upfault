@@ -143,3 +143,4 @@ export function aeroDiff(
     return { ops, changed: hasChanges, stats };
   }
   
+  // 如果新节点已耗尽，剩余旧节点全是 REMOVE
