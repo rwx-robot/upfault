@@ -119,3 +119,4 @@ export function aeroDiff(
       oldNode,
       newNode,
       fromIndex: oldEnd,
+      toIndex: newEnd,
