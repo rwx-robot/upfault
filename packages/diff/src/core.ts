@@ -147,3 +147,4 @@ export function aeroDiff(
   if (newStart > newEnd) {
     while (oldStart <= oldEnd) {
       ops.push({
+        type: DiffOpType.REMOVE,
