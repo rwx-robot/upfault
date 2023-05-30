@@ -134,3 +134,4 @@ export function aeroDiff(
         type: DiffOpType.CREATE,
         newNode: newChildrenExt[newStart]!,
         toIndex: newStart,
+      });
