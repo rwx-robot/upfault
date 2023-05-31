@@ -163,3 +163,4 @@ export function aeroDiff(
   const index = buildDiffIndex(oldChildrenExt, oldStart, oldEnd);
   const moves = performGreedyMatch(
     oldChildrenExt, 
+    newChildrenExt, 
