@@ -159,3 +159,4 @@ export function aeroDiff(
     return { ops, changed: hasChanges, stats };
   }
   
+  // ===== 第三阶段：建立索引并贪心匹配 =====
