@@ -166,3 +166,4 @@ export function aeroDiff(
     newChildrenExt, 
     newStart, 
     newEnd, 
+    index, 
