@@ -168,3 +168,4 @@ export function aeroDiff(
     newEnd, 
     index, 
     ops, 
+    stats,
