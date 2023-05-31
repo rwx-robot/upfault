@@ -183,3 +183,4 @@ export function aeroDiff(
     stats
   );
   
+  stats.duration = performance.now() - timer.start;
