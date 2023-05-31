@@ -177,3 +177,4 @@ export function aeroDiff(
   // ===== 第四阶段：清理未使用的旧节点 =====
   cleanupUnusedOldNodes(
     oldChildrenExt, 
+    oldStart, 
