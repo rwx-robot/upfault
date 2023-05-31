@@ -152,3 +152,4 @@ export function aeroDiff(
         fromIndex: oldStart,
       });
       stats.deletedCount++;
+      oldStart++;
