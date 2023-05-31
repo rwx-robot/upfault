@@ -174,3 +174,4 @@ export function aeroDiff(
   
   stats.movedCount = moves;
   
+  // ===== 第四阶段：清理未使用的旧节点 =====
