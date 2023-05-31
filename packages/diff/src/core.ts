@@ -170,3 +170,4 @@ export function aeroDiff(
     ops, 
     stats,
     config
+  );
