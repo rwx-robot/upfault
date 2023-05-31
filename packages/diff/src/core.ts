@@ -172,3 +172,4 @@ export function aeroDiff(
     config
   );
   
+  stats.movedCount = moves;
