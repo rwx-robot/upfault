@@ -180,3 +180,4 @@ export function aeroDiff(
     oldStart, 
     oldEnd, 
     ops, 
+    stats
