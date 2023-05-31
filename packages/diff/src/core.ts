@@ -181,3 +181,4 @@ export function aeroDiff(
     oldEnd, 
     ops, 
     stats
+  );
