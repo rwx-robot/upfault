@@ -178,3 +178,4 @@ export function aeroDiff(
   cleanupUnusedOldNodes(
     oldChildrenExt, 
     oldStart, 
+    oldEnd, 
