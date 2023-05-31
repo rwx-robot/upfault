@@ -158,3 +158,4 @@ export function aeroDiff(
     stats.duration = performance.now() - timer.start;
     return { ops, changed: hasChanges, stats };
   }
+  
