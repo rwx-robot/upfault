@@ -164,3 +164,4 @@ export function aeroDiff(
   const moves = performGreedyMatch(
     oldChildrenExt, 
     newChildrenExt, 
+    newStart, 
