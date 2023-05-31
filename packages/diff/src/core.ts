@@ -154,3 +154,4 @@ export function aeroDiff(
       stats.deletedCount++;
       oldStart++;
     }
+    const hasChanges = stats.createdCount > 0 || stats.deletedCount > 0 || stats.movedCount > 0;
