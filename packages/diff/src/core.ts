@@ -206,3 +206,4 @@ function buildDiffIndex(
       keyMap.set(node.key, i);
     }
     
+    // Type 索引
