@@ -199,3 +199,4 @@ function buildDiffIndex(
   const typeMap = new Map<VNodeType, number[]>();
   
   for (let i = start; i <= end; i++) {
+    const node = oldChildren[i]!;
