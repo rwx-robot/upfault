@@ -211,3 +211,4 @@ function buildDiffIndex(
     typeList.push(i);
     typeMap.set(node.type, typeList);
   }
+  
