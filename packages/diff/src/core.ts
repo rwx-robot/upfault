@@ -226,3 +226,4 @@ function buildDiffIndex(
  */
 function performGreedyMatch(
   oldChildren: VNodeWithUsed[],
+  newChildren: VNodeWithUsed[],
