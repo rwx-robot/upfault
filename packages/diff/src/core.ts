@@ -204,3 +204,4 @@ function buildDiffIndex(
     // Key 索引
     if (node.key != null) {
       keyMap.set(node.key, i);
+    }
