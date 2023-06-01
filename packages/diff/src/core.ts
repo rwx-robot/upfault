@@ -202,3 +202,4 @@ function buildDiffIndex(
     const node = oldChildren[i]!;
     
     // Key 索引
+    if (node.key != null) {
