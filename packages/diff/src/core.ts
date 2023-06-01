@@ -195,3 +195,4 @@ function buildDiffIndex(
   start: number, 
   end: number
 ): DiffIndex {
+  const keyMap = new Map<string | number, number>();
