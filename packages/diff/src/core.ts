@@ -214,3 +214,4 @@ function buildDiffIndex(
   
   return {
     keyMap,
+    typeMap,
