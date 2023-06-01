@@ -194,3 +194,4 @@ function buildDiffIndex(
   oldChildren: VNodeWithUsed[], 
   start: number, 
   end: number
+): DiffIndex {
