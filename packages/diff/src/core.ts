@@ -210,3 +210,4 @@ function buildDiffIndex(
     const typeList = typeMap.get(node.type) || [];
     typeList.push(i);
     typeMap.set(node.type, typeList);
+  }
