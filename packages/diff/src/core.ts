@@ -229,3 +229,4 @@ function performGreedyMatch(
   newChildren: VNodeWithUsed[],
   newStart: number,
   newEnd: number,
+  index: DiffIndex,
