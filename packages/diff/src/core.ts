@@ -232,3 +232,4 @@ function performGreedyMatch(
   index: DiffIndex,
   ops: DiffOp[],
   stats: DiffStats,
+  config: AeroDiffOptions
