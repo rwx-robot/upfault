@@ -215,3 +215,4 @@ function buildDiffIndex(
   return {
     keyMap,
     typeMap,
+    oldNodes: oldChildren,
