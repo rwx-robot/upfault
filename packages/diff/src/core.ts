@@ -220,3 +220,5 @@ function buildDiffIndex(
     end,
   };
 }
+
+/**
