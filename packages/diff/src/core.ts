@@ -205,3 +205,4 @@ function buildDiffIndex(
     if (node.key != null) {
       keyMap.set(node.key, i);
     }
+    
