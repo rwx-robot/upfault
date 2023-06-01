@@ -198,3 +198,4 @@ function buildDiffIndex(
   const keyMap = new Map<string | number, number>();
   const typeMap = new Map<VNodeType, number[]>();
   
+  for (let i = start; i <= end; i++) {
