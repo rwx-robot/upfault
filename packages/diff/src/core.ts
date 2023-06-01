@@ -233,3 +233,4 @@ function performGreedyMatch(
   ops: DiffOp[],
   stats: DiffStats,
   config: AeroDiffOptions
+): number {
