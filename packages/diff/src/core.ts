@@ -200,3 +200,4 @@ function buildDiffIndex(
   
   for (let i = start; i <= end; i++) {
     const node = oldChildren[i]!;
+    
