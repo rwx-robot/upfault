@@ -230,3 +230,4 @@ function performGreedyMatch(
   newStart: number,
   newEnd: number,
   index: DiffIndex,
+  ops: DiffOp[],
