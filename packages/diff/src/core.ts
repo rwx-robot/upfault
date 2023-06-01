@@ -193,3 +193,4 @@ export function aeroDiff(
 function buildDiffIndex(
   oldChildren: VNodeWithUsed[], 
   start: number, 
+  end: number
