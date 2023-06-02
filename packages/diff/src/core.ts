@@ -253,3 +253,4 @@ function performGreedyMatch(
       const typeMatches = index.typeMap.get(newNode.type) || [];
       for (const candidateIdx of typeMatches) {
         if (!oldChildren[candidateIdx]!._used) {
+          // 可选：Shape 匹配检查
