@@ -247,3 +247,4 @@ function performGreedyMatch(
         oldIdx = keyMatch;
       }
     }
+    
