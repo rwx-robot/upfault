@@ -277,3 +277,4 @@ function performGreedyMatch(
         newNode,
         fromIndex: oldIdx,
         toIndex: i,
+      });
