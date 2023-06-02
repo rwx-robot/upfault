@@ -235,3 +235,4 @@ function performGreedyMatch(
   config: AeroDiffOptions
 ): number {
   let movedCount = 0;
+  
