@@ -270,3 +270,4 @@ function performGreedyMatch(
       // 判断是否需要移动
       const isMove = oldIdx !== i;
       if (isMove) movedCount++;
+      
