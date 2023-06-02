@@ -266,3 +266,4 @@ function performGreedyMatch(
     if (oldIdx >= 0) {
       const oldNode = oldChildren[oldIdx]!;
       oldNode._used = true;
+      
