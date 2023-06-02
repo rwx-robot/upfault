@@ -268,3 +268,4 @@ function performGreedyMatch(
       oldNode._used = true;
       
       // 判断是否需要移动
+      const isMove = oldIdx !== i;
