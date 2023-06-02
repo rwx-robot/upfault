@@ -272,3 +272,4 @@ function performGreedyMatch(
       if (isMove) movedCount++;
       
       ops.push({
+        type: isMove ? DiffOpType.MOVE : DiffOpType.UPDATE,
