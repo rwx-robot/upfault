@@ -241,3 +241,4 @@ function performGreedyMatch(
     let oldIdx = -1;
     
     // 优先级 1：Key 完全匹配
+    if (newNode.key != null) {
