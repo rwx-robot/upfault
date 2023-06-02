@@ -236,3 +236,4 @@ function performGreedyMatch(
 ): number {
   let movedCount = 0;
   
+  for (let i = newStart; i <= newEnd; i++) {
