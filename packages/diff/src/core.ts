@@ -240,3 +240,4 @@ function performGreedyMatch(
     const newNode = newChildren[i]!;
     let oldIdx = -1;
     
+    // 优先级 1：Key 完全匹配
