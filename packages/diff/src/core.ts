@@ -259,3 +259,4 @@ function performGreedyMatch(
           }
           oldIdx = candidateIdx;
           break;
+        }
