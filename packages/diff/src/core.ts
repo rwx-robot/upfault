@@ -243,3 +243,4 @@ function performGreedyMatch(
     // 优先级 1：Key 完全匹配
     if (newNode.key != null) {
       const keyMatch = index.keyMap.get(newNode.key);
+      if (keyMatch !== undefined && !oldChildren[keyMatch]!._used) {
