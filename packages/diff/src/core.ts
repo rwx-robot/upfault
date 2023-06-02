@@ -246,3 +246,4 @@ function performGreedyMatch(
       if (keyMatch !== undefined && !oldChildren[keyMatch]!._used) {
         oldIdx = keyMatch;
       }
+    }
