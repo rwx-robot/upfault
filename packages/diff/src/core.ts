@@ -248,3 +248,4 @@ function performGreedyMatch(
       }
     }
     
+    // 优先级 2：Type + Shape 兜底匹配
