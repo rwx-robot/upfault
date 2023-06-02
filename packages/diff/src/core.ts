@@ -238,3 +238,4 @@ function performGreedyMatch(
   
   for (let i = newStart; i <= newEnd; i++) {
     const newNode = newChildren[i]!;
+    let oldIdx = -1;
