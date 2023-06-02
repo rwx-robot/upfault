@@ -249,3 +249,4 @@ function performGreedyMatch(
     }
     
     // 优先级 2：Type + Shape 兜底匹配
+    if (oldIdx === -1 && config.enableTypeFallback) {
