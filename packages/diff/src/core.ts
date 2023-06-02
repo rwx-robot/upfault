@@ -271,3 +271,4 @@ function performGreedyMatch(
       const isMove = oldIdx !== i;
       if (isMove) movedCount++;
       
+      ops.push({
