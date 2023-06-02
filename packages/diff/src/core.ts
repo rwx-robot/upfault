@@ -273,3 +273,4 @@ function performGreedyMatch(
       
       ops.push({
         type: isMove ? DiffOpType.MOVE : DiffOpType.UPDATE,
+        oldNode,
