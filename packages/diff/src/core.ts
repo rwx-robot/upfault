@@ -267,3 +267,4 @@ function performGreedyMatch(
       const oldNode = oldChildren[oldIdx]!;
       oldNode._used = true;
       
+      // 判断是否需要移动
