@@ -275,3 +275,4 @@ function performGreedyMatch(
         type: isMove ? DiffOpType.MOVE : DiffOpType.UPDATE,
         oldNode,
         newNode,
+        fromIndex: oldIdx,
