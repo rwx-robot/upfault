@@ -263,3 +263,4 @@ function performGreedyMatch(
       }
     }
     
+    if (oldIdx >= 0) {
