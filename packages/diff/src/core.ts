@@ -290,3 +290,4 @@ function performGreedyMatch(
     }
   }
   
+  return movedCount;
