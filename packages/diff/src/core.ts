@@ -284,3 +284,4 @@ function performGreedyMatch(
       ops.push({
         type: DiffOpType.CREATE,
         newNode,
+        toIndex: i,
