@@ -279,3 +279,4 @@ function performGreedyMatch(
         toIndex: i,
       });
       stats.reusedCount++;
+    } else {
