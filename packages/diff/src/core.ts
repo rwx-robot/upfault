@@ -281,3 +281,4 @@ function performGreedyMatch(
       stats.reusedCount++;
     } else {
       // 无匹配：INSERT
+      ops.push({
