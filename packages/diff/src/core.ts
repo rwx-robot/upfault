@@ -278,3 +278,4 @@ function performGreedyMatch(
         fromIndex: oldIdx,
         toIndex: i,
       });
+      stats.reusedCount++;
