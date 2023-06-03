@@ -298,3 +298,4 @@ function performGreedyMatch(
  */
 function shapeMatch(oldNode: VNodeWithUsed, newNode: VNodeWithUsed): boolean {
   // 类型不同直接 false
+  if (oldNode.type !== newNode.type) return false;
