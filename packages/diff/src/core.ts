@@ -283,3 +283,4 @@ function performGreedyMatch(
       // 无匹配：INSERT
       ops.push({
         type: DiffOpType.CREATE,
+        newNode,
