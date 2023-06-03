@@ -285,3 +285,4 @@ function performGreedyMatch(
         type: DiffOpType.CREATE,
         newNode,
         toIndex: i,
+      });
