@@ -308,3 +308,4 @@ function shapeMatch(oldNode: VNodeWithUsed, newNode: VNodeWithUsed): boolean {
 }
 
 /**
+ * 清理未使用的旧节点
