@@ -282,3 +282,4 @@ function performGreedyMatch(
     } else {
       // 无匹配：INSERT
       ops.push({
+        type: DiffOpType.CREATE,
