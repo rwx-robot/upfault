@@ -301,3 +301,4 @@ function shapeMatch(oldNode: VNodeWithUsed, newNode: VNodeWithUsed): boolean {
   if (oldNode.type !== newNode.type) return false;
   
   // 简单启发式：比较动态 props 数量
+  const oldDynCount = (oldNode as any).dynamicProps?.length || 0;
