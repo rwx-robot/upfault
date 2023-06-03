@@ -288,3 +288,4 @@ function performGreedyMatch(
       });
       stats.createdCount++;
     }
+  }
