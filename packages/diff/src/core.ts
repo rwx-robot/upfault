@@ -316,3 +316,4 @@ function cleanupUnusedOldNodes(
   end: number,
   ops: DiffOp[],
   stats: DiffStats
+): void {
