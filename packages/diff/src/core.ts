@@ -305,3 +305,4 @@ function shapeMatch(oldNode: VNodeWithUsed, newNode: VNodeWithUsed): boolean {
   const newDynCount = (newNode as any).dynamicProps?.length || 0;
   
   return Math.abs(oldDynCount - newDynCount) <= 1;
+}
