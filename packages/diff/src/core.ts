@@ -286,3 +286,4 @@ function performGreedyMatch(
         newNode,
         toIndex: i,
       });
+      stats.createdCount++;
