@@ -295,3 +295,4 @@ function performGreedyMatch(
 
 /**
  * 简单的 Shape 匹配：比较 children 结构深度
+ */
