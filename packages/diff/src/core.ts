@@ -292,3 +292,5 @@ function performGreedyMatch(
   
   return movedCount;
 }
+
+/**
