@@ -312,3 +312,4 @@ function shapeMatch(oldNode: VNodeWithUsed, newNode: VNodeWithUsed): boolean {
  */
 function cleanupUnusedOldNodes(
   oldChildren: VNodeWithUsed[],
+  start: number,
