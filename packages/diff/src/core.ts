@@ -314,3 +314,4 @@ function cleanupUnusedOldNodes(
   oldChildren: VNodeWithUsed[],
   start: number,
   end: number,
+  ops: DiffOp[],
