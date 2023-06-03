@@ -306,3 +306,5 @@ function shapeMatch(oldNode: VNodeWithUsed, newNode: VNodeWithUsed): boolean {
   
   return Math.abs(oldDynCount - newDynCount) <= 1;
 }
+
+/**
