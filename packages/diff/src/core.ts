@@ -342,3 +342,4 @@ function cleanupUnusedOldNodes(
  */
 export function blockDiff(
   oldBlock: BlockWithChildren,
+  newBlock: BlockWithChildren,
