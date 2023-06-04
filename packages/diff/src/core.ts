@@ -349,3 +349,4 @@ export function blockDiff(
   return aeroDiff(
     oldBlock.dynamicNodes,
     newBlock.dynamicNodes,
+    options
