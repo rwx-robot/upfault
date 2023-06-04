@@ -324,3 +324,4 @@ function cleanupUnusedOldNodes(
         type: DiffOpType.REMOVE,
         oldNode: node,
         fromIndex: i,
+      });
