@@ -357,3 +357,4 @@ export function blockDiff(
  * 递归 Block Tree Diff
  */
 export function diffBlockTree(
+  oldBlock: BlockWithChildren,
