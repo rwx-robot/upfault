@@ -350,3 +350,4 @@ export function blockDiff(
     oldBlock.dynamicNodes,
     newBlock.dynamicNodes,
     options
+  );
