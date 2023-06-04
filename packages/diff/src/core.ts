@@ -329,3 +329,4 @@ function cleanupUnusedOldNodes(
     }
     // 清理标记
     delete node._used;
+  }
