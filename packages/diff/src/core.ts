@@ -320,3 +320,4 @@ function cleanupUnusedOldNodes(
   for (let i = start; i <= end; i++) {
     const node = oldChildren[i]!;
     if (!node._used) {
+      ops.push({
