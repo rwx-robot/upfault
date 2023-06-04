@@ -319,3 +319,4 @@ function cleanupUnusedOldNodes(
 ): void {
   for (let i = start; i <= end; i++) {
     const node = oldChildren[i]!;
+    if (!node._used) {
