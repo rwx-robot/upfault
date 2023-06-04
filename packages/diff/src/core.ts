@@ -318,3 +318,4 @@ function cleanupUnusedOldNodes(
   stats: DiffStats
 ): void {
   for (let i = start; i <= end; i++) {
+    const node = oldChildren[i]!;
