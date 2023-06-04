@@ -338,3 +338,4 @@ function cleanupUnusedOldNodes(
 
 /**
  * Block 级别的 Diff
+ * 对比两个 Block 的动态节点数组
