@@ -344,3 +344,4 @@ export function blockDiff(
   oldBlock: BlockWithChildren,
   newBlock: BlockWithChildren,
   options: Partial<AeroDiffOptions> = {}
+): DiffResult {
