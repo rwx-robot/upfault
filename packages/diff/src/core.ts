@@ -321,3 +321,4 @@ function cleanupUnusedOldNodes(
     const node = oldChildren[i]!;
     if (!node._used) {
       ops.push({
+        type: DiffOpType.REMOVE,
