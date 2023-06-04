@@ -326,3 +326,4 @@ function cleanupUnusedOldNodes(
         fromIndex: i,
       });
       stats.deletedCount++;
+    }
