@@ -347,3 +347,4 @@ export function blockDiff(
 ): DiffResult {
   // 只对比动态节点数组
   return aeroDiff(
+    oldBlock.dynamicNodes,
