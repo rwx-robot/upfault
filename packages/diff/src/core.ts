@@ -327,3 +327,4 @@ function cleanupUnusedOldNodes(
       });
       stats.deletedCount++;
     }
+    // 清理标记
