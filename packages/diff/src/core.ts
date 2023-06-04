@@ -333,3 +333,4 @@ function cleanupUnusedOldNodes(
 }
 
 // ============================================================================
+// Block Diff - 基于 Block Tree 的优化 Diff
