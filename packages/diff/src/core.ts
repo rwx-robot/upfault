@@ -317,3 +317,4 @@ function cleanupUnusedOldNodes(
   ops: DiffOp[],
   stats: DiffStats
 ): void {
+  for (let i = start; i <= end; i++) {
