@@ -322,3 +322,4 @@ function cleanupUnusedOldNodes(
     if (!node._used) {
       ops.push({
         type: DiffOpType.REMOVE,
+        oldNode: node,
