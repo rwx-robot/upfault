@@ -378,3 +378,4 @@ export function diffBlockTree(
       newChildMap.delete(id);
     } else {
       // 子 Block 被删除
+      results.push({
