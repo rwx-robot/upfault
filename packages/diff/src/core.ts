@@ -369,3 +369,4 @@ export function diffBlockTree(
   // 递归子 Block
   const oldChildMap = new Map(oldBlock.children.map(b => [b.id, b]));
   const newChildMap = new Map(newBlock.children.map(b => [b.id, b]));
+  
