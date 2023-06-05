@@ -384,3 +384,4 @@ export function diffBlockTree(
         stats: { oldCount: 1, newCount: 0, reusedCount: 0, createdCount: 0, deletedCount: 1, movedCount: 0, duration: 0 },
       });
     }
+  }
