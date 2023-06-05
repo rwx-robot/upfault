@@ -376,3 +376,4 @@ export function diffBlockTree(
     if (newChild) {
       diffBlockTree(oldChild, newChild, results, options);
       newChildMap.delete(id);
+    } else {
