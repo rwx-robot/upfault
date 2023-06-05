@@ -395,3 +395,4 @@ export function diffBlockTree(
     });
   }
   
+  return results;
