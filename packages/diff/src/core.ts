@@ -374,3 +374,4 @@ export function diffBlockTree(
   for (const [id, oldChild] of oldChildMap) {
     const newChild = newChildMap.get(id);
     if (newChild) {
+      diffBlockTree(oldChild, newChild, results, options);
