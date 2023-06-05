@@ -389,3 +389,4 @@ export function diffBlockTree(
   // 新增的子 Block
   for (const newChild of newChildMap.values()) {
     results.push({
+      ops: [{ type: DiffOpType.CREATE, newNode: newChild.root }],
