@@ -380,3 +380,4 @@ export function diffBlockTree(
       // 子 Block 被删除
       results.push({
         ops: [{ type: DiffOpType.REMOVE, oldNode: oldChild.root }],
+        changed: true,
