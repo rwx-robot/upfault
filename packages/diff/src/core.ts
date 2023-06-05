@@ -363,3 +363,4 @@ export function diffBlockTree(
   options: Partial<AeroDiffOptions> = {}
 ): DiffResult[] {
   // 当前 Block Diff
+  const result = blockDiff(oldBlock, newBlock, options);
