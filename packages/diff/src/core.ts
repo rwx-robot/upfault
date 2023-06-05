@@ -361,3 +361,4 @@ export function diffBlockTree(
   newBlock: BlockWithChildren,
   results: DiffResult[] = [],
   options: Partial<AeroDiffOptions> = {}
+): DiffResult[] {
