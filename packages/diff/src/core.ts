@@ -360,3 +360,4 @@ export function diffBlockTree(
   oldBlock: BlockWithChildren,
   newBlock: BlockWithChildren,
   results: DiffResult[] = [],
+  options: Partial<AeroDiffOptions> = {}
