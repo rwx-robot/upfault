@@ -366,3 +366,4 @@ export function diffBlockTree(
   const result = blockDiff(oldBlock, newBlock, options);
   results.push(result);
   
+  // 递归子 Block
