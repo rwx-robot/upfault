@@ -430,3 +430,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
         flags |= PatchFlags.STYLE;
       } else if (key === 'key') {
         // key 变化特殊处理
+      } else {
