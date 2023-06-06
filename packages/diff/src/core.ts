@@ -431,3 +431,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
       } else if (key === 'key') {
         // key 变化特殊处理
       } else {
+        flags |= PatchFlags.PROPS;
