@@ -413,3 +413,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
   let flags = PatchFlags.NONE;
   
   // Props 对比
+  const oldProps = oldVNode.props || {};
