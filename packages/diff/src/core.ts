@@ -428,3 +428,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
         flags |= PatchFlags.CLASS;
       } else if (key === 'style') {
         flags |= PatchFlags.STYLE;
+      } else if (key === 'key') {
