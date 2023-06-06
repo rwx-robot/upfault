@@ -436,3 +436,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
     }
   }
   
+  // Children 对比（简化）
