@@ -410,3 +410,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
     return PatchFlags.FULL_DIFF;
   }
   
+  let flags = PatchFlags.NONE;
