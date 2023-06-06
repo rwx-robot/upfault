@@ -408,3 +408,4 @@ export function diffBlockTree(
 export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
   if (oldVNode.type !== newVNode.type) {
     return PatchFlags.FULL_DIFF;
+  }
