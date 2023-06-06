@@ -404,3 +404,4 @@ export function diffBlockTree(
 
 /**
  * 计算两个 VNode 间的 PatchFlags
+ */
