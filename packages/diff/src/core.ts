@@ -433,3 +433,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
       } else {
         flags |= PatchFlags.PROPS;
       }
+    }
