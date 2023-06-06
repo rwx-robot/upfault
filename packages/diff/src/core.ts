@@ -420,3 +420,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
   for (const key of allKeys) {
     const oldVal = oldProps[key];
     const newVal = newProps[key];
+    
