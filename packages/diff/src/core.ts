@@ -405,3 +405,4 @@ export function diffBlockTree(
 /**
  * 计算两个 VNode 间的 PatchFlags
  */
+export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
