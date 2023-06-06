@@ -422,3 +422,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
     const newVal = newProps[key];
     
     if (oldVal !== newVal) {
+      if (key.startsWith('on')) {
