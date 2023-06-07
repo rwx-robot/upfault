@@ -449,3 +449,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
   }
   
   return flags || PatchFlags.NONE;
+}
