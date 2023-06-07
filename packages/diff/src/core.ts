@@ -456,3 +456,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
  */
 export function cloneWithPatchFlags(vnode: VNode, flags: number): VNode {
   return {
+    ...vnode,
