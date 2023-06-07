@@ -473,3 +473,4 @@ export type {
   VNode, 
   DiffOp, 
   DiffResult, 
+  DiffStats, 
