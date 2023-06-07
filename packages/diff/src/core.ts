@@ -459,3 +459,4 @@ export function cloneWithPatchFlags(vnode: VNode, flags: number): VNode {
     ...vnode,
     patchFlag: flags,
     dynamicProps: flags & PatchFlags.PROPS 
+      ? Object.keys(vnode.props || {}).filter(k => !(vnode.props![k] === (vnode as any).props?.[k]))
