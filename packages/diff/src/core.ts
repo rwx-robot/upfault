@@ -474,3 +474,4 @@ export type {
   DiffOp, 
   DiffResult, 
   DiffStats, 
+  DiffIndex, 
