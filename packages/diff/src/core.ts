@@ -469,3 +469,4 @@ export function cloneWithPatchFlags(vnode: VNode, flags: number): VNode {
 // ============================================================================
 
 export { DiffOpType, PatchFlags, VNodeType } from '@upfault/shared';
+export type { 
