@@ -443,3 +443,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
       const hasKeyed = oldVNode.children.some((c: any) => c.key != null) ||
                        newVNode.children.some((c: any) => c.key != null);
       flags |= hasKeyed ? PatchFlags.KEYED_FRAGMENT : PatchFlags.UNKEYED_FRAGMENT;
+    } else {
