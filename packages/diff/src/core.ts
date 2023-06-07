@@ -458,3 +458,4 @@ export function cloneWithPatchFlags(vnode: VNode, flags: number): VNode {
   return {
     ...vnode,
     patchFlag: flags,
+    dynamicProps: flags & PatchFlags.PROPS 
