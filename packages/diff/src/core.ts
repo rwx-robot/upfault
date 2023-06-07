@@ -472,3 +472,4 @@ export { DiffOpType, PatchFlags, VNodeType } from '@upfault/shared';
 export type { 
   VNode, 
   DiffOp, 
+  DiffResult, 
