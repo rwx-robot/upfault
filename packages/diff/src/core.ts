@@ -454,3 +454,4 @@ export function computePatchFlags(oldVNode: VNode, newVNode: VNode): number {
 /**
  * 生成带 PatchFlags 的 VNode（用于编译时优化）
  */
+export function cloneWithPatchFlags(vnode: VNode, flags: number): VNode {
