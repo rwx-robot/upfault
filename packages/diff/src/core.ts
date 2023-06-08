@@ -476,3 +476,4 @@ export type {
   DiffStats, 
   DiffIndex, 
   AeroDiffOptions,
+  Block 
