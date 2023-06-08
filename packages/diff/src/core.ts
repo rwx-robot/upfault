@@ -477,3 +477,4 @@ export type {
   DiffIndex, 
   AeroDiffOptions,
   Block 
+} from '@upfault/shared';
