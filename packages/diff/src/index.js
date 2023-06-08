@@ -11,3 +11,4 @@ aeroDiff,
 blockDiff, diffBlockTree, 
 // Patch Flags
 computePatchFlags, cloneWithPatchFlags, 
+// Types (re-export from shared)
