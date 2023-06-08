@@ -8,3 +8,4 @@ export {
 // Core Diff
 aeroDiff, 
 // Block Diff
+blockDiff, diffBlockTree, 
