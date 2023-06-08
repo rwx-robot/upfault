@@ -9,3 +9,4 @@ export {
 aeroDiff, 
 // Block Diff
 blockDiff, diffBlockTree, 
+// Patch Flags
