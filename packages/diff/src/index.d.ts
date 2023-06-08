@@ -5,3 +5,4 @@
  * 版本: 0.2.0
  */
 export { aeroDiff, blockDiff, diffBlockTree, computePatchFlags, cloneWithPatchFlags, DiffOpType, PatchFlags, VNodeType, } from './core';
+export type { VNode, DiffOp, DiffResult, DiffStats, DiffIndex, AeroDiffOptions, Block } from '@upfault/shared';
