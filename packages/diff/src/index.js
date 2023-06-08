@@ -14,3 +14,4 @@ computePatchFlags, cloneWithPatchFlags,
 // Types (re-export from shared)
 DiffOpType, PatchFlags, VNodeType, } from './core';
 // 版本信息
+export const VERSION = '0.2.0';
