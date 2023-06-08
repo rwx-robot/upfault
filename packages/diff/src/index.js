@@ -12,3 +12,4 @@ blockDiff, diffBlockTree,
 // Patch Flags
 computePatchFlags, cloneWithPatchFlags, 
 // Types (re-export from shared)
+DiffOpType, PatchFlags, VNodeType, } from './core';
