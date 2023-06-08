@@ -10,3 +10,4 @@ aeroDiff,
 // Block Diff
 blockDiff, diffBlockTree, 
 // Patch Flags
+computePatchFlags, cloneWithPatchFlags, 
