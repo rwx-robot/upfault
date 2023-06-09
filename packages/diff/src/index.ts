@@ -20,3 +20,4 @@ export {
   // Types (re-export from shared)
   DiffOpType,
   PatchFlags,
+  VNodeType,
