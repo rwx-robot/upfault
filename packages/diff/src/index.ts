@@ -11,3 +11,4 @@ export {
   
   // Block Diff
   blockDiff,
+  diffBlockTree,
