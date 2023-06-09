@@ -21,3 +21,4 @@ export {
   DiffOpType,
   PatchFlags,
   VNodeType,
+} from './core';
