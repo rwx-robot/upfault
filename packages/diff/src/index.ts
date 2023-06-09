@@ -17,3 +17,4 @@ export {
   computePatchFlags,
   cloneWithPatchFlags,
   
+  // Types (re-export from shared)
