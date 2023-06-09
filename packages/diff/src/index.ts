@@ -14,3 +14,4 @@ export {
   diffBlockTree,
   
   // Patch Flags
+  computePatchFlags,
