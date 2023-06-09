@@ -23,3 +23,4 @@ export {
   VNodeType,
 } from './core';
 
+// Re-export types
