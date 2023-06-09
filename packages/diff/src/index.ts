@@ -18,3 +18,4 @@ export {
   cloneWithPatchFlags,
   
   // Types (re-export from shared)
+  DiffOpType,
