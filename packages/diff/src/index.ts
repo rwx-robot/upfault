@@ -24,3 +24,4 @@ export {
 } from './core';
 
 // Re-export types
+export type { 
