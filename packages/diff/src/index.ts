@@ -27,3 +27,4 @@ export {
 export type { 
   VNode, 
   DiffOp, 
+  DiffResult, 
