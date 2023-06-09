@@ -10,3 +10,4 @@ export {
   aeroDiff,
   
   // Block Diff
+  blockDiff,
