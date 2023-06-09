@@ -26,3 +26,4 @@ export {
 // Re-export types
 export type { 
   VNode, 
+  DiffOp, 
