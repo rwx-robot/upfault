@@ -3,3 +3,4 @@
   "version": "0.2.0",
   "description": "UpFault 细粒度响应式系统",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
