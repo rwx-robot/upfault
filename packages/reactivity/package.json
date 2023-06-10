@@ -1,3 +1,4 @@
 {
   "name": "@upfault/reactivity",
   "version": "0.2.0",
+  "description": "UpFault 细粒度响应式系统",
