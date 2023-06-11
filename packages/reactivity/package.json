@@ -11,3 +11,4 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     }
+  },
