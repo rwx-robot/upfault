@@ -5,3 +5,4 @@
  */
 import type { ComputedRef, ComputedGetter, ComputedSetter } from '@upfault/shared';
 interface ComputedOptions<T> {
+    get: ComputedGetter<T>;
