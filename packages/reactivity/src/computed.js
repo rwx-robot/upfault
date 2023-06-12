@@ -26,3 +26,4 @@ export function computed(getterOrOptions) {
         scheduler: () => {
             if (!dirty) {
                 dirty = true;
+                trigger(dep);
