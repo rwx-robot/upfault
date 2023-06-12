@@ -24,3 +24,4 @@ export function computed(getterOrOptions) {
     }, {
         lazy: true,
         scheduler: () => {
+            if (!dirty) {
