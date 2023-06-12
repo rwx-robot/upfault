@@ -5,3 +5,4 @@
  */
 import { track, trigger, createDep, createEffect, runEffectSync } from './dep';
 export function computed(getterOrOptions) {
+    let getter;
