@@ -23,3 +23,4 @@ export function computed(getterOrOptions) {
         trigger(dep);
     }, {
         lazy: true,
+        scheduler: () => {
