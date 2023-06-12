@@ -22,3 +22,4 @@ export function computed(getterOrOptions) {
         dirty = false;
         trigger(dep);
     }, {
+        lazy: true,
