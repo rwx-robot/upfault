@@ -20,3 +20,4 @@ export function computed(getterOrOptions) {
     const effect = createEffect(() => {
         value = getter();
         dirty = false;
+        trigger(dep);
