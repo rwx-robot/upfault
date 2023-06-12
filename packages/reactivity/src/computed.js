@@ -32,3 +32,4 @@ export function computed(getterOrOptions) {
     });
     const computedRef = {
         get value() {
+            if (dirty) {
