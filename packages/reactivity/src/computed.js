@@ -21,3 +21,4 @@ export function computed(getterOrOptions) {
         value = getter();
         dirty = false;
         trigger(dep);
+    }, {
