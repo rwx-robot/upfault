@@ -13,3 +13,4 @@ export function computed(getterOrOptions) {
     else {
         getter = getterOrOptions.get;
         setter = getterOrOptions.set;
+    }
