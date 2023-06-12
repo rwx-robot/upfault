@@ -11,3 +11,4 @@ interface ComputedOptions<T> {
 /**
  * 创建计算属性
  */
+export declare function computed<T>(getter: ComputedGetter<T>): ComputedRef<T>;
