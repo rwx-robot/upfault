@@ -14,3 +14,4 @@ export function computed(getterOrOptions) {
         getter = getterOrOptions.get;
         setter = getterOrOptions.set;
     }
+    const dep = createDep();
