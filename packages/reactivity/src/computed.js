@@ -27,3 +27,4 @@ export function computed(getterOrOptions) {
             if (!dirty) {
                 dirty = true;
                 trigger(dep);
+            }
