@@ -13,3 +13,4 @@ interface ComputedOptions<T> {
  */
 export declare function computed<T>(getter: ComputedGetter<T>): ComputedRef<T>;
 export declare function computed<T>(options: ComputedOptions<T>): ComputedRef<T>;
+export {};
