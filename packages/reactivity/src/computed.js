@@ -16,3 +16,4 @@ export function computed(getterOrOptions) {
     }
     const dep = createDep();
     let value;
+    let dirty = true;
