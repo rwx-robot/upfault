@@ -9,3 +9,4 @@ export function computed(getterOrOptions) {
     let setter;
     if (typeof getterOrOptions === 'function') {
         getter = getterOrOptions;
+    }
