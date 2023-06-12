@@ -10,3 +10,4 @@ export function computed(getterOrOptions) {
     if (typeof getterOrOptions === 'function') {
         getter = getterOrOptions;
     }
+    else {
