@@ -29,3 +29,4 @@ export function computed(getterOrOptions) {
                 trigger(dep);
             }
         },
+    });
