@@ -28,3 +28,4 @@ export function computed(getterOrOptions) {
                 dirty = true;
                 trigger(dep);
             }
+        },
