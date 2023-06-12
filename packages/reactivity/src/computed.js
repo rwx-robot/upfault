@@ -7,3 +7,4 @@ import { track, trigger, createDep, createEffect, runEffectSync } from './dep';
 export function computed(getterOrOptions) {
     let getter;
     let setter;
+    if (typeof getterOrOptions === 'function') {
