@@ -11,3 +11,4 @@ export function computed(getterOrOptions) {
         getter = getterOrOptions;
     }
     else {
+        getter = getterOrOptions.get;
