@@ -43,3 +43,4 @@ export function computed(getterOrOptions) {
                 setter(newValue);
             }
             else {
+                console.warn('[UpFault] Computed property is readonly');
