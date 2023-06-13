@@ -9,3 +9,4 @@ import { track, trigger, createDep, createEffect, runEffectSync } from './dep';
 import type { ComputedRef, ComputedGetter, ComputedSetter } from '@upfault/shared';
 
 interface ComputedOptions<T> {
+  get: ComputedGetter<T>;
