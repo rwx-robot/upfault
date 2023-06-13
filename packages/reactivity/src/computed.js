@@ -39,3 +39,4 @@ export function computed(getterOrOptions) {
             return value;
         },
         set value(newValue) {
+            if (setter) {
