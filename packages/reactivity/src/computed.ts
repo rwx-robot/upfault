@@ -19,3 +19,4 @@ interface ComputedOptions<T> {
 export function computed<T>(getter: ComputedGetter<T>): ComputedRef<T>;
 export function computed<T>(options: ComputedOptions<T>): ComputedRef<T>;
 export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions<T>): ComputedRef<T> {
+  let getter: ComputedGetter<T>;
