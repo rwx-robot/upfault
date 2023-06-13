@@ -40,3 +40,4 @@ export function computed(getterOrOptions) {
         },
         set value(newValue) {
             if (setter) {
+                setter(newValue);
