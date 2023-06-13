@@ -38,3 +38,4 @@ export function computed(getterOrOptions) {
             track(dep);
             return value;
         },
+        set value(newValue) {
