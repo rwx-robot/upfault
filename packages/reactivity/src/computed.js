@@ -51,3 +51,4 @@ export function computed(getterOrOptions) {
         __v_isReadonly: !setter,
         effect,
     };
+    return computedRef;
