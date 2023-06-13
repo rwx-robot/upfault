@@ -36,3 +36,4 @@ export function computed(getterOrOptions) {
                 runEffectSync(effect);
             }
             track(dep);
+            return value;
