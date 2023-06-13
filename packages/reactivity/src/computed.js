@@ -52,3 +52,4 @@ export function computed(getterOrOptions) {
         effect,
     };
     return computedRef;
+}
