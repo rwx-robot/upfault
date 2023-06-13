@@ -50,3 +50,4 @@ export function computed(getterOrOptions) {
         __v_isComputed: true,
         __v_isReadonly: !setter,
         effect,
+    };
