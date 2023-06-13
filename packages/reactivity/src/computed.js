@@ -35,3 +35,4 @@ export function computed(getterOrOptions) {
             if (dirty) {
                 runEffectSync(effect);
             }
+            track(dep);
