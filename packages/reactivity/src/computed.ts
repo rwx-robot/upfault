@@ -11,3 +11,4 @@ import type { ComputedRef, ComputedGetter, ComputedSetter } from '@upfault/share
 interface ComputedOptions<T> {
   get: ComputedGetter<T>;
   set?: ComputedSetter<T>;
+}
