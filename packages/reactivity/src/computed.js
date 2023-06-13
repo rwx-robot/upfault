@@ -34,3 +34,4 @@ export function computed(getterOrOptions) {
         get value() {
             if (dirty) {
                 runEffectSync(effect);
+            }
