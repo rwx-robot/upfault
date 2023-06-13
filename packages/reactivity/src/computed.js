@@ -42,3 +42,4 @@ export function computed(getterOrOptions) {
             if (setter) {
                 setter(newValue);
             }
+            else {
