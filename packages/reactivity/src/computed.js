@@ -47,3 +47,4 @@ export function computed(getterOrOptions) {
             }
         },
         __v_isRef: true,
+        __v_isComputed: true,
