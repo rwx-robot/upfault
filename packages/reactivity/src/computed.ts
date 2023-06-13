@@ -12,3 +12,5 @@ interface ComputedOptions<T> {
   get: ComputedGetter<T>;
   set?: ComputedSetter<T>;
 }
+
+/**
