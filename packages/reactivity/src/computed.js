@@ -46,3 +46,4 @@ export function computed(getterOrOptions) {
                 console.warn('[UpFault] Computed property is readonly');
             }
         },
+        __v_isRef: true,
