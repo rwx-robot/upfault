@@ -35,3 +35,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
   
   const effect = createEffect(() => {
     value = getter();
+    dirty = false;
