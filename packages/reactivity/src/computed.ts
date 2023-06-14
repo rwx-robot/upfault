@@ -29,3 +29,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
     setter = getterOrOptions.set;
   }
   
+  const dep = createDep();
