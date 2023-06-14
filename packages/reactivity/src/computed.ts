@@ -25,3 +25,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
   if (typeof getterOrOptions === 'function') {
     getter = getterOrOptions;
   } else {
+    getter = getterOrOptions.get;
