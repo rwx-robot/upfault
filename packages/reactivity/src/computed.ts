@@ -51,3 +51,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
     get value(): T {
       if (dirty) {
         runEffectSync(effect);
+      }
