@@ -23,3 +23,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
   let setter: ComputedSetter<T> | undefined;
   
   if (typeof getterOrOptions === 'function') {
+    getter = getterOrOptions;
