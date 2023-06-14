@@ -57,3 +57,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
     },
     set value(newValue: T) {
       if (setter) {
+        setter(newValue);
