@@ -43,3 +43,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
       if (!dirty) {
         dirty = true;
         trigger(dep);
+      }
