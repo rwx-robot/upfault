@@ -53,3 +53,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
         runEffectSync(effect);
       }
       track(dep);
+      return value;
