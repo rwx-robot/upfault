@@ -39,3 +39,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
     trigger(dep);
   }, {
     lazy: true,
+    scheduler: () => {
