@@ -40,3 +40,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
   }, {
     lazy: true,
     scheduler: () => {
+      if (!dirty) {
