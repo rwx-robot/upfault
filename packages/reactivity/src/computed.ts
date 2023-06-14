@@ -55,3 +55,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
       track(dep);
       return value;
     },
+    set value(newValue: T) {
