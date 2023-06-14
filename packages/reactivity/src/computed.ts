@@ -27,3 +27,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
   } else {
     getter = getterOrOptions.get;
     setter = getterOrOptions.set;
+  }
