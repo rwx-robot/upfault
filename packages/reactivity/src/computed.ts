@@ -52,3 +52,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
       if (dirty) {
         runEffectSync(effect);
       }
+      track(dep);
