@@ -37,3 +37,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
     value = getter();
     dirty = false;
     trigger(dep);
+  }, {
