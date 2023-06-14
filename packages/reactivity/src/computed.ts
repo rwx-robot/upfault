@@ -38,3 +38,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
     dirty = false;
     trigger(dep);
   }, {
+    lazy: true,
