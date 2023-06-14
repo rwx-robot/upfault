@@ -48,3 +48,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
   });
   
   const computedRef = {
+    get value(): T {
