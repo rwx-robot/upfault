@@ -42,3 +42,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
     scheduler: () => {
       if (!dirty) {
         dirty = true;
+        trigger(dep);
