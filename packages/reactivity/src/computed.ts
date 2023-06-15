@@ -69,3 +69,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
   };
   
   return computedRef as ComputedRef<T>;
+}
