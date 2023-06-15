@@ -6,3 +6,4 @@
 import type { Effect, Ref, ComputedRef } from '@upfault/shared';
 /**
  * 创建响应式 effect
+ * @param fn effect 函数
