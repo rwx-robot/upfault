@@ -61,3 +61,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
       } else {
         console.warn('[UpFault] Computed property is readonly');
       }
+    },
