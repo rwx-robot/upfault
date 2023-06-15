@@ -25,3 +25,4 @@ export declare function effect(fn: () => void, options?: {
  */
 export declare function watchEffect(fn: () => void, options?: {
     flush?: 'pre' | 'post' | 'sync';
+    onTrack?: (event: any) => void;
