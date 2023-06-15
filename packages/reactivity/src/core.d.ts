@@ -15,3 +15,4 @@ export declare function effect(fn: () => void, options?: {
     scheduler?: (fn: () => void) => void;
     onTrack?: (event: any) => void;
     onTrigger?: (event: any) => void;
+    allowRecurse?: boolean;
