@@ -23,3 +23,4 @@ export declare function effect(fn: () => void, options?: {
 /**
  * 创建 watchEffect
  */
+export declare function watchEffect(fn: () => void, options?: {
