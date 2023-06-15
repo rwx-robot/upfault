@@ -14,3 +14,4 @@ export declare function effect(fn: () => void, options?: {
     lazy?: boolean;
     scheduler?: (fn: () => void) => void;
     onTrack?: (event: any) => void;
+    onTrigger?: (event: any) => void;
