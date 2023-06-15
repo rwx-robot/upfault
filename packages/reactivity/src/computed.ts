@@ -65,3 +65,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
     __v_isRef: true,
     __v_isComputed: true,
     __v_isReadonly: !setter,
+    effect,
