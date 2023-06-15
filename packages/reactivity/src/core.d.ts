@@ -11,3 +11,4 @@ import type { Effect, Ref, ComputedRef } from '@upfault/shared';
  * @returns runner 函数（带有 stop 方法）
  */
 export declare function effect(fn: () => void, options?: {
+    lazy?: boolean;
