@@ -8,3 +8,4 @@ import type { Effect, Ref, ComputedRef } from '@upfault/shared';
  * 创建响应式 effect
  * @param fn effect 函数
  * @param options 配置选项
+ * @returns runner 函数（带有 stop 方法）
