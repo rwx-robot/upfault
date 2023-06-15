@@ -9,3 +9,4 @@ import type { Effect, Ref, ComputedRef } from '@upfault/shared';
  * @param fn effect 函数
  * @param options 配置选项
  * @returns runner 函数（带有 stop 方法）
+ */
