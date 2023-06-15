@@ -16,3 +16,4 @@ export declare function effect(fn: () => void, options?: {
     onTrack?: (event: any) => void;
     onTrigger?: (event: any) => void;
     allowRecurse?: boolean;
+}): (() => void) & {
