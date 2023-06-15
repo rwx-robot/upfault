@@ -10,3 +10,4 @@ import type { Effect, Ref, ComputedRef } from '@upfault/shared';
  * @param options 配置选项
  * @returns runner 函数（带有 stop 方法）
  */
+export declare function effect(fn: () => void, options?: {
