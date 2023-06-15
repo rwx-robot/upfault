@@ -20,3 +20,4 @@ export declare function effect(fn: () => void, options?: {
     stop: () => void;
     effect: Effect;
 };
+/**
