@@ -18,3 +18,4 @@ export declare function effect(fn: () => void, options?: {
     allowRecurse?: boolean;
 }): (() => void) & {
     stop: () => void;
+    effect: Effect;
