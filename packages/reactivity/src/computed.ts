@@ -60,3 +60,4 @@ export function computed<T>(getterOrOptions: ComputedGetter<T> | ComputedOptions
         setter(newValue);
       } else {
         console.warn('[UpFault] Computed property is readonly');
+      }
