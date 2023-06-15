@@ -13,3 +13,4 @@ import type { Effect, Ref, ComputedRef } from '@upfault/shared';
 export declare function effect(fn: () => void, options?: {
     lazy?: boolean;
     scheduler?: (fn: () => void) => void;
+    onTrack?: (event: any) => void;
