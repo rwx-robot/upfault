@@ -3,3 +3,4 @@
  *
  * 副作用管理：effect、watchEffect、watch、computed 的基础实现
  */
+import { createEffect, stopEffect, track, trigger, createDep, runEffect, runEffectSync, hasChanged, } from './dep';
