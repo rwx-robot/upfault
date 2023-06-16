@@ -40,3 +40,4 @@ export declare function ref<T>(value: T): Ref<T>;
  * 创建 computed
  */
 export declare function computed<T>(getter: () => T): ComputedRef<T>;
+export { track, trigger, createDep, stopEffect, pauseEffect, resumeEffect, getCurrentEffect, pushEffect, popEffect, runEffect, runEffectSync, createEffect, isRef, isFunction, isArray, hasChanged, unref, toRef, toRefs, shallowRef, readonlyRef, } from './dep';
