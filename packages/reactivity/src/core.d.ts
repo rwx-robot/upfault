@@ -29,3 +29,4 @@ export declare function watchEffect(fn: () => void, options?: {
     onTrigger?: (event: any) => void;
 }): () => void;
 /**
+ * 批量执行
