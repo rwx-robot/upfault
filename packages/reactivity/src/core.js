@@ -14,3 +14,4 @@ const MAX_EFFECT_STACK_DEPTH = 100;
  * @param options 配置选项
  * @returns runner 函数（带有 stop 方法）
  */
+export function effect(fn, options) {
