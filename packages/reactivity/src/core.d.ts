@@ -32,3 +32,4 @@ export declare function watchEffect(fn: () => void, options?: {
  * 批量执行
  */
 export declare function batch(fn: () => void): void;
+/**
