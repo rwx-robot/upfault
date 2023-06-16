@@ -16,3 +16,4 @@ const MAX_EFFECT_STACK_DEPTH = 100;
  */
 export function effect(fn, options) {
     const effect = createEffect(fn, options);
+    // For lazy effects, return a runner that triggers when called
