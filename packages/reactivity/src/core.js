@@ -20,3 +20,4 @@ export function effect(fn, options) {
     // For non-lazy effects, return a stop function
     const isLazy = options?.lazy === true;
     let runner;
+    if (isLazy) {
