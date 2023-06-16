@@ -9,3 +9,4 @@ import { createEffect, stopEffect, track, trigger, createDep, runEffect, runEffe
  */
 const MAX_EFFECT_STACK_DEPTH = 100;
 /**
+ * 创建响应式 effect
