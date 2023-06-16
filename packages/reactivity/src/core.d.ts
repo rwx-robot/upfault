@@ -28,3 +28,4 @@ export declare function watchEffect(fn: () => void, options?: {
     onTrack?: (event: any) => void;
     onTrigger?: (event: any) => void;
 }): () => void;
+/**
