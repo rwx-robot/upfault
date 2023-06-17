@@ -29,3 +29,4 @@ export function effect(fn, options) {
         // Non-lazy: return a stop function
         const stopFn = (() => stopEffect(effect));
         stopFn.stop = stopFn;
+        stopFn.effect = effect;
