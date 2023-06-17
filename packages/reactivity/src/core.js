@@ -24,3 +24,4 @@ export function effect(fn, options) {
         runner = effect.fn.bind(effect);
         runner.effect = effect;
         runner.stop = () => stopEffect(effect);
+    }
