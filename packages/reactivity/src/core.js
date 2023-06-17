@@ -23,3 +23,4 @@ export function effect(fn, options) {
     if (isLazy) {
         runner = effect.fn.bind(effect);
         runner.effect = effect;
+        runner.stop = () => stopEffect(effect);
