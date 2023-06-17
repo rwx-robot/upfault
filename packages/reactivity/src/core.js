@@ -35,3 +35,4 @@ export function effect(fn, options) {
         runEffect(effect);
     }
     return runner;
+}
