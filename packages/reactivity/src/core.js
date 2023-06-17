@@ -21,3 +21,4 @@ export function effect(fn, options) {
     const isLazy = options?.lazy === true;
     let runner;
     if (isLazy) {
+        runner = effect.fn.bind(effect);
