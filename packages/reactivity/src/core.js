@@ -55,3 +55,4 @@ export function batch(fn) {
 export function ref(value) {
     const dep = createDep();
     const r = {
+        get value() {
