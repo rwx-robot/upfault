@@ -61,3 +61,4 @@ export function ref(value) {
         },
         set value(newValue) {
             if (hasChanged(value, newValue)) {
+                value = newValue;
