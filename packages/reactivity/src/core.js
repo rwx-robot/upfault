@@ -36,3 +36,4 @@ export function effect(fn, options) {
     }
     return runner;
 }
+/**
