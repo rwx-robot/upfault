@@ -63,3 +63,4 @@ export function ref(value) {
             if (hasChanged(value, newValue)) {
                 value = newValue;
                 trigger(dep);
+            }
