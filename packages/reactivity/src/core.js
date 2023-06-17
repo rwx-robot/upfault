@@ -39,3 +39,4 @@ export function effect(fn, options) {
 /**
  * 创建 watchEffect
  */
+export function watchEffect(fn, options) {
