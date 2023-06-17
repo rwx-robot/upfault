@@ -56,3 +56,4 @@ export function ref(value) {
     const dep = createDep();
     const r = {
         get value() {
+            track(dep);
