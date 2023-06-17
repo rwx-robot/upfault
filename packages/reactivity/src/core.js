@@ -26,3 +26,4 @@ export function effect(fn, options) {
         runner.stop = () => stopEffect(effect);
     }
     else {
+        // Non-lazy: return a stop function
