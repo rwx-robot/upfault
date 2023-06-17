@@ -34,3 +34,4 @@ export function effect(fn, options) {
         // Run immediately for non-lazy
         runEffect(effect);
     }
+    return runner;
