@@ -47,3 +47,4 @@ export function watchEffect(fn, options) {
  * 批量执行
  */
 export function batch(fn) {
+    fn();
