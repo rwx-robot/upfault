@@ -30,3 +30,4 @@ export function effect(fn, options) {
         const stopFn = (() => stopEffect(effect));
         stopFn.stop = stopFn;
         stopFn.effect = effect;
+        runner = stopFn;
