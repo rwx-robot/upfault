@@ -25,3 +25,4 @@ export function effect(fn, options) {
         runner.effect = effect;
         runner.stop = () => stopEffect(effect);
     }
+    else {
