@@ -22,3 +22,4 @@ export function effect(fn, options) {
     let runner;
     if (isLazy) {
         runner = effect.fn.bind(effect);
+        runner.effect = effect;
