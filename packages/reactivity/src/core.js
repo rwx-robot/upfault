@@ -52,3 +52,4 @@ export function batch(fn) {
 /**
  * 创建 ref
  */
+export function ref(value) {
