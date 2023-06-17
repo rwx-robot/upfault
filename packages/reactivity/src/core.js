@@ -31,3 +31,4 @@ export function effect(fn, options) {
         stopFn.stop = stopFn;
         stopFn.effect = effect;
         runner = stopFn;
+        // Run immediately for non-lazy
