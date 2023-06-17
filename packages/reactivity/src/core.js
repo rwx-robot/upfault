@@ -49,3 +49,4 @@ export function watchEffect(fn, options) {
 export function batch(fn) {
     fn();
 }
+/**
