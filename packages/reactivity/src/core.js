@@ -27,3 +27,4 @@ export function effect(fn, options) {
     }
     else {
         // Non-lazy: return a stop function
+        const stopFn = (() => stopEffect(effect));
