@@ -85,3 +85,4 @@ export function computed(getter) {
         scheduler: () => {
             if (!dirty) {
                 dirty = true;
+                trigger(dep);
