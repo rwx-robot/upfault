@@ -79,3 +79,4 @@ export function computed(getter) {
     const effect = createEffect(() => {
         value = getter();
         dirty = false;
+        trigger(dep);
