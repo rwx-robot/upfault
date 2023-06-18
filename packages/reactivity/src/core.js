@@ -81,3 +81,4 @@ export function computed(getter) {
         dirty = false;
         trigger(dep);
     }, {
+        lazy: true,
