@@ -76,3 +76,4 @@ export function computed(getter) {
     const dep = createDep();
     let value;
     let dirty = true;
+    const effect = createEffect(() => {
