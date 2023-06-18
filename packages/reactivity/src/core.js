@@ -92,3 +92,4 @@ export function computed(getter) {
     const computedRef = {
         get value() {
             if (dirty) {
+                runEffectSync(effect);
