@@ -84,3 +84,4 @@ export function computed(getter) {
         lazy: true,
         scheduler: () => {
             if (!dirty) {
+                dirty = true;
