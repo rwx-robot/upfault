@@ -96,3 +96,4 @@ export function computed(getter) {
             }
             track(dep);
             return value;
+        },
