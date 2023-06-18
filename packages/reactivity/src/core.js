@@ -93,3 +93,4 @@ export function computed(getter) {
         get value() {
             if (dirty) {
                 runEffectSync(effect);
+            }
