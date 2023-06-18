@@ -74,3 +74,4 @@ export function ref(value) {
  */
 export function computed(getter) {
     const dep = createDep();
+    let value;
