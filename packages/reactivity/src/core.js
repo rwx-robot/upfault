@@ -73,3 +73,4 @@ export function ref(value) {
  * 创建 computed
  */
 export function computed(getter) {
+    const dep = createDep();
