@@ -99,3 +99,4 @@ export function computed(getter) {
         },
         set value(_) {
             console.warn('[UpFault] Computed ref is readonly');
+        },
