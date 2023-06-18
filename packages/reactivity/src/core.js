@@ -65,3 +65,4 @@ export function ref(value) {
                 trigger(dep);
             }
         },
+        __v_isRef: true,
