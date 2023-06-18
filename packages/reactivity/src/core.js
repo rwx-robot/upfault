@@ -88,3 +88,4 @@ export function computed(getter) {
                 trigger(dep);
             }
         },
+    });
