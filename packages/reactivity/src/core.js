@@ -86,3 +86,4 @@ export function computed(getter) {
             if (!dirty) {
                 dirty = true;
                 trigger(dep);
+            }
