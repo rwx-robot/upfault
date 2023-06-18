@@ -103,3 +103,4 @@ export function computed(getter) {
         __v_isRef: true,
         __v_isComputed: true,
         effect,
+    };
