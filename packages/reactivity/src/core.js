@@ -94,3 +94,4 @@ export function computed(getter) {
             if (dirty) {
                 runEffectSync(effect);
             }
+            track(dep);
