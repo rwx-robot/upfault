@@ -90,3 +90,4 @@ export function computed(getter) {
         },
     });
     const computedRef = {
+        get value() {
