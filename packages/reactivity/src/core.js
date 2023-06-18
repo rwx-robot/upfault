@@ -87,3 +87,4 @@ export function computed(getter) {
                 dirty = true;
                 trigger(dep);
             }
+        },
