@@ -80,3 +80,4 @@ export function computed(getter) {
         value = getter();
         dirty = false;
         trigger(dep);
+    }, {
