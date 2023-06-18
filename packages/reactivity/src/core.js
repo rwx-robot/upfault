@@ -82,3 +82,4 @@ export function computed(getter) {
         trigger(dep);
     }, {
         lazy: true,
+        scheduler: () => {
