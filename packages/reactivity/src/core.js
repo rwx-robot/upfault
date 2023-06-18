@@ -77,3 +77,4 @@ export function computed(getter) {
     let value;
     let dirty = true;
     const effect = createEffect(() => {
+        value = getter();
