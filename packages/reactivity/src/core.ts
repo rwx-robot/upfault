@@ -34,3 +34,4 @@ import type {
   ComputedRef, 
   WatchOptions, 
   WatchCallback, 
+  WatchSource, 
