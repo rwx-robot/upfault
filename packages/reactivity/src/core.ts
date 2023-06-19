@@ -19,3 +19,4 @@ import {
   runEffectSync,
   isRef,
   isFunction,
+  isArray,
