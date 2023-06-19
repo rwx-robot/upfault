@@ -7,3 +7,4 @@
 import { 
   createEffect, 
   stopEffect, 
+  pauseEffect, 
