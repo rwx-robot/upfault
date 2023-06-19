@@ -32,3 +32,4 @@ import type {
   Effect, 
   Ref, 
   ComputedRef, 
+  WatchOptions, 
