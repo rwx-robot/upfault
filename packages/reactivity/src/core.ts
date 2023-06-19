@@ -13,3 +13,4 @@ import {
   pushEffect,
   popEffect,
   track,
+  trigger,
