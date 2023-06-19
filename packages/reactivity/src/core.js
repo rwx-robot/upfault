@@ -106,3 +106,4 @@ export function computed(getter) {
     };
     return computedRef;
 }
+// Re-export from dep.ts (only what's not defined locally)
