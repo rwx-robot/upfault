@@ -25,3 +25,4 @@ import {
   toRef,
   toRefs,
   shallowRef,
+  readonlyRef,
