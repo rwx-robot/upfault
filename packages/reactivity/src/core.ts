@@ -10,3 +10,4 @@ import {
   pauseEffect, 
   resumeEffect,
   getCurrentEffect,
+  pushEffect,
