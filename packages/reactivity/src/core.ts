@@ -33,3 +33,4 @@ import type {
   Ref, 
   ComputedRef, 
   WatchOptions, 
+  WatchCallback, 
