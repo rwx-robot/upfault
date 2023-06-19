@@ -9,3 +9,4 @@ import {
   stopEffect, 
   pauseEffect, 
   resumeEffect,
+  getCurrentEffect,
