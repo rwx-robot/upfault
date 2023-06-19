@@ -18,3 +18,4 @@ import {
   runEffect,
   runEffectSync,
   isRef,
+  isFunction,
