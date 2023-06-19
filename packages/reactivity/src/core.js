@@ -107,3 +107,4 @@ export function computed(getter) {
     return computedRef;
 }
 // Re-export from dep.ts (only what's not defined locally)
+export { track, trigger, createDep, stopEffect, pauseEffect, resumeEffect, getCurrentEffect, pushEffect, popEffect, runEffect, runEffectSync, createEffect, isRef, isFunction, isArray, hasChanged, unref, toRef, toRefs, shallowRef, readonlyRef, } from './dep';
