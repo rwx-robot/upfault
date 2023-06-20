@@ -74,3 +74,4 @@ export function effect(fn: () => void, options?: {
   } else {
     // Non-lazy: return a stop function
     const stopFn = (() => stopEffect(effect)) as (() => void) & { stop: () => void; effect: Effect };
+    stopFn.stop = stopFn;
