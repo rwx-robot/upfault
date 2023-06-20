@@ -53,3 +53,4 @@ const MAX_EFFECT_STACK_DEPTH = 100;
  * @returns runner 函数（带有 stop 方法）
  */
 export function effect(fn: () => void, options?: {
+  lazy?: boolean;
