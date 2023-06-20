@@ -63,3 +63,4 @@ export function effect(fn: () => void, options?: {
   
   // For lazy effects, return a runner that triggers when called
   // For non-lazy effects, return a stop function
+  const isLazy = options?.lazy === true;
