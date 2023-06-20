@@ -49,3 +49,4 @@ const MAX_EFFECT_STACK_DEPTH = 100;
 /**
  * 创建响应式 effect
  * @param fn effect 函数
+ * @param options 配置选项
