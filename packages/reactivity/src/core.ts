@@ -37,3 +37,4 @@ import type {
   WatchSource, 
   WatchStopHandle,
   DebuggerEvent,
+  TrackOpTypes,
