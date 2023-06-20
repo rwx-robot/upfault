@@ -59,3 +59,4 @@ export function effect(fn: () => void, options?: {
   onTrigger?: (event: any) => void;
   allowRecurse?: boolean;
 }): (() => void) & { stop: () => void; effect: Effect } {
+  const effect = createEffect(fn, options);
