@@ -71,3 +71,4 @@ export function effect(fn: () => void, options?: {
     runner = effect.fn.bind(effect) as (() => void) & { stop: () => void; effect: Effect };
     runner.effect = effect;
     runner.stop = () => stopEffect(effect);
+  } else {
