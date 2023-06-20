@@ -39,3 +39,4 @@ import type {
   DebuggerEvent,
   TrackOpTypes,
   TriggerOpTypes
+} from '@upfault/shared';
