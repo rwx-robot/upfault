@@ -61,3 +61,4 @@ export function effect(fn: () => void, options?: {
 }): (() => void) & { stop: () => void; effect: Effect } {
   const effect = createEffect(fn, options);
   
+  // For lazy effects, return a runner that triggers when called
