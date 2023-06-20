@@ -42,3 +42,4 @@ import type {
 } from '@upfault/shared';
 
 /**
+ * Effect 栈深度限制
