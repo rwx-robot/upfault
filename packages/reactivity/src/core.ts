@@ -72,3 +72,4 @@ export function effect(fn: () => void, options?: {
     runner.effect = effect;
     runner.stop = () => stopEffect(effect);
   } else {
+    // Non-lazy: return a stop function
