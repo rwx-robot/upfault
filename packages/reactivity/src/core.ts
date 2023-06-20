@@ -44,3 +44,4 @@ import type {
 /**
  * Effect 栈深度限制
  */
+const MAX_EFFECT_STACK_DEPTH = 100;
