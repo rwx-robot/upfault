@@ -60,3 +60,4 @@ export function effect(fn: () => void, options?: {
   allowRecurse?: boolean;
 }): (() => void) & { stop: () => void; effect: Effect } {
   const effect = createEffect(fn, options);
+  
