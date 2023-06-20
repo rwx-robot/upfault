@@ -54,3 +54,4 @@ const MAX_EFFECT_STACK_DEPTH = 100;
  */
 export function effect(fn: () => void, options?: {
   lazy?: boolean;
+  scheduler?: (fn: () => void) => void;
