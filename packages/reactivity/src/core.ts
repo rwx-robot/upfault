@@ -66,3 +66,4 @@ export function effect(fn: () => void, options?: {
   const isLazy = options?.lazy === true;
   
   let runner: (() => void) & { stop: () => void; effect: Effect };
+  
