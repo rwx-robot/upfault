@@ -103,3 +103,4 @@ export function batch(fn: () => void): void {
   fn();
 }
 
+/**
