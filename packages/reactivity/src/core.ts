@@ -92,3 +92,4 @@ export function watchEffect(fn: () => void, options?: {
   onTrack?: (event: any) => void;
   onTrigger?: (event: any) => void;
 }): () => void {
+  const runner = effect(fn, { lazy: false, ...options });
