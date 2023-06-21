@@ -115,3 +115,4 @@ export function ref<T>(value: T): Ref<T> {
       return value;
     },
     set value(newValue: T) {
+      if (hasChanged(value, newValue)) {
