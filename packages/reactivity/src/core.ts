@@ -93,3 +93,4 @@ export function watchEffect(fn: () => void, options?: {
   onTrigger?: (event: any) => void;
 }): () => void {
   const runner = effect(fn, { lazy: false, ...options });
+  return runner.stop;
