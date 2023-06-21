@@ -88,3 +88,4 @@ export function effect(fn: () => void, options?: {
  * 创建 watchEffect
  */
 export function watchEffect(fn: () => void, options?: {
+  flush?: 'pre' | 'post' | 'sync';
