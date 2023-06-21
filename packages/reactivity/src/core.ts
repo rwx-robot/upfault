@@ -110,3 +110,4 @@ export function ref<T>(value: T): Ref<T> {
   const dep = createDep();
   
   const r = {
+    get value(): T {
