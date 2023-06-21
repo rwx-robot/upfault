@@ -80,3 +80,4 @@ export function effect(fn: () => void, options?: {
     // Run immediately for non-lazy
     runEffect(effect);
   }
+  
