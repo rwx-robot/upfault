@@ -81,3 +81,4 @@ export function effect(fn: () => void, options?: {
     runEffect(effect);
   }
   
+  return runner;
