@@ -95,3 +95,5 @@ export function watchEffect(fn: () => void, options?: {
   const runner = effect(fn, { lazy: false, ...options });
   return runner.stop;
 }
+
+/**
