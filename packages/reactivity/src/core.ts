@@ -102,3 +102,4 @@ export function watchEffect(fn: () => void, options?: {
 export function batch(fn: () => void): void {
   fn();
 }
+
