@@ -79,3 +79,4 @@ export function effect(fn: () => void, options?: {
     runner = stopFn;
     // Run immediately for non-lazy
     runEffect(effect);
+  }
