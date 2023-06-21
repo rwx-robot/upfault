@@ -107,3 +107,4 @@ export function batch(fn: () => void): void {
  * 创建 ref
  */
 export function ref<T>(value: T): Ref<T> {
+  const dep = createDep();
