@@ -111,3 +111,4 @@ export function ref<T>(value: T): Ref<T> {
   
   const r = {
     get value(): T {
+      track(dep);
