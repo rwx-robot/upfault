@@ -76,3 +76,4 @@ export function effect(fn: () => void, options?: {
     const stopFn = (() => stopEffect(effect)) as (() => void) & { stop: () => void; effect: Effect };
     stopFn.stop = stopFn;
     stopFn.effect = effect;
+    runner = stopFn;
