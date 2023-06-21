@@ -82,3 +82,4 @@ export function effect(fn: () => void, options?: {
   }
   
   return runner;
+}
