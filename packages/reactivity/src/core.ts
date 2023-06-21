@@ -90,3 +90,4 @@ export function effect(fn: () => void, options?: {
 export function watchEffect(fn: () => void, options?: {
   flush?: 'pre' | 'post' | 'sync';
   onTrack?: (event: any) => void;
+  onTrigger?: (event: any) => void;
