@@ -118,3 +118,4 @@ export function ref<T>(value: T): Ref<T> {
       if (hasChanged(value, newValue)) {
         value = newValue;
         trigger(dep);
+      }
