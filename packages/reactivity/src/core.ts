@@ -130,3 +130,4 @@ export function ref<T>(value: T): Ref<T> {
  * 创建 computed
  */
 export function computed<T>(getter: () => T): ComputedRef<T> {
+  const dep = createDep();
