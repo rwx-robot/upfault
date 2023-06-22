@@ -134,3 +134,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
   let value: T;
   let dirty = true;
   
+  const effect = createEffect(() => {
