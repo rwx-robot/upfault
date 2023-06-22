@@ -141,3 +141,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
   }, {
     lazy: true,
     scheduler: () => {
+      if (!dirty) {
