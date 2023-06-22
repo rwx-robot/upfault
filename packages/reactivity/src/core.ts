@@ -149,3 +149,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
   });
   
   const computedRef = {
+    get value(): T {
