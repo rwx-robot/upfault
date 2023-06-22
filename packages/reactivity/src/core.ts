@@ -116,3 +116,4 @@ export function ref<T>(value: T): Ref<T> {
     },
     set value(newValue: T) {
       if (hasChanged(value, newValue)) {
+        value = newValue;
