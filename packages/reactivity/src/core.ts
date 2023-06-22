@@ -143,3 +143,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
     scheduler: () => {
       if (!dirty) {
         dirty = true;
+        trigger(dep);
