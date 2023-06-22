@@ -138,3 +138,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
     value = getter();
     dirty = false;
     trigger(dep);
+  }, {
