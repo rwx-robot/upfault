@@ -120,3 +120,4 @@ export function ref<T>(value: T): Ref<T> {
         trigger(dep);
       }
     },
+    __v_isRef: true,
