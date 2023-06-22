@@ -152,3 +152,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
     get value(): T {
       if (dirty) {
         runEffectSync(effect);
+      }
