@@ -153,3 +153,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
       if (dirty) {
         runEffectSync(effect);
       }
+      track(dep);
