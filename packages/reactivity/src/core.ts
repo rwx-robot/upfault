@@ -132,3 +132,4 @@ export function ref<T>(value: T): Ref<T> {
 export function computed<T>(getter: () => T): ComputedRef<T> {
   const dep = createDep();
   let value: T;
+  let dirty = true;
