@@ -136,3 +136,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
   
   const effect = createEffect(() => {
     value = getter();
+    dirty = false;
