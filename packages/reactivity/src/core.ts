@@ -119,3 +119,4 @@ export function ref<T>(value: T): Ref<T> {
         value = newValue;
         trigger(dep);
       }
+    },
