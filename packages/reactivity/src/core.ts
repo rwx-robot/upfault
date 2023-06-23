@@ -197,3 +197,4 @@ export type {
   Effect, 
   Ref, 
   ComputedRef, 
+  WatchOptions, 
