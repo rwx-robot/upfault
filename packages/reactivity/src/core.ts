@@ -175,3 +175,4 @@ export {
   createDep,
   stopEffect,
   pauseEffect,
+  resumeEffect,
