@@ -180,3 +180,4 @@ export {
   pushEffect,
   popEffect,
   runEffect,
+  runEffectSync,
