@@ -198,3 +198,4 @@ export type {
   Ref, 
   ComputedRef, 
   WatchOptions, 
+  WatchCallback, 
