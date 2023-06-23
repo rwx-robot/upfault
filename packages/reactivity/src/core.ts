@@ -189,3 +189,4 @@ export {
   unref,
   toRef,
   toRefs,
+  shallowRef,
