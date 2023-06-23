@@ -185,3 +185,4 @@ export {
   isRef,
   isFunction,
   isArray,
+  hasChanged,
