@@ -171,3 +171,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
 // Re-export from dep.ts (only what's not defined locally)
 export { 
   track, 
+  trigger, 
