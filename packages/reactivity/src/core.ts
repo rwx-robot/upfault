@@ -190,3 +190,4 @@ export {
   toRef,
   toRefs,
   shallowRef,
+  readonlyRef,
