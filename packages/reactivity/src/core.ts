@@ -172,3 +172,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
 export { 
   track, 
   trigger, 
+  createDep,
