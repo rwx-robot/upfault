@@ -165,3 +165,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
     effect,
   } as ComputedRef<T>;
   
+  return computedRef;
