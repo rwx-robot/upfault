@@ -194,3 +194,4 @@ export {
 } from './dep';
 
 export type { 
+  Effect, 
