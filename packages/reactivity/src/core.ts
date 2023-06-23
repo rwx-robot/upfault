@@ -192,3 +192,5 @@ export {
   shallowRef,
   readonlyRef,
 } from './dep';
+
+export type { 
