@@ -163,3 +163,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
     __v_isComputed: true,
     __v_isReadonly: true,
     effect,
+  } as ComputedRef<T>;
