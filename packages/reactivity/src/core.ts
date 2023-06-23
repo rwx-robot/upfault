@@ -173,3 +173,4 @@ export {
   track, 
   trigger, 
   createDep,
+  stopEffect,
