@@ -168,3 +168,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
   return computedRef;
 }
 
+// Re-export from dep.ts (only what's not defined locally)
