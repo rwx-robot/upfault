@@ -184,3 +184,4 @@ export {
   createEffect,
   isRef,
   isFunction,
+  isArray,
