@@ -177,3 +177,4 @@ export {
   pauseEffect,
   resumeEffect,
   getCurrentEffect,
+  pushEffect,
