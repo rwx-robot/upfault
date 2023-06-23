@@ -179,3 +179,4 @@ export {
   getCurrentEffect,
   pushEffect,
   popEffect,
+  runEffect,
