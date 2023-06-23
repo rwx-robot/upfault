@@ -191,3 +191,4 @@ export {
   toRefs,
   shallowRef,
   readonlyRef,
+} from './dep';
