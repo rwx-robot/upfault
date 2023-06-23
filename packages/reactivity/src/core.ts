@@ -183,3 +183,4 @@ export {
   runEffectSync,
   createEffect,
   isRef,
+  isFunction,
