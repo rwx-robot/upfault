@@ -159,3 +159,4 @@ export function computed<T>(getter: () => T): ComputedRef<T> {
     set value(_: T) {
       console.warn('[UpFault] Computed ref is readonly');
     },
+    __v_isRef: true,
