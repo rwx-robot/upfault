@@ -174,3 +174,4 @@ export {
   trigger, 
   createDep,
   stopEffect,
+  pauseEffect,
