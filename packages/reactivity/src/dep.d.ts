@@ -18,3 +18,4 @@ export declare function pushEffect(effect: Effect): void;
  */
 export declare function popEffect(): Effect | undefined;
 /**
+ * 依赖收集：建立 effect 与 dep 的双向关联
