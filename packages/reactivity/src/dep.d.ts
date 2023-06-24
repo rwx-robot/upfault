@@ -23,3 +23,4 @@ export declare function popEffect(): Effect | undefined;
  * @param event 调试事件信息
  */
 export declare function track(dep: Dep, event?: DebuggerEvent): void;
+/**
