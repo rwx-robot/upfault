@@ -199,3 +199,4 @@ export type {
   ComputedRef, 
   WatchOptions, 
   WatchCallback, 
+  WatchSource, 
