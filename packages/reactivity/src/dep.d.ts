@@ -15,3 +15,4 @@ export declare function getCurrentEffect(): Effect | undefined;
 export declare function pushEffect(effect: Effect): void;
 /**
  * 弹出 effect 栈
+ */
