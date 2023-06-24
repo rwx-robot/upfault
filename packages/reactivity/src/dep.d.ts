@@ -28,3 +28,4 @@ export declare function track(dep: Dep, event?: DebuggerEvent): void;
  * @param dep 依赖对象
  * @param event 调试事件信息
  */
+export declare function trigger(dep: Dep, event?: DebuggerEvent): void;
