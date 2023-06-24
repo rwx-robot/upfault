@@ -11,3 +11,4 @@ import type { Dep, Effect, DebuggerEvent, Ref } from '@upfault/shared';
 export declare function getCurrentEffect(): Effect | undefined;
 /**
  * 推入 effect 到栈中
+ */
