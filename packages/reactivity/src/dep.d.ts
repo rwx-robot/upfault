@@ -8,3 +8,4 @@ import type { Dep, Effect, DebuggerEvent, Ref } from '@upfault/shared';
 /**
  * 获取当前活跃的 effect
  */
+export declare function getCurrentEffect(): Effect | undefined;
