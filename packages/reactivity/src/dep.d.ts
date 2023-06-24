@@ -17,3 +17,4 @@ export declare function pushEffect(effect: Effect): void;
  * 弹出 effect 栈
  */
 export declare function popEffect(): Effect | undefined;
+/**
