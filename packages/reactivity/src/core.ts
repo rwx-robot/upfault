@@ -201,3 +201,4 @@ export type {
   WatchCallback, 
   WatchSource, 
   WatchStopHandle,
+  DebuggerEvent,
