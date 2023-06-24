@@ -20,3 +20,4 @@ export declare function popEffect(): Effect | undefined;
 /**
  * 依赖收集：建立 effect 与 dep 的双向关联
  * @param dep 依赖对象
+ * @param event 调试事件信息
