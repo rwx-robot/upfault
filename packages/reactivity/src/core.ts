@@ -203,3 +203,4 @@ export type {
   WatchStopHandle,
   DebuggerEvent,
   TrackOpTypes,
+  TriggerOpTypes,
