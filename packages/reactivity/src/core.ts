@@ -202,3 +202,4 @@ export type {
   WatchSource, 
   WatchStopHandle,
   DebuggerEvent,
+  TrackOpTypes,
