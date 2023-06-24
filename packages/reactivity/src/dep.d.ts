@@ -30,3 +30,4 @@ export declare function track(dep: Dep, event?: DebuggerEvent): void;
  */
 export declare function trigger(dep: Dep, event?: DebuggerEvent): void;
 /**
+ * 创建 Dep 对象
