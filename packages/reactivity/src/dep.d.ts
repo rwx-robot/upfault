@@ -13,3 +13,4 @@ export declare function getCurrentEffect(): Effect | undefined;
  * 推入 effect 到栈中
  */
 export declare function pushEffect(effect: Effect): void;
+/**
