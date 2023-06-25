@@ -55,3 +55,4 @@ export declare function pauseEffect(effect: Effect): void;
  */
 export declare function resumeEffect(effect: Effect): void;
 /**
+ * 批量执行函数，暂停依赖收集
