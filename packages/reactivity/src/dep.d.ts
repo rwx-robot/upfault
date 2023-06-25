@@ -73,3 +73,4 @@ export declare function unref<T>(ref: T | Ref<T>): T;
 /**
  * 转换为 ref
  */
+export declare function toRef<T>(object: any, key: string): Ref<any>;
