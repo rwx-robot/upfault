@@ -44,3 +44,4 @@ export declare function createEffect(fn: () => void, options?: {
 }): Effect;
 /**
  * 停止 effect
+ */
