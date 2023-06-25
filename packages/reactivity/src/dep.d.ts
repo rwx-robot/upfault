@@ -35,3 +35,4 @@ export declare function trigger(dep: Dep, event?: DebuggerEvent): void;
 export declare function createDep(name?: string): Dep;
 /**
  * 创建 Effect 对象
+ */
