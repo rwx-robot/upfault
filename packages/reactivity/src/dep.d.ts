@@ -65,3 +65,4 @@ export declare function resetTracking(): void;
 /**
  * 判断是否为 Ref
  */
+export declare function isRef<T>(val: any): val is Ref<T>;
