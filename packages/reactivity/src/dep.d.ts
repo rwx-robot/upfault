@@ -49,3 +49,4 @@ export declare function stopEffect(effect: Effect): void;
 /**
  * 暂停 effect
  */
+export declare function pauseEffect(effect: Effect): void;
