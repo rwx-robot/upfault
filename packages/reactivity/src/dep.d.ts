@@ -36,3 +36,4 @@ export declare function createDep(name?: string): Dep;
 /**
  * 创建 Effect 对象
  */
+export declare function createEffect(fn: () => void, options?: {
