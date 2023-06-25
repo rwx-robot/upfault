@@ -59,3 +59,4 @@ export declare function resumeEffect(effect: Effect): void;
  */
 export declare function pauseTracking(): void;
 /**
+ * 恢复依赖收集
