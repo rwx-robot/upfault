@@ -43,3 +43,4 @@ export declare function createEffect(fn: () => void, options?: {
     allowRecurse?: boolean;
 }): Effect;
 /**
+ * 停止 effect
