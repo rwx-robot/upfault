@@ -51,3 +51,4 @@ export declare function stopEffect(effect: Effect): void;
  */
 export declare function pauseEffect(effect: Effect): void;
 /**
+ * 恢复 effect
