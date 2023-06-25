@@ -54,3 +54,4 @@ export declare function pauseEffect(effect: Effect): void;
  * 恢复 effect
  */
 export declare function resumeEffect(effect: Effect): void;
+/**
