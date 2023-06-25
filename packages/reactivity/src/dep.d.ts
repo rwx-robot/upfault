@@ -42,3 +42,4 @@ export declare function createEffect(fn: () => void, options?: {
     onTrigger?: (event: DebuggerEvent) => void;
     allowRecurse?: boolean;
 }): Effect;
+/**
