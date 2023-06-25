@@ -40,3 +40,4 @@ export declare function createEffect(fn: () => void, options?: {
     scheduler?: (fn: () => void) => void;
     onTrack?: (event: DebuggerEvent) => void;
     onTrigger?: (event: DebuggerEvent) => void;
+    allowRecurse?: boolean;
