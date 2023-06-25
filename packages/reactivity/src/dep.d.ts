@@ -69,3 +69,4 @@ export declare function isRef<T>(val: any): val is Ref<T>;
 /**
  * 解包 ref
  */
+export declare function unref<T>(ref: T | Ref<T>): T;
