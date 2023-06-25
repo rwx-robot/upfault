@@ -47,3 +47,4 @@ export declare function createEffect(fn: () => void, options?: {
  */
 export declare function stopEffect(effect: Effect): void;
 /**
+ * 暂停 effect
