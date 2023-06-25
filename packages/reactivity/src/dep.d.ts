@@ -45,3 +45,4 @@ export declare function createEffect(fn: () => void, options?: {
 /**
  * 停止 effect
  */
+export declare function stopEffect(effect: Effect): void;
