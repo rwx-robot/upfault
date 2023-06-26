@@ -107,3 +107,4 @@ export declare function runEffect(effect: Effect): void;
 /**
  * 同步运行 effect（直接执行 fn，用于 computed 等需要同步获取值的场景）
  */
+export declare function runEffectSync(effect: Effect): void;
