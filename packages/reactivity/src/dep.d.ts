@@ -77,3 +77,4 @@ export declare function toRef<T>(object: any, key: string): Ref<any>;
 /**
  * 转换对象所有属性为 ref
  */
+export declare function toRefs<T extends object>(object: T): {
