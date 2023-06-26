@@ -80,3 +80,4 @@ export declare function toRef<T>(object: any, key: string): Ref<any>;
 export declare function toRefs<T extends object>(object: T): {
     [K in keyof T]: Ref<T[K]>;
 };
+/**
