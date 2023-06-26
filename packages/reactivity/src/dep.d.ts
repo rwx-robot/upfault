@@ -97,3 +97,4 @@ export declare function isFunction(val: any): val is Function;
  */
 export declare function isArray(val: any): val is any[];
 /**
+ * 判断值是否变化
