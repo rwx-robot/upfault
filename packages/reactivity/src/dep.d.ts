@@ -101,3 +101,4 @@ export declare function isArray(val: any): val is any[];
  */
 export declare function hasChanged(a: any, b: any): boolean;
 /**
+ * 运行 effect
