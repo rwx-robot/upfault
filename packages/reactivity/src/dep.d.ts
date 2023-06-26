@@ -92,3 +92,4 @@ export declare function readonlyRef<T>(value: T): Readonly<Ref<T>>;
  * 判断是否为函数
  */
 export declare function isFunction(val: any): val is Function;
+/**
