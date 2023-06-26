@@ -83,3 +83,4 @@ export declare function toRefs<T extends object>(object: T): {
 /**
  * 创建 shallow ref
  */
+export declare function shallowRef<T>(value: T): Ref<T>;
