@@ -95,3 +95,4 @@ export declare function isFunction(val: any): val is Function;
 /**
  * 判断是否为数组
  */
+export declare function isArray(val: any): val is any[];
