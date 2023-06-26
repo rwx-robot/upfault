@@ -104,3 +104,4 @@ export declare function hasChanged(a: any, b: any): boolean;
  * 运行 effect
  */
 export declare function runEffect(effect: Effect): void;
+/**
