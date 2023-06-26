@@ -99,3 +99,4 @@ export declare function isArray(val: any): val is any[];
 /**
  * 判断值是否变化
  */
+export declare function hasChanged(a: any, b: any): boolean;
