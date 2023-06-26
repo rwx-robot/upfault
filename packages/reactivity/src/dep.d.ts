@@ -89,3 +89,4 @@ export declare function shallowRef<T>(value: T): Ref<T>;
  */
 export declare function readonlyRef<T>(value: T): Readonly<Ref<T>>;
 /**
+ * 判断是否为函数
