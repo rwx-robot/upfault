@@ -15,3 +15,4 @@ export function getCurrentEffect() {
     return effectStack[effectStack.length - 1];
 }
 /**
+ * 推入 effect 到栈中
