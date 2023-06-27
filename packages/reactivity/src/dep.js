@@ -14,3 +14,4 @@ const effectStack = [];
 export function getCurrentEffect() {
     return effectStack[effectStack.length - 1];
 }
+/**
