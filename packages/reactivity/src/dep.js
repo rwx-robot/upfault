@@ -12,3 +12,4 @@ const effectStack = [];
  * 获取当前活跃的 effect
  */
 export function getCurrentEffect() {
+    return effectStack[effectStack.length - 1];
