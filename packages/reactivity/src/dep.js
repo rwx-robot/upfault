@@ -7,3 +7,4 @@
 /**
  * 当前正在执行的 effect 栈
  */
+const effectStack = [];
