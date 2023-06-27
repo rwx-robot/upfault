@@ -26,3 +26,4 @@ export function pushEffect(effect) {
 export function popEffect() {
     return effectStack.pop();
 }
+/**
