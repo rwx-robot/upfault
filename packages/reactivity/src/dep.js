@@ -5,3 +5,4 @@
  * 支持 effect、ref、computed、watch 的依赖收集与触发
  */
 /**
+ * 当前正在执行的 effect 栈
