@@ -21,3 +21,4 @@ export function pushEffect(effect) {
     effectStack.push(effect);
 }
 /**
+ * 弹出 effect 栈
