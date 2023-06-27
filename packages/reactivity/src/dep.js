@@ -31,3 +31,4 @@ export function popEffect() {
  * @param dep 依赖对象
  * @param event 调试事件信息
  */
+export function track(dep, event) {
