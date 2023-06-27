@@ -20,3 +20,4 @@ export function getCurrentEffect() {
 export function pushEffect(effect) {
     effectStack.push(effect);
 }
+/**
