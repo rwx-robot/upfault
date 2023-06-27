@@ -40,3 +40,4 @@ export function track(dep, event) {
         effect.deps.push(dep);
     }
     // 建立 dep -> effect 的订阅关系
+    if (!dep.subs.has(effect)) {
