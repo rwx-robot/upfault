@@ -41,3 +41,4 @@ export function track(dep, event) {
     }
     // 建立 dep -> effect 的订阅关系
     if (!dep.subs.has(effect)) {
+        dep.subs.add(effect);
