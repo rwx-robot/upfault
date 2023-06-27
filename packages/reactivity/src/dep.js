@@ -36,3 +36,4 @@ export function track(dep, event) {
     if (!effect)
         return;
     // 建立 effect -> dep 的依赖关系
+    if (!effect.deps.includes(dep)) {
