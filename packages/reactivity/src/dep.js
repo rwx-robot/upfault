@@ -24,3 +24,4 @@ export function pushEffect(effect) {
  * 弹出 effect 栈
  */
 export function popEffect() {
+    return effectStack.pop();
