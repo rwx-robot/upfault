@@ -27,3 +27,4 @@ export function popEffect() {
     return effectStack.pop();
 }
 /**
+ * 依赖收集：建立 effect 与 dep 的双向关联
