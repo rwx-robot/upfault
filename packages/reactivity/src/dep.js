@@ -43,3 +43,4 @@ export function track(dep, event) {
     if (!dep.subs.has(effect)) {
         dep.subs.add(effect);
         dep.version++;
+    }
