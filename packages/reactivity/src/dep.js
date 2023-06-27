@@ -34,3 +34,4 @@ export function popEffect() {
 export function track(dep, event) {
     const effect = getCurrentEffect();
     if (!effect)
+        return;
