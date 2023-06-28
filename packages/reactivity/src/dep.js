@@ -45,3 +45,4 @@ export function track(dep, event) {
         dep.version++;
     }
     // 调试钩子
+    if (effect.onTrack && event) {
