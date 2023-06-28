@@ -75,3 +75,4 @@ export function trigger(dep, event) {
             runEffectSync(effect);
         }
     }
+}
