@@ -62,3 +62,4 @@ export function trigger(dep, event) {
             continue;
         // 避免递归触发
         if (!effect.allowRecurse && effectStack.includes(effect))
+            continue;
