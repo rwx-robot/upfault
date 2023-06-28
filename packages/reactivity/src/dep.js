@@ -65,3 +65,4 @@ export function trigger(dep, event) {
             continue;
         // 调试钩子
         if (effect.onTrigger && event) {
+            effect.onTrigger(event);
