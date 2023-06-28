@@ -78,3 +78,4 @@ export function trigger(dep, event) {
 }
 /**
  * 创建 Dep 对象
+ */
