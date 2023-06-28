@@ -60,3 +60,4 @@ export function trigger(dep, event) {
     for (const effect of effects) {
         if (!effect.active)
             continue;
+        // 避免递归触发
