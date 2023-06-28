@@ -71,3 +71,4 @@ export function trigger(dep, event) {
         if (effect.scheduler) {
             effect.scheduler(effect.fn);
         }
+        else {
