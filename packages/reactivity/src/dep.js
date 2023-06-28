@@ -44,3 +44,4 @@ export function track(dep, event) {
         dep.subs.add(effect);
         dep.version++;
     }
+    // 调试钩子
