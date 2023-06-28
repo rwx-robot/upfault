@@ -73,3 +73,4 @@ export function trigger(dep, event) {
         }
         else {
             runEffectSync(effect);
+        }
