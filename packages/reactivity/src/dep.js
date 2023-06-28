@@ -50,3 +50,4 @@ export function track(dep, event) {
     }
 }
 /**
+ * 依赖触发：通知所有订阅的 effect 重新执行
