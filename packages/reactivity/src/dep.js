@@ -81,3 +81,4 @@ export function trigger(dep, event) {
  */
 export function createDep(name) {
     return {
+        subs: new Set(),
