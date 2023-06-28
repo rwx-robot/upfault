@@ -46,3 +46,4 @@ export function track(dep, event) {
     }
     // 调试钩子
     if (effect.onTrack && event) {
+        effect.onTrack(event);
