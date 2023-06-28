@@ -63,3 +63,4 @@ export function trigger(dep, event) {
         // 避免递归触发
         if (!effect.allowRecurse && effectStack.includes(effect))
             continue;
+        // 调试钩子
