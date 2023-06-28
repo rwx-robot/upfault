@@ -48,3 +48,4 @@ export function track(dep, event) {
     if (effect.onTrack && event) {
         effect.onTrack(event);
     }
+}
