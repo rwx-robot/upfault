@@ -64,3 +64,4 @@ export function trigger(dep, event) {
         if (!effect.allowRecurse && effectStack.includes(effect))
             continue;
         // 调试钩子
+        if (effect.onTrigger && event) {
