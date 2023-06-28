@@ -68,3 +68,4 @@ export function trigger(dep, event) {
             effect.onTrigger(event);
         }
         // 执行 effect - 使用 runEffectSync 管理 effect 栈
+        if (effect.scheduler) {
