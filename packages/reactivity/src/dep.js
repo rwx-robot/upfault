@@ -59,3 +59,4 @@ export function trigger(dep, event) {
     const effects = [...dep.subs];
     for (const effect of effects) {
         if (!effect.active)
+            continue;
