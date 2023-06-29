@@ -101,3 +101,4 @@ export function createEffect(fn, options) {
         onTrigger: options?.onTrigger,
     };
     return effect;
+}
