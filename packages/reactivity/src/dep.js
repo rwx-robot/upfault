@@ -114,3 +114,4 @@ export function stopEffect(effect) {
     for (const dep of effect.deps) {
         dep.subs.delete(effect);
     }
+    effect.deps.length = 0;
