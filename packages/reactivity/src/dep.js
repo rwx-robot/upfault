@@ -94,3 +94,4 @@ export function createEffect(fn, options) {
         fn,
         scheduler: options?.scheduler,
         deps: [],
+        active: true,
