@@ -99,3 +99,4 @@ export function createEffect(fn, options) {
         allowRecurse: options?.allowRecurse ?? false,
         onTrack: options?.onTrack,
         onTrigger: options?.onTrigger,
+    };
