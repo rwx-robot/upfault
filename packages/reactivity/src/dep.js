@@ -110,3 +110,4 @@ export function stopEffect(effect) {
         return;
     effect.stopped = true;
     effect.active = false;
+    // 从所有 dep 中移除
