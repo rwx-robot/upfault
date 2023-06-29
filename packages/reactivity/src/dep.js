@@ -117,3 +117,4 @@ export function stopEffect(effect) {
     effect.deps.length = 0;
 }
 /**
+ * 暂停 effect
