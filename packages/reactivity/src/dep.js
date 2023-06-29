@@ -115,3 +115,4 @@ export function stopEffect(effect) {
         dep.subs.delete(effect);
     }
     effect.deps.length = 0;
+}
