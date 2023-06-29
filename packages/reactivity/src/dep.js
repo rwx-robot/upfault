@@ -103,3 +103,4 @@ export function createEffect(fn, options) {
     return effect;
 }
 /**
+ * 停止 effect
