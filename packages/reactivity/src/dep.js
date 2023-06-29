@@ -100,3 +100,4 @@ export function createEffect(fn, options) {
         onTrack: options?.onTrack,
         onTrigger: options?.onTrigger,
     };
+    return effect;
