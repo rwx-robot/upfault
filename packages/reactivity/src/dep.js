@@ -105,3 +105,4 @@ export function createEffect(fn, options) {
 /**
  * 停止 effect
  */
+export function stopEffect(effect) {
