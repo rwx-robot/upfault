@@ -93,3 +93,4 @@ export function createEffect(fn, options) {
     const effect = {
         fn,
         scheduler: options?.scheduler,
+        deps: [],
