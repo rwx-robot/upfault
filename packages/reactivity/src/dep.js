@@ -91,3 +91,4 @@ export function createDep(name) {
  */
 export function createEffect(fn, options) {
     const effect = {
+        fn,
