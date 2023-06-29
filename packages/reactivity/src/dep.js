@@ -119,3 +119,4 @@ export function stopEffect(effect) {
 /**
  * 暂停 effect
  */
+export function pauseEffect(effect) {
