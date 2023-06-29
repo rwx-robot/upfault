@@ -107,3 +107,4 @@ export function createEffect(fn, options) {
  */
 export function stopEffect(effect) {
     if (effect.stopped)
+        return;
