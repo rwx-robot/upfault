@@ -129,3 +129,4 @@ export function resumeEffect(effect) {
     effect.active = true;
 }
 /**
+ * 批量执行函数，暂停依赖收集
