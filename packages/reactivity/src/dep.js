@@ -160,3 +160,4 @@ export function toRef(object, key) {
     return {
         get value() {
             track(dep);
+            return object[key];
