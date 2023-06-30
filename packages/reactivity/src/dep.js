@@ -123,3 +123,4 @@ export function pauseEffect(effect) {
     effect.active = false;
 }
 /**
+ * 恢复 effect
