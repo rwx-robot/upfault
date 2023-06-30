@@ -125,3 +125,4 @@ export function pauseEffect(effect) {
 /**
  * 恢复 effect
  */
+export function resumeEffect(effect) {
