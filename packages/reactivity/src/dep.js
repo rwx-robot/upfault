@@ -137,3 +137,4 @@ export function pauseTracking() {
 /**
  * 恢复依赖收集
  */
+export function resetTracking() {
