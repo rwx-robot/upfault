@@ -159,3 +159,4 @@ export function toRef(object, key) {
     const dep = createDep();
     return {
         get value() {
+            track(dep);
