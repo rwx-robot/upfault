@@ -122,3 +122,4 @@ export function stopEffect(effect) {
 export function pauseEffect(effect) {
     effect.active = false;
 }
+/**
