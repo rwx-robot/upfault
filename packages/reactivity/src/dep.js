@@ -132,3 +132,4 @@ export function resumeEffect(effect) {
  * 批量执行函数，暂停依赖收集
  */
 export function pauseTracking() {
+    // 可以通过标记位实现，简化版直接返回
