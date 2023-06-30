@@ -133,3 +133,4 @@ export function resumeEffect(effect) {
  */
 export function pauseTracking() {
     // 可以通过标记位实现，简化版直接返回
+}
