@@ -127,3 +127,4 @@ export function pauseEffect(effect) {
  */
 export function resumeEffect(effect) {
     effect.active = true;
+}
