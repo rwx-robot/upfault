@@ -150,3 +150,4 @@ export function isRef(val) {
  * 解包 ref
  */
 export function unref(ref) {
+    return isRef(ref) ? ref.value : ref;
