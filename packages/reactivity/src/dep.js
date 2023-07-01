@@ -194,3 +194,4 @@ export function shallowRef(value) {
                 value = newValue;
                 trigger(dep);
             }
+        },
