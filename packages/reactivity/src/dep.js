@@ -191,3 +191,4 @@ export function shallowRef(value) {
         },
         set value(newValue) {
             if (value !== newValue) {
+                value = newValue;
