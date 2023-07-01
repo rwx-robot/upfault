@@ -184,3 +184,4 @@ export function toRefs(object) {
  */
 export function shallowRef(value) {
     const dep = createDep();
+    return {
