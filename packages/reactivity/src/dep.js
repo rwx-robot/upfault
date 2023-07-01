@@ -196,3 +196,4 @@ export function shallowRef(value) {
             }
         },
         __v_isRef: true,
+        __v_isShallow: true,
