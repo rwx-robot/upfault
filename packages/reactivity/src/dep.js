@@ -166,3 +166,4 @@ export function toRef(object, key) {
             object[key] = newValue;
             trigger(dep);
         },
+        __v_isRef: true,
