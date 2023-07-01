@@ -195,3 +195,4 @@ export function shallowRef(value) {
                 trigger(dep);
             }
         },
+        __v_isRef: true,
