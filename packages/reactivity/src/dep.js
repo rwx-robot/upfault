@@ -188,3 +188,4 @@ export function shallowRef(value) {
         get value() {
             track(dep);
             return value;
+        },
