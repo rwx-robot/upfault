@@ -177,3 +177,4 @@ export function toRefs(object) {
     for (const key in object) {
         result[key] = toRef(object, key);
     }
+    return result;
