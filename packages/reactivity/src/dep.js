@@ -233,3 +233,4 @@ export function isArray(val) {
  */
 export function hasChanged(a, b) {
     return a !== b && (a === a || b === b);
+}
