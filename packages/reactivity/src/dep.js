@@ -203,3 +203,4 @@ export function shallowRef(value) {
  * 创建 readonly ref
  */
 export function readonlyRef(value) {
+    const dep = createDep();
