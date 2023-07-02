@@ -226,3 +226,4 @@ export function isFunction(val) {
  * 判断是否为数组
  */
 export function isArray(val) {
+    return Array.isArray(val);
