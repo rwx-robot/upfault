@@ -229,3 +229,4 @@ export function isArray(val) {
     return Array.isArray(val);
 }
 /**
+ * 判断值是否变化
