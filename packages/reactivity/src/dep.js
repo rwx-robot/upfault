@@ -212,3 +212,4 @@ export function readonlyRef(value) {
         set value(_) {
             console.warn('[UpFault] Ref is readonly');
         },
+        __v_isRef: true,
