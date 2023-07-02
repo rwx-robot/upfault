@@ -206,3 +206,4 @@ export function readonlyRef(value) {
     const dep = createDep();
     return {
         get value() {
+            track(dep);
