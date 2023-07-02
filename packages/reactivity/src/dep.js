@@ -210,3 +210,4 @@ export function readonlyRef(value) {
             return value;
         },
         set value(_) {
+            console.warn('[UpFault] Ref is readonly');
