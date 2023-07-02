@@ -223,3 +223,4 @@ export function isFunction(val) {
     return typeof val === 'function';
 }
 /**
+ * 判断是否为数组
