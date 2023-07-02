@@ -228,3 +228,4 @@ export function isFunction(val) {
 export function isArray(val) {
     return Array.isArray(val);
 }
+/**
