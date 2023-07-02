@@ -207,3 +207,4 @@ export function readonlyRef(value) {
     return {
         get value() {
             track(dep);
+            return value;
