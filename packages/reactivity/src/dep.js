@@ -231,3 +231,4 @@ export function isArray(val) {
 /**
  * 判断值是否变化
  */
+export function hasChanged(a, b) {
