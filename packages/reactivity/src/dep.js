@@ -243,3 +243,4 @@ export function runEffect(effect) {
     // 检查递归深度
     if (effectStack.length >= 100) {
         console.warn('[UpFault] Effect stack overflow, possible infinite loop');
+        return;
