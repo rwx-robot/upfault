@@ -237,3 +237,4 @@ export function hasChanged(a, b) {
 /**
  * 运行 effect
  */
+export function runEffect(effect) {
