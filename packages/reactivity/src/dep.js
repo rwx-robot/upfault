@@ -273,3 +273,4 @@ export function runEffectSync(effect) {
         effect.fn();
     }
     finally {
+        popEffect();
