@@ -239,3 +239,4 @@ export function hasChanged(a, b) {
  */
 export function runEffect(effect) {
     if (!effect.active || effect.stopped)
+        return;
