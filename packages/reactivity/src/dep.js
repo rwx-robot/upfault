@@ -247,3 +247,4 @@ export function runEffect(effect) {
     }
     pushEffect(effect);
     try {
+        if (effect.scheduler) {
