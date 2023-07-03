@@ -264,3 +264,4 @@ export function runEffect(effect) {
 export function runEffectSync(effect) {
     if (!effect.active || effect.stopped)
         return;
+    if (effectStack.length >= 100) {
