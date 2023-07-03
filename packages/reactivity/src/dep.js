@@ -272,3 +272,4 @@ export function runEffectSync(effect) {
     try {
         effect.fn();
     }
+    finally {
