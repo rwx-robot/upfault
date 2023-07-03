@@ -269,3 +269,4 @@ export function runEffectSync(effect) {
         return;
     }
     pushEffect(effect);
+    try {
