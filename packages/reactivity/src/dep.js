@@ -241,3 +241,4 @@ export function runEffect(effect) {
     if (!effect.active || effect.stopped)
         return;
     // 检查递归深度
+    if (effectStack.length >= 100) {
