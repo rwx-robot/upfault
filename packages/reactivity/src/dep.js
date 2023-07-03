@@ -275,3 +275,4 @@ export function runEffectSync(effect) {
     finally {
         popEffect();
     }
+}
