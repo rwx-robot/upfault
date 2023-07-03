@@ -262,3 +262,4 @@ export function runEffect(effect) {
  * 同步运行 effect（直接执行 fn，用于 computed 等需要同步获取值的场景）
  */
 export function runEffectSync(effect) {
+    if (!effect.active || effect.stopped)
