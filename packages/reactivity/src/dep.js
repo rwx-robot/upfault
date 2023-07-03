@@ -250,3 +250,4 @@ export function runEffect(effect) {
         if (effect.scheduler) {
             effect.scheduler(effect.fn);
         }
+        else {
