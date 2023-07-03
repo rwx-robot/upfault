@@ -246,3 +246,4 @@ export function runEffect(effect) {
         return;
     }
     pushEffect(effect);
+    try {
