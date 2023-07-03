@@ -265,3 +265,4 @@ export function runEffectSync(effect) {
     if (!effect.active || effect.stopped)
         return;
     if (effectStack.length >= 100) {
+        console.warn('[UpFault] Effect stack overflow, possible infinite loop');
