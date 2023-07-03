@@ -254,3 +254,4 @@ export function runEffect(effect) {
             effect.fn();
         }
     }
+    finally {
