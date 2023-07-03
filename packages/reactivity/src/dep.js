@@ -270,3 +270,4 @@ export function runEffectSync(effect) {
     }
     pushEffect(effect);
     try {
+        effect.fn();
