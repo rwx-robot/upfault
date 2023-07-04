@@ -12,3 +12,4 @@ import type { Dep, Effect, DebuggerEvent, TrackOpTypes, TriggerOpTypes, Ref } fr
  */
 const effectStack: Effect[] = [];
 
+/**
