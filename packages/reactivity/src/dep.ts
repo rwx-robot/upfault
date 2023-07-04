@@ -5,3 +5,4 @@
  * 支持 effect、ref、computed、watch 的依赖收集与触发
  */
 
+import type { Dep, Effect, DebuggerEvent, TrackOpTypes, TriggerOpTypes, Ref } from '@upfault/shared';
