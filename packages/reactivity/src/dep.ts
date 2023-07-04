@@ -24,3 +24,4 @@ export function getCurrentEffect(): Effect | undefined {
  */
 export function pushEffect(effect: Effect): void {
   effectStack.push(effect);
+}
