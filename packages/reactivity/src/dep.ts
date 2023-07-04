@@ -31,3 +31,4 @@ export function pushEffect(effect: Effect): void {
  */
 export function popEffect(): Effect | undefined {
   return effectStack.pop();
+}
