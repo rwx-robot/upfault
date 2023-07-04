@@ -13,3 +13,4 @@ import type { Dep, Effect, DebuggerEvent, TrackOpTypes, TriggerOpTypes, Ref } fr
 const effectStack: Effect[] = [];
 
 /**
+ * 获取当前活跃的 effect
