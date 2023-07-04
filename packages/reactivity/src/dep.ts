@@ -30,3 +30,4 @@ export function pushEffect(effect: Effect): void {
  * 弹出 effect 栈
  */
 export function popEffect(): Effect | undefined {
+  return effectStack.pop();
