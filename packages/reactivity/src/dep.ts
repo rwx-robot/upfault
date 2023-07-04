@@ -8,3 +8,4 @@
 import type { Dep, Effect, DebuggerEvent, TrackOpTypes, TriggerOpTypes, Ref } from '@upfault/shared';
 
 /**
+ * 当前正在执行的 effect 栈
