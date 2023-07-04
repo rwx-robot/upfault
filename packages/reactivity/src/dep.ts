@@ -15,3 +15,4 @@ const effectStack: Effect[] = [];
 /**
  * 获取当前活跃的 effect
  */
+export function getCurrentEffect(): Effect | undefined {
