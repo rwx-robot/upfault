@@ -50,3 +50,4 @@ export function track(dep: Dep, event?: DebuggerEvent): void {
   // 建立 dep -> effect 的订阅关系
   if (!dep.subs.has(effect)) {
     dep.subs.add(effect);
+    dep.version++;
