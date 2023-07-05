@@ -57,3 +57,4 @@ export function track(dep: Dep, event?: DebuggerEvent): void {
   if (effect.onTrack && event) {
     effect.onTrack(event);
   }
+}
