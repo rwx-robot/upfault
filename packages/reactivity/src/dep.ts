@@ -68,3 +68,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
   // 复制一份避免迭代过程中修改集合
   const effects = [...dep.subs];
   
+  for (const effect of effects) {
