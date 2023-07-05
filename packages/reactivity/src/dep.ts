@@ -65,3 +65,4 @@ export function track(dep: Dep, event?: DebuggerEvent): void {
  * @param event 调试事件信息
  */
 export function trigger(dep: Dep, event?: DebuggerEvent): void {
+  // 复制一份避免迭代过程中修改集合
