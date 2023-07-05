@@ -74,3 +74,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
     // 避免递归触发
     if (!effect.allowRecurse && effectStack.includes(effect)) continue;
 
+    // 调试钩子
