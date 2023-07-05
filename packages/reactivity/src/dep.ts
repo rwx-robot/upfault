@@ -71,3 +71,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
   for (const effect of effects) {
     if (!effect.active) continue;
     
+    // 避免递归触发
