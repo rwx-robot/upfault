@@ -69,3 +69,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
   const effects = [...dep.subs];
   
   for (const effect of effects) {
+    if (!effect.active) continue;
