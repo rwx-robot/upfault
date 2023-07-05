@@ -46,3 +46,5 @@ export function track(dep: Dep, event?: DebuggerEvent): void {
   if (!effect.deps.includes(dep)) {
     effect.deps.push(dep);
   }
+
+  // 建立 dep -> effect 的订阅关系
