@@ -72,3 +72,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
     if (!effect.active) continue;
     
     // 避免递归触发
+    if (!effect.allowRecurse && effectStack.includes(effect)) continue;
