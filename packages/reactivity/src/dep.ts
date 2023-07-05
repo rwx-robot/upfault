@@ -51,3 +51,4 @@ export function track(dep: Dep, event?: DebuggerEvent): void {
   if (!dep.subs.has(effect)) {
     dep.subs.add(effect);
     dep.version++;
+  }
