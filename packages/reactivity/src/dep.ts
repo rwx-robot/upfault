@@ -55,3 +55,4 @@ export function track(dep: Dep, event?: DebuggerEvent): void {
 
   // 调试钩子
   if (effect.onTrack && event) {
+    effect.onTrack(event);
