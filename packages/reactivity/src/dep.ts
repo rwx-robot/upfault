@@ -41,3 +41,5 @@ export function popEffect(): Effect | undefined {
 export function track(dep: Dep, event?: DebuggerEvent): void {
   const effect = getCurrentEffect();
   if (!effect) return;
+
+  // 建立 effect -> dep 的依赖关系
