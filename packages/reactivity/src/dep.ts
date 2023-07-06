@@ -114,3 +114,4 @@ export function createEffect(fn: () => void, options?: {
     scheduler: options?.scheduler,
     deps: [],
     active: true,
+    stopped: false,
