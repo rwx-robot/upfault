@@ -85,3 +85,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
     } else {
       runEffectSync(effect);
     }
+  }
