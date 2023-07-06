@@ -112,3 +112,4 @@ export function createEffect(fn: () => void, options?: {
   const effect: Effect = {
     fn,
     scheduler: options?.scheduler,
+    deps: [],
