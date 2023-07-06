@@ -111,3 +111,4 @@ export function createEffect(fn: () => void, options?: {
 }): Effect {
   const effect: Effect = {
     fn,
+    scheduler: options?.scheduler,
