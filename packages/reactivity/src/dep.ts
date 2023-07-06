@@ -75,3 +75,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
     if (!effect.allowRecurse && effectStack.includes(effect)) continue;
 
     // 调试钩子
+    if (effect.onTrigger && event) {
