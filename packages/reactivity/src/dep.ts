@@ -105,3 +105,4 @@ export function createDep(name?: string): Dep {
 export function createEffect(fn: () => void, options?: {
   scheduler?: (fn: () => void) => void;
   onTrack?: (event: DebuggerEvent) => void;
+  onTrigger?: (event: DebuggerEvent) => void;
