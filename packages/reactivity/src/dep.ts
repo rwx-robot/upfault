@@ -76,3 +76,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
 
     // 调试钩子
     if (effect.onTrigger && event) {
+      effect.onTrigger(event);
