@@ -80,3 +80,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
     }
 
     // 执行 effect - 使用 runEffectSync 管理 effect 栈
+    if (effect.scheduler) {
