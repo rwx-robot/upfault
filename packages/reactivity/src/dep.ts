@@ -84,3 +84,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
       effect.scheduler(effect.fn);
     } else {
       runEffectSync(effect);
+    }
