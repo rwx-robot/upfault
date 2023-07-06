@@ -110,3 +110,4 @@ export function createEffect(fn: () => void, options?: {
   lazy?: boolean;
 }): Effect {
   const effect: Effect = {
+    fn,
