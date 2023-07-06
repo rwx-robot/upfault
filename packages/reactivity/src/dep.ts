@@ -94,3 +94,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
 export function createDep(name?: string): Dep {
   return {
     subs: new Set(),
+    version: 0,
