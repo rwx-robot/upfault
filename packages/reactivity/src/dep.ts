@@ -109,3 +109,4 @@ export function createEffect(fn: () => void, options?: {
   allowRecurse?: boolean;
   lazy?: boolean;
 }): Effect {
+  const effect: Effect = {
