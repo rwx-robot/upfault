@@ -107,3 +107,4 @@ export function createEffect(fn: () => void, options?: {
   onTrack?: (event: DebuggerEvent) => void;
   onTrigger?: (event: DebuggerEvent) => void;
   allowRecurse?: boolean;
+  lazy?: boolean;
