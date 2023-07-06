@@ -96,3 +96,4 @@ export function createDep(name?: string): Dep {
     subs: new Set(),
     version: 0,
     name,
+  };
