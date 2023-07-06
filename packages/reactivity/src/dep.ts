@@ -91,3 +91,4 @@ export function trigger(dep: Dep, event?: DebuggerEvent): void {
 /**
  * 创建 Dep 对象
  */
+export function createDep(name?: string): Dep {
