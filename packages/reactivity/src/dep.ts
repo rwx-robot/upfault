@@ -144,3 +144,4 @@ export function stopEffect(effect: Effect): void {
  */
 export function pauseEffect(effect: Effect): void {
   effect.active = false;
+}
