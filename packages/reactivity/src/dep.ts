@@ -133,3 +133,4 @@ export function stopEffect(effect: Effect): void {
   effect.active = false;
   
   // 从所有 dep 中移除
+  for (const dep of effect.deps) {
