@@ -143,3 +143,4 @@ export function stopEffect(effect: Effect): void {
  * 暂停 effect
  */
 export function pauseEffect(effect: Effect): void {
+  effect.active = false;
