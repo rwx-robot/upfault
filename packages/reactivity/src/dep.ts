@@ -147,3 +147,4 @@ export function pauseEffect(effect: Effect): void {
 }
 
 /**
+ * 恢复 effect
