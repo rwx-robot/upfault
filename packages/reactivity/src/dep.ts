@@ -116,3 +116,4 @@ export function createEffect(fn: () => void, options?: {
     active: true,
     stopped: false,
     allowRecurse: options?.allowRecurse ?? false,
+    lazy: options?.lazy ?? false,
