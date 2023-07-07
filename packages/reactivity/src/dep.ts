@@ -152,3 +152,5 @@ export function pauseEffect(effect: Effect): void {
 export function resumeEffect(effect: Effect): void {
   effect.active = true;
 }
+
+/**
