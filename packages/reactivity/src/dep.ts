@@ -140,3 +140,4 @@ export function stopEffect(effect: Effect): void {
 }
 
 /**
+ * 暂停 effect
