@@ -120,3 +120,4 @@ export function createEffect(fn: () => void, options?: {
     onTrack: options?.onTrack,
     onTrigger: options?.onTrigger,
   };
+  return effect;
