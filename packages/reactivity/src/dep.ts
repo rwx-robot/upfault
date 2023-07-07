@@ -137,3 +137,4 @@ export function stopEffect(effect: Effect): void {
     dep.subs.delete(effect);
   }
   effect.deps.length = 0;
+}
