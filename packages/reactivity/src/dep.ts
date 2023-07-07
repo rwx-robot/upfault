@@ -138,3 +138,5 @@ export function stopEffect(effect: Effect): void {
   }
   effect.deps.length = 0;
 }
+
+/**
