@@ -149,3 +149,4 @@ export function pauseEffect(effect: Effect): void {
 /**
  * 恢复 effect
  */
+export function resumeEffect(effect: Effect): void {
