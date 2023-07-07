@@ -122,3 +122,5 @@ export function createEffect(fn: () => void, options?: {
   };
   return effect;
 }
+
+/**
