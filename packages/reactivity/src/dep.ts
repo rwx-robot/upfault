@@ -115,3 +115,4 @@ export function createEffect(fn: () => void, options?: {
     deps: [],
     active: true,
     stopped: false,
+    allowRecurse: options?.allowRecurse ?? false,
