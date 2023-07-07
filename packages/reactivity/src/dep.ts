@@ -119,3 +119,4 @@ export function createEffect(fn: () => void, options?: {
     lazy: options?.lazy ?? false,
     onTrack: options?.onTrack,
     onTrigger: options?.onTrigger,
+  };
