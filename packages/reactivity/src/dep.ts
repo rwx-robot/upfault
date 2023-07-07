@@ -135,3 +135,4 @@ export function stopEffect(effect: Effect): void {
   // 从所有 dep 中移除
   for (const dep of effect.deps) {
     dep.subs.delete(effect);
+  }
