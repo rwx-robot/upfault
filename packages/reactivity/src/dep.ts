@@ -130,3 +130,4 @@ export function stopEffect(effect: Effect): void {
   if (effect.stopped) return;
   
   effect.stopped = true;
+  effect.active = false;
