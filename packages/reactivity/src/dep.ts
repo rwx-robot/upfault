@@ -156,3 +156,4 @@ export function resumeEffect(effect: Effect): void {
 /**
  * 批量执行函数，暂停依赖收集
  */
+export function pauseTracking(): void {
