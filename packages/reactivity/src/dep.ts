@@ -118,3 +118,4 @@ export function createEffect(fn: () => void, options?: {
     allowRecurse: options?.allowRecurse ?? false,
     lazy: options?.lazy ?? false,
     onTrack: options?.onTrack,
+    onTrigger: options?.onTrigger,
