@@ -126,3 +126,4 @@ export function createEffect(fn: () => void, options?: {
 /**
  * 停止 effect
  */
+export function stopEffect(effect: Effect): void {
