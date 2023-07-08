@@ -159,3 +159,5 @@ export function resumeEffect(effect: Effect): void {
 export function pauseTracking(): void {
   // 可以通过标记位实现，简化版直接返回
 }
+
+/**
