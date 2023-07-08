@@ -196,3 +196,4 @@ export function toRef<T>(object: any, key: string): Ref<any> {
       object[key] = newValue;
       trigger(dep);
     },
+    __v_isRef: true,
