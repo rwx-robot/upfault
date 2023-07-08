@@ -164,3 +164,4 @@ export function pauseTracking(): void {
  * 恢复依赖收集
  */
 export function resetTracking(): void {
+  // 简化版直接返回
