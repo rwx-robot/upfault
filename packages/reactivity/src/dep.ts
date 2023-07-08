@@ -166,3 +166,5 @@ export function pauseTracking(): void {
 export function resetTracking(): void {
   // 简化版直接返回
 }
+
+/**
