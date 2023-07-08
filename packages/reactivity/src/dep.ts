@@ -187,3 +187,4 @@ export function unref<T>(ref: T | Ref<T>): T extends Ref<infer U> ? U : T {
 export function toRef<T>(object: any, key: string): Ref<any> {
   const dep = createDep();
   
+  return {
