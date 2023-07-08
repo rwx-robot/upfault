@@ -163,3 +163,4 @@ export function pauseTracking(): void {
 /**
  * 恢复依赖收集
  */
+export function resetTracking(): void {
