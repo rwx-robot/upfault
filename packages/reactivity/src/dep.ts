@@ -170,3 +170,4 @@ export function resetTracking(): void {
 /**
  * 判断是否为 Ref
  */
+export function isRef<T>(val: any): val is Ref<T> {
