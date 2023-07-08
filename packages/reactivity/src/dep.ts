@@ -189,3 +189,4 @@ export function toRef<T>(object: any, key: string): Ref<any> {
   
   return {
     get value(): any {
+      track(dep);
