@@ -231,3 +231,4 @@ export function shallowRef<T>(value: T): Ref<T> {
     __v_isRef: true,
     __v_isShallow: true,
   } as Ref<T>;
+}
