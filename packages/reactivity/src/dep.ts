@@ -228,3 +228,4 @@ export function shallowRef<T>(value: T): Ref<T> {
         trigger(dep);
       }
     },
+    __v_isRef: true,
