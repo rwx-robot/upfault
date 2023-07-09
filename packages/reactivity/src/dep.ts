@@ -227,3 +227,4 @@ export function shallowRef<T>(value: T): Ref<T> {
         value = newValue;
         trigger(dep);
       }
+    },
