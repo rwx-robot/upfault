@@ -223,3 +223,4 @@ export function shallowRef<T>(value: T): Ref<T> {
       return value;
     },
     set value(newValue: T) {
+      if (value !== newValue) {
