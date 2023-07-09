@@ -218,3 +218,4 @@ export function shallowRef<T>(value: T): Ref<T> {
   const dep = createDep();
   
   return {
+    get value(): T {
