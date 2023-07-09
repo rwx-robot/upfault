@@ -236,3 +236,4 @@ export function shallowRef<T>(value: T): Ref<T> {
 /**
  * 创建 readonly ref
  */
+export function readonlyRef<T>(value: T): Readonly<Ref<T>> {
