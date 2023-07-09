@@ -221,3 +221,4 @@ export function shallowRef<T>(value: T): Ref<T> {
     get value(): T {
       track(dep);
       return value;
+    },
