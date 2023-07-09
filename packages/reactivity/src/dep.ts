@@ -226,3 +226,4 @@ export function shallowRef<T>(value: T): Ref<T> {
       if (value !== newValue) {
         value = newValue;
         trigger(dep);
+      }
