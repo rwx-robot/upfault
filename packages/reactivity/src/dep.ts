@@ -243,3 +243,4 @@ export function readonlyRef<T>(value: T): Readonly<Ref<T>> {
     get value(): T {
       track(dep);
       return value;
+    },
