@@ -272,3 +272,5 @@ export function isArray(val: any): val is any[] {
 export function hasChanged(a: any, b: any): boolean {
   return a !== b && (a === a || b === b);
 }
+
+/**
