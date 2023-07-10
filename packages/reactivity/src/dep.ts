@@ -249,3 +249,4 @@ export function readonlyRef<T>(value: T): Readonly<Ref<T>> {
     },
     __v_isRef: true,
     __v_isReadonly: true,
+  } as Readonly<Ref<T>>;
