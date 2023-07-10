@@ -263,3 +263,4 @@ export function isFunction(val: any): val is Function {
  * 判断是否为数组
  */
 export function isArray(val: any): val is any[] {
+  return Array.isArray(val);
