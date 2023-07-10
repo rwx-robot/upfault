@@ -257,3 +257,4 @@ export function readonlyRef<T>(value: T): Readonly<Ref<T>> {
  */
 export function isFunction(val: any): val is Function {
   return typeof val === 'function';
+}
