@@ -255,3 +255,4 @@ export function readonlyRef<T>(value: T): Readonly<Ref<T>> {
 /**
  * 判断是否为函数
  */
+export function isFunction(val: any): val is Function {
