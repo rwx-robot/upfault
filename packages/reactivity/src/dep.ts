@@ -264,3 +264,4 @@ export function isFunction(val: any): val is Function {
  */
 export function isArray(val: any): val is any[] {
   return Array.isArray(val);
+}
