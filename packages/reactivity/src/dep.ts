@@ -279,3 +279,4 @@ export function hasChanged(a: any, b: any): boolean {
 export function runEffect(effect: Effect): void {
   if (!effect.active || effect.stopped) return;
   
+  // 检查递归深度
