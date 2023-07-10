@@ -276,3 +276,4 @@ export function hasChanged(a: any, b: any): boolean {
 /**
  * 运行 effect
  */
+export function runEffect(effect: Effect): void {
