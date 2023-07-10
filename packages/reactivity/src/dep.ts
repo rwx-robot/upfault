@@ -267,3 +267,4 @@ export function isArray(val: any): val is any[] {
 }
 
 /**
+ * 判断值是否变化
