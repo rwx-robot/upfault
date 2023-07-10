@@ -245,3 +245,4 @@ export function readonlyRef<T>(value: T): Readonly<Ref<T>> {
       return value;
     },
     set value(_: T) {
+      console.warn('[UpFault] Ref is readonly');
