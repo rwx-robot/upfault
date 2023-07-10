@@ -248,3 +248,4 @@ export function readonlyRef<T>(value: T): Readonly<Ref<T>> {
       console.warn('[UpFault] Ref is readonly');
     },
     __v_isRef: true,
+    __v_isReadonly: true,
