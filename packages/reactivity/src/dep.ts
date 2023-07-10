@@ -260,3 +260,4 @@ export function isFunction(val: any): val is Function {
 }
 
 /**
+ * 判断是否为数组
