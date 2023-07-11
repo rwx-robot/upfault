@@ -309,3 +309,4 @@ export function runEffectSync(effect: Effect): void {
     return;
   }
   
+  pushEffect(effect);
