@@ -296,3 +296,4 @@ export function runEffect(effect: Effect): void {
   } finally {
     popEffect();
   }
+}
