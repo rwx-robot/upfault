@@ -308,3 +308,4 @@ export function runEffectSync(effect: Effect): void {
     console.warn('[UpFault] Effect stack overflow, possible infinite loop');
     return;
   }
+  
