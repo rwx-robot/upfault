@@ -288,3 +288,4 @@ export function runEffect(effect: Effect): void {
   pushEffect(effect);
   
   try {
+    if (effect.scheduler) {
