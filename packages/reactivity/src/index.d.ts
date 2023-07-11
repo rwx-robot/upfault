@@ -7,3 +7,4 @@
  */
 export { track, trigger, createDep, createEffect, stopEffect, getCurrentEffect, pushEffect, popEffect, } from './dep';
 export { ref, shallowRef, readonlyRef, isRef, unref, toRef, toRefs, } from './ref';
+export { computed, } from './computed';
