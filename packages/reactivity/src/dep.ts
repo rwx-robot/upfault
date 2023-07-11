@@ -315,3 +315,4 @@ export function runEffectSync(effect: Effect): void {
     effect.fn();
   } finally {
     popEffect();
+  }
