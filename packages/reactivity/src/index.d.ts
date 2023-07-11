@@ -6,3 +6,4 @@
  * 版本: 0.2.0
  */
 export { track, trigger, createDep, createEffect, stopEffect, getCurrentEffect, pushEffect, popEffect, } from './dep';
+export { ref, shallowRef, readonlyRef, isRef, unref, toRef, toRefs, } from './ref';
