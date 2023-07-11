@@ -293,3 +293,4 @@ export function runEffect(effect: Effect): void {
     } else {
       effect.fn();
     }
+  } finally {
