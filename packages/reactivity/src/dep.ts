@@ -313,3 +313,4 @@ export function runEffectSync(effect: Effect): void {
   
   try {
     effect.fn();
+  } finally {
