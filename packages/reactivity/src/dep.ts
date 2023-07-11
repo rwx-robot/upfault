@@ -303,3 +303,4 @@ export function runEffect(effect: Effect): void {
  */
 export function runEffectSync(effect: Effect): void {
   if (!effect.active || effect.stopped) return;
+  
