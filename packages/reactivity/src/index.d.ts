@@ -5,3 +5,4 @@
  * 参考 Vue 3 / SolidJS 设计
  * 版本: 0.2.0
  */
+export { track, trigger, createDep, createEffect, stopEffect, getCurrentEffect, pushEffect, popEffect, } from './dep';
