@@ -291,3 +291,4 @@ export function runEffect(effect: Effect): void {
     if (effect.scheduler) {
       effect.scheduler(effect.fn);
     } else {
+      effect.fn();
