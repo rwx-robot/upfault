@@ -311,3 +311,4 @@ export function runEffectSync(effect: Effect): void {
   
   pushEffect(effect);
   
+  try {
