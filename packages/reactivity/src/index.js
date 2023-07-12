@@ -7,3 +7,4 @@
  */
 export { 
 // Core
+track, trigger, createDep, createEffect, stopEffect, getCurrentEffect, pushEffect, popEffect, } from './dep';
