@@ -2,3 +2,4 @@
  * @upfault/reactivity - UpFault 细粒度响应式系统
  * 
  * 基于 Proxy + 依赖追踪的响应式系统
+ * 参考 Vue 3 / SolidJS 设计
