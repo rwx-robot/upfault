@@ -9,3 +9,4 @@ export { track, trigger, createDep, createEffect, stopEffect, getCurrentEffect, 
 export { ref, shallowRef, readonlyRef, isRef, unref, toRef, toRefs, } from './ref';
 export { computed, } from './computed';
 export { watch, watchEffect, } from './watch';
+export { effect, batch, } from './core';
