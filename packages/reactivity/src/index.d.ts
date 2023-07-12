@@ -10,3 +10,4 @@ export { ref, shallowRef, readonlyRef, isRef, unref, toRef, toRefs, } from './re
 export { computed, } from './computed';
 export { watch, watchEffect, } from './watch';
 export { effect, batch, } from './core';
+export type { Ref, ReadonlyRef, ComputedRef, ReactiveMarker, Reactive, ReadonlyReactive, ShallowReactive, Dep, Effect, DebuggerEvent, TrackOpTypes, TriggerOpTypes, ReactivityOptions, BatchContext, WatchOptions, WatchCallback, WatchSource, WatchStopHandle, UnwrapRef, UnwrapRefs, ShallowUnwrapRef, } from '@upfault/shared';
