@@ -13,3 +13,4 @@ export { computed, } from './computed';
 export { watch, watchEffect, } from './watch';
 // 从 core 只导出独有的功能
 export { effect, batch, } from './core';
+// 版本信息
