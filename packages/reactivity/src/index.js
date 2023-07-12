@@ -11,3 +11,4 @@ track, trigger, createDep, createEffect, stopEffect, getCurrentEffect, pushEffec
 export { ref, shallowRef, readonlyRef, isRef, unref, toRef, toRefs, } from './ref';
 export { computed, } from './computed';
 export { watch, watchEffect, } from './watch';
+// 从 core 只导出独有的功能
