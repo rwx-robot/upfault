@@ -35,3 +35,4 @@ export {
 export {
   watch,
   watchEffect,
+} from './watch';
