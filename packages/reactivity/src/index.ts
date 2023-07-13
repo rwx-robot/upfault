@@ -11,3 +11,4 @@ export {
   track,
   trigger,
   createDep,
+  createEffect,
