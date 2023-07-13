@@ -12,3 +12,4 @@ export {
   trigger,
   createDep,
   createEffect,
+  stopEffect,
