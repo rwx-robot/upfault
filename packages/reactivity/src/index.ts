@@ -42,3 +42,5 @@ export {
   effect,
   batch,
 } from './core';
+
+// Types (re-export from shared)
