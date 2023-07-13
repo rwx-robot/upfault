@@ -33,3 +33,4 @@ export {
 } from './computed';
 
 export {
+  watch,
