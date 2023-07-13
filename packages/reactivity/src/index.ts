@@ -39,3 +39,4 @@ export {
 
 // 从 core 只导出独有的功能
 export {
+  effect,
