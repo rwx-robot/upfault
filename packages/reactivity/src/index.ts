@@ -41,3 +41,4 @@ export {
 export {
   effect,
   batch,
+} from './core';
