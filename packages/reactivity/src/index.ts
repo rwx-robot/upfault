@@ -25,3 +25,4 @@ export {
   isRef,
   unref,
   toRef,
+  toRefs,
