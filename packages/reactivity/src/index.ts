@@ -15,3 +15,4 @@ export {
   stopEffect,
   getCurrentEffect,
   pushEffect,
+  popEffect,
