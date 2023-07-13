@@ -46,3 +46,4 @@ export {
 // Types (re-export from shared)
 export type {
   Ref,
+  ReadonlyRef,
