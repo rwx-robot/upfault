@@ -20,3 +20,4 @@ export {
 
 export {
   ref,
+  shallowRef,
