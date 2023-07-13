@@ -21,3 +21,4 @@ export {
 export {
   ref,
   shallowRef,
+  readonlyRef,
