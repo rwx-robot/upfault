@@ -34,3 +34,4 @@ export {
 
 export {
   watch,
+  watchEffect,
