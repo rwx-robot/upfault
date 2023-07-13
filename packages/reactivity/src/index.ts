@@ -49,3 +49,4 @@ export type {
   ReadonlyRef,
   ComputedRef,
   ReactiveMarker,
+  Reactive,
