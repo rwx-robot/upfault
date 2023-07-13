@@ -13,3 +13,4 @@ export {
   createDep,
   createEffect,
   stopEffect,
+  getCurrentEffect,
