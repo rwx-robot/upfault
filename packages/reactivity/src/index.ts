@@ -29,3 +29,4 @@ export {
 } from './ref';
 
 export {
+  computed,
