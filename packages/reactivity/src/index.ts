@@ -24,3 +24,4 @@ export {
   readonlyRef,
   isRef,
   unref,
+  toRef,
