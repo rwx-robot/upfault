@@ -10,3 +10,4 @@ export {
   // Core
   track,
   trigger,
+  createDep,
