@@ -9,3 +9,4 @@
 export {
   // Core
   track,
+  trigger,
