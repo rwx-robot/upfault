@@ -26,3 +26,4 @@ export {
   unref,
   toRef,
   toRefs,
+} from './ref';
