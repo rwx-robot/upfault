@@ -44,3 +44,4 @@ export {
 } from './core';
 
 // Types (re-export from shared)
+export type {
