@@ -14,3 +14,4 @@ export {
   createEffect,
   stopEffect,
   getCurrentEffect,
+  pushEffect,
