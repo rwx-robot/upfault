@@ -16,3 +16,4 @@ export {
   getCurrentEffect,
   pushEffect,
   popEffect,
+} from './dep';
