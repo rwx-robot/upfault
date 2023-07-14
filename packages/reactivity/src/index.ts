@@ -67,3 +67,5 @@ export type {
   UnwrapRefs,
   ShallowUnwrapRef,
 } from '@upfault/shared';
+
+// 版本信息
