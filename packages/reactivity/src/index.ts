@@ -54,3 +54,4 @@ export type {
   ShallowReactive,
   Dep,
   Effect,
+  DebuggerEvent,
