@@ -57,3 +57,4 @@ export type {
   DebuggerEvent,
   TrackOpTypes,
   TriggerOpTypes,
+  ReactivityOptions,
