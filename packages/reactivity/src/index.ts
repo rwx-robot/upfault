@@ -60,3 +60,4 @@ export type {
   ReactivityOptions,
   BatchContext,
   WatchOptions,
+  WatchCallback,
