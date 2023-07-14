@@ -53,3 +53,4 @@ export type {
   ReadonlyReactive,
   ShallowReactive,
   Dep,
+  Effect,
