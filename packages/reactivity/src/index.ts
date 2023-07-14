@@ -51,3 +51,4 @@ export type {
   ReactiveMarker,
   Reactive,
   ReadonlyReactive,
+  ShallowReactive,
