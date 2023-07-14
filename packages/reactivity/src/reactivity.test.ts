@@ -10,3 +10,4 @@ import {
   toRef,
   toRefs,
   reactive,
+  readonly,
