@@ -59,3 +59,4 @@ export type {
   TriggerOpTypes,
   ReactivityOptions,
   BatchContext,
+  WatchOptions,
