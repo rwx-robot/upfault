@@ -58,3 +58,4 @@ export type {
   TrackOpTypes,
   TriggerOpTypes,
   ReactivityOptions,
+  BatchContext,
