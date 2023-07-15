@@ -48,3 +48,5 @@ describe('UpFault Reactivity', () => {
       expect(r.value.count).toBe(2);
     });
   });
+
+  describe('computed', () => {
