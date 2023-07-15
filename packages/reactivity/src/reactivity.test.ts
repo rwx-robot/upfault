@@ -21,3 +21,4 @@ import {
 } from './index';
 
 describe('UpFault Reactivity', () => {
+  describe('ref', () => {
