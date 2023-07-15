@@ -28,3 +28,4 @@ describe('UpFault Reactivity', () => {
       expect(isRef(r)).toBe(true);
     });
 
+    it('should track and trigger changes', () => {
