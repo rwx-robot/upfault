@@ -26,3 +26,4 @@ describe('UpFault Reactivity', () => {
       const r = ref(1);
       expect(r.value).toBe(1);
       expect(isRef(r)).toBe(true);
+    });
