@@ -50,3 +50,4 @@ describe('UpFault Reactivity', () => {
   });
 
   describe('computed', () => {
+    it('should compute derived value', () => {
