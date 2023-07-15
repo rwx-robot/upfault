@@ -19,3 +19,5 @@ import {
   toRaw,
   markRaw,
 } from './index';
+
+describe('UpFault Reactivity', () => {
