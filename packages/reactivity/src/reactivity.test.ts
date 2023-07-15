@@ -23,3 +23,4 @@ import {
 describe('UpFault Reactivity', () => {
   describe('ref', () => {
     it('should create a ref with initial value', () => {
+      const r = ref(1);
