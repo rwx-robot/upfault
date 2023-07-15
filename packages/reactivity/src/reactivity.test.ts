@@ -32,3 +32,4 @@ describe('UpFault Reactivity', () => {
       const r = ref(1);
       let dummy;
       effect(() => {
+        dummy = r.value;
