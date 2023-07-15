@@ -34,3 +34,4 @@ describe('UpFault Reactivity', () => {
       effect(() => {
         dummy = r.value;
       });
+      expect(dummy).toBe(1);
