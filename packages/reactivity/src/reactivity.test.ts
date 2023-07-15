@@ -44,3 +44,4 @@ describe('UpFault Reactivity', () => {
       const r = ref({ count: 1 });
       expect(r.value.count).toBe(1);
       
+      r.value = { count: 2 };
