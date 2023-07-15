@@ -16,3 +16,4 @@ import {
   shallowRef,
   triggerRef,
   customRef,
+  toRaw,
