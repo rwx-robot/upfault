@@ -18,3 +18,4 @@ import {
   customRef,
   toRaw,
   markRaw,
+} from './index';
