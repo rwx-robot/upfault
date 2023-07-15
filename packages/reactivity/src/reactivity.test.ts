@@ -31,3 +31,4 @@ describe('UpFault Reactivity', () => {
     it('should track and trigger changes', () => {
       const r = ref(1);
       let dummy;
+      effect(() => {
