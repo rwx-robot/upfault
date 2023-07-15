@@ -17,3 +17,4 @@ import {
   triggerRef,
   customRef,
   toRaw,
+  markRaw,
