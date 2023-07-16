@@ -94,3 +94,4 @@ describe('UpFault Reactivity', () => {
     });
 
     it('should track dependencies', () => {
+      const r = ref(1);
