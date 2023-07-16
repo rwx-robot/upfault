@@ -63,3 +63,4 @@ describe('UpFault Reactivity', () => {
     it('should cache computed value', () => {
       const r = ref(1);
       const fn = vi.fn(() => r.value * 2);
+      const c = computed(fn);
