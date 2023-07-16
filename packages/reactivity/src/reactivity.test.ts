@@ -61,3 +61,4 @@ describe('UpFault Reactivity', () => {
     });
 
     it('should cache computed value', () => {
+      const r = ref(1);
