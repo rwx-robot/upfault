@@ -90,3 +90,4 @@ describe('UpFault Reactivity', () => {
     it('should run immediately', () => {
       const fn = vi.fn();
       effect(fn);
+      expect(fn).toHaveBeenCalledTimes(1);
