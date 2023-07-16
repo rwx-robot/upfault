@@ -72,3 +72,4 @@ describe('UpFault Reactivity', () => {
       r.value = 2;
       expect(c.value).toBe(4);
       expect(fn).toHaveBeenCalledTimes(2);
+    });
