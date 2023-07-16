@@ -65,3 +65,4 @@ describe('UpFault Reactivity', () => {
       const fn = vi.fn(() => r.value * 2);
       const c = computed(fn);
       
+      expect(c.value).toBe(2);
