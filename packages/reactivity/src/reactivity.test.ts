@@ -92,3 +92,5 @@ describe('UpFault Reactivity', () => {
       effect(fn);
       expect(fn).toHaveBeenCalledTimes(1);
     });
+
+    it('should track dependencies', () => {
