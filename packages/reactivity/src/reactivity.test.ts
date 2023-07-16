@@ -66,3 +66,4 @@ describe('UpFault Reactivity', () => {
       const c = computed(fn);
       
       expect(c.value).toBe(2);
+      expect(c.value).toBe(2);
