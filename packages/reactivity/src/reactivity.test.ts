@@ -80,3 +80,4 @@ describe('UpFault Reactivity', () => {
         get: () => r.value * 2,
         set: (val) => { r.value = val / 2; }
       });
+      
