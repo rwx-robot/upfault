@@ -59,3 +59,5 @@ describe('UpFault Reactivity', () => {
       r.value = 2;
       expect(c.value).toBe(4);
     });
+
+    it('should cache computed value', () => {
