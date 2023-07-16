@@ -79,3 +79,4 @@ describe('UpFault Reactivity', () => {
       const c = computed({
         get: () => r.value * 2,
         set: (val) => { r.value = val / 2; }
+      });
