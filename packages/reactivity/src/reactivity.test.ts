@@ -88,3 +88,4 @@ describe('UpFault Reactivity', () => {
 
   describe('effect', () => {
     it('should run immediately', () => {
+      const fn = vi.fn();
