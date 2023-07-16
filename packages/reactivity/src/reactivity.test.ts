@@ -75,3 +75,4 @@ describe('UpFault Reactivity', () => {
     });
 
     it('should support setter', () => {
+      const r = ref(1);
