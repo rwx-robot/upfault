@@ -73,3 +73,5 @@ describe('UpFault Reactivity', () => {
       expect(c.value).toBe(4);
       expect(fn).toHaveBeenCalledTimes(2);
     });
+
+    it('should support setter', () => {
