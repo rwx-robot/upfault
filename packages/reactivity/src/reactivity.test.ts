@@ -136,3 +136,4 @@ describe('UpFault Reactivity', () => {
   });
 
   describe('watch', () => {
+    it('should watch ref changes', () => {
