@@ -109,3 +109,4 @@ describe('UpFault Reactivity', () => {
       const fn = vi.fn();
       const runner = effect(fn, { lazy: true });
       expect(fn).not.toHaveBeenCalled();
+      runner();
