@@ -111,3 +111,4 @@ describe('UpFault Reactivity', () => {
       expect(fn).not.toHaveBeenCalled();
       runner();
       expect(fn).toHaveBeenCalledTimes(1);
+    });
