@@ -117,3 +117,4 @@ describe('UpFault Reactivity', () => {
       const r = ref(1);
       const scheduler = vi.fn((fn) => fn());
       effect(() => r.value, { scheduler });
+      expect(scheduler).toHaveBeenCalledTimes(1);
