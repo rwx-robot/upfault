@@ -138,3 +138,4 @@ describe('UpFault Reactivity', () => {
   describe('watch', () => {
     it('should watch ref changes', () => {
       const r = ref(1);
+      const cb = vi.fn();
