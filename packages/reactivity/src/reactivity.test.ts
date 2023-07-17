@@ -112,3 +112,4 @@ describe('UpFault Reactivity', () => {
       runner();
       expect(fn).toHaveBeenCalledTimes(1);
     });
+
