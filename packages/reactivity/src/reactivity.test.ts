@@ -130,3 +130,4 @@ describe('UpFault Reactivity', () => {
       expect(dummy).toBe(1);
       
       stop();
+      r.value = 2;
