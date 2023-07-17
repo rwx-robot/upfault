@@ -116,3 +116,4 @@ describe('UpFault Reactivity', () => {
     it('should support scheduler', () => {
       const r = ref(1);
       const scheduler = vi.fn((fn) => fn());
+      effect(() => r.value, { scheduler });
