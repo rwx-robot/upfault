@@ -107,3 +107,4 @@ describe('UpFault Reactivity', () => {
 
     it('should support lazy option', () => {
       const fn = vi.fn();
+      const runner = effect(fn, { lazy: true });
