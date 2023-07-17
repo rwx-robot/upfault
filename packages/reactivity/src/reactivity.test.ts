@@ -119,3 +119,4 @@ describe('UpFault Reactivity', () => {
       effect(() => r.value, { scheduler });
       expect(scheduler).toHaveBeenCalledTimes(1);
       
+      r.value = 2;
