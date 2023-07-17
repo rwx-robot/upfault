@@ -127,3 +127,4 @@ describe('UpFault Reactivity', () => {
       const r = ref(1);
       let dummy;
       const stop = effect(() => { dummy = r.value; });
+      expect(dummy).toBe(1);
