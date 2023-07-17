@@ -114,3 +114,4 @@ describe('UpFault Reactivity', () => {
     });
 
     it('should support scheduler', () => {
+      const r = ref(1);
