@@ -123,3 +123,4 @@ describe('UpFault Reactivity', () => {
       expect(scheduler).toHaveBeenCalledTimes(2);
     });
 
+    it('should support stop', () => {
