@@ -110,3 +110,4 @@ describe('UpFault Reactivity', () => {
       const runner = effect(fn, { lazy: true });
       expect(fn).not.toHaveBeenCalled();
       runner();
+      expect(fn).toHaveBeenCalledTimes(1);
