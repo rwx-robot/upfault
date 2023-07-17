@@ -113,3 +113,4 @@ describe('UpFault Reactivity', () => {
       expect(fn).toHaveBeenCalledTimes(1);
     });
 
+    it('should support scheduler', () => {
