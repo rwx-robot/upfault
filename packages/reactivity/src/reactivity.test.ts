@@ -124,3 +124,4 @@ describe('UpFault Reactivity', () => {
     });
 
     it('should support stop', () => {
+      const r = ref(1);
