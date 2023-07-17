@@ -105,3 +105,4 @@ describe('UpFault Reactivity', () => {
       expect(dummy).toBe(2);
     });
 
+    it('should support lazy option', () => {
