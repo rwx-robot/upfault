@@ -169,3 +169,4 @@ describe('UpFault Reactivity', () => {
       watch(r, (_, __, onCleanup) => {
         onCleanup(() => cleanup());
       });
+      
