@@ -180,3 +180,4 @@ describe('UpFault Reactivity', () => {
       const r = ref(1);
       const fn = vi.fn();
       watchEffect(() => fn(r.value));
+      
