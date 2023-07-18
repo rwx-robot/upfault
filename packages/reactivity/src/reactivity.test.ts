@@ -158,3 +158,4 @@ describe('UpFault Reactivity', () => {
       watch(r, cb, { deep: true });
       
       r.value.count = 2;
+      expect(cb).toHaveBeenCalledWith({ count: 2 }, { count: 1 });
