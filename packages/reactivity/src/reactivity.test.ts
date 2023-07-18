@@ -152,3 +152,4 @@ describe('UpFault Reactivity', () => {
       expect(cb).toHaveBeenCalledWith(1, undefined);
     });
 
+    it('should support deep option', () => {
