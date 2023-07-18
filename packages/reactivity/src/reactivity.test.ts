@@ -150,3 +150,4 @@ describe('UpFault Reactivity', () => {
       const cb = vi.fn();
       watch(r, cb, { immediate: true });
       expect(cb).toHaveBeenCalledWith(1, undefined);
+    });
