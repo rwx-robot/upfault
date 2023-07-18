@@ -140,3 +140,4 @@ describe('UpFault Reactivity', () => {
       const r = ref(1);
       const cb = vi.fn();
       watch(r, cb);
+      
