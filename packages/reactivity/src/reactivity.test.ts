@@ -167,3 +167,4 @@ describe('UpFault Reactivity', () => {
       const onCleanup = vi.fn((fn) => { cleanup(fn); });
       
       watch(r, (_, __, onCleanup) => {
+        onCleanup(() => cleanup());
