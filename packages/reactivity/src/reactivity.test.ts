@@ -173,3 +173,4 @@ describe('UpFault Reactivity', () => {
       r.value = 2;
       expect(cleanup).toHaveBeenCalledTimes(1);
     });
+  });
