@@ -177,3 +177,4 @@ describe('UpFault Reactivity', () => {
 
   describe('watchEffect', () => {
     it('should run immediately and track dependencies', () => {
+      const r = ref(1);
