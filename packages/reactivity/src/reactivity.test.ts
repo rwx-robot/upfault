@@ -164,3 +164,4 @@ describe('UpFault Reactivity', () => {
     it('should support cleanup', () => {
       const r = ref(1);
       const cleanup = vi.fn();
+      const onCleanup = vi.fn((fn) => { cleanup(fn); });
