@@ -170,3 +170,4 @@ describe('UpFault Reactivity', () => {
         onCleanup(() => cleanup());
       });
       
+      r.value = 2;
