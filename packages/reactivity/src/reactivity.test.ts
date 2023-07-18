@@ -155,3 +155,4 @@ describe('UpFault Reactivity', () => {
     it('should support deep option', () => {
       const r = ref({ count: 1 });
       const cb = vi.fn();
+      watch(r, cb, { deep: true });
