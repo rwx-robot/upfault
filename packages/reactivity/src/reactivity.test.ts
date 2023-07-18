@@ -159,3 +159,4 @@ describe('UpFault Reactivity', () => {
       
       r.value.count = 2;
       expect(cb).toHaveBeenCalledWith({ count: 2 }, { count: 1 });
+    });
