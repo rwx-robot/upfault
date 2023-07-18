@@ -144,3 +144,5 @@ describe('UpFault Reactivity', () => {
       r.value = 2;
       expect(cb).toHaveBeenCalledWith(2, 1);
     });
+
+    it('should support immediate option', () => {
