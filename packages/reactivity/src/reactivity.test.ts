@@ -146,3 +146,4 @@ describe('UpFault Reactivity', () => {
     });
 
     it('should support immediate option', () => {
+      const r = ref(1);
