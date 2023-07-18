@@ -174,3 +174,5 @@ describe('UpFault Reactivity', () => {
       expect(cleanup).toHaveBeenCalledTimes(1);
     });
   });
+
+  describe('watchEffect', () => {
