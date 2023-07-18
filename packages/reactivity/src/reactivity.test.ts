@@ -157,3 +157,4 @@ describe('UpFault Reactivity', () => {
       const cb = vi.fn();
       watch(r, cb, { deep: true });
       
+      r.value.count = 2;
