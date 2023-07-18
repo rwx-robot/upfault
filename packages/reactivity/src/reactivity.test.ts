@@ -153,3 +153,4 @@ describe('UpFault Reactivity', () => {
     });
 
     it('should support deep option', () => {
+      const r = ref({ count: 1 });
