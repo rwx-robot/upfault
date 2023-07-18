@@ -151,3 +151,4 @@ describe('UpFault Reactivity', () => {
       watch(r, cb, { immediate: true });
       expect(cb).toHaveBeenCalledWith(1, undefined);
     });
+
