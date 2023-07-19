@@ -195,3 +195,4 @@ describe('UpFault Reactivity', () => {
       expect(unref(ref(1))).toBe(1);
       expect(unref(1)).toBe(1);
     });
+
