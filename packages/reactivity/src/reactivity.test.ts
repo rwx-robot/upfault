@@ -186,3 +186,4 @@ describe('UpFault Reactivity', () => {
   });
 
   describe('utility functions', () => {
+    it('isRef should identify refs', () => {
