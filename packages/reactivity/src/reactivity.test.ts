@@ -191,3 +191,4 @@ describe('UpFault Reactivity', () => {
       expect(isRef(1)).toBe(false);
     });
 
+    it('unref should unwrap refs', () => {
