@@ -182,3 +182,4 @@ describe('UpFault Reactivity', () => {
       watchEffect(() => fn(r.value));
       
       expect(fn).toHaveBeenCalledTimes(1);
+    });
