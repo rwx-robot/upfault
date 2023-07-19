@@ -196,3 +196,4 @@ describe('UpFault Reactivity', () => {
       expect(unref(1)).toBe(1);
     });
 
+    it('toRef should create ref from object property', () => {
