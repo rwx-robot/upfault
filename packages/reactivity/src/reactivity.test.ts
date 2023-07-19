@@ -181,3 +181,4 @@ describe('UpFault Reactivity', () => {
       const fn = vi.fn();
       watchEffect(() => fn(r.value));
       
+      expect(fn).toHaveBeenCalledTimes(1);
