@@ -206,3 +206,4 @@ describe('UpFault Reactivity', () => {
 
     it('toRefs should convert object properties to refs', () => {
       const obj = { a: 1, b: 2 };
+      const refs = toRefs(obj);
