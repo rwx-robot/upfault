@@ -220,3 +220,5 @@ describe('UpFault Reactivity', () => {
       r.value.count = 2;
       expect(dummy).toBe(1);
     });
+
+    it('readonlyRef should prevent modification', () => {
