@@ -189,3 +189,4 @@ describe('UpFault Reactivity', () => {
     it('isRef should identify refs', () => {
       expect(isRef(ref(1))).toBe(true);
       expect(isRef(1)).toBe(false);
+    });
