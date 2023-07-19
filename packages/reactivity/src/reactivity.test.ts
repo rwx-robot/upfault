@@ -222,3 +222,4 @@ describe('UpFault Reactivity', () => {
     });
 
     it('readonlyRef should prevent modification', () => {
+      const r = readonlyRef(1);
