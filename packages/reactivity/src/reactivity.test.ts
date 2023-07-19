@@ -216,3 +216,4 @@ describe('UpFault Reactivity', () => {
       let dummy;
       effect(() => { dummy = r.value.count; });
       expect(dummy).toBe(1);
+      
