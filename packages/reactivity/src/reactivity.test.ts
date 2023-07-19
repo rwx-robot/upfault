@@ -200,3 +200,4 @@ describe('UpFault Reactivity', () => {
       const obj = { a: 1 };
       const r = toRef(obj, 'a');
       expect(r.value).toBe(1);
+      obj.a = 2;
