@@ -223,3 +223,4 @@ describe('UpFault Reactivity', () => {
 
     it('readonlyRef should prevent modification', () => {
       const r = readonlyRef(1);
+      expect(r.value).toBe(1);
