@@ -184,3 +184,5 @@ describe('UpFault Reactivity', () => {
       expect(fn).toHaveBeenCalledTimes(1);
     });
   });
+
+  describe('utility functions', () => {
