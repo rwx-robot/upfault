@@ -203,3 +203,5 @@ describe('UpFault Reactivity', () => {
       obj.a = 2;
       expect(r.value).toBe(2);
     });
+
+    it('toRefs should convert object properties to refs', () => {
