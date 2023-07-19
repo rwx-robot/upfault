@@ -211,3 +211,4 @@ describe('UpFault Reactivity', () => {
       expect(refs.b.value).toBe(2);
     });
 
+    it('shallowRef should not track nested changes', () => {
