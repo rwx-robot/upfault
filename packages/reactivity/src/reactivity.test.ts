@@ -215,3 +215,4 @@ describe('UpFault Reactivity', () => {
       const r = shallowRef({ count: 1 });
       let dummy;
       effect(() => { dummy = r.value.count; });
+      expect(dummy).toBe(1);
