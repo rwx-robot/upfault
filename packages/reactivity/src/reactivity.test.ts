@@ -199,3 +199,4 @@ describe('UpFault Reactivity', () => {
     it('toRef should create ref from object property', () => {
       const obj = { a: 1 };
       const r = toRef(obj, 'a');
+      expect(r.value).toBe(1);
