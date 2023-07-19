@@ -212,3 +212,4 @@ describe('UpFault Reactivity', () => {
     });
 
     it('shallowRef should not track nested changes', () => {
+      const r = shallowRef({ count: 1 });
