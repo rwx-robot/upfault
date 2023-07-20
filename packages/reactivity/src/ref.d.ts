@@ -9,3 +9,4 @@ import type { Ref } from '@upfault/shared';
  * @param value 初始值
  * @returns Ref 对象
  */
+export declare function ref<T>(value: T): Ref<T>;
