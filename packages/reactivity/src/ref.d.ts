@@ -6,3 +6,4 @@
 import type { Ref } from '@upfault/shared';
 /**
  * 创建 ref
+ * @param value 初始值
