@@ -228,3 +228,4 @@ describe('UpFault Reactivity', () => {
       r.value = 2;
       expect(r.value).toBe(1);
     });
+  });
