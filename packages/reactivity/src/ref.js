@@ -10,3 +10,4 @@ function createReactiveObject(obj, dep) {
     const proxy = new Proxy(obj, {
         get(target, key, receiver) {
             track(dep);
+            return Reflect.get(target, key, receiver);
