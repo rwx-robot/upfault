@@ -12,3 +12,4 @@ function createReactiveObject(obj, dep) {
             track(dep);
             return Reflect.get(target, key, receiver);
         },
+        set(target, key, value, receiver) {
