@@ -15,3 +15,4 @@ function createReactiveObject(obj, dep) {
         set(target, key, value, receiver) {
             const result = Reflect.set(target, key, value, receiver);
             trigger(dep);
+            return result;
