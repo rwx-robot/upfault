@@ -226,3 +226,4 @@ describe('UpFault Reactivity', () => {
       expect(r.value).toBe(1);
       // @ts-expect-error - readonly
       r.value = 2;
+      expect(r.value).toBe(1);
