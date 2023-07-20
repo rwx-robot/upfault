@@ -5,3 +5,4 @@
  */
 import { track, trigger, createDep, hasChanged } from './dep';
 let proxyId = 0;
+function createReactiveObject(obj, dep) {
