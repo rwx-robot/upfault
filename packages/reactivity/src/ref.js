@@ -9,3 +9,4 @@ function createReactiveObject(obj, dep) {
     const id = ++proxyId;
     const proxy = new Proxy(obj, {
         get(target, key, receiver) {
+            track(dep);
