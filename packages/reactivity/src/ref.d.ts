@@ -10,3 +10,4 @@ import type { Ref } from '@upfault/shared';
  * @returns Ref 对象
  */
 export declare function ref<T>(value: T): Ref<T>;
+export { shallowRef, readonlyRef, toRef, toRefs, isRef, unref } from './dep';
