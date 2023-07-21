@@ -28,3 +28,4 @@ function createReactiveObject(obj, dep) {
  * @param value 初始值
  * @returns Ref 对象
  */
+export function ref(value) {
