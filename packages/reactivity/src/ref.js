@@ -17,3 +17,4 @@ function createReactiveObject(obj, dep) {
             trigger(dep);
             return result;
         }
+    });
