@@ -47,3 +47,4 @@ export function ref(value) {
             const changed = hasChanged(value, newValue);
             if (changed) {
                 value = newValue;
+                reactiveProxy = null; // Reset proxy cache when value changes
