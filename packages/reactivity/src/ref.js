@@ -45,3 +45,4 @@ export function ref(value) {
         },
         set value(newValue) {
             const changed = hasChanged(value, newValue);
+            if (changed) {
