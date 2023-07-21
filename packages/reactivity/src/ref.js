@@ -18,3 +18,4 @@ function createReactiveObject(obj, dep) {
             return result;
         }
     });
+    // Mark the proxy for identification
