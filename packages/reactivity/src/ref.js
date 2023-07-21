@@ -20,3 +20,4 @@ function createReactiveObject(obj, dep) {
     });
     // Mark the proxy for identification
     Object.defineProperty(proxy, '__v_isReactive', { value: true, writable: false, enumerable: false, configurable: false });
+    Object.defineProperty(proxy, '__v_raw', { value: obj, writable: false, enumerable: false, configurable: false });
