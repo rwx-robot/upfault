@@ -31,3 +31,4 @@ function createReactiveObject(obj, dep) {
 export function ref(value) {
     const dep = createDep();
     let reactiveProxy = null;
+    const ref = {
