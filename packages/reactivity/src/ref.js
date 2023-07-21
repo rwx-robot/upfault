@@ -33,3 +33,4 @@ export function ref(value) {
     let reactiveProxy = null;
     const ref = {
         get value() {
+            track(dep);
