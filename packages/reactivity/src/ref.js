@@ -50,3 +50,4 @@ export function ref(value) {
                 reactiveProxy = null; // Reset proxy cache when value changes
                 trigger(dep);
             }
+        },
