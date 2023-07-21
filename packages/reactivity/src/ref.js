@@ -29,3 +29,4 @@ function createReactiveObject(obj, dep) {
  * @returns Ref 对象
  */
 export function ref(value) {
+    const dep = createDep();
