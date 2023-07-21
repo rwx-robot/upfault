@@ -41,3 +41,4 @@ export function ref(value) {
                 }
                 return reactiveProxy;
             }
+            return value;
