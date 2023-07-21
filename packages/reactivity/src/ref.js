@@ -39,3 +39,4 @@ export function ref(value) {
                 if (!reactiveProxy) {
                     reactiveProxy = createReactiveObject(value, dep);
                 }
+                return reactiveProxy;
