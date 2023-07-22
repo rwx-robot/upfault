@@ -28,3 +28,4 @@ function createReactiveObject(obj: any, dep: any): any {
   return proxy;
 }
 
+/**
