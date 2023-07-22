@@ -35,3 +35,4 @@ function createReactiveObject(obj: any, dep: any): any {
  */
 export function ref<T>(value: T): Ref<T> {
   const dep = createDep();
+  let reactiveProxy: any = null;
