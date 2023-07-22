@@ -9,3 +9,4 @@ import { track, trigger, createDep, isRef, unref, toRef, toRefs, shallowRef, rea
 import type { Ref, ReadonlyRef } from '@upfault/shared';
 
 let proxyId = 0;
+function createReactiveObject(obj: any, dep: any): any {
