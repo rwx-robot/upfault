@@ -17,3 +17,4 @@ function createReactiveObject(obj: any, dep: any): any {
       return Reflect.get(target, key, receiver);
     },
     set(target, key, value, receiver) {
+      const result = Reflect.set(target, key, value, receiver);
