@@ -21,3 +21,4 @@ function createReactiveObject(obj: any, dep: any): any {
       trigger(dep);
       return result;
     }
+  });
