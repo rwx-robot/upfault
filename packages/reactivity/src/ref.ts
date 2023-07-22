@@ -22,3 +22,4 @@ function createReactiveObject(obj: any, dep: any): any {
       return result;
     }
   });
+  // Mark the proxy for identification
