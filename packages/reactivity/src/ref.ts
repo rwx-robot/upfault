@@ -30,3 +30,4 @@ function createReactiveObject(obj: any, dep: any): any {
 
 /**
  * 创建 ref
+ * @param value 初始值
