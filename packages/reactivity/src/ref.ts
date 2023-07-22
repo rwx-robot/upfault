@@ -12,3 +12,4 @@ let proxyId = 0;
 function createReactiveObject(obj: any, dep: any): any {
   const id = ++proxyId;
   const proxy = new Proxy(obj, {
+    get(target, key, receiver) {
