@@ -27,3 +27,4 @@ function createReactiveObject(obj: any, dep: any): any {
   Object.defineProperty(proxy, '__v_raw', { value: obj, writable: false, enumerable: false, configurable: false });
   return proxy;
 }
+
