@@ -33,3 +33,4 @@ function createReactiveObject(obj: any, dep: any): any {
  * @param value 初始值
  * @returns Ref 对象
  */
+export function ref<T>(value: T): Ref<T> {
