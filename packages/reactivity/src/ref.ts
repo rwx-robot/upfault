@@ -42,3 +42,4 @@ export function ref<T>(value: T): Ref<T> {
       track(dep);
       // For objects, return a cached reactive proxy to track nested mutations
       if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+        if (!reactiveProxy) {
