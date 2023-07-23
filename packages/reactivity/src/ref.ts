@@ -53,3 +53,4 @@ export function ref<T>(value: T): Ref<T> {
       const changed = hasChanged(value, newValue);
       
       if (changed) {
+        value = newValue;
