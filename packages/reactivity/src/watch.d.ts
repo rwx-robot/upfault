@@ -9,3 +9,4 @@ import type { WatchOptions, WatchCallback, WatchSource, WatchStopHandle } from '
  */
 export declare function watch<T>(source: WatchSource<T>, callback: WatchCallback<T>, options?: WatchOptions): WatchStopHandle;
 /**
+ * 创建 watchEffect
