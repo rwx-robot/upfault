@@ -63,3 +63,5 @@ export function ref<T>(value: T): Ref<T> {
   
   return ref;
 }
+
+export { shallowRef, readonlyRef, toRef, toRefs, isRef, unref } from './dep';
