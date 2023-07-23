@@ -40,3 +40,4 @@ export function ref<T>(value: T): Ref<T> {
   const ref = {
     get value(): T {
       track(dep);
+      // For objects, return a cached reactive proxy to track nested mutations
