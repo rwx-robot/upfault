@@ -7,3 +7,4 @@ import type { WatchOptions, WatchCallback, WatchSource, WatchStopHandle } from '
 /**
  * 创建 watch
  */
+export declare function watch<T>(source: WatchSource<T>, callback: WatchCallback<T>, options?: WatchOptions): WatchStopHandle;
