@@ -61,3 +61,4 @@ export function ref<T>(value: T): Ref<T> {
     __v_isRef: true,
   } as Ref<T>;
   
+  return ref;
