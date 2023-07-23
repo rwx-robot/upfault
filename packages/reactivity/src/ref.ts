@@ -50,3 +50,4 @@ export function ref<T>(value: T): Ref<T> {
       return value;
     },
     set value(newValue: T) {
+      const changed = hasChanged(value, newValue);
