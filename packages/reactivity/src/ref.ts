@@ -45,3 +45,4 @@ export function ref<T>(value: T): Ref<T> {
         if (!reactiveProxy) {
           reactiveProxy = createReactiveObject(value, dep);
         }
+        return reactiveProxy;
