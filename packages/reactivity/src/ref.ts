@@ -44,3 +44,4 @@ export function ref<T>(value: T): Ref<T> {
       if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
         if (!reactiveProxy) {
           reactiveProxy = createReactiveObject(value, dep);
+        }
