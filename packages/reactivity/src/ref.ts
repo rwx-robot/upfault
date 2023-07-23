@@ -38,3 +38,4 @@ export function ref<T>(value: T): Ref<T> {
   let reactiveProxy: any = null;
   
   const ref = {
+    get value(): T {
