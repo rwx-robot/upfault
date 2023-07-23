@@ -54,3 +54,4 @@ export function ref<T>(value: T): Ref<T> {
       
       if (changed) {
         value = newValue;
+        reactiveProxy = null; // Reset proxy cache when value changes
