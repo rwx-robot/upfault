@@ -20,3 +20,4 @@ function hasChangedDeep(a, b) {
     if (aUnwrapped === null || bUnwrapped === null)
         return true;
     if (typeof aUnwrapped !== 'object' || typeof bUnwrapped !== 'object')
+        return aUnwrapped !== bUnwrapped;
