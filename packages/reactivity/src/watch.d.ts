@@ -14,3 +14,4 @@ export declare function watch<T>(source: WatchSource<T>, callback: WatchCallback
 export declare function watchEffect(fn: () => void, options?: {
     flush?: 'pre' | 'post' | 'sync';
     onTrack?: (e: any) => void;
+    onTrigger?: (e: any) => void;
