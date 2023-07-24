@@ -12,3 +12,4 @@ export declare function watch<T>(source: WatchSource<T>, callback: WatchCallback
  * 创建 watchEffect
  */
 export declare function watchEffect(fn: () => void, options?: {
+    flush?: 'pre' | 'post' | 'sync';
