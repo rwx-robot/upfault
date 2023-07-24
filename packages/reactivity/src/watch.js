@@ -12,3 +12,4 @@ function hasChangedDeep(a, b) {
     const unwrap = (val) => {
         // Check if it's our reactive proxy (has a specific marker)
         return val && val.__v_isReactive ? val.__v_raw : val;
+    };
