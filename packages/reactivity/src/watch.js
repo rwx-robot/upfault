@@ -14,3 +14,4 @@ function hasChangedDeep(a, b) {
         return val && val.__v_isReactive ? val.__v_raw : val;
     };
     const aUnwrapped = unwrap(a);
+    const bUnwrapped = unwrap(b);
