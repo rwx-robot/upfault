@@ -16,3 +16,4 @@ export declare function watchEffect(fn: () => void, options?: {
     onTrack?: (e: any) => void;
     onTrigger?: (e: any) => void;
 }): () => void;
+//# sourceMappingURL=watch.d.ts.map
