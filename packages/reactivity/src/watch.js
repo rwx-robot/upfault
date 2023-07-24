@@ -5,3 +5,4 @@
  */
 import { createEffect, stopEffect, runEffectSync, getCurrentEffect, isRef, isFunction, isArray, hasChanged, } from './dep';
 /**
+ * 深度比较是否变化
