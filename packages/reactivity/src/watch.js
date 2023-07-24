@@ -26,3 +26,4 @@ function hasChangedDeep(a, b) {
     if (keysA.length !== keysB.length)
         return true;
     for (const key of keysA) {
+        if (!keysB.includes(key))
