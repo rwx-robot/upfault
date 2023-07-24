@@ -28,3 +28,4 @@ function hasChangedDeep(a, b) {
     for (const key of keysA) {
         if (!keysB.includes(key))
             return true;
+        if (hasChangedDeep(aUnwrapped[key], bUnwrapped[key]))
