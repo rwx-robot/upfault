@@ -10,3 +10,4 @@ import { createEffect, stopEffect, runEffectSync, getCurrentEffect, isRef, isFun
 function hasChangedDeep(a, b) {
     // Unwrap Proxies to compare target objects
     const unwrap = (val) => {
+        // Check if it's our reactive proxy (has a specific marker)
