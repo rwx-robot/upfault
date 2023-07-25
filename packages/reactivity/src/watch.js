@@ -50,3 +50,4 @@ function deepClone(val) {
 export function watch(source, callback, options) {
     let getter;
     if (isRef(source)) {
+        getter = () => source.value;
