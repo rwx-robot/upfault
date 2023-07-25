@@ -43,3 +43,4 @@ function deepClone(val) {
         cloned[key] = deepClone(val[key]);
     }
     return cloned;
+}
