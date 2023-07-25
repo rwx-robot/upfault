@@ -65,3 +65,4 @@ export function watch(source, callback, options) {
     const onCleanup = (fn) => {
         cleanup = fn;
     };
+    // For deep watch, store a snapshot (deep clone) to avoid mutation issues
