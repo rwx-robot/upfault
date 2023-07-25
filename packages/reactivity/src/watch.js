@@ -33,3 +33,4 @@ function hasChangedDeep(a, b) {
     }
     return false;
 }
+function deepClone(val) {
