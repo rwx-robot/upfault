@@ -66,3 +66,4 @@ export function watch(source, callback, options) {
         cleanup = fn;
     };
     // For deep watch, store a snapshot (deep clone) to avoid mutation issues
+    const isDeep = options?.deep === true;
