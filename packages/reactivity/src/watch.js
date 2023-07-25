@@ -61,3 +61,4 @@ export function watch(source, callback, options) {
     else {
         getter = () => source;
     }
+    let cleanup;
