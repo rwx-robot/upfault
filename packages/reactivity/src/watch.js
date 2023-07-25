@@ -39,3 +39,4 @@ function deepClone(val) {
     if (Array.isArray(val))
         return val.map(deepClone);
     const cloned = {};
+    for (const key in val) {
