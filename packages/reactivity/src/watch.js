@@ -31,3 +31,4 @@ function hasChangedDeep(a, b) {
         if (hasChangedDeep(aUnwrapped[key], bUnwrapped[key]))
             return true;
     }
+    return false;
