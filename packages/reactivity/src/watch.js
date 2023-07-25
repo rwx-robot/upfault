@@ -48,3 +48,4 @@ function deepClone(val) {
  * 创建 watch
  */
 export function watch(source, callback, options) {
+    let getter;
