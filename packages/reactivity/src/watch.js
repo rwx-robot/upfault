@@ -37,3 +37,4 @@ function deepClone(val) {
     if (val === null || typeof val !== 'object')
         return val;
     if (Array.isArray(val))
+        return val.map(deepClone);
