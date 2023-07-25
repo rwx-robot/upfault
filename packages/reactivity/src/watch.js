@@ -63,3 +63,4 @@ export function watch(source, callback, options) {
     }
     let cleanup;
     const onCleanup = (fn) => {
+        cleanup = fn;
