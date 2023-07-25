@@ -52,3 +52,4 @@ export function watch(source, callback, options) {
     if (isRef(source)) {
         getter = () => source.value;
     }
+    else if (isFunction(source)) {
