@@ -40,3 +40,4 @@ function deepClone(val) {
         return val.map(deepClone);
     const cloned = {};
     for (const key in val) {
+        cloned[key] = deepClone(val[key]);
