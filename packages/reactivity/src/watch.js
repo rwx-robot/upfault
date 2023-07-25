@@ -36,3 +36,4 @@ function hasChangedDeep(a, b) {
 function deepClone(val) {
     if (val === null || typeof val !== 'object')
         return val;
+    if (Array.isArray(val))
