@@ -79,3 +79,4 @@ export function watch(source, callback, options) {
             : hasChanged(newValue, oldValue);
         if (changed) {
             // Pass onCleanup only if callback expects it (length >= 3)
+            let cleanupFn;
