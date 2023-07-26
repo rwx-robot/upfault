@@ -94,3 +94,4 @@ export function watch(source, callback, options) {
                 cleanupFn();
             // Update snapshots
             oldValue = newValue;
+            if (isDeep) {
