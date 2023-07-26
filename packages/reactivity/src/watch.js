@@ -78,3 +78,4 @@ export function watch(source, callback, options) {
             ? hasChangedDeep(newValue, oldValueSnapshot)
             : hasChanged(newValue, oldValue);
         if (changed) {
+            // Pass onCleanup only if callback expects it (length >= 3)
