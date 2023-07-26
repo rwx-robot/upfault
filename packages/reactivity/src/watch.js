@@ -71,3 +71,4 @@ export function watch(source, callback, options) {
     let oldValue = getter();
     const job = () => {
         const currentEffect = getCurrentEffect();
+        if (!currentEffect || !currentEffect.active)
