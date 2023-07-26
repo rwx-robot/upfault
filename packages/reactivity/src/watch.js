@@ -87,3 +87,4 @@ export function watch(source, callback, options) {
                 callback(newValue, isDeep ? oldValueSnapshot : oldValue, onCleanup);
             }
             else {
+                callback(newValue, isDeep ? oldValueSnapshot : oldValue);
