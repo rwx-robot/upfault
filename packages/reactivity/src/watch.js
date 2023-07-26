@@ -111,3 +111,4 @@ export function watch(source, callback, options) {
             else {
                 // Default to sync for predictable test behavior
                 runEffectSync(effect);
+            }
