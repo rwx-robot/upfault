@@ -103,3 +103,4 @@ export function watch(source, callback, options) {
         lazy: true,
         scheduler: (fn) => {
             if (options?.flush === 'sync') {
+                runEffectSync(effect);
