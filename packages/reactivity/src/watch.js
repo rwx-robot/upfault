@@ -76,3 +76,4 @@ export function watch(source, callback, options) {
         const newValue = getter();
         const changed = isDeep
             ? hasChangedDeep(newValue, oldValueSnapshot)
+            : hasChanged(newValue, oldValue);
