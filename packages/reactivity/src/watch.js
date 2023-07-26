@@ -81,3 +81,4 @@ export function watch(source, callback, options) {
             // Pass onCleanup only if callback expects it (length >= 3)
             let cleanupFn;
             const onCleanup = (fn) => {
+                cleanupFn = fn;
