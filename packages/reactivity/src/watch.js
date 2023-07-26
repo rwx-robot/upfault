@@ -102,3 +102,4 @@ export function watch(source, callback, options) {
     const effect = createEffect(job, {
         lazy: true,
         scheduler: (fn) => {
+            if (options?.flush === 'sync') {
