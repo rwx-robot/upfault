@@ -93,3 +93,4 @@ export function watch(source, callback, options) {
             if (cleanupFn)
                 cleanupFn();
             // Update snapshots
+            oldValue = newValue;
