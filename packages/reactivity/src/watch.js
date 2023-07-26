@@ -84,3 +84,4 @@ export function watch(source, callback, options) {
                 cleanupFn = fn;
             };
             if (callback.length >= 3) {
+                callback(newValue, isDeep ? oldValueSnapshot : oldValue, onCleanup);
