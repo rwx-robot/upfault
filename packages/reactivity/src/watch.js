@@ -92,3 +92,4 @@ export function watch(source, callback, options) {
             // Call cleanup after callback (like finally)
             if (cleanupFn)
                 cleanupFn();
+            // Update snapshots
