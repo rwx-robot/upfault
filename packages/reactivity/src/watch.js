@@ -95,3 +95,4 @@ export function watch(source, callback, options) {
             // Update snapshots
             oldValue = newValue;
             if (isDeep) {
+                oldValueSnapshot = deepClone(newValue);
