@@ -105,3 +105,4 @@ export function watch(source, callback, options) {
             if (options?.flush === 'sync') {
                 runEffectSync(effect);
             }
+            else if (options?.flush === 'post') {
