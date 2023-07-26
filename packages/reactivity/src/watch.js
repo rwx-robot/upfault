@@ -74,3 +74,4 @@ export function watch(source, callback, options) {
         if (!currentEffect || !currentEffect.active)
             return;
         const newValue = getter();
+        const changed = isDeep
