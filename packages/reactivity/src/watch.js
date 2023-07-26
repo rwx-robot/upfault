@@ -72,3 +72,4 @@ export function watch(source, callback, options) {
     const job = () => {
         const currentEffect = getCurrentEffect();
         if (!currentEffect || !currentEffect.active)
+            return;
