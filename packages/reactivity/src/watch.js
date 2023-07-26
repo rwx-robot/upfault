@@ -88,3 +88,4 @@ export function watch(source, callback, options) {
             }
             else {
                 callback(newValue, isDeep ? oldValueSnapshot : oldValue);
+            }
