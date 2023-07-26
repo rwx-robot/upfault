@@ -106,3 +106,4 @@ export function watch(source, callback, options) {
                 runEffectSync(effect);
             }
             else if (options?.flush === 'post') {
+                queueMicrotask(() => runEffectSync(effect));
