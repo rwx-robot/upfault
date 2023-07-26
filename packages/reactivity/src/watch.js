@@ -90,3 +90,4 @@ export function watch(source, callback, options) {
                 callback(newValue, isDeep ? oldValueSnapshot : oldValue);
             }
             // Call cleanup after callback (like finally)
+            if (cleanupFn)
