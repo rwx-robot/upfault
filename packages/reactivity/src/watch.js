@@ -109,3 +109,4 @@ export function watch(source, callback, options) {
                 queueMicrotask(() => runEffectSync(effect));
             }
             else {
+                // Default to sync for predictable test behavior
