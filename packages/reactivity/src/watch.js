@@ -104,3 +104,4 @@ export function watch(source, callback, options) {
         scheduler: (fn) => {
             if (options?.flush === 'sync') {
                 runEffectSync(effect);
+            }
