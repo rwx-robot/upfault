@@ -69,3 +69,4 @@ export function watch(source, callback, options) {
     const isDeep = options?.deep === true;
     let oldValueSnapshot = isDeep ? deepClone(getter()) : getter();
     let oldValue = getter();
+    const job = () => {
