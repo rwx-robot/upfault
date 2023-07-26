@@ -98,3 +98,4 @@ export function watch(source, callback, options) {
                 oldValueSnapshot = deepClone(newValue);
             }
         }
+    };
