@@ -83,3 +83,4 @@ export function watch(source, callback, options) {
             const onCleanup = (fn) => {
                 cleanupFn = fn;
             };
+            if (callback.length >= 3) {
