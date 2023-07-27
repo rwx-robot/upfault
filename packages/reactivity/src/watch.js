@@ -151,3 +151,4 @@ export function watchEffect(fn, options) {
             else {
                 // Default to sync for immediate execution
                 runEffectSync(effect);
+            }
