@@ -149,3 +149,4 @@ export function watchEffect(fn, options) {
                 queueMicrotask(() => runEffectSync(effect));
             }
             else {
+                // Default to sync for immediate execution
