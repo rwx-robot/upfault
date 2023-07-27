@@ -135,3 +135,4 @@ export function watch(source, callback, options) {
     }
     const stop = () => {
         stopEffect(effect);
+    };
