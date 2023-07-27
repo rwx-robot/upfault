@@ -113,3 +113,4 @@ export function watch(source, callback, options) {
                 runEffectSync(effect);
             }
         },
+        onTrack: options?.onTrack,
