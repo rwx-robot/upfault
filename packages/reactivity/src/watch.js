@@ -136,3 +136,4 @@ export function watch(source, callback, options) {
     const stop = () => {
         stopEffect(effect);
     };
+    return Object.assign(stop, { effect });
