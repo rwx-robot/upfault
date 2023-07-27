@@ -144,3 +144,4 @@ export function watch(source, callback, options) {
 export function watchEffect(fn, options) {
     const effect = createEffect(fn, {
         lazy: false,
+        scheduler: (fn) => {
