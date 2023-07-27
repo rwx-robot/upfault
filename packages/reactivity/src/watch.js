@@ -114,3 +114,4 @@ export function watch(source, callback, options) {
             }
         },
         onTrack: options?.onTrack,
+        onTrigger: options?.onTrigger,
