@@ -117,3 +117,4 @@ export function watch(source, callback, options) {
         onTrigger: options?.onTrigger,
     });
     // 同步运行一次以建立依赖追踪
+    runEffectSync(effect);
