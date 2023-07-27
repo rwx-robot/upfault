@@ -125,3 +125,4 @@ export function watch(source, callback, options) {
         if (callback.length >= 3) {
             callback(newValue, undefined, onCleanup);
         }
+        else {
