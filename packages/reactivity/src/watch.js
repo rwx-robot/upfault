@@ -129,3 +129,4 @@ export function watch(source, callback, options) {
             callback(newValue, undefined);
         }
         oldValue = newValue;
+        if (isDeep) {
