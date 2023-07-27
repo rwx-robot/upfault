@@ -122,3 +122,4 @@ export function watch(source, callback, options) {
     if (options?.immediate) {
         const newValue = getter();
         // Pass onCleanup only if callback expects it
+        if (callback.length >= 3) {
