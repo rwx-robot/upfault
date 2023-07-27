@@ -123,3 +123,4 @@ export function watch(source, callback, options) {
         const newValue = getter();
         // Pass onCleanup only if callback expects it
         if (callback.length >= 3) {
+            callback(newValue, undefined, onCleanup);
