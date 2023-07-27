@@ -148,3 +148,4 @@ export function watchEffect(fn, options) {
             if (options?.flush === 'post') {
                 queueMicrotask(() => runEffectSync(effect));
             }
+            else {
