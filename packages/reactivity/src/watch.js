@@ -112,3 +112,4 @@ export function watch(source, callback, options) {
                 // Default to sync for predictable test behavior
                 runEffectSync(effect);
             }
+        },
