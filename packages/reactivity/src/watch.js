@@ -145,3 +145,4 @@ export function watchEffect(fn, options) {
     const effect = createEffect(fn, {
         lazy: false,
         scheduler: (fn) => {
+            if (options?.flush === 'post') {
