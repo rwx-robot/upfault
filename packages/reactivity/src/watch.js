@@ -126,3 +126,4 @@ export function watch(source, callback, options) {
             callback(newValue, undefined, onCleanup);
         }
         else {
+            callback(newValue, undefined);
