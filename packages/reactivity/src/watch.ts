@@ -26,3 +26,5 @@ import type {
   WatchStopHandle,
   DebuggerEvent
 } from '@upfault/shared';
+
+/**
