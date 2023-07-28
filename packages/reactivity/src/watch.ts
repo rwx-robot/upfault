@@ -17,3 +17,4 @@ import {
   isFunction,
   isArray,
   hasChanged,
+} from './dep';
