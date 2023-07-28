@@ -157,3 +157,4 @@ export function watchEffect(fn, options) {
         onTrigger: options?.onTrigger,
     });
     runEffectSync(effect);
+    return () => stopEffect(effect);
