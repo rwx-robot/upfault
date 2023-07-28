@@ -12,3 +12,4 @@ import {
   stopEffect, 
   runEffect,
   runEffectSync,
+  getCurrentEffect,
