@@ -33,3 +33,4 @@ import type {
 function hasChangedDeep(a: any, b: any): boolean {
   // Unwrap Proxies to compare target objects
   const unwrap = (val: any) => {
+    // Check if it's our reactive proxy (has a specific marker)
