@@ -21,3 +21,4 @@ import {
 
 import type { 
   WatchOptions, 
+  WatchCallback, 
