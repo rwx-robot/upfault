@@ -25,3 +25,4 @@ import type {
   WatchSource, 
   WatchStopHandle,
   DebuggerEvent
+} from '@upfault/shared';
