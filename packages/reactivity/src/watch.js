@@ -158,3 +158,4 @@ export function watchEffect(fn, options) {
     });
     runEffectSync(effect);
     return () => stopEffect(effect);
+}
