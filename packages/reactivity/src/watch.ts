@@ -24,3 +24,4 @@ import type {
   WatchCallback, 
   WatchSource, 
   WatchStopHandle,
+  DebuggerEvent
