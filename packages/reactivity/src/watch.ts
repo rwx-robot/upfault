@@ -16,3 +16,4 @@ import {
   isRef,
   isFunction,
   isArray,
+  hasChanged,
