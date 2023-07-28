@@ -9,3 +9,4 @@ import {
   trigger, 
   createDep, 
   createEffect, 
+  stopEffect, 
