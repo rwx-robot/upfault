@@ -32,3 +32,4 @@ import type {
  */
 function hasChangedDeep(a: any, b: any): boolean {
   // Unwrap Proxies to compare target objects
+  const unwrap = (val: any) => {
