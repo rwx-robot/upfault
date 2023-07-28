@@ -30,3 +30,4 @@ import type {
 /**
  * 深度比较是否变化
  */
+function hasChangedDeep(a: any, b: any): boolean {
