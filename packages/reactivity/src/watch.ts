@@ -23,3 +23,4 @@ import type {
   WatchOptions, 
   WatchCallback, 
   WatchSource, 
+  WatchStopHandle,
