@@ -20,3 +20,4 @@ import {
 } from './dep';
 
 import type { 
+  WatchOptions, 
