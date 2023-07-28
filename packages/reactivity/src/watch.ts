@@ -28,3 +28,4 @@ import type {
 } from '@upfault/shared';
 
 /**
+ * 深度比较是否变化
