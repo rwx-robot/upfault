@@ -14,3 +14,4 @@ import {
   runEffectSync,
   getCurrentEffect,
   isRef,
+  isFunction,
