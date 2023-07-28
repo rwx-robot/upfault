@@ -155,3 +155,4 @@ export function watchEffect(fn, options) {
         },
         onTrack: options?.onTrack,
         onTrigger: options?.onTrigger,
+    });
