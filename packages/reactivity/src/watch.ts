@@ -58,3 +58,4 @@ function hasChangedDeep(a: any, b: any): boolean {
 }
 
 function deepClone(val: any): any {
+  if (val === null || typeof val !== 'object') return val;
