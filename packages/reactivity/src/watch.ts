@@ -76,3 +76,4 @@ export function watch<T>(
   options?: WatchOptions
 ): WatchStopHandle {
   let getter: () => any;
+  
