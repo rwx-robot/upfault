@@ -72,3 +72,4 @@ function deepClone(val: any): any {
  */
 export function watch<T>(
   source: WatchSource<T>,
+  callback: WatchCallback<T>,
