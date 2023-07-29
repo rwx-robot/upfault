@@ -66,3 +66,5 @@ function deepClone(val: any): any {
   }
   return cloned;
 }
+
+/**
