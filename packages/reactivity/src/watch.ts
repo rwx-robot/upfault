@@ -37,3 +37,4 @@ function hasChangedDeep(a: any, b: any): boolean {
     return val && val.__v_isReactive ? val.__v_raw : val;
   };
   
+  const aUnwrapped = unwrap(a);
