@@ -74,3 +74,4 @@ export function watch<T>(
   source: WatchSource<T>,
   callback: WatchCallback<T>,
   options?: WatchOptions
+): WatchStopHandle {
