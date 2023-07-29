@@ -61,3 +61,4 @@ function deepClone(val: any): any {
   if (val === null || typeof val !== 'object') return val;
   if (Array.isArray(val)) return val.map(deepClone);
   const cloned: any = {};
+  for (const key in val) {
