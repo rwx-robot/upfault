@@ -78,3 +78,4 @@ export function watch<T>(
   let getter: () => any;
   
   if (isRef(source)) {
+    getter = () => source.value;
