@@ -79,3 +79,4 @@ export function watch<T>(
   
   if (isRef(source)) {
     getter = () => source.value;
+  } else if (isFunction(source)) {
