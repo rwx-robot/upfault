@@ -41,3 +41,4 @@ function hasChangedDeep(a: any, b: any): boolean {
   const bUnwrapped = unwrap(b);
   
   if (aUnwrapped === bUnwrapped) return false;
+  if (aUnwrapped === null || bUnwrapped === null) return true;
