@@ -36,3 +36,4 @@ function hasChangedDeep(a: any, b: any): boolean {
     // Check if it's our reactive proxy (has a specific marker)
     return val && val.__v_isReactive ? val.__v_raw : val;
   };
+  
