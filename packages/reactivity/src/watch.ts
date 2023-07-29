@@ -71,3 +71,4 @@ function deepClone(val: any): any {
  * 创建 watch
  */
 export function watch<T>(
+  source: WatchSource<T>,
