@@ -44,3 +44,4 @@ function hasChangedDeep(a: any, b: any): boolean {
   if (aUnwrapped === null || bUnwrapped === null) return true;
   if (typeof aUnwrapped !== 'object' || typeof bUnwrapped !== 'object') return aUnwrapped !== bUnwrapped;
   
+  const keysA = Object.keys(aUnwrapped);
