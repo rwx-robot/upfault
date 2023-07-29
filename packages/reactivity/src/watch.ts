@@ -47,3 +47,4 @@ function hasChangedDeep(a: any, b: any): boolean {
   const keysA = Object.keys(aUnwrapped);
   const keysB = Object.keys(bUnwrapped);
   
+  if (keysA.length !== keysB.length) return true;
