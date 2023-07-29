@@ -77,3 +77,4 @@ export function watch<T>(
 ): WatchStopHandle {
   let getter: () => any;
   
+  if (isRef(source)) {
