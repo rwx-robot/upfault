@@ -56,3 +56,5 @@ function hasChangedDeep(a: any, b: any): boolean {
   
   return false;
 }
+
+function deepClone(val: any): any {
