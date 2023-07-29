@@ -75,3 +75,4 @@ export function watch<T>(
   callback: WatchCallback<T>,
   options?: WatchOptions
 ): WatchStopHandle {
+  let getter: () => any;
