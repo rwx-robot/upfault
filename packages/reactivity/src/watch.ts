@@ -101,3 +101,4 @@ export function watch<T>(
   const job = () => {
     const currentEffect = getCurrentEffect();
     if (!currentEffect || !currentEffect.active) return;
+    
