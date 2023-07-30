@@ -109,3 +109,4 @@ export function watch<T>(
       : hasChanged(newValue, oldValue);
     
     if (changed) {
+      // Pass onCleanup only if callback expects it (length >= 3)
