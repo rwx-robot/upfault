@@ -104,3 +104,4 @@ export function watch<T>(
     
     const newValue = getter();
     
+    const changed = isDeep 
