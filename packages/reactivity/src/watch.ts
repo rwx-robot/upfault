@@ -113,3 +113,4 @@ export function watch<T>(
       let cleanupFn: (() => void) | undefined;
       const onCleanup = (fn: () => void) => {
         cleanupFn = fn;
+      };
