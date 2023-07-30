@@ -118,3 +118,4 @@ export function watch<T>(
       if (callback.length >= 3) {
         callback(newValue, isDeep ? oldValueSnapshot : oldValue, onCleanup);
       } else {
+        callback(newValue, isDeep ? oldValueSnapshot : oldValue, undefined);
