@@ -103,3 +103,4 @@ export function watch<T>(
     if (!currentEffect || !currentEffect.active) return;
     
     const newValue = getter();
+    
