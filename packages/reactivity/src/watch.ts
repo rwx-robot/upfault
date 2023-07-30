@@ -106,3 +106,4 @@ export function watch<T>(
     
     const changed = isDeep 
       ? hasChangedDeep(newValue, oldValueSnapshot)
+      : hasChanged(newValue, oldValue);
