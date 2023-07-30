@@ -112,3 +112,4 @@ export function watch<T>(
       // Pass onCleanup only if callback expects it (length >= 3)
       let cleanupFn: (() => void) | undefined;
       const onCleanup = (fn: () => void) => {
+        cleanupFn = fn;
