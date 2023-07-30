@@ -87,3 +87,4 @@ export function watch<T>(
     getter = () => source;
   }
   
+  let cleanup: (() => void) | undefined;
