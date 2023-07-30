@@ -119,3 +119,4 @@ export function watch<T>(
         callback(newValue, isDeep ? oldValueSnapshot : oldValue, onCleanup);
       } else {
         callback(newValue, isDeep ? oldValueSnapshot : oldValue, undefined);
+      }
