@@ -93,3 +93,4 @@ export function watch<T>(
     cleanup = fn;
   };
   
+  // For deep watch, store a snapshot (deep clone) to avoid mutation issues
