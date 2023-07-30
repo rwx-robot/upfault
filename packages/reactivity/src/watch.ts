@@ -83,3 +83,4 @@ export function watch<T>(
     getter = source;
   } else if (isArray(source)) {
     getter = () => source.map(s => isRef(s) ? s.value : s);
+  } else {
