@@ -98,3 +98,4 @@ export function watch<T>(
   let oldValueSnapshot = isDeep ? deepClone(getter()) : getter();
   let oldValue = getter();
   
+  const job = () => {
