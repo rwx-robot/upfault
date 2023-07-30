@@ -99,3 +99,4 @@ export function watch<T>(
   let oldValue = getter();
   
   const job = () => {
+    const currentEffect = getCurrentEffect();
