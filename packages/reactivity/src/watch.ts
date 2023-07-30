@@ -115,3 +115,4 @@ export function watch<T>(
         cleanupFn = fn;
       };
       
+      if (callback.length >= 3) {
