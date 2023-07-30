@@ -108,3 +108,4 @@ export function watch<T>(
       ? hasChangedDeep(newValue, oldValueSnapshot)
       : hasChanged(newValue, oldValue);
     
+    if (changed) {
