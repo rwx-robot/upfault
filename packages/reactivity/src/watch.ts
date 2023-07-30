@@ -123,3 +123,4 @@ export function watch<T>(
       
       // Call cleanup after callback (like finally)
       if (cleanupFn) cleanupFn();
+      
