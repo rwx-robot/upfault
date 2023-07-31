@@ -165,3 +165,4 @@ export function watch<T>(
     if (isDeep) {
       oldValueSnapshot = deepClone(newValue);
     }
+  }
