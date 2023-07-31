@@ -127,3 +127,4 @@ export function watch<T>(
       // Update snapshots
       oldValue = newValue;
       if (isDeep) {
+        oldValueSnapshot = deepClone(newValue);
