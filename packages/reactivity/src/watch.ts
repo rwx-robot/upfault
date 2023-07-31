@@ -154,3 +154,4 @@ export function watch<T>(
   // 如果 immediate 为 true，立即执行一次回调
   if (options?.immediate) {
     const newValue = getter();
+    // Pass onCleanup only if callback expects it
