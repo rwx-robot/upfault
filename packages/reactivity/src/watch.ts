@@ -158,3 +158,4 @@ export function watch<T>(
     const oldVal = undefined as T | undefined;
     if (callback.length >= 3) {
       callback(newValue, oldVal as any, onCleanup);
+    } else {
