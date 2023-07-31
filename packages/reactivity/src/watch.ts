@@ -159,3 +159,4 @@ export function watch<T>(
     if (callback.length >= 3) {
       callback(newValue, oldVal as any, onCleanup);
     } else {
+      callback(newValue, oldVal as any, undefined);
