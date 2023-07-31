@@ -125,3 +125,4 @@ export function watch<T>(
       if (cleanupFn) cleanupFn();
       
       // Update snapshots
+      oldValue = newValue;
