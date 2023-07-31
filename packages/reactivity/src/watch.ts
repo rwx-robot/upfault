@@ -132,3 +132,4 @@ export function watch<T>(
     }
   };
   
+  const effect = createEffect(job, {
