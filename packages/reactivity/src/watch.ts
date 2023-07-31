@@ -149,3 +149,4 @@ export function watch<T>(
   });
   
   // 同步运行一次以建立依赖追踪
+  runEffectSync(effect);
