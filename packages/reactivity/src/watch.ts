@@ -126,3 +126,4 @@ export function watch<T>(
       
       // Update snapshots
       oldValue = newValue;
+      if (isDeep) {
