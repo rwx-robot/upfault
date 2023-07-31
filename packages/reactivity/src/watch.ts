@@ -140,3 +140,4 @@ export function watch<T>(
       } else if (options?.flush === 'post') {
         queueMicrotask(() => runEffectSync(effect));
       } else {
+        // Default to sync for predictable test behavior
