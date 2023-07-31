@@ -160,3 +160,4 @@ export function watch<T>(
       callback(newValue, oldVal as any, onCleanup);
     } else {
       callback(newValue, oldVal as any, undefined);
+    }
