@@ -151,3 +151,4 @@ export function watch<T>(
   // 同步运行一次以建立依赖追踪
   runEffectSync(effect);
   
+  // 如果 immediate 为 true，立即执行一次回调
