@@ -145,3 +145,4 @@ export function watch<T>(
       }
     },
     onTrack: options?.onTrack,
+    onTrigger: options?.onTrigger,
