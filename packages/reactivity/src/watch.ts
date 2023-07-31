@@ -161,3 +161,4 @@ export function watch<T>(
     } else {
       callback(newValue, oldVal as any, undefined);
     }
+    oldValue = newValue;
