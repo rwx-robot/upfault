@@ -143,3 +143,4 @@ export function watch<T>(
         // Default to sync for predictable test behavior
         runEffectSync(effect);
       }
+    },
