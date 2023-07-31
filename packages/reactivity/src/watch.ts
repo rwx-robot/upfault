@@ -134,3 +134,4 @@ export function watch<T>(
   
   const effect = createEffect(job, {
     lazy: true,
+    scheduler: (fn) => {
