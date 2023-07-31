@@ -144,3 +144,4 @@ export function watch<T>(
         runEffectSync(effect);
       }
     },
+    onTrack: options?.onTrack,
