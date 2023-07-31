@@ -162,3 +162,4 @@ export function watch<T>(
       callback(newValue, oldVal as any, undefined);
     }
     oldValue = newValue;
+    if (isDeep) {
