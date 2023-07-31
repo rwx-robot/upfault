@@ -156,3 +156,4 @@ export function watch<T>(
     const newValue = getter();
     // Pass onCleanup only if callback expects it
     const oldVal = undefined as T | undefined;
+    if (callback.length >= 3) {
