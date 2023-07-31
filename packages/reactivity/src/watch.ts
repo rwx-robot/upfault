@@ -137,3 +137,4 @@ export function watch<T>(
     scheduler: (fn) => {
       if (options?.flush === 'sync') {
         runEffectSync(effect);
+      } else if (options?.flush === 'post') {
