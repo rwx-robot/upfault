@@ -141,3 +141,4 @@ export function watch<T>(
         queueMicrotask(() => runEffectSync(effect));
       } else {
         // Default to sync for predictable test behavior
+        runEffectSync(effect);
