@@ -167,3 +167,4 @@ export function watch<T>(
     }
   }
   
+  const stop = () => {
