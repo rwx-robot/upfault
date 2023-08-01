@@ -189,3 +189,4 @@ export function watchEffect(
       } else {
         // Default to sync for immediate execution
         runEffectSync(effect);
+      }
