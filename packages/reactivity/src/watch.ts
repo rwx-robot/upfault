@@ -185,3 +185,4 @@ export function watchEffect(
     lazy: false,
     scheduler: (fn) => {
       if (options?.flush === 'post') {
+        queueMicrotask(() => runEffectSync(effect));
