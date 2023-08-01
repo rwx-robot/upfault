@@ -183,3 +183,4 @@ export function watchEffect(
 ): () => void {
   const effect = createEffect(fn, {
     lazy: false,
+    scheduler: (fn) => {
