@@ -188,3 +188,4 @@ export function watchEffect(
         queueMicrotask(() => runEffectSync(effect));
       } else {
         // Default to sync for immediate execution
+        runEffectSync(effect);
