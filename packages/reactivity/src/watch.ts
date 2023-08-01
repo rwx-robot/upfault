@@ -180,3 +180,4 @@ export function watch<T>(
 export function watchEffect(
   fn: () => void,
   options?: { flush?: 'pre' | 'post' | 'sync'; onTrack?: (e: any) => void; onTrigger?: (e: any) => void }
+): () => void {
