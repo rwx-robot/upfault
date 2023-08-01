@@ -192,3 +192,4 @@ export function watchEffect(
       }
     },
     onTrack: options?.onTrack,
+    onTrigger: options?.onTrigger,
