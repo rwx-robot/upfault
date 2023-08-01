@@ -178,3 +178,4 @@ export function watch<T>(
  * 创建 watchEffect
  */
 export function watchEffect(
+  fn: () => void,
