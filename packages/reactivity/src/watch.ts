@@ -195,3 +195,4 @@ export function watchEffect(
     onTrigger: options?.onTrigger,
   });
   
+  runEffectSync(effect);
