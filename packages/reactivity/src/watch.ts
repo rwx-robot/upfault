@@ -171,3 +171,4 @@ export function watch<T>(
     stopEffect(effect);
   };
   
+  return Object.assign(stop, { effect, __v_isWatchStopHandle: true }) as WatchStopHandle;
