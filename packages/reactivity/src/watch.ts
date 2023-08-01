@@ -191,3 +191,4 @@ export function watchEffect(
         runEffectSync(effect);
       }
     },
+    onTrack: options?.onTrack,
