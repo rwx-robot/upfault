@@ -169,3 +169,4 @@ export function watch<T>(
   
   const stop = () => {
     stopEffect(effect);
+  };
