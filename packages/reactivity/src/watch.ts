@@ -197,3 +197,4 @@ export function watchEffect(
   
   runEffectSync(effect);
   
+  return () => stopEffect(effect);
