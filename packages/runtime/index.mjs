@@ -7,3 +7,4 @@ function normalizeClass(value) {
   if (typeof value === "string")
     return value;
   if (Array.isArray(value)) {
+    return value.filter((v) => v != null).map((v) => normalizeClass(v)).filter(Boolean).join(" ");
