@@ -5,3 +5,4 @@ function normalizeClass(value) {
   if (value == null)
     return void 0;
   if (typeof value === "string")
+    return value;
