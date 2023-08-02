@@ -6,3 +6,4 @@ function normalizeClass(value) {
     return void 0;
   if (typeof value === "string")
     return value;
+  if (Array.isArray(value)) {
