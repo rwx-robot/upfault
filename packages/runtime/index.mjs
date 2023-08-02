@@ -4,3 +4,4 @@ import { VNodeType as VNodeType2 } from "@upfault/shared/diff";
 function normalizeClass(value) {
   if (value == null)
     return void 0;
+  if (typeof value === "string")
