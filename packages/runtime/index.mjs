@@ -46,3 +46,4 @@ function normalizeChildren(children) {
   if (children.length === 1) {
     const child = children[0];
     if (child == null)
+      return [];
