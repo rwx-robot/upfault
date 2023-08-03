@@ -34,3 +34,4 @@ function normalizeProps(props) {
   if (normalized.class != null) {
     normalized.class = normalizeClass(normalized.class);
   }
+  if (normalized.style != null) {
