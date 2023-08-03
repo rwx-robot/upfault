@@ -13,3 +13,4 @@ function normalizeClass(value) {
     return Object.entries(value).filter(([, v]) => v).map(([k]) => k).join(" ");
   }
   return void 0;
+}
