@@ -37,3 +37,4 @@ function normalizeProps(props) {
   if (normalized.style != null) {
     normalized.style = normalizeStyle(normalized.style);
   }
+  const { key, ref: ref2, ...rest } = normalized;
