@@ -22,3 +22,4 @@ function normalizeStyle(value) {
   if (typeof value === "object") {
     return Object.entries(value).filter(([, v]) => v != null).map(([k, v]) => `${kebabCase(k)}:${v}`).join(";");
   }
+  return void 0;
