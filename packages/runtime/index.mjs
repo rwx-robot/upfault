@@ -38,3 +38,4 @@ function normalizeProps(props) {
     normalized.style = normalizeStyle(normalized.style);
   }
   const { key, ref: ref2, ...rest } = normalized;
+  return rest;
