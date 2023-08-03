@@ -9,3 +9,4 @@ function normalizeClass(value) {
   if (Array.isArray(value)) {
     return value.filter((v) => v != null).map((v) => normalizeClass(v)).filter(Boolean).join(" ");
   }
+  if (typeof value === "object") {
