@@ -47,3 +47,4 @@ function normalizeChildren(children) {
     const child = children[0];
     if (child == null)
       return [];
+    if (typeof child === "string" || typeof child === "number") {
