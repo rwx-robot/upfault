@@ -16,3 +16,4 @@ function normalizeClass(value) {
 }
 function normalizeStyle(value) {
   if (value == null)
+    return void 0;
