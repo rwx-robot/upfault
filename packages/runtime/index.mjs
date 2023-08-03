@@ -32,3 +32,4 @@ function normalizeProps(props) {
     return {};
   const normalized = { ...props };
   if (normalized.class != null) {
+    normalized.class = normalizeClass(normalized.class);
