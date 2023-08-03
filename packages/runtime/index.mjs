@@ -19,3 +19,4 @@ function normalizeStyle(value) {
     return void 0;
   if (typeof value === "string")
     return value;
+  if (typeof value === "object") {
