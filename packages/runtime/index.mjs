@@ -10,3 +10,4 @@ function normalizeClass(value) {
     return value.filter((v) => v != null).map((v) => normalizeClass(v)).filter(Boolean).join(" ");
   }
   if (typeof value === "object") {
+    return Object.entries(value).filter(([, v]) => v).map(([k]) => k).join(" ");
