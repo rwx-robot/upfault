@@ -25,3 +25,4 @@ function normalizeStyle(value) {
   return void 0;
 }
 function kebabCase(str) {
+  return str.replace(/([A-Z])/g, "-$1").toLowerCase();
