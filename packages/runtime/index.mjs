@@ -40,3 +40,4 @@ function normalizeProps(props) {
   const { key, ref: ref2, ...rest } = normalized;
   return rest;
 }
+function normalizeChildren(children) {
