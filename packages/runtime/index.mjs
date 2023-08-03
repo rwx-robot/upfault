@@ -45,3 +45,4 @@ function normalizeChildren(children) {
     return null;
   if (children.length === 1) {
     const child = children[0];
+    if (child == null)
