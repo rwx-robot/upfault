@@ -12,3 +12,4 @@ function normalizeClass(value) {
   if (typeof value === "object") {
     return Object.entries(value).filter(([, v]) => v).map(([k]) => k).join(" ");
   }
+  return void 0;
