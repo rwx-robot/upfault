@@ -24,3 +24,4 @@ function normalizeStyle(value) {
   }
   return void 0;
 }
+function kebabCase(str) {
