@@ -15,3 +15,4 @@ function normalizeClass(value) {
   return void 0;
 }
 function normalizeStyle(value) {
+  if (value == null)
