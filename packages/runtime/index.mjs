@@ -41,3 +41,4 @@ function normalizeProps(props) {
   return rest;
 }
 function normalizeChildren(children) {
+  if (children.length === 0)
