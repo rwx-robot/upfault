@@ -29,3 +29,4 @@ function kebabCase(str) {
 }
 function normalizeProps(props) {
   if (!props)
+    return {};
