@@ -58,3 +58,4 @@ function normalizeChildren(children) {
   return children.flatMap((child) => {
     if (child == null)
       return [];
+    if (Array.isArray(child))
