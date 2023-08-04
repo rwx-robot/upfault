@@ -69,3 +69,4 @@ function normalizeChildren(children) {
 function computeFlags(type, props, children) {
   let flags = SharedPatchFlags.NONE;
   if (type === VNodeType.ELEMENT && !props && (!children || typeof children === "string")) {
+    return SharedPatchFlags.NONE;
