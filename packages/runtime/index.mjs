@@ -77,3 +77,4 @@ function computeFlags(type, props, children) {
     const hasStyle = "style" in props;
     if (hasEvent)
       flags |= SharedPatchFlags.EVENTS;
+    if (hasClass)
