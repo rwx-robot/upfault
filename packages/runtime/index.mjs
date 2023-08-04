@@ -60,3 +60,4 @@ function normalizeChildren(children) {
       return [];
     if (Array.isArray(child))
       return normalizeChildren(child);
+    if (typeof child === "string" || typeof child === "number") {
