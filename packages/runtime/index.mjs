@@ -59,3 +59,4 @@ function normalizeChildren(children) {
     if (child == null)
       return [];
     if (Array.isArray(child))
+      return normalizeChildren(child);
