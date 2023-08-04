@@ -54,3 +54,4 @@ function normalizeChildren(children) {
       return normalizeChildren(child);
     }
     return [child];
+  }
