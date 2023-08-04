@@ -64,3 +64,4 @@ function normalizeChildren(children) {
       return [{ type: Text, children: String(child), props: null, key: null, ref: null, shapeFlag: VNodeShapeFlags.TEXT_NODE, patchFlag: SharedPatchFlags.NONE, dynamicProps: [], el: null, anchor: null, parent: null, componentInstance: null, component: void 0, vnodeType: VNodeType.TEXT }];
     }
     return [child];
+  });
