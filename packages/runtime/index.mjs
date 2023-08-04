@@ -55,3 +55,4 @@ function normalizeChildren(children) {
     }
     return [child];
   }
+  return children.flatMap((child) => {
