@@ -78,3 +78,4 @@ function computeFlags(type, props, children) {
     if (hasEvent)
       flags |= SharedPatchFlags.EVENTS;
     if (hasClass)
+      flags |= SharedPatchFlags.CLASS;
