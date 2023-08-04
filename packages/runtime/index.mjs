@@ -71,3 +71,4 @@ function computeFlags(type, props, children) {
   if (type === VNodeType.ELEMENT && !props && (!children || typeof children === "string")) {
     return SharedPatchFlags.NONE;
   }
+  if (props && Object.keys(props).length > 0) {
