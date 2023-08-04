@@ -66,3 +66,4 @@ function normalizeChildren(children) {
     return [child];
   });
 }
+function computeFlags(type, props, children) {
