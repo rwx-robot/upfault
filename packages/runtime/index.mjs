@@ -65,3 +65,4 @@ function normalizeChildren(children) {
     }
     return [child];
   });
+}
