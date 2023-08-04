@@ -67,3 +67,4 @@ function normalizeChildren(children) {
   });
 }
 function computeFlags(type, props, children) {
+  let flags = SharedPatchFlags.NONE;
