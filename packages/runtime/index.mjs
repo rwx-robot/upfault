@@ -53,3 +53,4 @@ function normalizeChildren(children) {
     if (Array.isArray(child)) {
       return normalizeChildren(child);
     }
+    return [child];
