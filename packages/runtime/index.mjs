@@ -98,3 +98,4 @@ function h(type, props, ...children) {
   let normalizedProps;
   let normalizedChildren;
   let key = null;
+  let ref2 = null;
