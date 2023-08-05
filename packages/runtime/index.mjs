@@ -93,3 +93,4 @@ function computeFlags(type, props, children) {
     }
   }
   return flags || SharedPatchFlags.NONE;
+}
