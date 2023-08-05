@@ -107,3 +107,4 @@ function h(type, props, ...children) {
     normalizedProps = {};
     normalizedChildren = normalizeChildren([props, ...children]);
   }
+  let vnodeType;
