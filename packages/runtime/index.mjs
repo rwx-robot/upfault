@@ -100,3 +100,4 @@ function h(type, props, ...children) {
   let key = null;
   let ref2 = null;
   if (props != null && !Array.isArray(props) && typeof props === "object" && !props.__v_isVNode) {
+    ({ key = null, ref: ref2 = null, ...normalizedProps } = props);
