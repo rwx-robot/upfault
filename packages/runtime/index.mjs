@@ -105,3 +105,4 @@ function h(type, props, ...children) {
     normalizedChildren = normalizeChildren(children);
   } else {
     normalizedProps = {};
+    normalizedChildren = normalizeChildren([props, ...children]);
