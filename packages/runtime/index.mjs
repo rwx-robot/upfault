@@ -92,3 +92,4 @@ function computeFlags(type, props, children) {
       flags |= SharedPatchFlags.TEXT;
     }
   }
+  return flags || SharedPatchFlags.NONE;
