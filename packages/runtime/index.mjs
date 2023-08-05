@@ -97,3 +97,4 @@ function computeFlags(type, props, children) {
 function h(type, props, ...children) {
   let normalizedProps;
   let normalizedChildren;
+  let key = null;
