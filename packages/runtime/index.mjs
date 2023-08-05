@@ -103,3 +103,4 @@ function h(type, props, ...children) {
     ({ key = null, ref: ref2 = null, ...normalizedProps } = props);
     normalizedProps = normalizeProps(normalizedProps);
     normalizedChildren = normalizeChildren(children);
+  } else {
