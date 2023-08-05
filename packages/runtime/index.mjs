@@ -121,3 +121,4 @@ function h(type, props, ...children) {
       vnodeType = VNodeType.COMPONENT;
       component = type;
     } else {
+      vnodeType = VNodeType.COMPONENT;
