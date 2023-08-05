@@ -95,3 +95,4 @@ function computeFlags(type, props, children) {
   return flags || SharedPatchFlags.NONE;
 }
 function h(type, props, ...children) {
+  let normalizedProps;
