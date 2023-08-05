@@ -109,3 +109,4 @@ function h(type, props, ...children) {
   }
   let vnodeType;
   let component = void 0;
+  if (typeof type === "string") {
