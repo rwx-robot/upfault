@@ -85,3 +85,4 @@ function computeFlags(type, props, children) {
       flags |= SharedPatchFlags.PROPS;
   }
   if (children != null && typeof children !== "string") {
+    if (Array.isArray(children)) {
