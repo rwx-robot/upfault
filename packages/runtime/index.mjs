@@ -90,3 +90,4 @@ function computeFlags(type, props, children) {
       flags |= hasKeyed ? SharedPatchFlags.KEYED_FRAGMENT : SharedPatchFlags.UNKEYED_FRAGMENT;
     } else {
       flags |= SharedPatchFlags.TEXT;
+    }
