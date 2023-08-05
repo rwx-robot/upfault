@@ -115,3 +115,4 @@ function h(type, props, ...children) {
     if (type.__v_isFragment) {
       vnodeType = VNodeType.FRAGMENT;
     } else if ("__v_isComponent" in type) {
+      vnodeType = VNodeType.COMPONENT;
