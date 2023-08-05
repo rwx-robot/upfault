@@ -111,3 +111,4 @@ function h(type, props, ...children) {
   let component = void 0;
   if (typeof type === "string") {
     vnodeType = VNodeType.ELEMENT;
+  } else if (typeof type === "function" || type && typeof type === "object") {
