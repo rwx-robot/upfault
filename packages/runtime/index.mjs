@@ -108,3 +108,4 @@ function h(type, props, ...children) {
     normalizedChildren = normalizeChildren([props, ...children]);
   }
   let vnodeType;
+  let component = void 0;
