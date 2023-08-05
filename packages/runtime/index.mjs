@@ -87,3 +87,4 @@ function computeFlags(type, props, children) {
   if (children != null && typeof children !== "string") {
     if (Array.isArray(children)) {
       const hasKeyed = children.some((c) => c && typeof c === "object" && "key" in c && c.key != null);
+      flags |= hasKeyed ? SharedPatchFlags.KEYED_FRAGMENT : SharedPatchFlags.UNKEYED_FRAGMENT;
