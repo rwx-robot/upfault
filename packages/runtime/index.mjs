@@ -148,3 +148,4 @@ function h(type, props, ...children) {
 }
 var VNodeShapeFlags = {
   ELEMENT: 1,
+  COMPONENT: 1 << 1,
