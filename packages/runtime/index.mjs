@@ -157,3 +157,4 @@ var VNodeShapeFlags = {
   TEXT_CHILDREN: 1 << 7
 };
 function getShapeFlag(type, children) {
+  let flag = 0;
