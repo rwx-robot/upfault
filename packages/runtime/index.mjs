@@ -128,3 +128,4 @@ function h(type, props, ...children) {
     vnodeType = VNodeType.TEXT;
   }
   const patchFlag = computeFlags(vnodeType, normalizedProps, normalizedChildren);
+  const vnode = {
