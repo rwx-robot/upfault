@@ -125,3 +125,4 @@ function h(type, props, ...children) {
       component = type;
     }
   } else {
+    vnodeType = VNodeType.TEXT;
