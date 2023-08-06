@@ -154,3 +154,4 @@ var VNodeShapeFlags = {
   TELEPORT: 1 << 4,
   SUSPENSE: 1 << 5,
   ARRAY_CHILDREN: 1 << 6,
+  TEXT_CHILDREN: 1 << 7
