@@ -130,3 +130,4 @@ function h(type, props, ...children) {
   const patchFlag = computeFlags(vnodeType, normalizedProps, normalizedChildren);
   const vnode = {
     type,
+    props: normalizedProps,
