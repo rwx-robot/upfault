@@ -144,3 +144,4 @@ function h(type, props, ...children) {
     componentInstance: null,
     shapeFlag: getShapeFlag(vnodeType, normalizedChildren)
   };
+  return vnode;
