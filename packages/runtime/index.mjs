@@ -140,3 +140,4 @@ function h(type, props, ...children) {
     dynamicProps: patchFlag & SharedPatchFlags.PROPS ? Object.keys(normalizedProps).filter((k) => !["class", "style"].includes(k)) : [],
     el: null,
     anchor: null,
+    parent: null,
