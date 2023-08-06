@@ -150,3 +150,4 @@ var VNodeShapeFlags = {
   ELEMENT: 1,
   COMPONENT: 1 << 1,
   TEXT_NODE: 1 << 2,
+  FRAGMENT: 1 << 3,
