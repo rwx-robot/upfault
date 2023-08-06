@@ -141,3 +141,4 @@ function h(type, props, ...children) {
     el: null,
     anchor: null,
     parent: null,
+    componentInstance: null,
