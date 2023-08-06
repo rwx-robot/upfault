@@ -126,3 +126,4 @@ function h(type, props, ...children) {
     }
   } else {
     vnodeType = VNodeType.TEXT;
+  }
