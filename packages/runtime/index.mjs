@@ -145,3 +145,4 @@ function h(type, props, ...children) {
     shapeFlag: getShapeFlag(vnodeType, normalizedChildren)
   };
   return vnode;
+}
