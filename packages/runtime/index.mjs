@@ -147,3 +147,4 @@ function h(type, props, ...children) {
   return vnode;
 }
 var VNodeShapeFlags = {
+  ELEMENT: 1,
