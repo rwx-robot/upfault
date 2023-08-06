@@ -156,3 +156,4 @@ var VNodeShapeFlags = {
   ARRAY_CHILDREN: 1 << 6,
   TEXT_CHILDREN: 1 << 7
 };
+function getShapeFlag(type, children) {
