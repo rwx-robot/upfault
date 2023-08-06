@@ -135,3 +135,4 @@ function h(type, props, ...children) {
     key,
     ref: ref2,
     component,
+    vnodeType,
