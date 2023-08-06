@@ -131,3 +131,4 @@ function h(type, props, ...children) {
   const vnode = {
     type,
     props: normalizedProps,
+    children: normalizedChildren,
