@@ -159,3 +159,4 @@ var VNodeShapeFlags = {
 function getShapeFlag(type, children) {
   let flag = 0;
   switch (type) {
+    case VNodeType.ELEMENT:
