@@ -132,3 +132,4 @@ function h(type, props, ...children) {
     type,
     props: normalizedProps,
     children: normalizedChildren,
+    key,
