@@ -134,3 +134,4 @@ function h(type, props, ...children) {
     children: normalizedChildren,
     key,
     ref: ref2,
+    component,
