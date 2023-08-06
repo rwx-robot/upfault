@@ -136,3 +136,4 @@ function h(type, props, ...children) {
     ref: ref2,
     component,
     vnodeType,
+    patchFlag,
