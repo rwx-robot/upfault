@@ -189,3 +189,4 @@ function getShapeFlag(type, children) {
   }
   return flag;
 }
+function Fragment(props, ...children) {
