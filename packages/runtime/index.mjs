@@ -180,3 +180,4 @@ function getShapeFlag(type, children) {
     default:
       flag = VNodeShapeFlags.ELEMENT;
   }
+  if (children != null) {
