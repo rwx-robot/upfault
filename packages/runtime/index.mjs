@@ -171,3 +171,4 @@ function getShapeFlag(type, children) {
     case VNodeType.FRAGMENT:
       flag = VNodeShapeFlags.FRAGMENT;
       break;
+    case VNodeType.TELEPORT:
