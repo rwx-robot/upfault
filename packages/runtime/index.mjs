@@ -208,3 +208,4 @@ function Text(text) {
     parent: null,
     componentInstance: null,
     component: void 0,
+    vnodeType: VNodeType.TEXT
