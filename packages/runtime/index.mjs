@@ -196,3 +196,4 @@ Fragment.__v_isFragment = true;
 function Text(text) {
   return {
     type: Text,
+    props: null,
