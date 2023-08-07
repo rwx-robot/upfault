@@ -195,3 +195,4 @@ function Fragment(props, ...children) {
 Fragment.__v_isFragment = true;
 function Text(text) {
   return {
+    type: Text,
