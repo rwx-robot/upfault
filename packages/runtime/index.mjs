@@ -204,3 +204,4 @@ function Text(text) {
     patchFlag: SharedPatchFlags.NONE,
     dynamicProps: [],
     el: null,
+    anchor: null,
