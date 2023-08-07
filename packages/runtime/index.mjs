@@ -185,3 +185,4 @@ function getShapeFlag(type, children) {
       flag |= VNodeShapeFlags.ARRAY_CHILDREN;
     } else if (typeof children === "string") {
       flag |= VNodeShapeFlags.TEXT_CHILDREN;
+    }
