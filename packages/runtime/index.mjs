@@ -186,3 +186,4 @@ function getShapeFlag(type, children) {
     } else if (typeof children === "string") {
       flag |= VNodeShapeFlags.TEXT_CHILDREN;
     }
+  }
