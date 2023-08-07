@@ -197,3 +197,4 @@ function Text(text) {
   return {
     type: Text,
     props: null,
+    children: String(text),
