@@ -206,3 +206,4 @@ function Text(text) {
     el: null,
     anchor: null,
     parent: null,
+    componentInstance: null,
