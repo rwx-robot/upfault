@@ -181,3 +181,4 @@ function getShapeFlag(type, children) {
       flag = VNodeShapeFlags.ELEMENT;
   }
   if (children != null) {
+    if (Array.isArray(children)) {
