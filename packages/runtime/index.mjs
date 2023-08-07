@@ -205,3 +205,4 @@ function Text(text) {
     dynamicProps: [],
     el: null,
     anchor: null,
+    parent: null,
