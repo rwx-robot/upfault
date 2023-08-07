@@ -200,3 +200,4 @@ function Text(text) {
     children: String(text),
     key: null,
     ref: null,
+    shapeFlag: VNodeShapeFlags.TEXT_NODE,
