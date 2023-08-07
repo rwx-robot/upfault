@@ -179,3 +179,4 @@ function getShapeFlag(type, children) {
       break;
     default:
       flag = VNodeShapeFlags.ELEMENT;
+  }
