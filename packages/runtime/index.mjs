@@ -192,3 +192,4 @@ function getShapeFlag(type, children) {
 function Fragment(props, ...children) {
   return h(Fragment, props, ...children);
 }
+Fragment.__v_isFragment = true;
