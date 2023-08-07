@@ -198,3 +198,4 @@ function Text(text) {
     type: Text,
     props: null,
     children: String(text),
+    key: null,
