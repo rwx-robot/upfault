@@ -187,3 +187,4 @@ function getShapeFlag(type, children) {
       flag |= VNodeShapeFlags.TEXT_CHILDREN;
     }
   }
+  return flag;
