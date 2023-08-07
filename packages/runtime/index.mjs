@@ -209,3 +209,4 @@ function Text(text) {
     componentInstance: null,
     component: void 0,
     vnodeType: VNodeType.TEXT
+  };
