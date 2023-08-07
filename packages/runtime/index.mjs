@@ -203,3 +203,4 @@ function Text(text) {
     shapeFlag: VNodeShapeFlags.TEXT_NODE,
     patchFlag: SharedPatchFlags.NONE,
     dynamicProps: [],
+    el: null,
