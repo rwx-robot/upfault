@@ -199,3 +199,4 @@ function Text(text) {
     props: null,
     children: String(text),
     key: null,
+    ref: null,
