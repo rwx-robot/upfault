@@ -188,3 +188,4 @@ function getShapeFlag(type, children) {
     }
   }
   return flag;
+}
