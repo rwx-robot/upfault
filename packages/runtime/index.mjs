@@ -178,3 +178,4 @@ function getShapeFlag(type, children) {
       flag = VNodeShapeFlags.SUSPENSE;
       break;
     default:
+      flag = VNodeShapeFlags.ELEMENT;
