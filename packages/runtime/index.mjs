@@ -236,3 +236,5 @@ var FragmentSymbol = VNodeType.FRAGMENT;
 
 // upfault/packages/runtime/src/index.ts
 import { VNodeType as VNodeType3 } from "@upfault/shared/diff";
+
+// upfault/packages/runtime/src/lifecycle.ts
