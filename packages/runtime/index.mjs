@@ -239,3 +239,4 @@ import { VNodeType as VNodeType3 } from "@upfault/shared/diff";
 
 // upfault/packages/runtime/src/lifecycle.ts
 import { effect, stopEffect } from "@upfault/reactivity";
+var currentInstance = null;
