@@ -229,3 +229,4 @@ function Comment(text) {
     vnodeType: VNodeType.COMMENT
   };
 }
+var jsx = h;
