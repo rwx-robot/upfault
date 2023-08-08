@@ -226,3 +226,4 @@ function Comment(text) {
     parent: null,
     componentInstance: null,
     component: void 0,
+    vnodeType: VNodeType.COMMENT
