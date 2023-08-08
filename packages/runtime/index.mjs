@@ -228,3 +228,4 @@ function Comment(text) {
     component: void 0,
     vnodeType: VNodeType.COMMENT
   };
+}
