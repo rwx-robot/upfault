@@ -215,3 +215,4 @@ function Comment(text) {
   return {
     type: Comment,
     props: null,
+    children: text,
