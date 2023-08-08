@@ -241,3 +241,4 @@ import { VNodeType as VNodeType3 } from "@upfault/shared/diff";
 import { effect, stopEffect } from "@upfault/reactivity";
 var currentInstance = null;
 function getCurrentInstance() {
+  return currentInstance;
