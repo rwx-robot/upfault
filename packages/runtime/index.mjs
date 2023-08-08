@@ -216,3 +216,4 @@ function Comment(text) {
     type: Comment,
     props: null,
     children: text,
+    key: null,
