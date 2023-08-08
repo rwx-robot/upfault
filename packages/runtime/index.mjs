@@ -230,3 +230,4 @@ function Comment(text) {
   };
 }
 var jsx = h;
+var jsxs = h;
