@@ -225,3 +225,4 @@ function Comment(text) {
     anchor: null,
     parent: null,
     componentInstance: null,
+    component: void 0,
