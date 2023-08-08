@@ -247,3 +247,4 @@ function setCurrentInstance(instance) {
   currentInstance = instance;
 }
 function injectHook(hookName, hook, instance = currentInstance) {
+  if (!instance) {
