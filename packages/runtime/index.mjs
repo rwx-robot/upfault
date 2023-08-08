@@ -211,3 +211,4 @@ function Text(text) {
     vnodeType: VNodeType.TEXT
   };
 }
+function Comment(text) {
