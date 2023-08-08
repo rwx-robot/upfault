@@ -222,3 +222,4 @@ function Comment(text) {
     patchFlag: SharedPatchFlags.NONE,
     dynamicProps: [],
     el: null,
+    anchor: null,
