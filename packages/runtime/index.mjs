@@ -235,3 +235,4 @@ var jsxDEV = h;
 var FragmentSymbol = VNodeType.FRAGMENT;
 
 // upfault/packages/runtime/src/index.ts
+import { VNodeType as VNodeType3 } from "@upfault/shared/diff";
