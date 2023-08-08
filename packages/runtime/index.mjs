@@ -210,3 +210,4 @@ function Text(text) {
     component: void 0,
     vnodeType: VNodeType.TEXT
   };
+}
