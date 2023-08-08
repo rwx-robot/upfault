@@ -212,3 +212,4 @@ function Text(text) {
   };
 }
 function Comment(text) {
+  return {
