@@ -214,3 +214,4 @@ function Text(text) {
 function Comment(text) {
   return {
     type: Comment,
+    props: null,
