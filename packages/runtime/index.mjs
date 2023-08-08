@@ -217,3 +217,4 @@ function Comment(text) {
     props: null,
     children: text,
     key: null,
+    ref: null,
