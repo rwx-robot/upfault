@@ -220,3 +220,4 @@ function Comment(text) {
     ref: null,
     shapeFlag: VNodeShapeFlags.TEXT_NODE,
     patchFlag: SharedPatchFlags.NONE,
+    dynamicProps: [],
