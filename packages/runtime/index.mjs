@@ -242,3 +242,4 @@ import { effect, stopEffect } from "@upfault/reactivity";
 var currentInstance = null;
 function getCurrentInstance() {
   return currentInstance;
+}
