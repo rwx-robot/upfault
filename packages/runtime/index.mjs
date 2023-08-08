@@ -245,3 +245,4 @@ function getCurrentInstance() {
 }
 function setCurrentInstance(instance) {
   currentInstance = instance;
+}
