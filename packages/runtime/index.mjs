@@ -253,3 +253,4 @@ function injectHook(hookName, hook, instance = currentInstance) {
   }
   if (!instance[hookName]) {
     instance[hookName] = [];
+  }
