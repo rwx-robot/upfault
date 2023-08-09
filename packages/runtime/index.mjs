@@ -264,3 +264,4 @@ function onMounted(hook, instance) {
   injectHook("onMounted", hook, instance);
 }
 function onBeforeUpdate(hook, instance) {
+  injectHook("onBeforeUpdate", hook, instance);
