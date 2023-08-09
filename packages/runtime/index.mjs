@@ -254,3 +254,4 @@ function injectHook(hookName, hook, instance = currentInstance) {
   if (!instance[hookName]) {
     instance[hookName] = [];
   }
+  instance[hookName].push(hook);
