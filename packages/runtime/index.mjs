@@ -279,3 +279,4 @@ function onActivated(hook, instance) {
   injectHook("onActivated", hook, instance);
 }
 function onDeactivated(hook, instance) {
+  injectHook("onDeactivated", hook, instance);
