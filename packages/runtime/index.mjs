@@ -283,3 +283,4 @@ function onDeactivated(hook, instance) {
 }
 function onErrorCaptured(hook, instance) {
   injectHook("onErrorCaptured", hook, instance);
+}
