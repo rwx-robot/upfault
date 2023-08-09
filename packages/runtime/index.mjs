@@ -258,3 +258,4 @@ function injectHook(hookName, hook, instance = currentInstance) {
   return true;
 }
 function onBeforeMount(hook, instance) {
+  injectHook("onBeforeMount", hook, instance);
