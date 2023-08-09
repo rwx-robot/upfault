@@ -273,3 +273,4 @@ function onBeforeUnmount(hook, instance) {
   injectHook("onBeforeUnmount", hook, instance);
 }
 function onUnmounted(hook, instance) {
+  injectHook("onUnmounted", hook, instance);
