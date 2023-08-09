@@ -255,3 +255,4 @@ function injectHook(hookName, hook, instance = currentInstance) {
     instance[hookName] = [];
   }
   instance[hookName].push(hook);
+  return true;
