@@ -276,3 +276,4 @@ function onUnmounted(hook, instance) {
   injectHook("onUnmounted", hook, instance);
 }
 function onActivated(hook, instance) {
+  injectHook("onActivated", hook, instance);
