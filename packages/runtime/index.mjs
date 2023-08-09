@@ -250,3 +250,4 @@ function injectHook(hookName, hook, instance = currentInstance) {
   if (!instance) {
     warn(`[UpFault] ${hookName} \u53EA\u80FD\u5728 setup() \u6216\u7EC4\u4EF6\u521D\u59CB\u5316\u65F6\u8C03\u7528`);
     return false;
+  }
