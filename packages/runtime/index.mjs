@@ -269,3 +269,4 @@ function onBeforeUpdate(hook, instance) {
 function onUpdated(hook, instance) {
   injectHook("onUpdated", hook, instance);
 }
+function onBeforeUnmount(hook, instance) {
