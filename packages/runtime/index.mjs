@@ -286,3 +286,4 @@ function onErrorCaptured(hook, instance) {
 }
 function onRenderTracked(hook, instance) {
   injectHook("onRenderTracked", hook, instance);
+}
