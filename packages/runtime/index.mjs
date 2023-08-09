@@ -275,3 +275,4 @@ function onBeforeUnmount(hook, instance) {
 function onUnmounted(hook, instance) {
   injectHook("onUnmounted", hook, instance);
 }
+function onActivated(hook, instance) {
