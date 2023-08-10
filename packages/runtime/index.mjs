@@ -305,3 +305,4 @@ import {
 import {
   ref,
   shallowRef,
+  readonlyRef,
