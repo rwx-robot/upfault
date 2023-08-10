@@ -325,3 +325,4 @@ export {
   PACKAGE_NAME,
   Text,
   VERSION,
+  VNodeType3 as VNodeType,
