@@ -317,3 +317,4 @@ import {
   batch
 } from "@upfault/reactivity";
 var VERSION = "0.2.0";
+var PACKAGE_NAME = "@upfault/runtime";
