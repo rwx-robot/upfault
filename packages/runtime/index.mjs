@@ -316,3 +316,4 @@ import {
   effect as effect2,
   batch
 } from "@upfault/reactivity";
+var VERSION = "0.2.0";
