@@ -300,3 +300,4 @@ function warn(msg) {
 import {
   createRenderer,
   renderer,
+  defaultRendererOptions
