@@ -312,3 +312,4 @@ import {
   toRefs,
   computed,
   watch,
+  watchEffect as watchEffect2,
