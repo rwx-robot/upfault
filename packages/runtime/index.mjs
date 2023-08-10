@@ -292,3 +292,4 @@ function onRenderTriggered(hook, instance) {
 }
 function warn(msg) {
   if (process.env.NODE_ENV !== "production") {
+    console.warn(msg);
