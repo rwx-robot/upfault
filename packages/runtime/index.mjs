@@ -322,3 +322,4 @@ export {
   Comment,
   Fragment,
   FragmentSymbol,
+  PACKAGE_NAME,
