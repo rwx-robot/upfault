@@ -323,3 +323,4 @@ export {
   Fragment,
   FragmentSymbol,
   PACKAGE_NAME,
+  Text,
