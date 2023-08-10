@@ -314,3 +314,4 @@ import {
   watch,
   watchEffect as watchEffect2,
   effect as effect2,
+  batch
