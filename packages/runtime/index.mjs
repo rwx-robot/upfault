@@ -301,3 +301,4 @@ import {
   createRenderer,
   renderer,
   defaultRendererOptions
+} from "./renderer";
