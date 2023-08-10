@@ -290,3 +290,4 @@ function onRenderTracked(hook, instance) {
 function onRenderTriggered(hook, instance) {
   injectHook("onRenderTriggered", hook, instance);
 }
+function warn(msg) {
