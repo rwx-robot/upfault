@@ -321,3 +321,4 @@ var PACKAGE_NAME = "@upfault/runtime";
 export {
   Comment,
   Fragment,
+  FragmentSymbol,
