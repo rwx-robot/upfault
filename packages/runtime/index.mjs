@@ -336,3 +336,4 @@ export {
   isRef,
   jsx,
   jsxDEV,
+  jsxs,
