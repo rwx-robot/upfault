@@ -328,3 +328,4 @@ export {
   VNodeType3 as VNodeType,
   batch,
   computed,
+  createRenderer,
