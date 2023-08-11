@@ -333,3 +333,4 @@ export {
   effect2 as effect,
   getCurrentInstance,
   h,
+  isRef,
