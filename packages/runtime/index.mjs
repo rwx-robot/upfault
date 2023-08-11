@@ -334,3 +334,4 @@ export {
   getCurrentInstance,
   h,
   isRef,
+  jsx,
