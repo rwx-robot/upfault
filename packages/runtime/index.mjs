@@ -332,3 +332,4 @@ export {
   defaultRendererOptions,
   effect2 as effect,
   getCurrentInstance,
+  h,
