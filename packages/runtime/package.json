@@ -4,3 +4,4 @@
   "description": "UpFault 运行时核心",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
