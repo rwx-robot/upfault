@@ -348,3 +348,4 @@ export {
   onRenderTriggered,
   onUnmounted,
   onUpdated,
+  readonlyRef,
