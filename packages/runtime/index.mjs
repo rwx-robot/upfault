@@ -346,3 +346,4 @@ export {
   onMounted,
   onRenderTracked,
   onRenderTriggered,
+  onUnmounted,
