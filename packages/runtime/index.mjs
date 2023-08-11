@@ -344,3 +344,4 @@ export {
   onDeactivated,
   onErrorCaptured,
   onMounted,
+  onRenderTracked,
