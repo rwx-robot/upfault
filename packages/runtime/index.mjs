@@ -330,3 +330,4 @@ export {
   computed,
   createRenderer,
   defaultRendererOptions,
+  effect2 as effect,
