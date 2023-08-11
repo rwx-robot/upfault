@@ -340,3 +340,4 @@ export {
   onActivated,
   onBeforeMount,
   onBeforeUnmount,
+  onBeforeUpdate,
