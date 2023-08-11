@@ -337,3 +337,4 @@ export {
   jsx,
   jsxDEV,
   jsxs,
+  onActivated,
