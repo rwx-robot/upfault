@@ -329,3 +329,4 @@ export {
   batch,
   computed,
   createRenderer,
+  defaultRendererOptions,
