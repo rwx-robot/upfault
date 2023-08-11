@@ -339,3 +339,4 @@ export {
   jsxs,
   onActivated,
   onBeforeMount,
+  onBeforeUnmount,
