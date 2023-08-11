@@ -350,3 +350,4 @@ export {
   onUpdated,
   readonlyRef,
   ref,
+  renderer,
