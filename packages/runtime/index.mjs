@@ -335,3 +335,4 @@ export {
   h,
   isRef,
   jsx,
+  jsxDEV,
