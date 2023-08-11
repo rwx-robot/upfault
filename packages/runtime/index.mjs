@@ -338,3 +338,4 @@ export {
   jsxDEV,
   jsxs,
   onActivated,
+  onBeforeMount,
