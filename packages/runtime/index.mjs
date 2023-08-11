@@ -341,3 +341,4 @@ export {
   onBeforeMount,
   onBeforeUnmount,
   onBeforeUpdate,
+  onDeactivated,
