@@ -353,3 +353,4 @@ export {
   renderer,
   setCurrentInstance,
   shallowRef,
+  toRef,
