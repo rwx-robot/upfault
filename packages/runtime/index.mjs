@@ -345,3 +345,4 @@ export {
   onErrorCaptured,
   onMounted,
   onRenderTracked,
+  onRenderTriggered,
