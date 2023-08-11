@@ -327,3 +327,4 @@ export {
   VERSION,
   VNodeType3 as VNodeType,
   batch,
+  computed,
