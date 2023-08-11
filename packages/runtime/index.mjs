@@ -351,3 +351,4 @@ export {
   readonlyRef,
   ref,
   renderer,
+  setCurrentInstance,
