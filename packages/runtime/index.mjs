@@ -331,3 +331,4 @@ export {
   createRenderer,
   defaultRendererOptions,
   effect2 as effect,
+  getCurrentInstance,
