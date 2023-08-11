@@ -357,3 +357,4 @@ export {
   toRefs,
   unref,
   watch,
+  watchEffect2 as watchEffect
