@@ -356,3 +356,4 @@ export {
   toRef,
   toRefs,
   unref,
+  watch,
