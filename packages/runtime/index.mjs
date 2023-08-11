@@ -354,3 +354,4 @@ export {
   setCurrentInstance,
   shallowRef,
   toRef,
+  toRefs,
