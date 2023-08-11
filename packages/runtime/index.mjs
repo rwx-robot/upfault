@@ -349,3 +349,4 @@ export {
   onUnmounted,
   onUpdated,
   readonlyRef,
+  ref,
