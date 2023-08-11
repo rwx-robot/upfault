@@ -2,3 +2,4 @@
   "name": "@upfault/runtime",
   "version": "0.2.0",
   "description": "UpFault 运行时核心",
+  "main": "dist/index.js",
