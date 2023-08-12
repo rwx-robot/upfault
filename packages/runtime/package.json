@@ -22,3 +22,4 @@
       "require": "./dist/lifecycle.js"
     },
     "./renderer": {
+      "types": "./dist/renderer.d.ts",
