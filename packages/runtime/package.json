@@ -32,3 +32,4 @@
     "build:esm": "esbuild src/index.ts --bundle --format=esm --outfile=dist/index.mjs --external:@upfault/* --platform=node",
     "dev": "tsc -w -p tsconfig.build.json",
     "test": "vitest run",
+    "typecheck": "tsc --noEmit",
