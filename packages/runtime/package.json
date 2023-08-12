@@ -13,3 +13,4 @@
     },
     "./h": {
       "types": "./dist/h.d.ts",
+      "import": "./dist/h.mjs",
