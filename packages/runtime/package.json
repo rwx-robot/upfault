@@ -19,3 +19,4 @@
     "./lifecycle": {
       "types": "./dist/lifecycle.d.ts",
       "import": "./dist/lifecycle.mjs",
+      "require": "./dist/lifecycle.js"
