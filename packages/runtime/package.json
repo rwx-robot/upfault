@@ -24,3 +24,4 @@
     "./renderer": {
       "types": "./dist/renderer.d.ts",
       "import": "./dist/renderer.mjs",
+      "require": "./dist/renderer.js"
