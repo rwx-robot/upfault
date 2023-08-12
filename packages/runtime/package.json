@@ -17,3 +17,4 @@
       "require": "./dist/h.js"
     },
     "./lifecycle": {
+      "types": "./dist/lifecycle.d.ts",
