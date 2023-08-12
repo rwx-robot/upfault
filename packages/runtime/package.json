@@ -16,3 +16,4 @@
       "import": "./dist/h.mjs",
       "require": "./dist/h.js"
     },
+    "./lifecycle": {
