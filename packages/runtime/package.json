@@ -27,3 +27,4 @@
       "require": "./dist/renderer.js"
     }
   },
+  "scripts": {
