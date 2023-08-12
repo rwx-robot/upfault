@@ -39,3 +39,4 @@
   "dependencies": {
     "@upfault/shared": "workspace:*",
     "@upfault/reactivity": "workspace:*",
+    "@upfault/diff": "workspace:*",
