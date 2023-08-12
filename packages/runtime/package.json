@@ -41,3 +41,4 @@
     "@upfault/reactivity": "workspace:*",
     "@upfault/diff": "workspace:*",
     "@upfault/scheduler": "workspace:*"
+  },
