@@ -21,3 +21,4 @@
       "import": "./dist/lifecycle.mjs",
       "require": "./dist/lifecycle.js"
     },
+    "./renderer": {
