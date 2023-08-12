@@ -33,3 +33,4 @@
     "dev": "tsc -w -p tsconfig.build.json",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
