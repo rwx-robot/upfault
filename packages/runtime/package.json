@@ -26,3 +26,4 @@
       "import": "./dist/renderer.mjs",
       "require": "./dist/renderer.js"
     }
+  },
