@@ -37,3 +37,4 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
+    "@upfault/shared": "workspace:*",
