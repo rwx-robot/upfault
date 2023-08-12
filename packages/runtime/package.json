@@ -12,3 +12,4 @@
       "require": "./dist/index.js"
     },
     "./h": {
+      "types": "./dist/h.d.ts",
