@@ -25,3 +25,5 @@ export function createRenderer(options) {
   function setContainerVNode(container, vnode) {
     containerVNodes.set(container, vnode);
   }
+
+  const toElement = _nodeToElement || ((node) => node);
