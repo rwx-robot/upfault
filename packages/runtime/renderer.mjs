@@ -20,3 +20,4 @@ export function createRenderer(options) {
 
   function getContainerVNode(container) {
     return containerVNodes.get(container) ?? null;
+  }
