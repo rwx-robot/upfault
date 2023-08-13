@@ -27,3 +27,5 @@ export function createRenderer(options) {
   }
 
   const toElement = _nodeToElement || ((node) => node);
+
+  function mountElement(vnode, parent, anchor = null) {
