@@ -1,1 +1,2 @@
 // Browser-compatible renderer for UpFault Runtime
+// This is a minimal implementation for the counter example
