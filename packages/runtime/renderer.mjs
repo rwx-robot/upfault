@@ -19,3 +19,4 @@ export function createRenderer(options) {
   const containerVNodes = new WeakMap();
 
   function getContainerVNode(container) {
+    return containerVNodes.get(container) ?? null;
