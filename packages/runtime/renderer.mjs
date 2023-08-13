@@ -9,3 +9,4 @@ export function createRenderer(options) {
     setElementText,
     setText,
     insert,
+    remove,
