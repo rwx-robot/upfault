@@ -17,3 +17,5 @@ export function createRenderer(options) {
   } = options;
 
   const containerVNodes = new WeakMap();
+
+  function getContainerVNode(container) {
