@@ -10,3 +10,4 @@ export function createRenderer(options) {
     setText,
     insert,
     remove,
+    patchProp,
