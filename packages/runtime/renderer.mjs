@@ -7,3 +7,4 @@ export function createRenderer(options) {
     createText,
     createComment,
     setElementText,
+    setText,
