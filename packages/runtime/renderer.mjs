@@ -3,3 +3,4 @@
 
 export function createRenderer(options) {
   const {
+    createElement,
