@@ -12,3 +12,4 @@ export function createRenderer(options) {
     remove,
     patchProp,
     parentNode,
+    nextSibling,
