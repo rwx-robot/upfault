@@ -14,3 +14,4 @@ export function createRenderer(options) {
     parentNode,
     nextSibling,
     _nodeToElement,
+  } = options;
