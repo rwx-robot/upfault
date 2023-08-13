@@ -15,3 +15,5 @@ export function createRenderer(options) {
     nextSibling,
     _nodeToElement,
   } = options;
+
+  const containerVNodes = new WeakMap();
