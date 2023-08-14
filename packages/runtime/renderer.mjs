@@ -64,3 +64,4 @@ export function createRenderer(options) {
 
   function mountText(vnode, parent, anchor = null) {
     const el = createText(vnode.children);
+    vnode.el = el;
