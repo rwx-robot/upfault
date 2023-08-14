@@ -55,3 +55,4 @@ export function createRenderer(options) {
     }
   }
 
+  function mountChildren(children, parent, anchor) {
