@@ -33,3 +33,4 @@ export function createRenderer(options) {
     const isSVG = type === 'svg' || vnode.isSVG;
     const el = createElement(type, isSVG);
     vnode.el = el;
+
