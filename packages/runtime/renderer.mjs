@@ -58,3 +58,4 @@ export function createRenderer(options) {
   function mountChildren(children, parent, anchor) {
     for (const child of children) {
       if (child == null) continue;
+      patch(null, child, parent, anchor);
