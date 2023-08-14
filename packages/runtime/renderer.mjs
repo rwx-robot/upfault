@@ -43,3 +43,4 @@ export function createRenderer(options) {
     }
 
     if (shapeFlag & 1) { // TEXT_NODE
+      setElementText(el, children);
