@@ -67,3 +67,5 @@ export function createRenderer(options) {
     vnode.el = el;
     insert(el, parent, anchor);
   }
+
+  function mountComment(vnode, parent, anchor = null) {
