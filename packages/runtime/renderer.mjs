@@ -40,3 +40,4 @@ export function createRenderer(options) {
           patchProp(el, key, null, props[key]);
         }
       }
+    }
