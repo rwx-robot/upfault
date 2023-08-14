@@ -66,3 +66,4 @@ export function createRenderer(options) {
     const el = createText(vnode.children);
     vnode.el = el;
     insert(el, parent, anchor);
+  }
