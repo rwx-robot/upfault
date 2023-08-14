@@ -45,3 +45,4 @@ export function createRenderer(options) {
     if (shapeFlag & 1) { // TEXT_NODE
       setElementText(el, children);
     } else if (shapeFlag & 16) { // ARRAY_CHILDREN
+      mountChildren(children, el, null);
