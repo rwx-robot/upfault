@@ -35,3 +35,4 @@ export function createRenderer(options) {
     vnode.el = el;
 
     if (props) {
+      for (const key in props) {
