@@ -53,3 +53,4 @@ export function createRenderer(options) {
     if (ref) {
       setRef(ref, el);
     }
+  }
