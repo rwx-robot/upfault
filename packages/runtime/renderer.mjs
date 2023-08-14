@@ -72,3 +72,4 @@ export function createRenderer(options) {
     const el = createComment(vnode.children || '');
     vnode.el = el;
     insert(el, parent, anchor);
+  }
