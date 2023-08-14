@@ -32,3 +32,4 @@ export function createRenderer(options) {
     const { type, props, children, shapeFlag, patchFlag, ref } = vnode;
     const isSVG = type === 'svg' || vnode.isSVG;
     const el = createElement(type, isSVG);
+    vnode.el = el;
