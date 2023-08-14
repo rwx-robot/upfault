@@ -49,3 +49,5 @@ export function createRenderer(options) {
     }
 
     insert(el, parent, anchor);
+
+    if (ref) {
