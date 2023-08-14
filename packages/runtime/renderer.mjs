@@ -46,3 +46,4 @@ export function createRenderer(options) {
       setElementText(el, children);
     } else if (shapeFlag & 16) { // ARRAY_CHILDREN
       mountChildren(children, el, null);
+    }
