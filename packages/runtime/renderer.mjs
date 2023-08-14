@@ -61,3 +61,5 @@ export function createRenderer(options) {
       patch(null, child, parent, anchor);
     }
   }
+
+  function mountText(vnode, parent, anchor = null) {
