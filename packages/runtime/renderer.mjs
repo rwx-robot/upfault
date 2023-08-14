@@ -60,3 +60,4 @@ export function createRenderer(options) {
       if (child == null) continue;
       patch(null, child, parent, anchor);
     }
+  }
