@@ -51,3 +51,4 @@ export function createRenderer(options) {
     insert(el, parent, anchor);
 
     if (ref) {
+      setRef(ref, el);
