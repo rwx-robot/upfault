@@ -39,3 +39,4 @@ export function createRenderer(options) {
         if (key !== 'children' && key !== 'key' && key !== 'ref') {
           patchProp(el, key, null, props[key]);
         }
+      }
