@@ -47,3 +47,5 @@ export function createRenderer(options) {
     } else if (shapeFlag & 16) { // ARRAY_CHILDREN
       mountChildren(children, el, null);
     }
+
+    insert(el, parent, anchor);
