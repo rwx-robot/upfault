@@ -70,3 +70,4 @@ export function createRenderer(options) {
 
   function mountComment(vnode, parent, anchor = null) {
     const el = createComment(vnode.children || '');
+    vnode.el = el;
