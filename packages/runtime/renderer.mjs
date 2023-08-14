@@ -73,3 +73,5 @@ export function createRenderer(options) {
     vnode.el = el;
     insert(el, parent, anchor);
   }
+
+  function mountFragment(vnode, parent, anchor = null) {
