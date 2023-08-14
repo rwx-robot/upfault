@@ -36,3 +36,4 @@ export function createRenderer(options) {
 
     if (props) {
       for (const key in props) {
+        if (key !== 'children' && key !== 'key' && key !== 'ref') {
