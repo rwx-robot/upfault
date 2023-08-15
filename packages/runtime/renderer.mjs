@@ -114,3 +114,4 @@ export function createRenderer(options) {
 
     if (vnodeType === 2) { // ELEMENT
       patchElement(n1, n2);
+    } else if (vnodeType === 1) { // TEXT
