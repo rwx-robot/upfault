@@ -98,3 +98,4 @@ export function createRenderer(options) {
 
   function patch(n1, n2, parent, anchor = null) {
     if (n1 === n2) return;
+    
