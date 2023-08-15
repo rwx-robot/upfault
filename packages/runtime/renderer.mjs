@@ -85,3 +85,4 @@ export function createRenderer(options) {
       patch(null, result, parent, anchor);
       vnode.el = result.el;
     }
+  }
