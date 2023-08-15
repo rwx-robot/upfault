@@ -113,3 +113,4 @@ export function createRenderer(options) {
     const { shapeFlag, vnodeType } = n2;
 
     if (vnodeType === 2) { // ELEMENT
+      patchElement(n1, n2);
