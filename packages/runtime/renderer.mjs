@@ -89,3 +89,4 @@ export function createRenderer(options) {
 
   function setRef(ref, value) {
     if (!ref) return;
+    if (typeof ref === 'function') {
