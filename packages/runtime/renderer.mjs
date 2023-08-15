@@ -111,3 +111,4 @@ export function createRenderer(options) {
     }
 
     const { shapeFlag, vnodeType } = n2;
+
