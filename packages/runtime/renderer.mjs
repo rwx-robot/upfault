@@ -94,3 +94,4 @@ export function createRenderer(options) {
     } else if (ref && typeof ref === 'object' && '__v_isRef' in ref) {
       ref.value = value;
     }
+  }
