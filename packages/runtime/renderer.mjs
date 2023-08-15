@@ -103,3 +103,4 @@ export function createRenderer(options) {
       if (!n2) return;
       mount(n2, parent, anchor);
       return;
+    }
