@@ -88,3 +88,4 @@ export function createRenderer(options) {
   }
 
   function setRef(ref, value) {
+    if (!ref) return;
