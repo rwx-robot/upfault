@@ -83,3 +83,4 @@ export function createRenderer(options) {
     if (typeof vnode.type === 'function') {
       const result = vnode.type();
       patch(null, result, parent, anchor);
+      vnode.el = result.el;
