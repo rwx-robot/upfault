@@ -80,3 +80,4 @@ export function createRenderer(options) {
 
   function mountComponent(vnode, parent, anchor = null) {
     console.warn('Component mounting not fully implemented in minimal renderer');
+    if (typeof vnode.type === 'function') {
