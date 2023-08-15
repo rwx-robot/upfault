@@ -108,3 +108,4 @@ export function createRenderer(options) {
     if (!n2) {
       unmount(n1, parent);
       return;
+    }
