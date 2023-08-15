@@ -86,3 +86,5 @@ export function createRenderer(options) {
       vnode.el = result.el;
     }
   }
+
+  function setRef(ref, value) {
