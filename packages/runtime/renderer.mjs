@@ -100,3 +100,4 @@ export function createRenderer(options) {
     if (n1 === n2) return;
     
     if (!n1) {
+      if (!n2) return;
