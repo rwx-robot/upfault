@@ -110,3 +110,4 @@ export function createRenderer(options) {
       return;
     }
 
+    const { shapeFlag, vnodeType } = n2;
