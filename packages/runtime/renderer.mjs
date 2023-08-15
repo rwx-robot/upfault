@@ -76,3 +76,4 @@ export function createRenderer(options) {
 
   function mountFragment(vnode, parent, anchor = null) {
     mountChildren(vnode.children, parent, anchor);
+  }
