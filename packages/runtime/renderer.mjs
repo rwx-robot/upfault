@@ -91,3 +91,4 @@ export function createRenderer(options) {
     if (!ref) return;
     if (typeof ref === 'function') {
       ref(value);
+    } else if (ref && typeof ref === 'object' && '__v_isRef' in ref) {
