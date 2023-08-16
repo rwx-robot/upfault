@@ -146,3 +146,5 @@ export function createRenderer(options) {
 
     patchChildren(n1, n2, el);
   }
+
+  function patchChildren(n1, n2, parent) {
