@@ -137,3 +137,5 @@ export function createRenderer(options) {
         patchProp(el, key, oldProps[key], newProps[key]);
       }
     }
+
+    for (const key in oldProps) {
