@@ -119,3 +119,4 @@ export function createRenderer(options) {
         setText(n1.el, n2.children);
       }
     } else if (vnodeType === 5) { // FRAGMENT
+      patchChildren(n1, n2, n1.el);
