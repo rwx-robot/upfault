@@ -143,3 +143,5 @@ export function createRenderer(options) {
         patchProp(el, key, oldProps[key], null);
       }
     }
+
+    patchChildren(n1, n2, el);
