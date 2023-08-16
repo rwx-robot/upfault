@@ -136,3 +136,4 @@ export function createRenderer(options) {
       if (oldProps[key] !== newProps[key]) {
         patchProp(el, key, oldProps[key], newProps[key]);
       }
+    }
