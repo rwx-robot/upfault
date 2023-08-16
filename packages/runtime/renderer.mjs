@@ -156,3 +156,4 @@ export function createRenderer(options) {
     if (shapeFlag2 & 1) { // TEXT_NODE
       if (shapeFlag1 & 16) {
         unmountChildren(c1);
+      }
