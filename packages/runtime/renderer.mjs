@@ -117,3 +117,4 @@ export function createRenderer(options) {
     } else if (vnodeType === 1) { // TEXT
       if (n1.children !== n2.children) {
         setText(n1.el, n2.children);
+      }
