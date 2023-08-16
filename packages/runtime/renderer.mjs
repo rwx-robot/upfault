@@ -124,3 +124,5 @@ export function createRenderer(options) {
       // Component update not implemented in minimal version
     }
   }
+
+  function patchElement(n1, n2) {
