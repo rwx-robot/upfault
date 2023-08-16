@@ -135,3 +135,4 @@ export function createRenderer(options) {
     for (const key in newProps) {
       if (oldProps[key] !== newProps[key]) {
         patchProp(el, key, oldProps[key], newProps[key]);
+      }
