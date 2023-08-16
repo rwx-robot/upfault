@@ -151,3 +151,4 @@ export function createRenderer(options) {
     const c1 = n1.children;
     const c2 = n2.children;
     const shapeFlag1 = n1.shapeFlag ?? 0;
+    const shapeFlag2 = n2.shapeFlag ?? 0;
