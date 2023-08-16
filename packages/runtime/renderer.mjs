@@ -152,3 +152,5 @@ export function createRenderer(options) {
     const c2 = n2.children;
     const shapeFlag1 = n1.shapeFlag ?? 0;
     const shapeFlag2 = n2.shapeFlag ?? 0;
+
+    if (shapeFlag2 & 1) { // TEXT_NODE
