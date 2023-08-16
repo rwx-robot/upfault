@@ -118,3 +118,4 @@ export function createRenderer(options) {
       if (n1.children !== n2.children) {
         setText(n1.el, n2.children);
       }
+    } else if (vnodeType === 5) { // FRAGMENT
