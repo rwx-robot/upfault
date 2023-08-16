@@ -133,3 +133,4 @@ export function createRenderer(options) {
     const newProps = n2.props || {};
 
     for (const key in newProps) {
+      if (oldProps[key] !== newProps[key]) {
