@@ -130,3 +130,4 @@ export function createRenderer(options) {
     n2.el = el;
 
     const oldProps = n1.props || {};
+    const newProps = n2.props || {};
