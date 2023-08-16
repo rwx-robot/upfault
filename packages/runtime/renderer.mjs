@@ -123,3 +123,4 @@ export function createRenderer(options) {
     } else if (vnodeType === 3) { // COMPONENT
       // Component update not implemented in minimal version
     }
+  }
