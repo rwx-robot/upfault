@@ -157,3 +157,4 @@ export function createRenderer(options) {
       if (shapeFlag1 & 16) {
         unmountChildren(c1);
       }
+      if (c1 !== c2) {
