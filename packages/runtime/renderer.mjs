@@ -150,3 +150,4 @@ export function createRenderer(options) {
   function patchChildren(n1, n2, parent) {
     const c1 = n1.children;
     const c2 = n2.children;
+    const shapeFlag1 = n1.shapeFlag ?? 0;
