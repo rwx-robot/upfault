@@ -127,3 +127,4 @@ export function createRenderer(options) {
 
   function patchElement(n1, n2) {
     const el = n1.el;
+    n2.el = el;
