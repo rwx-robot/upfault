@@ -121,3 +121,4 @@ export function createRenderer(options) {
     } else if (vnodeType === 5) { // FRAGMENT
       patchChildren(n1, n2, n1.el);
     } else if (vnodeType === 3) { // COMPONENT
+      // Component update not implemented in minimal version
