@@ -158,3 +158,4 @@ export function createRenderer(options) {
         unmountChildren(c1);
       }
       if (c1 !== c2) {
+        setElementText(parent, c2);
