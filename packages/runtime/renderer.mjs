@@ -193,3 +193,4 @@ export function createRenderer(options) {
     const { shapeFlag = 0, vnodeType, el, componentInstance } = vnode;
 
     if (vnodeType === 3 && componentInstance) {
+      return;
