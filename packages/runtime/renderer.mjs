@@ -183,3 +183,4 @@ export function createRenderer(options) {
   }
 
   function patchKeyedChildren(c1, c2, parent) {
+    unmountChildren(c1);
