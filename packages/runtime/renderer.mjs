@@ -174,3 +174,5 @@ export function createRenderer(options) {
       }
       return;
     }
+
+    if (shapeFlag1 & 16) {
