@@ -161,3 +161,4 @@ export function createRenderer(options) {
         setElementText(parent, c2);
       }
       return;
+    }
