@@ -202,3 +202,4 @@ export function createRenderer(options) {
 
     if (vnode.ref) {
       setRef(vnode.ref, null);
+    }
