@@ -186,3 +186,5 @@ export function createRenderer(options) {
     unmountChildren(c1);
     mountChildren(c2, parent, null);
   }
+
+  function unmount(vnode, parent = null) {
