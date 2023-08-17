@@ -171,3 +171,4 @@ export function createRenderer(options) {
           setElementText(parent, '');
         }
         mountChildren(c2, parent, null);
+      }
