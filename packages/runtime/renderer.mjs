@@ -172,3 +172,4 @@ export function createRenderer(options) {
         }
         mountChildren(c2, parent, null);
       }
+      return;
