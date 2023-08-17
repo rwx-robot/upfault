@@ -170,3 +170,4 @@ export function createRenderer(options) {
         if (shapeFlag1 & 1) {
           setElementText(parent, '');
         }
+        mountChildren(c2, parent, null);
