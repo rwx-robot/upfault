@@ -160,3 +160,4 @@ export function createRenderer(options) {
       if (c1 !== c2) {
         setElementText(parent, c2);
       }
+      return;
