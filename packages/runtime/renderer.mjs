@@ -194,3 +194,4 @@ export function createRenderer(options) {
 
     if (vnodeType === 3 && componentInstance) {
       return;
+    }
