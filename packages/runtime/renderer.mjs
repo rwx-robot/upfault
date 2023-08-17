@@ -178,3 +178,4 @@ export function createRenderer(options) {
     if (shapeFlag1 & 16) {
       unmountChildren(c1);
     } else if (shapeFlag1 & 1) {
+      setElementText(parent, '');
