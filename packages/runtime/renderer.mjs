@@ -198,3 +198,4 @@ export function createRenderer(options) {
 
     if (shapeFlag & 16) {
       unmountChildren(vnode.children);
+    }
