@@ -188,3 +188,4 @@ export function createRenderer(options) {
   }
 
   function unmount(vnode, parent = null) {
+    if (!vnode) return;
