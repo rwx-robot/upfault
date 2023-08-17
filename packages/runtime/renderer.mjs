@@ -165,3 +165,4 @@ export function createRenderer(options) {
 
     if (shapeFlag2 & 16) { // ARRAY_CHILDREN
       if (shapeFlag1 & 16) {
+        patchKeyedChildren(c1, c2, parent);
