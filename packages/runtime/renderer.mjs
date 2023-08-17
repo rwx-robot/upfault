@@ -168,3 +168,4 @@ export function createRenderer(options) {
         patchKeyedChildren(c1, c2, parent);
       } else {
         if (shapeFlag1 & 1) {
+          setElementText(parent, '');
