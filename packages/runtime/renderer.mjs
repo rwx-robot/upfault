@@ -189,3 +189,5 @@ export function createRenderer(options) {
 
   function unmount(vnode, parent = null) {
     if (!vnode) return;
+
+    const { shapeFlag = 0, vnodeType, el, componentInstance } = vnode;
