@@ -162,3 +162,5 @@ export function createRenderer(options) {
       }
       return;
     }
+
+    if (shapeFlag2 & 16) { // ARRAY_CHILDREN
