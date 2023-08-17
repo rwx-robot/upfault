@@ -181,3 +181,5 @@ export function createRenderer(options) {
       setElementText(parent, '');
     }
   }
+
+  function patchKeyedChildren(c1, c2, parent) {
