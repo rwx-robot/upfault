@@ -180,3 +180,4 @@ export function createRenderer(options) {
     } else if (shapeFlag1 & 1) {
       setElementText(parent, '');
     }
+  }
