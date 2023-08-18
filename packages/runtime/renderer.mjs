@@ -235,3 +235,4 @@ export function createRenderer(options) {
   function render(vnode, container) {
     if (vnode === null) {
       const prevVNode = getContainerVNode(container);
+      if (prevVNode) {
