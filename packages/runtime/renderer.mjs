@@ -241,3 +241,5 @@ export function createRenderer(options) {
       }
       return;
     }
+
+    const prevVNode = getContainerVNode(container);
