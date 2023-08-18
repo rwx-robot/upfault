@@ -231,3 +231,4 @@ export function createRenderer(options) {
       mountComponent(vnode, parent, anchor);
     }
   }
+
