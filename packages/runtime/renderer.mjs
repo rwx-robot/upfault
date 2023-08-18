@@ -243,3 +243,4 @@ export function createRenderer(options) {
     }
 
     const prevVNode = getContainerVNode(container);
+    patch(prevVNode, vnode, container);
