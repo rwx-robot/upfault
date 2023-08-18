@@ -209,3 +209,4 @@ export function createRenderer(options) {
     }
   }
 
+  function unmountChildren(children) {
