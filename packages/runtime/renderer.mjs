@@ -206,3 +206,4 @@ export function createRenderer(options) {
 
     if (el && parent) {
       remove(el);
+    }
