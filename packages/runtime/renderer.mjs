@@ -214,3 +214,5 @@ export function createRenderer(options) {
       if (child) unmount(child);
     }
   }
+
+  function mount(vnode, parent, anchor = null) {
