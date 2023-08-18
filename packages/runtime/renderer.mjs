@@ -238,3 +238,4 @@ export function createRenderer(options) {
       if (prevVNode) {
         unmount(prevVNode, container);
         setContainerVNode(container, null);
+      }
