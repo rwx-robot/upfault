@@ -210,3 +210,4 @@ export function createRenderer(options) {
   }
 
   function unmountChildren(children) {
+    for (const child of children) {
