@@ -218,3 +218,5 @@ export function createRenderer(options) {
   function mount(vnode, parent, anchor = null) {
     if (!vnode) return;
     const { vnodeType } = vnode;
+
+    if (vnodeType === 2) { // ELEMENT
