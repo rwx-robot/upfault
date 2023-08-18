@@ -240,3 +240,4 @@ export function createRenderer(options) {
         setContainerVNode(container, null);
       }
       return;
+    }
