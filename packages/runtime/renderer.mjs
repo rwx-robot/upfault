@@ -232,3 +232,4 @@ export function createRenderer(options) {
     }
   }
 
+  function render(vnode, container) {
