@@ -213,3 +213,4 @@ export function createRenderer(options) {
     for (const child of children) {
       if (child) unmount(child);
     }
+  }
