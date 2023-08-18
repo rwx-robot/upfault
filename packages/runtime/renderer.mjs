@@ -220,3 +220,4 @@ export function createRenderer(options) {
     const { vnodeType } = vnode;
 
     if (vnodeType === 2) { // ELEMENT
+      mountElement(vnode, parent, anchor);
