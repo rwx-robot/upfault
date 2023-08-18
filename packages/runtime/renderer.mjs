@@ -225,3 +225,4 @@ export function createRenderer(options) {
       mountText(vnode, parent, anchor);
     } else if (vnodeType === 6) { // COMMENT
       mountComment(vnode, parent, anchor);
+    } else if (vnodeType === 5) { // FRAGMENT
