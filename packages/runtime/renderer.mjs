@@ -226,3 +226,4 @@ export function createRenderer(options) {
     } else if (vnodeType === 6) { // COMMENT
       mountComment(vnode, parent, anchor);
     } else if (vnodeType === 5) { // FRAGMENT
+      mountFragment(vnode, parent, anchor);
