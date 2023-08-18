@@ -221,3 +221,4 @@ export function createRenderer(options) {
 
     if (vnodeType === 2) { // ELEMENT
       mountElement(vnode, parent, anchor);
+    } else if (vnodeType === 1) { // TEXT
