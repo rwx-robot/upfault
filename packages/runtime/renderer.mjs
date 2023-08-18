@@ -246,3 +246,5 @@ export function createRenderer(options) {
     patch(prevVNode, vnode, container);
     setContainerVNode(container, vnode);
   }
+
+  function hydrate(vnode, container) {
