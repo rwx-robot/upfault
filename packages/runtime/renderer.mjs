@@ -224,3 +224,4 @@ export function createRenderer(options) {
     } else if (vnodeType === 1) { // TEXT
       mountText(vnode, parent, anchor);
     } else if (vnodeType === 6) { // COMMENT
+      mountComment(vnode, parent, anchor);
