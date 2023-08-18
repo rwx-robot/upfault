@@ -230,3 +230,4 @@ export function createRenderer(options) {
     } else if (vnodeType === 3) { // COMPONENT
       mountComponent(vnode, parent, anchor);
     }
+  }
