@@ -229,3 +229,4 @@ export function createRenderer(options) {
       mountFragment(vnode, parent, anchor);
     } else if (vnodeType === 3) { // COMPONENT
       mountComponent(vnode, parent, anchor);
+    }
