@@ -203,3 +203,5 @@ export function createRenderer(options) {
     if (vnode.ref) {
       setRef(vnode.ref, null);
     }
+
+    if (el && parent) {
