@@ -237,3 +237,4 @@ export function createRenderer(options) {
       const prevVNode = getContainerVNode(container);
       if (prevVNode) {
         unmount(prevVNode, container);
+        setContainerVNode(container, null);
