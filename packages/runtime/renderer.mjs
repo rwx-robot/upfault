@@ -278,3 +278,4 @@ export const defaultRendererOptions = {
     parent.insertBefore(child, anchor || null);
   },
   remove: (child) => {
+    child.parentNode?.removeChild(child);
