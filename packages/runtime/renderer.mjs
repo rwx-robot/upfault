@@ -279,3 +279,4 @@ export const defaultRendererOptions = {
   },
   remove: (child) => {
     child.parentNode?.removeChild(child);
+  },
