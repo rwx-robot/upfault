@@ -256,3 +256,4 @@ export function createRenderer(options) {
     hydrate,
     m: mountElement,
     p: patch,
+    umount: unmount,
