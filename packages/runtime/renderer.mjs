@@ -263,3 +263,4 @@ export function createRenderer(options) {
 export const defaultRendererOptions = {
   createElement: (tag, isSVG) => {
     return isSVG 
+      ? document.createElementNS('http://www.w3.org/2000/svg', tag)
