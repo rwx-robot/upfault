@@ -275,3 +275,4 @@ export const defaultRendererOptions = {
     node.nodeValue = text;
   },
   insert: (child, parent, anchor) => {
+    parent.insertBefore(child, anchor || null);
