@@ -248,3 +248,4 @@ export function createRenderer(options) {
   }
 
   function hydrate(vnode, container) {
+    render(vnode, container);
