@@ -270,3 +270,4 @@ export const defaultRendererOptions = {
   createComment: (text) => document.createComment(text),
   setElementText: (el, text) => {
     el.textContent = text;
+  },
