@@ -258,3 +258,4 @@ export function createRenderer(options) {
     p: patch,
     umount: unmount,
   };
+}
