@@ -286,3 +286,4 @@ export const defaultRendererOptions = {
       if (prevValue) {
         el.removeEventListener(event, prevValue);
       }
+      if (nextValue) {
