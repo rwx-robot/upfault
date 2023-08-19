@@ -288,3 +288,4 @@ export const defaultRendererOptions = {
       }
       if (nextValue) {
         el.addEventListener(event, nextValue);
+      }
