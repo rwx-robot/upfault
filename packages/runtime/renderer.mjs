@@ -283,3 +283,4 @@ export const defaultRendererOptions = {
   patchProp: (el, key, prevValue, nextValue) => {
     if (key.startsWith('on')) {
       const event = key.slice(2).toLowerCase();
+      if (prevValue) {
