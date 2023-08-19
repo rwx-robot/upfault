@@ -254,3 +254,4 @@ export function createRenderer(options) {
   return {
     render,
     hydrate,
+    m: mountElement,
