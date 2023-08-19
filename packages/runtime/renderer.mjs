@@ -252,3 +252,4 @@ export function createRenderer(options) {
   }
 
   return {
+    render,
