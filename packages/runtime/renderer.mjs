@@ -255,3 +255,4 @@ export function createRenderer(options) {
     render,
     hydrate,
     m: mountElement,
+    p: patch,
