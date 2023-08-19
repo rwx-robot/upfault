@@ -261,3 +261,4 @@ export function createRenderer(options) {
 }
 
 export const defaultRendererOptions = {
+  createElement: (tag, isSVG) => {
