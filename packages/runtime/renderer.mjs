@@ -267,3 +267,4 @@ export const defaultRendererOptions = {
       : document.createElement(tag);
   },
   createText: (text) => document.createTextNode(text),
+  createComment: (text) => document.createComment(text),
