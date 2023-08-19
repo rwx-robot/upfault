@@ -259,3 +259,5 @@ export function createRenderer(options) {
     umount: unmount,
   };
 }
+
+export const defaultRendererOptions = {
