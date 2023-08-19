@@ -257,3 +257,4 @@ export function createRenderer(options) {
     m: mountElement,
     p: patch,
     umount: unmount,
+  };
