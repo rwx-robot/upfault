@@ -273,3 +273,4 @@ export const defaultRendererOptions = {
   },
   setText: (node, text) => {
     node.nodeValue = text;
+  },
