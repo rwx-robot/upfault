@@ -272,3 +272,4 @@ export const defaultRendererOptions = {
     el.textContent = text;
   },
   setText: (node, text) => {
+    node.nodeValue = text;
