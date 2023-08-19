@@ -276,3 +276,4 @@ export const defaultRendererOptions = {
   },
   insert: (child, parent, anchor) => {
     parent.insertBefore(child, anchor || null);
+  },
