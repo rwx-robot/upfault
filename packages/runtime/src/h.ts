@@ -15,3 +15,5 @@ import type {
 } from '@upfault/shared/diff';
 
 import { VNodeType, PatchFlags as SharedPatchFlags } from '@upfault/shared/diff';
+
+// Re-export from shared
