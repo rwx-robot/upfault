@@ -312,3 +312,5 @@ export const defaultRendererOptions = {
   nextSibling: (node) => node.nextElementSibling,
   _nodeToElement: (node) => node,
 };
+
+export const renderer = createRenderer(defaultRendererOptions);
