@@ -8,3 +8,4 @@
 import type {
   VNode,
   VNodeProps,
+  PatchFlags,
