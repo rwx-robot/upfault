@@ -295,3 +295,4 @@ export const defaultRendererOptions = {
       const style = el.style;
       if (typeof nextValue === 'string') {
         style.cssText = nextValue;
+      } else if (nextValue && typeof nextValue === 'object') {
