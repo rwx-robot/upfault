@@ -291,3 +291,4 @@ export const defaultRendererOptions = {
       }
     } else if (key === 'class') {
       el.className = nextValue || '';
+    } else if (key === 'style') {
