@@ -10,3 +10,4 @@ import type {
   VNodeProps,
   PatchFlags,
   Component,
+  ComponentInstance,
