@@ -293,3 +293,4 @@ export const defaultRendererOptions = {
       el.className = nextValue || '';
     } else if (key === 'style') {
       const style = el.style;
+      if (typeof nextValue === 'string') {
