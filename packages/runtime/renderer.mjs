@@ -310,3 +310,4 @@ export const defaultRendererOptions = {
   },
   parentNode: (node) => node.parentNode,
   nextSibling: (node) => node.nextElementSibling,
+  _nodeToElement: (node) => node,
