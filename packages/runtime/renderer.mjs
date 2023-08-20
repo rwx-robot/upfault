@@ -299,3 +299,4 @@ export const defaultRendererOptions = {
         Object.assign(style, nextValue);
       } else {
         style.cssText = '';
+      }
