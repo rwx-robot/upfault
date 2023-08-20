@@ -11,3 +11,4 @@ import type {
   PatchFlags,
   Component,
   ComponentInstance,
+  Ref,
