@@ -301,3 +301,4 @@ export const defaultRendererOptions = {
         style.cssText = '';
       }
     } else if (key in el) {
+      el[key] = nextValue;
