@@ -6,3 +6,4 @@
  */
 
 import type {
+  VNode,
