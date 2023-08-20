@@ -300,3 +300,4 @@ export const defaultRendererOptions = {
       } else {
         style.cssText = '';
       }
+    } else if (key in el) {
