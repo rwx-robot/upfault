@@ -304,3 +304,4 @@ export const defaultRendererOptions = {
       el[key] = nextValue;
     } else if (nextValue == null || nextValue === false) {
       el.removeAttribute(key);
+    } else {
