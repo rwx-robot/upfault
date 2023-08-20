@@ -13,3 +13,5 @@ import type {
   ComponentInstance,
   Ref,
 } from '@upfault/shared/diff';
+
+import { VNodeType, PatchFlags as SharedPatchFlags } from '@upfault/shared/diff';
