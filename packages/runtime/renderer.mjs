@@ -307,3 +307,4 @@ export const defaultRendererOptions = {
     } else {
       el.setAttribute(key, nextValue);
     }
+  },
