@@ -12,3 +12,4 @@ import type {
   Component,
   ComponentInstance,
   Ref,
+} from '@upfault/shared/diff';
