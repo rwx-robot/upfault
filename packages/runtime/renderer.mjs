@@ -297,3 +297,4 @@ export const defaultRendererOptions = {
         style.cssText = nextValue;
       } else if (nextValue && typeof nextValue === 'object') {
         Object.assign(style, nextValue);
+      } else {
