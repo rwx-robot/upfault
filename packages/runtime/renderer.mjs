@@ -306,3 +306,4 @@ export const defaultRendererOptions = {
       el.removeAttribute(key);
     } else {
       el.setAttribute(key, nextValue);
+    }
