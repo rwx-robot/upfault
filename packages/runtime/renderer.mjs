@@ -302,3 +302,4 @@ export const defaultRendererOptions = {
       }
     } else if (key in el) {
       el[key] = nextValue;
+    } else if (nextValue == null || nextValue === false) {
