@@ -9,3 +9,4 @@ import type {
   VNode,
   VNodeProps,
   PatchFlags,
+  Component,
