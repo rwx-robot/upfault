@@ -308,3 +308,4 @@ export const defaultRendererOptions = {
       el.setAttribute(key, nextValue);
     }
   },
+  parentNode: (node) => node.parentNode,
