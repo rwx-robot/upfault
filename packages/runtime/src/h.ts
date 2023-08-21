@@ -49,3 +49,4 @@ export type VNodeChild =
   | number 
   | boolean 
   | null 
+  | undefined 
