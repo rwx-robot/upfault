@@ -36,3 +36,4 @@ export interface NormalizedProps extends Record<string, any> {
   onInput?: (e: Event) => void;
   onChange?: (e: Event) => void;
   onSubmit?: (e: Event) => void;
+  [key: `on${string}`]: ((e: Event) => void) | undefined;
