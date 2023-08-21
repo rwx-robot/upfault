@@ -48,3 +48,4 @@ export type VNodeChild =
   | string 
   | number 
   | boolean 
+  | null 
