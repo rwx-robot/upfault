@@ -51,3 +51,5 @@ export type VNodeChild =
   | null 
   | undefined 
   | VNodeChild[];
+
+/**
