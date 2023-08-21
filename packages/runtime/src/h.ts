@@ -53,3 +53,4 @@ export type VNodeChild =
   | VNodeChild[];
 
 /**
+ * 组件类型
