@@ -31,3 +31,4 @@ export interface NormalizedProps extends Record<string, any> {
   key?: string | number | null;
   ref?: Ref<any> | ((value: any) => void);
   class?: string | Record<string, boolean> | string[];
+  style?: string | Record<string, string | number>;
