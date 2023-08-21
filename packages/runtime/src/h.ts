@@ -45,3 +45,4 @@ export interface NormalizedProps extends Record<string, any> {
  */
 export type VNodeChild = 
   | VNode 
+  | string 
