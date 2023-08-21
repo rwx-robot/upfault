@@ -55,3 +55,4 @@ export type VNodeChild =
 /**
  * 组件类型
  */
+export type ComponentType = 
