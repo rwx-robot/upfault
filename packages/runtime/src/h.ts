@@ -34,3 +34,4 @@ export interface NormalizedProps extends Record<string, any> {
   style?: string | Record<string, string | number>;
   onClick?: (e: Event) => void;
   onInput?: (e: Event) => void;
+  onChange?: (e: Event) => void;
