@@ -26,3 +26,4 @@ export { VNodeType } from '@upfault/shared/diff';
 
 /**
  * Props 标准化后的类型
+ */
