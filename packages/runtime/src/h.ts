@@ -21,3 +21,4 @@ export type { VNode, VNodeProps, Component, ComponentInstance, Ref } from '@upfa
 export { VNodeType } from '@upfault/shared/diff';
 
 // ============================================================================
+// 类型定义
