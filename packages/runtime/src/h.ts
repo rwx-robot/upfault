@@ -29,3 +29,4 @@ export { VNodeType } from '@upfault/shared/diff';
  */
 export interface NormalizedProps extends Record<string, any> {
   key?: string | number | null;
+  ref?: Ref<any> | ((value: any) => void);
