@@ -19,3 +19,4 @@ import { VNodeType, PatchFlags as SharedPatchFlags } from '@upfault/shared/diff'
 // Re-export from shared
 export type { VNode, VNodeProps, Component, ComponentInstance, Ref } from '@upfault/shared/diff';
 export { VNodeType } from '@upfault/shared/diff';
+
