@@ -62,3 +62,4 @@ export type ComponentType =
   | (new () => ComponentInstance);
 
 /**
+ * h() 函数重载签名
