@@ -83,3 +83,4 @@ export interface HFunction {
  */
 function normalizeClass(value: unknown): string | undefined {
   if (value == null) return undefined;
+  if (typeof value === 'string') return value;
