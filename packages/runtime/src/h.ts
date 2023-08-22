@@ -90,3 +90,4 @@ function normalizeClass(value: unknown): string | undefined {
       .map(v => normalizeClass(v))
       .filter(Boolean)
       .join(' ');
+  }
