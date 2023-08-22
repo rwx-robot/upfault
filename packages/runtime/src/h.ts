@@ -59,3 +59,4 @@ export type ComponentType =
   | string 
   | Component 
   | ComponentInstance 
+  | (new () => ComponentInstance);
