@@ -82,3 +82,4 @@ export interface HFunction {
  * 标准化 class 值
  */
 function normalizeClass(value: unknown): string | undefined {
+  if (value == null) return undefined;
