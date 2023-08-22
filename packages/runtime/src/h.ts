@@ -92,3 +92,4 @@ function normalizeClass(value: unknown): string | undefined {
       .join(' ');
   }
   if (typeof value === 'object') {
+    return Object.entries(value as Record<string, any>)
