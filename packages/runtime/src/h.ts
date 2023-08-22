@@ -68,3 +68,4 @@ export interface HFunction {
   // Element
   (type: string, props?: NormalizedProps | null, ...children: VNodeChild[]): VNode;
   (type: string, ...children: VNodeChild[]): VNode;
+  
