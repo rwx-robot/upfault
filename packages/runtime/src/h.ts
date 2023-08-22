@@ -71,3 +71,4 @@ export interface HFunction {
   
   // Component
   (type: ComponentType, props?: NormalizedProps | null, ...children: VNodeChild[]): VNode;
+  (type: ComponentType, ...children: VNodeChild[]): VNode;
