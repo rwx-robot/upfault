@@ -87,3 +87,4 @@ function normalizeClass(value: unknown): string | undefined {
   if (Array.isArray(value)) {
     return value
       .filter(v => v != null)
+      .map(v => normalizeClass(v))
