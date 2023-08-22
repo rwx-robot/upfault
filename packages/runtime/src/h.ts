@@ -57,3 +57,4 @@ export type VNodeChild =
  */
 export type ComponentType = 
   | string 
+  | Component 
