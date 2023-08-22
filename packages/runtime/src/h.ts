@@ -91,3 +91,4 @@ function normalizeClass(value: unknown): string | undefined {
       .filter(Boolean)
       .join(' ');
   }
+  if (typeof value === 'object') {
