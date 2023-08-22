@@ -88,3 +88,4 @@ function normalizeClass(value: unknown): string | undefined {
     return value
       .filter(v => v != null)
       .map(v => normalizeClass(v))
+      .filter(Boolean)
