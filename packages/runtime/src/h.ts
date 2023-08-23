@@ -133,3 +133,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
   // 处理 class
   if (normalized.class != null) {
     normalized.class = normalizeClass(normalized.class);
+  }
