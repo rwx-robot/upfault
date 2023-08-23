@@ -99,3 +99,5 @@ function normalizeClass(value: unknown): string | undefined {
   }
   return undefined;
 }
+
+/**
