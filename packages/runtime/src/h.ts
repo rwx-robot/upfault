@@ -129,3 +129,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
   if (!props) return {};
   
   const normalized: VNodeProps = { ...props };
+  
