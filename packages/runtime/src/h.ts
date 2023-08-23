@@ -98,3 +98,4 @@ function normalizeClass(value: unknown): string | undefined {
       .join(' ');
   }
   return undefined;
+}
