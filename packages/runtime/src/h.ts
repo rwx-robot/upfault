@@ -101,3 +101,4 @@ function normalizeClass(value: unknown): string | undefined {
 }
 
 /**
+ * 标准化 style 值
