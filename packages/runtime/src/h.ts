@@ -127,3 +127,4 @@ function kebabCase(str: string): string {
  */
 function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
   if (!props) return {};
+  
