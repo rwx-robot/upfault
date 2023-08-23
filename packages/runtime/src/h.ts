@@ -97,3 +97,4 @@ function normalizeClass(value: unknown): string | undefined {
       .map(([k]) => k)
       .join(' ');
   }
+  return undefined;
