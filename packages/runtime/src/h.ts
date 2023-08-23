@@ -113,3 +113,4 @@ function normalizeStyle(value: unknown): string | undefined {
       .join(';');
   }
   return undefined;
+}
