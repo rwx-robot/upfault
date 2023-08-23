@@ -95,3 +95,4 @@ function normalizeClass(value: unknown): string | undefined {
     return Object.entries(value as Record<string, any>)
       .filter(([, v]) => v)
       .map(([k]) => k)
+      .join(' ');
