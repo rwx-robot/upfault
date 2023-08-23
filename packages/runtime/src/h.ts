@@ -108,3 +108,4 @@ function normalizeStyle(value: unknown): string | undefined {
   if (typeof value === 'string') return value;
   if (typeof value === 'object') {
     return Object.entries(value as Record<string, any>)
+      .filter(([, v]) => v != null)
