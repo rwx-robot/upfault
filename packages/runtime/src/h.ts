@@ -111,3 +111,4 @@ function normalizeStyle(value: unknown): string | undefined {
       .filter(([, v]) => v != null)
       .map(([k, v]) => `${kebabCase(k)}:${v}`)
       .join(';');
+  }
