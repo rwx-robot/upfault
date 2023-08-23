@@ -119,3 +119,4 @@ function normalizeStyle(value: unknown): string | undefined {
  * 驼峰转 kebab-case
  */
 function kebabCase(str: string): string {
+  return str.replace(/([A-Z])/g, '-$1').toLowerCase();
