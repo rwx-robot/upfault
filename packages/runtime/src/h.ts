@@ -114,3 +114,5 @@ function normalizeStyle(value: unknown): string | undefined {
   }
   return undefined;
 }
+
+/**
