@@ -126,3 +126,4 @@ function kebabCase(str: string): string {
  * 标准化 props
  */
 function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
+  if (!props) return {};
