@@ -109,3 +109,4 @@ function normalizeStyle(value: unknown): string | undefined {
   if (typeof value === 'object') {
     return Object.entries(value as Record<string, any>)
       .filter(([, v]) => v != null)
+      .map(([k, v]) => `${kebabCase(k)}:${v}`)
