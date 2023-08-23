@@ -107,3 +107,4 @@ function normalizeStyle(value: unknown): string | undefined {
   if (value == null) return undefined;
   if (typeof value === 'string') return value;
   if (typeof value === 'object') {
+    return Object.entries(value as Record<string, any>)
