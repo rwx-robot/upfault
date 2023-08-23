@@ -134,3 +134,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
   if (normalized.class != null) {
     normalized.class = normalizeClass(normalized.class);
   }
+  
