@@ -121,3 +121,4 @@ function normalizeStyle(value: unknown): string | undefined {
 function kebabCase(str: string): string {
   return str.replace(/([A-Z])/g, '-$1').toLowerCase();
 }
+
