@@ -105,3 +105,4 @@ function normalizeClass(value: unknown): string | undefined {
  */
 function normalizeStyle(value: unknown): string | undefined {
   if (value == null) return undefined;
+  if (typeof value === 'string') return value;
