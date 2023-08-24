@@ -167,3 +167,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
   return children.flatMap(child => {
     if (child == null) return [];
     if (Array.isArray(child)) return normalizeChildren(child);
+    if (typeof child === 'string' || typeof child === 'number') {
