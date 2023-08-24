@@ -136,3 +136,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
   }
   
   // 处理 style
+  if (normalized.style != null) {
