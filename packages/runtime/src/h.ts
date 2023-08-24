@@ -160,3 +160,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
     }
     if (Array.isArray(child)) {
       return normalizeChildren(child);
+    }
