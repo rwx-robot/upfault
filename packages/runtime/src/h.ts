@@ -162,3 +162,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
       return normalizeChildren(child);
     }
     return [child];
+  }
