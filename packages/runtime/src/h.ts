@@ -150,3 +150,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
  * 标准化 children
  */
 function normalizeChildren(children: VNodeChild[]): VNode[] | null {
+  if (children.length === 0) return null;
