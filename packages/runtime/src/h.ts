@@ -156,3 +156,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
     const child = children[0];
     if (child == null) return [];
     if (typeof child === 'string' || typeof child === 'number') {
+      return [{ type: Text, children: String(child), props: null, key: null, ref: null, shapeFlag: VNodeShapeFlags.TEXT_NODE, patchFlag: SharedPatchFlags.NONE, dynamicProps: [], el: null, anchor: null, parent: null, componentInstance: null, component: undefined, vnodeType: VNodeType.TEXT }];
