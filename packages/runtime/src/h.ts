@@ -151,3 +151,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
  */
 function normalizeChildren(children: VNodeChild[]): VNode[] | null {
   if (children.length === 0) return null;
+  // 单个子节点，也返回数组
