@@ -146,3 +146,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
   return rest;
 }
 
+/**
