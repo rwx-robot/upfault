@@ -147,3 +147,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
 }
 
 /**
+ * 标准化 children
