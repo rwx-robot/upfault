@@ -140,3 +140,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
     normalized.style = normalizeStyle(normalized.style);
   }
   
+  // 移除 ref 和 key（它们单独存储）
