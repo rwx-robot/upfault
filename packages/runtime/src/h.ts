@@ -143,3 +143,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
   // 移除 ref 和 key（它们单独存储）
   const { key, ref, ...rest } = normalized;
   
+  return rest;
