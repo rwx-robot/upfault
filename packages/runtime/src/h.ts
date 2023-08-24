@@ -135,3 +135,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
     normalized.class = normalizeClass(normalized.class);
   }
   
+  // 处理 style
