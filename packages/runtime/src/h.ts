@@ -153,3 +153,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
   if (children.length === 0) return null;
   // 单个子节点，也返回数组
   if (children.length === 1) {
+    const child = children[0];
