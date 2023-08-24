@@ -163,3 +163,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
     }
     return [child];
   }
+  // 多个子节点，展平数组
