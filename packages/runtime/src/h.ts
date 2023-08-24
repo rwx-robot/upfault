@@ -144,3 +144,4 @@ function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
   const { key, ref, ...rest } = normalized;
   
   return rest;
+}
