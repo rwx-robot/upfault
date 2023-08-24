@@ -166,3 +166,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
   // 多个子节点，展平数组
   return children.flatMap(child => {
     if (child == null) return [];
+    if (Array.isArray(child)) return normalizeChildren(child);
