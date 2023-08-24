@@ -155,3 +155,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
   if (children.length === 1) {
     const child = children[0];
     if (child == null) return [];
+    if (typeof child === 'string' || typeof child === 'number') {
