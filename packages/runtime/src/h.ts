@@ -197,3 +197,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
     if (!hasEvent && !hasClass && !hasStyle) flags |= SharedPatchFlags.PROPS;
   }
   
+  // 动态 children
