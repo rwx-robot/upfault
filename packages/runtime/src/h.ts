@@ -207,3 +207,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
     }
   }
   
+  return flags || SharedPatchFlags.NONE;
