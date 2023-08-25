@@ -191,3 +191,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
     const hasClass = 'class' in props;
     const hasStyle = 'style' in props;
     
+    if (hasEvent) flags |= SharedPatchFlags.EVENTS;
