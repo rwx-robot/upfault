@@ -181,3 +181,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
   let flags = SharedPatchFlags.NONE;
   
   // 静态元素
+  if (type === VNodeType.ELEMENT && !props && (!children || typeof children === 'string')) {
