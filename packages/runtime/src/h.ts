@@ -199,3 +199,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
   
   // 动态 children
   if (children != null && typeof children !== 'string') {
+    if (Array.isArray(children)) {
