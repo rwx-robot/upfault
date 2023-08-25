@@ -182,3 +182,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
   
   // 静态元素
   if (type === VNodeType.ELEMENT && !props && (!children || typeof children === 'string')) {
+    return SharedPatchFlags.NONE;
