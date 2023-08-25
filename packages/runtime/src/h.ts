@@ -204,3 +204,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
       flags |= hasKeyed ? SharedPatchFlags.KEYED_FRAGMENT : SharedPatchFlags.UNKEYED_FRAGMENT;
     } else {
       flags |= SharedPatchFlags.TEXT;
+    }
