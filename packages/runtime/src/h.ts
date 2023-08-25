@@ -200,3 +200,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
   // 动态 children
   if (children != null && typeof children !== 'string') {
     if (Array.isArray(children)) {
+      const hasKeyed = children.some(c => c && typeof c === 'object' && 'key' in c && c.key != null);
