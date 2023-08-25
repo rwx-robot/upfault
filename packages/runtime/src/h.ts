@@ -172,3 +172,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
     }
     return [child];
   });
+}
