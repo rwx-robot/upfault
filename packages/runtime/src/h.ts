@@ -185,3 +185,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
     return SharedPatchFlags.NONE;
   }
   
+  // 动态 props
