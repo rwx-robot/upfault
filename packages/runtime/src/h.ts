@@ -186,3 +186,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
   }
   
   // 动态 props
+  if (props && Object.keys(props).length > 0) {
