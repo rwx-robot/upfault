@@ -206,3 +206,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
       flags |= SharedPatchFlags.TEXT;
     }
   }
+  
