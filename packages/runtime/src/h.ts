@@ -189,3 +189,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
   if (props && Object.keys(props).length > 0) {
     const hasEvent = Object.keys(props).some(k => k.startsWith('on'));
     const hasClass = 'class' in props;
+    const hasStyle = 'style' in props;
