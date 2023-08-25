@@ -180,3 +180,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
 function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['children']): number {
   let flags = SharedPatchFlags.NONE;
   
+  // 静态元素
