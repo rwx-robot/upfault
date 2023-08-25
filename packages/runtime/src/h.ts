@@ -175,3 +175,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
 }
 
 /**
+ * 计算 PatchFlags
