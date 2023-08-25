@@ -177,3 +177,4 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
 /**
  * 计算 PatchFlags
  */
+function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['children']): number {
