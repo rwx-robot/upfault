@@ -184,3 +184,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
   if (type === VNodeType.ELEMENT && !props && (!children || typeof children === 'string')) {
     return SharedPatchFlags.NONE;
   }
+  
