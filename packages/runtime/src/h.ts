@@ -233,3 +233,4 @@ export function h(
   let key: string | number | null = null;
   let ref: VNode['ref'] = null;
   
+  if (props != null && !Array.isArray(props) && typeof props === 'object' && !(props as any).__v_isVNode) {
