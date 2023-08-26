@@ -243,3 +243,4 @@ export function h(
     normalizedProps = {};
     normalizedChildren = normalizeChildren([props as VNodeChild, ...children]);
   }
+  
