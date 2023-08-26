@@ -250,3 +250,4 @@ export function h(
   
   if (typeof type === 'string') {
     vnodeType = VNodeType.ELEMENT;
+  } else if (typeof type === 'function' || (type && typeof type === 'object')) {
