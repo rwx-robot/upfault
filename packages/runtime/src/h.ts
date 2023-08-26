@@ -234,3 +234,4 @@ export function h(
   let ref: VNode['ref'] = null;
   
   if (props != null && !Array.isArray(props) && typeof props === 'object' && !(props as any).__v_isVNode) {
+    // 有 props 对象
