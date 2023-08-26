@@ -214,3 +214,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
 // h() 主函数
 // ============================================================================
 
+/**
