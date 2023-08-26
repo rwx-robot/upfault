@@ -237,3 +237,4 @@ export function h(
     // 有 props 对象
     ({ key = null, ref = null, ...normalizedProps } = props);
     normalizedProps = normalizeProps(normalizedProps);
+    normalizedChildren = normalizeChildren(children);
