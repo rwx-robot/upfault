@@ -228,3 +228,4 @@ export function h(
   ...children: VNodeChild[]
 ): VNode {
   // 处理无 props 只有 children 的情况
+  let normalizedProps: VNodeProps;
