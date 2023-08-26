@@ -248,3 +248,4 @@ export function h(
   let vnodeType: VNodeType;
   let component: VNode['component'] = undefined;
   
+  if (typeof type === 'string') {
