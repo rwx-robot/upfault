@@ -222,3 +222,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
  * @param children 子节点
  * @returns VNode
  */
+export function h(
