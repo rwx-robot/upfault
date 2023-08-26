@@ -239,3 +239,4 @@ export function h(
     normalizedProps = normalizeProps(normalizedProps);
     normalizedChildren = normalizeChildren(children);
   } else {
+    // 只有 children，无 props
