@@ -223,3 +223,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
  * @returns VNode
  */
 export function h(
+  type: ComponentType,
