@@ -227,3 +227,4 @@ export function h(
   props?: NormalizedProps | null,
   ...children: VNodeChild[]
 ): VNode {
+  // 处理无 props 只有 children 的情况
