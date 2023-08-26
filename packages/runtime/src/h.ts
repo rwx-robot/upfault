@@ -244,3 +244,4 @@ export function h(
     normalizedChildren = normalizeChildren([props as VNodeChild, ...children]);
   }
   
+  // 确定 VNode 类型
