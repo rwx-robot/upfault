@@ -219,3 +219,4 @@ function computeFlags(type: VNodeType, props: VNodeProps, children: VNode['child
  * 
  * @param type 元素标签名、组件或 Fragment
  * @param props 属性对象
+ * @param children 子节点
