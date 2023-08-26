@@ -241,3 +241,4 @@ export function h(
   } else {
     // 只有 children，无 props
     normalizedProps = {};
+    normalizedChildren = normalizeChildren([props as VNodeChild, ...children]);
