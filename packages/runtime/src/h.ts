@@ -246,3 +246,4 @@ export function h(
   
   // 确定 VNode 类型
   let vnodeType: VNodeType;
+  let component: VNode['component'] = undefined;
