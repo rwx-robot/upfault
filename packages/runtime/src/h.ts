@@ -226,3 +226,4 @@ export function h(
   type: ComponentType,
   props?: NormalizedProps | null,
   ...children: VNodeChild[]
+): VNode {
