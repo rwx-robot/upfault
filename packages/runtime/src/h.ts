@@ -240,3 +240,4 @@ export function h(
     normalizedChildren = normalizeChildren(children);
   } else {
     // 只有 children，无 props
+    normalizedProps = {};
