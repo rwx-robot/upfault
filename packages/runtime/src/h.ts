@@ -231,3 +231,4 @@ export function h(
   let normalizedProps: VNodeProps;
   let normalizedChildren: VNode['children'];
   let key: string | number | null = null;
+  let ref: VNode['ref'] = null;
