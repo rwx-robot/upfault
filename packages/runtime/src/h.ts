@@ -235,3 +235,4 @@ export function h(
   
   if (props != null && !Array.isArray(props) && typeof props === 'object' && !(props as any).__v_isVNode) {
     // 有 props 对象
+    ({ key = null, ref = null, ...normalizedProps } = props);
