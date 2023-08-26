@@ -238,3 +238,4 @@ export function h(
     ({ key = null, ref = null, ...normalizedProps } = props);
     normalizedProps = normalizeProps(normalizedProps);
     normalizedChildren = normalizeChildren(children);
+  } else {
