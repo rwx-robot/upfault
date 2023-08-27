@@ -256,3 +256,4 @@ export function h(
       vnodeType = VNodeType.FRAGMENT;
     } else if ('__v_isComponent' in (type as any)) {
       vnodeType = VNodeType.COMPONENT;
+      component = type as Component;
