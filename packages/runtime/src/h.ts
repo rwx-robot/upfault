@@ -281,3 +281,4 @@ export function h(
     component,
     vnodeType,
     patchFlag,
+    dynamicProps: patchFlag & SharedPatchFlags.PROPS 
