@@ -270,3 +270,4 @@ export function h(
   
   // 计算 flags
   const patchFlag = computeFlags(vnodeType, normalizedProps, normalizedChildren);
+  
