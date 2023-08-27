@@ -278,3 +278,4 @@ export function h(
     children: normalizedChildren,
     key,
     ref,
+    component,
