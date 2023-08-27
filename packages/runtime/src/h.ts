@@ -283,3 +283,4 @@ export function h(
     patchFlag,
     dynamicProps: patchFlag & SharedPatchFlags.PROPS 
       ? Object.keys(normalizedProps).filter(k => !['class', 'style'].includes(k))
+      : [],
