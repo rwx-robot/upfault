@@ -279,3 +279,4 @@ export function h(
     key,
     ref,
     component,
+    vnodeType,
