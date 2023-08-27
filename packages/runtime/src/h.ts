@@ -277,3 +277,4 @@ export function h(
     props: normalizedProps,
     children: normalizedChildren,
     key,
+    ref,
