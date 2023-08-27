@@ -286,3 +286,4 @@ export function h(
       : [],
     el: null,
     anchor: null,
+    parent: null,
