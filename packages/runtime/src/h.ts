@@ -268,3 +268,4 @@ export function h(
     vnodeType = VNodeType.TEXT;
   }
   
+  // 计算 flags
