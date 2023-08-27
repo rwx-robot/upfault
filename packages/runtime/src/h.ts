@@ -292,3 +292,4 @@ export function h(
   };
   
   return vnode;
+}
