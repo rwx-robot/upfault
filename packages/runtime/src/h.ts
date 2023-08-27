@@ -254,3 +254,4 @@ export function h(
     // 组件类型判断
     if ((type as any).__v_isFragment) {
       vnodeType = VNodeType.FRAGMENT;
+    } else if ('__v_isComponent' in (type as any)) {
