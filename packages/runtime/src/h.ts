@@ -290,3 +290,4 @@ export function h(
     componentInstance: null,
     shapeFlag: getShapeFlag(vnodeType, normalizedChildren),
   };
+  
