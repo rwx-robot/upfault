@@ -275,3 +275,4 @@ export function h(
   const vnode: VNode = {
     type,
     props: normalizedProps,
+    children: normalizedChildren,
