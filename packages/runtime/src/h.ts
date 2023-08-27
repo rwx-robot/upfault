@@ -265,3 +265,4 @@ export function h(
       component = type as Component;
     }
   } else {
+    vnodeType = VNodeType.TEXT;
