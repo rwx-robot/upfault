@@ -274,3 +274,4 @@ export function h(
   // 创建 VNode
   const vnode: VNode = {
     type,
+    props: normalizedProps,
