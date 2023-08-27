@@ -252,3 +252,4 @@ export function h(
     vnodeType = VNodeType.ELEMENT;
   } else if (typeof type === 'function' || (type && typeof type === 'object')) {
     // 组件类型判断
+    if ((type as any).__v_isFragment) {
