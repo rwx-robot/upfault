@@ -255,3 +255,4 @@ export function h(
     if ((type as any).__v_isFragment) {
       vnodeType = VNodeType.FRAGMENT;
     } else if ('__v_isComponent' in (type as any)) {
+      vnodeType = VNodeType.COMPONENT;
