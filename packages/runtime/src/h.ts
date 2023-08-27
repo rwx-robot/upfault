@@ -285,3 +285,4 @@ export function h(
       ? Object.keys(normalizedProps).filter(k => !['class', 'style'].includes(k))
       : [],
     el: null,
+    anchor: null,
