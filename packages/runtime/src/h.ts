@@ -261,3 +261,4 @@ export function h(
       vnodeType = VNodeType.COMPONENT;
       component = type as Component;
     } else {
+      vnodeType = VNodeType.COMPONENT;
