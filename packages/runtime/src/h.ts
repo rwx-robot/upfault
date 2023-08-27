@@ -276,3 +276,4 @@ export function h(
     type,
     props: normalizedProps,
     children: normalizedChildren,
+    key,
