@@ -272,3 +272,4 @@ export function h(
   const patchFlag = computeFlags(vnodeType, normalizedProps, normalizedChildren);
   
   // 创建 VNode
+  const vnode: VNode = {
