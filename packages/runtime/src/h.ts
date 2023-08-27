@@ -291,3 +291,4 @@ export function h(
     shapeFlag: getShapeFlag(vnodeType, normalizedChildren),
   };
   
+  return vnode;
