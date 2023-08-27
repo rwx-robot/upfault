@@ -267,3 +267,4 @@ export function h(
   } else {
     vnodeType = VNodeType.TEXT;
   }
+  
