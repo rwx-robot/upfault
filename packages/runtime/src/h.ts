@@ -280,3 +280,4 @@ export function h(
     ref,
     component,
     vnodeType,
+    patchFlag,
