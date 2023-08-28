@@ -311,3 +311,4 @@ const VNodeShapeFlags = {
 
 /**
  * 获取 VNode 形状标记
+ */
