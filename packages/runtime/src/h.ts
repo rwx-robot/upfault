@@ -326,3 +326,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
       flag = VNodeShapeFlags.COMPONENT;
       break;
     case VNodeType.TEXT:
+      flag = VNodeShapeFlags.TEXT_NODE;
