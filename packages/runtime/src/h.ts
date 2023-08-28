@@ -318,3 +318,4 @@ const VNodeShapeFlags = {
 function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
   let flag = 0;
   
+  switch (type) {
