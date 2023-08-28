@@ -310,3 +310,4 @@ const VNodeShapeFlags = {
 } as const;
 
 /**
+ * 获取 VNode 形状标记
