@@ -341,3 +341,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
       flag = VNodeShapeFlags.ELEMENT;
   }
   
+  // 添加 children 类型标记
