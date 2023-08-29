@@ -360,3 +360,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
 /**
  * 创建 Fragment VNode
  */
+export function Fragment(props: NormalizedProps | null, ...children: VNodeChild[]): VNode {
