@@ -338,3 +338,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
       flag = VNodeShapeFlags.SUSPENSE;
       break;
     default:
+      flag = VNodeShapeFlags.ELEMENT;
