@@ -347,3 +347,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
       flag |= VNodeShapeFlags.ARRAY_CHILDREN;
     } else if (typeof children === 'string') {
       flag |= VNodeShapeFlags.TEXT_CHILDREN;
+    }
