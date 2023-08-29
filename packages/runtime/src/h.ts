@@ -365,3 +365,4 @@ export function Fragment(props: NormalizedProps | null, ...children: VNodeChild[
 }
 
 // Fragment 函数本身标记为 Fragment 类型
+(Fragment as any).__v_isFragment = true;
