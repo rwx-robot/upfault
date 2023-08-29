@@ -368,3 +368,4 @@ export function Fragment(props: NormalizedProps | null, ...children: VNodeChild[
 (Fragment as any).__v_isFragment = true;
 
 /**
+ * 创建 Text VNode
