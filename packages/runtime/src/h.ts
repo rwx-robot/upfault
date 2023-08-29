@@ -358,3 +358,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
 // ============================================================================
 
 /**
+ * 创建 Fragment VNode
