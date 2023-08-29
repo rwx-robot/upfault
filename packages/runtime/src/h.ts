@@ -335,3 +335,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
       flag = VNodeShapeFlags.TELEPORT;
       break;
     case VNodeType.SUSPENSE:
+      flag = VNodeShapeFlags.SUSPENSE;
