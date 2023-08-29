@@ -363,3 +363,5 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
 export function Fragment(props: NormalizedProps | null, ...children: VNodeChild[]): VNode {
   return h(Fragment, props, ...children);
 }
+
+// Fragment 函数本身标记为 Fragment 类型
