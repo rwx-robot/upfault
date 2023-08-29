@@ -340,3 +340,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
     default:
       flag = VNodeShapeFlags.ELEMENT;
   }
+  
