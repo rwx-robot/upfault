@@ -362,3 +362,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
  */
 export function Fragment(props: NormalizedProps | null, ...children: VNodeChild[]): VNode {
   return h(Fragment, props, ...children);
+}
