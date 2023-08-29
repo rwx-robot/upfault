@@ -352,3 +352,5 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
   
   return flag;
 }
+
+// ============================================================================
