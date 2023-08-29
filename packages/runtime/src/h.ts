@@ -336,3 +336,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
       break;
     case VNodeType.SUSPENSE:
       flag = VNodeShapeFlags.SUSPENSE;
+      break;
