@@ -377,3 +377,4 @@ export function Text(text: string | number): VNode {
   return {
     type: Text,
     props: null,
+    children: String(text),
