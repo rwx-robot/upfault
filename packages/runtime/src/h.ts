@@ -376,3 +376,4 @@ export function Fragment(props: NormalizedProps | null, ...children: VNodeChild[
 export function Text(text: string | number): VNode {
   return {
     type: Text,
+    props: null,
