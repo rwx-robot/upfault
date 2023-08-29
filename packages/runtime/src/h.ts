@@ -349,3 +349,4 @@ function getShapeFlag(type: VNodeType, children?: VNode['children']): number {
       flag |= VNodeShapeFlags.TEXT_CHILDREN;
     }
   }
+  
