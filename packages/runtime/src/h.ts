@@ -389,3 +389,4 @@ export function Text(text: string | number): VNode {
     componentInstance: null,
     component: undefined,
     vnodeType: VNodeType.TEXT,
+  };
