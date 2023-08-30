@@ -406,3 +406,4 @@ export function Comment(text: string): VNode {
     patchFlag: SharedPatchFlags.NONE,
     dynamicProps: [],
     el: null,
+    anchor: null,
