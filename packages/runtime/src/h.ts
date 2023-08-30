@@ -392,3 +392,4 @@ export function Text(text: string | number): VNode {
   };
 }
 
+/**
