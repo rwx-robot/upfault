@@ -385,3 +385,4 @@ export function Text(text: string | number): VNode {
     dynamicProps: [],
     el: null,
     anchor: null,
+    parent: null,
