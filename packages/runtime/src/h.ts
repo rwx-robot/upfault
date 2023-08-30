@@ -405,3 +405,4 @@ export function Comment(text: string): VNode {
     shapeFlag: VNodeShapeFlags.TEXT_NODE,
     patchFlag: SharedPatchFlags.NONE,
     dynamicProps: [],
+    el: null,
