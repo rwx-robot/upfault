@@ -400,3 +400,4 @@ export function Comment(text: string): VNode {
     type: Comment,
     props: null,
     children: text,
+    key: null,
