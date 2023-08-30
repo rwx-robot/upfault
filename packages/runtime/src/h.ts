@@ -407,3 +407,4 @@ export function Comment(text: string): VNode {
     dynamicProps: [],
     el: null,
     anchor: null,
+    parent: null,
