@@ -391,3 +391,4 @@ export function Text(text: string | number): VNode {
     vnodeType: VNodeType.TEXT,
   };
 }
+
