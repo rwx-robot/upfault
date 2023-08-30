@@ -378,3 +378,4 @@ export function Text(text: string | number): VNode {
     type: Text,
     props: null,
     children: String(text),
+    key: null,
