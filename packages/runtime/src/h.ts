@@ -387,3 +387,4 @@ export function Text(text: string | number): VNode {
     anchor: null,
     parent: null,
     componentInstance: null,
+    component: undefined,
