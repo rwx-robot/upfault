@@ -384,3 +384,4 @@ export function Text(text: string | number): VNode {
     patchFlag: SharedPatchFlags.NONE,
     dynamicProps: [],
     el: null,
+    anchor: null,
