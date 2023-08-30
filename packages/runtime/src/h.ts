@@ -380,3 +380,4 @@ export function Text(text: string | number): VNode {
     children: String(text),
     key: null,
     ref: null,
+    shapeFlag: VNodeShapeFlags.TEXT_NODE,
