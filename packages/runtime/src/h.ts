@@ -409,3 +409,4 @@ export function Comment(text: string): VNode {
     anchor: null,
     parent: null,
     componentInstance: null,
+    component: undefined,
