@@ -413,3 +413,4 @@ export function Comment(text: string): VNode {
     vnodeType: VNodeType.COMMENT,
   };
 }
+
