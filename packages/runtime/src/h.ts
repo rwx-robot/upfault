@@ -402,3 +402,4 @@ export function Comment(text: string): VNode {
     children: text,
     key: null,
     ref: null,
+    shapeFlag: VNodeShapeFlags.TEXT_NODE,
