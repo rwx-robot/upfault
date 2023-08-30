@@ -410,3 +410,4 @@ export function Comment(text: string): VNode {
     parent: null,
     componentInstance: null,
     component: undefined,
+    vnodeType: VNodeType.COMMENT,
