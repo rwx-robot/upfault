@@ -393,3 +393,4 @@ export function Text(text: string | number): VNode {
 }
 
 /**
+ * 创建 Comment VNode
