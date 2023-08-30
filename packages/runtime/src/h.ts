@@ -408,3 +408,4 @@ export function Comment(text: string): VNode {
     el: null,
     anchor: null,
     parent: null,
+    componentInstance: null,
