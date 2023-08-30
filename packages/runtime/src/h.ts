@@ -403,3 +403,4 @@ export function Comment(text: string): VNode {
     key: null,
     ref: null,
     shapeFlag: VNodeShapeFlags.TEXT_NODE,
+    patchFlag: SharedPatchFlags.NONE,
