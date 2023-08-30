@@ -382,3 +382,4 @@ export function Text(text: string | number): VNode {
     ref: null,
     shapeFlag: VNodeShapeFlags.TEXT_NODE,
     patchFlag: SharedPatchFlags.NONE,
+    dynamicProps: [],
