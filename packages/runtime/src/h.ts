@@ -399,3 +399,4 @@ export function Comment(text: string): VNode {
   return {
     type: Comment,
     props: null,
+    children: text,
