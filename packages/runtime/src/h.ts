@@ -411,3 +411,4 @@ export function Comment(text: string): VNode {
     componentInstance: null,
     component: undefined,
     vnodeType: VNodeType.COMMENT,
+  };
