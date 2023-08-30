@@ -418,3 +418,4 @@ export function Comment(text: string): VNode {
 // JSX 支持
 // ============================================================================
 
+export const jsx = h;
