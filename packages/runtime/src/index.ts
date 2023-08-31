@@ -14,3 +14,4 @@ export {
   jsx,
   jsxs,
   jsxDEV,
+  FragmentSymbol,
