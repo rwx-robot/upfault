@@ -12,3 +12,4 @@ export {
   Text,
   Comment,
   jsx,
+  jsxs,
