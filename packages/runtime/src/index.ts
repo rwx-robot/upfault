@@ -10,3 +10,4 @@ export {
   h,
   Fragment,
   Text,
+  Comment,
