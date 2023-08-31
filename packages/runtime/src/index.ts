@@ -7,3 +7,4 @@
 
 // VNode 创建 (h 函数)
 export {
+  h,
