@@ -9,3 +9,4 @@
 export {
   h,
   Fragment,
+  Text,
