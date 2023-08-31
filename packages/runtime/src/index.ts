@@ -22,3 +22,4 @@ export type {
   VNodeProps,
   NormalizedProps,
   VNodeChild,
+  ComponentType,
