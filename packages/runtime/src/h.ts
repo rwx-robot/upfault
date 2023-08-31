@@ -431,3 +431,4 @@ export const FragmentSymbol = VNodeType.FRAGMENT;
 
 export type { 
   NormalizedProps, 
+  VNodeChild, 
