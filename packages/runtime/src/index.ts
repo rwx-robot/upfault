@@ -13,3 +13,4 @@ export {
   Comment,
   jsx,
   jsxs,
+  jsxDEV,
