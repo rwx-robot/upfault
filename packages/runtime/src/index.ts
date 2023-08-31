@@ -20,3 +20,4 @@ export {
 export type {
   VNode,
   VNodeProps,
+  NormalizedProps,
