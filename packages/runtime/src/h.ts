@@ -433,3 +433,4 @@ export type {
   NormalizedProps, 
   VNodeChild, 
   ComponentType, 
+  HFunction 
