@@ -422,3 +422,4 @@ export const jsx = h;
 export const jsxs = h;
 export const jsxDEV = h;
 
+// 兼容 Vue 的 Fragment 符号
