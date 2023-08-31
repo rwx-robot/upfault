@@ -15,3 +15,4 @@ export {
   jsxs,
   jsxDEV,
   FragmentSymbol,
+} from './h';
