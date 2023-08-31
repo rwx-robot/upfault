@@ -16,3 +16,5 @@ export {
   jsxDEV,
   FragmentSymbol,
 } from './h';
+
+export type {
