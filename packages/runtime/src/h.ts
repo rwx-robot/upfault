@@ -419,3 +419,4 @@ export function Comment(text: string): VNode {
 // ============================================================================
 
 export const jsx = h;
+export const jsxs = h;
