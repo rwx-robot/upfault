@@ -18,3 +18,4 @@ export {
 } from './h';
 
 export type {
+  VNode,
