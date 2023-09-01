@@ -43,3 +43,4 @@ export {
   onUnmounted,
   onActivated,
   onDeactivated,
+  onErrorCaptured,
