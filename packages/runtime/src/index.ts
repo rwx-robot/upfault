@@ -41,3 +41,4 @@ export {
   onUpdated,
   onBeforeUnmount,
   onUnmounted,
+  onActivated,
