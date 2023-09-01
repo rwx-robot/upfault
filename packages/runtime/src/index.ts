@@ -25,3 +25,5 @@ export type {
   ComponentType,
   HFunction,
 } from './h';
+
+// Re-export from shared (diff)
