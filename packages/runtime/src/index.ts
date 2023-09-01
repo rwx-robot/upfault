@@ -63,3 +63,4 @@ export type { RendererOptions } from './renderer-options';
 // Reactivity (re-export from @upfault/reactivity)
 export {
   ref,
+  shallowRef,
