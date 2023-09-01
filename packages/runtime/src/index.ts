@@ -52,3 +52,4 @@ export {
 
 export type {
   LifecycleHook,
+  LifecycleHooks,
