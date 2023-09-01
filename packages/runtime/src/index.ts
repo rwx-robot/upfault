@@ -53,3 +53,4 @@ export {
 export type {
   LifecycleHook,
   LifecycleHooks,
+  ComponentInstance as LifecycleComponentInstance,
