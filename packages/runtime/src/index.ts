@@ -28,3 +28,4 @@ export type {
 
 // Re-export from shared (diff)
 export type { VNodeType } from '@upfault/shared/diff';
+export { VNodeType } from '@upfault/shared/diff';
