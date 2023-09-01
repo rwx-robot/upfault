@@ -51,3 +51,4 @@ export {
 } from './lifecycle';
 
 export type {
+  LifecycleHook,
