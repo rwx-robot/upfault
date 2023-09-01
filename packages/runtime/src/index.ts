@@ -57,3 +57,4 @@ export type {
 } from './lifecycle';
 
 // 渲染器
+export { createRenderer, defaultRendererOptions } from './renderer-options';
