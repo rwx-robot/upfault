@@ -40,3 +40,4 @@ export {
   onBeforeUpdate,
   onUpdated,
   onBeforeUnmount,
+  onUnmounted,
