@@ -37,3 +37,4 @@ export type { Component, ComponentInstance, VNodeProps as SharedVNodeProps, Patc
 export {
   onBeforeMount,
   onMounted,
+  onBeforeUpdate,
