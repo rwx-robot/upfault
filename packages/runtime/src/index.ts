@@ -32,3 +32,5 @@ export { VNodeType } from '@upfault/shared/diff';
 
 // Re-export from shared (diff)
 export type { Component, ComponentInstance, VNodeProps as SharedVNodeProps, PatchFlags } from '@upfault/shared/diff';
+
+// 生命周期钩子
