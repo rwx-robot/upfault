@@ -38,3 +38,4 @@ export {
   onBeforeMount,
   onMounted,
   onBeforeUpdate,
+  onUpdated,
