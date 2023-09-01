@@ -31,3 +31,4 @@ export type { VNodeType } from '@upfault/shared/diff';
 export { VNodeType } from '@upfault/shared/diff';
 
 // Re-export from shared (diff)
+export type { Component, ComponentInstance, VNodeProps as SharedVNodeProps, PatchFlags } from '@upfault/shared/diff';
