@@ -50,3 +50,4 @@ export {
   setCurrentInstance,
 } from './lifecycle';
 
+export type {
