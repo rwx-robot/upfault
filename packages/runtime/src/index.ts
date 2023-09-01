@@ -48,3 +48,4 @@ export {
   onRenderTriggered,
   getCurrentInstance,
   setCurrentInstance,
+} from './lifecycle';
