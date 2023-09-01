@@ -55,3 +55,5 @@ export type {
   LifecycleHooks,
   ComponentInstance as LifecycleComponentInstance,
 } from './lifecycle';
+
+// 渲染器
