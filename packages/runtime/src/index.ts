@@ -35,3 +35,4 @@ export type { Component, ComponentInstance, VNodeProps as SharedVNodeProps, Patc
 
 // 生命周期钩子
 export {
+  onBeforeMount,
