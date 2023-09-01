@@ -46,3 +46,4 @@ export {
   onErrorCaptured,
   onRenderTracked,
   onRenderTriggered,
+  getCurrentInstance,
