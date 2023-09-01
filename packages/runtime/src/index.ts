@@ -47,3 +47,4 @@ export {
   onRenderTracked,
   onRenderTriggered,
   getCurrentInstance,
+  setCurrentInstance,
