@@ -24,3 +24,4 @@ export type {
   VNodeChild,
   ComponentType,
   HFunction,
+} from './h';
