@@ -61,3 +61,4 @@ export { createRenderer, defaultRendererOptions } from './renderer-options';
 export type { RendererOptions } from './renderer-options';
 
 // Reactivity (re-export from @upfault/reactivity)
+export {
