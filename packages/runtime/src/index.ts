@@ -45,3 +45,4 @@ export {
   onDeactivated,
   onErrorCaptured,
   onRenderTracked,
+  onRenderTriggered,
