@@ -66,3 +66,4 @@ export {
   shallowRef,
   readonlyRef,
   isRef,
+  unref,
