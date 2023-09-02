@@ -89,3 +89,4 @@ export type {
   WatchStopHandle,
 } from '@upfault/reactivity';
 
+// 版本信息
