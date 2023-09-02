@@ -81,3 +81,4 @@ export type {
   ReadonlyRef,
   ComputedRef,
   Reactive,
+  ReadonlyReactive,
