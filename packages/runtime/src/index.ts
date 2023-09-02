@@ -86,3 +86,4 @@ export type {
   WatchOptions,
   WatchCallback,
   WatchSource,
+  WatchStopHandle,
