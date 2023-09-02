@@ -65,3 +65,4 @@ export {
   ref,
   shallowRef,
   readonlyRef,
+  isRef,
