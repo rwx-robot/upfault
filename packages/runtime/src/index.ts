@@ -82,3 +82,4 @@ export type {
   ComputedRef,
   Reactive,
   ReadonlyReactive,
+  ShallowReactive,
