@@ -64,3 +64,4 @@ export type { RendererOptions } from './renderer-options';
 export {
   ref,
   shallowRef,
+  readonlyRef,
