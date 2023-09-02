@@ -90,3 +90,4 @@ export type {
 } from '@upfault/reactivity';
 
 // 版本信息
+export const VERSION = '0.2.0';
