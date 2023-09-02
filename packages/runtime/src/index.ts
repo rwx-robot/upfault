@@ -87,3 +87,4 @@ export type {
   WatchCallback,
   WatchSource,
   WatchStopHandle,
+} from '@upfault/reactivity';
