@@ -4,3 +4,4 @@
  * 生命周期管理，参考 Vue 3 设计
  */
 
+import { effect, watchEffect, stopEffect } from '@upfault/reactivity';
