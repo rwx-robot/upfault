@@ -72,3 +72,4 @@ export {
   computed,
   watch,
   watchEffect,
+  effect,
