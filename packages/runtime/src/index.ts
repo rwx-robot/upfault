@@ -70,3 +70,4 @@ export {
   toRef,
   toRefs,
   computed,
+  watch,
