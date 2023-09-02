@@ -69,3 +69,4 @@ export {
   unref,
   toRef,
   toRefs,
+  computed,
