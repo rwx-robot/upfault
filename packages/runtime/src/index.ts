@@ -85,3 +85,4 @@ export type {
   ShallowReactive,
   WatchOptions,
   WatchCallback,
+  WatchSource,
