@@ -84,3 +84,4 @@ export type {
   ReadonlyReactive,
   ShallowReactive,
   WatchOptions,
+  WatchCallback,
