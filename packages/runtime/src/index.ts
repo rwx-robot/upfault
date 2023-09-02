@@ -73,3 +73,4 @@ export {
   watch,
   watchEffect,
   effect,
+  batch,
