@@ -74,3 +74,4 @@ export {
   watchEffect,
   effect,
   batch,
+} from '@upfault/reactivity';
