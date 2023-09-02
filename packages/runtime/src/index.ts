@@ -79,3 +79,4 @@ export {
 export type {
   Ref,
   ReadonlyRef,
+  ComputedRef,
