@@ -10,3 +10,4 @@ import type { ComponentInstance, VNode } from '@upfault/shared/diff';
 import type { Effect } from '@upfault/reactivity';
 
 // ============================================================================
+// 生命周期钩子类型
