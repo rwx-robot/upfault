@@ -15,3 +15,4 @@ import type { Effect } from '@upfault/reactivity';
 
 export type LifecycleHook = () => void | Promise<void>;
 
+export interface LifecycleHooks {
