@@ -41,3 +41,4 @@ export const instanceStack: ComponentInstance[] = [];
  */
 export function getCurrentInstance(): ComponentInstance | null {
   return currentInstance;
+}
