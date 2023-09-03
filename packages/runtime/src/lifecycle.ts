@@ -34,3 +34,4 @@ export interface LifecycleHooks {
 // ============================================================================
 
 let currentInstance: ComponentInstance | null = null;
+export const instanceStack: ComponentInstance[] = [];
