@@ -23,3 +23,4 @@ export interface LifecycleHooks {
   onBeforeUnmount?: LifecycleHook;
   onUnmounted?: LifecycleHook;
   onActivated?: LifecycleHook;
+  onDeactivated?: LifecycleHook;
