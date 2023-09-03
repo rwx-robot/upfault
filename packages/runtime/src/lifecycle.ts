@@ -44,3 +44,4 @@ export function getCurrentInstance(): ComponentInstance | null {
 }
 
 /**
+ * 设置当前组件实例
