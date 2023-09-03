@@ -5,3 +5,4 @@
  */
 
 import { effect, watchEffect, stopEffect } from '@upfault/reactivity';
+import type { ComponentInstance, VNode } from '@upfault/shared/diff';
