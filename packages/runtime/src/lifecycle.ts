@@ -27,3 +27,4 @@ export interface LifecycleHooks {
   onErrorCaptured?: (error: Error, instance: ComponentInstance, info: string) => boolean | void;
   onRenderTracked?: (event: any) => void;
   onRenderTriggered?: (event: any) => void;
+}
