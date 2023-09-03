@@ -24,3 +24,4 @@ export interface LifecycleHooks {
   onUnmounted?: LifecycleHook;
   onActivated?: LifecycleHook;
   onDeactivated?: LifecycleHook;
+  onErrorCaptured?: (error: Error, instance: ComponentInstance, info: string) => boolean | void;
