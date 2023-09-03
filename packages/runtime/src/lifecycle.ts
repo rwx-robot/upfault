@@ -43,3 +43,4 @@ export function getCurrentInstance(): ComponentInstance | null {
   return currentInstance;
 }
 
+/**
