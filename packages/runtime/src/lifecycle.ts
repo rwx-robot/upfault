@@ -28,3 +28,4 @@ export interface LifecycleHooks {
   onRenderTracked?: (event: any) => void;
   onRenderTriggered?: (event: any) => void;
 }
+
