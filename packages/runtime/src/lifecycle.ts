@@ -39,3 +39,4 @@ export const instanceStack: ComponentInstance[] = [];
 /**
  * 获取当前组件实例
  */
+export function getCurrentInstance(): ComponentInstance | null {
