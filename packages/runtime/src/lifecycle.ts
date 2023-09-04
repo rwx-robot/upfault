@@ -61,3 +61,4 @@ export function pushInstance(instance: ComponentInstance): void {
 /**
  * 弹出实例栈
  */
+export function popInstance(): ComponentInstance | null {
