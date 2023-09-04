@@ -64,3 +64,4 @@ export function pushInstance(instance: ComponentInstance): void {
 export function popInstance(): ComponentInstance | null {
   const instance = instanceStack.pop();
   currentInstance = instanceStack[instanceStack.length - 1] || null;
+  return instance;
