@@ -71,3 +71,4 @@ export function popInstance(): ComponentInstance | null {
 // 生命周期注册函数
 // ============================================================================
 
+function injectHook(
