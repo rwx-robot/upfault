@@ -56,3 +56,4 @@ export function setCurrentInstance(instance: ComponentInstance | null): void {
 export function pushInstance(instance: ComponentInstance): void {
   instanceStack.push(instance);
   currentInstance = instance;
+}
