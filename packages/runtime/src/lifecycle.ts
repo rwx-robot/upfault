@@ -49,3 +49,5 @@ export function getCurrentInstance(): ComponentInstance | null {
 export function setCurrentInstance(instance: ComponentInstance | null): void {
   currentInstance = instance;
 }
+
+/**
