@@ -76,3 +76,4 @@ function injectHook(
   hook: LifecycleHook,
   instance: ComponentInstance | null = currentInstance
 ): boolean {
+  if (!instance) {
