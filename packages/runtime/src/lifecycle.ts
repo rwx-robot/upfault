@@ -57,3 +57,4 @@ export function pushInstance(instance: ComponentInstance): void {
   instanceStack.push(instance);
   currentInstance = instance;
 }
+
