@@ -75,3 +75,4 @@ function injectHook(
   hookName: keyof LifecycleHooks,
   hook: LifecycleHook,
   instance: ComponentInstance | null = currentInstance
+): boolean {
