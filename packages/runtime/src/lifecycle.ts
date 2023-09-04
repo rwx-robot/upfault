@@ -66,3 +66,5 @@ export function popInstance(): ComponentInstance | null {
   currentInstance = instanceStack[instanceStack.length - 1] || null;
   return instance;
 }
+
+// ============================================================================
