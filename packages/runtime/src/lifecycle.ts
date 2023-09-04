@@ -80,3 +80,4 @@ function injectHook(
     warn(`[UpFault] ${hookName} 只能在 setup() 或组件初始化时调用`);
     return false;
   }
+  
