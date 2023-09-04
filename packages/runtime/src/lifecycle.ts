@@ -73,3 +73,4 @@ export function popInstance(): ComponentInstance | null {
 
 function injectHook(
   hookName: keyof LifecycleHooks,
+  hook: LifecycleHook,
