@@ -58,3 +58,4 @@ export function pushInstance(instance: ComponentInstance): void {
   currentInstance = instance;
 }
 
+/**
