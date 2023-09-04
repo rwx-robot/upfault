@@ -54,3 +54,4 @@ export function setCurrentInstance(instance: ComponentInstance | null): void {
  * 推入实例栈
  */
 export function pushInstance(instance: ComponentInstance): void {
+  instanceStack.push(instance);
