@@ -81,3 +81,4 @@ function injectHook(
     return false;
   }
   
+  if (!instance[hookName]) {
