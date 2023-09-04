@@ -47,3 +47,4 @@ export function getCurrentInstance(): ComponentInstance | null {
  * 设置当前组件实例
  */
 export function setCurrentInstance(instance: ComponentInstance | null): void {
+  currentInstance = instance;
