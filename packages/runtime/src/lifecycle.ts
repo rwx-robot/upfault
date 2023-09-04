@@ -59,3 +59,4 @@ export function pushInstance(instance: ComponentInstance): void {
 }
 
 /**
+ * 弹出实例栈
