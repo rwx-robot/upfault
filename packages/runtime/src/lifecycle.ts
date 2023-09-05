@@ -122,3 +122,4 @@ export function onUpdated(hook: LifecycleHook, instance?: ComponentInstance): vo
  */
 export function onBeforeUnmount(hook: LifecycleHook, instance?: ComponentInstance): void {
   injectHook('onBeforeUnmount', hook, instance);
+}
