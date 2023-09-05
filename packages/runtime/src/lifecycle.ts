@@ -120,3 +120,4 @@ export function onUpdated(hook: LifecycleHook, instance?: ComponentInstance): vo
 /**
  * 组件卸载前调用
  */
+export function onBeforeUnmount(hook: LifecycleHook, instance?: ComponentInstance): void {
