@@ -103,3 +103,4 @@ export function onMounted(hook: LifecycleHook, instance?: ComponentInstance): vo
   injectHook('onMounted', hook, instance);
 }
 
+/**
