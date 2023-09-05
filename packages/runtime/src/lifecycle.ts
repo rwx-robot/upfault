@@ -85,3 +85,4 @@ function injectHook(
     instance[hookName] = [];
   }
   
+  (instance[hookName] as LifecycleHook[]).push(hook);
