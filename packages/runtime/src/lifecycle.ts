@@ -108,3 +108,4 @@ export function onMounted(hook: LifecycleHook, instance?: ComponentInstance): vo
  */
 export function onBeforeUpdate(hook: LifecycleHook, instance?: ComponentInstance): void {
   injectHook('onBeforeUpdate', hook, instance);
+}
