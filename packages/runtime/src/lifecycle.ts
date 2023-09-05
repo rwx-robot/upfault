@@ -116,3 +116,4 @@ export function onBeforeUpdate(hook: LifecycleHook, instance?: ComponentInstance
 export function onUpdated(hook: LifecycleHook, instance?: ComponentInstance): void {
   injectHook('onUpdated', hook, instance);
 }
+
