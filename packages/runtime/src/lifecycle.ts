@@ -106,3 +106,4 @@ export function onMounted(hook: LifecycleHook, instance?: ComponentInstance): vo
 /**
  * 组件更新前调用
  */
+export function onBeforeUpdate(hook: LifecycleHook, instance?: ComponentInstance): void {
