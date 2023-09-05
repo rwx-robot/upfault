@@ -111,3 +111,4 @@ export function onBeforeUpdate(hook: LifecycleHook, instance?: ComponentInstance
 }
 
 /**
+ * 组件更新后调用
