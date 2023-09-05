@@ -93,3 +93,4 @@ function injectHook(
  * 组件挂载前调用
  */
 export function onBeforeMount(hook: LifecycleHook, instance?: ComponentInstance): void {
+  injectHook('onBeforeMount', hook, instance);
