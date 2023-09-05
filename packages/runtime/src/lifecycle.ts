@@ -117,3 +117,4 @@ export function onUpdated(hook: LifecycleHook, instance?: ComponentInstance): vo
   injectHook('onUpdated', hook, instance);
 }
 
+/**
