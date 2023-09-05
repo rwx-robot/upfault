@@ -100,3 +100,4 @@ export function onBeforeMount(hook: LifecycleHook, instance?: ComponentInstance)
  * 组件挂载后调用
  */
 export function onMounted(hook: LifecycleHook, instance?: ComponentInstance): void {
+  injectHook('onMounted', hook, instance);
