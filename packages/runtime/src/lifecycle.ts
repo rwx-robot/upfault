@@ -102,3 +102,4 @@ export function onBeforeMount(hook: LifecycleHook, instance?: ComponentInstance)
 export function onMounted(hook: LifecycleHook, instance?: ComponentInstance): void {
   injectHook('onMounted', hook, instance);
 }
+
