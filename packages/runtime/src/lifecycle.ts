@@ -156,3 +156,4 @@ export function onErrorCaptured(
 }
 
 /**
+ * 调试：渲染依赖追踪
