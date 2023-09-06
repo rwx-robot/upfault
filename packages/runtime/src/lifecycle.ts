@@ -128,3 +128,4 @@ export function onBeforeUnmount(hook: LifecycleHook, instance?: ComponentInstanc
  * 组件卸载后调用
  */
 export function onUnmounted(hook: LifecycleHook, instance?: ComponentInstance): void {
+  injectHook('onUnmounted', hook, instance);
