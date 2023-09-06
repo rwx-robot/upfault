@@ -146,3 +146,4 @@ export function onDeactivated(hook: LifecycleHook, instance?: ComponentInstance)
 }
 
 /**
+ * 捕获后代组件错误
