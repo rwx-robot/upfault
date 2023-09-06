@@ -160,3 +160,4 @@ export function onErrorCaptured(
  */
 export function onRenderTracked(hook: (event: any) => void, instance?: ComponentInstance): void {
   injectHook('onRenderTracked', hook, instance);
+}
