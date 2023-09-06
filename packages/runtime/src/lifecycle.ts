@@ -141,3 +141,4 @@ export function onActivated(hook: LifecycleHook, instance?: ComponentInstance): 
 /**
  * KeepAlive 停用时调用
  */
+export function onDeactivated(hook: LifecycleHook, instance?: ComponentInstance): void {
