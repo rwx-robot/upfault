@@ -152,3 +152,4 @@ export function onErrorCaptured(
   hook: (error: Error, instance: ComponentInstance, info: string) => boolean | void,
   instance?: ComponentInstance
 ): void {
+  injectHook('onErrorCaptured', hook, instance);
