@@ -159,3 +159,4 @@ export function onErrorCaptured(
  * 调试：渲染依赖追踪
  */
 export function onRenderTracked(hook: (event: any) => void, instance?: ComponentInstance): void {
+  injectHook('onRenderTracked', hook, instance);
