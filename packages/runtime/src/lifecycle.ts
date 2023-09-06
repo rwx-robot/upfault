@@ -130,3 +130,4 @@ export function onBeforeUnmount(hook: LifecycleHook, instance?: ComponentInstanc
 export function onUnmounted(hook: LifecycleHook, instance?: ComponentInstance): void {
   injectHook('onUnmounted', hook, instance);
 }
+
