@@ -153,3 +153,4 @@ export function onErrorCaptured(
   instance?: ComponentInstance
 ): void {
   injectHook('onErrorCaptured', hook, instance);
+}
