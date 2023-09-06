@@ -134,3 +134,4 @@ export function onUnmounted(hook: LifecycleHook, instance?: ComponentInstance): 
 /**
  * KeepAlive 激活时调用
  */
+export function onActivated(hook: LifecycleHook, instance?: ComponentInstance): void {
