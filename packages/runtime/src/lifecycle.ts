@@ -150,3 +150,4 @@ export function onDeactivated(hook: LifecycleHook, instance?: ComponentInstance)
  */
 export function onErrorCaptured(
   hook: (error: Error, instance: ComponentInstance, info: string) => boolean | void,
+  instance?: ComponentInstance
