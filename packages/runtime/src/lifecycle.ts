@@ -154,3 +154,5 @@ export function onErrorCaptured(
 ): void {
   injectHook('onErrorCaptured', hook, instance);
 }
+
+/**
