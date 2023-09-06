@@ -144,3 +144,5 @@ export function onActivated(hook: LifecycleHook, instance?: ComponentInstance): 
 export function onDeactivated(hook: LifecycleHook, instance?: ComponentInstance): void {
   injectHook('onDeactivated', hook, instance);
 }
+
+/**
