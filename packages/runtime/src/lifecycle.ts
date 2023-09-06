@@ -137,3 +137,5 @@ export function onUnmounted(hook: LifecycleHook, instance?: ComponentInstance): 
 export function onActivated(hook: LifecycleHook, instance?: ComponentInstance): void {
   injectHook('onActivated', hook, instance);
 }
+
+/**
