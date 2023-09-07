@@ -166,3 +166,4 @@ export function onRenderTracked(hook: (event: any) => void, instance?: Component
  * 调试：渲染触发
  */
 export function onRenderTriggered(hook: (event: any) => void, instance?: ComponentInstance): void {
+  injectHook('onRenderTriggered', hook, instance);
