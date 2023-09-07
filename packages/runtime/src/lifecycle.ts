@@ -202,3 +202,4 @@ export function callBeforeMount(instance: ComponentInstance): void {
   // 同步执行
   if (instance.onBeforeMount && instance.onBeforeMount.length > 0) {
     for (const hook of instance.onBeforeMount) {
+      try {
