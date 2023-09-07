@@ -193,3 +193,4 @@ export async function callHooks(
       handleError(err as Error, instance, errorInfo || 'lifecycle hook');
     }
   }
+}
