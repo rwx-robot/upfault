@@ -181,3 +181,4 @@ export async function callHooks(
   instance: ComponentInstance,
   errorInfo?: string
 ): Promise<void> {
+  if (!hooks || hooks.length === 0) return;
