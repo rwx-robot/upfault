@@ -185,3 +185,4 @@ export async function callHooks(
   
   for (const hook of hooks) {
     try {
+      const result = hook();
