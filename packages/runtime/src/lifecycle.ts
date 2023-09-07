@@ -179,3 +179,4 @@ export function onRenderTriggered(hook: (event: any) => void, instance?: Compone
 export async function callHooks(
   hooks: LifecycleHook[] | undefined,
   instance: ComponentInstance,
+  errorInfo?: string
