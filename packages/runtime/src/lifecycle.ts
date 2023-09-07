@@ -203,3 +203,4 @@ export function callBeforeMount(instance: ComponentInstance): void {
   if (instance.onBeforeMount && instance.onBeforeMount.length > 0) {
     for (const hook of instance.onBeforeMount) {
       try {
+        hook();
