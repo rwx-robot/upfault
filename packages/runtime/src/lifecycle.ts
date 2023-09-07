@@ -191,3 +191,4 @@ export async function callHooks(
       }
     } catch (err) {
       handleError(err as Error, instance, errorInfo || 'lifecycle hook');
+    }
