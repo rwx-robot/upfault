@@ -180,3 +180,4 @@ export async function callHooks(
   hooks: LifecycleHook[] | undefined,
   instance: ComponentInstance,
   errorInfo?: string
+): Promise<void> {
