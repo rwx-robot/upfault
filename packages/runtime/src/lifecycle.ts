@@ -187,3 +187,4 @@ export async function callHooks(
     try {
       const result = hook();
       if (result instanceof Promise) {
+        await result;
