@@ -184,3 +184,4 @@ export async function callHooks(
   if (!hooks || hooks.length === 0) return;
   
   for (const hook of hooks) {
+    try {
