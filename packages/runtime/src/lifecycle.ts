@@ -189,3 +189,4 @@ export async function callHooks(
       if (result instanceof Promise) {
         await result;
       }
+    } catch (err) {
