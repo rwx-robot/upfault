@@ -204,3 +204,4 @@ export function callBeforeMount(instance: ComponentInstance): void {
     for (const hook of instance.onBeforeMount) {
       try {
         hook();
+      } catch (err) {
