@@ -183,3 +183,4 @@ export async function callHooks(
 ): Promise<void> {
   if (!hooks || hooks.length === 0) return;
   
+  for (const hook of hooks) {
