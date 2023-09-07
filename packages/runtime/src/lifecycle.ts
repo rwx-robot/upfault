@@ -199,3 +199,4 @@ export async function callHooks(
  * 调用 onBeforeMount
  */
 export function callBeforeMount(instance: ComponentInstance): void {
+  // 同步执行
