@@ -241,3 +241,4 @@ export function callBeforeUnmount(instance: ComponentInstance): void {
       try {
         hook();
       } catch (err) {
+        handleError(err as Error, instance, 'beforeUnmount');
