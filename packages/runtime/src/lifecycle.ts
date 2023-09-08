@@ -207,3 +207,4 @@ export function callBeforeMount(instance: ComponentInstance): void {
       } catch (err) {
         handleError(err as Error, instance, 'beforeMount');
       }
+    }
