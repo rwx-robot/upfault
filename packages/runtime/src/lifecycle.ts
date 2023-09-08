@@ -237,3 +237,4 @@ export async function callUpdated(instance: ComponentInstance): Promise<void> {
  */
 export function callBeforeUnmount(instance: ComponentInstance): void {
   if (instance.onBeforeUnmount && instance.onBeforeUnmount.length > 0) {
+    for (const hook of instance.onBeforeUnmount) {
