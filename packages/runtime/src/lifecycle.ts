@@ -244,3 +244,4 @@ export function callBeforeUnmount(instance: ComponentInstance): void {
         handleError(err as Error, instance, 'beforeUnmount');
       }
     }
+  }
