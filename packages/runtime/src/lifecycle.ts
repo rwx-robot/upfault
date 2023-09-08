@@ -206,3 +206,4 @@ export function callBeforeMount(instance: ComponentInstance): void {
         hook();
       } catch (err) {
         handleError(err as Error, instance, 'beforeMount');
+      }
