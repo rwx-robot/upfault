@@ -224,3 +224,5 @@ export async function callMounted(instance: ComponentInstance): Promise<void> {
 export async function callBeforeUpdate(instance: ComponentInstance): Promise<void> {
   await callHooks(instance.onBeforeUpdate, instance, 'beforeUpdate');
 }
+
+/**
