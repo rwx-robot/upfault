@@ -246,3 +246,4 @@ export function callBeforeUnmount(instance: ComponentInstance): void {
     }
   }
 }
+
