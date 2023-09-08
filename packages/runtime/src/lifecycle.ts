@@ -220,3 +220,4 @@ export async function callMounted(instance: ComponentInstance): Promise<void> {
 
 /**
  * 调用 onBeforeUpdate
+ */
