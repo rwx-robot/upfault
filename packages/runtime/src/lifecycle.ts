@@ -210,3 +210,4 @@ export function callBeforeMount(instance: ComponentInstance): void {
     }
   }
 }
+
