@@ -231,3 +231,5 @@ export async function callBeforeUpdate(instance: ComponentInstance): Promise<voi
 export async function callUpdated(instance: ComponentInstance): Promise<void> {
   await callHooks(instance.onUpdated, instance, 'updated');
 }
+
+/**
