@@ -215,3 +215,4 @@ export function callBeforeMount(instance: ComponentInstance): void {
  * 调用 onMounted
  */
 export async function callMounted(instance: ComponentInstance): Promise<void> {
+  await callHooks(instance.onMounted, instance, 'mounted');
