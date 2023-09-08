@@ -240,3 +240,4 @@ export function callBeforeUnmount(instance: ComponentInstance): void {
     for (const hook of instance.onBeforeUnmount) {
       try {
         hook();
+      } catch (err) {
