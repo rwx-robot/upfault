@@ -212,3 +212,4 @@ export function callBeforeMount(instance: ComponentInstance): void {
 }
 
 /**
+ * 调用 onMounted
