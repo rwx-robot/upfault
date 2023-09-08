@@ -217,3 +217,5 @@ export function callBeforeMount(instance: ComponentInstance): void {
 export async function callMounted(instance: ComponentInstance): Promise<void> {
   await callHooks(instance.onMounted, instance, 'mounted');
 }
+
+/**
