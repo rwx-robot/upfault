@@ -226,3 +226,4 @@ export async function callBeforeUpdate(instance: ComponentInstance): Promise<voi
 }
 
 /**
+ * 调用 onUpdated
