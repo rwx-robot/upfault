@@ -277,3 +277,4 @@ export async function callDeactivated(instance: ComponentInstance): Promise<void
 }
 
 // ============================================================================
+// 渲染副作用管理
