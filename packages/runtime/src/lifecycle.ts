@@ -281,3 +281,4 @@ export async function callDeactivated(instance: ComponentInstance): Promise<void
 // ============================================================================
 
 /**
+ * 创建渲染 effect
