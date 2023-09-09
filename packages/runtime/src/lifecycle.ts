@@ -285,3 +285,4 @@ export async function callDeactivated(instance: ComponentInstance): Promise<void
  * 用于组件的响应式更新
  */
 export function createRenderEffect(
+  instance: ComponentInstance,
