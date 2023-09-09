@@ -287,3 +287,4 @@ export async function callDeactivated(instance: ComponentInstance): Promise<void
 export function createRenderEffect(
   instance: ComponentInstance,
   renderFn: () => VNode | null
+): Effect {
