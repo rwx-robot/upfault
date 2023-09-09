@@ -255,3 +255,4 @@ export function callUnmounted(instance: ComponentInstance): void {
     for (const hook of instance.onUnmounted) {
       try {
         hook();
+      } catch (err) {
