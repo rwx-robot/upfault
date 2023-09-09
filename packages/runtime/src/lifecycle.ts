@@ -257,3 +257,4 @@ export function callUnmounted(instance: ComponentInstance): void {
         hook();
       } catch (err) {
         handleError(err as Error, instance, 'unmounted');
+      }
