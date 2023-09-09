@@ -276,3 +276,4 @@ export async function callDeactivated(instance: ComponentInstance): Promise<void
   await callHooks(instance.onDeactivated, instance, 'deactivated');
 }
 
+// ============================================================================
