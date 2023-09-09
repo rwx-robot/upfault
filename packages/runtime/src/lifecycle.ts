@@ -271,3 +271,4 @@ export async function callActivated(instance: ComponentInstance): Promise<void> 
 
 /**
  * 调用 onDeactivated
+ */
