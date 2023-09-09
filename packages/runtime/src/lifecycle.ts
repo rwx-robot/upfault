@@ -254,3 +254,4 @@ export function callUnmounted(instance: ComponentInstance): void {
   if (instance.onUnmounted && instance.onUnmounted.length > 0) {
     for (const hook of instance.onUnmounted) {
       try {
+        hook();
