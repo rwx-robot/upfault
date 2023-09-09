@@ -282,3 +282,4 @@ export async function callDeactivated(instance: ComponentInstance): Promise<void
 
 /**
  * 创建渲染 effect
+ * 用于组件的响应式更新
