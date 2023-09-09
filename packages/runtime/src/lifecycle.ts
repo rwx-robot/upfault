@@ -263,3 +263,4 @@ export function callUnmounted(instance: ComponentInstance): void {
 }
 
 /**
+ * 调用 onActivated
