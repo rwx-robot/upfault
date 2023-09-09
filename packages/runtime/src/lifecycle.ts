@@ -268,3 +268,5 @@ export function callUnmounted(instance: ComponentInstance): void {
 export async function callActivated(instance: ComponentInstance): Promise<void> {
   await callHooks(instance.onActivated, instance, 'activated');
 }
+
+/**
