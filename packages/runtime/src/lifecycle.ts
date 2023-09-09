@@ -248,3 +248,4 @@ export function callBeforeUnmount(instance: ComponentInstance): void {
 }
 
 /**
+ * 调用 onUnmounted
