@@ -261,3 +261,5 @@ export function callUnmounted(instance: ComponentInstance): void {
     }
   }
 }
+
+/**
