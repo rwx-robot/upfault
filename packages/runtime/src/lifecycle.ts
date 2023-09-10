@@ -300,3 +300,5 @@ export function createRenderEffect(
   // effect() 返回 runner，实际 Effect 在 runner.effect
   return runner.effect;
 }
+
+/**
