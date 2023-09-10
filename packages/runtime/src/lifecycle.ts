@@ -289,3 +289,4 @@ export function createRenderEffect(
   renderFn: () => VNode | null
 ): Effect {
   const runner = effect(renderFn, {
+    lazy: true,
