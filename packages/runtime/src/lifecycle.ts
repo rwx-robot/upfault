@@ -295,3 +295,4 @@ export function createRenderEffect(
       queueRenderJob(instance);
     },
     onTrack: instance.onRenderTracked ? instance.onRenderTracked[0] : undefined,
+    onTrigger: instance.onRenderTriggered ? instance.onRenderTriggered[0] : undefined,
