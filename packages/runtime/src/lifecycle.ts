@@ -318,3 +318,4 @@ let isFlushPending = false;
 function queueRenderJob(instance: ComponentInstance): void {
   if (instance.isUnmounted) return;
   renderJobQueue.add(instance);
+  
