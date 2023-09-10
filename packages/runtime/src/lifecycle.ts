@@ -293,3 +293,4 @@ export function createRenderEffect(
     scheduler: () => {
       // 调度更新
       queueRenderJob(instance);
+    },
