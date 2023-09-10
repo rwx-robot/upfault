@@ -291,3 +291,4 @@ export function createRenderEffect(
   const runner = effect(renderFn, {
     lazy: true,
     scheduler: () => {
+      // 调度更新
