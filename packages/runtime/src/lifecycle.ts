@@ -312,3 +312,4 @@ export function stopRenderEffect(effect: Effect): void {
 // 渲染任务队列
 // ============================================================================
 
+const renderJobQueue: Set<ComponentInstance> = new Set();
