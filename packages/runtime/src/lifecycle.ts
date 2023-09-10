@@ -288,3 +288,4 @@ export function createRenderEffect(
   instance: ComponentInstance,
   renderFn: () => VNode | null
 ): Effect {
+  const runner = effect(renderFn, {
