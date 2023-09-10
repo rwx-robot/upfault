@@ -297,3 +297,4 @@ export function createRenderEffect(
     onTrack: instance.onRenderTracked ? instance.onRenderTracked[0] : undefined,
     onTrigger: instance.onRenderTriggered ? instance.onRenderTriggered[0] : undefined,
   });
+  // effect() 返回 runner，实际 Effect 在 runner.effect
