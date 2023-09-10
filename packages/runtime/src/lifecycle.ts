@@ -326,3 +326,4 @@ function queueRenderJob(instance: ComponentInstance): void {
 }
 
 function flushRenderJobs(): void {
+  isFlushPending = false;
