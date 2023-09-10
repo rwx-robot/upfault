@@ -306,3 +306,4 @@ export function createRenderEffect(
  */
 export function stopRenderEffect(effect: Effect): void {
   stopEffect(effect);
+}
