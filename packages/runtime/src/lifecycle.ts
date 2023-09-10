@@ -323,3 +323,4 @@ function queueRenderJob(instance: ComponentInstance): void {
     isFlushPending = true;
     queueMicrotask(flushRenderJobs);
   }
+}
