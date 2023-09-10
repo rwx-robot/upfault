@@ -290,3 +290,4 @@ export function createRenderEffect(
 ): Effect {
   const runner = effect(renderFn, {
     lazy: true,
+    scheduler: () => {
