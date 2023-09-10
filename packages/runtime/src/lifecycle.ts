@@ -324,3 +324,5 @@ function queueRenderJob(instance: ComponentInstance): void {
     queueMicrotask(flushRenderJobs);
   }
 }
+
+function flushRenderJobs(): void {
