@@ -320,3 +320,4 @@ function queueRenderJob(instance: ComponentInstance): void {
   renderJobQueue.add(instance);
   
   if (!isFlushPending) {
+    isFlushPending = true;
