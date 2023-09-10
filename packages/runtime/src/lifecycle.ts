@@ -308,3 +308,4 @@ export function stopRenderEffect(effect: Effect): void {
   stopEffect(effect);
 }
 
+// ============================================================================
