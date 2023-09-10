@@ -292,3 +292,4 @@ export function createRenderEffect(
     lazy: true,
     scheduler: () => {
       // 调度更新
+      queueRenderJob(instance);
