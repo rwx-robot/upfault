@@ -294,3 +294,4 @@ export function createRenderEffect(
       // 调度更新
       queueRenderJob(instance);
     },
+    onTrack: instance.onRenderTracked ? instance.onRenderTracked[0] : undefined,
