@@ -305,3 +305,4 @@ export function createRenderEffect(
  * 停止渲染 effect
  */
 export function stopRenderEffect(effect: Effect): void {
+  stopEffect(effect);
