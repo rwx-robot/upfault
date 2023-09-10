@@ -313,3 +313,4 @@ export function stopRenderEffect(effect: Effect): void {
 // ============================================================================
 
 const renderJobQueue: Set<ComponentInstance> = new Set();
+let isFlushPending = false;
