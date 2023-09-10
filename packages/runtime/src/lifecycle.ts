@@ -302,3 +302,4 @@ export function createRenderEffect(
 }
 
 /**
+ * 停止渲染 effect
