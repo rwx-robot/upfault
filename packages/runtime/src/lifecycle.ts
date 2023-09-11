@@ -342,3 +342,4 @@ function flushRenderJobs(): void {
 // ============================================================================
 
 export function handleError(
+  error: Error,
