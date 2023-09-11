@@ -334,3 +334,4 @@ function flushRenderJobs(): void {
     if (!instance.isUnmounted && instance.update) {
       instance.update();
     }
+  }
