@@ -357,3 +357,4 @@ export function handleError(
         // 错误边界本身报错，继续向上抛
         console.error('[UpFault] Error in errorCaptured hook:', e);
       }
+    }
