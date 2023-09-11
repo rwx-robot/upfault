@@ -347,3 +347,4 @@ export function handleError(
   info: string
 ): void {
   // 尝试错误边界捕获
+  if (instance && instance.onErrorCaptured && instance.onErrorCaptured.length > 0) {
