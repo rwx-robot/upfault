@@ -329,3 +329,4 @@ function flushRenderJobs(): void {
   isFlushPending = false;
   const jobs = Array.from(renderJobQueue);
   renderJobQueue.clear();
+  
