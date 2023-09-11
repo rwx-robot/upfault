@@ -354,3 +354,4 @@ export function handleError(
           return; // 错误已处理
         }
       } catch (e) {
+        // 错误边界本身报错，继续向上抛
