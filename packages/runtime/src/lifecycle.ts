@@ -330,3 +330,4 @@ function flushRenderJobs(): void {
   const jobs = Array.from(renderJobQueue);
   renderJobQueue.clear();
   
+  for (const instance of jobs) {
