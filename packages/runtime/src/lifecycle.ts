@@ -349,3 +349,4 @@ export function handleError(
   // 尝试错误边界捕获
   if (instance && instance.onErrorCaptured && instance.onErrorCaptured.length > 0) {
     for (const hook of instance.onErrorCaptured) {
+      try {
