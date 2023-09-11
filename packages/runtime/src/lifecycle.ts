@@ -346,3 +346,4 @@ export function handleError(
   instance: ComponentInstance | null,
   info: string
 ): void {
+  // 尝试错误边界捕获
