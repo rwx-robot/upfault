@@ -365,3 +365,4 @@ export function handleError(
   while (parent) {
     if (parent.onErrorCaptured && parent.onErrorCaptured.length > 0) {
       for (const hook of parent.onErrorCaptured) {
+        try {
