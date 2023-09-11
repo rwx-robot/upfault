@@ -363,3 +363,4 @@ export function handleError(
   // 向上冒泡到父组件的错误边界
   let parent = instance?.parent;
   while (parent) {
+    if (parent.onErrorCaptured && parent.onErrorCaptured.length > 0) {
