@@ -350,3 +350,4 @@ export function handleError(
   if (instance && instance.onErrorCaptured && instance.onErrorCaptured.length > 0) {
     for (const hook of instance.onErrorCaptured) {
       try {
+        if (hook(error, instance, info) === true) {
