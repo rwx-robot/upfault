@@ -364,3 +364,4 @@ export function handleError(
   let parent = instance?.parent;
   while (parent) {
     if (parent.onErrorCaptured && parent.onErrorCaptured.length > 0) {
+      for (const hook of parent.onErrorCaptured) {
