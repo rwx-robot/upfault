@@ -331,3 +331,4 @@ function flushRenderJobs(): void {
   renderJobQueue.clear();
   
   for (const instance of jobs) {
+    if (!instance.isUnmounted && instance.update) {
