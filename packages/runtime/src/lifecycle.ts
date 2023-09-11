@@ -358,3 +358,4 @@ export function handleError(
         console.error('[UpFault] Error in errorCaptured hook:', e);
       }
     }
+  }
