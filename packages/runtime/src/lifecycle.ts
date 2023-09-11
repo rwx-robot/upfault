@@ -344,3 +344,4 @@ function flushRenderJobs(): void {
 export function handleError(
   error: Error,
   instance: ComponentInstance | null,
+  info: string
