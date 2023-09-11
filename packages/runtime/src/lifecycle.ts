@@ -367,3 +367,4 @@ export function handleError(
       for (const hook of parent.onErrorCaptured) {
         try {
           if (hook(error, instance!, info) === true) {
+            return;
