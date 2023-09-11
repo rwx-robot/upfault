@@ -335,3 +335,4 @@ function flushRenderJobs(): void {
       instance.update();
     }
   }
+}
