@@ -351,3 +351,4 @@ export function handleError(
     for (const hook of instance.onErrorCaptured) {
       try {
         if (hook(error, instance, info) === true) {
+          return; // 错误已处理
