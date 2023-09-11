@@ -352,3 +352,4 @@ export function handleError(
       try {
         if (hook(error, instance, info) === true) {
           return; // 错误已处理
+        }
