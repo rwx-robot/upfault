@@ -327,3 +327,4 @@ function queueRenderJob(instance: ComponentInstance): void {
 
 function flushRenderJobs(): void {
   isFlushPending = false;
+  const jobs = Array.from(renderJobQueue);
