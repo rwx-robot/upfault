@@ -6,3 +6,4 @@ describe('Renderer debug', () => {
   let renderer: ReturnType<typeof createRenderer>;
 
   beforeEach(() => {
+    container = document.createElement('div');
