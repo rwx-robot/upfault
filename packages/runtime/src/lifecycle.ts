@@ -369,3 +369,4 @@ export function handleError(
           if (hook(error, instance!, info) === true) {
             return;
           }
+        } catch (e) {
