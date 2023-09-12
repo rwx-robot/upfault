@@ -373,3 +373,4 @@ export function handleError(
           console.error('[UpFault] Error in parent errorCaptured hook:', e);
         }
       }
+    }
