@@ -387,3 +387,4 @@ export function handleError(
 // ============================================================================
 
 function warn(msg: string): void {
+  if (process.env.NODE_ENV !== 'production') {
