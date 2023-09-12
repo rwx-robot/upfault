@@ -377,3 +377,4 @@ export function handleError(
     parent = parent.parent;
   }
   
+  // 无错误边界捕获，抛出
