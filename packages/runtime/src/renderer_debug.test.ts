@@ -10,3 +10,5 @@ describe('Renderer debug', () => {
     document.body.appendChild(container);
     renderer = createRenderer(defaultRendererOptions);
   });
+
+  afterEach(() => {
