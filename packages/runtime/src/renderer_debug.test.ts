@@ -7,3 +7,4 @@ describe('Renderer debug', () => {
 
   beforeEach(() => {
     container = document.createElement('div');
+    document.body.appendChild(container);
