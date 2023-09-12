@@ -381,3 +381,5 @@ export function handleError(
   console.error(`[UpFault] Uncaught error in ${info}:`, error);
   throw error;
 }
+
+// ============================================================================
