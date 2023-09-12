@@ -379,3 +379,4 @@ export function handleError(
   
   // 无错误边界捕获，抛出
   console.error(`[UpFault] Uncaught error in ${info}:`, error);
+  throw error;
