@@ -12,3 +12,4 @@ describe('Renderer debug', () => {
   });
 
   afterEach(() => {
+    document.body.removeChild(container);
