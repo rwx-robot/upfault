@@ -386,3 +386,4 @@ export function handleError(
 // 简单警告函数
 // ============================================================================
 
+function warn(msg: string): void {
