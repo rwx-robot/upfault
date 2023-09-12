@@ -3,3 +3,4 @@ import { createRenderer, defaultRendererOptions } from './renderer';
 
 describe('Renderer debug', () => {
   let container: HTMLElement;
+  let renderer: ReturnType<typeof createRenderer>;
