@@ -370,3 +370,4 @@ export function handleError(
             return;
           }
         } catch (e) {
+          console.error('[UpFault] Error in parent errorCaptured hook:', e);
