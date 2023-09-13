@@ -14,3 +14,5 @@ describe('Renderer debug', () => {
   afterEach(() => {
     document.body.removeChild(container);
   });
+
+  it('should have VNodeType available in renderer', () => {
