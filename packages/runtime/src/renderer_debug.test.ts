@@ -21,3 +21,4 @@ describe('Renderer debug', () => {
     renderer.render(vnode as any, container);
     expect(container.innerHTML).toBe('<div id="test">hello</div>');
   });
+});
