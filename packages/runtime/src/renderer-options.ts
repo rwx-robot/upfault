@@ -15,3 +15,5 @@ const VNodeShapeFlags = {
   SUSPENSE: 1 << 5,
   ARRAY_CHILDREN: 1 << 6,
 } as const;
+
+export interface RendererOptions<
