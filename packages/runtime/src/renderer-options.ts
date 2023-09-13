@@ -22,3 +22,4 @@ export interface RendererOptions<
   HostComment = Comment
 > {
   createElement: (tag: string, isSVG?: boolean) => HostElement;
+  createText: (text: string) => HostText;
