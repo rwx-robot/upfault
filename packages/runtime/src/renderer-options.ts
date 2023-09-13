@@ -7,3 +7,4 @@ import { callBeforeMount, callMounted, callBeforeUpdate, callUpdated, callBefore
 
 // VNode 形状标记
 const VNodeShapeFlags = {
+  ELEMENT: 1,
