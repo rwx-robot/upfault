@@ -1,0 +1,1 @@
+import type { VNode } from './h';
