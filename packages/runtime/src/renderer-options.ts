@@ -11,3 +11,4 @@ const VNodeShapeFlags = {
   COMPONENT: 1 << 1,
   TEXT_NODE: 1 << 2,
   FRAGMENT: 1 << 3,
+  TELEPORT: 1 << 4,
