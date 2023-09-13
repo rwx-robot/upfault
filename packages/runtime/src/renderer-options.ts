@@ -6,3 +6,4 @@ import { PatchFlags, type VNode as SharedVNode, type ComponentInstance as Shared
 import { callBeforeMount, callMounted, callBeforeUpdate, callUpdated, callBeforeUnmount, callUnmounted, callActivated, callDeactivated, handleError, pushInstance, popInstance, getCurrentInstance, setCurrentInstance, instanceStack } from './lifecycle';
 
 // VNode 形状标记
+const VNodeShapeFlags = {
