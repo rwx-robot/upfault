@@ -19,3 +19,4 @@ describe('Renderer debug', () => {
     // This tests if the renderer's VNodeType import works
     const vnode = { type: 'div', props: { id: 'test' }, children: 'hello', key: null, flags: 0, patchFlag: 0, dynamicProps: null, vnodeType: 2, shapeFlag: 0, ref: null, el: null, parent: null, component: null, block: null };
     renderer.render(vnode as any, container);
+    expect(container.innerHTML).toBe('<div id="test">hello</div>');
