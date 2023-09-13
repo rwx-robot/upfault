@@ -26,3 +26,4 @@ export interface RendererOptions<
   createComment: (text: string) => HostComment;
   setElementText: (el: HostElement, text: string) => void;
   setText: (node: HostText, text: string) => void;
+  insert: (child: HostElement, parent: HostElement, anchor?: HostElement | null) => void;
