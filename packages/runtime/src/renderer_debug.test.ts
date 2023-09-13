@@ -16,3 +16,4 @@ describe('Renderer debug', () => {
   });
 
   it('should have VNodeType available in renderer', () => {
+    // This tests if the renderer's VNodeType import works
