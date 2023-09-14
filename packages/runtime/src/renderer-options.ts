@@ -72,3 +72,4 @@ export function createRenderer<HostElement = Element>(
         // unmount logic
         setContainerVNode(container, null);
       }
+      return;
