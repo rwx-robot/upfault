@@ -63,3 +63,4 @@ export function createRenderer<HostElement = Element>(
     if (!n1) {
       // Mount logic would go here
     }
+  }
