@@ -64,3 +64,4 @@ export function createRenderer<HostElement = Element>(
       // Mount logic would go here
     }
   }
+
