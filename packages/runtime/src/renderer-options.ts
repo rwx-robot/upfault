@@ -51,3 +51,4 @@ export function createRenderer<HostElement = Element>(
   const containerVNodes = new WeakMap<HostElement, VNode | null>();
   
   function getContainerVNode(container: HostElement): VNode | null {
+    return containerVNodes.get(container) ?? null;
