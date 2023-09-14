@@ -39,3 +39,4 @@ export interface RendererOptions<
 export function createRenderer<HostElement = Element>(
   options: RendererOptions<HostElement>
 ): { 
+  render: (vnode: VNode | null, container: HostElement) => void;
