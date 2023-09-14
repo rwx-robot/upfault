@@ -40,3 +40,4 @@ export function createRenderer<HostElement = Element>(
   options: RendererOptions<HostElement>
 ): { 
   render: (vnode: VNode | null, container: HostElement) => void;
+  hydrate: (vnode: VNode, container: HostElement) => void;
