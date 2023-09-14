@@ -65,3 +65,4 @@ export function createRenderer<HostElement = Element>(
     }
   }
 
+  function render(vnode: VNode | null, container: HostElement): void {
