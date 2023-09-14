@@ -57,3 +57,5 @@ export function createRenderer<HostElement = Element>(
   function setContainerVNode(container: HostElement, vnode: VNode | null): void {
     containerVNodes.set(container, vnode);
   }
+
+  function patch(n1: VNode | null, n2: VNode, parent: HostElement, anchor: HostElement | null = null): void {
