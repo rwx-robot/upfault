@@ -49,3 +49,4 @@ export function createRenderer<HostElement = Element>(
   const { createElement, createText, createComment, setElementText, setText, insert, remove, patchProp, parentNode, nextSibling, _nodeToElement } = options;
   
   const containerVNodes = new WeakMap<HostElement, VNode | null>();
+  
