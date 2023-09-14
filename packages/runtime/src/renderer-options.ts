@@ -67,3 +67,4 @@ export function createRenderer<HostElement = Element>(
 
   function render(vnode: VNode | null, container: HostElement): void {
     if (vnode === null) {
+      const prevVNode = getContainerVNode(container);
