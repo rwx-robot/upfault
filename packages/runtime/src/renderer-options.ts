@@ -29,3 +29,4 @@ export interface RendererOptions<
   insert: (child: HostElement, parent: HostElement, anchor?: HostElement | null) => void;
   remove: (child: HostElement) => void;
   patchProp: (el: HostElement, key: string, prevValue: any, nextValue: any) => void;
+  parentNode?: (node: HostElement) => HostElement | null;
