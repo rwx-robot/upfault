@@ -71,3 +71,4 @@ export function createRenderer<HostElement = Element>(
       if (prevVNode) {
         // unmount logic
         setContainerVNode(container, null);
+      }
