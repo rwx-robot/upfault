@@ -32,3 +32,4 @@ export interface RendererOptions<
   parentNode?: (node: HostElement) => HostElement | null;
   nextSibling?: (node: HostElement) => HostElement | null;
   addEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
+  removeEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
