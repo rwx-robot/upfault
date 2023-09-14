@@ -37,3 +37,4 @@ export interface RendererOptions<
 }
 
 export function createRenderer<HostElement = Element>(
+  options: RendererOptions<HostElement>
