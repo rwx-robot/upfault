@@ -35,3 +35,5 @@ export interface RendererOptions<
   removeEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
   _nodeToElement?: (node: Node) => HostElement | null;
 }
+
+export function createRenderer<HostElement = Element>(
