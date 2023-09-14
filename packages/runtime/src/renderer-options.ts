@@ -30,3 +30,4 @@ export interface RendererOptions<
   remove: (child: HostElement) => void;
   patchProp: (el: HostElement, key: string, prevValue: any, nextValue: any) => void;
   parentNode?: (node: HostElement) => HostElement | null;
+  nextSibling?: (node: HostElement) => HostElement | null;
