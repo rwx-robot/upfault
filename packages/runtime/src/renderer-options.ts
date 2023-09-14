@@ -53,3 +53,4 @@ export function createRenderer<HostElement = Element>(
   function getContainerVNode(container: HostElement): VNode | null {
     return containerVNodes.get(container) ?? null;
   }
+  
