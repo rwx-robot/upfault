@@ -111,3 +111,4 @@ export const defaultRendererOptions: RendererOptions = {
     } else if (key in el) {
       (el as any)[key] = nextValue;
     } else if (nextValue == null || nextValue === false) {
+      el.removeAttribute(key);
