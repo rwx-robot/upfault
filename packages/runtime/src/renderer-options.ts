@@ -82,3 +82,4 @@ export function createRenderer<HostElement = Element>(
   }
 
   return { render, hydrate, m: () => {}, p: patch, umount: () => {} };
+}
