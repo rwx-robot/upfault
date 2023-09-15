@@ -98,3 +98,4 @@ export const defaultRendererOptions: RendererOptions = {
   remove: (child: Node) => { child.parentNode?.removeChild(child); },
   patchProp: (el: Element, key: string, prevValue: any, nextValue: any) => {
     if (key.startsWith('on')) {
+      const event = key.slice(2).toLowerCase();
