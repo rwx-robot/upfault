@@ -104,3 +104,4 @@ export const defaultRendererOptions: RendererOptions = {
     } else if (key === 'class') {
       el.className = nextValue || '';
     } else if (key === 'style') {
+      const style = (el as HTMLElement).style;
