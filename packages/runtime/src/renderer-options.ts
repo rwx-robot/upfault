@@ -109,3 +109,4 @@ export const defaultRendererOptions: RendererOptions = {
       else if (nextValue && typeof nextValue === 'object') Object.assign(style, nextValue);
       else style.cssText = '';
     } else if (key in el) {
+      (el as any)[key] = nextValue;
