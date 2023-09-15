@@ -80,3 +80,4 @@ export function createRenderer<HostElement = Element>(
   function hydrate(vnode: VNode, container: HostElement): void {
     render(vnode, container);
   }
+
