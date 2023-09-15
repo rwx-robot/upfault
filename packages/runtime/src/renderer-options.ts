@@ -100,3 +100,4 @@ export const defaultRendererOptions: RendererOptions = {
     if (key.startsWith('on')) {
       const event = key.slice(2).toLowerCase();
       if (prevValue) el.removeEventListener(event, prevValue);
+      if (nextValue) el.addEventListener(event, nextValue);
