@@ -96,3 +96,4 @@ export const defaultRendererOptions: RendererOptions = {
   setText: (node: Text, text: string) => { node.nodeValue = text; },
   insert: (child: Node, parent: Element, anchor?: Element | null) => { parent.insertBefore(child, anchor || null); },
   remove: (child: Node) => { child.parentNode?.removeChild(child); },
+  patchProp: (el: Element, key: string, prevValue: any, nextValue: any) => {
