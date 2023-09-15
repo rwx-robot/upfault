@@ -76,3 +76,5 @@ export function createRenderer<HostElement = Element>(
     }
     // render logic
   }
+
+  function hydrate(vnode: VNode, container: HostElement): void {
