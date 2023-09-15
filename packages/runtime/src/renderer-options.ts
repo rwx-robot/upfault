@@ -75,3 +75,4 @@ export function createRenderer<HostElement = Element>(
       return;
     }
     // render logic
+  }
