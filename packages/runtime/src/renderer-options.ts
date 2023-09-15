@@ -99,3 +99,4 @@ export const defaultRendererOptions: RendererOptions = {
   patchProp: (el: Element, key: string, prevValue: any, nextValue: any) => {
     if (key.startsWith('on')) {
       const event = key.slice(2).toLowerCase();
+      if (prevValue) el.removeEventListener(event, prevValue);
