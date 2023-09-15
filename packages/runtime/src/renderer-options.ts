@@ -95,3 +95,4 @@ export const defaultRendererOptions: RendererOptions = {
   setElementText: (el: Element, text: string) => { el.textContent = text; },
   setText: (node: Text, text: string) => { node.nodeValue = text; },
   insert: (child: Node, parent: Element, anchor?: Element | null) => { parent.insertBefore(child, anchor || null); },
+  remove: (child: Node) => { child.parentNode?.removeChild(child); },
