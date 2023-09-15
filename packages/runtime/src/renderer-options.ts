@@ -101,3 +101,4 @@ export const defaultRendererOptions: RendererOptions = {
       const event = key.slice(2).toLowerCase();
       if (prevValue) el.removeEventListener(event, prevValue);
       if (nextValue) el.addEventListener(event, nextValue);
+    } else if (key === 'class') {
