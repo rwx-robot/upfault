@@ -107,3 +107,4 @@ export const defaultRendererOptions: RendererOptions = {
       const style = (el as HTMLElement).style;
       if (typeof nextValue === 'string') style.cssText = nextValue;
       else if (nextValue && typeof nextValue === 'object') Object.assign(style, nextValue);
+      else style.cssText = '';
