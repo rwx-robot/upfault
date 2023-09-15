@@ -103,3 +103,4 @@ export const defaultRendererOptions: RendererOptions = {
       if (nextValue) el.addEventListener(event, nextValue);
     } else if (key === 'class') {
       el.className = nextValue || '';
+    } else if (key === 'style') {
