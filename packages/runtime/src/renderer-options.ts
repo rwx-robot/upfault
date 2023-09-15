@@ -81,3 +81,4 @@ export function createRenderer<HostElement = Element>(
     render(vnode, container);
   }
 
+  return { render, hydrate, m: () => {}, p: patch, umount: () => {} };
