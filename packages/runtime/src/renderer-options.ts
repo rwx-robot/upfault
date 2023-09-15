@@ -85,3 +85,4 @@ export function createRenderer<HostElement = Element>(
 }
 
 export const defaultRendererOptions: RendererOptions = {
+  createElement: (tag: string, isSVG?: boolean) => {
