@@ -97,3 +97,4 @@ export const defaultRendererOptions: RendererOptions = {
   insert: (child: Node, parent: Element, anchor?: Element | null) => { parent.insertBefore(child, anchor || null); },
   remove: (child: Node) => { child.parentNode?.removeChild(child); },
   patchProp: (el: Element, key: string, prevValue: any, nextValue: any) => {
+    if (key.startsWith('on')) {
