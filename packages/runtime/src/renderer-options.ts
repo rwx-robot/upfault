@@ -110,3 +110,4 @@ export const defaultRendererOptions: RendererOptions = {
       else style.cssText = '';
     } else if (key in el) {
       (el as any)[key] = nextValue;
+    } else if (nextValue == null || nextValue === false) {
