@@ -115,3 +115,4 @@ export const defaultRendererOptions: RendererOptions = {
     } else {
       el.setAttribute(key, nextValue);
     }
+  },
