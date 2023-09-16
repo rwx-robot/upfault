@@ -20,3 +20,4 @@ import {
   DiffOpType, 
   type DiffOp, 
   type DiffResult,
+  type Block 
