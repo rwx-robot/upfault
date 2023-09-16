@@ -118,3 +118,4 @@ export const defaultRendererOptions: RendererOptions = {
   },
   parentNode: (node: Element) => node.parentNode as Element,
   nextSibling: (node: Element) => node.nextElementSibling,
+  _nodeToElement: (node: Node) => node as Element | null,
