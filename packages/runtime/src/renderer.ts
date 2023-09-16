@@ -25,3 +25,4 @@ import {
 
 import { 
   PatchFlags,
+  type VNode as SharedVNode,
