@@ -17,3 +17,4 @@ import {
 
 import { 
   aeroDiff, 
+  DiffOpType, 
