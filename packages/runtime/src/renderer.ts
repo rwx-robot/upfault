@@ -11,3 +11,4 @@ import {
   Text, 
   Comment,
   type VNode,
+  type VNodeProps,
