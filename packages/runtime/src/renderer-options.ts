@@ -116,3 +116,4 @@ export const defaultRendererOptions: RendererOptions = {
       el.setAttribute(key, nextValue);
     }
   },
+  parentNode: (node: Element) => node.parentNode as Element,
