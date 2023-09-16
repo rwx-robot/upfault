@@ -24,3 +24,4 @@ import {
 } from '@upfault/diff';
 
 import { 
+  PatchFlags,
