@@ -9,3 +9,4 @@ import {
   h, 
   Fragment, 
   Text, 
+  Comment,
