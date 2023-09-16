@@ -12,3 +12,4 @@ import {
   Comment,
   type VNode,
   type VNodeProps,
+  type NormalizedProps,
