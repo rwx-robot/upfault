@@ -13,3 +13,4 @@ import {
   type VNode,
   type VNodeProps,
   type NormalizedProps,
+} from './h';
