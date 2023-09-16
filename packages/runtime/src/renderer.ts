@@ -21,3 +21,4 @@ import {
   type DiffOp, 
   type DiffResult,
   type Block 
+} from '@upfault/diff';
