@@ -29,3 +29,5 @@ import {
   type ComponentInstance,
   type Component,
 } from '@upfault/shared';
+
+// VNodeType constants (inline to avoid import issues)
