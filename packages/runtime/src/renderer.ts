@@ -57,3 +57,4 @@ import {
   handleError,
   pushInstance,
   popInstance,
+  getCurrentInstance,
