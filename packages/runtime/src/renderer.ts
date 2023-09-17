@@ -28,3 +28,4 @@ import {
   type VNode as SharedVNode,
   type ComponentInstance,
   type Component,
+} from '@upfault/shared';
