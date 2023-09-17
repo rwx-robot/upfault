@@ -54,3 +54,4 @@ import {
   callUnmounted,
   callActivated,
   callDeactivated,
+  handleError,
