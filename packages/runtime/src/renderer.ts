@@ -48,3 +48,4 @@ import type { RendererOptions } from './renderer-options';
 import { 
   callBeforeMount, 
   callMounted, 
+  callBeforeUpdate, 
