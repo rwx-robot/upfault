@@ -59,3 +59,4 @@ import {
   popInstance,
   getCurrentInstance,
   setCurrentInstance,
+  instanceStack,
