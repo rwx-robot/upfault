@@ -60,3 +60,4 @@ import {
   getCurrentInstance,
   setCurrentInstance,
   instanceStack,
+} from './lifecycle';
