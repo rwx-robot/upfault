@@ -58,3 +58,4 @@ import {
   pushInstance,
   popInstance,
   getCurrentInstance,
+  setCurrentInstance,
