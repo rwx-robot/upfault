@@ -33,3 +33,4 @@ import {
 // VNodeType constants (inline to avoid import issues)
 const VNodeType = {
   TEXT: 1,
+  ELEMENT: 2,
