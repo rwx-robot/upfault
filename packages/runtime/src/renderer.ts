@@ -43,3 +43,4 @@ const VNodeType = {
   KEEPALIVE: 9,
 };
 
+import type { RendererOptions } from './renderer-options';
