@@ -49,3 +49,4 @@ import {
   callBeforeMount, 
   callMounted, 
   callBeforeUpdate, 
+  callUpdated,
