@@ -31,3 +31,4 @@ import {
 } from '@upfault/shared';
 
 // VNodeType constants (inline to avoid import issues)
+const VNodeType = {
