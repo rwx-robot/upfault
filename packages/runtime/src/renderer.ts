@@ -40,3 +40,4 @@ const VNodeType = {
   COMMENT: 6,
   TELEPORT: 7,
   SUSPENSE: 8,
+  KEEPALIVE: 9,
