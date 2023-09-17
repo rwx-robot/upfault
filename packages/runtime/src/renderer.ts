@@ -36,3 +36,4 @@ const VNodeType = {
   ELEMENT: 2,
   COMPONENT: 3,
   BLOCK: 4,
+  FRAGMENT: 5,
