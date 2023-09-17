@@ -42,3 +42,4 @@ const VNodeType = {
   SUSPENSE: 8,
   KEEPALIVE: 9,
 };
+
