@@ -52,3 +52,4 @@ import {
   callUpdated,
   callBeforeUnmount,
   callUnmounted,
+  callActivated,
