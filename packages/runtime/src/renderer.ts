@@ -50,3 +50,4 @@ import {
   callMounted, 
   callBeforeUpdate, 
   callUpdated,
+  callBeforeUnmount,
