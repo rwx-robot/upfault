@@ -94,3 +94,4 @@ export interface RendererOptions<
   setText: (node: HostText, text: string) => void;
   
   insert: (child: Node, parent: HostElement, anchor?: HostElement | null) => void;
+  remove: (child: Node) => void;
