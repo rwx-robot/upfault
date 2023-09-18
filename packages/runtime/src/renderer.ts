@@ -98,3 +98,4 @@ export interface RendererOptions<
   
   patchProp: (el: HostElement, key: string, prevValue: any, nextValue: any) => void;
   
+  // 生命周期
