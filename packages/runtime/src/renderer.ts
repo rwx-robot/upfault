@@ -86,3 +86,4 @@ export interface RendererOptions<
   HostComment = Comment
 > {
   // DOM 操作
+  createElement: (tag: string, isSVG?: boolean) => HostElement;
