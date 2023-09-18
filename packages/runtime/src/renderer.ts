@@ -84,3 +84,4 @@ export interface RendererOptions<
   HostElement = Element,
   HostText = Text,
   HostComment = Comment
+> {
