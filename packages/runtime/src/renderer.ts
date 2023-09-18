@@ -105,3 +105,4 @@ export interface RendererOptions<
   // 额外类型转换辅助
   _nodeToElement?: (node: Node) => HostElement | null;
   
+  // 可选：自定义事件处理
