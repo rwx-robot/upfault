@@ -97,3 +97,4 @@ export interface RendererOptions<
   remove: (child: Node) => void;
   
   patchProp: (el: HostElement, key: string, prevValue: any, nextValue: any) => void;
+  
