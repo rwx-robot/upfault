@@ -81,3 +81,4 @@ const VNodeShapeFlags = {
 // ============================================================================
 
 export interface RendererOptions<
+  HostElement = Element,
