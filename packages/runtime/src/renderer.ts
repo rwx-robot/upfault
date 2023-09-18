@@ -85,3 +85,4 @@ export interface RendererOptions<
   HostText = Text,
   HostComment = Comment
 > {
+  // DOM 操作
