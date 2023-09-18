@@ -101,3 +101,4 @@ export interface RendererOptions<
   // 生命周期
   parentNode: (node: HostElement) => HostElement | null;
   nextSibling: (node: HostElement) => HostElement | null;
+  
