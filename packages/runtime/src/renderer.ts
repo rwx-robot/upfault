@@ -87,3 +87,4 @@ export interface RendererOptions<
 > {
   // DOM 操作
   createElement: (tag: string, isSVG?: boolean) => HostElement;
+  createText: (text: string) => HostText;
