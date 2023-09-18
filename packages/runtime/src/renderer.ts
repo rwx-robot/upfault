@@ -92,3 +92,4 @@ export interface RendererOptions<
   
   setElementText: (el: HostElement, text: string) => void;
   setText: (node: HostText, text: string) => void;
+  
