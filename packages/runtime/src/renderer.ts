@@ -68,3 +68,4 @@ import {
 
 const VNodeShapeFlags = {
   ELEMENT: 1,
+  COMPONENT: 1 << 1,
