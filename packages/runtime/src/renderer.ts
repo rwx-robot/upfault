@@ -104,3 +104,4 @@ export interface RendererOptions<
   
   // 额外类型转换辅助
   _nodeToElement?: (node: Node) => HostElement | null;
+  
