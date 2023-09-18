@@ -103,3 +103,4 @@ export interface RendererOptions<
   nextSibling: (node: HostElement) => HostElement | null;
   
   // 额外类型转换辅助
+  _nodeToElement?: (node: Node) => HostElement | null;
