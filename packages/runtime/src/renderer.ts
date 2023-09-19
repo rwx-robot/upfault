@@ -106,3 +106,4 @@ export interface RendererOptions<
   _nodeToElement?: (node: Node) => HostElement | null;
   
   // 可选：自定义事件处理
+  addEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
