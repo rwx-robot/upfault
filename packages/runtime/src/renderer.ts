@@ -148,3 +148,4 @@ export function createRenderer<HostElement = Element>(
   // 使用 WeakMap 存储容器的根 VNode
   const containerVNodes = new WeakMap<HostElement, VNode | null>();
   
+  function getContainerVNode(container: HostElement): VNode | null {
