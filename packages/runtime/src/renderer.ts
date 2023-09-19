@@ -109,3 +109,5 @@ export interface RendererOptions<
   addEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
   removeEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
 }
+
+// ============================================================================
