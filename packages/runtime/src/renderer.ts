@@ -134,3 +134,4 @@ export function createRenderer<HostElement = Element>(
 ): RendererWithHydrate<HostElement> {
   const {
     createElement,
+    createText,
