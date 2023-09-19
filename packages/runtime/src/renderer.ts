@@ -138,3 +138,4 @@ export function createRenderer<HostElement = Element>(
     createComment,
     setElementText,
     setText,
+    insert,
