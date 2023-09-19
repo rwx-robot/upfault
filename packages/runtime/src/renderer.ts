@@ -108,3 +108,4 @@ export interface RendererOptions<
   // 可选：自定义事件处理
   addEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
   removeEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
+}
