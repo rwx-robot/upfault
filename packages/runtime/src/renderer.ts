@@ -143,3 +143,4 @@ export function createRenderer<HostElement = Element>(
     patchProp,
     parentNode,
     nextSibling,
+  } = options;
