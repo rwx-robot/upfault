@@ -117,3 +117,4 @@ export interface RendererOptions<
 interface RendererInternals<HostElement> {
   p: (n1: VNode | null, n2: VNode, parent: HostElement, anchor?: HostElement | null) => void;
   umount: (vnode: VNode, parent: HostElement | null) => void;
+  m: (vnode: VNode, parent: HostElement, anchor?: HostElement | null) => void;
