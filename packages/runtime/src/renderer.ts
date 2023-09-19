@@ -135,3 +135,4 @@ export function createRenderer<HostElement = Element>(
   const {
     createElement,
     createText,
+    createComment,
