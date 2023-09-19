@@ -128,3 +128,5 @@ interface RendererWithHydrate<HostElement> extends RendererInternals<HostElement
 // ============================================================================
 // 创建渲染器主函数
 // ============================================================================
+
+export function createRenderer<HostElement = Element>(
