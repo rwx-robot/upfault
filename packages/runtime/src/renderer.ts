@@ -140,3 +140,4 @@ export function createRenderer<HostElement = Element>(
     setText,
     insert,
     remove,
+    patchProp,
