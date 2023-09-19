@@ -123,3 +123,4 @@ interface RendererInternals<HostElement> {
 interface RendererWithHydrate<HostElement> extends RendererInternals<HostElement> {
   render: (vnode: VNode | null, container: HostElement) => void;
   hydrate: (vnode: VNode, container: HostElement) => void;
+}
