@@ -141,3 +141,4 @@ export function createRenderer<HostElement = Element>(
     insert,
     remove,
     patchProp,
+    parentNode,
