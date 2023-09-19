@@ -132,3 +132,4 @@ interface RendererWithHydrate<HostElement> extends RendererInternals<HostElement
 export function createRenderer<HostElement = Element>(
   options: RendererOptions<HostElement>
 ): RendererWithHydrate<HostElement> {
+  const {
