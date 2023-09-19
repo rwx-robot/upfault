@@ -145,3 +145,4 @@ export function createRenderer<HostElement = Element>(
     nextSibling,
   } = options;
   
+  // 使用 WeakMap 存储容器的根 VNode
