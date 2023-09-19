@@ -119,3 +119,5 @@ interface RendererInternals<HostElement> {
   umount: (vnode: VNode, parent: HostElement | null) => void;
   m: (vnode: VNode, parent: HostElement, anchor?: HostElement | null) => void;
 }
+
+interface RendererWithHydrate<HostElement> extends RendererInternals<HostElement> {
