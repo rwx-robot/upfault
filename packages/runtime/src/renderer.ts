@@ -139,3 +139,4 @@ export function createRenderer<HostElement = Element>(
     setElementText,
     setText,
     insert,
+    remove,
