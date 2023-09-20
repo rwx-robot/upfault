@@ -191,3 +191,4 @@ export function createRenderer<HostElement = Element>(
             setElementText(el, children as string);
           } else if (shapeFlag & VNodeShapeFlags.ARRAY_CHILDREN) {
       // 数组子节点
+      mountChildren(children as VNode[], el, null);
