@@ -189,3 +189,4 @@ export function createRenderer<HostElement = Element>(
     if (shapeFlag & VNodeShapeFlags.TEXT_NODE) {
       // 文本节点
             setElementText(el, children as string);
+          } else if (shapeFlag & VNodeShapeFlags.ARRAY_CHILDREN) {
