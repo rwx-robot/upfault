@@ -166,3 +166,4 @@ export function createRenderer<HostElement = Element>(
   function mountElement(
     vnode: VNode,
     parent: HostElement,
+    anchor: HostElement | null = null
