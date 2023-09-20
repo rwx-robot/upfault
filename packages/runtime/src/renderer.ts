@@ -163,3 +163,4 @@ export function createRenderer<HostElement = Element>(
   // 挂载
   // ========================================================================
   
+  function mountElement(
