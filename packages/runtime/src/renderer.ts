@@ -186,3 +186,4 @@ export function createRenderer<HostElement = Element>(
       }
      
     // 挂载 children
+    if (shapeFlag & VNodeShapeFlags.TEXT_NODE) {
