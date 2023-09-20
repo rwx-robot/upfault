@@ -170,3 +170,4 @@ export function createRenderer<HostElement = Element>(
   ): void {
     const { type, props, children, shapeFlag, patchFlag, ref } = vnode;
     
+    // 创建 DOM 元素
