@@ -173,3 +173,4 @@ export function createRenderer<HostElement = Element>(
     // 创建 DOM 元素
     const isSVG = type === 'svg' || (vnode as any).isSVG;
     const el = createElement(type as string, isSVG);
+        
