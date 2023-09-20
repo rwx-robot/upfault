@@ -156,3 +156,4 @@ export function createRenderer<HostElement = Element>(
     containerVNodes.set(container, vnode);
   }
   
+  // Node to HostElement 转换
