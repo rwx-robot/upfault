@@ -160,3 +160,4 @@ export function createRenderer<HostElement = Element>(
   const toElement = options._nodeToElement || ((node: Node) => node as HostElement | null);
 
   // ========================================================================
+  // 挂载
