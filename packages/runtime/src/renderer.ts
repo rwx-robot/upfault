@@ -184,3 +184,4 @@ export function createRenderer<HostElement = Element>(
           patchProp(el, key, null, props[key]);
         }
       }
+     
