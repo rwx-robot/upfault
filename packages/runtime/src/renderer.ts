@@ -178,3 +178,4 @@ export function createRenderer<HostElement = Element>(
     vnode.el = el;
         
     // 挂载 props
+    if (props) {
