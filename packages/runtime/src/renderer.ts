@@ -179,3 +179,4 @@ export function createRenderer<HostElement = Element>(
         
     // 挂载 props
     if (props) {
+      for (const key in props) {
