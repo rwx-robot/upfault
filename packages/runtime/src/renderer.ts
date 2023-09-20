@@ -192,3 +192,4 @@ export function createRenderer<HostElement = Element>(
           } else if (shapeFlag & VNodeShapeFlags.ARRAY_CHILDREN) {
       // 数组子节点
       mountChildren(children as VNode[], el, null);
+    } else if (shapeFlag & VNodeShapeFlags.COMPONENT) {
