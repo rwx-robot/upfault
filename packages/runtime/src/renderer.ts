@@ -155,3 +155,4 @@ export function createRenderer<HostElement = Element>(
   function setContainerVNode(container: HostElement, vnode: VNode | null): void {
     containerVNodes.set(container, vnode);
   }
+  
