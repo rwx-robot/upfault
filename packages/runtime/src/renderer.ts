@@ -171,3 +171,4 @@ export function createRenderer<HostElement = Element>(
     const { type, props, children, shapeFlag, patchFlag, ref } = vnode;
     
     // 创建 DOM 元素
+    const isSVG = type === 'svg' || (vnode as any).isSVG;
