@@ -183,3 +183,4 @@ export function createRenderer<HostElement = Element>(
         if (key !== 'children' && key !== 'key' && key !== 'ref') {
           patchProp(el, key, null, props[key]);
         }
+      }
