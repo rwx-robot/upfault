@@ -168,3 +168,4 @@ export function createRenderer<HostElement = Element>(
     parent: HostElement,
     anchor: HostElement | null = null
   ): void {
+    const { type, props, children, shapeFlag, patchFlag, ref } = vnode;
