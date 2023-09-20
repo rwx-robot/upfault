@@ -177,3 +177,4 @@ export function createRenderer<HostElement = Element>(
     // 关联 VNode 与 DOM
     vnode.el = el;
         
+    // 挂载 props
