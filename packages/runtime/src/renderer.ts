@@ -190,3 +190,4 @@ export function createRenderer<HostElement = Element>(
       // 文本节点
             setElementText(el, children as string);
           } else if (shapeFlag & VNodeShapeFlags.ARRAY_CHILDREN) {
+      // 数组子节点
