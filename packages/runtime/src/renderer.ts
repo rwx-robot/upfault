@@ -214,3 +214,4 @@ export function createRenderer<HostElement = Element>(
       if (child == null) continue;
       patch(null, child, parent, anchor);
     }
+  }
