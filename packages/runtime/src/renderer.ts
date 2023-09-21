@@ -217,3 +217,4 @@ export function createRenderer<HostElement = Element>(
   }
   
   function mountText(vnode: VNode, parent: HostElement, anchor: HostElement | null = null): void {
+    const el = createText(vnode.children as string);
