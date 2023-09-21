@@ -220,3 +220,4 @@ export function createRenderer<HostElement = Element>(
     const el = createText(vnode.children as string);
     vnode.el = el;
     insert(el, parent, anchor);
+  }
