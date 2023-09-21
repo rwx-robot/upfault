@@ -196,3 +196,4 @@ export function createRenderer<HostElement = Element>(
       // 组件 - 由 mountComponent 处理
     }
     
+    // 插入 DOM
