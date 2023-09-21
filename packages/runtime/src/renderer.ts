@@ -209,3 +209,4 @@ export function createRenderer<HostElement = Element>(
     children: VNode[],
     parent: HostElement,
     anchor: HostElement | null
+  ): void {
