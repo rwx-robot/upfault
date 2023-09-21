@@ -205,3 +205,4 @@ export function createRenderer<HostElement = Element>(
     }
   }
   
+  function mountChildren(
