@@ -215,3 +215,4 @@ export function createRenderer<HostElement = Element>(
       patch(null, child, parent, anchor);
     }
   }
+  
