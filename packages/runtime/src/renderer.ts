@@ -203,3 +203,4 @@ export function createRenderer<HostElement = Element>(
     if (ref) {
       setRef(ref, el);
     }
+  }
