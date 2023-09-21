@@ -210,3 +210,4 @@ export function createRenderer<HostElement = Element>(
     parent: HostElement,
     anchor: HostElement | null
   ): void {
+    for (const child of children) {
