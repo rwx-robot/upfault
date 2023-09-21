@@ -195,3 +195,4 @@ export function createRenderer<HostElement = Element>(
     } else if (shapeFlag & VNodeShapeFlags.COMPONENT) {
       // 组件 - 由 mountComponent 处理
     }
+    
