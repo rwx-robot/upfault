@@ -202,3 +202,4 @@ export function createRenderer<HostElement = Element>(
     // 处理 ref
     if (ref) {
       setRef(ref, el);
+    }
