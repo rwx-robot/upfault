@@ -194,3 +194,4 @@ export function createRenderer<HostElement = Element>(
       mountChildren(children as VNode[], el, null);
     } else if (shapeFlag & VNodeShapeFlags.COMPONENT) {
       // 组件 - 由 mountComponent 处理
+    }
