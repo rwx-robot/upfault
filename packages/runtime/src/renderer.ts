@@ -200,3 +200,4 @@ export function createRenderer<HostElement = Element>(
     insert(el, parent, anchor);
         
     // 处理 ref
+    if (ref) {
