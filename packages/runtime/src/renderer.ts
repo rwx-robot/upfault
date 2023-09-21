@@ -224,3 +224,4 @@ export function createRenderer<HostElement = Element>(
   
   function mountComment(vnode: VNode, parent: HostElement, anchor: HostElement | null = null): void {
     const el = createComment(vnode.children as string || '');
+    vnode.el = el;
