@@ -227,3 +227,4 @@ export function createRenderer<HostElement = Element>(
     vnode.el = el;
     insert(el, parent, anchor);
   }
+  
