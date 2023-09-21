@@ -211,3 +211,4 @@ export function createRenderer<HostElement = Element>(
     anchor: HostElement | null
   ): void {
     for (const child of children) {
+      if (child == null) continue;
