@@ -222,3 +222,4 @@ export function createRenderer<HostElement = Element>(
     insert(el, parent, anchor);
   }
   
+  function mountComment(vnode: VNode, parent: HostElement, anchor: HostElement | null = null): void {
