@@ -231,3 +231,4 @@ export function createRenderer<HostElement = Element>(
   function mountFragment(
     vnode: VNode,
     parent: HostElement,
+    anchor: HostElement | null
