@@ -213,3 +213,4 @@ export function createRenderer<HostElement = Element>(
     for (const child of children) {
       if (child == null) continue;
       patch(null, child, parent, anchor);
+    }
