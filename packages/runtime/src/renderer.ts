@@ -258,3 +258,4 @@ export function createRenderer<HostElement = Element>(
       subTree: null,
       subTreeAnchor: null,
       effects: [],
+      root: null,
