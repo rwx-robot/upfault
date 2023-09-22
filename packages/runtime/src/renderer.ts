@@ -253,3 +253,4 @@ export function createRenderer<HostElement = Element>(
       render: () => vnode,
       update: () => {},
       unmount: () => {},
+      isUnmounted: false,
