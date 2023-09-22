@@ -261,3 +261,4 @@ export function createRenderer<HostElement = Element>(
       root: null,
       parent: instanceStack[instanceStack.length - 1] || null,
     };
+    
