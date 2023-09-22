@@ -235,3 +235,4 @@ export function createRenderer<HostElement = Element>(
   ): void {
     mountChildren(vnode.children as VNode[], parent, anchor);
   }
+  
