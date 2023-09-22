@@ -238,3 +238,4 @@ export function createRenderer<HostElement = Element>(
   
   function mountComponent(
     vnode: VNode,
+    parent: HostElement,
