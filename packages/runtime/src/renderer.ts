@@ -245,3 +245,4 @@ export function createRenderer<HostElement = Element>(
     const component = type as Component;
     
     // 创建组件实例
+    const instance: ComponentInstance = {
