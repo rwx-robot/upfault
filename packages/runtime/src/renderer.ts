@@ -274,3 +274,4 @@ export function createRenderer<HostElement = Element>(
       const resolvedProps = resolveProps(component!, props || {});
       instance.proxy = createComponentProxy(instance, resolvedProps);
       
+      // 解析插槽
