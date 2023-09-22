@@ -249,3 +249,4 @@ export function createRenderer<HostElement = Element>(
       uid: instanceStack.length + 1,
       type: component,
       props: props || {},
+      state: {},
