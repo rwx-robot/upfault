@@ -266,3 +266,4 @@ export function createRenderer<HostElement = Element>(
     vnode.componentInstance = instance;
     instance.root = instance.parent ? instance.parent.root : instance;
     
+    // 设置当前实例
