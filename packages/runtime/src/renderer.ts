@@ -264,3 +264,4 @@ export function createRenderer<HostElement = Element>(
     
     // 关联实例
     vnode.componentInstance = instance;
+    instance.root = instance.parent ? instance.parent.root : instance;
