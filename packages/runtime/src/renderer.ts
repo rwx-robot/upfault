@@ -268,3 +268,4 @@ export function createRenderer<HostElement = Element>(
     
     // 设置当前实例
     pushInstance(instance);
+    
