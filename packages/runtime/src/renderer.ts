@@ -272,3 +272,4 @@ export function createRenderer<HostElement = Element>(
     try {
       // 解析 props
       const resolvedProps = resolveProps(component!, props || {});
+      instance.proxy = createComponentProxy(instance, resolvedProps);
