@@ -263,3 +263,4 @@ export function createRenderer<HostElement = Element>(
     };
     
     // 关联实例
+    vnode.componentInstance = instance;
