@@ -255,3 +255,4 @@ export function createRenderer<HostElement = Element>(
       unmount: () => {},
       isUnmounted: false,
       isMounted: false,
+      subTree: null,
