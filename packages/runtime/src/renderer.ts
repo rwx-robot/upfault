@@ -244,3 +244,4 @@ export function createRenderer<HostElement = Element>(
     const { type, props, children, componentInstance } = vnode;
     const component = type as Component;
     
+    // 创建组件实例
