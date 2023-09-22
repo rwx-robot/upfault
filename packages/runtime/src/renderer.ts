@@ -254,3 +254,4 @@ export function createRenderer<HostElement = Element>(
       update: () => {},
       unmount: () => {},
       isUnmounted: false,
+      isMounted: false,
