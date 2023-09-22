@@ -270,3 +270,4 @@ export function createRenderer<HostElement = Element>(
     pushInstance(instance);
     
     try {
+      // 解析 props
