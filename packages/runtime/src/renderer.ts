@@ -248,3 +248,4 @@ export function createRenderer<HostElement = Element>(
     const instance: ComponentInstance = {
       uid: instanceStack.length + 1,
       type: component,
+      props: props || {},
