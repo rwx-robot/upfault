@@ -242,3 +242,4 @@ export function createRenderer<HostElement = Element>(
     anchor: HostElement | null
   ): void {
     const { type, props, children, componentInstance } = vnode;
+    const component = type as Component;
