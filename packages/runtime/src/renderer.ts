@@ -247,3 +247,4 @@ export function createRenderer<HostElement = Element>(
     // 创建组件实例
     const instance: ComponentInstance = {
       uid: instanceStack.length + 1,
+      type: component,
