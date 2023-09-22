@@ -267,3 +267,4 @@ export function createRenderer<HostElement = Element>(
     instance.root = instance.parent ? instance.parent.root : instance;
     
     // 设置当前实例
+    pushInstance(instance);
