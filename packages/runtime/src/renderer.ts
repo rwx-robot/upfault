@@ -251,3 +251,4 @@ export function createRenderer<HostElement = Element>(
       props: props || {},
       state: {},
       render: () => vnode,
+      update: () => {},
