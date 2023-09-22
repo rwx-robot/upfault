@@ -257,3 +257,4 @@ export function createRenderer<HostElement = Element>(
       isMounted: false,
       subTree: null,
       subTreeAnchor: null,
+      effects: [],
