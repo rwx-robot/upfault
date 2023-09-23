@@ -282,3 +282,4 @@ export function createRenderer<HostElement = Element>(
       if (!renderFn) {
         throw new Error(`[UpFault] Component ${component!.name || 'Anonymous'} 没有 render 函数`);
       }
+      
