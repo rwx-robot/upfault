@@ -299,3 +299,4 @@ export function createRenderer<HostElement = Element>(
       instance.effects.push(effect);
       instance.update = () => effect.fn();
       
+      // 执行 beforeMount (同步)
