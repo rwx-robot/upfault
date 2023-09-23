@@ -293,3 +293,4 @@ export function createRenderer<HostElement = Element>(
         if (!instance.isMounted) {
           return instance.render!();
         }
+        return instance.render!();
