@@ -288,3 +288,4 @@ export function createRenderer<HostElement = Element>(
         return renderFn(instance.proxy, { slots });
       };
       
+      // 创建渲染 effect
