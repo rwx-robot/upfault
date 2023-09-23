@@ -283,3 +283,4 @@ export function createRenderer<HostElement = Element>(
         throw new Error(`[UpFault] Component ${component!.name || 'Anonymous'} 没有 render 函数`);
       }
       
+      instance.render = () => {
