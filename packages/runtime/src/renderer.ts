@@ -277,3 +277,4 @@ export function createRenderer<HostElement = Element>(
       // 解析插槽
       const slots = resolveSlots(children);
       
+      // 获取 render 函数
