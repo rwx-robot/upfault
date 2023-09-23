@@ -279,3 +279,4 @@ export function createRenderer<HostElement = Element>(
       
       // 获取 render 函数
       const renderFn = getRenderFunction(component!);
+      if (!renderFn) {
