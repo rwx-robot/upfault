@@ -308,3 +308,4 @@ export function createRenderer<HostElement = Element>(
       patch(null, subTree, parent, anchor);
       
       // 标记已挂载
+      instance.isMounted = true;
