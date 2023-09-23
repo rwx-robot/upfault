@@ -292,3 +292,4 @@ export function createRenderer<HostElement = Element>(
       const effect = createRenderEffect(instance, () => {
         if (!instance.isMounted) {
           return instance.render!();
+        }
