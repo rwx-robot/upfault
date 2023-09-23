@@ -312,3 +312,4 @@ export function createRenderer<HostElement = Element>(
       vnode.el = subTree.el;
       
       // 执行 mounted
+      callMounted(instance);
