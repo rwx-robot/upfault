@@ -289,3 +289,4 @@ export function createRenderer<HostElement = Element>(
       };
       
       // 创建渲染 effect
+      const effect = createRenderEffect(instance, () => {
