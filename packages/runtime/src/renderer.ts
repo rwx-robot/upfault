@@ -286,3 +286,4 @@ export function createRenderer<HostElement = Element>(
       instance.render = () => {
         setCurrentInstance(instance);
         return renderFn(instance.proxy, { slots });
+      };
