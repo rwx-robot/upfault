@@ -301,3 +301,4 @@ export function createRenderer<HostElement = Element>(
       
       // 执行 beforeMount (同步)
       callBeforeMount(instance);
+      
