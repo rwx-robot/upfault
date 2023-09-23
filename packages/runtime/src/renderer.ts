@@ -304,3 +304,4 @@ export function createRenderer<HostElement = Element>(
       
       // 挂载子树
       const subTree = instance.render!();
+      instance.subTree = subTree;
