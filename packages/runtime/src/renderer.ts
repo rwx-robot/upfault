@@ -275,3 +275,4 @@ export function createRenderer<HostElement = Element>(
       instance.proxy = createComponentProxy(instance, resolvedProps);
       
       // 解析插槽
+      const slots = resolveSlots(children);
