@@ -309,3 +309,4 @@ export function createRenderer<HostElement = Element>(
       
       // 标记已挂载
       instance.isMounted = true;
+      vnode.el = subTree.el;
