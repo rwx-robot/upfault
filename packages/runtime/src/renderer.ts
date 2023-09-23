@@ -306,3 +306,4 @@ export function createRenderer<HostElement = Element>(
       const subTree = instance.render!();
       instance.subTree = subTree;
       patch(null, subTree, parent, anchor);
+      
