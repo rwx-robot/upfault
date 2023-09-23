@@ -307,3 +307,4 @@ export function createRenderer<HostElement = Element>(
       instance.subTree = subTree;
       patch(null, subTree, parent, anchor);
       
+      // 标记已挂载
