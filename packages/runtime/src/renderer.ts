@@ -300,3 +300,4 @@ export function createRenderer<HostElement = Element>(
       instance.update = () => effect.fn();
       
       // 执行 beforeMount (同步)
+      callBeforeMount(instance);
