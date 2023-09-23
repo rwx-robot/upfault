@@ -278,3 +278,4 @@ export function createRenderer<HostElement = Element>(
       const slots = resolveSlots(children);
       
       // 获取 render 函数
+      const renderFn = getRenderFunction(component!);
