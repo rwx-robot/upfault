@@ -315,3 +315,4 @@ export function createRenderer<HostElement = Element>(
       callMounted(instance);
     } catch (err) {
       handleError(err as Error, instance, 'mountComponent');
+    }
