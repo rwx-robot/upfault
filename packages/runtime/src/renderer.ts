@@ -303,3 +303,4 @@ export function createRenderer<HostElement = Element>(
       callBeforeMount(instance);
       
       // 挂载子树
+      const subTree = instance.render!();
