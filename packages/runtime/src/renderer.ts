@@ -313,3 +313,4 @@ export function createRenderer<HostElement = Element>(
       
       // 执行 mounted
       callMounted(instance);
+    } catch (err) {
