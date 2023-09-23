@@ -294,3 +294,4 @@ export function createRenderer<HostElement = Element>(
           return instance.render!();
         }
         return instance.render!();
+      });
