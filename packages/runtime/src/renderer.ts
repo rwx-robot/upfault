@@ -335,3 +335,4 @@ export function createRenderer<HostElement = Element>(
         target[key] = value;
         return true;
       },
+    });
