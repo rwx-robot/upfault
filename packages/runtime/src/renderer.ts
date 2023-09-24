@@ -347,3 +347,4 @@ export function createRenderer<HostElement = Element>(
       return children as Record<string, any>;
     }
     return { default: () => [children] };
+  }
