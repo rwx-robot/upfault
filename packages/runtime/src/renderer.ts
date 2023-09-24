@@ -344,3 +344,4 @@ export function createRenderer<HostElement = Element>(
       return { default: () => children };
     }
     if (typeof children === 'object' && 'default' in children) {
+      return children as Record<string, any>;
