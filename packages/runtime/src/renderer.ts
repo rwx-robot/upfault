@@ -357,3 +357,4 @@ export function createRenderer<HostElement = Element>(
       return (comp as any).render;
     }
     if (comp && typeof comp === 'object' && 'setup' in comp) {
+      // setup 组件
