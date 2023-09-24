@@ -321,3 +321,4 @@ export function createRenderer<HostElement = Element>(
   function resolveProps(comp: Component, props: VNodeProps): VNodeProps {
     // 简单实现：直接返回 props
     // TODO: 合并默认值、类型转换等
+    return props;
