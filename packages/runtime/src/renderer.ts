@@ -328,3 +328,4 @@ export function createRenderer<HostElement = Element>(
     return new Proxy(props, {
       get(target, key) {
         if (key in target) return target[key];
+        // TODO: 访问 setup 返回的状态、方法、computed 等
