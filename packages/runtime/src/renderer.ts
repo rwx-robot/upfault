@@ -332,3 +332,4 @@ export function createRenderer<HostElement = Element>(
         return undefined;
       },
       set(target, key, value) {
+        target[key] = value;
