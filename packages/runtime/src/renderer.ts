@@ -339,3 +339,4 @@ export function createRenderer<HostElement = Element>(
   }
   
   function resolveSlots(children: VNode['children']): Record<string, any> {
+    if (!children) return {};
