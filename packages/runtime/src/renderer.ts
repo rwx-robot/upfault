@@ -324,3 +324,4 @@ export function createRenderer<HostElement = Element>(
     return props;
   }
   
+  function createComponentProxy(instance: ComponentInstance, props: VNodeProps): any {
