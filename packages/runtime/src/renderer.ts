@@ -352,3 +352,4 @@ export function createRenderer<HostElement = Element>(
   function getRenderFunction(comp: Component): ((proxy: any, ctx: any) => VNode | null) | null {
     if (typeof comp === 'function') {
       return comp as any;
+    }
