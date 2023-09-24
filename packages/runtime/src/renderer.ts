@@ -330,3 +330,4 @@ export function createRenderer<HostElement = Element>(
         if (key in target) return target[key];
         // TODO: 访问 setup 返回的状态、方法、computed 等
         return undefined;
+      },
