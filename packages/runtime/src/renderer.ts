@@ -318,3 +318,4 @@ export function createRenderer<HostElement = Element>(
     }
   }
   
+  function resolveProps(comp: Component, props: VNodeProps): VNodeProps {
