@@ -342,3 +342,4 @@ export function createRenderer<HostElement = Element>(
     if (!children) return {};
     if (Array.isArray(children)) {
       return { default: () => children };
+    }
