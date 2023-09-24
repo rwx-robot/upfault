@@ -319,3 +319,4 @@ export function createRenderer<HostElement = Element>(
   }
   
   function resolveProps(comp: Component, props: VNodeProps): VNodeProps {
+    // 简单实现：直接返回 props
