@@ -360,3 +360,4 @@ export function createRenderer<HostElement = Element>(
       // setup 组件
       return (comp as any).setup;
     }
+    return null;
