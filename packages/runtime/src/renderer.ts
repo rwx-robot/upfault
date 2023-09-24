@@ -349,3 +349,4 @@ export function createRenderer<HostElement = Element>(
     return { default: () => [children] };
   }
   
+  function getRenderFunction(comp: Component): ((proxy: any, ctx: any) => VNode | null) | null {
