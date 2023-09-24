@@ -353,3 +353,4 @@ export function createRenderer<HostElement = Element>(
     if (typeof comp === 'function') {
       return comp as any;
     }
+    if (comp && typeof comp === 'object' && 'render' in comp) {
