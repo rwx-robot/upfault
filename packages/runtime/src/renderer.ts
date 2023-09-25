@@ -392,3 +392,4 @@ export function createRenderer<HostElement = Element>(
     const { shapeFlag, vnodeType } = vnode;
     
     if (vnodeType === VNodeType.ELEMENT) {
+      mountElement(vnode, parent, anchor);
