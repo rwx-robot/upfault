@@ -379,3 +379,4 @@ export function createRenderer<HostElement = Element>(
       return;
     }
     
+    // 类型不同，卸载旧的，挂载新的
