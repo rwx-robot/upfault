@@ -370,3 +370,4 @@ export function createRenderer<HostElement = Element>(
   function patch(
     n1: VNode | null,
     n2: VNode,
+    parent: HostElement,
