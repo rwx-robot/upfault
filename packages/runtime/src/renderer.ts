@@ -384,3 +384,4 @@ export function createRenderer<HostElement = Element>(
       unmount(n1, parent);
     }
     
+    // 挂载新节点
