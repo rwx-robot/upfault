@@ -361,3 +361,4 @@ export function createRenderer<HostElement = Element>(
       return (comp as any).setup;
     }
     return null;
+  }
