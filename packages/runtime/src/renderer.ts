@@ -372,3 +372,4 @@ export function createRenderer<HostElement = Element>(
     n2: VNode,
     parent: HostElement,
     anchor: HostElement | null = null
+  ): void {
