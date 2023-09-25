@@ -380,3 +380,4 @@ export function createRenderer<HostElement = Element>(
     }
     
     // 类型不同，卸载旧的，挂载新的
+    if (n1) {
