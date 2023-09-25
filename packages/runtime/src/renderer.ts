@@ -393,3 +393,4 @@ export function createRenderer<HostElement = Element>(
     
     if (vnodeType === VNodeType.ELEMENT) {
       mountElement(vnode, parent, anchor);
+    } else if (vnodeType === VNodeType.TEXT) {
