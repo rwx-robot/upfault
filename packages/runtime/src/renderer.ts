@@ -373,3 +373,4 @@ export function createRenderer<HostElement = Element>(
     parent: HostElement,
     anchor: HostElement | null = null
   ): void {
+    // 类型相同，复用
