@@ -388,3 +388,4 @@ export function createRenderer<HostElement = Element>(
     mount(n2, parent, anchor);
   }
   
+  function mount(vnode: VNode, parent: HostElement, anchor: HostElement | null = null): void {
