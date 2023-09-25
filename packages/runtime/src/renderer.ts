@@ -398,3 +398,4 @@ export function createRenderer<HostElement = Element>(
     } else if (vnodeType === VNodeType.COMMENT) {
       mountComment(vnode, parent, anchor);
     } else if (vnodeType === VNodeType.FRAGMENT) {
+      mountFragment(vnode, parent, anchor);
