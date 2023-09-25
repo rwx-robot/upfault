@@ -374,3 +374,4 @@ export function createRenderer<HostElement = Element>(
     anchor: HostElement | null = null
   ): void {
     // 类型相同，复用
+    if (n1 && n1.type === n2.type && n1.key === n2.key) {
