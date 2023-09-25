@@ -376,3 +376,4 @@ export function createRenderer<HostElement = Element>(
     // 类型相同，复用
     if (n1 && n1.type === n2.type && n1.key === n2.key) {
       patchElement(n1, n2);
+      return;
