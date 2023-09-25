@@ -368,3 +368,4 @@ export function createRenderer<HostElement = Element>(
   // ========================================================================
   
   function patch(
+    n1: VNode | null,
