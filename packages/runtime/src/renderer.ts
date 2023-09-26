@@ -407,3 +407,4 @@ export function createRenderer<HostElement = Element>(
   function patchElement(n1: VNode, n2: VNode): void {
     const el = n1.el!;
     n2.el = el;
+    
