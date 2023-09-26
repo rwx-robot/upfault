@@ -426,3 +426,4 @@ export function createRenderer<HostElement = Element>(
   
   function patchProps(el: HostElement, oldProps: VNodeProps, newProps: VNodeProps): void {
     // 删除旧的
+    for (const key in oldProps) {
