@@ -428,3 +428,4 @@ export function createRenderer<HostElement = Element>(
     // 删除旧的
     for (const key in oldProps) {
       if (!(key in newProps)) {
+        patchProp(el, key, oldProps[key], null);
