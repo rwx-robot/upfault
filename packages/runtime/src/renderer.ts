@@ -400,3 +400,4 @@ export function createRenderer<HostElement = Element>(
     } else if (vnodeType === VNodeType.FRAGMENT) {
       mountFragment(vnode, parent, anchor);
     } else if (vnodeType === VNodeType.COMPONENT) {
+      mountComponent(vnode, parent, anchor);
