@@ -413,3 +413,4 @@ export function createRenderer<HostElement = Element>(
     
     // 更新 props
     patchProps(el, oldProps, newProps);
+    
