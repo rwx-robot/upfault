@@ -424,3 +424,4 @@ export function createRenderer<HostElement = Element>(
     }
   }
   
+  function patchProps(el: HostElement, oldProps: VNodeProps, newProps: VNodeProps): void {
