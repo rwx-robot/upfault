@@ -403,3 +403,4 @@ export function createRenderer<HostElement = Element>(
       mountComponent(vnode, parent, anchor);
     }
   }
+  
