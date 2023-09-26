@@ -404,3 +404,4 @@ export function createRenderer<HostElement = Element>(
     }
   }
   
+  function patchElement(n1: VNode, n2: VNode): void {
