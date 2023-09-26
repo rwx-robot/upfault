@@ -437,3 +437,4 @@ export function createRenderer<HostElement = Element>(
       if (oldProps[key] !== newProps[key]) {
         patchProp(el, key, oldProps[key], newProps[key]);
       }
+    }
