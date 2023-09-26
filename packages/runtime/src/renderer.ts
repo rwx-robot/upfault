@@ -411,3 +411,4 @@ export function createRenderer<HostElement = Element>(
     const oldProps = n1.props || {};
     const newProps = n2.props || {};
     
+    // 更新 props
