@@ -420,3 +420,4 @@ export function createRenderer<HostElement = Element>(
     // 更新 ref
     if (n2.ref !== n1.ref) {
       if (n1.ref) setRef(n1.ref, null);
+      if (n2.ref) setRef(n2.ref, el);
