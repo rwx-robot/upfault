@@ -408,3 +408,4 @@ export function createRenderer<HostElement = Element>(
     const el = n1.el!;
     n2.el = el;
     
+    const oldProps = n1.props || {};
