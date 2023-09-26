@@ -418,3 +418,4 @@ export function createRenderer<HostElement = Element>(
     patchChildren(n1, n2, el);
     
     // 更新 ref
+    if (n2.ref !== n1.ref) {
