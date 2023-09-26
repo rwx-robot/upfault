@@ -433,3 +433,4 @@ export function createRenderer<HostElement = Element>(
     }
     
     // 更新/新增
+    for (const key in newProps) {
