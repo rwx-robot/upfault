@@ -415,3 +415,4 @@ export function createRenderer<HostElement = Element>(
     patchProps(el, oldProps, newProps);
     
     // 更新 children
+    patchChildren(n1, n2, el);
