@@ -445,3 +445,4 @@ export function createRenderer<HostElement = Element>(
     const c2 = n2.children;
     const shapeFlag1 = n1.shapeFlag ?? 0;
     const shapeFlag2 = n2.shapeFlag ?? 0;
+    
