@@ -458,3 +458,4 @@ export function createRenderer<HostElement = Element>(
       return;
     }
     
+    // 新是数组
