@@ -448,3 +448,4 @@ export function createRenderer<HostElement = Element>(
     
     // 文本节点
     if (shapeFlag2 & VNodeShapeFlags.TEXT_NODE) {
+      if (shapeFlag1 & VNodeShapeFlags.ARRAY_CHILDREN) {
