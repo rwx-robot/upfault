@@ -476,3 +476,4 @@ export function createRenderer<HostElement = Element>(
     // 新是空或 Fragment
     if (shapeFlag1 & VNodeShapeFlags.ARRAY_CHILDREN) {
       unmountChildren(c1 as VNode[]);
+    } else if (shapeFlag1 & VNodeShapeFlags.TEXT_NODE) {
