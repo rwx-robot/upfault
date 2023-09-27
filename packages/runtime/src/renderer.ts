@@ -441,3 +441,4 @@ export function createRenderer<HostElement = Element>(
   }
   
   function patchChildren(n1: VNode, n2: VNode, parent: HostElement): void {
+    const c1 = n1.children;
