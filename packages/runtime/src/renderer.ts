@@ -447,3 +447,4 @@ export function createRenderer<HostElement = Element>(
     const shapeFlag2 = n2.shapeFlag ?? 0;
     
     // 文本节点
+    if (shapeFlag2 & VNodeShapeFlags.TEXT_NODE) {
