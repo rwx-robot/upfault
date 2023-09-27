@@ -478,3 +478,4 @@ export function createRenderer<HostElement = Element>(
       unmountChildren(c1 as VNode[]);
     } else if (shapeFlag1 & VNodeShapeFlags.TEXT_NODE) {
       setElementText(parent, '');
+    }
