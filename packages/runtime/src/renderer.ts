@@ -454,3 +454,4 @@ export function createRenderer<HostElement = Element>(
       }
       if (c1 !== c2) {
         setElementText(parent, c2 as string);
+      }
