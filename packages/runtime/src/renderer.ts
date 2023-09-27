@@ -451,3 +451,4 @@ export function createRenderer<HostElement = Element>(
       if (shapeFlag1 & VNodeShapeFlags.ARRAY_CHILDREN) {
         // 旧是数组，新是文本
         unmountChildren(c1 as VNode[]);
+      }
