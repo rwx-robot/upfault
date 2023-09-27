@@ -456,3 +456,4 @@ export function createRenderer<HostElement = Element>(
         setElementText(parent, c2 as string);
       }
       return;
+    }
