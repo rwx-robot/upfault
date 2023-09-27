@@ -467,3 +467,4 @@ export function createRenderer<HostElement = Element>(
         // 旧是文本或空
         if (shapeFlag1 & VNodeShapeFlags.TEXT_NODE) {
           setElementText(parent, '');
+        }
