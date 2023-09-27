@@ -453,3 +453,4 @@ export function createRenderer<HostElement = Element>(
         unmountChildren(c1 as VNode[]);
       }
       if (c1 !== c2) {
+        setElementText(parent, c2 as string);
