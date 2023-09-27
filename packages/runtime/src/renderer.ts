@@ -465,3 +465,4 @@ export function createRenderer<HostElement = Element>(
         patchKeyedChildren(c1 as VNode[], c2 as VNode[], parent);
       } else {
         // 旧是文本或空
+        if (shapeFlag1 & VNodeShapeFlags.TEXT_NODE) {
