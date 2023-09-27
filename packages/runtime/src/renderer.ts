@@ -480,3 +480,4 @@ export function createRenderer<HostElement = Element>(
       setElementText(parent, '');
     }
   }
+  
