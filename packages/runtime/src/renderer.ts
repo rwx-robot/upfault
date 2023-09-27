@@ -460,3 +460,4 @@ export function createRenderer<HostElement = Element>(
     
     // 新是数组
     if (shapeFlag2 & VNodeShapeFlags.ARRAY_CHILDREN) {
+      if (shapeFlag1 & VNodeShapeFlags.ARRAY_CHILDREN) {
