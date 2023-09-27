@@ -446,3 +446,4 @@ export function createRenderer<HostElement = Element>(
     const shapeFlag1 = n1.shapeFlag ?? 0;
     const shapeFlag2 = n2.shapeFlag ?? 0;
     
+    // 文本节点
