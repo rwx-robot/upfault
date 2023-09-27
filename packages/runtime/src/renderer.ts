@@ -470,3 +470,4 @@ export function createRenderer<HostElement = Element>(
         }
         mountChildren(c2 as VNode[], parent, null);
       }
+      return;
