@@ -462,3 +462,4 @@ export function createRenderer<HostElement = Element>(
     if (shapeFlag2 & VNodeShapeFlags.ARRAY_CHILDREN) {
       if (shapeFlag1 & VNodeShapeFlags.ARRAY_CHILDREN) {
         // 旧也是数组，使用 Diff 算法
+        patchKeyedChildren(c1 as VNode[], c2 as VNode[], parent);
