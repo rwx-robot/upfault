@@ -468,3 +468,4 @@ export function createRenderer<HostElement = Element>(
         if (shapeFlag1 & VNodeShapeFlags.TEXT_NODE) {
           setElementText(parent, '');
         }
+        mountChildren(c2 as VNode[], parent, null);
