@@ -452,3 +452,4 @@ export function createRenderer<HostElement = Element>(
         // 旧是数组，新是文本
         unmountChildren(c1 as VNode[]);
       }
+      if (c1 !== c2) {
