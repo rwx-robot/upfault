@@ -512,3 +512,4 @@ export function createRenderer<HostElement = Element>(
           break;
         case DiffOpType.REMOVE:
           if (op.oldNode) {
+            unmount(op.oldNode, parent);
