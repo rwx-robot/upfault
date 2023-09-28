@@ -515,3 +515,4 @@ export function createRenderer<HostElement = Element>(
             unmount(op.oldNode, parent);
           }
           break;
+        case DiffOpType.REPLACE:
