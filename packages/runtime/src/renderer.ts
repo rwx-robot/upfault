@@ -485,3 +485,4 @@ export function createRenderer<HostElement = Element>(
     const diffResult = aeroDiff(c1, c2, {
       enableTypeFallback: true,
       enableShapeMatching: true,
+      maxDepth: 100,
