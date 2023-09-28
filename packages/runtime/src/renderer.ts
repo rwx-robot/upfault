@@ -487,3 +487,4 @@ export function createRenderer<HostElement = Element>(
       enableShapeMatching: true,
       maxDepth: 100,
       collectStats: true,
+    });
