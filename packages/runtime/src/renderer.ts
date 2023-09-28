@@ -508,3 +508,4 @@ export function createRenderer<HostElement = Element>(
             if (op.oldNode.el) {
               insert(op.oldNode.el, parent, getAnchor(parent, op.toIndex));
             }
+          }
