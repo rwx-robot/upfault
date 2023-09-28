@@ -490,3 +490,4 @@ export function createRenderer<HostElement = Element>(
     });
     
     for (const op of diffResult.ops) {
+      switch (op.type) {
