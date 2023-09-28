@@ -496,3 +496,4 @@ export function createRenderer<HostElement = Element>(
             const anchor = op.toIndex !== undefined ? getAnchor(parent, op.toIndex) : null;
             mount(op.newNode, parent, anchor);
           }
+          break;
