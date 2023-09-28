@@ -483,3 +483,4 @@ export function createRenderer<HostElement = Element>(
   
   function patchKeyedChildren(c1: VNode[], c2: VNode[], parent: HostElement): void {
     const diffResult = aeroDiff(c1, c2, {
+      enableTypeFallback: true,
