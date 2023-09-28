@@ -503,3 +503,4 @@ export function createRenderer<HostElement = Element>(
           }
           break;
         case DiffOpType.MOVE:
+          if (op.oldNode && op.newNode) {
