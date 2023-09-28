@@ -502,3 +502,4 @@ export function createRenderer<HostElement = Element>(
             patch(op.oldNode, op.newNode, parent);
           }
           break;
+        case DiffOpType.MOVE:
