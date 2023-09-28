@@ -506,3 +506,4 @@ export function createRenderer<HostElement = Element>(
           if (op.oldNode && op.newNode) {
             patch(op.oldNode, op.newNode, parent);
             if (op.oldNode.el) {
+              insert(op.oldNode.el, parent, getAnchor(parent, op.toIndex));
