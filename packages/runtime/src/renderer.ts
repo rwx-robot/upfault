@@ -499,3 +499,4 @@ export function createRenderer<HostElement = Element>(
           break;
         case DiffOpType.UPDATE:
           if (op.oldNode && op.newNode) {
+            patch(op.oldNode, op.newNode, parent);
