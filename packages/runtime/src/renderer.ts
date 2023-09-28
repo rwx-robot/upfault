@@ -517,3 +517,4 @@ export function createRenderer<HostElement = Element>(
           break;
         case DiffOpType.REPLACE:
           if (op.oldNode && op.newNode) {
+            unmount(op.oldNode, parent);
