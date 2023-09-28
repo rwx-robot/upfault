@@ -514,3 +514,4 @@ export function createRenderer<HostElement = Element>(
           if (op.oldNode) {
             unmount(op.oldNode, parent);
           }
+          break;
