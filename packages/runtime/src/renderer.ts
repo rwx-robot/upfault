@@ -488,3 +488,4 @@ export function createRenderer<HostElement = Element>(
       maxDepth: 100,
       collectStats: true,
     });
+    
