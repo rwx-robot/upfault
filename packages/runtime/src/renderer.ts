@@ -497,3 +497,4 @@ export function createRenderer<HostElement = Element>(
             mount(op.newNode, parent, anchor);
           }
           break;
+        case DiffOpType.UPDATE:
