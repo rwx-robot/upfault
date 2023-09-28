@@ -509,3 +509,4 @@ export function createRenderer<HostElement = Element>(
               insert(op.oldNode.el, parent, getAnchor(parent, op.toIndex));
             }
           }
+          break;
