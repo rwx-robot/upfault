@@ -493,3 +493,4 @@ export function createRenderer<HostElement = Element>(
       switch (op.type) {
         case DiffOpType.CREATE:
           if (op.newNode) {
+            const anchor = op.toIndex !== undefined ? getAnchor(parent, op.toIndex) : null;
