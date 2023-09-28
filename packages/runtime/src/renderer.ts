@@ -500,3 +500,4 @@ export function createRenderer<HostElement = Element>(
         case DiffOpType.UPDATE:
           if (op.oldNode && op.newNode) {
             patch(op.oldNode, op.newNode, parent);
+          }
