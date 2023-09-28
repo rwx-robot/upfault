@@ -486,3 +486,4 @@ export function createRenderer<HostElement = Element>(
       enableTypeFallback: true,
       enableShapeMatching: true,
       maxDepth: 100,
+      collectStats: true,
