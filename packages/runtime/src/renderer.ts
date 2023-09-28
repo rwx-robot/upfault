@@ -501,3 +501,4 @@ export function createRenderer<HostElement = Element>(
           if (op.oldNode && op.newNode) {
             patch(op.oldNode, op.newNode, parent);
           }
+          break;
