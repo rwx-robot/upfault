@@ -489,3 +489,4 @@ export function createRenderer<HostElement = Element>(
       collectStats: true,
     });
     
+    for (const op of diffResult.ops) {
