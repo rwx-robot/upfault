@@ -565,3 +565,4 @@ export function createRenderer<HostElement = Element>(
     }
   }
   
+  function unmountChildren(children: VNode[]): void {
