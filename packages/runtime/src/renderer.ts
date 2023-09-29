@@ -554,3 +554,4 @@ export function createRenderer<HostElement = Element>(
       unmountChildren(vnode.children as VNode[]);
     }
     
+    // 卸载 ref
