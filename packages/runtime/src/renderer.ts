@@ -563,3 +563,4 @@ export function createRenderer<HostElement = Element>(
     if (el && parent) {
       remove(el);
     }
+  }
