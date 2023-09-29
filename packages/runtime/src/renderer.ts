@@ -529,3 +529,4 @@ export function createRenderer<HostElement = Element>(
     if (!parentNode || !nextSibling) return null;
     const p = parentNode(parent);
     if (!p) return null;
+    let child = p.firstChild as HostElement;
