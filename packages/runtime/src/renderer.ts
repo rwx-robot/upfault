@@ -543,3 +543,4 @@ export function createRenderer<HostElement = Element>(
   function unmount(vnode: VNode, parent: HostElement | null = null): void {
     const { shapeFlag = 0, vnodeType, el, componentInstance } = vnode;
     
+    // 组件卸载
