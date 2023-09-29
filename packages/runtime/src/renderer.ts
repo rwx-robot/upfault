@@ -546,3 +546,4 @@ export function createRenderer<HostElement = Element>(
     // 组件卸载
     if (vnodeType === VNodeType.COMPONENT && componentInstance) {
       unmountComponent(componentInstance);
+      return;
