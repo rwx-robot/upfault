@@ -544,3 +544,4 @@ export function createRenderer<HostElement = Element>(
     const { shapeFlag = 0, vnodeType, el, componentInstance } = vnode;
     
     // 组件卸载
+    if (vnodeType === VNodeType.COMPONENT && componentInstance) {
