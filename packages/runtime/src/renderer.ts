@@ -532,3 +532,4 @@ export function createRenderer<HostElement = Element>(
     let child = p.firstChild as HostElement;
     for (let i = 0; i < index && child; i++) {
       child = nextSibling(child);
+    }
