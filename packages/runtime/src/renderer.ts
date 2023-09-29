@@ -523,3 +523,4 @@ export function createRenderer<HostElement = Element>(
           }
           break;
       }
+    }
