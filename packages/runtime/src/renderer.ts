@@ -547,3 +547,4 @@ export function createRenderer<HostElement = Element>(
     if (vnodeType === VNodeType.COMPONENT && componentInstance) {
       unmountComponent(componentInstance);
       return;
+    }
