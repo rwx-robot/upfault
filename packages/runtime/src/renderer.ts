@@ -556,3 +556,4 @@ export function createRenderer<HostElement = Element>(
     
     // 卸载 ref
     if (vnode.ref) {
+      setRef(vnode.ref, null);
