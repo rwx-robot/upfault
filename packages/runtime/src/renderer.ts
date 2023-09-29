@@ -562,3 +562,4 @@ export function createRenderer<HostElement = Element>(
     // 移除 DOM
     if (el && parent) {
       remove(el);
+    }
