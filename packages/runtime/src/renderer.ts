@@ -553,3 +553,4 @@ export function createRenderer<HostElement = Element>(
     if (shapeFlag & VNodeShapeFlags.ARRAY_CHILDREN) {
       unmountChildren(vnode.children as VNode[]);
     }
+    
