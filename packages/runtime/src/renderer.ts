@@ -534,3 +534,4 @@ export function createRenderer<HostElement = Element>(
       child = nextSibling(child);
     }
     return child;
+  }
