@@ -559,3 +559,4 @@ export function createRenderer<HostElement = Element>(
       setRef(vnode.ref, null);
     }
     
+    // 移除 DOM
