@@ -533,3 +533,4 @@ export function createRenderer<HostElement = Element>(
     for (let i = 0; i < index && child; i++) {
       child = nextSibling(child);
     }
+    return child;
