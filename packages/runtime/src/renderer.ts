@@ -540,3 +540,4 @@ export function createRenderer<HostElement = Element>(
   // 卸载
   // ========================================================================
   
+  function unmount(vnode: VNode, parent: HostElement | null = null): void {
