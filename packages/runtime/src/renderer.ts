@@ -548,3 +548,4 @@ export function createRenderer<HostElement = Element>(
       unmountComponent(componentInstance);
       return;
     }
+    
