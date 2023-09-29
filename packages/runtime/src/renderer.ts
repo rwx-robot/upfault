@@ -558,3 +558,4 @@ export function createRenderer<HostElement = Element>(
     if (vnode.ref) {
       setRef(vnode.ref, null);
     }
+    
