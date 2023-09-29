@@ -526,3 +526,4 @@ export function createRenderer<HostElement = Element>(
     }
   
   function getAnchor(parent: HostElement, index: number): HostElement | null {
+    if (!parentNode || !nextSibling) return null;
