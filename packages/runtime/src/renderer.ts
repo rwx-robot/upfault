@@ -606,3 +606,4 @@ export function createRenderer<HostElement = Element>(
     } else if (ref && typeof ref === 'object' && '__v_isRef' in ref) {
       (ref as any).value = value;
     }
+  }
