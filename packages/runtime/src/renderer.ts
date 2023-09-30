@@ -592,3 +592,4 @@ export function createRenderer<HostElement = Element>(
       stopRenderEffect(effect);
     }
     instance.effects.length = 0;
+  }
