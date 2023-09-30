@@ -602,3 +602,4 @@ export function createRenderer<HostElement = Element>(
     if (!ref) return;
     
     if (typeof ref === 'function') {
+      ref(value);
