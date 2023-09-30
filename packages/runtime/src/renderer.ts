@@ -583,3 +583,4 @@ export function createRenderer<HostElement = Element>(
     if (instance.subTree) {
       unmount(instance.subTree);
     }
+    
