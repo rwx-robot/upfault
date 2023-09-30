@@ -580,3 +580,4 @@ export function createRenderer<HostElement = Element>(
     callBeforeUnmount(instance);
     
     // 卸载子树
+    if (instance.subTree) {
