@@ -575,3 +575,4 @@ export function createRenderer<HostElement = Element>(
     if (instance.isUnmounted) return;
     
     instance.isUnmounted = true;
+    
