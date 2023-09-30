@@ -567,3 +567,4 @@ export function createRenderer<HostElement = Element>(
   
   function unmountChildren(children: VNode[]): void {
     for (const child of children) {
+      if (child) unmount(child);
