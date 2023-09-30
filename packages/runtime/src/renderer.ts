@@ -598,3 +598,4 @@ export function createRenderer<HostElement = Element>(
   // Ref 处理
   // ========================================================================
   
+  function setRef(ref: any, value: any): void {
