@@ -590,3 +590,4 @@ export function createRenderer<HostElement = Element>(
     // 清理 effect
     for (const effect of instance.effects) {
       stopRenderEffect(effect);
+    }
