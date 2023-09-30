@@ -600,3 +600,4 @@ export function createRenderer<HostElement = Element>(
   
   function setRef(ref: any, value: any): void {
     if (!ref) return;
+    
