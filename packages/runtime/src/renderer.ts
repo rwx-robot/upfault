@@ -588,3 +588,4 @@ export function createRenderer<HostElement = Element>(
     callUnmounted(instance);
     
     // 清理 effect
+    for (const effect of instance.effects) {
