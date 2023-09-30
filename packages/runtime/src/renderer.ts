@@ -581,3 +581,4 @@ export function createRenderer<HostElement = Element>(
     
     // 卸载子树
     if (instance.subTree) {
+      unmount(instance.subTree);
