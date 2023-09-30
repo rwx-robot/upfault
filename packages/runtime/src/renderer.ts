@@ -576,3 +576,4 @@ export function createRenderer<HostElement = Element>(
     
     instance.isUnmounted = true;
     
+    // 执行 beforeUnmount
