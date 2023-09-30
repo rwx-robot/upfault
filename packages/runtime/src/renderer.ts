@@ -572,3 +572,4 @@ export function createRenderer<HostElement = Element>(
   }
   
   function unmountComponent(instance: ComponentInstance): void {
+    if (instance.isUnmounted) return;
