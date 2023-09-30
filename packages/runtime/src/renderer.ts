@@ -579,3 +579,4 @@ export function createRenderer<HostElement = Element>(
     // 执行 beforeUnmount
     callBeforeUnmount(instance);
     
+    // 卸载子树
