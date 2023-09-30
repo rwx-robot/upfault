@@ -570,3 +570,4 @@ export function createRenderer<HostElement = Element>(
       if (child) unmount(child);
     }
   }
+  
