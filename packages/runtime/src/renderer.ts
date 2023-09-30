@@ -569,3 +569,4 @@ export function createRenderer<HostElement = Element>(
     for (const child of children) {
       if (child) unmount(child);
     }
+  }
