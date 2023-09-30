@@ -585,3 +585,4 @@ export function createRenderer<HostElement = Element>(
     }
     
     // 执行 unmounted
+    callUnmounted(instance);
