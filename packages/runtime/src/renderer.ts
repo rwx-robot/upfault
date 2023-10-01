@@ -638,3 +638,4 @@ export function createRenderer<HostElement = Element>(
     render,
     hydrate,
     m: mount,
+    p: patch,
