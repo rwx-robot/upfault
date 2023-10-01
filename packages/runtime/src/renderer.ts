@@ -637,3 +637,4 @@ export function createRenderer<HostElement = Element>(
   return {
     render,
     hydrate,
+    m: mount,
