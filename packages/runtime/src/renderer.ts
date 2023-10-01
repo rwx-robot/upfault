@@ -634,3 +634,4 @@ export function createRenderer<HostElement = Element>(
     render(vnode, container);
   }
   
+  return {
