@@ -641,3 +641,4 @@ export function createRenderer<HostElement = Element>(
     p: patch,
     umount: unmount,
   };
+}
