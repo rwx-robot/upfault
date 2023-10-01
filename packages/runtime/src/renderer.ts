@@ -640,3 +640,4 @@ export function createRenderer<HostElement = Element>(
     m: mount,
     p: patch,
     umount: unmount,
+  };
