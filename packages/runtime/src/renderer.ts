@@ -617,3 +617,4 @@ export function createRenderer<HostElement = Element>(
       // 卸载容器内所有内容
       const prevVNode = getContainerVNode(container);
       if (prevVNode) {
+        unmount(prevVNode, container);
