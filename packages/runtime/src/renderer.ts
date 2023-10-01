@@ -644,3 +644,4 @@ export function createRenderer<HostElement = Element>(
 }
 
 // ============================================================================
+// 默认 DOM 渲染器
