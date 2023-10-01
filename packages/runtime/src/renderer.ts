@@ -626,3 +626,4 @@ export function createRenderer<HostElement = Element>(
     // 挂载或更新
     const prevVNode = getContainerVNode(container);
     patch(prevVNode, vnode, container);
+    setContainerVNode(container, vnode);
