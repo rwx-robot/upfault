@@ -629,3 +629,4 @@ export function createRenderer<HostElement = Element>(
     setContainerVNode(container, vnode);
   }
   
+  function hydrate(vnode: VNode, container: HostElement): void {
