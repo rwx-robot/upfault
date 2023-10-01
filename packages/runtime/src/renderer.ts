@@ -618,3 +618,4 @@ export function createRenderer<HostElement = Element>(
       const prevVNode = getContainerVNode(container);
       if (prevVNode) {
         unmount(prevVNode, container);
+        setContainerVNode(container, null);
