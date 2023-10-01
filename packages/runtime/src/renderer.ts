@@ -615,3 +615,4 @@ export function createRenderer<HostElement = Element>(
   function render(vnode: VNode | null, container: HostElement): void {
     if (vnode === null) {
       // 卸载容器内所有内容
+      const prevVNode = getContainerVNode(container);
