@@ -630,3 +630,4 @@ export function createRenderer<HostElement = Element>(
   }
   
   function hydrate(vnode: VNode, container: HostElement): void {
+    // TODO: 实现水合
