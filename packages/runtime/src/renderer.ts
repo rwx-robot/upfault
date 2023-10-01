@@ -612,3 +612,4 @@ export function createRenderer<HostElement = Element>(
   // 公开 API
   // ========================================================================
   
+  function render(vnode: VNode | null, container: HostElement): void {
