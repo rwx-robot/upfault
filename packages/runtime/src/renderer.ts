@@ -628,3 +628,4 @@ export function createRenderer<HostElement = Element>(
     patch(prevVNode, vnode, container);
     setContainerVNode(container, vnode);
   }
+  
