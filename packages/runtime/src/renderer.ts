@@ -623,3 +623,4 @@ export function createRenderer<HostElement = Element>(
       return;
     }
     
+    // 挂载或更新
