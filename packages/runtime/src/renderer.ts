@@ -621,3 +621,4 @@ export function createRenderer<HostElement = Element>(
         setContainerVNode(container, null);
       }
       return;
+    }
