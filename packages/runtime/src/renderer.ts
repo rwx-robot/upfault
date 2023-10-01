@@ -639,3 +639,4 @@ export function createRenderer<HostElement = Element>(
     hydrate,
     m: mount,
     p: patch,
+    umount: unmount,
