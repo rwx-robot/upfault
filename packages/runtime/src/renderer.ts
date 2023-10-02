@@ -693,3 +693,4 @@ export const defaultRendererOptions: RendererOptions = {
         style.cssText = '';
       }
     } else if (key in el) {
+      // DOM property
