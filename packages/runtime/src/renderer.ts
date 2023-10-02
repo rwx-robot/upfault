@@ -660,3 +660,4 @@ export const defaultRendererOptions: RendererOptions = {
   },
   setText: (node: Text, text: string) => {
     node.nodeValue = text;
+  },
