@@ -665,3 +665,4 @@ export const defaultRendererOptions: RendererOptions = {
     try {
       parent.insertBefore(child, anchor || null);
     } catch (e) {
+      throw e;
