@@ -690,3 +690,4 @@ export const defaultRendererOptions: RendererOptions = {
       } else if (nextValue && typeof nextValue === 'object') {
         Object.assign(style, nextValue);
       } else {
+        style.cssText = '';
