@@ -691,3 +691,4 @@ export const defaultRendererOptions: RendererOptions = {
         Object.assign(style, nextValue);
       } else {
         style.cssText = '';
+      }
