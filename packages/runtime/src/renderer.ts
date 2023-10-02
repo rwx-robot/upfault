@@ -682,3 +682,4 @@ export const defaultRendererOptions: RendererOptions = {
         el.addEventListener(event, nextValue);
       }
     } else if (key === 'class') {
+      el.className = nextValue || '';
