@@ -669,3 +669,4 @@ export const defaultRendererOptions: RendererOptions = {
     }
   },
   remove: (child: Element) => {
+    child.parentNode?.removeChild(child);
