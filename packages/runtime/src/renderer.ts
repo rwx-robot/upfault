@@ -671,3 +671,4 @@ export const defaultRendererOptions: RendererOptions = {
   remove: (child: Element) => {
     child.parentNode?.removeChild(child);
   },
+  patchProp: (el: Element, key: string, prevValue: any, nextValue: any) => {
