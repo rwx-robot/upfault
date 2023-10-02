@@ -654,3 +654,4 @@ export const defaultRendererOptions: RendererOptions = {
       : document.createElement(tag);
   },
   createText: (text: string) => document.createTextNode(text),
+  createComment: (text: string) => document.createComment(text),
