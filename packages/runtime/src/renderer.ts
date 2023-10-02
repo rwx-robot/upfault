@@ -659,3 +659,4 @@ export const defaultRendererOptions: RendererOptions = {
     el.textContent = text;
   },
   setText: (node: Text, text: string) => {
+    node.nodeValue = text;
