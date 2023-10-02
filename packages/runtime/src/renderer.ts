@@ -676,3 +676,4 @@ export const defaultRendererOptions: RendererOptions = {
       // 事件监听器
       const event = key.slice(2).toLowerCase();
       if (prevValue) {
+        el.removeEventListener(event, prevValue);
