@@ -678,3 +678,4 @@ export const defaultRendererOptions: RendererOptions = {
       if (prevValue) {
         el.removeEventListener(event, prevValue);
       }
+      if (nextValue) {
