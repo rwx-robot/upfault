@@ -663,3 +663,4 @@ export const defaultRendererOptions: RendererOptions = {
   },
   insert: (child: Node, parent: Element, anchor?: Element | null) => {
     try {
+      parent.insertBefore(child, anchor || null);
