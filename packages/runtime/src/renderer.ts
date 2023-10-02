@@ -667,3 +667,4 @@ export const defaultRendererOptions: RendererOptions = {
     } catch (e) {
       throw e;
     }
+  },
