@@ -686,3 +686,4 @@ export const defaultRendererOptions: RendererOptions = {
     } else if (key === 'style') {
       const style = (el as HTMLElement).style;
       if (typeof nextValue === 'string') {
+        style.cssText = nextValue;
