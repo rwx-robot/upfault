@@ -668,3 +668,4 @@ export const defaultRendererOptions: RendererOptions = {
       throw e;
     }
   },
+  remove: (child: Element) => {
