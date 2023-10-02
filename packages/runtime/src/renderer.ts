@@ -674,3 +674,4 @@ export const defaultRendererOptions: RendererOptions = {
   patchProp: (el: Element, key: string, prevValue: any, nextValue: any) => {
     if (key.startsWith('on')) {
       // 事件监听器
+      const event = key.slice(2).toLowerCase();
