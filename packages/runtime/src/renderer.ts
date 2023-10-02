@@ -675,3 +675,4 @@ export const defaultRendererOptions: RendererOptions = {
     if (key.startsWith('on')) {
       // 事件监听器
       const event = key.slice(2).toLowerCase();
+      if (prevValue) {
