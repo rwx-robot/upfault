@@ -653,3 +653,4 @@ export const defaultRendererOptions: RendererOptions = {
       ? document.createElementNS('http://www.w3.org/2000/svg', tag)
       : document.createElement(tag);
   },
+  createText: (text: string) => document.createTextNode(text),
