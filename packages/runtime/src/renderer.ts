@@ -661,3 +661,4 @@ export const defaultRendererOptions: RendererOptions = {
   setText: (node: Text, text: string) => {
     node.nodeValue = text;
   },
+  insert: (child: Node, parent: Element, anchor?: Element | null) => {
