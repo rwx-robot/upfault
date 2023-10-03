@@ -695,3 +695,4 @@ export const defaultRendererOptions: RendererOptions = {
     } else if (key in el) {
       // DOM property
       (el as any)[key] = nextValue;
+    } else {
