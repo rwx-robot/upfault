@@ -701,3 +701,4 @@ export const defaultRendererOptions: RendererOptions = {
         el.removeAttribute(key);
       } else {
         el.setAttribute(key, nextValue);
+      }
