@@ -6,3 +6,4 @@ import { VNodeType } from '@upfault/runtime';
 
 describe('UpFault Runtime', () => {
   let container: HTMLElement;
+  let renderer: ReturnType<typeof createRenderer>;
