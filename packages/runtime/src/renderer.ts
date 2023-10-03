@@ -699,3 +699,4 @@ export const defaultRendererOptions: RendererOptions = {
       // Attribute
       if (nextValue == null || nextValue === false) {
         el.removeAttribute(key);
+      } else {
