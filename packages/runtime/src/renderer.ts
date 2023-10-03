@@ -700,3 +700,4 @@ export const defaultRendererOptions: RendererOptions = {
       if (nextValue == null || nextValue === false) {
         el.removeAttribute(key);
       } else {
+        el.setAttribute(key, nextValue);
