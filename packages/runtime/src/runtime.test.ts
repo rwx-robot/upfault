@@ -5,3 +5,4 @@ import { onMounted, onUnmounted, getCurrentInstance } from '@upfault/runtime';
 import { VNodeType } from '@upfault/runtime';
 
 describe('UpFault Runtime', () => {
+  let container: HTMLElement;
