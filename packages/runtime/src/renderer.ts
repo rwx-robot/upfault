@@ -697,3 +697,4 @@ export const defaultRendererOptions: RendererOptions = {
       (el as any)[key] = nextValue;
     } else {
       // Attribute
+      if (nextValue == null || nextValue === false) {
