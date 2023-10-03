@@ -709,3 +709,4 @@ export const defaultRendererOptions: RendererOptions = {
   _nodeToElement: (node: Node) => node as Element | null,
 };
 }
+}
