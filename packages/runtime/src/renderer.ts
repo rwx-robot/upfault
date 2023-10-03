@@ -708,3 +708,4 @@ export const defaultRendererOptions: RendererOptions = {
   nextSibling: (node: Element) => node.nextElementSibling,
   _nodeToElement: (node: Node) => node as Element | null,
 };
+}
