@@ -46,3 +46,4 @@ describe('UpFault Runtime', () => {
         h('span', null, 'b'),
       ]);
       
+      expect(vnode.type).toBe(Fragment);
