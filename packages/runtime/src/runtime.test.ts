@@ -43,3 +43,4 @@ describe('UpFault Runtime', () => {
     it('should create Fragment', () => {
       const vnode = h(Fragment, null, [
         h('span', null, 'a'),
+        h('span', null, 'b'),
