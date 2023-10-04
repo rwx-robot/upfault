@@ -49,3 +49,5 @@ describe('UpFault Runtime', () => {
       expect(vnode.type).toBe(Fragment);
       expect(vnode.vnodeType).toBe(VNodeType.FRAGMENT);
     });
+
+    it('should create Text node', () => {
