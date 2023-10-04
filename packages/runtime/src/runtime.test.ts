@@ -17,3 +17,5 @@ describe('UpFault Runtime', () => {
   afterEach(() => {
     document.body.removeChild(container);
   });
+
+  describe('h() - VNode Creation', () => {
