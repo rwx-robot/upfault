@@ -28,3 +28,5 @@ describe('UpFault Runtime', () => {
       expect(vnode.children).toBeInstanceOf(Object);
       expect(vnode.vnodeType).toBe(VNodeType.ELEMENT);
     });
+
+    it('should create element with children array', () => {
