@@ -103,3 +103,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('div', { id: 'test' }, 'hello');
       renderer.render(vnode, container);
       
+      expect(container.innerHTML).toBe('<div id="test">hello</div>');
