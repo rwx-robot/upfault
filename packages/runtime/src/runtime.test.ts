@@ -63,3 +63,4 @@ describe('UpFault Runtime', () => {
       
       expect(vnode.type).toBe(Comment);
       expect(vnode.vnodeType).toBe(VNodeType.COMMENT);
+    });
