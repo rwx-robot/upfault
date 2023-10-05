@@ -97,3 +97,5 @@ describe('UpFault Runtime', () => {
       expect(vnode.props).toEqual({});
     });
   });
+
+  describe('Renderer', () => {
