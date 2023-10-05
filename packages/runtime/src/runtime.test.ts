@@ -62,3 +62,4 @@ describe('UpFault Runtime', () => {
       const vnode = Comment('comment');
       
       expect(vnode.type).toBe(Comment);
+      expect(vnode.vnodeType).toBe(VNodeType.COMMENT);
