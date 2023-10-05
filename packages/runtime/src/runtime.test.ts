@@ -91,3 +91,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should handle children without props', () => {
+      const vnode = h('div', 'hello');
