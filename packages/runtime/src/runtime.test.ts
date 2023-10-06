@@ -149,3 +149,4 @@ describe('UpFault Runtime', () => {
 
     it('should unmount when render null', () => {
       const vnode = h('div', null, 'hello');
+      renderer.render(vnode, container);
