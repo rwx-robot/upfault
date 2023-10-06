@@ -127,3 +127,4 @@ describe('UpFault Runtime', () => {
 
     it('should update props', () => {
       const vnode1 = h('div', { id: 'a' }, 'test');
+      renderer.render(vnode1, container);
