@@ -107,3 +107,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should mount nested elements', () => {
+      const vnode = h('div', null, [
