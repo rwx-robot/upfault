@@ -141,3 +141,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode1, container);
       
       const vnode2 = h('div', { id: 'b' }, 'test');
+      renderer.render(vnode2, container);
