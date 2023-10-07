@@ -189,3 +189,4 @@ describe('UpFault Runtime', () => {
       
       expect(container.textContent).toContain('text');
       // Comment nodes don't appear in textContent
+    });
