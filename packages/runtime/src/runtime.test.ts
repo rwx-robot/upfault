@@ -194,3 +194,4 @@ describe('UpFault Runtime', () => {
 
   describe('Lifecycle', () => {
     it('should call onMounted', async () => {
+      const mounted = vi.fn();
