@@ -174,3 +174,4 @@ describe('UpFault Runtime', () => {
       ]);
       renderer.render(vnode, container);
       
+      const spans = container.querySelectorAll('span');
