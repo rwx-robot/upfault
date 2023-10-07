@@ -180,3 +180,4 @@ describe('UpFault Runtime', () => {
       expect(spans[1].textContent).toBe('b');
     });
 
+    it('should handle Comment', () => {
