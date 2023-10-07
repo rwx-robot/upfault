@@ -172,3 +172,4 @@ describe('UpFault Runtime', () => {
         h('span', null, 'a'),
         h('span', null, 'b'),
       ]);
+      renderer.render(vnode, container);
