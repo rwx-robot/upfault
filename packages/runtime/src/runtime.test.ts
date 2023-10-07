@@ -179,3 +179,4 @@ describe('UpFault Runtime', () => {
       expect(spans[0].textContent).toBe('a');
       expect(spans[1].textContent).toBe('b');
     });
+
