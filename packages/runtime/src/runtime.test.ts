@@ -161,3 +161,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('button', { onClick: handler }, 'click me');
       renderer.render(vnode, container);
       
+      const button = container.querySelector('button')!;
