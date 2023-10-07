@@ -168,3 +168,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should handle Fragment', () => {
+      const vnode = h(Fragment, null, [
