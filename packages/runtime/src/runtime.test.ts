@@ -153,3 +153,4 @@ describe('UpFault Runtime', () => {
       expect(container.innerHTML).toBe('<div>hello</div>');
       
       renderer.render(null, container);
+      expect(container.innerHTML).toBe('');
