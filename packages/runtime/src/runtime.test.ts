@@ -157,3 +157,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should handle events', () => {
+      const handler = vi.fn();
