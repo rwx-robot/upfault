@@ -209,3 +209,5 @@ describe('UpFault Runtime', () => {
       // Wait for microtasks (onMounted is called after mount)
       await vi.waitFor(() => expect(mounted).toHaveBeenCalledTimes(1));
     });
+
+    it('should call onUnmounted when unmounting', async () => {
