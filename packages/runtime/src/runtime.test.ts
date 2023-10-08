@@ -227,3 +227,4 @@ describe('UpFault Runtime', () => {
       
       renderer.render(null, container);
       
+      await vi.waitFor(() => expect(unmounted).toHaveBeenCalledTimes(1));
