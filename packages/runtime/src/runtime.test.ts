@@ -216,3 +216,4 @@ describe('UpFault Runtime', () => {
       const Comp = {
         render() {
           onUnmounted(unmounted);
+          return h('div', null, 'test');
