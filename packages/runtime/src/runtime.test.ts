@@ -207,3 +207,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode, container);
       
       // Wait for microtasks (onMounted is called after mount)
+      await vi.waitFor(() => expect(mounted).toHaveBeenCalledTimes(1));
