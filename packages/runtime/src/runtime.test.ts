@@ -212,3 +212,4 @@ describe('UpFault Runtime', () => {
 
     it('should call onUnmounted when unmounting', async () => {
       const unmounted = vi.fn();
+      
