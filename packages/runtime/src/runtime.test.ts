@@ -273,3 +273,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode, container);
       
       expect(container.textContent).toBe('hello props');
+    });
