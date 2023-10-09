@@ -236,3 +236,4 @@ describe('UpFault Runtime', () => {
       const Comp = {
         render() {
           capturedInstance = getCurrentInstance();
+          return h('div', null, 'test');
