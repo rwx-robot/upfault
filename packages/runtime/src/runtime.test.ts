@@ -251,3 +251,4 @@ describe('UpFault Runtime', () => {
   describe('Component', () => {
     it('should render component', () => {
       const Comp = {
+        render() {
