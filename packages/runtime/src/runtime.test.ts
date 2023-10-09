@@ -268,3 +268,4 @@ describe('UpFault Runtime', () => {
           return h('div', null, props.message);
         },
       };
+      
