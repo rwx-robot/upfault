@@ -248,3 +248,4 @@ describe('UpFault Runtime', () => {
     });
   });
 
+  describe('Component', () => {
