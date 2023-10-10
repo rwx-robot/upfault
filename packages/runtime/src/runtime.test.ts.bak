@@ -30,3 +30,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should create element with children array', () => {
+      const vnode = h('ul', null, [
