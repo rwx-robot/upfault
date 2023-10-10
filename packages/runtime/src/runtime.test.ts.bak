@@ -22,3 +22,4 @@ describe('UpFault Runtime', () => {
     it('should create element VNode', () => {
       const vnode = h('div', { id: 'test' }, 'hello');
       
+      expect(vnode.type).toBe('div');
