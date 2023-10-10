@@ -2,3 +2,4 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { h, Fragment, Text, Comment } from './h';
 import { createRenderer, defaultRendererOptions } from './renderer';
 import { onMounted, onUnmounted, getCurrentInstance } from './lifecycle';
+import { VNodeType } from '@upfault/shared';
