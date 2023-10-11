@@ -56,3 +56,4 @@ describe('UpFault Runtime', () => {
       expect(vnode.type).toBe(Text);
       expect(vnode.children).toBe('hello world');
       expect(vnode.vnodeType).toBe(VNodeType.TEXT);
+    });
