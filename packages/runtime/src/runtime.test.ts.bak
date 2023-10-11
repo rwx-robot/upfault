@@ -77,3 +77,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should normalize style', () => {
+      const vnode = h('div', { style: 'color: red' });
