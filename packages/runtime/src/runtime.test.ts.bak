@@ -59,3 +59,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should create Comment node', () => {
+      const vnode = Comment('comment');
