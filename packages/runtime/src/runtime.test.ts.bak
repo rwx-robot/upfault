@@ -80,3 +80,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('div', { style: 'color: red' });
       expect(vnode.props.style).toBe('color: red');
       
+      const vnode2 = h('div', { style: { color: 'red', fontSize: 14 } });
