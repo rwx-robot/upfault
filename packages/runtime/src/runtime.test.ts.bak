@@ -116,3 +116,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should update text content', () => {
+      const vnode1 = h('div', null, 'hello');
