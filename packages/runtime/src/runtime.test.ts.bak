@@ -123,3 +123,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode2, container);
       
       expect(container.textContent).toBe('world');
+    });
