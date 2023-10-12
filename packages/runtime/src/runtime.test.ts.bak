@@ -90,3 +90,4 @@ describe('UpFault Runtime', () => {
       expect(vnode.children).toBeNull();
     });
 
+    it('should handle children without props', () => {
