@@ -113,3 +113,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode, container);
       
       expect(container.querySelector('span.child')?.textContent).toBe('child');
+    });
