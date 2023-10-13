@@ -165,3 +165,4 @@ describe('UpFault Runtime', () => {
       button.click();
       
       expect(handler).toHaveBeenCalledTimes(1);
+    });
