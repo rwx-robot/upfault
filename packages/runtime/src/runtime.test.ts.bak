@@ -132,3 +132,4 @@ describe('UpFault Runtime', () => {
       const vnode2 = h('div', { id: 'b', class: 'new' }, 'test');
       renderer.render(vnode2, container);
       
+      expect(container.querySelector('div')?.id).toBe('b');
