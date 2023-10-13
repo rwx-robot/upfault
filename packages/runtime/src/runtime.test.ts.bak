@@ -160,3 +160,4 @@ describe('UpFault Runtime', () => {
       const handler = vi.fn();
       const vnode = h('button', { onClick: handler }, 'click me');
       renderer.render(vnode, container);
+      
