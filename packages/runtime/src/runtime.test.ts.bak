@@ -166,3 +166,4 @@ describe('UpFault Runtime', () => {
       
       expect(handler).toHaveBeenCalledTimes(1);
     });
+
