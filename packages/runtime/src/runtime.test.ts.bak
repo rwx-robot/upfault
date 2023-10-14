@@ -201,3 +201,4 @@ describe('UpFault Runtime', () => {
           onMounted(mounted);
           return h('div', null, 'test');
         },
+      };
