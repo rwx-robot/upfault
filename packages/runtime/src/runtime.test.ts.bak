@@ -197,3 +197,4 @@ describe('UpFault Runtime', () => {
       const mounted = vi.fn();
       
       const Comp = {
+        render() {
