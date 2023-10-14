@@ -193,3 +193,4 @@ describe('UpFault Runtime', () => {
   });
 
   describe('Lifecycle', () => {
+    it('should call onMounted', async () => {
