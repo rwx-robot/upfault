@@ -202,3 +202,4 @@ describe('UpFault Runtime', () => {
           return h('div', null, 'test');
         },
       };
+      
