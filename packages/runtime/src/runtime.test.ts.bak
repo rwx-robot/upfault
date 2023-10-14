@@ -198,3 +198,4 @@ describe('UpFault Runtime', () => {
       
       const Comp = {
         render() {
+          onMounted(mounted);
