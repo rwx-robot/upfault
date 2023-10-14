@@ -176,3 +176,4 @@ describe('UpFault Runtime', () => {
       
       const spans = container.querySelectorAll('span');
       expect(spans.length).toBe(2);
+      expect(spans[0].textContent).toBe('a');
