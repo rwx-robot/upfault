@@ -210,3 +210,4 @@ describe('UpFault Runtime', () => {
       await vi.waitFor(() => expect(mounted).toHaveBeenCalledTimes(1));
     });
 
+    it('should call onUnmounted when unmounting', async () => {
