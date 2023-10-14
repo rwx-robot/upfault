@@ -188,3 +188,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode, container);
       
       expect(container.textContent).toContain('text');
+      // Comment nodes don't appear in textContent
