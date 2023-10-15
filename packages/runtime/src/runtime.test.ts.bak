@@ -234,3 +234,4 @@ describe('UpFault Runtime', () => {
       let capturedInstance: any = null;
       
       const Comp = {
+        render() {
