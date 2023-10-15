@@ -217,3 +217,4 @@ describe('UpFault Runtime', () => {
         render() {
           onUnmounted(unmounted);
           return h('div', null, 'test');
+        },
