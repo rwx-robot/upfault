@@ -241,3 +241,4 @@ describe('UpFault Runtime', () => {
       };
       
       const vnode = h(Comp);
+      renderer.render(vnode, container);
