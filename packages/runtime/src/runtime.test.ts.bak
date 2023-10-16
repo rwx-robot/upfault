@@ -261,3 +261,5 @@ describe('UpFault Runtime', () => {
       
       expect(container.querySelector('.comp')?.textContent).toBe('component');
     });
+
+    it('should handle component props', () => {
