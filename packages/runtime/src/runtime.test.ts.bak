@@ -255,3 +255,4 @@ describe('UpFault Runtime', () => {
           return h('div', { class: 'comp' }, 'component');
         },
       };
+      
