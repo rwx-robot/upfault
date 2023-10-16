@@ -272,3 +272,4 @@ describe('UpFault Runtime', () => {
       const vnode = h(Comp, { message: 'hello props' });
       renderer.render(vnode, container);
       
+      expect(container.textContent).toBe('hello props');
