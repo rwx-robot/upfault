@@ -274,3 +274,4 @@ describe('UpFault Runtime', () => {
       
       expect(container.textContent).toBe('hello props');
     });
+  });
