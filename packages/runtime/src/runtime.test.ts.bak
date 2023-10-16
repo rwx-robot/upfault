@@ -259,3 +259,4 @@ describe('UpFault Runtime', () => {
       const vnode = h(Comp);
       renderer.render(vnode, container);
       
+      expect(container.querySelector('.comp')?.textContent).toBe('component');
