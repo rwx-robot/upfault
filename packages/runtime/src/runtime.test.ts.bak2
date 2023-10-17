@@ -35,3 +35,4 @@ describe('UpFault Runtime', () => {
         h('li', null, 'item 2'),
       ]);
       
+      expect(vnode.type).toBe('ul');
