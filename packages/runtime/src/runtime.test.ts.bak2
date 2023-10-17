@@ -34,3 +34,4 @@ describe('UpFault Runtime', () => {
         h('li', null, 'item 1'),
         h('li', null, 'item 2'),
       ]);
+      
