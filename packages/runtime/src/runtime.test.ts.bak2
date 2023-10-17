@@ -21,3 +21,4 @@ describe('UpFault Runtime', () => {
   describe('h() - VNode Creation', () => {
     it('should create element VNode', () => {
       const vnode = h('div', { id: 'test' }, 'hello');
+      
