@@ -51,3 +51,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should create Text node', () => {
+      const vnode = Text('hello world');
