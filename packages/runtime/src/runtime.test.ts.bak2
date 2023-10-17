@@ -27,3 +27,4 @@ describe('UpFault Runtime', () => {
       // children is now a Text VNode object
       expect(vnode.children).toBeInstanceOf(Object);
       expect(vnode.vnodeType).toBe(VNodeType.ELEMENT);
+    });
