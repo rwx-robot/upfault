@@ -19,3 +19,4 @@ describe('UpFault Runtime', () => {
   });
 
   describe('h() - VNode Creation', () => {
+    it('should create element VNode', () => {
