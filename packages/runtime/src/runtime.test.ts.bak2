@@ -36,3 +36,4 @@ describe('UpFault Runtime', () => {
       ]);
       
       expect(vnode.type).toBe('ul');
+      expect(Array.isArray(vnode.children)).toBe(true);
