@@ -87,3 +87,4 @@ describe('UpFault Runtime', () => {
     it('should handle props without children', () => {
       const vnode = h('div', { id: 'test' });
       expect(vnode.props.id).toBe('test');
+      expect(vnode.children).toBeNull();
