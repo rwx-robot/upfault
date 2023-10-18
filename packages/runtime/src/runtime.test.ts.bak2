@@ -69,3 +69,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('div', { class: 'a b c' });
       expect(vnode.props.class).toBe('a b c');
       
+      const vnode2 = h('div', { class: ['a', 'b', 'c'] });
