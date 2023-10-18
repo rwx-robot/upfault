@@ -94,3 +94,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('div', 'hello');
       // children is now a Text VNode
       expect(vnode.children).toBeInstanceOf(Object);
+      expect(vnode.props).toEqual({});
