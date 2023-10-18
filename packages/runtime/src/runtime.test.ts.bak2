@@ -89,3 +89,4 @@ describe('UpFault Runtime', () => {
       expect(vnode.props.id).toBe('test');
       expect(vnode.children).toBeNull();
     });
+
