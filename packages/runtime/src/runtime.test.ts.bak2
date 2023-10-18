@@ -67,3 +67,4 @@ describe('UpFault Runtime', () => {
 
     it('should normalize class', () => {
       const vnode = h('div', { class: 'a b c' });
+      expect(vnode.props.class).toBe('a b c');
