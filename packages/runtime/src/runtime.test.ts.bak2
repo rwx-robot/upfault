@@ -122,3 +122,4 @@ describe('UpFault Runtime', () => {
       const vnode2 = h('div', null, 'world');
       renderer.render(vnode2, container);
       
+      expect(container.textContent).toBe('world');
