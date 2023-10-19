@@ -100,3 +100,4 @@ describe('UpFault Runtime', () => {
 
   describe('Renderer', () => {
     it('should mount element', () => {
+      const vnode = h('div', { id: 'test' }, 'hello');
