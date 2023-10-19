@@ -110,3 +110,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('div', null, [
         h('span', { class: 'child' }, 'child'),
       ]);
+      renderer.render(vnode, container);
