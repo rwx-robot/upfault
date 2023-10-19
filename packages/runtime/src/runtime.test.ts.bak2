@@ -114,3 +114,4 @@ describe('UpFault Runtime', () => {
       
       expect(container.querySelector('span.child')?.textContent).toBe('child');
     });
+
