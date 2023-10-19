@@ -105,3 +105,5 @@ describe('UpFault Runtime', () => {
       
       expect(container.innerHTML).toBe('<div id="test">hello</div>');
     });
+
+    it('should mount nested elements', () => {
