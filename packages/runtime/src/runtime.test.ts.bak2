@@ -145,3 +145,4 @@ describe('UpFault Runtime', () => {
       
       expect(container.querySelector('div')?.id).toBe('b');
       expect(container.querySelector('div')?.className).toBe('');
+    });
