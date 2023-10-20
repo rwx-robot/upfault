@@ -152,3 +152,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode, container);
       expect(container.innerHTML).toBe('<div>hello</div>');
       
+      renderer.render(null, container);
