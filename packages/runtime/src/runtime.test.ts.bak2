@@ -166,3 +166,5 @@ describe('UpFault Runtime', () => {
       
       expect(handler).toHaveBeenCalledTimes(1);
     });
+
+    it('should handle Fragment', () => {
