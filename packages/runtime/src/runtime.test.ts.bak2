@@ -163,3 +163,4 @@ describe('UpFault Runtime', () => {
       
       const button = container.querySelector('button')!;
       button.click();
+      
