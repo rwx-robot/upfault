@@ -155,3 +155,5 @@ describe('UpFault Runtime', () => {
       renderer.render(null, container);
       expect(container.innerHTML).toBe('');
     });
+
+    it('should handle events', () => {
