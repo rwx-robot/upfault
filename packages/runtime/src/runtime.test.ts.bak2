@@ -184,3 +184,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('div', null, [
         h(Comment, null, 'comment'),
         h('span', null, 'text'),
+      ]);
