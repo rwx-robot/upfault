@@ -206,3 +206,4 @@ describe('UpFault Runtime', () => {
       const vnode = h(Comp);
       renderer.render(vnode, container);
       
+      // Wait for microtasks (onMounted is called after mount)
