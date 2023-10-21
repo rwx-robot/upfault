@@ -208,3 +208,4 @@ describe('UpFault Runtime', () => {
       
       // Wait for microtasks (onMounted is called after mount)
       await vi.waitFor(() => expect(mounted).toHaveBeenCalledTimes(1));
+    });
