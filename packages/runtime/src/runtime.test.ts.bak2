@@ -260,3 +260,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode, container);
       
       expect(container.querySelector('.comp')?.textContent).toBe('component');
+    });
