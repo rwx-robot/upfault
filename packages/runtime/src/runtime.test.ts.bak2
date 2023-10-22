@@ -267,3 +267,4 @@ describe('UpFault Runtime', () => {
         render(props: any) {
           return h('div', null, props.message);
         },
+      };
