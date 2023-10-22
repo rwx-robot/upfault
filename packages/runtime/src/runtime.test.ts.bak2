@@ -229,3 +229,4 @@ describe('UpFault Runtime', () => {
       
       await vi.waitFor(() => expect(unmounted).toHaveBeenCalledTimes(1));
     });
+
