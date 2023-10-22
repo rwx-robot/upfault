@@ -266,3 +266,4 @@ describe('UpFault Runtime', () => {
       const Comp = {
         render(props: any) {
           return h('div', null, props.message);
+        },
