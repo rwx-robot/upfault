@@ -18,3 +18,4 @@ describe('UpFault Runtime', () => {
     document.body.removeChild(container);
   });
 
+  describe('h() - VNode Creation', () => {
