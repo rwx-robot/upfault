@@ -14,3 +14,4 @@ describe('UpFault Runtime', () => {
     renderer = createRenderer(defaultRendererOptions);
   });
 
+  afterEach(() => {
