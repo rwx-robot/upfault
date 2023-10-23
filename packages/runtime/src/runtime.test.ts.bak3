@@ -10,3 +10,4 @@ describe('UpFault Runtime', () => {
 
   beforeEach(() => {
     container = document.createElement('div');
+    document.body.appendChild(container);
