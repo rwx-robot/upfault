@@ -15,3 +15,4 @@ describe('UpFault Runtime', () => {
   });
 
   afterEach(() => {
+    document.body.removeChild(container);
