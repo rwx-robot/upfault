@@ -26,3 +26,4 @@ describe('UpFault Runtime', () => {
       expect(vnode.props.id).toBe('test');
       // children is now a Text VNode object
       expect(vnode.children).toBeInstanceOf(Object);
+      expect(vnode.vnodeType).toBe(VNodeType.ELEMENT);
