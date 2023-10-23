@@ -23,3 +23,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('div', { id: 'test' }, 'hello');
       
       expect(vnode.type).toBe('div');
+      expect(vnode.props.id).toBe('test');
