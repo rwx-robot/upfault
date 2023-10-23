@@ -13,3 +13,4 @@ describe('UpFault Runtime', () => {
     document.body.appendChild(container);
     renderer = createRenderer(defaultRendererOptions);
   });
+
