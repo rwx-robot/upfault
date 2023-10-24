@@ -58,3 +58,4 @@ describe('UpFault Runtime', () => {
       expect(vnode.vnodeType).toBe(VNodeType.TEXT);
     });
 
+    it('should create Comment node', () => {
