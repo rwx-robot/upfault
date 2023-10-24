@@ -65,3 +65,4 @@ describe('UpFault Runtime', () => {
       expect(vnode.vnodeType).toBe(VNodeType.COMMENT);
     });
 
+    it('should normalize class', () => {
