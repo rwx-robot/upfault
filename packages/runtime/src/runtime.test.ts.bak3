@@ -40,3 +40,4 @@ describe('UpFault Runtime', () => {
       expect((vnode.children as any[]).length).toBe(2);
     });
 
+    it('should create Fragment', () => {
