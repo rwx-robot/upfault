@@ -33,3 +33,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('ul', null, [
         h('li', null, 'item 1'),
         h('li', null, 'item 2'),
+      ]);
