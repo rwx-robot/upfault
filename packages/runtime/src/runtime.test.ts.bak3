@@ -102,3 +102,4 @@ describe('UpFault Runtime', () => {
     it('should mount element', () => {
       const vnode = h('div', { id: 'test' }, 'hello');
       renderer.render(vnode, container);
+      
