@@ -78,3 +78,4 @@ describe('UpFault Runtime', () => {
 
     it('should normalize style', () => {
       const vnode = h('div', { style: 'color: red' });
+      expect(vnode.props.style).toBe('color: red');
