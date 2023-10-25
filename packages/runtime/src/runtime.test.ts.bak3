@@ -88,3 +88,4 @@ describe('UpFault Runtime', () => {
       const vnode = h('div', { id: 'test' });
       expect(vnode.props.id).toBe('test');
       expect(vnode.children).toBeNull();
+    });
