@@ -99,3 +99,4 @@ describe('UpFault Runtime', () => {
   });
 
   describe('Renderer', () => {
+    it('should mount element', () => {
