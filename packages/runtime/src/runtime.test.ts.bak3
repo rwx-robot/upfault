@@ -96,3 +96,4 @@ describe('UpFault Runtime', () => {
       expect(vnode.children).toBeInstanceOf(Object);
       expect(vnode.props).toEqual({});
     });
+  });
