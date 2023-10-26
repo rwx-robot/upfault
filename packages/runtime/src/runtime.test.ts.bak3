@@ -139,3 +139,4 @@ describe('UpFault Runtime', () => {
     it('should remove old props', () => {
       const vnode1 = h('div', { id: 'a', class: 'old' }, 'test');
       renderer.render(vnode1, container);
+      
