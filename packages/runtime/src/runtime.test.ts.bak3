@@ -144,3 +144,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode2, container);
       
       expect(container.querySelector('div')?.id).toBe('b');
+      expect(container.querySelector('div')?.className).toBe('');
