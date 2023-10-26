@@ -124,3 +124,5 @@ describe('UpFault Runtime', () => {
       
       expect(container.textContent).toBe('world');
     });
+
+    it('should update props', () => {
