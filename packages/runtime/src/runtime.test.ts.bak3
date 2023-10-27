@@ -191,3 +191,5 @@ describe('UpFault Runtime', () => {
       // Comment nodes don't appear in textContent
     });
   });
+
+  describe('Lifecycle', () => {
