@@ -164,3 +164,4 @@ describe('UpFault Runtime', () => {
       const button = container.querySelector('button')!;
       button.click();
       
+      expect(handler).toHaveBeenCalledTimes(1);
