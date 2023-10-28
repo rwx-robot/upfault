@@ -200,3 +200,4 @@ describe('UpFault Runtime', () => {
         render() {
           onMounted(mounted);
           return h('div', null, 'test');
+        },
