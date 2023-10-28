@@ -225,3 +225,4 @@ describe('UpFault Runtime', () => {
       
       await vi.waitFor(() => expect(getCurrentInstance()).not.toBeNull());
       
+      renderer.render(null, container);
