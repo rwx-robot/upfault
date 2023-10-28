@@ -203,3 +203,4 @@ describe('UpFault Runtime', () => {
         },
       };
       
+      const vnode = h(Comp);
