@@ -196,3 +196,4 @@ describe('UpFault Runtime', () => {
     it('should call onMounted', async () => {
       const mounted = vi.fn();
       
+      const Comp = {
