@@ -231,3 +231,4 @@ describe('UpFault Runtime', () => {
     });
 
     it('should track current instance', () => {
+      let capturedInstance: any = null;
