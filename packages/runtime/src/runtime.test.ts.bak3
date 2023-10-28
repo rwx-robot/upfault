@@ -223,3 +223,4 @@ describe('UpFault Runtime', () => {
       const vnode = h(Comp);
       renderer.render(vnode, container);
       
+      await vi.waitFor(() => expect(getCurrentInstance()).not.toBeNull());
