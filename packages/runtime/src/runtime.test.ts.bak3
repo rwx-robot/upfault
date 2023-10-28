@@ -199,3 +199,4 @@ describe('UpFault Runtime', () => {
       const Comp = {
         render() {
           onMounted(mounted);
+          return h('div', null, 'test');
