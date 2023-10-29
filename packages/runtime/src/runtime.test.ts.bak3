@@ -246,3 +246,4 @@ describe('UpFault Runtime', () => {
       expect(capturedInstance).not.toBeNull();
       expect(capturedInstance?.isMounted).toBe(true);
     });
+  });
