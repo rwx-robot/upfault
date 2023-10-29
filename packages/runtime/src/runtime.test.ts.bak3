@@ -244,3 +244,4 @@ describe('UpFault Runtime', () => {
       renderer.render(vnode, container);
       
       expect(capturedInstance).not.toBeNull();
+      expect(capturedInstance?.isMounted).toBe(true);
