@@ -265,3 +265,4 @@ describe('UpFault Runtime', () => {
     it('should handle component props', () => {
       const Comp = {
         render(props: any) {
+          return h('div', null, props.message);
