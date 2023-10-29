@@ -238,3 +238,4 @@ describe('UpFault Runtime', () => {
           capturedInstance = getCurrentInstance();
           return h('div', null, 'test');
         },
+      };
