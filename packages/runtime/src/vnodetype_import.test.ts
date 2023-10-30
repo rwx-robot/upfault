@@ -7,3 +7,4 @@ describe('VNodeType import test', () => {
     console.log('ELEMENT:', VNodeType.ELEMENT);
     expect(VNodeType).toBeDefined();
     expect(VNodeType.ELEMENT).toBe(2);
+  });
