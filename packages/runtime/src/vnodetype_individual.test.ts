@@ -5,3 +5,4 @@ import {
   VNodeType_COMMENT,
   VNodeType_FRAGMENT,
   VNodeType_COMPONENT,
+} from '../../shared/src/diff';
