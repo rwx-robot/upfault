@@ -6,3 +6,4 @@ import {
   VNodeType_FRAGMENT,
   VNodeType_COMPONENT,
 } from '../../shared/src/diff';
+
