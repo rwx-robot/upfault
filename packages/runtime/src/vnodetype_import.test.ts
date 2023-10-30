@@ -3,3 +3,4 @@ import { VNodeType } from '../../shared/src/diff';
 
 describe('VNodeType import test', () => {
   it('should import VNodeType', () => {
+    console.log('VNodeType:', VNodeType);
