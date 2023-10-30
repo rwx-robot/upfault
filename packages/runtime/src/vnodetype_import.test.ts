@@ -5,3 +5,4 @@ describe('VNodeType import test', () => {
   it('should import VNodeType', () => {
     console.log('VNodeType:', VNodeType);
     console.log('ELEMENT:', VNodeType.ELEMENT);
+    expect(VNodeType).toBeDefined();
