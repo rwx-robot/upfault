@@ -12,3 +12,4 @@ describe('VNodeType individual imports test', () => {
     console.log('VNodeType_ELEMENT:', VNodeType_ELEMENT);
     console.log('VNodeType_TEXT:', VNodeType_TEXT);
     expect(VNodeType_ELEMENT).toBe(2);
+    expect(VNodeType_TEXT).toBe(1);
