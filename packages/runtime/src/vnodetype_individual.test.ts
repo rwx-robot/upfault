@@ -4,3 +4,4 @@ import {
   VNodeType_TEXT,
   VNodeType_COMMENT,
   VNodeType_FRAGMENT,
+  VNodeType_COMPONENT,
