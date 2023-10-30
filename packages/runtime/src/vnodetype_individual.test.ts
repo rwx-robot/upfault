@@ -9,3 +9,4 @@ import {
 
 describe('VNodeType individual imports test', () => {
   it('should import individual VNodeType constants', () => {
+    console.log('VNodeType_ELEMENT:', VNodeType_ELEMENT);
