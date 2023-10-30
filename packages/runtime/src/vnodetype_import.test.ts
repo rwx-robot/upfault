@@ -8,3 +8,4 @@ describe('VNodeType import test', () => {
     expect(VNodeType).toBeDefined();
     expect(VNodeType.ELEMENT).toBe(2);
   });
+});
