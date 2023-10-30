@@ -7,3 +7,4 @@ import {
   VNodeType_COMPONENT,
 } from '../../shared/src/diff';
 
+describe('VNodeType individual imports test', () => {
