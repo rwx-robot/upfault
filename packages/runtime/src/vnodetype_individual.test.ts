@@ -14,3 +14,4 @@ describe('VNodeType individual imports test', () => {
     expect(VNodeType_ELEMENT).toBe(2);
     expect(VNodeType_TEXT).toBe(1);
     expect(VNodeType_COMMENT).toBe(6);
+    expect(VNodeType_FRAGMENT).toBe(5);
