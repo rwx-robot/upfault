@@ -8,3 +8,4 @@ import {
 } from '../../shared/src/diff';
 
 describe('VNodeType individual imports test', () => {
+  it('should import individual VNodeType constants', () => {
