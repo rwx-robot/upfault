@@ -13,3 +13,4 @@ export default defineConfig({
       external: ['@upfault/*'],
       output: {
         globals: {},
+      },
