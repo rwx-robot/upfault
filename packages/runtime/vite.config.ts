@@ -8,3 +8,4 @@ export default defineConfig({
       name: 'UpFaultRuntime',
       fileName: 'index',
       formats: ['es'],
+    },
