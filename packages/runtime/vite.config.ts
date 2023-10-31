@@ -14,3 +14,4 @@ export default defineConfig({
       output: {
         globals: {},
       },
+    },
