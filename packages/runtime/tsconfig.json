@@ -14,3 +14,4 @@
     "noImplicitOverride": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
+    "esModuleInterop": true,
