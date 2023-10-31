@@ -19,3 +19,4 @@
     "resolveJsonModule": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@upfault/runtime"
+  },
