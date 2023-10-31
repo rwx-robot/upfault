@@ -7,3 +7,4 @@ export default defineConfig({
       entry: 'src/index.ts',
       name: 'UpFaultRuntime',
       fileName: 'index',
+      formats: ['es'],
