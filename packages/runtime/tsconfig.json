@@ -20,3 +20,4 @@
     "jsx": "react-jsx",
     "jsxImportSource": "@upfault/runtime"
   },
+  "include": ["src/**/*"],
