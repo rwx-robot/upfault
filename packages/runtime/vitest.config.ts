@@ -7,3 +7,4 @@ export default defineConfig({
     include: ['src/runtime.test.ts'],
     globals: true,
     pool: 'threads',
+    poolOptions: {
