@@ -16,3 +16,4 @@ export default defineConfig({
     deps: {
       optimizer: {
         web: {
+          include: ['@upfault/runtime'],
