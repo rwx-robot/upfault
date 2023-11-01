@@ -11,3 +11,4 @@ export default defineConfig({
       threads: { singleThread: true },
     },
     transformMode: {
+      web: ['**/*.{ts,tsx}'],
