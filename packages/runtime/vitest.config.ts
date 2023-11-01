@@ -14,3 +14,4 @@ export default defineConfig({
       web: ['**/*.{ts,tsx}'],
     },
     deps: {
+      optimizer: {
