@@ -18,3 +18,4 @@ export default defineConfig({
         web: {
           include: ['@upfault/runtime'],
         },
+      },
