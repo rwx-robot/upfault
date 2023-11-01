@@ -4,3 +4,4 @@ import path from 'path';
 export default defineConfig({
   test: {
     environment: 'jsdom',
+    include: ['src/runtime.test.ts'],
