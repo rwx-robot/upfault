@@ -6,3 +6,4 @@ export default defineConfig({
     environment: 'jsdom',
     include: ['src/runtime.test.ts'],
     globals: true,
+    pool: 'threads',
