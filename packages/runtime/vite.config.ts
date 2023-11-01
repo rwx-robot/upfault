@@ -21,3 +21,4 @@ export default defineConfig({
       '@upfault/shared': path.resolve(__dirname, '../../packages/shared/src'),
       '@upfault/reactivity': path.resolve(__dirname, '../../packages/reactivity/src'),
       '@upfault/diff': path.resolve(__dirname, '../../packages/diff/src'),
+      '@upfault/scheduler': path.resolve(__dirname, '../../packages/scheduler/src'),
