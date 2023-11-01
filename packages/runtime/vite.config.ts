@@ -18,3 +18,4 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      '@upfault/shared': path.resolve(__dirname, '../../packages/shared/src'),
