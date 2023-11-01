@@ -8,3 +8,4 @@ export default defineConfig({
     globals: true,
     pool: 'threads',
     poolOptions: {
+      threads: { singleThread: true },
