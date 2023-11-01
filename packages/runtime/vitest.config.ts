@@ -25,3 +25,4 @@ export default defineConfig({
     alias: {
       '@upfault/shared': path.resolve(__dirname, '../../shared/src'),
       '@upfault/shared/diff': path.resolve(__dirname, '../../shared/src/diff.ts'),
+      '@upfault/reactivity': path.resolve(__dirname, '../../reactivity/src'),
