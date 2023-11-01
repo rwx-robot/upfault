@@ -12,3 +12,4 @@ export default defineConfig({
     },
     transformMode: {
       web: ['**/*.{ts,tsx}'],
+    },
