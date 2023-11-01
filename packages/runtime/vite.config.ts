@@ -22,3 +22,4 @@ export default defineConfig({
       '@upfault/reactivity': path.resolve(__dirname, '../../packages/reactivity/src'),
       '@upfault/diff': path.resolve(__dirname, '../../packages/diff/src'),
       '@upfault/scheduler': path.resolve(__dirname, '../../packages/scheduler/src'),
+    },
