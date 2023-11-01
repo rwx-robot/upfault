@@ -24,3 +24,4 @@ export default defineConfig({
       '@upfault/scheduler': path.resolve(__dirname, '../../packages/scheduler/src'),
     },
   },
+});
