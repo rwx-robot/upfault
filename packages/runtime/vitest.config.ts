@@ -17,3 +17,4 @@ export default defineConfig({
       optimizer: {
         web: {
           include: ['@upfault/runtime'],
+        },
