@@ -34,3 +34,4 @@ export default defineConfig({
   esbuild: {
     target: 'esnext',
     format: 'esm',
+  },
