@@ -2,3 +2,4 @@
   "name": "@upfault/scheduler",
   "version": "0.2.0",
   "description": "UpFault 调度器核心",
+  "main": "dist/index.js",
