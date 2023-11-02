@@ -31,3 +31,4 @@ export default defineConfig({
       '@upfault/runtime': path.resolve(__dirname, './dist'),
     },
   },
+  esbuild: {
