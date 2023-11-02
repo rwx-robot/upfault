@@ -35,3 +35,4 @@ export default defineConfig({
     target: 'esnext',
     format: 'esm',
   },
+  server: {
