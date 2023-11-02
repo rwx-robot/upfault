@@ -4,3 +4,4 @@
   "description": "UpFault 调度器核心",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
