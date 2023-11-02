@@ -30,3 +30,4 @@ export default defineConfig({
       '@upfault/scheduler': path.resolve(__dirname, '../../scheduler/src'),
       '@upfault/runtime': path.resolve(__dirname, './dist'),
     },
+  },
