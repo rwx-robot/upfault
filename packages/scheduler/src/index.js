@@ -13,3 +13,4 @@ createScheduler, Scheduler, getDefaultScheduler, scheduleCallback, cancelCallbac
 // Types (re-export from shared)
 export { Priority, DEFAULT_SCHEDULER_OPTIONS } from '@upfault/shared';
 // 版本信息
+export const VERSION = '0.2.0';
