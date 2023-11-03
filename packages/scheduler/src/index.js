@@ -11,3 +11,4 @@ export {
 // Work Loop
 createScheduler, Scheduler, getDefaultScheduler, scheduleCallback, cancelCallback, flushSync, getSchedulerStats, } from './work-loop';
 // Types (re-export from shared)
+export { Priority, DEFAULT_SCHEDULER_OPTIONS } from '@upfault/shared';
