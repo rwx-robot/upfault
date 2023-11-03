@@ -15,3 +15,4 @@ export { Priority, DEFAULT_SCHEDULER_OPTIONS } from '@upfault/shared';
 // 版本信息
 export const VERSION = '0.2.0';
 export const PACKAGE_NAME = '@upfault/scheduler';
+//# sourceMappingURL=index.js.map
