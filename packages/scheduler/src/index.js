@@ -9,3 +9,4 @@ export {
 PriorityQueue, createPriorityQueue, generateTaskId, createSchedulerTask, } from './queue';
 export { 
 // Work Loop
+createScheduler, Scheduler, getDefaultScheduler, scheduleCallback, cancelCallback, flushSync, getSchedulerStats, } from './work-loop';
