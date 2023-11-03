@@ -10,3 +10,4 @@ PriorityQueue, createPriorityQueue, generateTaskId, createSchedulerTask, } from 
 export { 
 // Work Loop
 createScheduler, Scheduler, getDefaultScheduler, scheduleCallback, cancelCallback, flushSync, getSchedulerStats, } from './work-loop';
+// Types (re-export from shared)
