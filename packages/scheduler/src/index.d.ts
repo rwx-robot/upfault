@@ -5,3 +5,4 @@
  * 版本: 0.2.0
  */
 export { PriorityQueue, createPriorityQueue, generateTaskId, createSchedulerTask, } from './queue';
+export { createScheduler, Scheduler, getDefaultScheduler, scheduleCallback, cancelCallback, flushSync, getSchedulerStats, } from './work-loop';
