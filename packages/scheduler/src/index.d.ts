@@ -9,3 +9,4 @@ export { createScheduler, Scheduler, getDefaultScheduler, scheduleCallback, canc
 export { Priority, SchedulerTask, SchedulerOptions, DEFAULT_SCHEDULER_OPTIONS, SchedulerStats } from '@upfault/shared';
 export declare const VERSION = "0.2.0";
 export declare const PACKAGE_NAME = "@upfault/scheduler";
+//# sourceMappingURL=index.d.ts.map
