@@ -18,3 +18,4 @@ export {
   createScheduler,
   Scheduler,
   getDefaultScheduler,
+  scheduleCallback,
