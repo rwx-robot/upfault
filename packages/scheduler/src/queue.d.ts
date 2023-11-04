@@ -5,3 +5,4 @@
  * 基于数组实现的最小堆
  */
 import type { SchedulerTask, Priority, TaskQueue } from '@upfault/shared';
+export { SchedulerStats } from '@upfault/shared';
