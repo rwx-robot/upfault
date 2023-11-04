@@ -7,3 +7,4 @@
 
 export {
   // Queue
+  PriorityQueue,
