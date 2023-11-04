@@ -27,3 +27,4 @@ export {
 // Types (re-export from shared)
 export type { Priority, SchedulerTask, SchedulerOptions, DEFAULT_SCHEDULER_OPTIONS, SchedulerStats } from '@upfault/shared';
 
+// 版本信息
