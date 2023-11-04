@@ -23,3 +23,5 @@ export {
   flushSync,
   getSchedulerStats,
 } from './work-loop';
+
+// Types (re-export from shared)
