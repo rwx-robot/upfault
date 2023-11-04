@@ -22,3 +22,4 @@ export {
   cancelCallback,
   flushSync,
   getSchedulerStats,
+} from './work-loop';
