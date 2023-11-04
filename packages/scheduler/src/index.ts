@@ -21,3 +21,4 @@ export {
   scheduleCallback,
   cancelCallback,
   flushSync,
+  getSchedulerStats,
