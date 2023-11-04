@@ -10,3 +10,4 @@ export {
   PriorityQueue,
   createPriorityQueue,
   generateTaskId,
+  createSchedulerTask,
