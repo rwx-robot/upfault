@@ -20,3 +20,4 @@ export {
   getDefaultScheduler,
   scheduleCallback,
   cancelCallback,
+  flushSync,
