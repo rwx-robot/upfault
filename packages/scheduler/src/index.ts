@@ -28,3 +28,4 @@ export {
 export type { Priority, SchedulerTask, SchedulerOptions, DEFAULT_SCHEDULER_OPTIONS, SchedulerStats } from '@upfault/shared';
 
 // 版本信息
+export const VERSION = '0.2.0';
