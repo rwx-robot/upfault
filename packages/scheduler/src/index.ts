@@ -29,3 +29,4 @@ export type { Priority, SchedulerTask, SchedulerOptions, DEFAULT_SCHEDULER_OPTIO
 
 // 版本信息
 export const VERSION = '0.2.0';
+export const PACKAGE_NAME = '@upfault/scheduler';
