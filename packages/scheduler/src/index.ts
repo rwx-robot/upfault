@@ -8,3 +8,4 @@
 export {
   // Queue
   PriorityQueue,
+  createPriorityQueue,
