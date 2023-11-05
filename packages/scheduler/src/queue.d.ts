@@ -32,3 +32,4 @@ export declare class PriorityQueue implements TaskQueue {
      */
     peek(): SchedulerTask | null;
     /**
+     * 检查是否有更高优先级任务
