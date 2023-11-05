@@ -12,3 +12,4 @@ export { SchedulerStats } from '@upfault/shared';
  */
 export declare class PriorityQueue implements TaskQueue {
     private heap;
+    private comparator;
