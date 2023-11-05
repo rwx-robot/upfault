@@ -40,3 +40,4 @@ export declare class PriorityQueue implements TaskQueue {
      */
     remove(task: SchedulerTask): boolean;
     /**
+     * 清空队列
