@@ -42,3 +42,4 @@ export declare class PriorityQueue implements TaskQueue {
     /**
      * 清空队列
      */
+    clear(): void;
