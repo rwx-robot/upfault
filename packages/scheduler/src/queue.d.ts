@@ -45,3 +45,4 @@ export declare class PriorityQueue implements TaskQueue {
     clear(): void;
     get size(): number;
     get isEmpty(): boolean;
+    /**
