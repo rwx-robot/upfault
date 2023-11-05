@@ -36,3 +36,4 @@ export declare class PriorityQueue implements TaskQueue {
      */
     hasHigherPriority(priority: Priority): boolean;
     /**
+     * 移除特定任务 - O(n)
