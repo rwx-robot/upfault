@@ -20,3 +20,4 @@ export declare class PriorityQueue implements TaskQueue {
      */
     private defaultCompare;
     /**
+     * 入队 - O(log n)
