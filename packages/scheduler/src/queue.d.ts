@@ -25,3 +25,4 @@ export declare class PriorityQueue implements TaskQueue {
     push(task: SchedulerTask): void;
     /**
      * 出队最高优先级任务 - O(log n)
+     */
