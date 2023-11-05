@@ -15,3 +15,4 @@ export declare class PriorityQueue implements TaskQueue {
     private comparator;
     constructor(comparator?: (a: SchedulerTask, b: SchedulerTask) => number);
     /**
+     * 默认比较函数：优先级数值越小越靠前
