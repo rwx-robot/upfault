@@ -10,3 +10,4 @@ export { SchedulerStats } from '@upfault/shared';
  * 优先队列实现 - 最小堆
  * 数值越小优先级越高 (IMMEDIATE=0 最高)
  */
+export declare class PriorityQueue implements TaskQueue {
