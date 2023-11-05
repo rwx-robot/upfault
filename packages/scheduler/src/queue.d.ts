@@ -47,3 +47,4 @@ export declare class PriorityQueue implements TaskQueue {
     get isEmpty(): boolean;
     /**
      * 获取所有任务 (用于调试/统计)
+     */
