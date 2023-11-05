@@ -28,3 +28,4 @@ export declare class PriorityQueue implements TaskQueue {
      */
     pop(): SchedulerTask | null;
     /**
+     * 查看最高优先级任务 - O(1)
