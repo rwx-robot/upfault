@@ -51,3 +51,4 @@ export declare class PriorityQueue implements TaskQueue {
     toArray(): SchedulerTask[];
     private siftUp;
     private siftDown;
+}
