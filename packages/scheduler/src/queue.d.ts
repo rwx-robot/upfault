@@ -48,3 +48,4 @@ export declare class PriorityQueue implements TaskQueue {
     /**
      * 获取所有任务 (用于调试/统计)
      */
+    toArray(): SchedulerTask[];
