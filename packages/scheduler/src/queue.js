@@ -18,3 +18,4 @@ export class PriorityQueue {
      * 同优先级按过期时间排序，再按 ID 排序保证稳定性
      */
     defaultCompare(a, b) {
+        if (a.priority !== b.priority) {
