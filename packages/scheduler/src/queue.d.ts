@@ -62,3 +62,4 @@ export declare function generateTaskId(): number;
  */
 export declare function createSchedulerTask(callback: () => void, priority?: Priority, // NORMAL
 fibre?: any, data?: any): SchedulerTask;
+//# sourceMappingURL=queue.d.ts.map
