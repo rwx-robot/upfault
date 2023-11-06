@@ -53,3 +53,4 @@ export declare class PriorityQueue implements TaskQueue {
     private siftDown;
 }
 /**
+ * 创建优先队列的工厂函数
