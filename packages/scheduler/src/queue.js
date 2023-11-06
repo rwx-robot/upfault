@@ -14,3 +14,4 @@ export class PriorityQueue {
         this.comparator = comparator || this.defaultCompare;
     }
     /**
+     * 默认比较函数：优先级数值越小越靠前
