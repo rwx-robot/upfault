@@ -9,3 +9,4 @@
  * 数值越小优先级越高 (IMMEDIATE=0 最高)
  */
 export class PriorityQueue {
+    constructor(comparator) {
