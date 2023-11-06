@@ -58,3 +58,4 @@ export declare class PriorityQueue implements TaskQueue {
 export declare function createPriorityQueue(comparator?: (a: SchedulerTask, b: SchedulerTask) => number): PriorityQueue;
 export declare function generateTaskId(): number;
 /**
+ * 创建调度任务的辅助函数
