@@ -52,3 +52,4 @@ export declare class PriorityQueue implements TaskQueue {
     private siftUp;
     private siftDown;
 }
+/**
