@@ -60,3 +60,4 @@ export declare function generateTaskId(): number;
 /**
  * 创建调度任务的辅助函数
  */
+export declare function createSchedulerTask(callback: () => void, priority?: Priority, // NORMAL
