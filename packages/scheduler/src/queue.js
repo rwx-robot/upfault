@@ -19,3 +19,4 @@ export class PriorityQueue {
      */
     defaultCompare(a, b) {
         if (a.priority !== b.priority) {
+            return a.priority - b.priority;
