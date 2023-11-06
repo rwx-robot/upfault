@@ -13,3 +13,4 @@ export class PriorityQueue {
         this.heap = [];
         this.comparator = comparator || this.defaultCompare;
     }
+    /**
