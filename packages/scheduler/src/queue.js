@@ -10,3 +10,4 @@
  */
 export class PriorityQueue {
     constructor(comparator) {
+        this.heap = [];
