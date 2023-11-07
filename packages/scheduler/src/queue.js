@@ -27,3 +27,4 @@ export class PriorityQueue {
         return a.id - b.id;
     }
     /**
+     * 入队 - O(log n)
