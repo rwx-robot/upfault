@@ -54,3 +54,4 @@ export class PriorityQueue {
      */
     peek() {
         return this.heap[0] ?? null;
+    }
