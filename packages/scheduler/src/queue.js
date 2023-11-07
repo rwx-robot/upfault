@@ -53,3 +53,4 @@ export class PriorityQueue {
      * 查看最高优先级任务 - O(1)
      */
     peek() {
+        return this.heap[0] ?? null;
