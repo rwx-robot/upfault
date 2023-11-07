@@ -37,3 +37,4 @@ export class PriorityQueue {
      * 出队最高优先级任务 - O(log n)
      */
     pop() {
+        if (this.heap.length === 0)
