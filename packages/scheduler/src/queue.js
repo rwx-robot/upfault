@@ -56,3 +56,4 @@ export class PriorityQueue {
         return this.heap[0] ?? null;
     }
     /**
+     * 检查是否有更高优先级任务
