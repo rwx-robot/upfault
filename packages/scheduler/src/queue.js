@@ -24,3 +24,4 @@ export class PriorityQueue {
         if (a.expirationTime !== b.expirationTime) {
             return a.expirationTime - b.expirationTime;
         }
+        return a.id - b.id;
