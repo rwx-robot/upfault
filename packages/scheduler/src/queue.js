@@ -44,3 +44,4 @@ export class PriorityQueue {
             return null; // Explicit null check
         const end = this.heap.pop();
         if (this.heap.length > 0) {
+            this.heap[0] = end;
