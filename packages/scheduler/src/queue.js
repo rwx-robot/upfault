@@ -38,3 +38,4 @@ export class PriorityQueue {
      */
     pop() {
         if (this.heap.length === 0)
+            return null;
