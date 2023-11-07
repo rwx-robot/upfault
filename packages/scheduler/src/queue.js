@@ -40,3 +40,4 @@ export class PriorityQueue {
         if (this.heap.length === 0)
             return null;
         const top = this.heap[0];
+        if (!top)
