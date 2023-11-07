@@ -41,3 +41,4 @@ export class PriorityQueue {
             return null;
         const top = this.heap[0];
         if (!top)
+            return null; // Explicit null check
