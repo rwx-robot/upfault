@@ -60,3 +60,4 @@ export class PriorityQueue {
      */
     hasHigherPriority(priority) {
         const top = this.peek();
+        return top !== null && top.priority < priority;
