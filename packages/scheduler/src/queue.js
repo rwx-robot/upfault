@@ -31,3 +31,4 @@ export class PriorityQueue {
      */
     push(task) {
         this.heap.push(task);
+        this.siftUp(this.heap.length - 1);
