@@ -47,3 +47,4 @@ export class PriorityQueue {
             this.heap[0] = end;
             this.siftDown(0);
         }
+        return top;
