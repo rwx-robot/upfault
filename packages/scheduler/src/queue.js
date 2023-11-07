@@ -29,3 +29,4 @@ export class PriorityQueue {
     /**
      * 入队 - O(log n)
      */
+    push(task) {
