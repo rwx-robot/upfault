@@ -48,3 +48,4 @@ export class PriorityQueue {
             this.siftDown(0);
         }
         return top;
+    }
