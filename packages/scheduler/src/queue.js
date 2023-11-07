@@ -39,3 +39,4 @@ export class PriorityQueue {
     pop() {
         if (this.heap.length === 0)
             return null;
+        const top = this.heap[0];
