@@ -96,3 +96,4 @@ export class PriorityQueue {
         return [...this.heap];
     }
     // ===== 堆操作内部方法 =====
+    siftUp(index) {
