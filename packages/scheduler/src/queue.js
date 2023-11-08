@@ -92,3 +92,4 @@ export class PriorityQueue {
     /**
      * 获取所有任务 (用于调试/统计)
      */
+    toArray() {
