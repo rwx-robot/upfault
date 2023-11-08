@@ -72,3 +72,4 @@ export class PriorityQueue {
         const end = this.heap.pop();
         if (index !== this.heap.length) {
             this.heap[index] = end;
+            this.siftDown(index);
