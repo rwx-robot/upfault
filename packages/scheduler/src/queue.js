@@ -82,3 +82,4 @@ export class PriorityQueue {
      */
     clear() {
         this.heap.length = 0;
+    }
