@@ -75,3 +75,4 @@ export class PriorityQueue {
             this.siftDown(index);
             this.siftUp(index);
         }
+        return true;
