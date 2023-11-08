@@ -70,3 +70,4 @@ export class PriorityQueue {
         if (index === -1)
             return false;
         const end = this.heap.pop();
+        if (index !== this.heap.length) {
