@@ -73,3 +73,4 @@ export class PriorityQueue {
         if (index !== this.heap.length) {
             this.heap[index] = end;
             this.siftDown(index);
+            this.siftUp(index);
