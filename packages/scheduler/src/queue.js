@@ -101,3 +101,4 @@ export class PriorityQueue {
             const parentIndex = (index - 1) >> 1;
             if (this.comparator(this.heap[index], this.heap[parentIndex]) >= 0)
                 break;
+            // Use temporary variables to satisfy TypeScript
