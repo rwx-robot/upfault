@@ -78,3 +78,4 @@ export class PriorityQueue {
         return true;
     }
     /**
+     * 清空队列
