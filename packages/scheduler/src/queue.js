@@ -98,3 +98,4 @@ export class PriorityQueue {
     // ===== 堆操作内部方法 =====
     siftUp(index) {
         while (index > 0) {
+            const parentIndex = (index - 1) >> 1;
