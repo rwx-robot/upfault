@@ -86,3 +86,4 @@ export class PriorityQueue {
     get size() {
         return this.heap.length;
     }
+    get isEmpty() {
