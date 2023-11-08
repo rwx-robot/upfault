@@ -97,3 +97,4 @@ export class PriorityQueue {
     }
     // ===== 堆操作内部方法 =====
     siftUp(index) {
+        while (index > 0) {
