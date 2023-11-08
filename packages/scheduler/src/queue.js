@@ -67,3 +67,4 @@ export class PriorityQueue {
      */
     remove(task) {
         const index = this.heap.findIndex(t => t.id === task.id);
+        if (index === -1)
