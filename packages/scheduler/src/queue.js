@@ -94,3 +94,4 @@ export class PriorityQueue {
      */
     toArray() {
         return [...this.heap];
+    }
