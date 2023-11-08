@@ -87,3 +87,4 @@ export class PriorityQueue {
         return this.heap.length;
     }
     get isEmpty() {
+        return this.heap.length === 0;
