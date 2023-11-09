@@ -129,3 +129,4 @@ export class PriorityQueue {
             index = smallest;
         }
     }
+}
