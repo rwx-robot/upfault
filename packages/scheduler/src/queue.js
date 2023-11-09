@@ -112,3 +112,4 @@ export class PriorityQueue {
         const length = this.heap.length;
         while (true) {
             let smallest = index;
+            const leftChild = (index << 1) + 1;
