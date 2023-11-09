@@ -105,3 +105,4 @@ export class PriorityQueue {
             const indexVal = this.heap[index];
             const parentVal = this.heap[parentIndex];
             [this.heap[index], this.heap[parentIndex]] = [parentVal, indexVal];
+            index = parentIndex;
