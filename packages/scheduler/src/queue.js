@@ -128,3 +128,4 @@ export class PriorityQueue {
             [this.heap[index], this.heap[smallest]] = [smallestVal, indexVal];
             index = smallest;
         }
+    }
