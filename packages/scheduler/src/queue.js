@@ -111,3 +111,4 @@ export class PriorityQueue {
     siftDown(index) {
         const length = this.heap.length;
         while (true) {
+            let smallest = index;
