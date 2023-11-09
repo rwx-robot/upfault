@@ -122,3 +122,4 @@ export class PriorityQueue {
             }
             if (smallest === index)
                 break;
+            // Use temporary variables to satisfy TypeScript
