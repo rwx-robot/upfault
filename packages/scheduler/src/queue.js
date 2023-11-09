@@ -126,3 +126,4 @@ export class PriorityQueue {
             const smallestVal = this.heap[smallest];
             const indexVal = this.heap[index];
             [this.heap[index], this.heap[smallest]] = [smallestVal, indexVal];
+            index = smallest;
