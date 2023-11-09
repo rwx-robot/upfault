@@ -113,3 +113,4 @@ export class PriorityQueue {
         while (true) {
             let smallest = index;
             const leftChild = (index << 1) + 1;
+            const rightChild = (index << 1) + 2;
