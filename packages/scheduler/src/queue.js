@@ -103,3 +103,4 @@ export class PriorityQueue {
                 break;
             // Use temporary variables to satisfy TypeScript
             const indexVal = this.heap[index];
+            const parentVal = this.heap[parentIndex];
