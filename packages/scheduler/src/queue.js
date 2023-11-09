@@ -108,3 +108,4 @@ export class PriorityQueue {
             index = parentIndex;
         }
     }
+    siftDown(index) {
