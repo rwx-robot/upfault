@@ -107,3 +107,4 @@ export class PriorityQueue {
             [this.heap[index], this.heap[parentIndex]] = [parentVal, indexVal];
             index = parentIndex;
         }
+    }
