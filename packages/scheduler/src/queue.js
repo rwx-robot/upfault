@@ -109,3 +109,4 @@ export class PriorityQueue {
         }
     }
     siftDown(index) {
+        const length = this.heap.length;
