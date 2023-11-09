@@ -121,3 +121,4 @@ export class PriorityQueue {
                 smallest = rightChild;
             }
             if (smallest === index)
+                break;
