@@ -134,3 +134,4 @@ export class PriorityQueue {
  * 创建优先队列的工厂函数
  */
 export function createPriorityQueue(comparator) {
+    return new PriorityQueue(comparator);
