@@ -119,3 +119,4 @@ export class PriorityQueue {
             }
             if (rightChild < length && this.comparator(this.heap[rightChild], this.heap[smallest]) < 0) {
                 smallest = rightChild;
+            }
