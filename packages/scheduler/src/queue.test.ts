@@ -9,3 +9,4 @@ describe('PriorityQueue', () => {
   });
   
   describe('基础操作', () => {
+    it('应创建空队列', () => {
