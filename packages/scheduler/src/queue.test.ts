@@ -12,3 +12,4 @@ describe('PriorityQueue', () => {
     it('应创建空队列', () => {
       expect(queue.isEmpty).toBe(true);
       expect(queue.size).toBe(0);
+      expect(queue.peek()).toBeNull();
