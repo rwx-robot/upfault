@@ -161,3 +161,4 @@ fibre = null, data = undefined) {
         createdAt: now,
         startedAt: null,
         completedAt: null,
+    };
