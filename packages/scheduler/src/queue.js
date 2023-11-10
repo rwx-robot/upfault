@@ -154,3 +154,4 @@ fibre = null, data = undefined) {
         id: generateTaskId(),
         priority,
         callback,
+        expirationTime,
