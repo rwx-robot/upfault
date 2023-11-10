@@ -144,3 +144,4 @@ export function generateTaskId() {
     return ++taskIdCounter;
 }
 /**
+ * 创建调度任务的辅助函数
