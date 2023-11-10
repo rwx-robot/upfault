@@ -163,3 +163,4 @@ fibre = null, data = undefined) {
         completedAt: null,
     };
 }
+//# sourceMappingURL=queue.js.map
