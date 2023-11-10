@@ -148,3 +148,4 @@ export function generateTaskId() {
  */
 export function createSchedulerTask(callback, priority = 5000, // NORMAL
 fibre = null, data = undefined) {
+    const now = performance.now();
