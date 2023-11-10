@@ -155,3 +155,4 @@ fibre = null, data = undefined) {
         priority,
         callback,
         expirationTime,
+        fibre,
