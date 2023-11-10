@@ -4,3 +4,4 @@ import { PriorityQueue, createPriorityQueue, createSchedulerTask, generateTaskId
 describe('PriorityQueue', () => {
   let queue: PriorityQueue;
   
+  beforeEach(() => {
