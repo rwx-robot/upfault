@@ -157,3 +157,4 @@ fibre = null, data = undefined) {
         expirationTime,
         fibre,
         data,
+        cancelled: false,
