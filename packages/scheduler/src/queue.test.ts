@@ -5,3 +5,4 @@ describe('PriorityQueue', () => {
   let queue: PriorityQueue;
   
   beforeEach(() => {
+    queue = new PriorityQueue();
