@@ -15,3 +15,4 @@ describe('PriorityQueue', () => {
       expect(queue.peek()).toBeNull();
       expect(queue.pop()).toBeNull();
     });
+    
