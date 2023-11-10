@@ -159,3 +159,4 @@ fibre = null, data = undefined) {
         data,
         cancelled: false,
         createdAt: now,
+        startedAt: null,
