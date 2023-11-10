@@ -153,3 +153,4 @@ fibre = null, data = undefined) {
     return {
         id: generateTaskId(),
         priority,
+        callback,
