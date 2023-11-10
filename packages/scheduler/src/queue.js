@@ -142,3 +142,4 @@ export function createPriorityQueue(comparator) {
 let taskIdCounter = 0;
 export function generateTaskId() {
     return ++taskIdCounter;
+}
