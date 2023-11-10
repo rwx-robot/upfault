@@ -151,3 +151,4 @@ fibre = null, data = undefined) {
     const now = performance.now();
     const expirationTime = now + priority;
     return {
+        id: generateTaskId(),
