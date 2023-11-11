@@ -36,3 +36,4 @@ describe('PriorityQueue', () => {
       queue.push(task2);
       queue.push(task3);
       
+      // IMMEDIATE (0) 优先级最高，应先出
