@@ -24,3 +24,4 @@ describe('PriorityQueue', () => {
       queue.push(task2);
       
       expect(queue.size).toBe(2);
+      expect(queue.isEmpty).toBe(false);
