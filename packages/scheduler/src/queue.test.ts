@@ -33,3 +33,4 @@ describe('PriorityQueue', () => {
       const task3 = createSchedulerTask(() => {}, 0);    // IMMEDIATE
       
       queue.push(task1);
+      queue.push(task2);
