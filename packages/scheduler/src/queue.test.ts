@@ -26,3 +26,4 @@ describe('PriorityQueue', () => {
       expect(queue.size).toBe(2);
       expect(queue.isEmpty).toBe(false);
     });
+    
