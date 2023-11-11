@@ -42,3 +42,4 @@ describe('PriorityQueue', () => {
       expect(queue.pop()!.priority).toBe(5000);
     });
     
+    it('同优先级按过期时间排序', () => {
