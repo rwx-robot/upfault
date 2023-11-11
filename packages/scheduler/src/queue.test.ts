@@ -54,3 +54,4 @@ describe('PriorityQueue', () => {
       queue.push(task2);
       
       // 过期时间早的先出
+      expect(queue.pop()!.expirationTime).toBe(now + 500);
