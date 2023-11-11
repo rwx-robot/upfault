@@ -47,3 +47,4 @@ describe('PriorityQueue', () => {
       const task1 = createSchedulerTask(() => {}, 5000);
       task1.expirationTime = now + 1000;
       
+      const task2 = createSchedulerTask(() => {}, 5000);
