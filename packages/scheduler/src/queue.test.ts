@@ -58,3 +58,4 @@ describe('PriorityQueue', () => {
       expect(queue.pop()!.expirationTime).toBe(now + 1000);
     });
     
+    it('同优先级同过期时间按 ID 排序 (稳定性)', () => {
