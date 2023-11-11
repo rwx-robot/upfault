@@ -51,3 +51,4 @@ describe('PriorityQueue', () => {
       task2.expirationTime = now + 500;
       
       queue.push(task1);
+      queue.push(task2);
