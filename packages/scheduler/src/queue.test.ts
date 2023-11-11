@@ -20,3 +20,4 @@ describe('PriorityQueue', () => {
       const task1 = createSchedulerTask(() => {}, 5000); // NORMAL
       const task2 = createSchedulerTask(() => {}, 250);  // USER_BLOCKING
       
+      queue.push(task1);
