@@ -40,3 +40,4 @@ describe('PriorityQueue', () => {
       expect(queue.pop()!.priority).toBe(0);
       expect(queue.pop()!.priority).toBe(250);
       expect(queue.pop()!.priority).toBe(5000);
+    });
