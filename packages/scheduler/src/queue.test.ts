@@ -57,3 +57,4 @@ describe('PriorityQueue', () => {
       expect(queue.pop()!.expirationTime).toBe(now + 500);
       expect(queue.pop()!.expirationTime).toBe(now + 1000);
     });
+    
