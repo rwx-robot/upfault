@@ -38,3 +38,4 @@ describe('PriorityQueue', () => {
       
       // IMMEDIATE (0) 优先级最高，应先出
       expect(queue.pop()!.priority).toBe(0);
+      expect(queue.pop()!.priority).toBe(250);
