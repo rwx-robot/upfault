@@ -22,3 +22,4 @@ describe('PriorityQueue', () => {
       
       queue.push(task1);
       queue.push(task2);
+      
