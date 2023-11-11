@@ -16,3 +16,4 @@ describe('PriorityQueue', () => {
       expect(queue.pop()).toBeNull();
     });
     
+    it('应入队和出队', () => {
