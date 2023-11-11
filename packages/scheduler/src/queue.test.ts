@@ -17,3 +17,4 @@ describe('PriorityQueue', () => {
     });
     
     it('应入队和出队', () => {
+      const task1 = createSchedulerTask(() => {}, 5000); // NORMAL
