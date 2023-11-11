@@ -27,3 +27,4 @@ describe('PriorityQueue', () => {
       expect(queue.isEmpty).toBe(false);
     });
     
+    it('应按优先级出队 (高优先级先出)', () => {
