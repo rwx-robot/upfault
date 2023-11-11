@@ -56,3 +56,4 @@ describe('PriorityQueue', () => {
       // 过期时间早的先出
       expect(queue.pop()!.expirationTime).toBe(now + 500);
       expect(queue.pop()!.expirationTime).toBe(now + 1000);
+    });
