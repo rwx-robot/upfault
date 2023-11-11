@@ -44,3 +44,4 @@ describe('PriorityQueue', () => {
     
     it('同优先级按过期时间排序', () => {
       const now = performance.now();
+      const task1 = createSchedulerTask(() => {}, 5000);
