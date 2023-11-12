@@ -95,3 +95,4 @@ describe('PriorityQueue', () => {
     });
     
     it('clear 应清空队列', () => {
+      queue.push(createSchedulerTask(() => {}, 5000));
