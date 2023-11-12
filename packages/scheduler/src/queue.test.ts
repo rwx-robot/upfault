@@ -104,3 +104,4 @@ describe('PriorityQueue', () => {
       expect(queue.size).toBe(0);
     });
     
+    it('toArray 应返回所有任务副本', () => {
