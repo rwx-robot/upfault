@@ -89,3 +89,4 @@ describe('PriorityQueue', () => {
       const task = createSchedulerTask(() => {}, 5000);
       queue.push(task);
       
+      expect(queue.remove(task)).toBe(true);
