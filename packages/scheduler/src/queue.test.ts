@@ -66,3 +66,4 @@ describe('PriorityQueue', () => {
       queue.push(task2);
       
       // ID 小的先出
+      expect(queue.pop()!.id).toBeLessThan(queue.pop()!.id);
