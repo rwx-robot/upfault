@@ -100,3 +100,4 @@ describe('PriorityQueue', () => {
       
       queue.clear();
       
+      expect(queue.isEmpty).toBe(true);
