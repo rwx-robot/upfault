@@ -71,3 +71,4 @@ describe('PriorityQueue', () => {
   });
   
   describe('TaskQueue 接口', () => {
+    it('hasHigherPriority 应正确判断', () => {
