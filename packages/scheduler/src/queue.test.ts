@@ -94,3 +94,4 @@ describe('PriorityQueue', () => {
       expect(queue.remove(task)).toBe(false); // 已移除
     });
     
+    it('clear 应清空队列', () => {
