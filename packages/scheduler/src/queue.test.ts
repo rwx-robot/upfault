@@ -81,3 +81,4 @@ describe('PriorityQueue', () => {
       expect(queue.hasHigherPriority(250)).toBe(false);  // NORMAL(5000) 优先级低于 USER_BLOCKING(250)
       
       queue.push(userBlockingTask);
+      expect(queue.hasHigherPriority(5000)).toBe(true);  // 有 USER_BLOCKING(250) < 5000
