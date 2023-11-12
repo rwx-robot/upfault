@@ -85,3 +85,4 @@ describe('PriorityQueue', () => {
       expect(queue.hasHigherPriority(0)).toBe(false);    // 没有 IMMEDIATE(0)
     });
     
+    it('remove 应正确移除任务', () => {
