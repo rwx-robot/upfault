@@ -77,3 +77,4 @@ describe('PriorityQueue', () => {
       
       queue.push(normalTask);
       
+      expect(queue.hasHigherPriority(5000)).toBe(false); // 同优先级不算更高
