@@ -63,3 +63,4 @@ describe('PriorityQueue', () => {
       const task2 = createSchedulerTask(() => {}, 5000);
       
       queue.push(task1);
+      queue.push(task2);
