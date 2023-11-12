@@ -59,3 +59,4 @@ describe('PriorityQueue', () => {
     });
     
     it('同优先级同过期时间按 ID 排序 (稳定性)', () => {
+      const task1 = createSchedulerTask(() => {}, 5000);
