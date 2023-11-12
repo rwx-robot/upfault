@@ -105,3 +105,4 @@ describe('PriorityQueue', () => {
     });
     
     it('toArray 应返回所有任务副本', () => {
+      queue.push(createSchedulerTask(() => {}, 5000));
