@@ -90,3 +90,4 @@ describe('PriorityQueue', () => {
       queue.push(task);
       
       expect(queue.remove(task)).toBe(true);
+      expect(queue.size).toBe(0);
