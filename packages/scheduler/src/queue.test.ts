@@ -92,3 +92,4 @@ describe('PriorityQueue', () => {
       expect(queue.remove(task)).toBe(true);
       expect(queue.size).toBe(0);
       expect(queue.remove(task)).toBe(false); // 已移除
+    });
