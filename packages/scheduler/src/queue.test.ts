@@ -76,3 +76,4 @@ describe('PriorityQueue', () => {
       const userBlockingTask = createSchedulerTask(() => {}, 250); // USER_BLOCKING
       
       queue.push(normalTask);
+      
