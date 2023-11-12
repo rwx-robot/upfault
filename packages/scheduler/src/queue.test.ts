@@ -87,3 +87,4 @@ describe('PriorityQueue', () => {
     
     it('remove 应正确移除任务', () => {
       const task = createSchedulerTask(() => {}, 5000);
+      queue.push(task);
