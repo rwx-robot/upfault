@@ -99,3 +99,4 @@ describe('PriorityQueue', () => {
       queue.push(createSchedulerTask(() => {}, 250));
       
       queue.clear();
+      
