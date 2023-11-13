@@ -128,3 +128,4 @@ describe('PriorityQueue', () => {
       expect(task.fibre).toBeNull();
       expect(task.data).toEqual({ foo: 'bar' });
       expect(task.cancelled).toBe(false);
+      expect(task.expirationTime).toBeGreaterThan(performance.now());
