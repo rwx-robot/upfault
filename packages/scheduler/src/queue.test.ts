@@ -129,3 +129,4 @@ describe('PriorityQueue', () => {
       expect(task.data).toEqual({ foo: 'bar' });
       expect(task.cancelled).toBe(false);
       expect(task.expirationTime).toBeGreaterThan(performance.now());
+      expect(task.createdAt).toBeGreaterThan(0);
