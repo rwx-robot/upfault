@@ -135,3 +135,4 @@ describe('PriorityQueue', () => {
     });
   });
   
+  describe('generateTaskId', () => {
