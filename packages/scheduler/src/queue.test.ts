@@ -127,3 +127,4 @@ describe('PriorityQueue', () => {
       expect(task.callback).toBe(callback);
       expect(task.fibre).toBeNull();
       expect(task.data).toEqual({ foo: 'bar' });
+      expect(task.cancelled).toBe(false);
