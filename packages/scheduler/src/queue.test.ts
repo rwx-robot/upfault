@@ -124,3 +124,4 @@ describe('PriorityQueue', () => {
       
       expect(task.id).toBeGreaterThan(0);
       expect(task.priority).toBe(250);
+      expect(task.callback).toBe(callback);
