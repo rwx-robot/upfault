@@ -110,3 +110,4 @@ describe('PriorityQueue', () => {
       
       const arr = queue.toArray();
       expect(arr).toHaveLength(2);
+      
