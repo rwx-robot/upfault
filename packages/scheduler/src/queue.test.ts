@@ -115,3 +115,4 @@ describe('PriorityQueue', () => {
       arr.length = 0;
       expect(queue.size).toBe(2);
     });
+  });
