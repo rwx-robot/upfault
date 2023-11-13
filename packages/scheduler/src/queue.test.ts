@@ -114,3 +114,4 @@ describe('PriorityQueue', () => {
       // 修改副本不应影响原队列
       arr.length = 0;
       expect(queue.size).toBe(2);
+    });
