@@ -111,3 +111,4 @@ describe('PriorityQueue', () => {
       const arr = queue.toArray();
       expect(arr).toHaveLength(2);
       
+      // 修改副本不应影响原队列
