@@ -138,3 +138,4 @@ describe('PriorityQueue', () => {
   describe('generateTaskId', () => {
     it('应生成单调递增的 ID', () => {
       const id1 = generateTaskId();
+      const id2 = generateTaskId();
