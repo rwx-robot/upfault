@@ -123,3 +123,4 @@ describe('PriorityQueue', () => {
       const task = createSchedulerTask(callback, 250, null, { foo: 'bar' });
       
       expect(task.id).toBeGreaterThan(0);
+      expect(task.priority).toBe(250);
