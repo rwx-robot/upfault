@@ -133,3 +133,4 @@ describe('PriorityQueue', () => {
       expect(task.startedAt).toBeNull();
       expect(task.completedAt).toBeNull();
     });
+  });
