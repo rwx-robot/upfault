@@ -117,3 +117,4 @@ describe('PriorityQueue', () => {
     });
   });
   
+  describe('createSchedulerTask', () => {
