@@ -145,3 +145,4 @@ describe('PriorityQueue', () => {
       expect(id3).toBe(id2 + 1);
     });
   });
+});
