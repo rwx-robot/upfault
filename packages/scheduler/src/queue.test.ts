@@ -130,3 +130,4 @@ describe('PriorityQueue', () => {
       expect(task.cancelled).toBe(false);
       expect(task.expirationTime).toBeGreaterThan(performance.now());
       expect(task.createdAt).toBeGreaterThan(0);
+      expect(task.startedAt).toBeNull();
