@@ -122,3 +122,4 @@ describe('PriorityQueue', () => {
       const callback = vi.fn();
       const task = createSchedulerTask(callback, 250, null, { foo: 'bar' });
       
+      expect(task.id).toBeGreaterThan(0);
