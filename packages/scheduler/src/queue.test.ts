@@ -109,3 +109,4 @@ describe('PriorityQueue', () => {
       queue.push(createSchedulerTask(() => {}, 250));
       
       const arr = queue.toArray();
+      expect(arr).toHaveLength(2);
