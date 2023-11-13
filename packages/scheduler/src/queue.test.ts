@@ -141,3 +141,4 @@ describe('PriorityQueue', () => {
       const id2 = generateTaskId();
       const id3 = generateTaskId();
       
+      expect(id2).toBe(id1 + 1);
