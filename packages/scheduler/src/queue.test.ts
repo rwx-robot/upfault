@@ -121,3 +121,4 @@ describe('PriorityQueue', () => {
     it('应生成正确的任务对象', () => {
       const callback = vi.fn();
       const task = createSchedulerTask(callback, 250, null, { foo: 'bar' });
+      
