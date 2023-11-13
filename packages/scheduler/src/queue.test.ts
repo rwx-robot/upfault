@@ -119,3 +119,4 @@ describe('PriorityQueue', () => {
   
   describe('createSchedulerTask', () => {
     it('应生成正确的任务对象', () => {
+      const callback = vi.fn();
