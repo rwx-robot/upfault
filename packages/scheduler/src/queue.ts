@@ -26,3 +26,4 @@ export class PriorityQueue implements TaskQueue {
    * 同优先级按过期时间排序，再按 ID 排序保证稳定性
    */
   private defaultCompare(a: SchedulerTask, b: SchedulerTask): number {
+    if (a.priority !== b.priority) {
