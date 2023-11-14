@@ -17,3 +17,4 @@ export class PriorityQueue implements TaskQueue {
   private heap: SchedulerTask[] = [];
   private comparator: (a: SchedulerTask, b: SchedulerTask) => number;
   
+  constructor(comparator?: (a: SchedulerTask, b: SchedulerTask) => number) {
