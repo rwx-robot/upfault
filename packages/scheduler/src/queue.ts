@@ -40,3 +40,4 @@ export class PriorityQueue implements TaskQueue {
    */
   push(task: SchedulerTask): void {
     this.heap.push(task);
+    this.siftUp(this.heap.length - 1);
