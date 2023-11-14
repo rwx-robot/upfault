@@ -31,3 +31,4 @@ export class PriorityQueue implements TaskQueue {
     }
     if (a.expirationTime !== b.expirationTime) {
       return a.expirationTime - b.expirationTime;
+    }
