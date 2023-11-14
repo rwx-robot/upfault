@@ -42,3 +42,4 @@ export class PriorityQueue implements TaskQueue {
     this.heap.push(task);
     this.siftUp(this.heap.length - 1);
   }
+  
