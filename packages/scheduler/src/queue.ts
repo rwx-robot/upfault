@@ -27,3 +27,4 @@ export class PriorityQueue implements TaskQueue {
    */
   private defaultCompare(a: SchedulerTask, b: SchedulerTask): number {
     if (a.priority !== b.priority) {
+      return a.priority - b.priority;
