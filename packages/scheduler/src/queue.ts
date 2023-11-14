@@ -22,3 +22,4 @@ export class PriorityQueue implements TaskQueue {
   }
   
   /**
+   * 默认比较函数：优先级数值越小越靠前
