@@ -6,3 +6,5 @@
  */
 
 import type { SchedulerTask, Priority, TaskQueue, SchedulerStats } from '@upfault/shared';
+
+export type { SchedulerStats } from '@upfault/shared';
