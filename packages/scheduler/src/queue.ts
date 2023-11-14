@@ -21,3 +21,4 @@ export class PriorityQueue implements TaskQueue {
     this.comparator = comparator || this.defaultCompare;
   }
   
+  /**
