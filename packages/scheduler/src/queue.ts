@@ -14,3 +14,4 @@ export type { SchedulerStats } from '@upfault/shared';
  * 数值越小优先级越高 (IMMEDIATE=0 最高)
  */
 export class PriorityQueue implements TaskQueue {
+  private heap: SchedulerTask[] = [];
