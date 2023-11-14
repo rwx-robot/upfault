@@ -24,3 +24,4 @@ export class PriorityQueue implements TaskQueue {
   /**
    * 默认比较函数：优先级数值越小越靠前
    * 同优先级按过期时间排序，再按 ID 排序保证稳定性
+   */
