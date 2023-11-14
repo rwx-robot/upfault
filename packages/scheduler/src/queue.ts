@@ -18,3 +18,4 @@ export class PriorityQueue implements TaskQueue {
   private comparator: (a: SchedulerTask, b: SchedulerTask) => number;
   
   constructor(comparator?: (a: SchedulerTask, b: SchedulerTask) => number) {
+    this.comparator = comparator || this.defaultCompare;
