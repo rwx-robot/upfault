@@ -60,3 +60,4 @@ export class PriorityQueue implements TaskQueue {
     }
     
     return top;
+  }
