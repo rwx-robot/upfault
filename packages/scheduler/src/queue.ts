@@ -83,3 +83,4 @@ export class PriorityQueue implements TaskQueue {
   remove(task: SchedulerTask): boolean {
     const index = this.heap.findIndex(t => t.id === task.id);
     if (index === -1) return false;
+    
