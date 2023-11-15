@@ -76,3 +76,4 @@ export class PriorityQueue implements TaskQueue {
     const top = this.peek();
     return top !== null && top.priority < priority;
   }
+  
