@@ -53,3 +53,4 @@ export class PriorityQueue implements TaskQueue {
     if (!top) return null; // Explicit null check
     
     const end = this.heap.pop()!;
+    
