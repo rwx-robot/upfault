@@ -49,3 +49,4 @@ export class PriorityQueue implements TaskQueue {
   pop(): SchedulerTask | null {
     if (this.heap.length === 0) return null;
     
+    const top = this.heap[0];
