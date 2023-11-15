@@ -54,3 +54,4 @@ export class PriorityQueue implements TaskQueue {
     
     const end = this.heap.pop()!;
     
+    if (this.heap.length > 0) {
