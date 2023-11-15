@@ -59,3 +59,4 @@ export class PriorityQueue implements TaskQueue {
       this.siftDown(0);
     }
     
+    return top;
