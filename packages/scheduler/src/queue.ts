@@ -77,3 +77,4 @@ export class PriorityQueue implements TaskQueue {
     return top !== null && top.priority < priority;
   }
   
+  /**
