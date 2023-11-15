@@ -67,3 +67,4 @@ export class PriorityQueue implements TaskQueue {
    */
   peek(): SchedulerTask | null {
     return this.heap[0] ?? null;
+  }
