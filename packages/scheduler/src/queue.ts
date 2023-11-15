@@ -84,3 +84,4 @@ export class PriorityQueue implements TaskQueue {
     const index = this.heap.findIndex(t => t.id === task.id);
     if (index === -1) return false;
     
+    const end = this.heap.pop()!;
