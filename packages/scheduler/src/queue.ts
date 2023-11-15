@@ -46,3 +46,4 @@ export class PriorityQueue implements TaskQueue {
   /**
    * 出队最高优先级任务 - O(log n)
    */
+  pop(): SchedulerTask | null {
