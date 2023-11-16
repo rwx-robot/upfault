@@ -91,3 +91,4 @@ export class PriorityQueue implements TaskQueue {
       this.siftUp(index);
     }
     return true;
+  }
