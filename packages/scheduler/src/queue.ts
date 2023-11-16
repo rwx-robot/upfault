@@ -105,3 +105,4 @@ export class PriorityQueue implements TaskQueue {
   }
   
   get isEmpty(): boolean {
+    return this.heap.length === 0;
