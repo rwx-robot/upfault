@@ -123,3 +123,4 @@ export class PriorityQueue implements TaskQueue {
       if (this.comparator(this.heap[index]!, this.heap[parentIndex]!) >= 0) break;
       
       // Use temporary variables to satisfy TypeScript
+      const indexVal = this.heap[index]!;
