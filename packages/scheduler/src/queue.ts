@@ -119,3 +119,4 @@ export class PriorityQueue implements TaskQueue {
   
   private siftUp(index: number): void {
     while (index > 0) {
+      const parentIndex = (index - 1) >> 1;
