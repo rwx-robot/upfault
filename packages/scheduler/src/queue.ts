@@ -100,3 +100,4 @@ export class PriorityQueue implements TaskQueue {
     this.heap.length = 0;
   }
   
+  get size(): number {
