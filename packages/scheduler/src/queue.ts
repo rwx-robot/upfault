@@ -99,3 +99,4 @@ export class PriorityQueue implements TaskQueue {
   clear(): void {
     this.heap.length = 0;
   }
+  
