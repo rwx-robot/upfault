@@ -88,3 +88,4 @@ export class PriorityQueue implements TaskQueue {
     if (index !== this.heap.length) {
       this.heap[index] = end;
       this.siftDown(index);
+      this.siftUp(index);
