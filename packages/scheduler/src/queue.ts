@@ -121,3 +121,4 @@ export class PriorityQueue implements TaskQueue {
     while (index > 0) {
       const parentIndex = (index - 1) >> 1;
       if (this.comparator(this.heap[index]!, this.heap[parentIndex]!) >= 0) break;
+      
