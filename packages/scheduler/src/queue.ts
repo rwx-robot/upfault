@@ -148,3 +148,4 @@ export class PriorityQueue implements TaskQueue {
       
       // Use temporary variables to satisfy TypeScript
       const smallestVal = this.heap[smallest]!;
+      const indexVal = this.heap[index]!;
