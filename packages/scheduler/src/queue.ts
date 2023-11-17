@@ -128,3 +128,4 @@ export class PriorityQueue implements TaskQueue {
       [this.heap[index], this.heap[parentIndex]] = [parentVal, indexVal];
       index = parentIndex;
     }
+  }
