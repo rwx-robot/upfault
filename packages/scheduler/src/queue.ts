@@ -160,3 +160,4 @@ export class PriorityQueue implements TaskQueue {
  */
 export function createPriorityQueue(comparator?: (a: SchedulerTask, b: SchedulerTask) => number): PriorityQueue {
   return new PriorityQueue(comparator);
+}
