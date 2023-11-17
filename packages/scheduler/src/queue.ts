@@ -158,3 +158,4 @@ export class PriorityQueue implements TaskQueue {
 /**
  * 创建优先队列的工厂函数
  */
+export function createPriorityQueue(comparator?: (a: SchedulerTask, b: SchedulerTask) => number): PriorityQueue {
