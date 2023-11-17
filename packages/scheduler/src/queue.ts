@@ -152,3 +152,4 @@ export class PriorityQueue implements TaskQueue {
       [this.heap[index], this.heap[smallest]] = [smallestVal, indexVal];
       index = smallest;
     }
+  }
