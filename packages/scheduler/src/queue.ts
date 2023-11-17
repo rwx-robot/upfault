@@ -140,3 +140,4 @@ export class PriorityQueue implements TaskQueue {
       
       if (leftChild < length && this.comparator(this.heap[leftChild]!, this.heap[smallest]!) < 0) {
         smallest = leftChild;
+      }
