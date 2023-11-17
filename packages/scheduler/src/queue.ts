@@ -134,3 +134,4 @@ export class PriorityQueue implements TaskQueue {
     const length = this.heap.length;
     
     while (true) {
+      let smallest = index;
