@@ -145,3 +145,4 @@ export class PriorityQueue implements TaskQueue {
         smallest = rightChild;
       }
       if (smallest === index) break;
+      
