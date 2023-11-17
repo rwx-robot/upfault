@@ -138,3 +138,4 @@ export class PriorityQueue implements TaskQueue {
       const leftChild = (index << 1) + 1;
       const rightChild = (index << 1) + 2;
       
+      if (leftChild < length && this.comparator(this.heap[leftChild]!, this.heap[smallest]!) < 0) {
