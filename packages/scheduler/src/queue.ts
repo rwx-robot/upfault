@@ -153,3 +153,4 @@ export class PriorityQueue implements TaskQueue {
       index = smallest;
     }
   }
+}
