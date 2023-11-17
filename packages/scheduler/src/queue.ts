@@ -146,3 +146,4 @@ export class PriorityQueue implements TaskQueue {
       }
       if (smallest === index) break;
       
+      // Use temporary variables to satisfy TypeScript
