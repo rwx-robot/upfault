@@ -163,3 +163,4 @@ export function createPriorityQueue(comparator?: (a: SchedulerTask, b: Scheduler
 }
 
 /**
+ * 任务 ID 生成器
