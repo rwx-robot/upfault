@@ -135,3 +135,4 @@ export class PriorityQueue implements TaskQueue {
     
     while (true) {
       let smallest = index;
+      const leftChild = (index << 1) + 1;
