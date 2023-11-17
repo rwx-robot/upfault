@@ -130,3 +130,4 @@ export class PriorityQueue implements TaskQueue {
     }
   }
   
+  private siftDown(index: number): void {
