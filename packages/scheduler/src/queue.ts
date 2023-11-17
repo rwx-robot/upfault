@@ -133,3 +133,4 @@ export class PriorityQueue implements TaskQueue {
   private siftDown(index: number): void {
     const length = this.heap.length;
     
+    while (true) {
