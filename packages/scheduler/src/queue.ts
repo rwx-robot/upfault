@@ -186,3 +186,4 @@ export function createSchedulerTask(
     id: generateTaskId(),
     priority,
     callback,
+    expirationTime,
