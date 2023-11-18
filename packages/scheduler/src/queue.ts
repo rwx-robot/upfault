@@ -176,3 +176,4 @@ export function generateTaskId(): number {
 export function createSchedulerTask(
   callback: () => void,
   priority: Priority = 5000, // NORMAL
+  fibre: any = null,
