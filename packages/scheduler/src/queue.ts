@@ -187,3 +187,4 @@ export function createSchedulerTask(
     priority,
     callback,
     expirationTime,
+    fibre,
