@@ -173,3 +173,4 @@ export function generateTaskId(): number {
 /**
  * 创建调度任务的辅助函数
  */
+export function createSchedulerTask(
