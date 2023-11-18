@@ -194,3 +194,4 @@ export function createSchedulerTask(
     startedAt: null,
     completedAt: null,
   };
+}
