@@ -189,3 +189,4 @@ export function createSchedulerTask(
     expirationTime,
     fibre,
     data,
+    cancelled: false,
