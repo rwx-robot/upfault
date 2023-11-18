@@ -183,3 +183,4 @@ export function createSchedulerTask(
   const expirationTime = now + priority;
   
   return {
+    id: generateTaskId(),
