@@ -179,3 +179,4 @@ export function createSchedulerTask(
   fibre: any = null,
   data: any = undefined
 ): SchedulerTask {
+  const now = performance.now();
