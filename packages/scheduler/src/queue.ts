@@ -184,3 +184,4 @@ export function createSchedulerTask(
   
   return {
     id: generateTaskId(),
+    priority,
