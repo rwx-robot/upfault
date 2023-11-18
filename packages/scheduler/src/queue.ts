@@ -190,3 +190,4 @@ export function createSchedulerTask(
     fibre,
     data,
     cancelled: false,
+    createdAt: now,
