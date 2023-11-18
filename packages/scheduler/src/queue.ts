@@ -177,3 +177,4 @@ export function createSchedulerTask(
   callback: () => void,
   priority: Priority = 5000, // NORMAL
   fibre: any = null,
+  data: any = undefined
