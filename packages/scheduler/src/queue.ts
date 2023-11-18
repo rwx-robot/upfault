@@ -182,3 +182,4 @@ export function createSchedulerTask(
   const now = performance.now();
   const expirationTime = now + priority;
   
+  return {
