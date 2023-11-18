@@ -168,3 +168,4 @@ export function createPriorityQueue(comparator?: (a: SchedulerTask, b: Scheduler
 let taskIdCounter = 0;
 export function generateTaskId(): number {
   return ++taskIdCounter;
+}
