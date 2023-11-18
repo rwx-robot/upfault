@@ -191,3 +191,4 @@ export function createSchedulerTask(
     data,
     cancelled: false,
     createdAt: now,
+    startedAt: null,
