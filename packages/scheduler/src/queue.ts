@@ -180,3 +180,4 @@ export function createSchedulerTask(
   data: any = undefined
 ): SchedulerTask {
   const now = performance.now();
+  const expirationTime = now + priority;
