@@ -18,3 +18,4 @@ export { PriorityQueue, createSchedulerTask, generateTaskId } from './queue';
 interface SchedulerState {
     taskQueue: PriorityQueue;
     timerQueue: PriorityQueue;
+    currentTask: SchedulerTask | null;
