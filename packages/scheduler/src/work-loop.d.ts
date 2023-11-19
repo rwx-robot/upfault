@@ -20,3 +20,4 @@ interface SchedulerState {
     timerQueue: PriorityQueue;
     currentTask: SchedulerTask | null;
     deadline: number;
+    isPerformingWork: boolean;
