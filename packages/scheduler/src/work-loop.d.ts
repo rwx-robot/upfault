@@ -13,3 +13,4 @@
 import { Priority, SchedulerTask, SchedulerOptions } from '@upfault/shared';
 import { PriorityQueue, SchedulerStats } from './queue';
 export type { SchedulerTask, SchedulerOptions, SchedulerStats, Priority, TaskQueue } from '@upfault/shared';
+export { DEFAULT_SCHEDULER_OPTIONS } from '@upfault/shared';
