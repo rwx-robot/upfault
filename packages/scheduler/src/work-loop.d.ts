@@ -16,3 +16,4 @@ export type { SchedulerTask, SchedulerOptions, SchedulerStats, Priority, TaskQue
 export { DEFAULT_SCHEDULER_OPTIONS } from '@upfault/shared';
 export { PriorityQueue, createSchedulerTask, generateTaskId } from './queue';
 interface SchedulerState {
+    taskQueue: PriorityQueue;
