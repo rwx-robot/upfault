@@ -27,3 +27,4 @@ interface SchedulerState {
     options: SchedulerOptions;
 }
 /**
+ * 创建调度器实例
