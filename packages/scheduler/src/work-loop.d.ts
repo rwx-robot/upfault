@@ -36,3 +36,4 @@ export declare function createScheduler(options?: Partial<SchedulerOptions>): Sc
 export declare class Scheduler {
     private state;
     constructor(state: SchedulerState);
+    /**
