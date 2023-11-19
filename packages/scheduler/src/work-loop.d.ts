@@ -11,3 +11,4 @@
  * 渐进增强：有 requestIdleCallback 用它，没有用 setTimeout 兜底
  */
 import { Priority, SchedulerTask, SchedulerOptions } from '@upfault/shared';
+import { PriorityQueue, SchedulerStats } from './queue';
