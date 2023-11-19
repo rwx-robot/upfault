@@ -25,3 +25,4 @@ interface SchedulerState {
     hostCallbackId: number | null;
     stats: SchedulerStats;
     options: SchedulerOptions;
+}
