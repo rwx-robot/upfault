@@ -34,3 +34,4 @@ export declare function createScheduler(options?: Partial<SchedulerOptions>): Sc
  * 调度器类
  */
 export declare class Scheduler {
+    private state;
