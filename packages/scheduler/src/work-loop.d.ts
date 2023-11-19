@@ -32,3 +32,4 @@ interface SchedulerState {
 export declare function createScheduler(options?: Partial<SchedulerOptions>): Scheduler;
 /**
  * 调度器类
+ */
