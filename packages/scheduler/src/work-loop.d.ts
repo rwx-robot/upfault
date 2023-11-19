@@ -21,3 +21,4 @@ interface SchedulerState {
     currentTask: SchedulerTask | null;
     deadline: number;
     isPerformingWork: boolean;
+    isHostCallbackScheduled: boolean;
