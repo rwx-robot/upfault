@@ -23,3 +23,4 @@ interface SchedulerState {
     isPerformingWork: boolean;
     isHostCallbackScheduled: boolean;
     hostCallbackId: number | null;
+    stats: SchedulerStats;
