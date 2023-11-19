@@ -19,3 +19,4 @@ interface SchedulerState {
     taskQueue: PriorityQueue;
     timerQueue: PriorityQueue;
     currentTask: SchedulerTask | null;
+    deadline: number;
