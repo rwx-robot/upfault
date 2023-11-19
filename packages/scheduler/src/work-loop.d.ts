@@ -39,3 +39,4 @@ export declare class Scheduler {
     /**
      * 调度任务 - 主入口
      * @param task 调度任务
+     * @returns 任务 ID (用于取消)
