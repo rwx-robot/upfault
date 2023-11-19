@@ -37,3 +37,4 @@ export declare class Scheduler {
     private state;
     constructor(state: SchedulerState);
     /**
+     * 调度任务 - 主入口
