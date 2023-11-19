@@ -43,3 +43,4 @@ export declare class Scheduler {
      */
     scheduleCallback(task: SchedulerTask): number;
     /**
+     * 取消任务
