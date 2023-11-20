@@ -78,3 +78,4 @@ export declare class Scheduler {
     /**
      * 推进定时器：将到期的任务从 timerQueue 移到 taskQueue
      * @param currentTime 可选的当前时间 (用于测试，默认使用 performance.now())
+     */
