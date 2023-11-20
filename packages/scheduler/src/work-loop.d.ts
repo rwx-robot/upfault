@@ -89,3 +89,4 @@ export declare class Scheduler {
      */
     private executeTask;
     /**
+     * 优先级抢占：插入高优任务时中断低优任务
