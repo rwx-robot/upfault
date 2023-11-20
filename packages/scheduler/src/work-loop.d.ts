@@ -51,3 +51,4 @@ export declare class Scheduler {
      */
     flushSync(): void;
     /**
+     * 获取调度器统计信息
