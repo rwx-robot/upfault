@@ -68,3 +68,4 @@ export declare class Scheduler {
      */
     private requestHostCallback;
     /**
+     * 取消宿主回调
