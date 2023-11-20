@@ -81,3 +81,4 @@ export declare class Scheduler {
      */
     private advanceTimers;
     /**
+     * 判断是否应让出主线程
