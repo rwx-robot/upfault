@@ -64,3 +64,4 @@ export declare class Scheduler {
      */
     __test_step(currentTime?: number): void;
     /**
+     * 请求宿主回调 (requestIdleCallback / setTimeout 兜底)
