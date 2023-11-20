@@ -72,3 +72,4 @@ export declare class Scheduler {
      */
     private cancelHostCallback;
     /**
+     * 工作循环核心 - 处理任务直到时间片用完
