@@ -87,3 +87,4 @@ export declare class Scheduler {
     /**
      * 执行单个任务
      */
+    private executeTask;
