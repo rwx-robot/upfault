@@ -76,3 +76,4 @@ export declare class Scheduler {
      */
     private workLoop;
     /**
+     * 推进定时器：将到期的任务从 timerQueue 移到 taskQueue
