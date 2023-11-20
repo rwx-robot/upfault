@@ -55,3 +55,4 @@ export declare class Scheduler {
      */
     getStats(): SchedulerStats;
     /**
+     * 获取当前选项
