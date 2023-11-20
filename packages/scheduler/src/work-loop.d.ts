@@ -54,3 +54,4 @@ export declare class Scheduler {
      * 获取调度器统计信息
      */
     getStats(): SchedulerStats;
+    /**
