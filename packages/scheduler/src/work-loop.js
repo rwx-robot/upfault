@@ -17,3 +17,4 @@ export { PriorityQueue, createSchedulerTask, generateTaskId } from './queue';
 /**
  * 创建调度器实例
  */
+export function createScheduler(options = {}) {
