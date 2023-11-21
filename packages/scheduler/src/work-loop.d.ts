@@ -94,3 +94,4 @@ export declare class Scheduler {
     preempt(currentPriority: Priority, newTask: SchedulerTask): boolean;
 }
 export declare function getDefaultScheduler(): Scheduler;
+export declare function scheduleCallback(task: SchedulerTask): number;
