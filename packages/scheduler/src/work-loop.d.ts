@@ -95,3 +95,4 @@ export declare class Scheduler {
 }
 export declare function getDefaultScheduler(): Scheduler;
 export declare function scheduleCallback(task: SchedulerTask): number;
+export declare function cancelCallback(taskId: number): boolean;
