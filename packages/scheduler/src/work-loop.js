@@ -25,3 +25,4 @@ export function createScheduler(options = {}) {
         currentTask: null,
         deadline: 0,
         isPerformingWork: false,
+        isHostCallbackScheduled: false,
