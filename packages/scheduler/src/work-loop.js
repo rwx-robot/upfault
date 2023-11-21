@@ -19,3 +19,4 @@ export { PriorityQueue, createSchedulerTask, generateTaskId } from './queue';
  */
 export function createScheduler(options = {}) {
     const mergedOptions = { ...DEFAULT_SCHEDULER_OPTIONS, ...options };
+    const state = {
