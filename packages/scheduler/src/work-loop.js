@@ -21,3 +21,4 @@ export function createScheduler(options = {}) {
     const mergedOptions = { ...DEFAULT_SCHEDULER_OPTIONS, ...options };
     const state = {
         taskQueue: new PriorityQueue(),
+        timerQueue: new PriorityQueue((a, b) => a.expirationTime - b.expirationTime),
