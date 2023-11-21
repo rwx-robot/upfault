@@ -24,3 +24,4 @@ export function createScheduler(options = {}) {
         timerQueue: new PriorityQueue((a, b) => a.expirationTime - b.expirationTime),
         currentTask: null,
         deadline: 0,
+        isPerformingWork: false,
