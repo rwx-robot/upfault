@@ -26,3 +26,4 @@ export function createScheduler(options = {}) {
         deadline: 0,
         isPerformingWork: false,
         isHostCallbackScheduled: false,
+        hostCallbackId: null,
