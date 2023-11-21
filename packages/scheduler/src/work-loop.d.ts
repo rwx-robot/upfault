@@ -98,3 +98,4 @@ export declare function scheduleCallback(task: SchedulerTask): number;
 export declare function cancelCallback(taskId: number): boolean;
 export declare function flushSync(): void;
 export declare function getSchedulerStats(): SchedulerStats;
+//# sourceMappingURL=work-loop.d.ts.map
