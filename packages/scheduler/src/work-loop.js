@@ -35,3 +35,4 @@ export function createScheduler(options = {}) {
             avgExecutionTime: 0,
             totalExecutionTime: 0,
             preemptionCount: 0,
+            priorityDistribution: {
