@@ -48,3 +48,4 @@ export function createScheduler(options = {}) {
     return new Scheduler(state);
 }
 /**
+ * 调度器类
