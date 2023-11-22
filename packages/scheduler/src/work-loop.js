@@ -32,3 +32,4 @@ export function createScheduler(options = {}) {
             completedTasks: 0,
             cancelledTasks: 0,
             queueLength: 0,
+            avgExecutionTime: 0,
