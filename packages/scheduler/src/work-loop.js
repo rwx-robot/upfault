@@ -37,3 +37,4 @@ export function createScheduler(options = {}) {
             preemptionCount: 0,
             priorityDistribution: {
                 [0]: 0, // IMMEDIATE
+                [250]: 0, // USER_BLOCKING
