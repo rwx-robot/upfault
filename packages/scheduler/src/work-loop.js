@@ -43,3 +43,4 @@ export function createScheduler(options = {}) {
                 [0x7fffffff]: 0, // IDLE
             },
         },
+        options: mergedOptions,
