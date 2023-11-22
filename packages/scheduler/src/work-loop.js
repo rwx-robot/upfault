@@ -50,3 +50,4 @@ export function createScheduler(options = {}) {
 /**
  * 调度器类
  */
+export class Scheduler {
