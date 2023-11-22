@@ -47,3 +47,4 @@ export function createScheduler(options = {}) {
     };
     return new Scheduler(state);
 }
+/**
