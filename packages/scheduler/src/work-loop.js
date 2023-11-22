@@ -62,3 +62,4 @@ export class Scheduler {
      * @param task 调度任务
      * @returns 任务 ID (用于取消)
      */
+    scheduleCallback(task) {
