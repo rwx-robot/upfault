@@ -38,3 +38,4 @@ export function createScheduler(options = {}) {
             priorityDistribution: {
                 [0]: 0, // IMMEDIATE
                 [250]: 0, // USER_BLOCKING
+                [5000]: 0, // NORMAL
