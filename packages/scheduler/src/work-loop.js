@@ -46,3 +46,4 @@ export function createScheduler(options = {}) {
         options: mergedOptions,
     };
     return new Scheduler(state);
+}
