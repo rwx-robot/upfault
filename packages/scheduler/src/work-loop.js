@@ -53,3 +53,4 @@ export function createScheduler(options = {}) {
 export class Scheduler {
     constructor(state) {
         this.state = state;
+    }
