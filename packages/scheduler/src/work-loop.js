@@ -30,3 +30,4 @@ export function createScheduler(options = {}) {
         stats: {
             totalTasks: 0,
             completedTasks: 0,
+            cancelledTasks: 0,
