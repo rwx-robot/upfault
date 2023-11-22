@@ -29,3 +29,4 @@ export function createScheduler(options = {}) {
         hostCallbackId: null,
         stats: {
             totalTasks: 0,
+            completedTasks: 0,
