@@ -34,3 +34,4 @@ export function createScheduler(options = {}) {
             queueLength: 0,
             avgExecutionTime: 0,
             totalExecutionTime: 0,
+            preemptionCount: 0,
