@@ -64,3 +64,4 @@ export class Scheduler {
      */
     scheduleCallback(task) {
         const { state } = this;
+        // 统计
