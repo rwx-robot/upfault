@@ -94,3 +94,4 @@ export class Scheduler {
             return true;
         }
         // 再尝试从定时器队列移除
+        const timerTasks = state.timerQueue.toArray();
