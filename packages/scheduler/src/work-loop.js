@@ -93,3 +93,4 @@ export class Scheduler {
             state.stats.cancelledTasks++;
             return true;
         }
+        // 再尝试从定时器队列移除
