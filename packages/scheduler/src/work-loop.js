@@ -100,3 +100,4 @@ export class Scheduler {
             timerTask.cancelled = true;
             state.timerQueue.remove(timerTask);
             state.stats.cancelledTasks++;
+            return true;
