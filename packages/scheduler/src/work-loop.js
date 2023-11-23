@@ -99,3 +99,4 @@ export class Scheduler {
         if (timerTask) {
             timerTask.cancelled = true;
             state.timerQueue.remove(timerTask);
+            state.stats.cancelledTasks++;
