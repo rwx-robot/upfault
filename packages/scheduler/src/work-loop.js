@@ -80,3 +80,4 @@ export class Scheduler {
         return task.id;
     }
     /**
+     * 取消任务
