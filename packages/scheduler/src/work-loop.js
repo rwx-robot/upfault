@@ -98,3 +98,4 @@ export class Scheduler {
         const timerTask = timerTasks.find(t => t.id === taskId);
         if (timerTask) {
             timerTask.cancelled = true;
+            state.timerQueue.remove(timerTask);
