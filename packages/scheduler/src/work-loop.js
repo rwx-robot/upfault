@@ -87,3 +87,4 @@ export class Scheduler {
         // 先尝试从任务队列移除
         const tasks = state.taskQueue.toArray();
         const task = tasks.find(t => t.id === taskId);
+        if (task) {
