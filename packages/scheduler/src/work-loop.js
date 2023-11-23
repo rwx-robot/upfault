@@ -78,3 +78,4 @@ export class Scheduler {
         // 请求调度
         this.requestHostCallback();
         return task.id;
+    }
