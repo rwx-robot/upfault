@@ -71,3 +71,4 @@ export class Scheduler {
         if (task.expirationTime <= performance.now()) {
             state.taskQueue.push(task);
         }
+        else {
