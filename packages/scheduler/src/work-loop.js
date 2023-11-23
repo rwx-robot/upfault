@@ -83,3 +83,4 @@ export class Scheduler {
      * 取消任务
      */
     cancelCallback(taskId) {
+        const { state } = this;
