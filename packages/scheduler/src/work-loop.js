@@ -134,3 +134,4 @@ export class Scheduler {
         return { ...this.state.options };
     }
     /**
+     * 测试专用：手动触发一次工作循环迭代
