@@ -142,3 +142,4 @@ export class Scheduler {
         // 处理到期的定时器任务
         this.advanceTimers(currentTime);
         // 执行一个工作循环迭代
+        if (state.taskQueue.size > 0) {
