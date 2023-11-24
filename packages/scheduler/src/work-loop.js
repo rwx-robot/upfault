@@ -125,3 +125,4 @@ export class Scheduler {
         return {
             ...state.stats,
             queueLength: state.taskQueue.size + state.timerQueue.size,
+        };
