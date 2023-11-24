@@ -122,3 +122,4 @@ export class Scheduler {
      */
     getStats() {
         const { state } = this;
+        return {
