@@ -137,3 +137,4 @@ export class Scheduler {
      * 测试专用：手动触发一次工作循环迭代
      * 仅用于测试环境，配合 fake timers 使用
      */
+    __test_step(currentTime) {
