@@ -133,3 +133,4 @@ export class Scheduler {
     getOptions() {
         return { ...this.state.options };
     }
+    /**
