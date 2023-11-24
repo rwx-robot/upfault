@@ -108,3 +108,4 @@ export class Scheduler {
      * 刷新所有同步任务 (IMMEDIATE 优先级)
      */
     flushSync() {
+        const { state } = this;
