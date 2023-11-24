@@ -111,3 +111,4 @@ export class Scheduler {
         const { state } = this;
         // 处理所有 IMMEDIATE 任务
         while (true) {
+            const task = state.taskQueue.peek();
