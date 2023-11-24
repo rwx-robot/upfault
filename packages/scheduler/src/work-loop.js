@@ -138,3 +138,4 @@ export class Scheduler {
      * 仅用于测试环境，配合 fake timers 使用
      */
     __test_step(currentTime) {
+        const { state } = this;
