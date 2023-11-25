@@ -166,3 +166,4 @@ export class Scheduler {
             state.hostCallbackId = requestIdleCallback(this.workLoop.bind(this), {
                 timeout: state.options.timeSliceBudget * 2,
             });
+        }
