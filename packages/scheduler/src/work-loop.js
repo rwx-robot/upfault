@@ -149,3 +149,4 @@ export class Scheduler {
                 const currentTask = state.taskQueue.pop();
                 this.executeTask(currentTask);
             }
+        }
