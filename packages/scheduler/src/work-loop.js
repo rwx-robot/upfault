@@ -143,3 +143,4 @@ export class Scheduler {
         this.advanceTimers(currentTime);
         // 执行一个工作循环迭代
         if (state.taskQueue.size > 0) {
+            const task = state.taskQueue.peek();
