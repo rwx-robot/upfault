@@ -172,3 +172,4 @@ export class Scheduler {
             state.hostCallbackId = setTimeout(() => {
                 this.workLoop({ timeRemaining: () => state.options.timeSliceBudget, didTimeout: false });
             }, 0);
+        }
