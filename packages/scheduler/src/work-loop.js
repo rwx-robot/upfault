@@ -147,3 +147,4 @@ export class Scheduler {
             // 检查是否应让出 (IMMEDIATE 不让出)
             if (!this.shouldYield() || task.priority === 0) {
                 const currentTask = state.taskQueue.pop();
+                this.executeTask(currentTask);
