@@ -150,3 +150,4 @@ export class Scheduler {
                 this.executeTask(currentTask);
             }
         }
+    }
