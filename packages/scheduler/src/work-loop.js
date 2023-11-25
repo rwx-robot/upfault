@@ -162,3 +162,4 @@ export class Scheduler {
         if (state.isHostCallbackScheduled)
             return;
         state.isHostCallbackScheduled = true;
+        if (typeof requestIdleCallback !== 'undefined' && state.options.useIdleCallback) {
