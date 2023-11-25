@@ -167,3 +167,4 @@ export class Scheduler {
                 timeout: state.options.timeSliceBudget * 2,
             });
         }
+        else {
