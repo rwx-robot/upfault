@@ -178,3 +178,4 @@ export class Scheduler {
      * 取消宿主回调
      */
     cancelHostCallback() {
+        const { state } = this;
