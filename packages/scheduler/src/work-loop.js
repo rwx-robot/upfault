@@ -212,3 +212,4 @@ export class Scheduler {
                     break;
                 }
                 // 执行任务
+                const currentTask = state.taskQueue.pop();
