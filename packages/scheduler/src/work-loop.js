@@ -179,3 +179,4 @@ export class Scheduler {
      */
     cancelHostCallback() {
         const { state } = this;
+        if (state.hostCallbackId !== null) {
