@@ -197,3 +197,4 @@ export class Scheduler {
         const { state } = this;
         state.isHostCallbackScheduled = false;
         state.isPerformingWork = true;
+        try {
