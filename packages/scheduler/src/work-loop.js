@@ -206,3 +206,4 @@ export class Scheduler {
                 : deadline.didTimeout ? performance.now() : performance.now() + state.options.timeSliceBudget;
             // 主工作循环
             while (state.taskQueue.size > 0) {
+                const task = state.taskQueue.peek();
