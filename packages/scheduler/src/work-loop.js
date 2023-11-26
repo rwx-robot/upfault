@@ -211,3 +211,4 @@ export class Scheduler {
                 if (this.shouldYield() && task.priority > 0) { // IMMEDIATE 不让出
                     break;
                 }
+                // 执行任务
