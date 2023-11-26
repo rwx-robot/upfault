@@ -190,3 +190,4 @@ export class Scheduler {
             state.isHostCallbackScheduled = false;
         }
     }
+    /**
