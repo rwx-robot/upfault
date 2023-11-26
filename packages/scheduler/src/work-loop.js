@@ -195,3 +195,4 @@ export class Scheduler {
      */
     workLoop(deadline) {
         const { state } = this;
+        state.isHostCallbackScheduled = false;
