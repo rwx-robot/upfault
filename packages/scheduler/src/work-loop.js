@@ -215,3 +215,4 @@ export class Scheduler {
                 const currentTask = state.taskQueue.pop();
                 this.executeTask(currentTask);
             }
+            // 如果还有任务，继续调度
