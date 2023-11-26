@@ -188,3 +188,4 @@ export class Scheduler {
             }
             state.hostCallbackId = null;
             state.isHostCallbackScheduled = false;
+        }
