@@ -201,3 +201,4 @@ export class Scheduler {
             // 先处理到期的定时器任务
             this.advanceTimers();
             // 设置截止时间
+            state.deadline = typeof deadline.timeRemaining === 'function'
