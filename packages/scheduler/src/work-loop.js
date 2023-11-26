@@ -185,3 +185,4 @@ export class Scheduler {
             }
             else {
                 clearTimeout(state.hostCallbackId);
+            }
