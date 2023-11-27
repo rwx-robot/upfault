@@ -251,3 +251,4 @@ export class Scheduler {
             // 有 performance.now()，使用 deadline 判断
             return performance.now() >= state.deadline;
         }
+        // 兜底：基于时间片预算
