@@ -236,3 +236,4 @@ export class Scheduler {
             if (timerTask.expirationTime > now)
                 break;
             state.timerQueue.pop();
+            // 任务未取消，加入任务队列
