@@ -230,3 +230,4 @@ export class Scheduler {
      */
     advanceTimers(currentTime) {
         const { state } = this;
+        const now = currentTime !== undefined ? currentTime : performance.now();
