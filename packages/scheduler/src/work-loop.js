@@ -249,3 +249,4 @@ export class Scheduler {
         const { state } = this;
         if (state.options.useIdleCallback && typeof performance !== 'undefined') {
             // 有 performance.now()，使用 deadline 判断
+            return performance.now() >= state.deadline;
