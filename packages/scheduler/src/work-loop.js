@@ -259,3 +259,4 @@ export class Scheduler {
      */
     executeTask(task) {
         const { state } = this;
+        if (task.cancelled) {
