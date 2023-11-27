@@ -234,3 +234,4 @@ export class Scheduler {
         while (state.timerQueue.size > 0) {
             const timerTask = state.timerQueue.peek();
             if (timerTask.expirationTime > now)
+                break;
