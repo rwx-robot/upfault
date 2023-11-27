@@ -243,3 +243,4 @@ export class Scheduler {
         }
     }
     /**
+     * 判断是否应让出主线程
