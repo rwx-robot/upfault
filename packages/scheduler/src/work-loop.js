@@ -221,3 +221,4 @@ export class Scheduler {
             }
         }
         finally {
+            state.isPerformingWork = false;
