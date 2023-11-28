@@ -299,3 +299,4 @@ export class Scheduler {
  * 创建默认调度器实例 (单例模式)
  */
 let defaultScheduler = null;
+export function getDefaultScheduler() {
