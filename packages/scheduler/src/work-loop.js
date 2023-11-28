@@ -261,3 +261,4 @@ export class Scheduler {
         const { state } = this;
         if (task.cancelled) {
             state.stats.cancelledTasks++;
+            return;
