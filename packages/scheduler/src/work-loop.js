@@ -264,3 +264,4 @@ export class Scheduler {
             return;
         }
         state.currentTask = task;
+        task.startedAt = performance.now();
