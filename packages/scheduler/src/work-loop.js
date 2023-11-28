@@ -278,3 +278,4 @@ export class Scheduler {
             console.error('[UpFault Scheduler] Task execution failed:', error);
             task.completedAt = performance.now();
         }
+        finally {
