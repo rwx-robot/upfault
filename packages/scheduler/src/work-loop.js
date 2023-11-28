@@ -292,3 +292,4 @@ export class Scheduler {
             state.stats.preemptionCount++;
             return true;
         }
+        return false;
