@@ -269,3 +269,4 @@ export class Scheduler {
             task.callback(task);
             task.completedAt = performance.now();
             state.stats.completedTasks++;
+            // 更新统计
