@@ -287,3 +287,4 @@ export class Scheduler {
      */
     preempt(currentPriority, newTask) {
         const { state } = this;
+        if (newTask.priority < currentPriority) {
