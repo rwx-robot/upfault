@@ -263,3 +263,4 @@ export class Scheduler {
             state.stats.cancelledTasks++;
             return;
         }
+        state.currentTask = task;
