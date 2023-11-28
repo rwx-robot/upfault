@@ -280,3 +280,4 @@ export class Scheduler {
         }
         finally {
             state.currentTask = null;
+        }
