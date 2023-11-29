@@ -312,3 +312,4 @@ export function cancelCallback(taskId) {
     return getDefaultScheduler().cancelCallback(taskId);
 }
 export function flushSync() {
+    getDefaultScheduler().flushSync();
