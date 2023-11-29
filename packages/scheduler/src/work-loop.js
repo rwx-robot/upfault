@@ -302,3 +302,4 @@ let defaultScheduler = null;
 export function getDefaultScheduler() {
     if (!defaultScheduler) {
         defaultScheduler = createScheduler();
+    }
