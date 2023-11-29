@@ -10,3 +10,4 @@ import {
   createSchedulerTask
 } from './index';
 
+describe('Scheduler Work Loop', () => {
