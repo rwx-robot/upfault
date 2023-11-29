@@ -305,3 +305,4 @@ export function getDefaultScheduler() {
     }
     return defaultScheduler;
 }
+export function scheduleCallback(task) {
