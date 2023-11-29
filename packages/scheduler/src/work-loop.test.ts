@@ -13,3 +13,4 @@ import {
 describe('Scheduler Work Loop', () => {
   let scheduler: Scheduler;
   
+  beforeEach(() => {
