@@ -22,3 +22,4 @@ describe('Scheduler Work Loop', () => {
   
   afterEach(() => {
     vi.useRealTimers();
+    vi.restoreAllMocks();
