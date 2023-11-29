@@ -304,3 +304,4 @@ export function getDefaultScheduler() {
         defaultScheduler = createScheduler();
     }
     return defaultScheduler;
+}
