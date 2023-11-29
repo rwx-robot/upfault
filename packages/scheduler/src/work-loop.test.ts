@@ -16,3 +16,4 @@ describe('Scheduler Work Loop', () => {
   beforeEach(() => {
     vi.useFakeTimers();
     const now = performance.now();
+    vi.spyOn(performance, 'now').mockImplementation(() => now);
