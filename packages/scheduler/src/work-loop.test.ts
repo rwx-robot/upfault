@@ -4,3 +4,4 @@ import {
   Scheduler, 
   scheduleCallback, 
   cancelCallback, 
+  flushSync, 
