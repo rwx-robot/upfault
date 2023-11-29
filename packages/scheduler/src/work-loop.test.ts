@@ -20,3 +20,4 @@ describe('Scheduler Work Loop', () => {
     scheduler = createScheduler({ timeSliceBudget: 5, useIdleCallback: false });
   });
   
+  afterEach(() => {
