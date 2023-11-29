@@ -8,3 +8,4 @@ import {
   getSchedulerStats,
   Priority,
   createSchedulerTask
+} from './index';
