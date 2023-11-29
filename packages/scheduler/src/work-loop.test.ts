@@ -19,3 +19,4 @@ describe('Scheduler Work Loop', () => {
     vi.spyOn(performance, 'now').mockImplementation(() => now);
     scheduler = createScheduler({ timeSliceBudget: 5, useIdleCallback: false });
   });
+  
