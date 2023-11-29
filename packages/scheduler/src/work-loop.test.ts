@@ -3,3 +3,4 @@ import {
   createScheduler, 
   Scheduler, 
   scheduleCallback, 
+  cancelCallback, 
