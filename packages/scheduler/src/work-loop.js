@@ -300,3 +300,4 @@ export class Scheduler {
  */
 let defaultScheduler = null;
 export function getDefaultScheduler() {
+    if (!defaultScheduler) {
