@@ -315,3 +315,4 @@ export function flushSync() {
     getDefaultScheduler().flushSync();
 }
 export function getSchedulerStats() {
+    return getDefaultScheduler().getStats();
