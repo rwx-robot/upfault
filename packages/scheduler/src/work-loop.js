@@ -316,3 +316,4 @@ export function flushSync() {
 }
 export function getSchedulerStats() {
     return getDefaultScheduler().getStats();
+}
