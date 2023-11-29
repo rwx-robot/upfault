@@ -317,3 +317,4 @@ export function flushSync() {
 export function getSchedulerStats() {
     return getDefaultScheduler().getStats();
 }
+//# sourceMappingURL=work-loop.js.map
