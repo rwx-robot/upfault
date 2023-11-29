@@ -307,3 +307,4 @@ export function getDefaultScheduler() {
 }
 export function scheduleCallback(task) {
     return getDefaultScheduler().scheduleCallback(task);
+}
