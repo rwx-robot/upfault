@@ -309,3 +309,4 @@ export function scheduleCallback(task) {
     return getDefaultScheduler().scheduleCallback(task);
 }
 export function cancelCallback(taskId) {
+    return getDefaultScheduler().cancelCallback(taskId);
