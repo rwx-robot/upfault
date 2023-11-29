@@ -14,3 +14,4 @@ describe('Scheduler Work Loop', () => {
   let scheduler: Scheduler;
   
   beforeEach(() => {
+    vi.useFakeTimers();
