@@ -15,3 +15,4 @@ describe('Scheduler Work Loop', () => {
   
   beforeEach(() => {
     vi.useFakeTimers();
+    const now = performance.now();
