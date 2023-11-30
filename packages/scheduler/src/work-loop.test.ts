@@ -59,3 +59,4 @@ describe('Scheduler Work Loop', () => {
       expect(immediateFn).toHaveBeenCalled();
       expect(normalFn).toHaveBeenCalled();
     });
+    
