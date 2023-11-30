@@ -40,3 +40,4 @@ describe('Scheduler Work Loop', () => {
       scheduler.scheduleCallback(task);
       
       // 逐步推进时间让调度器工作
+      await runSchedulerSteps(scheduler, 5);
