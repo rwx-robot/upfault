@@ -63,3 +63,4 @@ describe('Scheduler Work Loop', () => {
     it('应支持取消任务', async () => {
       const callback = vi.fn();
       const task = createSchedulerTask(callback, 5000);
+      
