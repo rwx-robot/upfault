@@ -34,3 +34,4 @@ describe('Scheduler Work Loop', () => {
   
   describe('基础调度', () => {
     it('应调度并执行任务', async () => {
+      const callback = vi.fn();
