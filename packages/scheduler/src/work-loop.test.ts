@@ -58,3 +58,4 @@ describe('Scheduler Work Loop', () => {
       // 两个 IMMEDIATE 任务都应执行
       expect(immediateFn).toHaveBeenCalled();
       expect(normalFn).toHaveBeenCalled();
+    });
