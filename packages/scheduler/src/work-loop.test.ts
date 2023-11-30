@@ -64,3 +64,4 @@ describe('Scheduler Work Loop', () => {
       const callback = vi.fn();
       const task = createSchedulerTask(callback, 5000);
       
+      const taskId = scheduler.scheduleCallback(task);
