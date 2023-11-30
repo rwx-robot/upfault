@@ -45,3 +45,4 @@ describe('Scheduler Work Loop', () => {
       expect(callback).toHaveBeenCalledTimes(1);
     });
     
+    it('应按优先级执行 (IMMEDIATE 优先)', async () => {
