@@ -37,3 +37,4 @@ describe('Scheduler Work Loop', () => {
       const callback = vi.fn();
       const task = createSchedulerTask(callback, 0); // IMMEDIATE 立即执行
       
+      scheduler.scheduleCallback(task);
