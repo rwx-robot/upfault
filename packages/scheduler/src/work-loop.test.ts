@@ -30,3 +30,4 @@ describe('Scheduler Work Loop', () => {
     for (let i = 0; i < steps; i++) {
       scheduler.__test_step();
     }
+  }
