@@ -53,3 +53,4 @@ describe('Scheduler Work Loop', () => {
       scheduler.scheduleCallback(createSchedulerTask(normalFn, 0));   // IMMEDIATE
       scheduler.scheduleCallback(createSchedulerTask(immediateFn, 0));   // IMMEDIATE
       
+      await runSchedulerSteps(scheduler, 5);
