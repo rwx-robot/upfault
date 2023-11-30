@@ -25,3 +25,4 @@ describe('Scheduler Work Loop', () => {
     vi.restoreAllMocks();
   });
   
+  // 辅助函数：手动触发调度器工作循环步骤
