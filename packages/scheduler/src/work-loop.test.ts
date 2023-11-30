@@ -29,3 +29,4 @@ describe('Scheduler Work Loop', () => {
   async function runSchedulerSteps(scheduler: Scheduler, steps: number = 10) {
     for (let i = 0; i < steps; i++) {
       scheduler.__test_step();
+    }
