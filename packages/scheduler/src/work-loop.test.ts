@@ -28,3 +28,4 @@ describe('Scheduler Work Loop', () => {
   // 辅助函数：手动触发调度器工作循环步骤
   async function runSchedulerSteps(scheduler: Scheduler, steps: number = 10) {
     for (let i = 0; i < steps; i++) {
+      scheduler.__test_step();
