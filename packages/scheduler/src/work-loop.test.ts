@@ -51,3 +51,4 @@ describe('Scheduler Work Loop', () => {
       
       // 使用 IMMEDIATE 优先级让任务立即进入任务队列
       scheduler.scheduleCallback(createSchedulerTask(normalFn, 0));   // IMMEDIATE
+      scheduler.scheduleCallback(createSchedulerTask(immediateFn, 0));   // IMMEDIATE
