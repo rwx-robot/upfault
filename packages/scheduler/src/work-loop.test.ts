@@ -60,3 +60,4 @@ describe('Scheduler Work Loop', () => {
       expect(normalFn).toHaveBeenCalled();
     });
     
+    it('应支持取消任务', async () => {
