@@ -65,3 +65,4 @@ describe('Scheduler Work Loop', () => {
       const task = createSchedulerTask(callback, 5000);
       
       const taskId = scheduler.scheduleCallback(task);
+      scheduler.cancelCallback(taskId);
