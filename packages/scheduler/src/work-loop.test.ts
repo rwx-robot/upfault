@@ -56,3 +56,4 @@ describe('Scheduler Work Loop', () => {
       await runSchedulerSteps(scheduler, 5);
       
       // 两个 IMMEDIATE 任务都应执行
+      expect(immediateFn).toHaveBeenCalled();
