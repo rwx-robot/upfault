@@ -47,3 +47,4 @@ describe('Scheduler Work Loop', () => {
     
     it('应按优先级执行 (IMMEDIATE 优先)', async () => {
       const normalFn = vi.fn();
+      const immediateFn = vi.fn();
