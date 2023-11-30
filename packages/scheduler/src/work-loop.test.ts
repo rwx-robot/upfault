@@ -50,3 +50,4 @@ describe('Scheduler Work Loop', () => {
       const immediateFn = vi.fn();
       
       // 使用 IMMEDIATE 优先级让任务立即进入任务队列
+      scheduler.scheduleCallback(createSchedulerTask(normalFn, 0));   // IMMEDIATE
