@@ -44,3 +44,4 @@ describe('Scheduler Work Loop', () => {
       
       expect(callback).toHaveBeenCalledTimes(1);
     });
+    
