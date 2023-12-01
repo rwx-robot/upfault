@@ -97,3 +97,4 @@ describe('Scheduler Work Loop', () => {
       
       // 应该执行所有任务
       fns.forEach(fn => {
+        expect(fn).toHaveBeenCalled();
