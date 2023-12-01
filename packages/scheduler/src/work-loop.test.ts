@@ -103,3 +103,4 @@ describe('Scheduler Work Loop', () => {
     
     it('IMMEDIATE 任务不应被时间片打断', async () => {
       const immediateFn = vi.fn();
+      const normalFn = vi.fn();
