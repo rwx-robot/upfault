@@ -75,3 +75,4 @@ describe('Scheduler Work Loop', () => {
     it('flushSync 应立即执行 IMMEDIATE 任务', () => {
       const fn = vi.fn();
       const task = createSchedulerTask(fn, 0); // IMMEDIATE
+      
