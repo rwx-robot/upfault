@@ -96,3 +96,4 @@ describe('Scheduler Work Loop', () => {
       await runSchedulerSteps(scheduler, 15);
       
       // 应该执行所有任务
+      fns.forEach(fn => {
