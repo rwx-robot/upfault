@@ -93,3 +93,4 @@ describe('Scheduler Work Loop', () => {
       }
       
       // 运行足够多的步骤
+      await runSchedulerSteps(scheduler, 15);
