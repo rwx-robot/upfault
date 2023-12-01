@@ -110,3 +110,4 @@ describe('Scheduler Work Loop', () => {
         scheduler.scheduleCallback(createSchedulerTask(normalFn, 0));
       }
       // 再调度 IMMEDIATE
+      scheduler.scheduleCallback(createSchedulerTask(immediateFn, 0));
