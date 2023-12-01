@@ -80,3 +80,4 @@ describe('Scheduler Work Loop', () => {
       scheduler.flushSync();
       
       expect(fn).toHaveBeenCalledTimes(1);
+    });
