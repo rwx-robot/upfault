@@ -107,3 +107,4 @@ describe('Scheduler Work Loop', () => {
       
       // 先调度普通任务 (IMMEDIATE 也可以立即执行)
       for (let i = 0; i < 5; i++) {
+        scheduler.scheduleCallback(createSchedulerTask(normalFn, 0));
