@@ -109,3 +109,4 @@ describe('Scheduler Work Loop', () => {
       for (let i = 0; i < 5; i++) {
         scheduler.scheduleCallback(createSchedulerTask(normalFn, 0));
       }
+      // 再调度 IMMEDIATE
