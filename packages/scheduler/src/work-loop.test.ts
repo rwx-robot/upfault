@@ -99,3 +99,4 @@ describe('Scheduler Work Loop', () => {
       fns.forEach(fn => {
         expect(fn).toHaveBeenCalled();
       });
+    });
