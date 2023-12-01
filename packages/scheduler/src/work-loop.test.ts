@@ -68,3 +68,4 @@ describe('Scheduler Work Loop', () => {
       scheduler.cancelCallback(taskId);
       
       await runSchedulerSteps(scheduler, 5);
+      
