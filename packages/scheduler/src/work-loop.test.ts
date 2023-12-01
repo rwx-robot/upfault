@@ -70,3 +70,4 @@ describe('Scheduler Work Loop', () => {
       await runSchedulerSteps(scheduler, 5);
       
       expect(callback).not.toHaveBeenCalled();
+    });
