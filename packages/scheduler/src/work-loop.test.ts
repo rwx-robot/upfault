@@ -72,3 +72,4 @@ describe('Scheduler Work Loop', () => {
       expect(callback).not.toHaveBeenCalled();
     });
     
+    it('flushSync 应立即执行 IMMEDIATE 任务', () => {
