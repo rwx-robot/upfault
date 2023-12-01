@@ -79,3 +79,4 @@ describe('Scheduler Work Loop', () => {
       scheduler.scheduleCallback(task);
       scheduler.flushSync();
       
+      expect(fn).toHaveBeenCalledTimes(1);
