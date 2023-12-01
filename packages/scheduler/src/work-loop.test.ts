@@ -112,3 +112,4 @@ describe('Scheduler Work Loop', () => {
       // 再调度 IMMEDIATE
       scheduler.scheduleCallback(createSchedulerTask(immediateFn, 0));
       
+      await runSchedulerSteps(scheduler, 10);
