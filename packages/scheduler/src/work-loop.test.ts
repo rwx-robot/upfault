@@ -78,3 +78,4 @@ describe('Scheduler Work Loop', () => {
       
       scheduler.scheduleCallback(task);
       scheduler.flushSync();
+      
