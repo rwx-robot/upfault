@@ -77,3 +77,4 @@ describe('Scheduler Work Loop', () => {
       const task = createSchedulerTask(fn, 0); // IMMEDIATE
       
       scheduler.scheduleCallback(task);
+      scheduler.flushSync();
