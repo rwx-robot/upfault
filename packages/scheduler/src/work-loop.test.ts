@@ -91,3 +91,4 @@ describe('Scheduler Work Loop', () => {
       for (let i = 0; i < 10; i++) {
         scheduler.scheduleCallback(createSchedulerTask(fns[i], 0));
       }
+      
