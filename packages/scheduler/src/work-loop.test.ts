@@ -90,3 +90,4 @@ describe('Scheduler Work Loop', () => {
       // 调度多个任务 - 使用 IMMEDIATE 优先级立即执行
       for (let i = 0; i < 10; i++) {
         scheduler.scheduleCallback(createSchedulerTask(fns[i], 0));
+      }
