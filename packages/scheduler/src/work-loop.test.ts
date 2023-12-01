@@ -87,3 +87,4 @@ describe('Scheduler Work Loop', () => {
     it('应执行所有任务', async () => {
       const fns = Array.from({ length: 10 }, () => vi.fn());
       
+      // 调度多个任务 - 使用 IMMEDIATE 优先级立即执行
