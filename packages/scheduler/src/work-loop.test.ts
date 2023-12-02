@@ -115,3 +115,4 @@ describe('Scheduler Work Loop', () => {
       await runSchedulerSteps(scheduler, 10);
       
       // IMMEDIATE 应优先执行
+      expect(immediateFn).toHaveBeenCalledTimes(1);
