@@ -128,3 +128,4 @@ describe('定时器队列', () => {
       
       scheduler.scheduleCallback(task);
       
+      // 立即推进时间不应执行
