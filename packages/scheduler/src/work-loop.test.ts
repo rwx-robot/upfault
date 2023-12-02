@@ -150,3 +150,4 @@ describe('定时器队列', () => {
       scheduler.scheduleCallback(createSchedulerTask(fn, 0));
       scheduler.scheduleCallback(createSchedulerTask(vi.fn(), 0));
       
+      await runSchedulerSteps(scheduler, 10);
