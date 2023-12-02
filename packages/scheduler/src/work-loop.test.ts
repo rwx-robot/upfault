@@ -123,3 +123,4 @@ describe('定时器队列', () => {
     it('应在过期时间后执行延迟任务', async () => {
       const fn = vi.fn();
       const task = createSchedulerTask(fn, 5000);
+      const startTime = performance.now();
