@@ -124,3 +124,4 @@ describe('定时器队列', () => {
       const fn = vi.fn();
       const task = createSchedulerTask(fn, 5000);
       const startTime = performance.now();
+      task.expirationTime = startTime + 50; // 50ms 后过期
