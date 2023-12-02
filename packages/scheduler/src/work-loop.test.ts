@@ -113,3 +113,4 @@ describe('Scheduler Work Loop', () => {
       scheduler.scheduleCallback(createSchedulerTask(immediateFn, 0));
       
       await runSchedulerSteps(scheduler, 10);
+      
