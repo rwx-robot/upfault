@@ -118,3 +118,4 @@ describe('Scheduler Work Loop', () => {
       expect(immediateFn).toHaveBeenCalledTimes(1);
     });
   });
+  
