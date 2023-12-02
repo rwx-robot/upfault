@@ -137,3 +137,4 @@ describe('定时器队列', () => {
       await vi.advanceTimersByTimeAsync(30);
       performance.now.mockImplementation(() => startTime + 60);
       // 使用 runAllTimersAsync 触发所有待处理的定时器
+      await vi.runAllTimersAsync();
