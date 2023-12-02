@@ -146,3 +146,4 @@ describe('定时器队列', () => {
     it('应正确统计任务', async () => {
       const fn = vi.fn();
       
+      // 使用 IMMEDIATE 优先级立即执行
