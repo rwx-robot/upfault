@@ -120,3 +120,4 @@ describe('Scheduler Work Loop', () => {
   });
   
 describe('定时器队列', () => {
+    it('应在过期时间后执行延迟任务', async () => {
