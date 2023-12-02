@@ -114,3 +114,4 @@ describe('Scheduler Work Loop', () => {
       
       await runSchedulerSteps(scheduler, 10);
       
+      // IMMEDIATE 应优先执行
