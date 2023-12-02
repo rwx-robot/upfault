@@ -117,3 +117,4 @@ describe('Scheduler Work Loop', () => {
       // IMMEDIATE 应优先执行
       expect(immediateFn).toHaveBeenCalledTimes(1);
     });
+  });
