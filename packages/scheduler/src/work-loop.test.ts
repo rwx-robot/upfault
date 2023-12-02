@@ -135,3 +135,4 @@ describe('定时器队列', () => {
       
       // 过期后应执行 - 手动触发定时器推进和任务执行
       await vi.advanceTimersByTimeAsync(30);
+      performance.now.mockImplementation(() => startTime + 60);
