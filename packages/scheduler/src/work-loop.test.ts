@@ -132,3 +132,4 @@ describe('定时器队列', () => {
       await vi.advanceTimersByTimeAsync(30);
       performance.now.mockImplementation(() => startTime + 30);
       expect(scheduler.getStats().completedTasks).toBe(0);
+      
