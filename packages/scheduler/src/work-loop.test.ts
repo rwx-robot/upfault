@@ -141,3 +141,4 @@ describe('定时器队列', () => {
       expect(scheduler.getStats().completedTasks).toBe(1);
     });
   });
+  
