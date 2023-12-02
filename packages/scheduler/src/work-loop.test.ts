@@ -147,3 +147,4 @@ describe('定时器队列', () => {
       const fn = vi.fn();
       
       // 使用 IMMEDIATE 优先级立即执行
+      scheduler.scheduleCallback(createSchedulerTask(fn, 0));
