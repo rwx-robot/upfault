@@ -149,3 +149,4 @@ describe('定时器队列', () => {
       // 使用 IMMEDIATE 优先级立即执行
       scheduler.scheduleCallback(createSchedulerTask(fn, 0));
       scheduler.scheduleCallback(createSchedulerTask(vi.fn(), 0));
+      
