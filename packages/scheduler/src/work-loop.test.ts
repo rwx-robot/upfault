@@ -159,3 +159,4 @@ describe('定时器队列', () => {
       expect(stats.cancelledTasks).toBe(0);
       // 两个任务都是 IMMEDIATE (0) 优先级
       expect(stats.priorityDistribution[0]).toBe(2);
+    });
