@@ -152,3 +152,4 @@ describe('定时器队列', () => {
       
       await runSchedulerSteps(scheduler, 10);
       
+      const stats = scheduler.getStats();
