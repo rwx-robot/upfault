@@ -144,3 +144,4 @@ describe('定时器队列', () => {
   
   describe('统计信息', () => {
     it('应正确统计任务', async () => {
+      const fn = vi.fn();
