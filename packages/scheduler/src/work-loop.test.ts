@@ -139,3 +139,4 @@ describe('定时器队列', () => {
       // 使用 runAllTimersAsync 触发所有待处理的定时器
       await vi.runAllTimersAsync();
       expect(scheduler.getStats().completedTasks).toBe(1);
+    });
