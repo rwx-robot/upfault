@@ -156,3 +156,4 @@ describe('定时器队列', () => {
       
       expect(stats.totalTasks).toBe(2);
       expect(stats.completedTasks).toBe(2);
+      expect(stats.cancelledTasks).toBe(0);
