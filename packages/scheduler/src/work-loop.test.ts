@@ -130,3 +130,4 @@ describe('定时器队列', () => {
       
       // 立即推进时间不应执行
       await vi.advanceTimersByTimeAsync(30);
+      performance.now.mockImplementation(() => startTime + 30);
