@@ -8,3 +8,4 @@
  * 4. cancelCallback() - 取消任务
  * 
  * 硬件感知：可配置 timeSliceBudget，默认 5ms (留 11ms 给浏览器渲染)
+ * 渐进增强：有 requestIdleCallback 用它，没有用 setTimeout 兜底
