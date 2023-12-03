@@ -172,3 +172,4 @@ describe('定时器队列', () => {
       expect(stats.cancelledTasks).toBe(1);
     });
   });
+  
