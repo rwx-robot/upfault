@@ -7,3 +7,4 @@
  * 3. scheduleCallback() - 调度任务入口
  * 4. cancelCallback() - 取消任务
  * 
+ * 硬件感知：可配置 timeSliceBudget，默认 5ms (留 11ms 给浏览器渲染)
