@@ -178,3 +178,4 @@ describe('定时器队列', () => {
       const s1 = createScheduler(); // 我们创建的实例
       const s2 = createScheduler(); // 新实例
       
+      // 每次调用 createScheduler 都创建新实例
