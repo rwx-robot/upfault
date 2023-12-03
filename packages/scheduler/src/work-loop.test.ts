@@ -170,3 +170,4 @@ describe('定时器队列', () => {
       
       const stats = scheduler.getStats();
       expect(stats.cancelledTasks).toBe(1);
+    });
