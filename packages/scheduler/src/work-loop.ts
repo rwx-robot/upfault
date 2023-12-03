@@ -16,3 +16,4 @@ import {
   SchedulerTask, 
   SchedulerOptions, 
   DEFAULT_SCHEDULER_OPTIONS,
+  TaskQueue
