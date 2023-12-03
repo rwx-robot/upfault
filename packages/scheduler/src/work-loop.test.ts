@@ -165,3 +165,4 @@ describe('定时器队列', () => {
       const task = createSchedulerTask(vi.fn(), 5000);
       const id = scheduler.scheduleCallback(task);
       scheduler.cancelCallback(id);
+      
