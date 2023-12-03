@@ -163,3 +163,4 @@ describe('定时器队列', () => {
     
     it('应统计取消任务', async () => {
       const task = createSchedulerTask(vi.fn(), 5000);
+      const id = scheduler.scheduleCallback(task);
