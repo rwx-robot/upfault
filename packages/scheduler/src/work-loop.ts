@@ -15,3 +15,4 @@ import {
   Priority, 
   SchedulerTask, 
   SchedulerOptions, 
+  DEFAULT_SCHEDULER_OPTIONS,
