@@ -174,3 +174,4 @@ describe('定时器队列', () => {
   });
   
   describe('全局默认调度器', () => {
+    it('createScheduler 应返回新实例', () => {
