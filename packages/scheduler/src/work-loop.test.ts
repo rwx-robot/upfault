@@ -166,3 +166,4 @@ describe('定时器队列', () => {
       const id = scheduler.scheduleCallback(task);
       scheduler.cancelCallback(id);
       
+      await runSchedulerSteps(scheduler, 5);
