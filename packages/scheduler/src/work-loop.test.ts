@@ -182,3 +182,4 @@ describe('定时器队列', () => {
       expect(s1).not.toBe(s2);
     });
   });
+});
