@@ -168,3 +168,4 @@ describe('定时器队列', () => {
       
       await runSchedulerSteps(scheduler, 5);
       
+      const stats = scheduler.getStats();
