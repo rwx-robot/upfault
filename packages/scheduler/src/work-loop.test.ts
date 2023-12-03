@@ -167,3 +167,4 @@ describe('定时器队列', () => {
       scheduler.cancelCallback(id);
       
       await runSchedulerSteps(scheduler, 5);
+      
