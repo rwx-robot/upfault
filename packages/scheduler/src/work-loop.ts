@@ -57,3 +57,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
     stats: {
       totalTasks: 0,
       completedTasks: 0,
+      cancelledTasks: 0,
