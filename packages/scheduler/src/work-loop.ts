@@ -52,3 +52,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
     currentTask: null,
     deadline: 0,
     isPerformingWork: false,
+    isHostCallbackScheduled: false,
