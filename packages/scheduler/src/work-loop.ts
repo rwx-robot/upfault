@@ -25,3 +25,4 @@ export type { SchedulerTask, SchedulerOptions, SchedulerStats, Priority, TaskQue
 export { PriorityQueue, createSchedulerTask, generateTaskId } from './queue';
 
 // ============================================================================
+// 调度器核心状态
