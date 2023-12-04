@@ -60,3 +60,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
       cancelledTasks: 0,
       queueLength: 0,
       avgExecutionTime: 0,
+      totalExecutionTime: 0,
