@@ -51,3 +51,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
     timerQueue: new PriorityQueue((a, b) => a.expirationTime - b.expirationTime),
     currentTask: null,
     deadline: 0,
+    isPerformingWork: false,
