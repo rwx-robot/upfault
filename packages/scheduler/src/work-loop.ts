@@ -54,3 +54,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
     isPerformingWork: false,
     isHostCallbackScheduled: false,
     hostCallbackId: null,
+    stats: {
