@@ -47,3 +47,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
   const mergedOptions = { ...DEFAULT_SCHEDULER_OPTIONS, ...options };
   
   const state: SchedulerState = {
+    taskQueue: new PriorityQueue(),
