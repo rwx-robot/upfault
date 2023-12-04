@@ -22,3 +22,4 @@ import { PriorityQueue, createSchedulerTask, generateTaskId, SchedulerStats } fr
 
 // 重新导出类型
 export type { SchedulerTask, SchedulerOptions, SchedulerStats, Priority, TaskQueue, DEFAULT_SCHEDULER_OPTIONS } from '@upfault/shared';
+export { PriorityQueue, createSchedulerTask, generateTaskId } from './queue';
