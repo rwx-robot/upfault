@@ -56,3 +56,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
     hostCallbackId: null,
     stats: {
       totalTasks: 0,
+      completedTasks: 0,
