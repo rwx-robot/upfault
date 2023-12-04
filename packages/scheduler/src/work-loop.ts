@@ -35,3 +35,4 @@ interface SchedulerState {
   deadline: number;
   isPerformingWork: boolean;
   isHostCallbackScheduled: boolean;
+  hostCallbackId: number | null;
