@@ -27,3 +27,5 @@ export { PriorityQueue, createSchedulerTask, generateTaskId } from './queue';
 // ============================================================================
 // 调度器核心状态
 // ============================================================================
+
+interface SchedulerState {
