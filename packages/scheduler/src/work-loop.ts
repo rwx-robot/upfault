@@ -39,3 +39,5 @@ interface SchedulerState {
   stats: SchedulerStats;
   options: SchedulerOptions;
 }
+
+/**
