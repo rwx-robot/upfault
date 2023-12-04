@@ -49,3 +49,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
   const state: SchedulerState = {
     taskQueue: new PriorityQueue(),
     timerQueue: new PriorityQueue((a, b) => a.expirationTime - b.expirationTime),
+    currentTask: null,
