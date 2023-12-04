@@ -46,3 +46,4 @@ interface SchedulerState {
 export function createScheduler(options: Partial<SchedulerOptions> = {}): Scheduler {
   const mergedOptions = { ...DEFAULT_SCHEDULER_OPTIONS, ...options };
   
+  const state: SchedulerState = {
