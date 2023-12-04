@@ -33,3 +33,4 @@ interface SchedulerState {
   timerQueue: PriorityQueue; // 延迟任务队列 (按 expirationTime 排序)
   currentTask: SchedulerTask | null;
   deadline: number;
+  isPerformingWork: boolean;
