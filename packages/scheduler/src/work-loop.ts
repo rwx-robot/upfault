@@ -62,3 +62,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
       avgExecutionTime: 0,
       totalExecutionTime: 0,
       preemptionCount: 0,
+      priorityDistribution: {
