@@ -70,3 +70,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
         [0x7fffffff]: 0, // IDLE
       },
     },
+    options: mergedOptions,
