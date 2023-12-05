@@ -67,3 +67,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
         [250]: 0,    // USER_BLOCKING
         [5000]: 0,   // NORMAL
         [10000]: 0,  // LOW
+        [0x7fffffff]: 0, // IDLE
