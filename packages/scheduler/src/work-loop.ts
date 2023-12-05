@@ -65,3 +65,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
       priorityDistribution: {
         [0]: 0,      // IMMEDIATE
         [250]: 0,    // USER_BLOCKING
+        [5000]: 0,   // NORMAL
