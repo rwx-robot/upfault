@@ -74,3 +74,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
   };
   
   return new Scheduler(state);
+}
