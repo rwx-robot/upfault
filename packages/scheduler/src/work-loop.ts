@@ -104,3 +104,4 @@ export class Scheduler {
     
     // 如果任务已过期，立即加入任务队列
     if (task.expirationTime <= performance.now()) {
+      state.taskQueue.push(task);
