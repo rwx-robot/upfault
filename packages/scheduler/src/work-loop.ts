@@ -101,3 +101,4 @@ export class Scheduler {
     // 统计
     state.stats.totalTasks++;
     state.stats.priorityDistribution[task.priority] = (state.stats.priorityDistribution[task.priority] || 0) + 1;
+    
