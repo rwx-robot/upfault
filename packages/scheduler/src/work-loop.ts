@@ -103,3 +103,4 @@ export class Scheduler {
     state.stats.priorityDistribution[task.priority] = (state.stats.priorityDistribution[task.priority] || 0) + 1;
     
     // 如果任务已过期，立即加入任务队列
+    if (task.expirationTime <= performance.now()) {
