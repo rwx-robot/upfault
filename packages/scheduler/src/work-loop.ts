@@ -81,3 +81,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
  */
 export class Scheduler {
   private state: SchedulerState;
+  
