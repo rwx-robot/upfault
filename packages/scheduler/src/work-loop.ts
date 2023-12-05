@@ -69,3 +69,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
         [10000]: 0,  // LOW
         [0x7fffffff]: 0, // IDLE
       },
+    },
