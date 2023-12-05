@@ -83,3 +83,4 @@ export class Scheduler {
   private state: SchedulerState;
   
   constructor(state: SchedulerState) {
+    this.state = state;
