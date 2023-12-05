@@ -96,3 +96,4 @@ export class Scheduler {
    * @returns 任务 ID (用于取消)
    */
   scheduleCallback(task: SchedulerTask): number {
+    const { state } = this;
