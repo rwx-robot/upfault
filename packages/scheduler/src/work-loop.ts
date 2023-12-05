@@ -98,3 +98,4 @@ export class Scheduler {
   scheduleCallback(task: SchedulerTask): number {
     const { state } = this;
     
+    // 统计
