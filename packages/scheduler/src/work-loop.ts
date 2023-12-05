@@ -64,3 +64,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
       preemptionCount: 0,
       priorityDistribution: {
         [0]: 0,      // IMMEDIATE
+        [250]: 0,    // USER_BLOCKING
