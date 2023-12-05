@@ -71,3 +71,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
       },
     },
     options: mergedOptions,
+  };
