@@ -80,3 +80,4 @@ export function createScheduler(options: Partial<SchedulerOptions> = {}): Schedu
  * 调度器类
  */
 export class Scheduler {
+  private state: SchedulerState;
