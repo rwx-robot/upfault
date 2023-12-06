@@ -122,3 +122,4 @@ export class Scheduler {
   cancelCallback(taskId: number): boolean {
     const { state } = this;
     
+    // 先尝试从任务队列移除
