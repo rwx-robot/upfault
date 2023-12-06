@@ -114,3 +114,4 @@ export class Scheduler {
     this.requestHostCallback();
     
     return task.id;
+  }
