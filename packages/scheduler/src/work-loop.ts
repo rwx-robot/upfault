@@ -126,3 +126,4 @@ export class Scheduler {
     const tasks = state.taskQueue.toArray();
     const task = tasks.find(t => t.id === taskId);
     if (task) {
+      task.cancelled = true;
