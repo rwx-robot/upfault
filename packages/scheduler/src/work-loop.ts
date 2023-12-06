@@ -141,3 +141,4 @@ export class Scheduler {
       state.stats.cancelledTasks++;
       return true;
     }
+    
