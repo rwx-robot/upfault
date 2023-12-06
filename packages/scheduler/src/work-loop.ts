@@ -121,3 +121,4 @@ export class Scheduler {
    */
   cancelCallback(taskId: number): boolean {
     const { state } = this;
+    
