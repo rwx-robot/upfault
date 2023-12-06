@@ -128,3 +128,4 @@ export class Scheduler {
     if (task) {
       task.cancelled = true;
       state.taskQueue.remove(task);
+      state.stats.cancelledTasks++;
