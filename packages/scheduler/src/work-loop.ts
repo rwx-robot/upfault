@@ -123,3 +123,4 @@ export class Scheduler {
     const { state } = this;
     
     // 先尝试从任务队列移除
+    const tasks = state.taskQueue.toArray();
