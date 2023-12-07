@@ -185,3 +185,4 @@ export class Scheduler {
   __test_step(currentTime?: number): void {
     const { state } = this;
     
+    // 处理到期的定时器任务
