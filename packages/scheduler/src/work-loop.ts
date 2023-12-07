@@ -167,3 +167,4 @@ export class Scheduler {
     const { state } = this;
     return {
       ...state.stats,
+      queueLength: state.taskQueue.size + state.timerQueue.size,
