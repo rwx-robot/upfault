@@ -172,3 +172,4 @@ export class Scheduler {
   }
   
   /**
+   * 获取当前选项
