@@ -151,3 +151,4 @@ export class Scheduler {
   flushSync(): void {
     const { state } = this;
     
+    // 处理所有 IMMEDIATE 任务
