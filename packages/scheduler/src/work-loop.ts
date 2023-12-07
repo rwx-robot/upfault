@@ -156,3 +156,4 @@ export class Scheduler {
       const task = state.taskQueue.peek();
       if (!task || task.priority !== 0) break; // IMMEDIATE = 0
       
+      this.executeTask(state.taskQueue.pop()!);
