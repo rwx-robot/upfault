@@ -165,3 +165,4 @@ export class Scheduler {
    */
   getStats(): SchedulerStats {
     const { state } = this;
+    return {
