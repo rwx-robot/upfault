@@ -169,3 +169,4 @@ export class Scheduler {
       ...state.stats,
       queueLength: state.taskQueue.size + state.timerQueue.size,
     };
+  }
