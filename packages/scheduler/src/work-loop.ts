@@ -150,3 +150,4 @@ export class Scheduler {
    */
   flushSync(): void {
     const { state } = this;
+    
