@@ -186,3 +186,4 @@ export class Scheduler {
     const { state } = this;
     
     // 处理到期的定时器任务
+    this.advanceTimers(currentTime);
