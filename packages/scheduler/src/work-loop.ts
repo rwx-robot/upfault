@@ -216,3 +216,4 @@ export class Scheduler {
     
     if (typeof requestIdleCallback !== 'undefined' && state.options.useIdleCallback) {
       state.hostCallbackId = requestIdleCallback(this.workLoop.bind(this), {
+        timeout: state.options.timeSliceBudget * 2,
