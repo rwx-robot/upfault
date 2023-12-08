@@ -196,3 +196,4 @@ export class Scheduler {
       if (!this.shouldYield() || task.priority === 0) {
         const currentTask = state.taskQueue.pop()!;
         this.executeTask(currentTask);
+      }
