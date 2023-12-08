@@ -212,3 +212,4 @@ export class Scheduler {
     
     if (state.isHostCallbackScheduled) return;
     
+    state.isHostCallbackScheduled = true;
