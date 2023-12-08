@@ -187,3 +187,4 @@ export class Scheduler {
     
     // 处理到期的定时器任务
     this.advanceTimers(currentTime);
+    
