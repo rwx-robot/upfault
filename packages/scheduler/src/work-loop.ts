@@ -222,3 +222,4 @@ export class Scheduler {
       // 兜底：setTimeout 模拟 - 直接使用全局 setTimeout (配合 fake timers)
       state.hostCallbackId = setTimeout(() => {
         this.workLoop({ timeRemaining: () => state.options.timeSliceBudget, didTimeout: false });
+      }, 0) as unknown as number;
