@@ -209,3 +209,4 @@ export class Scheduler {
    */
   private requestHostCallback(): void {
     const { state } = this;
+    
