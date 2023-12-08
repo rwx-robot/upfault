@@ -205,3 +205,4 @@ export class Scheduler {
   // ============================================================================
   
   /**
+   * 请求宿主回调 (requestIdleCallback / setTimeout 兜底)
