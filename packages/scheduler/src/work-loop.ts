@@ -224,3 +224,4 @@ export class Scheduler {
         this.workLoop({ timeRemaining: () => state.options.timeSliceBudget, didTimeout: false });
       }, 0) as unknown as number;
     }
+  }
