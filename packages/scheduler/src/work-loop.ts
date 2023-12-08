@@ -215,3 +215,4 @@ export class Scheduler {
     state.isHostCallbackScheduled = true;
     
     if (typeof requestIdleCallback !== 'undefined' && state.options.useIdleCallback) {
+      state.hostCallbackId = requestIdleCallback(this.workLoop.bind(this), {
