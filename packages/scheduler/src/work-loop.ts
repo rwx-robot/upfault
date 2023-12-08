@@ -208,3 +208,4 @@ export class Scheduler {
    * 请求宿主回调 (requestIdleCallback / setTimeout 兜底)
    */
   private requestHostCallback(): void {
+    const { state } = this;
