@@ -211,3 +211,4 @@ export class Scheduler {
     const { state } = this;
     
     if (state.isHostCallbackScheduled) return;
+    
