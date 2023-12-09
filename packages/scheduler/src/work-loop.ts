@@ -263,3 +263,4 @@ export class Scheduler {
       
       // 主工作循环
       while (state.taskQueue.size > 0) {
+        const task = state.taskQueue.peek()!;
