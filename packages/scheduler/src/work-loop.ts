@@ -236,3 +236,4 @@ export class Scheduler {
       if (typeof cancelIdleCallback !== 'undefined') {
         cancelIdleCallback(state.hostCallbackId);
       } else {
+        clearTimeout(state.hostCallbackId);
