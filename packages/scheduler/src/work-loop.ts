@@ -233,3 +233,4 @@ export class Scheduler {
     const { state } = this;
     
     if (state.hostCallbackId !== null) {
+      if (typeof cancelIdleCallback !== 'undefined') {
