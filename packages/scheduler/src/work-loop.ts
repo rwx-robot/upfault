@@ -253,3 +253,4 @@ export class Scheduler {
     state.isPerformingWork = true;
     
     try {
+      // 先处理到期的定时器任务
