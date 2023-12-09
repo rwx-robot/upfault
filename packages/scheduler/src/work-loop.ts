@@ -230,3 +230,4 @@ export class Scheduler {
    * 取消宿主回调
    */
   private cancelHostCallback(): void {
+    const { state } = this;
