@@ -261,3 +261,4 @@ export class Scheduler {
         ? performance.now() + deadline.timeRemaining()
         : deadline.didTimeout ? performance.now() : performance.now() + state.options.timeSliceBudget;
       
+      // 主工作循环
