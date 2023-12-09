@@ -265,3 +265,4 @@ export class Scheduler {
       while (state.taskQueue.size > 0) {
         const task = state.taskQueue.peek()!;
         
+        // 检查是否应让出
