@@ -259,3 +259,4 @@ export class Scheduler {
       // 设置截止时间
       state.deadline = typeof deadline.timeRemaining === 'function' 
         ? performance.now() + deadline.timeRemaining()
+        : deadline.didTimeout ? performance.now() : performance.now() + state.options.timeSliceBudget;
