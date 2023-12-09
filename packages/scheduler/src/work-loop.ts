@@ -252,3 +252,4 @@ export class Scheduler {
     state.isHostCallbackScheduled = false;
     state.isPerformingWork = true;
     
+    try {
