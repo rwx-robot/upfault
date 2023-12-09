@@ -231,3 +231,4 @@ export class Scheduler {
    */
   private cancelHostCallback(): void {
     const { state } = this;
+    
