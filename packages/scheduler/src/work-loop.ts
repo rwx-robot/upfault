@@ -248,3 +248,4 @@ export class Scheduler {
    */
   private workLoop(deadline: IdleDeadline): void {
     const { state } = this;
+    
