@@ -257,3 +257,4 @@ export class Scheduler {
       this.advanceTimers();
       
       // 设置截止时间
+      state.deadline = typeof deadline.timeRemaining === 'function' 
