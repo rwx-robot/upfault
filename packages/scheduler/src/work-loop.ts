@@ -232,3 +232,4 @@ export class Scheduler {
   private cancelHostCallback(): void {
     const { state } = this;
     
+    if (state.hostCallbackId !== null) {
