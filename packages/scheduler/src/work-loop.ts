@@ -239,3 +239,4 @@ export class Scheduler {
         clearTimeout(state.hostCallbackId);
       }
       state.hostCallbackId = null;
+      state.isHostCallbackScheduled = false;
