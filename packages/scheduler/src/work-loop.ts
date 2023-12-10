@@ -279,3 +279,4 @@ export class Scheduler {
       if (state.taskQueue.size > 0 || state.timerQueue.size > 0) {
         this.requestHostCallback();
       }
+    } finally {
