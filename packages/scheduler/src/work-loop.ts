@@ -280,3 +280,4 @@ export class Scheduler {
         this.requestHostCallback();
       }
     } finally {
+      state.isPerformingWork = false;
