@@ -292,3 +292,4 @@ export class Scheduler {
     const { state } = this;
     const now = currentTime !== undefined ? currentTime : performance.now();
     
+    while (state.timerQueue.size > 0) {
