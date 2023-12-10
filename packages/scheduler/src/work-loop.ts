@@ -293,3 +293,4 @@ export class Scheduler {
     const now = currentTime !== undefined ? currentTime : performance.now();
     
     while (state.timerQueue.size > 0) {
+      const timerTask = state.timerQueue.peek()!;
