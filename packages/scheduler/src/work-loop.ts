@@ -297,3 +297,4 @@ export class Scheduler {
       if (timerTask.expirationTime > now) break;
       
       state.timerQueue.pop();
+      
