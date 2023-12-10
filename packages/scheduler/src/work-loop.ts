@@ -291,3 +291,4 @@ export class Scheduler {
   private advanceTimers(currentTime?: number): void {
     const { state } = this;
     const now = currentTime !== undefined ? currentTime : performance.now();
+    
