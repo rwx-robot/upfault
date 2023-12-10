@@ -302,3 +302,4 @@ export class Scheduler {
       if (!timerTask.cancelled) {
         state.taskQueue.push(timerTask);
       }
+    }
