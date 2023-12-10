@@ -289,3 +289,4 @@ export class Scheduler {
    * @param currentTime 可选的当前时间 (用于测试，默认使用 performance.now())
    */
   private advanceTimers(currentTime?: number): void {
+    const { state } = this;
