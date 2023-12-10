@@ -275,3 +275,4 @@ export class Scheduler {
         this.executeTask(currentTask);
       }
       
+      // 如果还有任务，继续调度
