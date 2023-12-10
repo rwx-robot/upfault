@@ -298,3 +298,4 @@ export class Scheduler {
       
       state.timerQueue.pop();
       
+      // 任务未取消，加入任务队列
