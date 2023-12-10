@@ -303,3 +303,4 @@ export class Scheduler {
         state.taskQueue.push(timerTask);
       }
     }
+  }
