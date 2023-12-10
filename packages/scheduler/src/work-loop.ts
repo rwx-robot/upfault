@@ -277,3 +277,4 @@ export class Scheduler {
       
       // 如果还有任务，继续调度
       if (state.taskQueue.size > 0 || state.timerQueue.size > 0) {
+        this.requestHostCallback();
