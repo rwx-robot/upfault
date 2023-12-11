@@ -339,3 +339,4 @@ export class Scheduler {
       task.completedAt = performance.now();
       state.stats.completedTasks++;
       
+      // 更新统计
