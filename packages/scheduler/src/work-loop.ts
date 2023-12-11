@@ -341,3 +341,4 @@ export class Scheduler {
       
       // 更新统计
       const execTime = task.completedAt - task.startedAt!;
+      state.stats.totalExecutionTime += execTime;
