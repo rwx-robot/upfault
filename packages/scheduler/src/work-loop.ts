@@ -334,3 +334,4 @@ export class Scheduler {
     state.currentTask = task;
     task.startedAt = performance.now();
     
+    try {
