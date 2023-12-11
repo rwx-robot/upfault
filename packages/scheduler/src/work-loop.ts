@@ -316,3 +316,4 @@ export class Scheduler {
       return performance.now() >= state.deadline;
     }
     
+    // 兜底：基于时间片预算
