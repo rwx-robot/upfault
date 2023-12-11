@@ -344,3 +344,4 @@ export class Scheduler {
       state.stats.totalExecutionTime += execTime;
       state.stats.avgExecutionTime = state.stats.totalExecutionTime / state.stats.completedTasks;
     } catch (error) {
+      console.error('[UpFault Scheduler] Task execution failed:', error);
