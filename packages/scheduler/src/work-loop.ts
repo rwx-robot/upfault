@@ -325,3 +325,4 @@ export class Scheduler {
    */
   private executeTask(task: SchedulerTask): void {
     const { state } = this;
+    
