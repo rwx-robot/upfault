@@ -343,3 +343,4 @@ export class Scheduler {
       const execTime = task.completedAt - task.startedAt!;
       state.stats.totalExecutionTime += execTime;
       state.stats.avgExecutionTime = state.stats.totalExecutionTime / state.stats.completedTasks;
+    } catch (error) {
