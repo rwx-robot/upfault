@@ -311,3 +311,4 @@ export class Scheduler {
   private shouldYield(): boolean {
     const { state } = this;
     
+    if (state.options.useIdleCallback && typeof performance !== 'undefined') {
