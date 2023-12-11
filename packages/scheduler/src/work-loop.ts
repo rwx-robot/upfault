@@ -331,3 +331,4 @@ export class Scheduler {
       return;
     }
     
+    state.currentTask = task;
