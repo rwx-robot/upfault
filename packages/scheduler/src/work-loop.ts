@@ -328,3 +328,4 @@ export class Scheduler {
     
     if (task.cancelled) {
       state.stats.cancelledTasks++;
+      return;
