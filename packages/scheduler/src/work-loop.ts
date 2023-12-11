@@ -324,3 +324,4 @@ export class Scheduler {
    * 执行单个任务
    */
   private executeTask(task: SchedulerTask): void {
+    const { state } = this;
