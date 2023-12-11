@@ -335,3 +335,4 @@ export class Scheduler {
     task.startedAt = performance.now();
     
     try {
+      task.callback(task);
