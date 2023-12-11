@@ -337,3 +337,4 @@ export class Scheduler {
     try {
       task.callback(task);
       task.completedAt = performance.now();
+      state.stats.completedTasks++;
