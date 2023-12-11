@@ -340,3 +340,4 @@ export class Scheduler {
       state.stats.completedTasks++;
       
       // 更新统计
+      const execTime = task.completedAt - task.startedAt!;
