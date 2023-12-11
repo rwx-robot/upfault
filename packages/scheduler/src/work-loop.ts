@@ -320,3 +320,4 @@ export class Scheduler {
     return performance.now() >= state.deadline;
   }
   
+  /**
