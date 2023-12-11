@@ -310,3 +310,4 @@ export class Scheduler {
    */
   private shouldYield(): boolean {
     const { state } = this;
+    
