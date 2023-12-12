@@ -380,3 +380,4 @@ export function getDefaultScheduler(): Scheduler {
 
 export function scheduleCallback(task: SchedulerTask): number {
   return getDefaultScheduler().scheduleCallback(task);
+}
