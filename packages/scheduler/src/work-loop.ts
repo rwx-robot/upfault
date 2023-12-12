@@ -375,3 +375,4 @@ export function getDefaultScheduler(): Scheduler {
   if (!defaultScheduler) {
     defaultScheduler = createScheduler();
   }
+  return defaultScheduler;
