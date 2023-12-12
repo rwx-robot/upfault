@@ -377,3 +377,5 @@ export function getDefaultScheduler(): Scheduler {
   }
   return defaultScheduler;
 }
+
+export function scheduleCallback(task: SchedulerTask): number {
