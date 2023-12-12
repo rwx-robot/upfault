@@ -361,3 +361,4 @@ export class Scheduler {
       // 新任务优先级更高，标记当前任务可被抢占
       state.stats.preemptionCount++;
       return true;
+    }
