@@ -355,3 +355,4 @@ export class Scheduler {
    * 优先级抢占：插入高优任务时中断低优任务
    */
   preempt(currentPriority: Priority, newTask: SchedulerTask): boolean {
+    const { state } = this;
