@@ -371,3 +371,4 @@ export class Scheduler {
  */
 let defaultScheduler: Scheduler | null = null;
 
+export function getDefaultScheduler(): Scheduler {
