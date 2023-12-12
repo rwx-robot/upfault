@@ -358,3 +358,4 @@ export class Scheduler {
     const { state } = this;
     
     if (newTask.priority < currentPriority) {
+      // 新任务优先级更高，标记当前任务可被抢占
