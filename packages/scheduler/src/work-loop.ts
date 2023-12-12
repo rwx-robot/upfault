@@ -356,3 +356,4 @@ export class Scheduler {
    */
   preempt(currentPriority: Priority, newTask: SchedulerTask): boolean {
     const { state } = this;
+    
