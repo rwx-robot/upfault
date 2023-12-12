@@ -348,3 +348,4 @@ export class Scheduler {
       task.completedAt = performance.now();
     } finally {
       state.currentTask = null;
+    }
