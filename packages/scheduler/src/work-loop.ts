@@ -389,3 +389,4 @@ export function cancelCallback(taskId: number): boolean {
 export function flushSync(): void {
   getDefaultScheduler().flushSync();
 }
+
