@@ -384,3 +384,4 @@ export function scheduleCallback(task: SchedulerTask): number {
 
 export function cancelCallback(taskId: number): boolean {
   return getDefaultScheduler().cancelCallback(taskId);
+}
