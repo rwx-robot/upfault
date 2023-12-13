@@ -390,3 +390,4 @@ export function flushSync(): void {
   getDefaultScheduler().flushSync();
 }
 
+export function getSchedulerStats(): SchedulerStats {
