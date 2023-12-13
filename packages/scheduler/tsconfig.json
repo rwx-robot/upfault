@@ -18,3 +18,4 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true
   },
+  "include": ["src/**/*"],
