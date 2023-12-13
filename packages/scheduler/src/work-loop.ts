@@ -392,3 +392,4 @@ export function flushSync(): void {
 
 export function getSchedulerStats(): SchedulerStats {
   return getDefaultScheduler().getStats();
+}
