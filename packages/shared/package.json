@@ -12,3 +12,4 @@
       "require": "./dist/index.js"
     },
     "./flags": {
+      "types": "./dist/flags.d.ts",
