@@ -21,3 +21,4 @@
       "import": "./dist/scheduler.mjs",
       "require": "./dist/scheduler.js"
     },
+    "./reactivity": {
