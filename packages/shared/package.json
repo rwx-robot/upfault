@@ -2,3 +2,4 @@
   "name": "@upfault/shared",
   "version": "0.2.0",
   "description": "UpFault Shared Types, Constants & Utilities",
+  "main": "dist/index.js",
