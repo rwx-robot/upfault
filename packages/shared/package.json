@@ -18,3 +18,4 @@
     },
     "./scheduler": {
       "types": "./dist/scheduler.d.ts",
+      "import": "./dist/scheduler.mjs",
