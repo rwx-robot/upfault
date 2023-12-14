@@ -20,3 +20,4 @@
       "types": "./dist/scheduler.d.ts",
       "import": "./dist/scheduler.mjs",
       "require": "./dist/scheduler.js"
+    },
