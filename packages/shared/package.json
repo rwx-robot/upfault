@@ -13,3 +13,4 @@
     },
     "./flags": {
       "types": "./dist/flags.d.ts",
+      "import": "./dist/flags.mjs",
