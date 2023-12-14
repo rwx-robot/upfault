@@ -27,3 +27,4 @@
       "require": "./dist/reactivity.js"
     },
     "./diff": {
+      "types": "./dist/diff.d.ts",
