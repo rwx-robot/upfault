@@ -24,3 +24,4 @@
     "./reactivity": {
       "types": "./dist/reactivity.d.ts",
       "import": "./dist/reactivity.mjs",
+      "require": "./dist/reactivity.js"
