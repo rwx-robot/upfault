@@ -22,3 +22,4 @@
       "require": "./dist/scheduler.js"
     },
     "./reactivity": {
+      "types": "./dist/reactivity.d.ts",
