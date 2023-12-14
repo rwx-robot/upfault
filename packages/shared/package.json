@@ -26,3 +26,4 @@
       "import": "./dist/reactivity.mjs",
       "require": "./dist/reactivity.js"
     },
+    "./diff": {
