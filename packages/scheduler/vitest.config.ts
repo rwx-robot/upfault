@@ -9,3 +9,4 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
       exclude: ['**/*.d.ts', '**/*.test.ts', 'dist/**'],
     },
+    globals: true,
