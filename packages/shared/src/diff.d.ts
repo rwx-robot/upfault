@@ -5,3 +5,4 @@
  * O(n) 线性时间复杂度
  */
 import type { UpdateFingerprint } from './predict';
+import type { Priority } from './scheduler';
