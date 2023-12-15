@@ -31,3 +31,4 @@
       "import": "./dist/diff.mjs",
       "require": "./dist/diff.js"
     },
+    "./utils": {
