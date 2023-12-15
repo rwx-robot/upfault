@@ -35,3 +35,4 @@
       "types": "./dist/utils.d.ts",
       "import": "./dist/utils.mjs",
       "require": "./dist/utils.js"
+    }
