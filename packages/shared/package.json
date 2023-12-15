@@ -51,3 +51,4 @@
   },
   "devDependencies": {
     "@types/node": "^20.19.43",
+    "esbuild": "^0.20.0",
