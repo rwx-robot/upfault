@@ -28,3 +28,4 @@
     },
     "./diff": {
       "types": "./dist/diff.d.ts",
+      "import": "./dist/diff.mjs",
