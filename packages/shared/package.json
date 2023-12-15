@@ -38,3 +38,4 @@
     }
   },
   "scripts": {
+    "build": "tsc -p tsconfig.build.json && pnpm run build:esm",
