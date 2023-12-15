@@ -36,3 +36,4 @@
       "import": "./dist/utils.mjs",
       "require": "./dist/utils.js"
     }
+  },
