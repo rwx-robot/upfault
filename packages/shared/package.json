@@ -37,3 +37,4 @@
       "require": "./dist/utils.js"
     }
   },
+  "scripts": {
