@@ -30,3 +30,4 @@
       "types": "./dist/diff.d.ts",
       "import": "./dist/diff.mjs",
       "require": "./dist/diff.js"
+    },
