@@ -32,3 +32,4 @@
       "require": "./dist/diff.js"
     },
     "./utils": {
+      "types": "./dist/utils.d.ts",
