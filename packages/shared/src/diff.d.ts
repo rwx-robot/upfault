@@ -16,3 +16,4 @@ export interface VNode {
     /** 子节点 */
     children: VNode[] | string | null;
     /** Key */
+    key: string | number | null;
