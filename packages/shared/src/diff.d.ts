@@ -20,3 +20,4 @@ export interface VNode {
     /** 编译时 Flags */
     flags: number;
     /** 运行时指纹 (预测层用) */
+    fingerprint?: UpdateFingerprint;
