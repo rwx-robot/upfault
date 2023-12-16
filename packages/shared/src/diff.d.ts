@@ -30,3 +30,4 @@ export interface VNode {
     /** Block 归属 */
     block: Block | null;
     /** Patch 标记 */
+    patchFlag: PatchFlags;
