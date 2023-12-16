@@ -22,3 +22,4 @@ export interface VNode {
     /** 运行时指纹 (预测层用) */
     fingerprint?: UpdateFingerprint;
     /** 对应的真实 DOM 节点 */
+    el: Node | null;
