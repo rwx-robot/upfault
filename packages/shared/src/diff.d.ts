@@ -6,3 +6,4 @@
  */
 import type { UpdateFingerprint } from './predict';
 import type { Priority } from './scheduler';
+export interface VNode {
