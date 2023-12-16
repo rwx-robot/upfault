@@ -24,3 +24,4 @@ export interface VNode {
     /** 对应的真实 DOM 节点 */
     el: Node | null;
     /** 父节点 */
+    parent: VNode | null;
