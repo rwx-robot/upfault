@@ -34,3 +34,4 @@ export interface VNode {
     /** 动态 Props 索引 */
     dynamicProps: string[] | null;
 }
+/** VNode 类型 */
