@@ -39,3 +39,4 @@ export type VNodeType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 export declare namespace VNodeType {
     const TEXT = 1;
     const ELEMENT = 2;
+    const COMPONENT = 3;
