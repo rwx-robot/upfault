@@ -40,3 +40,4 @@ export declare namespace VNodeType {
     const TEXT = 1;
     const ELEMENT = 2;
     const COMPONENT = 3;
+    const BLOCK = 4;
