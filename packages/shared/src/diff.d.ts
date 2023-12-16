@@ -33,3 +33,4 @@ export interface VNode {
     patchFlag: PatchFlags;
     /** 动态 Props 索引 */
     dynamicProps: string[] | null;
+}
