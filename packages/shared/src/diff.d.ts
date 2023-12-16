@@ -45,3 +45,4 @@ export declare namespace VNodeType {
     const COMMENT = 6;
     const TELEPORT = 7;
     const SUSPENSE = 8;
+    const KEEPALIVE = 9;
