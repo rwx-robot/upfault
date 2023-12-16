@@ -36,3 +36,4 @@ export interface VNode {
 }
 /** VNode 类型 */
 export type VNodeType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+export declare namespace VNodeType {
