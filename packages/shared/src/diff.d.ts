@@ -14,3 +14,4 @@ export interface VNode {
     /** Props 属性 */
     props: VNodeProps | null;
     /** 子节点 */
+    children: VNode[] | string | null;
