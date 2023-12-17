@@ -79,3 +79,4 @@ export declare const enum PatchFlags {
     UNKEYED_FRAGMENT = 128,
     /** 动态插槽 */
     DYNAMIC_SLOTS = 256,
+    /** 组件需要更新 */
