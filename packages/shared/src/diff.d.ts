@@ -58,3 +58,4 @@ export interface VNodeProps {
     class?: string | string[] | Record<string, boolean>;
 }
 /** Patch 标记 (运行时优化) */
+export declare const enum PatchFlags {
