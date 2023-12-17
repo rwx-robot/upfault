@@ -56,3 +56,4 @@ export interface VNodeProps {
     onInput?: (e: Event) => void;
     style?: string | Record<string, string | number>;
     class?: string | string[] | Record<string, boolean>;
+}
