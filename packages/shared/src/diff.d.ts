@@ -48,3 +48,4 @@ export declare namespace VNodeType {
     const KEEPALIVE = 9;
 }
 /** Props 类型 */
+export interface VNodeProps {
