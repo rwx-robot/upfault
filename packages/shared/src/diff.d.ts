@@ -64,3 +64,4 @@ export declare const enum PatchFlags {
     /** 文本内容变化 */
     TEXT = 1,
     /** class 变化 */
+    CLASS = 2,
