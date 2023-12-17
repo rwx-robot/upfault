@@ -49,3 +49,4 @@ export declare namespace VNodeType {
 }
 /** Props 类型 */
 export interface VNodeProps {
+    [key: string]: unknown;
