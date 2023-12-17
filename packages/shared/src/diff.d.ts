@@ -89,3 +89,4 @@ export declare const enum PatchFlags {
     BAIL = -2
 }
 /** Block 结构 */
+export interface Block {
