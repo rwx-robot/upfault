@@ -77,3 +77,4 @@ export declare const enum PatchFlags {
     KEYED_FRAGMENT = 64,
     /** Unkeyed Fragment */
     UNKEYED_FRAGMENT = 128,
+    /** 动态插槽 */
