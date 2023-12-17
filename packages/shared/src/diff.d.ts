@@ -88,3 +88,4 @@ export declare const enum PatchFlags {
     /** Bailout (跳过) */
     BAIL = -2
 }
+/** Block 结构 */
