@@ -47,3 +47,4 @@ export declare namespace VNodeType {
     const SUSPENSE = 8;
     const KEEPALIVE = 9;
 }
+/** Props 类型 */
