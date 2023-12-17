@@ -71,3 +71,4 @@ export declare const enum PatchFlags {
     PROPS = 8,
     /** 完整 Props 替换 */
     FULL_PROPS = 16,
+    /** 事件监听器变化 */
