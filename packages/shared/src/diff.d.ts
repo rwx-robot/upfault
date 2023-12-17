@@ -73,3 +73,4 @@ export declare const enum PatchFlags {
     FULL_PROPS = 16,
     /** 事件监听器变化 */
     EVENTS = 32,
+    /** Keyed Fragment 重排 */
