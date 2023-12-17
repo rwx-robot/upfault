@@ -59,3 +59,4 @@ export interface VNodeProps {
 }
 /** Patch 标记 (运行时优化) */
 export declare const enum PatchFlags {
+    /** 无需 patch */
