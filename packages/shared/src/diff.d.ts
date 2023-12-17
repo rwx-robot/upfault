@@ -61,3 +61,4 @@ export interface VNodeProps {
 export declare const enum PatchFlags {
     /** 无需 patch */
     NONE = 0,
+    /** 文本内容变化 */
