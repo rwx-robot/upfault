@@ -68,3 +68,4 @@ export declare const enum PatchFlags {
     /** style 变化 */
     STYLE = 4,
     /** Props 变化 */
+    PROPS = 8,
