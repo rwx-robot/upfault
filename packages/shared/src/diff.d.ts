@@ -85,3 +85,4 @@ export declare const enum PatchFlags {
     FULL_DIFF = 1024,
     /** 静态提升 */
     HOISTED = -1,
+    /** Bailout (跳过) */
