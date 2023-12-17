@@ -46,3 +46,4 @@ export declare namespace VNodeType {
     const TELEPORT = 7;
     const SUSPENSE = 8;
     const KEEPALIVE = 9;
+}
