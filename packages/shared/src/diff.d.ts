@@ -84,3 +84,4 @@ export declare const enum PatchFlags {
     /** 需要完整 Diff */
     FULL_DIFF = 1024,
     /** 静态提升 */
+    HOISTED = -1,
