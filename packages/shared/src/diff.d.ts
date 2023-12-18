@@ -117,3 +117,4 @@ export declare const enum DiffOpType {
     REPLACE = "REPLACE"
 }
 /** Diff 操作 */
+export interface DiffOp {
