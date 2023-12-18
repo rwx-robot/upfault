@@ -120,3 +120,4 @@ export declare const enum DiffOpType {
 export interface DiffOp {
     type: DiffOpType;
     oldNode?: VNode;
+    newNode?: VNode;
