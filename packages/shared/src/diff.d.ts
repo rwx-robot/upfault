@@ -125,3 +125,4 @@ export interface DiffOp {
     toIndex?: number;
     parentNode?: VNode;
 }
+/** Diff 结果 */
