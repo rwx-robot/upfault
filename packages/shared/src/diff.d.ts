@@ -104,3 +104,4 @@ export interface Block {
     updateCount: number;
 }
 /** Diff 操作类型 */
+export declare const enum DiffOpType {
