@@ -129,3 +129,4 @@ export interface DiffOp {
 export interface DiffResult {
     /** 操作序列 */
     ops: DiffOp[];
+    /** 是否有变化 */
