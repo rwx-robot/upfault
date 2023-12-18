@@ -99,3 +99,4 @@ export interface Block {
     /** 优先级 */
     priority: Priority;
     /** 是否已挂载 */
+    mounted: boolean;
