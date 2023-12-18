@@ -116,3 +116,4 @@ export declare const enum DiffOpType {
     /** 替换节点 (类型不同) */
     REPLACE = "REPLACE"
 }
+/** Diff 操作 */
