@@ -98,3 +98,4 @@ export interface Block {
     dynamicNodes: VNode[];
     /** 优先级 */
     priority: Priority;
+    /** 是否已挂载 */
