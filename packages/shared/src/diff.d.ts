@@ -126,3 +126,4 @@ export interface DiffOp {
     parentNode?: VNode;
 }
 /** Diff 结果 */
+export interface DiffResult {
