@@ -128,3 +128,4 @@ export interface DiffOp {
 /** Diff 结果 */
 export interface DiffResult {
     /** 操作序列 */
+    ops: DiffOp[];
