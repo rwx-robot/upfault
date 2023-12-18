@@ -103,3 +103,4 @@ export interface Block {
     /** 更新计数 */
     updateCount: number;
 }
+/** Diff 操作类型 */
