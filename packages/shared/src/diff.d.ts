@@ -92,3 +92,4 @@ export declare const enum PatchFlags {
 export interface Block {
     /** Block ID */
     id: string;
+    /** 根节点 */
