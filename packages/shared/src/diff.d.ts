@@ -136,3 +136,4 @@ export interface DiffResult {
 }
 /** Diff 统计 */
 export interface DiffStats {
+    /** 旧节点总数 */
