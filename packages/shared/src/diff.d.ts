@@ -155,3 +155,4 @@ export interface DiffStats {
 export interface DiffIndex {
     /** Key -> 旧节点索引映射 */
     keyMap: Map<string | number, number>;
+    /** Type -> 旧节点索引列表映射 */
