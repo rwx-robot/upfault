@@ -152,3 +152,4 @@ export interface DiffStats {
     duration: number;
 }
 /** 双端扩散索引 */
+export interface DiffIndex {
