@@ -161,3 +161,4 @@ export interface DiffIndex {
     oldNodes: VNode[];
     /** 处理范围 [start, end] */
     start: number;
+    end: number;
