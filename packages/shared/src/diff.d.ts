@@ -146,3 +146,4 @@ export interface DiffStats {
     createdCount: number;
     /** 删除节点数 */
     deletedCount: number;
+    /** 移动节点数 */
