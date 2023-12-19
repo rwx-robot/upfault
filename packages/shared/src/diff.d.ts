@@ -140,3 +140,4 @@ export interface DiffStats {
     oldCount: number;
     /** 新节点总数 */
     newCount: number;
+    /** 复用节点数 */
