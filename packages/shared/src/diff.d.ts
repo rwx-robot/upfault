@@ -157,3 +157,4 @@ export interface DiffIndex {
     keyMap: Map<string | number, number>;
     /** Type -> 旧节点索引列表映射 */
     typeMap: Map<VNodeType, number[]>;
+    /** 旧节点数组 */
