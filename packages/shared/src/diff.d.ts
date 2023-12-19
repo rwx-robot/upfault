@@ -153,3 +153,4 @@ export interface DiffStats {
 }
 /** 双端扩散索引 */
 export interface DiffIndex {
+    /** Key -> 旧节点索引映射 */
