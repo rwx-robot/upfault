@@ -163,3 +163,4 @@ export interface DiffIndex {
     start: number;
     end: number;
 }
+/** AeroDiff 配置 */
