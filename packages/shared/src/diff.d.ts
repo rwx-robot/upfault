@@ -148,3 +148,4 @@ export interface DiffStats {
     deletedCount: number;
     /** 移动节点数 */
     movedCount: number;
+    /** 耗时 (ms) */
