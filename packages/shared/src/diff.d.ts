@@ -169,3 +169,4 @@ export interface AeroDiffOptions {
     enableTypeFallback: boolean;
     /** 是否启用形状匹配 (children 结构相似) */
     enableShapeMatching: boolean;
+    /** 最大递归深度 */
