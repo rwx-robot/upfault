@@ -133,3 +133,4 @@ export interface DiffResult {
     changed: boolean;
     /** 统计信息 */
     stats: DiffStats;
+}
