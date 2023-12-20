@@ -182,3 +182,4 @@ export interface Component {
     displayName?: string;
     __hmrId?: string;
 }
+/** 组件实例 */
