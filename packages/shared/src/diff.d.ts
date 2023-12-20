@@ -175,3 +175,4 @@ export interface AeroDiffOptions {
     collectStats: boolean;
 }
 /** 默认 AeroDiff 配置 */
+export declare const DEFAULT_AERODIFF_OPTIONS: AeroDiffOptions;
