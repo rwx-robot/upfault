@@ -187,3 +187,4 @@ export interface ComponentInstance {
     uid: number;
     type: Component;
     props: VNodeProps;
+    state: Record<string, unknown>;
