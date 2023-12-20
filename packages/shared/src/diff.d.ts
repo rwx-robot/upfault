@@ -172,3 +172,4 @@ export interface AeroDiffOptions {
     /** 最大递归深度 */
     maxDepth: number;
     /** 是否收集统计 */
+    collectStats: boolean;
