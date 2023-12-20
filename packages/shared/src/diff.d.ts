@@ -183,3 +183,4 @@ export interface Component {
     __hmrId?: string;
 }
 /** 组件实例 */
+export interface ComponentInstance {
