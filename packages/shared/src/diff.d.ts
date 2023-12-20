@@ -185,3 +185,4 @@ export interface Component {
 /** 组件实例 */
 export interface ComponentInstance {
     uid: number;
+    type: Component;
