@@ -5,3 +5,4 @@
  * O(n) 线性时间复杂度
  */
 // For backwards compatibility, provide a namespace with the values
+export var VNodeType;
