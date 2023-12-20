@@ -196,3 +196,4 @@ export interface ComponentInstance {
     onUpdated?: () => void;
 }
 /** Ref 类型前向声明 */
+export interface Ref<T> {
