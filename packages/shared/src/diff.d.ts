@@ -195,3 +195,4 @@ export interface ComponentInstance {
     onUnmounted?: () => void;
     onUpdated?: () => void;
 }
+/** Ref 类型前向声明 */
