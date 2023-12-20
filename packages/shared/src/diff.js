@@ -6,3 +6,4 @@
  */
 // For backwards compatibility, provide a namespace with the values
 export var VNodeType;
+(function (VNodeType) {
