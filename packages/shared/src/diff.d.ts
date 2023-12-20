@@ -173,3 +173,4 @@ export interface AeroDiffOptions {
     maxDepth: number;
     /** 是否收集统计 */
     collectStats: boolean;
+}
