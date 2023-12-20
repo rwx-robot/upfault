@@ -193,3 +193,4 @@ export interface ComponentInstance {
     unmount: () => void;
     onMounted?: () => void;
     onUnmounted?: () => void;
+    onUpdated?: () => void;
