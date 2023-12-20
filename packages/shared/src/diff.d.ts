@@ -191,3 +191,4 @@ export interface ComponentInstance {
     render: () => VNode;
     update: () => void;
     unmount: () => void;
+    onMounted?: () => void;
