@@ -13,3 +13,4 @@ export var VNodeType;
     VNodeType.BLOCK = 4;
     VNodeType.FRAGMENT = 5;
     VNodeType.COMMENT = 6;
+    VNodeType.TELEPORT = 7;
