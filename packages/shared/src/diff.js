@@ -14,3 +14,4 @@ export var VNodeType;
     VNodeType.FRAGMENT = 5;
     VNodeType.COMMENT = 6;
     VNodeType.TELEPORT = 7;
+    VNodeType.SUSPENSE = 8;
