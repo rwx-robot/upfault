@@ -25,3 +25,4 @@ export var PatchFlags;
     /** 文本内容变化 */
     PatchFlags[PatchFlags["TEXT"] = 1] = "TEXT";
     /** class 变化 */
+    PatchFlags[PatchFlags["CLASS"] = 2] = "CLASS";
