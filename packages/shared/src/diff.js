@@ -42,3 +42,4 @@ export var PatchFlags;
     PatchFlags[PatchFlags["DYNAMIC_SLOTS"] = 256] = "DYNAMIC_SLOTS";
     /** 组件需要更新 */
     PatchFlags[PatchFlags["COMPONENT"] = 512] = "COMPONENT";
+    /** 需要完整 Diff */
