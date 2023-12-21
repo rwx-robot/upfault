@@ -43,3 +43,4 @@ export var PatchFlags;
     /** 组件需要更新 */
     PatchFlags[PatchFlags["COMPONENT"] = 512] = "COMPONENT";
     /** 需要完整 Diff */
+    PatchFlags[PatchFlags["FULL_DIFF"] = 1024] = "FULL_DIFF";
