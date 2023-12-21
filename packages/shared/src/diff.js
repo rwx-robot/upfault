@@ -16,3 +16,4 @@ export var VNodeType;
     VNodeType.TELEPORT = 7;
     VNodeType.SUSPENSE = 8;
     VNodeType.KEEPALIVE = 9;
+})(VNodeType || (VNodeType = {}));
