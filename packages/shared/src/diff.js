@@ -35,3 +35,4 @@ export var PatchFlags;
     /** 事件监听器变化 */
     PatchFlags[PatchFlags["EVENTS"] = 32] = "EVENTS";
     /** Keyed Fragment 重排 */
+    PatchFlags[PatchFlags["KEYED_FRAGMENT"] = 64] = "KEYED_FRAGMENT";
