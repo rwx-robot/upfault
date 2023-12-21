@@ -41,3 +41,4 @@ export var PatchFlags;
     /** 动态插槽 */
     PatchFlags[PatchFlags["DYNAMIC_SLOTS"] = 256] = "DYNAMIC_SLOTS";
     /** 组件需要更新 */
+    PatchFlags[PatchFlags["COMPONENT"] = 512] = "COMPONENT";
