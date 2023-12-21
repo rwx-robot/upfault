@@ -10,3 +10,4 @@ export var VNodeType;
     VNodeType.TEXT = 1;
     VNodeType.ELEMENT = 2;
     VNodeType.COMPONENT = 3;
+    VNodeType.BLOCK = 4;
