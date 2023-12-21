@@ -21,3 +21,4 @@ export var VNodeType;
 export var PatchFlags;
 (function (PatchFlags) {
     /** 无需 patch */
+    PatchFlags[PatchFlags["NONE"] = 0] = "NONE";
