@@ -36,3 +36,4 @@ export var PatchFlags;
     PatchFlags[PatchFlags["EVENTS"] = 32] = "EVENTS";
     /** Keyed Fragment 重排 */
     PatchFlags[PatchFlags["KEYED_FRAGMENT"] = 64] = "KEYED_FRAGMENT";
+    /** Unkeyed Fragment */
