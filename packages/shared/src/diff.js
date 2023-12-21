@@ -19,3 +19,4 @@ export var VNodeType;
 })(VNodeType || (VNodeType = {}));
 /** Patch 标记 (运行时优化) */
 export var PatchFlags;
+(function (PatchFlags) {
