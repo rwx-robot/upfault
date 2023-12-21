@@ -23,3 +23,4 @@ export var PatchFlags;
     /** 无需 patch */
     PatchFlags[PatchFlags["NONE"] = 0] = "NONE";
     /** 文本内容变化 */
+    PatchFlags[PatchFlags["TEXT"] = 1] = "TEXT";
