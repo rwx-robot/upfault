@@ -18,3 +18,4 @@ export var VNodeType;
     VNodeType.KEEPALIVE = 9;
 })(VNodeType || (VNodeType = {}));
 /** Patch 标记 (运行时优化) */
+export var PatchFlags;
