@@ -15,3 +15,4 @@ export var VNodeType;
     VNodeType.COMMENT = 6;
     VNodeType.TELEPORT = 7;
     VNodeType.SUSPENSE = 8;
+    VNodeType.KEEPALIVE = 9;
