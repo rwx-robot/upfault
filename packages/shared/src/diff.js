@@ -11,3 +11,4 @@ export var VNodeType;
     VNodeType.ELEMENT = 2;
     VNodeType.COMPONENT = 3;
     VNodeType.BLOCK = 4;
+    VNodeType.FRAGMENT = 5;
