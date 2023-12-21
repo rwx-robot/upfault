@@ -20,3 +20,4 @@ export var VNodeType;
 /** Patch 标记 (运行时优化) */
 export var PatchFlags;
 (function (PatchFlags) {
+    /** 无需 patch */
