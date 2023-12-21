@@ -17,3 +17,4 @@ export var VNodeType;
     VNodeType.SUSPENSE = 8;
     VNodeType.KEEPALIVE = 9;
 })(VNodeType || (VNodeType = {}));
+/** Patch 标记 (运行时优化) */
