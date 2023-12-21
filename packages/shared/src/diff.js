@@ -9,3 +9,4 @@ export var VNodeType;
 (function (VNodeType) {
     VNodeType.TEXT = 1;
     VNodeType.ELEMENT = 2;
+    VNodeType.COMPONENT = 3;
