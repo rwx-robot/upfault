@@ -38,3 +38,4 @@ export var PatchFlags;
     PatchFlags[PatchFlags["KEYED_FRAGMENT"] = 64] = "KEYED_FRAGMENT";
     /** Unkeyed Fragment */
     PatchFlags[PatchFlags["UNKEYED_FRAGMENT"] = 128] = "UNKEYED_FRAGMENT";
+    /** 动态插槽 */
