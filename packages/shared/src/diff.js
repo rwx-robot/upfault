@@ -33,3 +33,4 @@ export var PatchFlags;
     /** 完整 Props 替换 */
     PatchFlags[PatchFlags["FULL_PROPS"] = 16] = "FULL_PROPS";
     /** 事件监听器变化 */
+    PatchFlags[PatchFlags["EVENTS"] = 32] = "EVENTS";
