@@ -45,3 +45,4 @@ export var PatchFlags;
     /** 需要完整 Diff */
     PatchFlags[PatchFlags["FULL_DIFF"] = 1024] = "FULL_DIFF";
     /** 静态提升 */
+    PatchFlags[PatchFlags["HOISTED"] = -1] = "HOISTED";
