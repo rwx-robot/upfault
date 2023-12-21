@@ -39,3 +39,4 @@ export var PatchFlags;
     /** Unkeyed Fragment */
     PatchFlags[PatchFlags["UNKEYED_FRAGMENT"] = 128] = "UNKEYED_FRAGMENT";
     /** 动态插槽 */
+    PatchFlags[PatchFlags["DYNAMIC_SLOTS"] = 256] = "DYNAMIC_SLOTS";
