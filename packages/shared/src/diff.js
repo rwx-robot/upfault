@@ -29,3 +29,4 @@ export var PatchFlags;
     /** style 变化 */
     PatchFlags[PatchFlags["STYLE"] = 4] = "STYLE";
     /** Props 变化 */
+    PatchFlags[PatchFlags["PROPS"] = 8] = "PROPS";
