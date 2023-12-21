@@ -40,3 +40,4 @@ export var PatchFlags;
     PatchFlags[PatchFlags["UNKEYED_FRAGMENT"] = 128] = "UNKEYED_FRAGMENT";
     /** 动态插槽 */
     PatchFlags[PatchFlags["DYNAMIC_SLOTS"] = 256] = "DYNAMIC_SLOTS";
+    /** 组件需要更新 */
