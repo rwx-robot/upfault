@@ -30,3 +30,4 @@ export var PatchFlags;
     PatchFlags[PatchFlags["STYLE"] = 4] = "STYLE";
     /** Props 变化 */
     PatchFlags[PatchFlags["PROPS"] = 8] = "PROPS";
+    /** 完整 Props 替换 */
