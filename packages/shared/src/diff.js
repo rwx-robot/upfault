@@ -26,3 +26,4 @@ export var PatchFlags;
     PatchFlags[PatchFlags["TEXT"] = 1] = "TEXT";
     /** class 变化 */
     PatchFlags[PatchFlags["CLASS"] = 2] = "CLASS";
+    /** style 变化 */
