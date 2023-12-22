@@ -61,3 +61,4 @@ export var DiffOpType;
     /** 删除节点 */
     DiffOpType["REMOVE"] = "REMOVE";
     /** 替换节点 (类型不同) */
+    DiffOpType["REPLACE"] = "REPLACE";
