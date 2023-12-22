@@ -57,3 +57,4 @@ export var DiffOpType;
     /** 更新现有节点 */
     DiffOpType["UPDATE"] = "UPDATE";
     /** 移动节点 */
+    DiffOpType["MOVE"] = "MOVE";
