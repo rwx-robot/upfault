@@ -5,3 +5,5 @@ import {
   DiffOpType,
   DEFAULT_AERODIFF_OPTIONS,
 } from './diff';
+
+describe('Diff Types', () => {
