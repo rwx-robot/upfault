@@ -50,3 +50,4 @@ export var PatchFlags;
     PatchFlags[PatchFlags["BAIL"] = -2] = "BAIL";
 })(PatchFlags || (PatchFlags = {}));
 /** Diff 操作类型 */
+export var DiffOpType;
