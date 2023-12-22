@@ -63,3 +63,4 @@ export var DiffOpType;
     /** 替换节点 (类型不同) */
     DiffOpType["REPLACE"] = "REPLACE";
 })(DiffOpType || (DiffOpType = {}));
+/** 默认 AeroDiff 配置 */
