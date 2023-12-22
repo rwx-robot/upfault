@@ -8,3 +8,4 @@ import {
 
 describe('Diff Types', () => {
   describe('VNodeType', () => {
+    it('应定义所有节点类型', () => {
