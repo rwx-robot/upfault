@@ -59,3 +59,4 @@ export var DiffOpType;
     /** 移动节点 */
     DiffOpType["MOVE"] = "MOVE";
     /** 删除节点 */
+    DiffOpType["REMOVE"] = "REMOVE";
