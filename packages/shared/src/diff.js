@@ -52,3 +52,4 @@ export var PatchFlags;
 /** Diff 操作类型 */
 export var DiffOpType;
 (function (DiffOpType) {
+    /** 创建新节点 */
