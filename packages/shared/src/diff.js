@@ -48,3 +48,4 @@ export var PatchFlags;
     PatchFlags[PatchFlags["HOISTED"] = -1] = "HOISTED";
     /** Bailout (跳过) */
     PatchFlags[PatchFlags["BAIL"] = -2] = "BAIL";
+})(PatchFlags || (PatchFlags = {}));
