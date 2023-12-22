@@ -70,3 +70,4 @@ export const DEFAULT_AERODIFF_OPTIONS = {
     maxDepth: 100,
     collectStats: true,
 };
+//# sourceMappingURL=diff.js.map
