@@ -7,3 +7,4 @@ import {
 } from './diff';
 
 describe('Diff Types', () => {
+  describe('VNodeType', () => {
