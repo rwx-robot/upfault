@@ -68,3 +68,4 @@ export const DEFAULT_AERODIFF_OPTIONS = {
     enableTypeFallback: true,
     enableShapeMatching: true,
     maxDepth: 100,
+    collectStats: true,
