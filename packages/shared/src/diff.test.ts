@@ -12,3 +12,4 @@ describe('Diff Types', () => {
       expect(VNodeType.TEXT).toBe(1);
       expect(VNodeType.ELEMENT).toBe(2);
       expect(VNodeType.COMPONENT).toBe(3);
+      expect(VNodeType.BLOCK).toBe(4);
