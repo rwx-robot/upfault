@@ -55,3 +55,4 @@ export var DiffOpType;
     /** 创建新节点 */
     DiffOpType["CREATE"] = "CREATE";
     /** 更新现有节点 */
+    DiffOpType["UPDATE"] = "UPDATE";
