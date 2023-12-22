@@ -51,3 +51,4 @@ export var PatchFlags;
 })(PatchFlags || (PatchFlags = {}));
 /** Diff 操作类型 */
 export var DiffOpType;
+(function (DiffOpType) {
