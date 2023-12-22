@@ -69,3 +69,4 @@ export const DEFAULT_AERODIFF_OPTIONS = {
     enableShapeMatching: true,
     maxDepth: 100,
     collectStats: true,
+};
