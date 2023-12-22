@@ -11,3 +11,4 @@ describe('Diff Types', () => {
     it('应定义所有节点类型', () => {
       expect(VNodeType.TEXT).toBe(1);
       expect(VNodeType.ELEMENT).toBe(2);
+      expect(VNodeType.COMPONENT).toBe(3);
