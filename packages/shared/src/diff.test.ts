@@ -3,3 +3,4 @@ import {
   VNodeType,
   PatchFlags,
   DiffOpType,
+  DEFAULT_AERODIFF_OPTIONS,
