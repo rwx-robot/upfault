@@ -53,3 +53,4 @@ export var PatchFlags;
 export var DiffOpType;
 (function (DiffOpType) {
     /** 创建新节点 */
+    DiffOpType["CREATE"] = "CREATE";
