@@ -64,3 +64,4 @@ export var DiffOpType;
     DiffOpType["REPLACE"] = "REPLACE";
 })(DiffOpType || (DiffOpType = {}));
 /** 默认 AeroDiff 配置 */
+export const DEFAULT_AERODIFF_OPTIONS = {
