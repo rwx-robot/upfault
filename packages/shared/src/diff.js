@@ -49,3 +49,4 @@ export var PatchFlags;
     /** Bailout (跳过) */
     PatchFlags[PatchFlags["BAIL"] = -2] = "BAIL";
 })(PatchFlags || (PatchFlags = {}));
+/** Diff 操作类型 */
