@@ -41,3 +41,4 @@ describe('Diff Types', () => {
     it('标志位应互不重叠 (除特殊负值)', () => {
       const positiveFlags = [
         PatchFlags.TEXT,
+        PatchFlags.CLASS,
