@@ -24,3 +24,4 @@ describe('Diff Types', () => {
     it('应定义正确的位掩码值', () => {
       expect(PatchFlags.NONE).toBe(0);
       expect(PatchFlags.TEXT).toBe(1);
+      expect(PatchFlags.CLASS).toBe(2);
