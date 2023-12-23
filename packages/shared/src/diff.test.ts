@@ -33,3 +33,4 @@ describe('Diff Types', () => {
       expect(PatchFlags.UNKEYED_FRAGMENT).toBe(128);
       expect(PatchFlags.DYNAMIC_SLOTS).toBe(256);
       expect(PatchFlags.COMPONENT).toBe(512);
+      expect(PatchFlags.FULL_DIFF).toBe(1024);
