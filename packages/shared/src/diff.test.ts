@@ -14,3 +14,4 @@ describe('Diff Types', () => {
       expect(VNodeType.COMPONENT).toBe(3);
       expect(VNodeType.BLOCK).toBe(4);
       expect(VNodeType.FRAGMENT).toBe(5);
+      expect(VNodeType.COMMENT).toBe(6);
