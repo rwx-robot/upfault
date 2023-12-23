@@ -43,3 +43,4 @@ describe('Diff Types', () => {
         PatchFlags.TEXT,
         PatchFlags.CLASS,
         PatchFlags.STYLE,
+        PatchFlags.PROPS,
