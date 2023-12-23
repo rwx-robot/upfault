@@ -19,3 +19,5 @@ describe('Diff Types', () => {
       expect(VNodeType.SUSPENSE).toBe(8);
     });
   });
+
+  describe('PatchFlags', () => {
