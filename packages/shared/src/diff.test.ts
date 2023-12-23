@@ -32,3 +32,4 @@ describe('Diff Types', () => {
       expect(PatchFlags.KEYED_FRAGMENT).toBe(64);
       expect(PatchFlags.UNKEYED_FRAGMENT).toBe(128);
       expect(PatchFlags.DYNAMIC_SLOTS).toBe(256);
+      expect(PatchFlags.COMPONENT).toBe(512);
