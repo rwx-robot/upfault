@@ -31,3 +31,4 @@ describe('Diff Types', () => {
       expect(PatchFlags.EVENTS).toBe(32);
       expect(PatchFlags.KEYED_FRAGMENT).toBe(64);
       expect(PatchFlags.UNKEYED_FRAGMENT).toBe(128);
+      expect(PatchFlags.DYNAMIC_SLOTS).toBe(256);
