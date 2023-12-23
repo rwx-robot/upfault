@@ -46,3 +46,4 @@ describe('Diff Types', () => {
         PatchFlags.PROPS,
         PatchFlags.FULL_PROPS,
         PatchFlags.EVENTS,
+        PatchFlags.KEYED_FRAGMENT,
