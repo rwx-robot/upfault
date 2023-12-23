@@ -27,3 +27,4 @@ describe('Diff Types', () => {
       expect(PatchFlags.CLASS).toBe(2);
       expect(PatchFlags.STYLE).toBe(4);
       expect(PatchFlags.PROPS).toBe(8);
+      expect(PatchFlags.FULL_PROPS).toBe(16);
