@@ -37,3 +37,5 @@ describe('Diff Types', () => {
       expect(PatchFlags.HOISTED).toBe(-1);
       expect(PatchFlags.BAIL).toBe(-2);
     });
+
+    it('标志位应互不重叠 (除特殊负值)', () => {
