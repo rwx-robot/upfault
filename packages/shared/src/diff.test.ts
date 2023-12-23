@@ -45,3 +45,4 @@ describe('Diff Types', () => {
         PatchFlags.STYLE,
         PatchFlags.PROPS,
         PatchFlags.FULL_PROPS,
+        PatchFlags.EVENTS,
