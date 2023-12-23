@@ -18,3 +18,4 @@ describe('Diff Types', () => {
       expect(VNodeType.TELEPORT).toBe(7);
       expect(VNodeType.SUSPENSE).toBe(8);
     });
+  });
