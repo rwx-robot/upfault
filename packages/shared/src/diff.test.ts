@@ -49,3 +49,4 @@ describe('Diff Types', () => {
         PatchFlags.KEYED_FRAGMENT,
         PatchFlags.UNKEYED_FRAGMENT,
         PatchFlags.DYNAMIC_SLOTS,
+        PatchFlags.COMPONENT,
