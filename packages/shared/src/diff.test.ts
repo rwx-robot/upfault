@@ -42,3 +42,4 @@ describe('Diff Types', () => {
       const positiveFlags = [
         PatchFlags.TEXT,
         PatchFlags.CLASS,
+        PatchFlags.STYLE,
