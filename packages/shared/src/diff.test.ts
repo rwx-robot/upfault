@@ -50,3 +50,4 @@ describe('Diff Types', () => {
         PatchFlags.UNKEYED_FRAGMENT,
         PatchFlags.DYNAMIC_SLOTS,
         PatchFlags.COMPONENT,
+        PatchFlags.FULL_DIFF,
