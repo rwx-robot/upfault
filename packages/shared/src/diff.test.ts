@@ -51,3 +51,4 @@ describe('Diff Types', () => {
         PatchFlags.DYNAMIC_SLOTS,
         PatchFlags.COMPONENT,
         PatchFlags.FULL_DIFF,
+      ];
