@@ -17,3 +17,4 @@ describe('Diff Types', () => {
       expect(VNodeType.COMMENT).toBe(6);
       expect(VNodeType.TELEPORT).toBe(7);
       expect(VNodeType.SUSPENSE).toBe(8);
+    });
