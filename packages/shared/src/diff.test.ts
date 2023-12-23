@@ -36,3 +36,4 @@ describe('Diff Types', () => {
       expect(PatchFlags.FULL_DIFF).toBe(1024);
       expect(PatchFlags.HOISTED).toBe(-1);
       expect(PatchFlags.BAIL).toBe(-2);
+    });
