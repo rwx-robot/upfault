@@ -29,3 +29,4 @@ describe('Diff Types', () => {
       expect(PatchFlags.PROPS).toBe(8);
       expect(PatchFlags.FULL_PROPS).toBe(16);
       expect(PatchFlags.EVENTS).toBe(32);
+      expect(PatchFlags.KEYED_FRAGMENT).toBe(64);
