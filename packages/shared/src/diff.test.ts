@@ -78,3 +78,4 @@ describe('Diff Types', () => {
       expect(DEFAULT_AERODIFF_OPTIONS.maxDepth).toBe(100);
       expect(DEFAULT_AERODIFF_OPTIONS.collectStats).toBe(true);
     });
+  });
