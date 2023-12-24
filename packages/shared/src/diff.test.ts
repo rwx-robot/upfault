@@ -59,3 +59,4 @@ describe('Diff Types', () => {
         }
       }
     });
+  });
