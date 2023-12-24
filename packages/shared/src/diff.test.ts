@@ -54,3 +54,4 @@ describe('Diff Types', () => {
       ];
       
       for (let i = 0; i < positiveFlags.length; i++) {
+        for (let j = i + 1; j < positiveFlags.length; j++) {
