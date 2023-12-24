@@ -68,3 +68,4 @@ describe('Diff Types', () => {
       expect(DiffOpType.MOVE).toBe('MOVE');
       expect(DiffOpType.REMOVE).toBe('REMOVE');
       expect(DiffOpType.REPLACE).toBe('REPLACE');
+    });
