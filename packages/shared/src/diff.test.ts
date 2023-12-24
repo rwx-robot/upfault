@@ -75,3 +75,4 @@ describe('Diff Types', () => {
     it('应包含合理的默认值', () => {
       expect(DEFAULT_AERODIFF_OPTIONS.enableTypeFallback).toBe(true);
       expect(DEFAULT_AERODIFF_OPTIONS.enableShapeMatching).toBe(true);
+      expect(DEFAULT_AERODIFF_OPTIONS.maxDepth).toBe(100);
