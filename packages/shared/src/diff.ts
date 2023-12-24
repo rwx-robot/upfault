@@ -9,3 +9,4 @@ import type { UpdateFingerprint } from './predict';
 import type { Priority } from './scheduler';
 
 /** VNode 类型 */
+export const VNodeType = {
