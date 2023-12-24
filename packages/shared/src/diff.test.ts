@@ -53,3 +53,4 @@ describe('Diff Types', () => {
         PatchFlags.FULL_DIFF,
       ];
       
+      for (let i = 0; i < positiveFlags.length; i++) {
