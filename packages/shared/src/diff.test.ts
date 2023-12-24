@@ -64,3 +64,4 @@ describe('Diff Types', () => {
   describe('DiffOpType', () => {
     it('应定义所有操作类型', () => {
       expect(DiffOpType.CREATE).toBe('CREATE');
+      expect(DiffOpType.UPDATE).toBe('UPDATE');
