@@ -70,3 +70,5 @@ describe('Diff Types', () => {
       expect(DiffOpType.REPLACE).toBe('REPLACE');
     });
   });
+
+  describe('DEFAULT_AERODIFF_OPTIONS', () => {
