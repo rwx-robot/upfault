@@ -52,3 +52,4 @@ describe('Diff Types', () => {
         PatchFlags.COMPONENT,
         PatchFlags.FULL_DIFF,
       ];
+      
