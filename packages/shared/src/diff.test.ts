@@ -58,3 +58,4 @@ describe('Diff Types', () => {
           expect(positiveFlags[i] & positiveFlags[j]).toBe(0);
         }
       }
+    });
