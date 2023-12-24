@@ -79,3 +79,4 @@ describe('Diff Types', () => {
       expect(DEFAULT_AERODIFF_OPTIONS.collectStats).toBe(true);
     });
   });
+});
