@@ -62,3 +62,4 @@ describe('Diff Types', () => {
   });
 
   describe('DiffOpType', () => {
+    it('应定义所有操作类型', () => {
