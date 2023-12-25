@@ -31,3 +31,4 @@ export const VNodeType_COMMENT = 6;
 export const VNodeType_TELEPORT = 7;
 export const VNodeType_SUSPENSE = 8;
 export const VNodeType_KEEPALIVE = 9;
+
