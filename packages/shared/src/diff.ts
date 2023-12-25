@@ -45,3 +45,4 @@ export interface VNode {
   
   /** 标签名 (元素) / 组件构造函数 */
   tag: string | Component;
+  
