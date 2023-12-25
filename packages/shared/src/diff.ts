@@ -32,3 +32,4 @@ export const VNodeType_TELEPORT = 7;
 export const VNodeType_SUSPENSE = 8;
 export const VNodeType_KEEPALIVE = 9;
 
+// Type for VNodeType values
