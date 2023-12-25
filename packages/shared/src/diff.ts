@@ -37,3 +37,4 @@ export const VNodeType_KEEPALIVE = 9;
 export type VNodeType = typeof VNodeType[keyof typeof VNodeType];
 
 /** @deprecated 保留别名，等价于 VNodeType */
+export type VNodeTypeValue = VNodeType;
