@@ -16,3 +16,4 @@ export const VNodeType = {
   BLOCK: 4,
   FRAGMENT: 5,
   COMMENT: 6,
+  TELEPORT: 7,
