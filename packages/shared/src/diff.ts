@@ -48,3 +48,4 @@ export interface VNode {
   
   /** Props 属性 */
   props: VNodeProps | null;
+  
