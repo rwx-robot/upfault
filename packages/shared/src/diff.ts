@@ -50,3 +50,4 @@ export interface VNode {
   props: VNodeProps | null;
   
   /** 子节点 */
+  children: VNode[] | string | null;
