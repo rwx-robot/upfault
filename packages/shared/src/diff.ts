@@ -34,3 +34,4 @@ export const VNodeType_KEEPALIVE = 9;
 
 // Type for VNodeType values
 // VNodeType 同时作为值与类型使用：值为常量对象，类型为 1|2|...|9 的联合
+export type VNodeType = typeof VNodeType[keyof typeof VNodeType];
