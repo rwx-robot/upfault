@@ -42,3 +42,4 @@ export type VNodeTypeValue = VNodeType;
 export interface VNode {
   /** 节点类型 */
   type: VNodeType;
+  
