@@ -27,3 +27,4 @@ export const VNodeType_ELEMENT = 2;
 export const VNodeType_COMPONENT = 3;
 export const VNodeType_BLOCK = 4;
 export const VNodeType_FRAGMENT = 5;
+export const VNodeType_COMMENT = 6;
