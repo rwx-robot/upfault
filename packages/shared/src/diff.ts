@@ -25,3 +25,4 @@ export const VNodeType = {
 export const VNodeType_TEXT = 1;
 export const VNodeType_ELEMENT = 2;
 export const VNodeType_COMPONENT = 3;
+export const VNodeType_BLOCK = 4;
