@@ -29,3 +29,4 @@ export const VNodeType_BLOCK = 4;
 export const VNodeType_FRAGMENT = 5;
 export const VNodeType_COMMENT = 6;
 export const VNodeType_TELEPORT = 7;
+export const VNodeType_SUSPENSE = 8;
