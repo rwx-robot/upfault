@@ -39,3 +39,4 @@ export type VNodeType = typeof VNodeType[keyof typeof VNodeType];
 /** @deprecated 保留别名，等价于 VNodeType */
 export type VNodeTypeValue = VNodeType;
 
+export interface VNode {
