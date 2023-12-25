@@ -21,3 +21,4 @@ export const VNodeType = {
   KEEPALIVE: 9,
 } as const;
 
+// Also export individual values for better tree-shaking and inlining
