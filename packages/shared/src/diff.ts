@@ -15,3 +15,4 @@ export const VNodeType = {
   COMPONENT: 3,
   BLOCK: 4,
   FRAGMENT: 5,
+  COMMENT: 6,
