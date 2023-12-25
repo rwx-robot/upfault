@@ -19,3 +19,4 @@ export const VNodeType = {
   TELEPORT: 7,
   SUSPENSE: 8,
   KEEPALIVE: 9,
+} as const;
