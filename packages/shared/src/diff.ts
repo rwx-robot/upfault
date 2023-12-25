@@ -24,3 +24,4 @@ export const VNodeType = {
 // Also export individual values for better tree-shaking and inlining
 export const VNodeType_TEXT = 1;
 export const VNodeType_ELEMENT = 2;
+export const VNodeType_COMPONENT = 3;
