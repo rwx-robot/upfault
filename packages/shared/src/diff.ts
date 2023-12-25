@@ -13,3 +13,4 @@ export const VNodeType = {
   TEXT: 1,
   ELEMENT: 2,
   COMPONENT: 3,
+  BLOCK: 4,
