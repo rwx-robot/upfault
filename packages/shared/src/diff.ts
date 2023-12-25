@@ -43,3 +43,4 @@ export interface VNode {
   /** 节点类型 */
   type: VNodeType;
   
+  /** 标签名 (元素) / 组件构造函数 */
