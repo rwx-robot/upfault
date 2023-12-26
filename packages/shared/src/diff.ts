@@ -92,3 +92,4 @@ export interface VNode {
   
   /** 锚点节点 (用于 Fragment) */
   anchor?: Node | null;
+  
