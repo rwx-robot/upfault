@@ -66,3 +66,4 @@ export interface VNode {
   
   /** 父节点 */
   parent: VNode | null;
+  
