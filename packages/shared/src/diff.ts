@@ -53,3 +53,4 @@ export interface VNode {
   children: VNode[] | string | null;
   
   /** Key */
+  key: string | number | null;
