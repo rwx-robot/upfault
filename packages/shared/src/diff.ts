@@ -74,3 +74,4 @@ export interface VNode {
   block: Block | null;
   
   /** Patch 标记 */
+  patchFlag: PatchFlags;
