@@ -95,3 +95,4 @@ export interface VNode {
   
   /** 组件实例内部引用 (旧版兼容) */
   componentInstance?: ComponentInstance | null;
+}
