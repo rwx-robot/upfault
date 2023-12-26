@@ -88,3 +88,4 @@ export interface VNode {
   shapeFlag?: number;
   
   /** Ref 引用 */
+  ref?: any;
