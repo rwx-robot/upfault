@@ -80,3 +80,4 @@ export interface VNode {
   dynamicProps: string[] | null;
   
   // ========== 运行时专用字段 ==========
+  
