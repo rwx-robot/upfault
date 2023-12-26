@@ -71,3 +71,4 @@ export interface VNode {
   component: ComponentInstance | null;
   
   /** Block 归属 */
+  block: Block | null;
