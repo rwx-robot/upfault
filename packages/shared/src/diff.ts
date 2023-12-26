@@ -62,3 +62,4 @@ export interface VNode {
   fingerprint?: UpdateFingerprint;
   
   /** 对应的真实 DOM 节点 */
+  el: Node | null;
