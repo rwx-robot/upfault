@@ -60,3 +60,4 @@ export interface VNode {
   
   /** 运行时指纹 (预测层用) */
   fingerprint?: UpdateFingerprint;
+  
