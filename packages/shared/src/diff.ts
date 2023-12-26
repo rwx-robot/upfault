@@ -79,3 +79,4 @@ export interface VNode {
   /** 动态 Props 索引 */
   dynamicProps: string[] | null;
   
+  // ========== 运行时专用字段 ==========
