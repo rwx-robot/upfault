@@ -90,3 +90,4 @@ export interface VNode {
   /** Ref 引用 */
   ref?: any;
   
+  /** 锚点节点 (用于 Fragment) */
