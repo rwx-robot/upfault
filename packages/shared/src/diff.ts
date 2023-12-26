@@ -55,3 +55,4 @@ export interface VNode {
   /** Key */
   key: string | number | null;
   
+  /** 编译时 Flags */
