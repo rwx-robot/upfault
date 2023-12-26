@@ -56,3 +56,4 @@ export interface VNode {
   key: string | number | null;
   
   /** 编译时 Flags */
+  flags: number;
