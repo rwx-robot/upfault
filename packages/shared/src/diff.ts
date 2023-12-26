@@ -87,3 +87,4 @@ export interface VNode {
   /** 形状标记 (运行时优化用) */
   shapeFlag?: number;
   
+  /** Ref 引用 */
