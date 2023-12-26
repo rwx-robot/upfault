@@ -85,3 +85,4 @@ export interface VNode {
   vnodeType?: VNodeType;
   
   /** 形状标记 (运行时优化用) */
+  shapeFlag?: number;
