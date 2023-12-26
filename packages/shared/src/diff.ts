@@ -75,3 +75,4 @@ export interface VNode {
   
   /** Patch 标记 */
   patchFlag: PatchFlags;
+  
