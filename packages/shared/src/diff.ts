@@ -82,3 +82,4 @@ export interface VNode {
   // ========== 运行时专用字段 ==========
   
   /** VNode 类型标识 (运行时) */
+  vnodeType?: VNodeType;
