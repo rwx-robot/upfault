@@ -128,3 +128,4 @@ export const enum PatchFlags {
   /** Keyed Fragment 重排 */
   KEYED_FRAGMENT = 64,
   /** Unkeyed Fragment */
+  UNKEYED_FRAGMENT = 128,
