@@ -127,3 +127,4 @@ export const enum PatchFlags {
   EVENTS = 32,
   /** Keyed Fragment 重排 */
   KEYED_FRAGMENT = 64,
+  /** Unkeyed Fragment */
