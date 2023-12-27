@@ -115,3 +115,4 @@ export const enum PatchFlags {
   NONE = 0,
   /** 文本内容变化 */
   TEXT = 1,
+  /** class 变化 */
