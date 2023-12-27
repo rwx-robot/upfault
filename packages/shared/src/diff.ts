@@ -133,3 +133,4 @@ export const enum PatchFlags {
   DYNAMIC_SLOTS = 256,
   /** 组件需要更新 */
   COMPONENT = 512,
+  /** 需要完整 Diff */
