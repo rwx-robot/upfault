@@ -122,3 +122,4 @@ export const enum PatchFlags {
   /** Props 变化 */
   PROPS = 8,
   /** 完整 Props 替换 */
+  FULL_PROPS = 16,
