@@ -135,3 +135,4 @@ export const enum PatchFlags {
   COMPONENT = 512,
   /** 需要完整 Diff */
   FULL_DIFF = 1024,
+  /** 静态提升 */
