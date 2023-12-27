@@ -105,3 +105,4 @@ export interface VNodeProps {
   onClick?: (e: Event) => void;
   onInput?: (e: Event) => void;
   // ... 其他事件
+  style?: string | Record<string, string | number>;
