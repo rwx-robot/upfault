@@ -102,3 +102,4 @@ export interface VNodeProps {
   [key: string]: unknown;
   key?: string | number;
   ref?: Ref<unknown> | ((el: Element | null) => void);
+  onClick?: (e: Event) => void;
