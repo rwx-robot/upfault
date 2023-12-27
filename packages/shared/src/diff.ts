@@ -130,3 +130,4 @@ export const enum PatchFlags {
   /** Unkeyed Fragment */
   UNKEYED_FRAGMENT = 128,
   /** 动态插槽 */
+  DYNAMIC_SLOTS = 256,
