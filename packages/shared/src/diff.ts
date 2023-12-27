@@ -98,3 +98,4 @@ export interface VNode {
 }
 
 /** Props 类型 */
+export interface VNodeProps {
