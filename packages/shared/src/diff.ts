@@ -134,3 +134,4 @@ export const enum PatchFlags {
   /** 组件需要更新 */
   COMPONENT = 512,
   /** 需要完整 Diff */
+  FULL_DIFF = 1024,
