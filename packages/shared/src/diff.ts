@@ -107,3 +107,4 @@ export interface VNodeProps {
   // ... 其他事件
   style?: string | Record<string, string | number>;
   class?: string | string[] | Record<string, boolean>;
+}
