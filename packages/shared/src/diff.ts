@@ -100,3 +100,4 @@ export interface VNode {
 /** Props 类型 */
 export interface VNodeProps {
   [key: string]: unknown;
+  key?: string | number;
