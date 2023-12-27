@@ -110,3 +110,4 @@ export interface VNodeProps {
 }
 
 /** Patch 标记 (运行时优化) */
+export const enum PatchFlags {
