@@ -108,3 +108,5 @@ export interface VNodeProps {
   style?: string | Record<string, string | number>;
   class?: string | string[] | Record<string, boolean>;
 }
+
+/** Patch 标记 (运行时优化) */
