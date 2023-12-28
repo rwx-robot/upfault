@@ -151,3 +151,4 @@ export interface Block {
   
   /** 动态节点列表 (编译时确定) */
   dynamicNodes: VNode[];
+  
