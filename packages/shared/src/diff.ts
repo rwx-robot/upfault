@@ -139,3 +139,4 @@ export const enum PatchFlags {
   HOISTED = -1,
   /** Bailout (跳过) */
   BAIL = -2,
+}
