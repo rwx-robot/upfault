@@ -158,3 +158,4 @@ export interface Block {
   /** 是否已挂载 */
   mounted: boolean;
   
+  /** 更新计数 */
