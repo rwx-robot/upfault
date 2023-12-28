@@ -154,3 +154,4 @@ export interface Block {
   
   /** 优先级 */
   priority: Priority;
+  
