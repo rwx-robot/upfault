@@ -160,3 +160,4 @@ export interface Block {
   
   /** 更新计数 */
   updateCount: number;
+}
