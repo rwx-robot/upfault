@@ -164,3 +164,4 @@ export interface Block {
 
 /** Diff 操作类型 */
 export const enum DiffOpType {
+  /** 创建新节点 */
