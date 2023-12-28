@@ -169,3 +169,4 @@ export const enum DiffOpType {
   /** 更新现有节点 */
   UPDATE = 'UPDATE',
   /** 移动节点 */
+  MOVE = 'MOVE',
