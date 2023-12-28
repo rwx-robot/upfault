@@ -146,3 +146,4 @@ export interface Block {
   /** Block ID */
   id: string;
   
+  /** 根节点 */
