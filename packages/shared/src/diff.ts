@@ -159,3 +159,4 @@ export interface Block {
   mounted: boolean;
   
   /** 更新计数 */
+  updateCount: number;
