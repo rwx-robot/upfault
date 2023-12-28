@@ -148,3 +148,4 @@ export interface Block {
   
   /** 根节点 */
   root: VNode;
+  
