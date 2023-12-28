@@ -168,3 +168,4 @@ export const enum DiffOpType {
   CREATE = 'CREATE',
   /** 更新现有节点 */
   UPDATE = 'UPDATE',
+  /** 移动节点 */
