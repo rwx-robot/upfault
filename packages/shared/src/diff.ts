@@ -138,3 +138,4 @@ export const enum PatchFlags {
   /** 静态提升 */
   HOISTED = -1,
   /** Bailout (跳过) */
+  BAIL = -2,
