@@ -149,3 +149,4 @@ export interface Block {
   /** 根节点 */
   root: VNode;
   
+  /** 动态节点列表 (编译时确定) */
