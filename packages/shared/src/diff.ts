@@ -194,3 +194,4 @@ export interface DiffResult {
   /** 是否有变化 */
   changed: boolean;
   
+  /** 统计信息 */
