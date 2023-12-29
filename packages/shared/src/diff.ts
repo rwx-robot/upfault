@@ -207,3 +207,4 @@ export interface DiffStats {
   newCount: number;
   
   /** 复用节点数 */
+  reusedCount: number;
