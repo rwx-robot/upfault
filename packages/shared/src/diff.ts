@@ -178,3 +178,4 @@ export const enum DiffOpType {
 
 /** Diff 操作 */
 export interface DiffOp {
+  type: DiffOpType;
