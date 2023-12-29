@@ -198,3 +198,4 @@ export interface DiffResult {
   stats: DiffStats;
 }
 
+/** Diff 统计 */
