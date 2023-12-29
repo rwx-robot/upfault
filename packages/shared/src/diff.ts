@@ -199,3 +199,4 @@ export interface DiffResult {
 }
 
 /** Diff 统计 */
+export interface DiffStats {
