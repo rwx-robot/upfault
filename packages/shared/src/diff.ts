@@ -203,3 +203,4 @@ export interface DiffStats {
   /** 旧节点总数 */
   oldCount: number;
   
+  /** 新节点总数 */
