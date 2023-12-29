@@ -192,3 +192,4 @@ export interface DiffResult {
   ops: DiffOp[];
   
   /** 是否有变化 */
+  changed: boolean;
