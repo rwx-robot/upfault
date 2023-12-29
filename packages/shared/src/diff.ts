@@ -212,3 +212,4 @@ export interface DiffStats {
   /** 创建节点数 */
   createdCount: number;
   
+  /** 删除节点数 */
