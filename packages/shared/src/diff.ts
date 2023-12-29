@@ -202,3 +202,4 @@ export interface DiffResult {
 export interface DiffStats {
   /** 旧节点总数 */
   oldCount: number;
+  
