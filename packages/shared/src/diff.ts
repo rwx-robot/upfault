@@ -210,3 +210,4 @@ export interface DiffStats {
   reusedCount: number;
   
   /** 创建节点数 */
+  createdCount: number;
