@@ -181,3 +181,4 @@ export interface DiffOp {
   type: DiffOpType;
   oldNode?: VNode;
   newNode?: VNode;
+  fromIndex?: number;
