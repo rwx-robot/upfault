@@ -238,3 +238,4 @@ export interface DiffIndex {
   end: number;
 }
 
+/** AeroDiff 配置 */
