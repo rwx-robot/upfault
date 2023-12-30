@@ -240,3 +240,4 @@ export interface DiffIndex {
 
 /** AeroDiff 配置 */
 export interface AeroDiffOptions {
+  /** 是否启用类型兜底匹配 (key 找不到时按 type 匹配) */
