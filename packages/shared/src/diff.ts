@@ -219,3 +219,4 @@ export interface DiffStats {
   movedCount: number;
   
   /** 耗时 (ms) */
+  duration: number;
