@@ -247,3 +247,4 @@ export interface AeroDiffOptions {
   enableShapeMatching: boolean;
   
   /** 最大递归深度 */
+  maxDepth: number;
