@@ -242,3 +242,4 @@ export interface DiffIndex {
 export interface AeroDiffOptions {
   /** 是否启用类型兜底匹配 (key 找不到时按 type 匹配) */
   enableTypeFallback: boolean;
+  
