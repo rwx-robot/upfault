@@ -221,3 +221,5 @@ export interface DiffStats {
   /** 耗时 (ms) */
   duration: number;
 }
+
+/** 双端扩散索引 */
