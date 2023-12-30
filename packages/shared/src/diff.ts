@@ -231,3 +231,4 @@ export interface DiffIndex {
   typeMap: Map<VNodeType, number[]>;
   
   /** 旧节点数组 */
+  oldNodes: VNode[];
