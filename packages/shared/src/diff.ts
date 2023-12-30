@@ -239,3 +239,4 @@ export interface DiffIndex {
 }
 
 /** AeroDiff 配置 */
+export interface AeroDiffOptions {
