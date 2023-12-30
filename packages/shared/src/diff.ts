@@ -254,3 +254,4 @@ export interface AeroDiffOptions {
 }
 
 /** 默认 AeroDiff 配置 */
+export const DEFAULT_AERODIFF_OPTIONS: AeroDiffOptions = {
