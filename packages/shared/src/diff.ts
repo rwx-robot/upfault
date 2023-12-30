@@ -257,3 +257,4 @@ export interface AeroDiffOptions {
 export const DEFAULT_AERODIFF_OPTIONS: AeroDiffOptions = {
   enableTypeFallback: true,
   enableShapeMatching: true,
+  maxDepth: 100,
