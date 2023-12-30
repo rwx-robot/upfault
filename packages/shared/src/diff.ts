@@ -245,3 +245,4 @@ export interface AeroDiffOptions {
   
   /** 是否启用形状匹配 (children 结构相似) */
   enableShapeMatching: boolean;
+  
