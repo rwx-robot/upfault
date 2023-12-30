@@ -251,3 +251,4 @@ export interface AeroDiffOptions {
   
   /** 是否收集统计 */
   collectStats: boolean;
+}
