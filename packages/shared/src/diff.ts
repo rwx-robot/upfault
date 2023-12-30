@@ -230,3 +230,4 @@ export interface DiffIndex {
   /** Type -> 旧节点索引列表映射 */
   typeMap: Map<VNodeType, number[]>;
   
+  /** 旧节点数组 */
