@@ -236,3 +236,4 @@ export interface DiffIndex {
   /** 处理范围 [start, end] */
   start: number;
   end: number;
+}
