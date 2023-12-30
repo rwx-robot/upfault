@@ -233,3 +233,4 @@ export interface DiffIndex {
   /** 旧节点数组 */
   oldNodes: VNode[];
   
+  /** 处理范围 [start, end] */
