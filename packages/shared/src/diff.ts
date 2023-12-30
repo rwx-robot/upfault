@@ -232,3 +232,4 @@ export interface DiffIndex {
   
   /** 旧节点数组 */
   oldNodes: VNode[];
+  
