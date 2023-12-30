@@ -237,3 +237,4 @@ export interface DiffIndex {
   start: number;
   end: number;
 }
+
