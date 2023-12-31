@@ -290,3 +290,4 @@ export interface ComponentInstance {
   isMounted?: boolean;
   subTree?: VNode;
   subTreeAnchor?: Node | null;
+  effects?: Array<() => void>;
