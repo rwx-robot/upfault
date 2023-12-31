@@ -259,3 +259,4 @@ export const DEFAULT_AERODIFF_OPTIONS: AeroDiffOptions = {
   enableShapeMatching: true,
   maxDepth: 100,
   collectStats: true,
+};
