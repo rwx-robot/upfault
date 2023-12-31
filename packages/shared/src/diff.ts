@@ -281,3 +281,4 @@ export interface ComponentInstance {
   render: () => VNode;
   update: () => void;
   unmount: () => void;
+  // 生命周期
