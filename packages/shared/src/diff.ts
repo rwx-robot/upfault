@@ -289,3 +289,4 @@ export interface ComponentInstance {
   isUnmounted?: boolean;
   isMounted?: boolean;
   subTree?: VNode;
+  subTreeAnchor?: Node | null;
