@@ -268,3 +268,4 @@ export interface Component {
   __hmrId?: string;
   // 组件定义属性
   name?: string;
+  render?: (props: any, context: any) => VNode | VNode[];
