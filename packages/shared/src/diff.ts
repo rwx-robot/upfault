@@ -260,3 +260,5 @@ export const DEFAULT_AERODIFF_OPTIONS: AeroDiffOptions = {
   maxDepth: 100,
   collectStats: true,
 };
+
+/** 组件类型前向声明 */
