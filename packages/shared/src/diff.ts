@@ -279,3 +279,4 @@ export interface ComponentInstance {
   props: VNodeProps;
   state: Record<string, unknown>;
   render: () => VNode;
+  update: () => void;
