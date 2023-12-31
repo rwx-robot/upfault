@@ -271,3 +271,5 @@ export interface Component {
   render?: (props: any, context: any) => VNode | VNode[];
   setup?: (props: VNodeProps, context: { slots: any; emit: any }) => any;
 }
+
+/** 组件实例 */
