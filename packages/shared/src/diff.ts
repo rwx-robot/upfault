@@ -297,3 +297,4 @@ export interface ComponentInstance {
   name?: string;
 }
 
+/** Ref 类型前向声明 */
