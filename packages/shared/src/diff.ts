@@ -292,3 +292,4 @@ export interface ComponentInstance {
   subTreeAnchor?: Node | null;
   effects?: Array<() => void>;
   root?: ComponentInstance;
+  parent?: ComponentInstance;
