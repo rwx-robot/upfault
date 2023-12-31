@@ -266,3 +266,4 @@ export interface Component {
   (props: VNodeProps): VNode;
   displayName?: string;
   __hmrId?: string;
+  // 组件定义属性
