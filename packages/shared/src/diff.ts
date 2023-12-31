@@ -296,3 +296,4 @@ export interface ComponentInstance {
   proxy?: any;
   name?: string;
 }
+
