@@ -270,3 +270,4 @@ export interface Component {
   name?: string;
   render?: (props: any, context: any) => VNode | VNode[];
   setup?: (props: VNodeProps, context: { slots: any; emit: any }) => any;
+}
