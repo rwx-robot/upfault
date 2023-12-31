@@ -293,3 +293,4 @@ export interface ComponentInstance {
   effects?: Array<() => void>;
   root?: ComponentInstance;
   parent?: ComponentInstance;
+  proxy?: any;
