@@ -285,3 +285,4 @@ export interface ComponentInstance {
   onMounted?: () => void;
   onUnmounted?: () => void;
   onUpdated?: () => void;
+  // 运行时内部字段
