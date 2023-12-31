@@ -262,3 +262,4 @@ export const DEFAULT_AERODIFF_OPTIONS: AeroDiffOptions = {
 };
 
 /** 组件类型前向声明 */
+export interface Component {
