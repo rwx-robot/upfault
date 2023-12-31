@@ -284,3 +284,4 @@ export interface ComponentInstance {
   // 生命周期
   onMounted?: () => void;
   onUnmounted?: () => void;
+  onUpdated?: () => void;
