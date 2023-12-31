@@ -276,3 +276,4 @@ export interface Component {
 export interface ComponentInstance {
   uid: number;
   type: Component;
+  props: VNodeProps;
