@@ -298,3 +298,4 @@ export interface ComponentInstance {
 }
 
 /** Ref 类型前向声明 */
+export interface Ref<T> {
