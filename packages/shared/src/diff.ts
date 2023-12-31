@@ -287,3 +287,4 @@ export interface ComponentInstance {
   onUpdated?: () => void;
   // 运行时内部字段
   isUnmounted?: boolean;
+  isMounted?: boolean;
