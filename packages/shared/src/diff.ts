@@ -265,3 +265,4 @@ export const DEFAULT_AERODIFF_OPTIONS: AeroDiffOptions = {
 export interface Component {
   (props: VNodeProps): VNode;
   displayName?: string;
+  __hmrId?: string;
