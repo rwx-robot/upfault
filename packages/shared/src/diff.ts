@@ -291,3 +291,4 @@ export interface ComponentInstance {
   subTree?: VNode;
   subTreeAnchor?: Node | null;
   effects?: Array<() => void>;
+  root?: ComponentInstance;
