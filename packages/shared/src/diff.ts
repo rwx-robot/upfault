@@ -295,3 +295,4 @@ export interface ComponentInstance {
   parent?: ComponentInstance;
   proxy?: any;
   name?: string;
+}
