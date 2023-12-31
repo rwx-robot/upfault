@@ -267,3 +267,4 @@ export interface Component {
   displayName?: string;
   __hmrId?: string;
   // 组件定义属性
+  name?: string;
