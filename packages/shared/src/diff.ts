@@ -280,3 +280,4 @@ export interface ComponentInstance {
   state: Record<string, unknown>;
   render: () => VNode;
   update: () => void;
+  unmount: () => void;
