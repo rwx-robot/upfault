@@ -300,3 +300,4 @@ export interface ComponentInstance {
 /** Ref 类型前向声明 */
 export interface Ref<T> {
   value: T;
+  __v_isRef: true;
