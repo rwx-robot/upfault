@@ -8,3 +8,4 @@
 export declare const enum VNodeFlags {
     /** 纯静态文本节点，永远不更新 */
     STATIC_TEXT = 1,// 1
+    /** 纯静态元素节点，无动态绑定，无事件，无插槽 */
