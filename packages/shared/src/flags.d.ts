@@ -6,3 +6,4 @@
  * 运行时可快速通过位运算判断节点类型
  */
 export declare const enum VNodeFlags {
+    /** 纯静态文本节点，永远不更新 */
