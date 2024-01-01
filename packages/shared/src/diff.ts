@@ -301,3 +301,4 @@ export interface ComponentInstance {
 export interface Ref<T> {
   value: T;
   __v_isRef: true;
+}
