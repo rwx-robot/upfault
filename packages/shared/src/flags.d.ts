@@ -17,3 +17,4 @@ export declare const enum VNodeFlags {
     /** 包含多个动态值或复杂表达式 */
     MULTI_DYNAMIC = 16,// 16
     /** 存在事件监听器 (@click, @input 等) */
+    HAS_EVENT = 32,// 32
