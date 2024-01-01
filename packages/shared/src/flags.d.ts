@@ -13,3 +13,4 @@ export declare const enum VNodeFlags {
     /** Key 在编译时已确定不变 */
     STATIC_KEY = 4,// 4
     /** 仅包含单一动态值 (如 {{ count }}) */
+    PURE_DYNAMIC = 8,// 8
