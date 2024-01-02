@@ -23,3 +23,4 @@ export declare const enum VNodeFlags {
     /** 运行时标记：高频更新节点 (由预测层动态设置) */
     FREQUENT_UPDATE = 128,// 128
     /** 组合标志：静态节点 (文本 + 元素) */
+    STATIC = 3,// 3
