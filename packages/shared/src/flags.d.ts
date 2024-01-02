@@ -33,3 +33,4 @@ export declare const enum VNodeFlags {
     /** 组合标志：必须 Diff 的节点 */
     MUST_DIFF = 244
 }
+/**
