@@ -29,3 +29,4 @@ export declare const enum VNodeFlags {
     /** 组合标志：交互节点 (事件 + 插槽) */
     INTERACTIVE = 96,// 96
     /** 组合标志：可跳过 Diff 的节点 (静态 + 纯动态且无交互) */
+    SKIPPABLE = 11,// 11
