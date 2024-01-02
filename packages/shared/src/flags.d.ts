@@ -34,3 +34,4 @@ export declare const enum VNodeFlags {
     MUST_DIFF = 244
 }
 /**
+ * 判断是否为静态节点
