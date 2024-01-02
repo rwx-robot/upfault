@@ -21,3 +21,4 @@ export declare const enum VNodeFlags {
     /** 存在插槽 (<slot />) */
     HAS_SLOT = 64,// 64
     /** 运行时标记：高频更新节点 (由预测层动态设置) */
+    FREQUENT_UPDATE = 128,// 128
