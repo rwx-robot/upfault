@@ -27,3 +27,4 @@ export declare const enum VNodeFlags {
     /** 组合标志：动态节点 (单一 + 多重) */
     DYNAMIC = 24,// 24
     /** 组合标志：交互节点 (事件 + 插槽) */
+    INTERACTIVE = 96,// 96
