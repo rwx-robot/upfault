@@ -20,3 +20,4 @@ export declare const enum VNodeFlags {
     HAS_EVENT = 32,// 32
     /** 存在插槽 (<slot />) */
     HAS_SLOT = 64,// 64
+    /** 运行时标记：高频更新节点 (由预测层动态设置) */
