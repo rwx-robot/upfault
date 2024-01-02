@@ -18,3 +18,4 @@ export declare const enum VNodeFlags {
     MULTI_DYNAMIC = 16,// 16
     /** 存在事件监听器 (@click, @input 等) */
     HAS_EVENT = 32,// 32
+    /** 存在插槽 (<slot />) */
