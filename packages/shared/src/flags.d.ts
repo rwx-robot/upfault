@@ -35,3 +35,4 @@ export declare const enum VNodeFlags {
 }
 /**
  * 判断是否为静态节点
+ */
