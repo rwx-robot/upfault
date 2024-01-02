@@ -32,3 +32,4 @@ export declare const enum VNodeFlags {
     SKIPPABLE = 11,// 11
     /** 组合标志：必须 Diff 的节点 */
     MUST_DIFF = 244
+}
