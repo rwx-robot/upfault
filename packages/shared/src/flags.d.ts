@@ -41,3 +41,4 @@ export declare function isStaticNode(flags: number): boolean;
  * 判断是否为纯动态节点 (单一值)
  */
 export declare function isPureDynamic(flags: number): boolean;
+/**
