@@ -52,3 +52,4 @@ export declare function isInteractive(flags: number): boolean;
  */
 export declare function isSkippable(flags: number): boolean;
 /**
+ * 判断是否为高频更新节点 (运行时标记)
