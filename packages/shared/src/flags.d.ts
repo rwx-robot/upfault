@@ -46,3 +46,4 @@ export declare function isPureDynamic(flags: number): boolean;
  */
 export declare function isInteractive(flags: number): boolean;
 /**
+ * 判断是否可跳过 Diff
