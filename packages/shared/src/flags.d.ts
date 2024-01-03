@@ -56,3 +56,4 @@ export declare function isSkippable(flags: number): boolean;
  */
 export declare function isFrequentUpdate(flags: number): boolean;
 /**
+ * 标记为高频更新
