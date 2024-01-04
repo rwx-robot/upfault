@@ -6,3 +6,4 @@
  * 运行时可快速通过位运算判断节点类型
  */
 export var VNodeFlags;
+(function (VNodeFlags) {
