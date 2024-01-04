@@ -60,3 +60,4 @@ export declare function isFrequentUpdate(flags: number): boolean;
  */
 export declare function markFrequentUpdate(flags: number): number;
 /**
+ * 移除高频更新标记
