@@ -64,3 +64,4 @@ export declare function markFrequentUpdate(flags: number): number;
  */
 export declare function unmarkFrequentUpdate(flags: number): number;
 /**
+ * Flags 可读性描述 (用于调试/DevTools)
