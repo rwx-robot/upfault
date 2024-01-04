@@ -63,3 +63,4 @@ export declare function markFrequentUpdate(flags: number): number;
  * 移除高频更新标记
  */
 export declare function unmarkFrequentUpdate(flags: number): number;
+/**
