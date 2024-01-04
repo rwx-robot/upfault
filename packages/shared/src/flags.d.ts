@@ -59,3 +59,4 @@ export declare function isFrequentUpdate(flags: number): boolean;
  * 标记为高频更新
  */
 export declare function markFrequentUpdate(flags: number): number;
+/**
