@@ -23,3 +23,4 @@ export var VNodeFlags;
     VNodeFlags[VNodeFlags["HAS_SLOT"] = 64] = "HAS_SLOT";
     /** 运行时标记：高频更新节点 (由预测层动态设置) */
     VNodeFlags[VNodeFlags["FREQUENT_UPDATE"] = 128] = "FREQUENT_UPDATE";
+    /** 组合标志：静态节点 (文本 + 元素) */
