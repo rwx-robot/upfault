@@ -20,3 +20,4 @@ export var VNodeFlags;
     /** 存在事件监听器 (@click, @input 等) */
     VNodeFlags[VNodeFlags["HAS_EVENT"] = 32] = "HAS_EVENT";
     /** 存在插槽 (<slot />) */
+    VNodeFlags[VNodeFlags["HAS_SLOT"] = 64] = "HAS_SLOT";
