@@ -25,3 +25,4 @@ export var VNodeFlags;
     VNodeFlags[VNodeFlags["FREQUENT_UPDATE"] = 128] = "FREQUENT_UPDATE";
     /** 组合标志：静态节点 (文本 + 元素) */
     VNodeFlags[VNodeFlags["STATIC"] = 3] = "STATIC";
+    /** 组合标志：动态节点 (单一 + 多重) */
