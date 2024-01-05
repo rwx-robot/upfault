@@ -19,3 +19,4 @@ export var VNodeFlags;
     VNodeFlags[VNodeFlags["MULTI_DYNAMIC"] = 16] = "MULTI_DYNAMIC";
     /** 存在事件监听器 (@click, @input 等) */
     VNodeFlags[VNodeFlags["HAS_EVENT"] = 32] = "HAS_EVENT";
+    /** 存在插槽 (<slot />) */
