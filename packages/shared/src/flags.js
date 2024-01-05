@@ -18,3 +18,4 @@ export var VNodeFlags;
     /** 包含多个动态值或复杂表达式 */
     VNodeFlags[VNodeFlags["MULTI_DYNAMIC"] = 16] = "MULTI_DYNAMIC";
     /** 存在事件监听器 (@click, @input 等) */
+    VNodeFlags[VNodeFlags["HAS_EVENT"] = 32] = "HAS_EVENT";
