@@ -11,3 +11,4 @@ export var VNodeFlags;
     VNodeFlags[VNodeFlags["STATIC_TEXT"] = 1] = "STATIC_TEXT";
     /** 纯静态元素节点，无动态绑定，无事件，无插槽 */
     VNodeFlags[VNodeFlags["STATIC_ELEMENT"] = 2] = "STATIC_ELEMENT";
+    /** Key 在编译时已确定不变 */
