@@ -21,3 +21,4 @@ export var VNodeFlags;
     VNodeFlags[VNodeFlags["HAS_EVENT"] = 32] = "HAS_EVENT";
     /** 存在插槽 (<slot />) */
     VNodeFlags[VNodeFlags["HAS_SLOT"] = 64] = "HAS_SLOT";
+    /** 运行时标记：高频更新节点 (由预测层动态设置) */
