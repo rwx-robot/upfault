@@ -14,3 +14,4 @@ export var VNodeFlags;
     /** Key 在编译时已确定不变 */
     VNodeFlags[VNodeFlags["STATIC_KEY"] = 4] = "STATIC_KEY";
     /** 仅包含单一动态值 (如 {{ count }}) */
+    VNodeFlags[VNodeFlags["PURE_DYNAMIC"] = 8] = "PURE_DYNAMIC";
