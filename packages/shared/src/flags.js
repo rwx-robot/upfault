@@ -16,3 +16,4 @@ export var VNodeFlags;
     /** 仅包含单一动态值 (如 {{ count }}) */
     VNodeFlags[VNodeFlags["PURE_DYNAMIC"] = 8] = "PURE_DYNAMIC";
     /** 包含多个动态值或复杂表达式 */
+    VNodeFlags[VNodeFlags["MULTI_DYNAMIC"] = 16] = "MULTI_DYNAMIC";
