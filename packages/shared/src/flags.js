@@ -32,3 +32,4 @@ export var VNodeFlags;
     /** 组合标志：可跳过 Diff 的节点 (静态 + 纯动态且无交互) */
     VNodeFlags[VNodeFlags["SKIPPABLE"] = 11] = "SKIPPABLE";
     /** 组合标志：必须 Diff 的节点 */
+    VNodeFlags[VNodeFlags["MUST_DIFF"] = 244] = "MUST_DIFF";
