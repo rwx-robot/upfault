@@ -30,3 +30,4 @@ export var VNodeFlags;
     /** 组合标志：交互节点 (事件 + 插槽) */
     VNodeFlags[VNodeFlags["INTERACTIVE"] = 96] = "INTERACTIVE";
     /** 组合标志：可跳过 Diff 的节点 (静态 + 纯动态且无交互) */
+    VNodeFlags[VNodeFlags["SKIPPABLE"] = 11] = "SKIPPABLE";
