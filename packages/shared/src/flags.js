@@ -33,3 +33,4 @@ export var VNodeFlags;
     VNodeFlags[VNodeFlags["SKIPPABLE"] = 11] = "SKIPPABLE";
     /** 组合标志：必须 Diff 的节点 */
     VNodeFlags[VNodeFlags["MUST_DIFF"] = 244] = "MUST_DIFF";
+})(VNodeFlags || (VNodeFlags = {}));
