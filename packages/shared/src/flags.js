@@ -37,3 +37,4 @@ export var VNodeFlags;
 /**
  * 判断是否为静态节点
  */
+export function isStaticNode(flags) {
