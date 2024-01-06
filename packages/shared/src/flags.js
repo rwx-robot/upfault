@@ -46,3 +46,4 @@ export function isStaticNode(flags) {
 export function isPureDynamic(flags) {
     return (flags & VNodeFlags.PURE_DYNAMIC) !== 0;
 }
+/**
