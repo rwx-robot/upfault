@@ -44,3 +44,4 @@ export function isStaticNode(flags) {
  * 判断是否为纯动态节点 (单一值)
  */
 export function isPureDynamic(flags) {
+    return (flags & VNodeFlags.PURE_DYNAMIC) !== 0;
