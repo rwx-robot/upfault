@@ -36,3 +36,4 @@ export var VNodeFlags;
 })(VNodeFlags || (VNodeFlags = {}));
 /**
  * 判断是否为静态节点
+ */
