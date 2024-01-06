@@ -34,3 +34,4 @@ export var VNodeFlags;
     /** 组合标志：必须 Diff 的节点 */
     VNodeFlags[VNodeFlags["MUST_DIFF"] = 244] = "MUST_DIFF";
 })(VNodeFlags || (VNodeFlags = {}));
+/**
