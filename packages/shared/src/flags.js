@@ -39,3 +39,4 @@ export var VNodeFlags;
  */
 export function isStaticNode(flags) {
     return (flags & VNodeFlags.STATIC) !== 0;
+}
