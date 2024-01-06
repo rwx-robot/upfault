@@ -26,3 +26,4 @@ export var VNodeFlags;
     /** 组合标志：静态节点 (文本 + 元素) */
     VNodeFlags[VNodeFlags["STATIC"] = 3] = "STATIC";
     /** 组合标志：动态节点 (单一 + 多重) */
+    VNodeFlags[VNodeFlags["DYNAMIC"] = 24] = "DYNAMIC";
