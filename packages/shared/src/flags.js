@@ -41,3 +41,4 @@ export function isStaticNode(flags) {
     return (flags & VNodeFlags.STATIC) !== 0;
 }
 /**
+ * 判断是否为纯动态节点 (单一值)
