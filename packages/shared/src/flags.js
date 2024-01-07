@@ -67,3 +67,4 @@ export function isSkippable(flags) {
         return (flags & VNodeFlags.INTERACTIVE) === 0;
     }
     return false;
+}
