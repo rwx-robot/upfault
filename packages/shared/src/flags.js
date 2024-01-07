@@ -54,3 +54,4 @@ export function isInteractive(flags) {
 }
 /**
  * 判断是否可跳过 Diff
+ * 静态节点始终可跳过
