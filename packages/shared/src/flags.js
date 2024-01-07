@@ -51,3 +51,4 @@ export function isPureDynamic(flags) {
  */
 export function isInteractive(flags) {
     return (flags & VNodeFlags.INTERACTIVE) !== 0;
+}
