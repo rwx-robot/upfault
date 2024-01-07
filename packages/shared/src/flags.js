@@ -53,3 +53,4 @@ export function isInteractive(flags) {
     return (flags & VNodeFlags.INTERACTIVE) !== 0;
 }
 /**
+ * 判断是否可跳过 Diff
