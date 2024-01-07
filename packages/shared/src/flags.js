@@ -61,3 +61,4 @@ export function isSkippable(flags) {
     // 静态节点始终可跳过
     if ((flags & VNodeFlags.STATIC) !== 0) {
         return true;
+    }
