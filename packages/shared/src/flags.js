@@ -85,3 +85,4 @@ export function markFrequentUpdate(flags) {
  */
 export function unmarkFrequentUpdate(flags) {
     return flags & ~VNodeFlags.FREQUENT_UPDATE;
+}
