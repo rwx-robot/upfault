@@ -80,3 +80,4 @@ export function isFrequentUpdate(flags) {
 export function markFrequentUpdate(flags) {
     return flags | VNodeFlags.FREQUENT_UPDATE;
 }
+/**
