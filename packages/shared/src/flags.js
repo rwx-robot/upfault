@@ -75,3 +75,4 @@ export function isFrequentUpdate(flags) {
     return (flags & VNodeFlags.FREQUENT_UPDATE) !== 0;
 }
 /**
+ * 标记为高频更新
