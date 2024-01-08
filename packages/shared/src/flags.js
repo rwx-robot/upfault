@@ -71,3 +71,4 @@ export function isSkippable(flags) {
 /**
  * 判断是否为高频更新节点 (运行时标记)
  */
+export function isFrequentUpdate(flags) {
