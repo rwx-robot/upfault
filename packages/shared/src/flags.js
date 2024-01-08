@@ -81,3 +81,4 @@ export function markFrequentUpdate(flags) {
     return flags | VNodeFlags.FREQUENT_UPDATE;
 }
 /**
+ * 移除高频更新标记
