@@ -84,3 +84,4 @@ export function markFrequentUpdate(flags) {
  * 移除高频更新标记
  */
 export function unmarkFrequentUpdate(flags) {
+    return flags & ~VNodeFlags.FREQUENT_UPDATE;
