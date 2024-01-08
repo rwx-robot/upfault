@@ -77,3 +77,4 @@ export function isFrequentUpdate(flags) {
 /**
  * 标记为高频更新
  */
+export function markFrequentUpdate(flags) {
