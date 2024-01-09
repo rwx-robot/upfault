@@ -107,3 +107,4 @@ export function describeFlags(flags) {
         parts.push('HAS_SLOT');
     if (flags & VNodeFlags.FREQUENT_UPDATE)
         parts.push('FREQUENT_UPDATE');
+    return parts.length ? parts.join(' | ') : 'NONE';
