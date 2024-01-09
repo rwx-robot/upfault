@@ -103,3 +103,4 @@ export function describeFlags(flags) {
         parts.push('MULTI_DYNAMIC');
     if (flags & VNodeFlags.HAS_EVENT)
         parts.push('HAS_EVENT');
+    if (flags & VNodeFlags.HAS_SLOT)
