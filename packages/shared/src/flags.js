@@ -96,3 +96,4 @@ export function describeFlags(flags) {
     if (flags & VNodeFlags.STATIC_ELEMENT)
         parts.push('STATIC_ELEMENT');
     if (flags & VNodeFlags.STATIC_KEY)
+        parts.push('STATIC_KEY');
