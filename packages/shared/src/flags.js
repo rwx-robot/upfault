@@ -109,3 +109,4 @@ export function describeFlags(flags) {
         parts.push('FREQUENT_UPDATE');
     return parts.length ? parts.join(' | ') : 'NONE';
 }
+//# sourceMappingURL=flags.js.map
