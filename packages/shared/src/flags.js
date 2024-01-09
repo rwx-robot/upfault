@@ -99,3 +99,4 @@ export function describeFlags(flags) {
         parts.push('STATIC_KEY');
     if (flags & VNodeFlags.PURE_DYNAMIC)
         parts.push('PURE_DYNAMIC');
+    if (flags & VNodeFlags.MULTI_DYNAMIC)
