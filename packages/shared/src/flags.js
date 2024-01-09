@@ -104,3 +104,4 @@ export function describeFlags(flags) {
     if (flags & VNodeFlags.HAS_EVENT)
         parts.push('HAS_EVENT');
     if (flags & VNodeFlags.HAS_SLOT)
+        parts.push('HAS_SLOT');
