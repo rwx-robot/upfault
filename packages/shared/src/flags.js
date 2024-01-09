@@ -87,3 +87,4 @@ export function unmarkFrequentUpdate(flags) {
     return flags & ~VNodeFlags.FREQUENT_UPDATE;
 }
 /**
+ * Flags 可读性描述 (用于调试/DevTools)
