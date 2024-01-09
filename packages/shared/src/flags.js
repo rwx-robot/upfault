@@ -94,3 +94,4 @@ export function describeFlags(flags) {
     if (flags & VNodeFlags.STATIC_TEXT)
         parts.push('STATIC_TEXT');
     if (flags & VNodeFlags.STATIC_ELEMENT)
+        parts.push('STATIC_ELEMENT');
