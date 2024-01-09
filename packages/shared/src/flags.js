@@ -100,3 +100,4 @@ export function describeFlags(flags) {
     if (flags & VNodeFlags.PURE_DYNAMIC)
         parts.push('PURE_DYNAMIC');
     if (flags & VNodeFlags.MULTI_DYNAMIC)
+        parts.push('MULTI_DYNAMIC');
