@@ -102,3 +102,4 @@ export function describeFlags(flags) {
     if (flags & VNodeFlags.MULTI_DYNAMIC)
         parts.push('MULTI_DYNAMIC');
     if (flags & VNodeFlags.HAS_EVENT)
+        parts.push('HAS_EVENT');
