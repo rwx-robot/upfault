@@ -89,3 +89,4 @@ export function unmarkFrequentUpdate(flags) {
 /**
  * Flags 可读性描述 (用于调试/DevTools)
  */
+export function describeFlags(flags) {
