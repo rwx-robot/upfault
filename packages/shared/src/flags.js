@@ -97,3 +97,4 @@ export function describeFlags(flags) {
         parts.push('STATIC_ELEMENT');
     if (flags & VNodeFlags.STATIC_KEY)
         parts.push('STATIC_KEY');
+    if (flags & VNodeFlags.PURE_DYNAMIC)
