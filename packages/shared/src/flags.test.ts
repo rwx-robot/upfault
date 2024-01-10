@@ -8,3 +8,4 @@ import {
   isFrequentUpdate,
   markFrequentUpdate,
   unmarkFrequentUpdate,
+  describeFlags,
