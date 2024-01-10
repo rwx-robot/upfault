@@ -10,3 +10,5 @@ import {
   unmarkFrequentUpdate,
   describeFlags,
 } from './flags';
+
+describe('VNodeFlags', () => {
