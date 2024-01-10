@@ -3,3 +3,4 @@ import {
   VNodeFlags,
   isStaticNode,
   isPureDynamic,
+  isInteractive,
