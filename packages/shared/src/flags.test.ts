@@ -9,3 +9,4 @@ import {
   markFrequentUpdate,
   unmarkFrequentUpdate,
   describeFlags,
+} from './flags';
