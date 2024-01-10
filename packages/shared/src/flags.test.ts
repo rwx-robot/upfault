@@ -12,3 +12,4 @@ import {
 } from './flags';
 
 describe('VNodeFlags', () => {
+  describe('位掩码常量', () => {
