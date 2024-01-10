@@ -17,3 +17,4 @@ describe('VNodeFlags', () => {
       expect(VNodeFlags.STATIC_TEXT).toBe(0b0000_0001);
       expect(VNodeFlags.STATIC_ELEMENT).toBe(0b0000_0010);
       expect(VNodeFlags.STATIC_KEY).toBe(0b0000_0100);
+      expect(VNodeFlags.PURE_DYNAMIC).toBe(0b0000_1000);
