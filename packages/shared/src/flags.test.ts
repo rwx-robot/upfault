@@ -5,3 +5,4 @@ import {
   isPureDynamic,
   isInteractive,
   isSkippable,
+  isFrequentUpdate,
