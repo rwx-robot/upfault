@@ -13,3 +13,4 @@ import {
 
 describe('VNodeFlags', () => {
   describe('位掩码常量', () => {
+    it('应定义正确的位值', () => {
