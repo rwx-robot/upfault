@@ -6,3 +6,4 @@ import {
   isInteractive,
   isSkippable,
   isFrequentUpdate,
+  markFrequentUpdate,
