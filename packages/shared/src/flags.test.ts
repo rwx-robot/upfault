@@ -4,3 +4,4 @@ import {
   isStaticNode,
   isPureDynamic,
   isInteractive,
+  isSkippable,
