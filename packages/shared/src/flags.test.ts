@@ -24,3 +24,4 @@ describe('VNodeFlags', () => {
       expect(VNodeFlags.FREQUENT_UPDATE).toBe(0b1000_0000);
     });
 
+    it('组合标志应正确计算', () => {
