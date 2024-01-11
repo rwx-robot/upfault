@@ -22,3 +22,4 @@ describe('VNodeFlags', () => {
       expect(VNodeFlags.HAS_EVENT).toBe(0b0010_0000);
       expect(VNodeFlags.HAS_SLOT).toBe(0b0100_0000);
       expect(VNodeFlags.FREQUENT_UPDATE).toBe(0b1000_0000);
+    });
