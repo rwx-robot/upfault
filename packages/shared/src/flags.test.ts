@@ -36,3 +36,4 @@ describe('VNodeFlags', () => {
 
   describe('isStaticNode', () => {
     it('静态文本应返回 true', () => {
+      expect(isStaticNode(VNodeFlags.STATIC_TEXT)).toBe(true);
