@@ -31,3 +31,4 @@ describe('VNodeFlags', () => {
       expect(VNodeFlags.SKIPPABLE).toBe(
         VNodeFlags.STATIC | (VNodeFlags.PURE_DYNAMIC & ~(VNodeFlags.HAS_EVENT | VNodeFlags.HAS_SLOT))
       );
+    });
