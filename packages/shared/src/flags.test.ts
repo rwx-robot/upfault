@@ -41,3 +41,4 @@ describe('VNodeFlags', () => {
 
     it('静态元素应返回 true', () => {
       expect(isStaticNode(VNodeFlags.STATIC_ELEMENT)).toBe(true);
+    });
