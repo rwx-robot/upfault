@@ -34,3 +34,4 @@ describe('VNodeFlags', () => {
     });
   });
 
+  describe('isStaticNode', () => {
