@@ -32,3 +32,4 @@ describe('VNodeFlags', () => {
         VNodeFlags.STATIC | (VNodeFlags.PURE_DYNAMIC & ~(VNodeFlags.HAS_EVENT | VNodeFlags.HAS_SLOT))
       );
     });
+  });
