@@ -26,3 +26,4 @@ describe('VNodeFlags', () => {
 
     it('组合标志应正确计算', () => {
       expect(VNodeFlags.STATIC).toBe(VNodeFlags.STATIC_TEXT | VNodeFlags.STATIC_ELEMENT);
+      expect(VNodeFlags.DYNAMIC).toBe(VNodeFlags.PURE_DYNAMIC | VNodeFlags.MULTI_DYNAMIC);
