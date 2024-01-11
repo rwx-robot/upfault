@@ -29,3 +29,4 @@ describe('VNodeFlags', () => {
       expect(VNodeFlags.DYNAMIC).toBe(VNodeFlags.PURE_DYNAMIC | VNodeFlags.MULTI_DYNAMIC);
       expect(VNodeFlags.INTERACTIVE).toBe(VNodeFlags.HAS_EVENT | VNodeFlags.HAS_SLOT);
       expect(VNodeFlags.SKIPPABLE).toBe(
+        VNodeFlags.STATIC | (VNodeFlags.PURE_DYNAMIC & ~(VNodeFlags.HAS_EVENT | VNodeFlags.HAS_SLOT))
