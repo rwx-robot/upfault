@@ -62,3 +62,4 @@ describe('VNodeFlags', () => {
       expect(isPureDynamic(VNodeFlags.STATIC_TEXT)).toBe(false);
       expect(isPureDynamic(VNodeFlags.MULTI_DYNAMIC)).toBe(false);
     });
+  });
