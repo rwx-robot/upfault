@@ -57,3 +57,5 @@ describe('VNodeFlags', () => {
     it('PURE_DYNAMIC 应返回 true', () => {
       expect(isPureDynamic(VNodeFlags.PURE_DYNAMIC)).toBe(true);
     });
+
+    it('其他标志应返回 false', () => {
