@@ -48,3 +48,4 @@ describe('VNodeFlags', () => {
     });
 
     it('动态标志应返回 false', () => {
+      expect(isStaticNode(VNodeFlags.PURE_DYNAMIC)).toBe(false);
