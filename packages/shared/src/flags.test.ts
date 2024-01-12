@@ -46,3 +46,5 @@ describe('VNodeFlags', () => {
     it('组合静态标志应返回 true', () => {
       expect(isStaticNode(VNodeFlags.STATIC_TEXT | VNodeFlags.STATIC_ELEMENT)).toBe(true);
     });
+
+    it('动态标志应返回 false', () => {
