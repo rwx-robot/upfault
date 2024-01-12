@@ -61,3 +61,4 @@ describe('VNodeFlags', () => {
     it('其他标志应返回 false', () => {
       expect(isPureDynamic(VNodeFlags.STATIC_TEXT)).toBe(false);
       expect(isPureDynamic(VNodeFlags.MULTI_DYNAMIC)).toBe(false);
+    });
