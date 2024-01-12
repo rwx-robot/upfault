@@ -51,3 +51,4 @@ describe('VNodeFlags', () => {
       expect(isStaticNode(VNodeFlags.PURE_DYNAMIC)).toBe(false);
       expect(isStaticNode(VNodeFlags.MULTI_DYNAMIC)).toBe(false);
     });
+  });
