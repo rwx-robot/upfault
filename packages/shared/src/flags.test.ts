@@ -81,3 +81,4 @@ describe('VNodeFlags', () => {
       expect(isInteractive(VNodeFlags.STATIC_TEXT)).toBe(false);
     });
   });
+
