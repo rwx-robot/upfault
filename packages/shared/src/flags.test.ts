@@ -63,3 +63,5 @@ describe('VNodeFlags', () => {
       expect(isPureDynamic(VNodeFlags.MULTI_DYNAMIC)).toBe(false);
     });
   });
+
+  describe('isInteractive', () => {
