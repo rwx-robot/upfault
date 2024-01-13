@@ -80,3 +80,4 @@ describe('VNodeFlags', () => {
     it('纯静态应返回 false', () => {
       expect(isInteractive(VNodeFlags.STATIC_TEXT)).toBe(false);
     });
+  });
