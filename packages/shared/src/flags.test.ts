@@ -66,3 +66,4 @@ describe('VNodeFlags', () => {
 
   describe('isInteractive', () => {
     it('HAS_EVENT 应返回 true', () => {
+      expect(isInteractive(VNodeFlags.HAS_EVENT)).toBe(true);
