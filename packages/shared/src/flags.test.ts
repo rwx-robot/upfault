@@ -76,3 +76,5 @@ describe('VNodeFlags', () => {
     it('组合交互标志应返回 true', () => {
       expect(isInteractive(VNodeFlags.HAS_EVENT | VNodeFlags.HAS_SLOT)).toBe(true);
     });
+
+    it('纯静态应返回 false', () => {
