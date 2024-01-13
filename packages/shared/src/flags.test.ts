@@ -83,3 +83,4 @@ describe('VNodeFlags', () => {
   });
 
   describe('isSkippable', () => {
+    it('静态节点应可跳过', () => {
