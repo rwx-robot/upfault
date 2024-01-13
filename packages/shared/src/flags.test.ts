@@ -82,3 +82,4 @@ describe('VNodeFlags', () => {
     });
   });
 
+  describe('isSkippable', () => {
