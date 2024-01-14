@@ -85,3 +85,4 @@ describe('VNodeFlags', () => {
   describe('isSkippable', () => {
     it('静态节点应可跳过', () => {
       expect(isSkippable(VNodeFlags.STATIC_TEXT)).toBe(true);
+      expect(isSkippable(VNodeFlags.STATIC_ELEMENT)).toBe(true);
