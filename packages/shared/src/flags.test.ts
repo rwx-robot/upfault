@@ -102,3 +102,4 @@ describe('VNodeFlags', () => {
 
     it('多重动态不可跳过', () => {
       expect(isSkippable(VNodeFlags.MULTI_DYNAMIC)).toBe(false);
+    });
