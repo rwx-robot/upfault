@@ -99,3 +99,5 @@ describe('VNodeFlags', () => {
     it('有插槽的纯动态不可跳过', () => {
       expect(isSkippable(VNodeFlags.PURE_DYNAMIC | VNodeFlags.HAS_SLOT)).toBe(false);
     });
+
+    it('多重动态不可跳过', () => {
