@@ -87,3 +87,5 @@ describe('VNodeFlags', () => {
       expect(isSkippable(VNodeFlags.STATIC_TEXT)).toBe(true);
       expect(isSkippable(VNodeFlags.STATIC_ELEMENT)).toBe(true);
     });
+
+    it('纯动态且无交互应可跳过', () => {
