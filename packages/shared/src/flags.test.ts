@@ -92,3 +92,4 @@ describe('VNodeFlags', () => {
       expect(isSkippable(VNodeFlags.PURE_DYNAMIC)).toBe(true);
     });
 
+    it('有事件的纯动态不可跳过', () => {
