@@ -106,3 +106,4 @@ describe('VNodeFlags', () => {
   });
 
   describe('isFrequentUpdate', () => {
+    it('未标记时应返回 false', () => {
