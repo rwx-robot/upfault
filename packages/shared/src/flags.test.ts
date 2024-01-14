@@ -104,3 +104,5 @@ describe('VNodeFlags', () => {
       expect(isSkippable(VNodeFlags.MULTI_DYNAMIC)).toBe(false);
     });
   });
+
+  describe('isFrequentUpdate', () => {
