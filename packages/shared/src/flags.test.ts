@@ -127,3 +127,4 @@ describe('VNodeFlags', () => {
 
   describe('describeFlags', () => {
     it('应返回可读字符串', () => {
+      const flags = VNodeFlags.STATIC_TEXT | VNodeFlags.HAS_EVENT;
