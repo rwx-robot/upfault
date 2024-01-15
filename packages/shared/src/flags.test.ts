@@ -124,3 +124,5 @@ describe('VNodeFlags', () => {
       expect(unmarked).toBe(original);
     });
   });
+
+  describe('describeFlags', () => {
