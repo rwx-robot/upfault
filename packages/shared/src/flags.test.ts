@@ -126,3 +126,4 @@ describe('VNodeFlags', () => {
   });
 
   describe('describeFlags', () => {
+    it('应返回可读字符串', () => {
