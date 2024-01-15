@@ -119,3 +119,4 @@ describe('VNodeFlags', () => {
   describe('markFrequentUpdate / unmarkFrequentUpdate', () => {
     it('标记后再移除应恢复原值', () => {
       const original = VNodeFlags.PURE_DYNAMIC | VNodeFlags.HAS_EVENT;
+      const marked = markFrequentUpdate(original);
