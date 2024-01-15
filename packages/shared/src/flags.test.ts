@@ -123,3 +123,4 @@ describe('VNodeFlags', () => {
       const unmarked = unmarkFrequentUpdate(marked);
       expect(unmarked).toBe(original);
     });
+  });
