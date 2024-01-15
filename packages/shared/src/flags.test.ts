@@ -113,3 +113,4 @@ describe('VNodeFlags', () => {
     it('标记后应返回 true', () => {
       const marked = markFrequentUpdate(VNodeFlags.STATIC_TEXT);
       expect(isFrequentUpdate(marked)).toBe(true);
+    });
