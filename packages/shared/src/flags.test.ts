@@ -114,3 +114,4 @@ describe('VNodeFlags', () => {
       const marked = markFrequentUpdate(VNodeFlags.STATIC_TEXT);
       expect(isFrequentUpdate(marked)).toBe(true);
     });
+  });
