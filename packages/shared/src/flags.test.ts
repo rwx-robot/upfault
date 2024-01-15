@@ -115,3 +115,5 @@ describe('VNodeFlags', () => {
       expect(isFrequentUpdate(marked)).toBe(true);
     });
   });
+
+  describe('markFrequentUpdate / unmarkFrequentUpdate', () => {
