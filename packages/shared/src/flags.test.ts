@@ -121,3 +121,4 @@ describe('VNodeFlags', () => {
       const original = VNodeFlags.PURE_DYNAMIC | VNodeFlags.HAS_EVENT;
       const marked = markFrequentUpdate(original);
       const unmarked = unmarkFrequentUpdate(marked);
+      expect(unmarked).toBe(original);
