@@ -109,3 +109,4 @@ describe('VNodeFlags', () => {
     it('未标记时应返回 false', () => {
       expect(isFrequentUpdate(VNodeFlags.STATIC_TEXT)).toBe(false);
     });
+
