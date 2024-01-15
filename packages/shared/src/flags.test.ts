@@ -117,3 +117,4 @@ describe('VNodeFlags', () => {
   });
 
   describe('markFrequentUpdate / unmarkFrequentUpdate', () => {
+    it('标记后再移除应恢复原值', () => {
