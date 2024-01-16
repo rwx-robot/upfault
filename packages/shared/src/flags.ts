@@ -7,3 +7,4 @@
  */
 
 export const enum VNodeFlags {
+  /** 纯静态文本节点，永远不更新 */
