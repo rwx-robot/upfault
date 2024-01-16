@@ -130,3 +130,4 @@ describe('VNodeFlags', () => {
       const flags = VNodeFlags.STATIC_TEXT | VNodeFlags.HAS_EVENT;
       const desc = describeFlags(flags);
       expect(desc).toContain('STATIC_TEXT');
+      expect(desc).toContain('HAS_EVENT');
