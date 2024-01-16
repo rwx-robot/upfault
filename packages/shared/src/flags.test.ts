@@ -137,3 +137,4 @@ describe('VNodeFlags', () => {
       expect(describeFlags(0)).toBe('NONE');
     });
   });
+});
