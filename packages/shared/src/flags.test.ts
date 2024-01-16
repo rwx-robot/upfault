@@ -131,3 +131,4 @@ describe('VNodeFlags', () => {
       const desc = describeFlags(flags);
       expect(desc).toContain('STATIC_TEXT');
       expect(desc).toContain('HAS_EVENT');
+    });
