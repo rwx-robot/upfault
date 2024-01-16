@@ -132,3 +132,5 @@ describe('VNodeFlags', () => {
       expect(desc).toContain('STATIC_TEXT');
       expect(desc).toContain('HAS_EVENT');
     });
+
+    it('无标志时返回 NONE', () => {
