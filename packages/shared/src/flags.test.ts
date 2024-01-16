@@ -136,3 +136,4 @@ describe('VNodeFlags', () => {
     it('无标志时返回 NONE', () => {
       expect(describeFlags(0)).toBe('NONE');
     });
+  });
