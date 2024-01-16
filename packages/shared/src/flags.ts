@@ -5,3 +5,5 @@
  * 每个标志位对应编译时可确定的节点特性
  * 运行时可快速通过位运算判断节点类型
  */
+
+export const enum VNodeFlags {
