@@ -26,3 +26,4 @@ export const enum VNodeFlags {
   HAS_EVENT = 0b0010_0000,        // 32
   
   /** 存在插槽 (<slot />) */
+  HAS_SLOT = 0b0100_0000,         // 64
