@@ -20,3 +20,4 @@ export const enum VNodeFlags {
   PURE_DYNAMIC = 0b0000_1000,     // 8
   
   /** 包含多个动态值或复杂表达式 */
+  MULTI_DYNAMIC = 0b0001_0000,    // 16
