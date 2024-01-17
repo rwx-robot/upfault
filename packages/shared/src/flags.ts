@@ -25,3 +25,4 @@ export const enum VNodeFlags {
   /** 存在事件监听器 (@click, @input 等) */
   HAS_EVENT = 0b0010_0000,        // 32
   
+  /** 存在插槽 (<slot />) */
