@@ -27,3 +27,4 @@ export const enum VNodeFlags {
   
   /** 存在插槽 (<slot />) */
   HAS_SLOT = 0b0100_0000,         // 64
+  
