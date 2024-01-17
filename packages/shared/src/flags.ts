@@ -30,3 +30,4 @@ export const enum VNodeFlags {
   
   /** 运行时标记：高频更新节点 (由预测层动态设置) */
   FREQUENT_UPDATE = 0b1000_0000,  // 128
+  
