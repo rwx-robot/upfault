@@ -23,3 +23,4 @@ export const enum VNodeFlags {
   MULTI_DYNAMIC = 0b0001_0000,    // 16
   
   /** 存在事件监听器 (@click, @input 等) */
+  HAS_EVENT = 0b0010_0000,        // 32
