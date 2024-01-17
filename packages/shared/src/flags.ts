@@ -32,3 +32,4 @@ export const enum VNodeFlags {
   FREQUENT_UPDATE = 0b1000_0000,  // 128
   
   /** 组合标志：静态节点 (文本 + 元素) */
+  STATIC = STATIC_TEXT | STATIC_ELEMENT,  // 3
