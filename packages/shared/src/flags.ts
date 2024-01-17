@@ -12,3 +12,4 @@ export const enum VNodeFlags {
   
   /** 纯静态元素节点，无动态绑定，无事件，无插槽 */
   STATIC_ELEMENT = 0b0000_0010,   // 2
+  
