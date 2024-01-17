@@ -19,3 +19,4 @@ export const enum VNodeFlags {
   /** 仅包含单一动态值 (如 {{ count }}) */
   PURE_DYNAMIC = 0b0000_1000,     // 8
   
+  /** 包含多个动态值或复杂表达式 */
