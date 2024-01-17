@@ -14,3 +14,4 @@ export const enum VNodeFlags {
   STATIC_ELEMENT = 0b0000_0010,   // 2
   
   /** Key 在编译时已确定不变 */
+  STATIC_KEY = 0b0000_0100,       // 4
