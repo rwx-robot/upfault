@@ -51,3 +51,4 @@ export const enum VNodeFlags {
  * 判断是否为静态节点
  */
 export function isStaticNode(flags: number): boolean {
+  return (flags & VNodeFlags.STATIC) !== 0;
