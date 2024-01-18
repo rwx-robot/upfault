@@ -35,3 +35,4 @@ export const enum VNodeFlags {
   STATIC = STATIC_TEXT | STATIC_ELEMENT,  // 3
   
   /** 组合标志：动态节点 (单一 + 多重) */
+  DYNAMIC = PURE_DYNAMIC | MULTI_DYNAMIC, // 24
