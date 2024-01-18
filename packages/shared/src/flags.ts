@@ -45,3 +45,4 @@ export const enum VNodeFlags {
   
   /** 组合标志：必须 Diff 的节点 */
   MUST_DIFF = ~SKIPPABLE & 0xFF,  // 244
+}
