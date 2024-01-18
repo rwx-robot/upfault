@@ -39,3 +39,4 @@ export const enum VNodeFlags {
   
   /** 组合标志：交互节点 (事件 + 插槽) */
   INTERACTIVE = HAS_EVENT | HAS_SLOT,      // 96
+  
