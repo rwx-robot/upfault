@@ -38,3 +38,4 @@ export const enum VNodeFlags {
   DYNAMIC = PURE_DYNAMIC | MULTI_DYNAMIC, // 24
   
   /** 组合标志：交互节点 (事件 + 插槽) */
+  INTERACTIVE = HAS_EVENT | HAS_SLOT,      // 96
