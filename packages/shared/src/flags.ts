@@ -33,3 +33,4 @@ export const enum VNodeFlags {
   
   /** 组合标志：静态节点 (文本 + 元素) */
   STATIC = STATIC_TEXT | STATIC_ELEMENT,  // 3
+  
