@@ -44,3 +44,4 @@ export const enum VNodeFlags {
   SKIPPABLE = STATIC | (PURE_DYNAMIC & ~(HAS_EVENT | HAS_SLOT)), // 11
   
   /** 组合标志：必须 Diff 的节点 */
+  MUST_DIFF = ~SKIPPABLE & 0xFF,  // 244
