@@ -40,3 +40,4 @@ export const enum VNodeFlags {
   /** 组合标志：交互节点 (事件 + 插槽) */
   INTERACTIVE = HAS_EVENT | HAS_SLOT,      // 96
   
+  /** 组合标志：可跳过 Diff 的节点 (静态 + 纯动态且无交互) */
