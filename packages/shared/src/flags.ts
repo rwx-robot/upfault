@@ -53,3 +53,5 @@ export const enum VNodeFlags {
 export function isStaticNode(flags: number): boolean {
   return (flags & VNodeFlags.STATIC) !== 0;
 }
+
+/**
