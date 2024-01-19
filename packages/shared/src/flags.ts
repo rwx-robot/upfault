@@ -64,3 +64,4 @@ export function isPureDynamic(flags: number): boolean {
 /**
  * 判断是否有交互 (事件或插槽)
  */
+export function isInteractive(flags: number): boolean {
