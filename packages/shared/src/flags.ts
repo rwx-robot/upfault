@@ -61,3 +61,4 @@ export function isPureDynamic(flags: number): boolean {
   return (flags & VNodeFlags.PURE_DYNAMIC) !== 0;
 }
 
+/**
