@@ -69,3 +69,4 @@ export function isInteractive(flags: number): boolean {
 }
 
 /**
+ * 判断是否可跳过 Diff
