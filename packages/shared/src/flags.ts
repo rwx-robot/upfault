@@ -74,3 +74,4 @@ export function isInteractive(flags: number): boolean {
  * 纯动态节点仅在无交互(事件/插槽)时可跳过
  */
 export function isSkippable(flags: number): boolean {
+  // 静态节点始终可跳过
