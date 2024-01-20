@@ -91,3 +91,4 @@ export function isSkippable(flags: number): boolean {
 export function isFrequentUpdate(flags: number): boolean {
   return (flags & VNodeFlags.FREQUENT_UPDATE) !== 0;
 }
+
