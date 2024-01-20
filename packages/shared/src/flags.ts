@@ -79,3 +79,4 @@ export function isSkippable(flags: number): boolean {
     return true;
   }
   // 纯动态且无交互可跳过
+  if ((flags & VNodeFlags.PURE_DYNAMIC) !== 0) {
