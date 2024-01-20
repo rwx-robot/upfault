@@ -82,3 +82,4 @@ export function isSkippable(flags: number): boolean {
   if ((flags & VNodeFlags.PURE_DYNAMIC) !== 0) {
     return (flags & VNodeFlags.INTERACTIVE) === 0;
   }
+  return false;
