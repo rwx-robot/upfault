@@ -92,3 +92,4 @@ export function isFrequentUpdate(flags: number): boolean {
   return (flags & VNodeFlags.FREQUENT_UPDATE) !== 0;
 }
 
+/**
