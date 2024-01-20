@@ -94,3 +94,4 @@ export function isFrequentUpdate(flags: number): boolean {
 
 /**
  * 标记为高频更新
+ */
