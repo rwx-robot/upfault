@@ -109,3 +109,4 @@ export function unmarkFrequentUpdate(flags: number): number {
 /**
  * Flags 可读性描述 (用于调试/DevTools)
  */
+export function describeFlags(flags: number): string {
