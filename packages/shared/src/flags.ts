@@ -104,3 +104,4 @@ export function markFrequentUpdate(flags: number): number {
  */
 export function unmarkFrequentUpdate(flags: number): number {
   return flags & ~VNodeFlags.FREQUENT_UPDATE;
+}
