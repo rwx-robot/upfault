@@ -112,3 +112,4 @@ export function unmarkFrequentUpdate(flags: number): number {
 export function describeFlags(flags: number): string {
   const parts: string[] = [];
   if (flags & VNodeFlags.STATIC_TEXT) parts.push('STATIC_TEXT');
+  if (flags & VNodeFlags.STATIC_ELEMENT) parts.push('STATIC_ELEMENT');
