@@ -96,3 +96,4 @@ export function isFrequentUpdate(flags: number): boolean {
  * 标记为高频更新
  */
 export function markFrequentUpdate(flags: number): number {
+  return flags | VNodeFlags.FREQUENT_UPDATE;
