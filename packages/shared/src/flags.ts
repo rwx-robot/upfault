@@ -97,3 +97,4 @@ export function isFrequentUpdate(flags: number): boolean {
  */
 export function markFrequentUpdate(flags: number): number {
   return flags | VNodeFlags.FREQUENT_UPDATE;
+}
