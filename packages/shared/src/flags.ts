@@ -100,3 +100,4 @@ export function markFrequentUpdate(flags: number): number {
 }
 
 /**
+ * 移除高频更新标记
