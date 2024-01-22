@@ -5,3 +5,4 @@
  * 版本: 0.2.0
  */
 export { VNodeFlags, isStaticNode, isPureDynamic, isInteractive, isSkippable, isFrequentUpdate, markFrequentUpdate, unmarkFrequentUpdate, describeFlags, } from './flags';
+export { Priority, PriorityNames, priorityFromExpirationTime, computeExpirationTime, SchedulerTask, SchedulerOptions, DEFAULT_SCHEDULER_OPTIONS, SchedulerStats, TaskQueue, VNodeType as SchedulerVNodeType, } from './scheduler';
