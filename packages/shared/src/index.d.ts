@@ -6,3 +6,4 @@
  */
 export { VNodeFlags, isStaticNode, isPureDynamic, isInteractive, isSkippable, isFrequentUpdate, markFrequentUpdate, unmarkFrequentUpdate, describeFlags, } from './flags';
 export { Priority, PriorityNames, priorityFromExpirationTime, computeExpirationTime, SchedulerTask, SchedulerOptions, DEFAULT_SCHEDULER_OPTIONS, SchedulerStats, TaskQueue, VNodeType as SchedulerVNodeType, } from './scheduler';
+export { Ref, ReadonlyRef, ComputedRef, ComputedGetter, ComputedSetter, ReactiveMarker, Reactive, ReadonlyReactive, ShallowReactive, Dep, Effect, DebuggerEvent, TrackOpTypes, TriggerOpTypes, ReactivityOptions, DEFAULT_REACTIVITY_OPTIONS, BatchContext, WatchOptions, WatchCallback, WatchSource, WatchStopHandle, UnwrapRef, UnwrapRefs, ShallowUnwrapRef, RefUnwrapBailTypes, } from './reactivity';
