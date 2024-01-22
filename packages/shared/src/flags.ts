@@ -119,3 +119,4 @@ export function describeFlags(flags: number): string {
   if (flags & VNodeFlags.HAS_EVENT) parts.push('HAS_EVENT');
   if (flags & VNodeFlags.HAS_SLOT) parts.push('HAS_SLOT');
   if (flags & VNodeFlags.FREQUENT_UPDATE) parts.push('FREQUENT_UPDATE');
+  return parts.length ? parts.join(' | ') : 'NONE';
