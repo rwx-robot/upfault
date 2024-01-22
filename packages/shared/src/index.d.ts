@@ -12,3 +12,4 @@ export { UpdateFingerprint, FINGERPRINT_CONFIG, createFingerprint, computeDecayS
 export { isSameNode, isObject, isFunction, isString, isNumber, isPromise, isRef, isComputedRef, isReactive, isReadonly, isVNode, NOOP, IDENTITY, hasChanged, flatten, generateId, generateNumericId, deepClone, mergeObjects, unique, chunk, debounce, throttle, flattenTree, traverseTreeBFS, PerformanceTimer, LRUCache, isType, assert, warn, error, } from './utils';
 export declare const VERSION = "0.2.0";
 export declare const PACKAGE_NAME = "@upfault/shared";
+//# sourceMappingURL=index.d.ts.map
