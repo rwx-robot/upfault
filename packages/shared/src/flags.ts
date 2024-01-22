@@ -117,3 +117,4 @@ export function describeFlags(flags: number): string {
   if (flags & VNodeFlags.PURE_DYNAMIC) parts.push('PURE_DYNAMIC');
   if (flags & VNodeFlags.MULTI_DYNAMIC) parts.push('MULTI_DYNAMIC');
   if (flags & VNodeFlags.HAS_EVENT) parts.push('HAS_EVENT');
+  if (flags & VNodeFlags.HAS_SLOT) parts.push('HAS_SLOT');
