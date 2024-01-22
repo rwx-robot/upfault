@@ -4,3 +4,4 @@
  * 所有包的基础依赖，提供统一的类型定义
  * 版本: 0.2.0
  */
+export { VNodeFlags, isStaticNode, isPureDynamic, isInteractive, isSkippable, isFrequentUpdate, markFrequentUpdate, unmarkFrequentUpdate, describeFlags, } from './flags';
