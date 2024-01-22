@@ -11,3 +11,4 @@ export { VNode, VNodeType, VNodeProps, PatchFlags, Block, DiffOpType, DiffOp, Di
 export { UpdateFingerprint, FINGERPRINT_CONFIG, createFingerprint, computeDecayScore, updateFingerprint, shouldSkip, recordFalseSkip, recordCorrectSkip, PredictionStats, createPredictionStats, AdaptiveThresholdConfig, DEFAULT_ADAPTIVE_CONFIG, AdaptiveThreshold, createAdaptiveThreshold, FastHashFn, defaultFastHash, } from './predict';
 export { isSameNode, isObject, isFunction, isString, isNumber, isPromise, isRef, isComputedRef, isReactive, isReadonly, isVNode, NOOP, IDENTITY, hasChanged, flatten, generateId, generateNumericId, deepClone, mergeObjects, unique, chunk, debounce, throttle, flattenTree, traverseTreeBFS, PerformanceTimer, LRUCache, isType, assert, warn, error, } from './utils';
 export declare const VERSION = "0.2.0";
+export declare const PACKAGE_NAME = "@upfault/shared";
