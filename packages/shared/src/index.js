@@ -12,3 +12,4 @@ export { Priority, PriorityNames, priorityFromExpirationTime, computeExpirationT
 export { TrackOpTypes, TriggerOpTypes, DEFAULT_REACTIVITY_OPTIONS, } from './reactivity';
 // Diff - AeroDiff 算法类型
 export { VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS, } from './diff';
+// Predict - 预测缓存层类型
