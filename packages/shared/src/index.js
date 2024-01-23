@@ -11,3 +11,4 @@ export { Priority, PriorityNames, priorityFromExpirationTime, computeExpirationT
 // Reactivity - 细粒度响应式类型
 export { TrackOpTypes, TriggerOpTypes, DEFAULT_REACTIVITY_OPTIONS, } from './reactivity';
 // Diff - AeroDiff 算法类型
+export { VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS, } from './diff';
