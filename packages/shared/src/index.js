@@ -17,3 +17,4 @@ export { FINGERPRINT_CONFIG, createFingerprint, computeDecayScore, updateFingerp
 // Utils - 通用工具函数
 export { isSameNode, isObject, isFunction, isString, isNumber, isPromise, isRef, isComputedRef, isReactive, isReadonly, isVNode, NOOP, IDENTITY, hasChanged, flatten, generateId, generateNumericId, deepClone, mergeObjects, unique, chunk, debounce, throttle, flattenTree, traverseTreeBFS, PerformanceTimer, LRUCache, isType, assert, warn, error, } from './utils';
 // 版本信息
+export const VERSION = '0.2.0';
