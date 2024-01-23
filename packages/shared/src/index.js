@@ -6,3 +6,4 @@
  */
 // Flags - VNode 编译时标记
 export { VNodeFlags, isStaticNode, isPureDynamic, isInteractive, isSkippable, isFrequentUpdate, markFrequentUpdate, unmarkFrequentUpdate, describeFlags, } from './flags';
+// Scheduler - 调度器核心类型
