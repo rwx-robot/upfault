@@ -14,3 +14,4 @@ export { TrackOpTypes, TriggerOpTypes, DEFAULT_REACTIVITY_OPTIONS, } from './rea
 export { VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS, } from './diff';
 // Predict - 预测缓存层类型
 export { FINGERPRINT_CONFIG, createFingerprint, computeDecayScore, updateFingerprint, shouldSkip, recordFalseSkip, recordCorrectSkip, createPredictionStats, DEFAULT_ADAPTIVE_CONFIG, createAdaptiveThreshold, defaultFastHash, } from './predict';
+// Utils - 通用工具函数
