@@ -5,3 +5,4 @@
  * 版本: 0.2.0
  */
 // Flags - VNode 编译时标记
+export { VNodeFlags, isStaticNode, isPureDynamic, isInteractive, isSkippable, isFrequentUpdate, markFrequentUpdate, unmarkFrequentUpdate, describeFlags, } from './flags';
