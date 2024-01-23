@@ -15,3 +15,4 @@ export { VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS, } from './
 // Predict - 预测缓存层类型
 export { FINGERPRINT_CONFIG, createFingerprint, computeDecayScore, updateFingerprint, shouldSkip, recordFalseSkip, recordCorrectSkip, createPredictionStats, DEFAULT_ADAPTIVE_CONFIG, createAdaptiveThreshold, defaultFastHash, } from './predict';
 // Utils - 通用工具函数
+export { isSameNode, isObject, isFunction, isString, isNumber, isPromise, isRef, isComputedRef, isReactive, isReadonly, isVNode, NOOP, IDENTITY, hasChanged, flatten, generateId, generateNumericId, deepClone, mergeObjects, unique, chunk, debounce, throttle, flattenTree, traverseTreeBFS, PerformanceTimer, LRUCache, isType, assert, warn, error, } from './utils';
