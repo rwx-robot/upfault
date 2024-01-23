@@ -19,3 +19,4 @@ export { isSameNode, isObject, isFunction, isString, isNumber, isPromise, isRef,
 // 版本信息
 export const VERSION = '0.2.0';
 export const PACKAGE_NAME = '@upfault/shared';
+//# sourceMappingURL=index.js.map
