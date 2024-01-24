@@ -9,3 +9,4 @@
 export {
   VNodeFlags,
   isStaticNode,
+  isPureDynamic,
