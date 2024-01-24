@@ -16,3 +16,4 @@ export {
   markFrequentUpdate,
   unmarkFrequentUpdate,
   describeFlags,
+} from './flags';
