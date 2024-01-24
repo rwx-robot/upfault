@@ -11,3 +11,4 @@ export {
   isStaticNode,
   isPureDynamic,
   isInteractive,
+  isSkippable,
