@@ -15,3 +15,4 @@ export {
   isFrequentUpdate,
   markFrequentUpdate,
   unmarkFrequentUpdate,
+  describeFlags,
