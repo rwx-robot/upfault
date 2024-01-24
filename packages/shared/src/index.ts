@@ -13,3 +13,4 @@ export {
   isInteractive,
   isSkippable,
   isFrequentUpdate,
+  markFrequentUpdate,
