@@ -14,3 +14,4 @@ export {
   isSkippable,
   isFrequentUpdate,
   markFrequentUpdate,
+  unmarkFrequentUpdate,
