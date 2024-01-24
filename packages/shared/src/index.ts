@@ -12,3 +12,4 @@ export {
   isPureDynamic,
   isInteractive,
   isSkippable,
+  isFrequentUpdate,
