@@ -7,3 +7,4 @@
 
 // Flags - VNode 编译时标记
 export {
+  VNodeFlags,
