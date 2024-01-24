@@ -20,3 +20,4 @@ export {
 
 // Scheduler - 调度器核心类型
 export type {
+  Priority,
