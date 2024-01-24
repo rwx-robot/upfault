@@ -10,3 +10,4 @@ export {
   VNodeFlags,
   isStaticNode,
   isPureDynamic,
+  isInteractive,
