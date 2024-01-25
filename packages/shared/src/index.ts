@@ -38,3 +38,4 @@ export { DEFAULT_SCHEDULER_OPTIONS } from './scheduler';
 export type {
   Ref,
   ReadonlyRef,
+  ComputedRef,
