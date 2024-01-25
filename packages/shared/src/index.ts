@@ -26,3 +26,4 @@ export type {
   computeExpirationTime,
   SchedulerTask,
   SchedulerOptions,
+  SchedulerStats,
