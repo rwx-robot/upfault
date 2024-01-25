@@ -23,3 +23,4 @@ export type {
   Priority,
   PriorityNames,
   priorityFromExpirationTime,
+  computeExpirationTime,
