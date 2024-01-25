@@ -39,3 +39,4 @@ export type {
   Ref,
   ReadonlyRef,
   ComputedRef,
+  ComputedGetter,
