@@ -22,3 +22,4 @@ export {
 export type {
   Priority,
   PriorityNames,
+  priorityFromExpirationTime,
