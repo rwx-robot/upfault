@@ -40,3 +40,4 @@ export type {
   ReadonlyRef,
   ComputedRef,
   ComputedGetter,
+  ComputedSetter,
