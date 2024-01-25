@@ -29,3 +29,4 @@ export type {
   SchedulerStats,
   TaskQueue,
   VNodeType as SchedulerVNodeType,
+} from './scheduler';
