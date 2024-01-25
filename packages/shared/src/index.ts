@@ -27,3 +27,4 @@ export type {
   SchedulerTask,
   SchedulerOptions,
   SchedulerStats,
+  TaskQueue,
