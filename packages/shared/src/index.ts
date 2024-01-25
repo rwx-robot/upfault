@@ -24,3 +24,4 @@ export type {
   PriorityNames,
   priorityFromExpirationTime,
   computeExpirationTime,
+  SchedulerTask,
