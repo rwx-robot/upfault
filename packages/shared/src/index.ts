@@ -32,3 +32,4 @@ export type {
 } from './scheduler';
 
 // DEFAULT_SCHEDULER_OPTIONS is a const value, not just a type
+export { DEFAULT_SCHEDULER_OPTIONS } from './scheduler';
