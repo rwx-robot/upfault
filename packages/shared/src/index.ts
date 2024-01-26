@@ -51,3 +51,4 @@ export type {
   TrackOpTypes,
   TriggerOpTypes,
   ReactivityOptions,
+  DEFAULT_REACTIVITY_OPTIONS,
