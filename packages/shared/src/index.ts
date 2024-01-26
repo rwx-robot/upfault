@@ -54,3 +54,4 @@ export type {
   DEFAULT_REACTIVITY_OPTIONS,
   BatchContext,
   WatchOptions,
+  WatchCallback,
