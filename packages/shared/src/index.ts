@@ -60,3 +60,4 @@ export type {
   UnwrapRef,
   UnwrapRefs,
   ShallowUnwrapRef,
+  RefUnwrapBailTypes,
