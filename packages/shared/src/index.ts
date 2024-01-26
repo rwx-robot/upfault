@@ -45,3 +45,4 @@ export type {
   Reactive,
   ReadonlyReactive,
   ShallowReactive,
+  Dep,
