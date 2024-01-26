@@ -52,3 +52,4 @@ export type {
   TriggerOpTypes,
   ReactivityOptions,
   DEFAULT_REACTIVITY_OPTIONS,
+  BatchContext,
