@@ -59,3 +59,4 @@ export type {
   WatchStopHandle,
   UnwrapRef,
   UnwrapRefs,
+  ShallowUnwrapRef,
