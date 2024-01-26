@@ -61,3 +61,4 @@ export type {
   UnwrapRefs,
   ShallowUnwrapRef,
   RefUnwrapBailTypes,
+} from './reactivity';
