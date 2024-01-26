@@ -55,3 +55,4 @@ export type {
   BatchContext,
   WatchOptions,
   WatchCallback,
+  WatchSource,
