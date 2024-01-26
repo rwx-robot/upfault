@@ -57,3 +57,4 @@ export type {
   WatchCallback,
   WatchSource,
   WatchStopHandle,
+  UnwrapRef,
