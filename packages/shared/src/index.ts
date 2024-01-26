@@ -43,3 +43,4 @@ export type {
   ComputedSetter,
   ReactiveMarker,
   Reactive,
+  ReadonlyReactive,
