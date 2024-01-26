@@ -53,3 +53,4 @@ export type {
   ReactivityOptions,
   DEFAULT_REACTIVITY_OPTIONS,
   BatchContext,
+  WatchOptions,
