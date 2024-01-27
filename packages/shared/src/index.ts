@@ -70,3 +70,4 @@ export type {
   Block,
   DiffOp,
   DiffResult,
+  DiffStats,
