@@ -75,3 +75,4 @@ export type {
   AeroDiffOptions,
   Component,
   ComponentInstance,
+  Ref as DiffRef,
