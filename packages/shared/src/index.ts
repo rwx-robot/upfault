@@ -79,3 +79,4 @@ export type {
 } from './diff';
 
 // VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS are const enums/values
+export { VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS } from './diff';
