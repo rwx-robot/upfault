@@ -66,3 +66,4 @@ export type {
 // Diff - AeroDiff 算法类型
 export type {
   VNode,
+  VNodeProps,
