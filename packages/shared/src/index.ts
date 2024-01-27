@@ -72,3 +72,4 @@ export type {
   DiffResult,
   DiffStats,
   DiffIndex,
+  AeroDiffOptions,
