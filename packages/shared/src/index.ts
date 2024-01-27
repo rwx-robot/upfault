@@ -68,3 +68,4 @@ export type {
   VNode,
   VNodeProps,
   Block,
+  DiffOp,
