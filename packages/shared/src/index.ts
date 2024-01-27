@@ -76,3 +76,4 @@ export type {
   Component,
   ComponentInstance,
   Ref as DiffRef,
+} from './diff';
