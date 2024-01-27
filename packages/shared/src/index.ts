@@ -74,3 +74,4 @@ export type {
   DiffIndex,
   AeroDiffOptions,
   Component,
+  ComponentInstance,
