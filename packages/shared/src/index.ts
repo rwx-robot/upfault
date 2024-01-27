@@ -83,3 +83,4 @@ export { VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS } from './d
 
 // Predict - 预测缓存层 (from @upfault/predict-cache)
 export type {
+  UpdateFingerprint,
