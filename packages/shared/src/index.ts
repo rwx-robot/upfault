@@ -82,3 +82,4 @@ export type {
 export { VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS } from './diff';
 
 // Predict - 预测缓存层 (from @upfault/predict-cache)
+export type {
