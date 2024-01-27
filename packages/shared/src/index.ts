@@ -77,3 +77,5 @@ export type {
   ComponentInstance,
   Ref as DiffRef,
 } from './diff';
+
+// VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS are const enums/values
