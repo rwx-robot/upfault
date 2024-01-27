@@ -67,3 +67,4 @@ export type {
 export type {
   VNode,
   VNodeProps,
+  Block,
