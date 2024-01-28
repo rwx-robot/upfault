@@ -99,3 +99,4 @@ export type {
   createAdaptiveThreshold,
   FastHashFn,
   defaultFastHash,
+} from '@upfault/predict-cache';
