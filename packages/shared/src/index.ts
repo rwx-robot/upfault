@@ -90,3 +90,4 @@ export type {
   updateFingerprint,
   shouldSkip,
   recordFalseSkip,
+  recordCorrectSkip,
