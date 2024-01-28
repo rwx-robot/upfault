@@ -96,3 +96,4 @@ export type {
   AdaptiveThresholdConfig,
   DEFAULT_ADAPTIVE_CONFIG,
   AdaptiveThreshold,
+  createAdaptiveThreshold,
