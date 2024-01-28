@@ -98,3 +98,4 @@ export type {
   AdaptiveThreshold,
   createAdaptiveThreshold,
   FastHashFn,
+  defaultFastHash,
