@@ -89,3 +89,4 @@ export type {
   computeDecayScore,
   updateFingerprint,
   shouldSkip,
+  recordFalseSkip,
