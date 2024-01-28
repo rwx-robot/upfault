@@ -93,3 +93,4 @@ export type {
   recordCorrectSkip,
   PredictionStats,
   createPredictionStats,
+  AdaptiveThresholdConfig,
