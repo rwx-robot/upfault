@@ -85,3 +85,4 @@ export { VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS } from './d
 export type {
   UpdateFingerprint,
   FINGERPRINT_CONFIG,
+  createFingerprint,
