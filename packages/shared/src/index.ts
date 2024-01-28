@@ -97,3 +97,4 @@ export type {
   DEFAULT_ADAPTIVE_CONFIG,
   AdaptiveThreshold,
   createAdaptiveThreshold,
+  FastHashFn,
