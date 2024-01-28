@@ -95,3 +95,4 @@ export type {
   createPredictionStats,
   AdaptiveThresholdConfig,
   DEFAULT_ADAPTIVE_CONFIG,
+  AdaptiveThreshold,
