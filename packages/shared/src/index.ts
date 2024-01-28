@@ -91,3 +91,4 @@ export type {
   shouldSkip,
   recordFalseSkip,
   recordCorrectSkip,
+  PredictionStats,
