@@ -123,3 +123,4 @@ export {
   deepClone,
   mergeObjects,
   unique,
+  chunk,
