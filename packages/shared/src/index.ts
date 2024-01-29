@@ -112,3 +112,4 @@ export {
   isRef,
   isComputedRef,
   isReactive,
+  isReadonly,
