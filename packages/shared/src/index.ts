@@ -116,3 +116,4 @@ export {
   isVNode,
   NOOP,
   IDENTITY,
+  hasChanged,
