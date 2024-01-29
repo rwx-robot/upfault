@@ -119,3 +119,4 @@ export {
   hasChanged,
   flatten,
   generateId,
+  generateNumericId,
