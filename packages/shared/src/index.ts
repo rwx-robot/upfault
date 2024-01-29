@@ -117,3 +117,4 @@ export {
   NOOP,
   IDENTITY,
   hasChanged,
+  flatten,
