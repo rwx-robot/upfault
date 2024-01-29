@@ -105,3 +105,4 @@ export type {
 export {
   isSameNode,
   isObject,
+  isFunction,
