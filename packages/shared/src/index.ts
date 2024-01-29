@@ -118,3 +118,4 @@ export {
   IDENTITY,
   hasChanged,
   flatten,
+  generateId,
