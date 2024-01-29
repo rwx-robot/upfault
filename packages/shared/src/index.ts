@@ -104,3 +104,4 @@ export type {
 // Utils - 通用工具函数
 export {
   isSameNode,
+  isObject,
