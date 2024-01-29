@@ -121,3 +121,4 @@ export {
   generateId,
   generateNumericId,
   deepClone,
+  mergeObjects,
