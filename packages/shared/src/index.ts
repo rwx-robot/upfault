@@ -107,3 +107,4 @@ export {
   isObject,
   isFunction,
   isString,
+  isNumber,
