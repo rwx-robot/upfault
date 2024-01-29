@@ -110,3 +110,4 @@ export {
   isNumber,
   isPromise,
   isRef,
+  isComputedRef,
