@@ -113,3 +113,4 @@ export {
   isComputedRef,
   isReactive,
   isReadonly,
+  isVNode,
