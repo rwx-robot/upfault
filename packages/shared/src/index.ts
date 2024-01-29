@@ -109,3 +109,4 @@ export {
   isString,
   isNumber,
   isPromise,
+  isRef,
