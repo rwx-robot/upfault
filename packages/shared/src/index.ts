@@ -114,3 +114,4 @@ export {
   isReactive,
   isReadonly,
   isVNode,
+  NOOP,
