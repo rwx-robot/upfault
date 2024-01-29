@@ -115,3 +115,4 @@ export {
   isReadonly,
   isVNode,
   NOOP,
+  IDENTITY,
