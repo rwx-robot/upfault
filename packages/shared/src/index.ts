@@ -106,3 +106,4 @@ export {
   isSameNode,
   isObject,
   isFunction,
+  isString,
