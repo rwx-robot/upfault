@@ -111,3 +111,4 @@ export {
   isPromise,
   isRef,
   isComputedRef,
+  isReactive,
