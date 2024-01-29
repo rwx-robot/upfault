@@ -108,3 +108,4 @@ export {
   isFunction,
   isString,
   isNumber,
+  isPromise,
