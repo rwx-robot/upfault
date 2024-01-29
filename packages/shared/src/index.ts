@@ -125,3 +125,4 @@ export {
   unique,
   chunk,
   debounce,
+  throttle,
