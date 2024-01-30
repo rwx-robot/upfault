@@ -133,3 +133,4 @@ export {
   isType,
   assert,
   warn,
+  error,
