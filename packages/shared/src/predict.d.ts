@@ -7,3 +7,4 @@
 export interface UpdateFingerprint {
     /** 历史更新次数 */
     updateCount: number;
+    /** 上次更新时间戳 (ms) */
