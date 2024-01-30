@@ -128,3 +128,4 @@ export {
   throttle,
   flattenTree,
   traverseTreeBFS,
+  PerformanceTimer,
