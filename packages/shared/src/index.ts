@@ -126,3 +126,4 @@ export {
   chunk,
   debounce,
   throttle,
+  flattenTree,
