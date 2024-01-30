@@ -131,3 +131,4 @@ export {
   PerformanceTimer,
   LRUCache,
   isType,
+  assert,
