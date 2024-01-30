@@ -132,3 +132,4 @@ export {
   LRUCache,
   isType,
   assert,
+  warn,
