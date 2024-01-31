@@ -19,3 +19,4 @@ export interface UpdateFingerprint {
     skipConfidence: number;
     /** 最后一次内容哈希 */
     lastContentHash: number;
+    /** 连续跳过次数 */
