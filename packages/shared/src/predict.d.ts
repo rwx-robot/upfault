@@ -27,3 +27,4 @@ export interface UpdateFingerprint {
     falseSkipCount: number;
 }
 /** 指纹配置常量 */
+export declare const FINGERPRINT_CONFIG: {
