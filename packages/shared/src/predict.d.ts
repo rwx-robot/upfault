@@ -20,3 +20,4 @@ export interface UpdateFingerprint {
     /** 最后一次内容哈希 */
     lastContentHash: number;
     /** 连续跳过次数 */
+    consecutiveSkips: number;
