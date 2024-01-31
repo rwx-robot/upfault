@@ -23,3 +23,4 @@ export interface UpdateFingerprint {
     consecutiveSkips: number;
     /** 连续命中次数 */
     consecutiveHits: number;
+    /** 误跳过次数 (应更新但跳过了) */
