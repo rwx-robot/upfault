@@ -9,3 +9,4 @@ export interface UpdateFingerprint {
     updateCount: number;
     /** 上次更新时间戳 (ms) */
     lastUpdateTime: number;
+    /** 时序衰减得分 */
