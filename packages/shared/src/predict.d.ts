@@ -22,3 +22,4 @@ export interface UpdateFingerprint {
     /** 连续跳过次数 */
     consecutiveSkips: number;
     /** 连续命中次数 */
+    consecutiveHits: number;
