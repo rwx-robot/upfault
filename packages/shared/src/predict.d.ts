@@ -11,3 +11,4 @@ export interface UpdateFingerprint {
     lastUpdateTime: number;
     /** 时序衰减得分 */
     decayScore: number;
+    /** 最近 N 次内容哈希 (环形缓冲区) */
