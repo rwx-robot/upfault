@@ -38,3 +38,4 @@ export declare const FINGERPRINT_CONFIG: {
     DECAY_LAMBDA: number;
     /** 置信度增长步长 (命中时) */
     CONFIDENCE_STEP_UP: number;
+    /** 置信度增长步长 (冷却时) */
