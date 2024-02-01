@@ -30,3 +30,4 @@ export interface UpdateFingerprint {
 export declare const FINGERPRINT_CONFIG: {
     /** 哈希历史长度 */
     HASH_HISTORY_LENGTH: number;
+    /** 热点阈值 - 超过此分数不跳过 */
