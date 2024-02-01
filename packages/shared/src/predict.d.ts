@@ -40,3 +40,4 @@ export declare const FINGERPRINT_CONFIG: {
     CONFIDENCE_STEP_UP: number;
     /** 置信度增长步长 (冷却时) */
     CONFIDENCE_STEP_COOL: number;
+    /** 置信度衰减步长 (未命中时) */
