@@ -50,3 +50,4 @@ export declare const FINGERPRINT_CONFIG: {
     MIN_CONFIDENCE: number;
 };
 /** 创建初始指纹 */
+export declare function createFingerprint(): UpdateFingerprint;
