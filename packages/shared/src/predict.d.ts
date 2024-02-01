@@ -32,3 +32,4 @@ export declare const FINGERPRINT_CONFIG: {
     HASH_HISTORY_LENGTH: number;
     /** 热点阈值 - 超过此分数不跳过 */
     HOT_THRESHOLD: number;
+    /** 冷却时间 (ms) - 超过此时间未更新视为冷节点 */
