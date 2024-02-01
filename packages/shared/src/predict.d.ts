@@ -47,3 +47,4 @@ export declare const FINGERPRINT_CONFIG: {
     /** 最大置信度 */
     MAX_CONFIDENCE: number;
     /** 最小置信度 */
+    MIN_CONFIDENCE: number;
