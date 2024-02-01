@@ -49,3 +49,4 @@ export declare const FINGERPRINT_CONFIG: {
     /** 最小置信度 */
     MIN_CONFIDENCE: number;
 };
+/** 创建初始指纹 */
