@@ -43,3 +43,4 @@ export declare const FINGERPRINT_CONFIG: {
     /** 置信度衰减步长 (未命中时) */
     CONFIDENCE_STEP_DOWN: number;
     /** 跳过决策阈值 */
+    SKIP_THRESHOLD: number;
