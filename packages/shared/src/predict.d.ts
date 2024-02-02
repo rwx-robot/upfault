@@ -66,3 +66,4 @@ export interface PredictionStats {
     /** 跳过总数 */
     skipTotal: number;
     /** 正确跳过数 */
+    skipCorrect: number;
