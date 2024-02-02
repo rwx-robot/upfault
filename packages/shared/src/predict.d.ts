@@ -63,3 +63,4 @@ export declare function recordFalseSkip(fingerprint: UpdateFingerprint): void;
 export declare function recordCorrectSkip(fingerprint: UpdateFingerprint): void;
 /** 预测统计 */
 export interface PredictionStats {
+    /** 跳过总数 */
