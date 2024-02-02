@@ -72,3 +72,4 @@ export interface PredictionStats {
     /** 通过总数 (未跳过、实际更新) */
     passTotal: number;
     /** 通过但无变化数 (浪费计算) */
+    passNoChange: number;
