@@ -60,3 +60,4 @@ export declare function shouldSkip(fingerprint: UpdateFingerprint, currentData: 
 /** 记录误跳过 (预测层发现跳过了但实际需要更新) */
 export declare function recordFalseSkip(fingerprint: UpdateFingerprint): void;
 /** 记录正确跳过 */
+export declare function recordCorrectSkip(fingerprint: UpdateFingerprint): void;
