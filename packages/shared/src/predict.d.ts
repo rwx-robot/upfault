@@ -52,3 +52,4 @@ export declare const FINGERPRINT_CONFIG: {
 /** 创建初始指纹 */
 export declare function createFingerprint(): UpdateFingerprint;
 /** 计算衰减分数 */
+export declare function computeDecayScore(fingerprint: UpdateFingerprint, now?: number): number;
