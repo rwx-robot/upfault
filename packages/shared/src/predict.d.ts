@@ -68,3 +68,4 @@ export interface PredictionStats {
     /** 正确跳过数 */
     skipCorrect: number;
     /** 错误跳过数 (应更新但跳过) */
+    skipFalse: number;
