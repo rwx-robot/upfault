@@ -58,3 +58,4 @@ export declare function updateFingerprint(fingerprint: UpdateFingerprint, conten
 /** 判断是否应跳过 Diff */
 export declare function shouldSkip(fingerprint: UpdateFingerprint, currentData: unknown, fastHash: (data: unknown) => number, now?: number): boolean;
 /** 记录误跳过 (预测层发现跳过了但实际需要更新) */
+export declare function recordFalseSkip(fingerprint: UpdateFingerprint): void;
