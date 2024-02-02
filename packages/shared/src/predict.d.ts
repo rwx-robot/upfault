@@ -61,3 +61,4 @@ export declare function shouldSkip(fingerprint: UpdateFingerprint, currentData: 
 export declare function recordFalseSkip(fingerprint: UpdateFingerprint): void;
 /** 记录正确跳过 */
 export declare function recordCorrectSkip(fingerprint: UpdateFingerprint): void;
+/** 预测统计 */
