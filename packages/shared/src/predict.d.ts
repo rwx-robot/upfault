@@ -53,3 +53,4 @@ export declare const FINGERPRINT_CONFIG: {
 export declare function createFingerprint(): UpdateFingerprint;
 /** 计算衰减分数 */
 export declare function computeDecayScore(fingerprint: UpdateFingerprint, now?: number): number;
+/** 更新指纹 (节点实际更新时调用) */
