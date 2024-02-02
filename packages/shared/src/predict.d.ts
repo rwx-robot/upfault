@@ -55,3 +55,4 @@ export declare function createFingerprint(): UpdateFingerprint;
 export declare function computeDecayScore(fingerprint: UpdateFingerprint, now?: number): number;
 /** 更新指纹 (节点实际更新时调用) */
 export declare function updateFingerprint(fingerprint: UpdateFingerprint, contentHash: number, now?: number): void;
+/** 判断是否应跳过 Diff */
