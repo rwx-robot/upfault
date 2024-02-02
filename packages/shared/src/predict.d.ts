@@ -56,3 +56,4 @@ export declare function computeDecayScore(fingerprint: UpdateFingerprint, now?: 
 /** 更新指纹 (节点实际更新时调用) */
 export declare function updateFingerprint(fingerprint: UpdateFingerprint, contentHash: number, now?: number): void;
 /** 判断是否应跳过 Diff */
+export declare function shouldSkip(fingerprint: UpdateFingerprint, currentData: unknown, fastHash: (data: unknown) => number, now?: number): boolean;
