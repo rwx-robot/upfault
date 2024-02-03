@@ -83,3 +83,4 @@ export interface PredictionStats {
     skipRate(): number;
 }
 /** 创建预测统计对象 */
+export declare function createPredictionStats(init?: Partial<PredictionStats>): PredictionStats;
