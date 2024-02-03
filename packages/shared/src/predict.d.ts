@@ -85,3 +85,4 @@ export interface PredictionStats {
 /** 创建预测统计对象 */
 export declare function createPredictionStats(init?: Partial<PredictionStats>): PredictionStats;
 /** 自适应阈值配置 */
+export interface AdaptiveThresholdConfig {
