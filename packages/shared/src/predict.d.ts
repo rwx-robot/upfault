@@ -76,3 +76,4 @@ export interface PredictionStats {
     /** 准确率 */
     accuracy(): number;
     /** 召回率 (实际更新中被正确识别的比例) */
+    recall(): number;
