@@ -87,3 +87,4 @@ export declare function createPredictionStats(init?: Partial<PredictionStats>): 
 /** 自适应阈值配置 */
 export interface AdaptiveThresholdConfig {
     /** 目标准确率 */
+    targetAccuracy: number;
