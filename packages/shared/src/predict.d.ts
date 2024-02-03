@@ -88,3 +88,4 @@ export declare function createPredictionStats(init?: Partial<PredictionStats>): 
 export interface AdaptiveThresholdConfig {
     /** 目标准确率 */
     targetAccuracy: number;
+    /** 调整步长 */
