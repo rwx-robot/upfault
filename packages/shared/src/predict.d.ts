@@ -82,3 +82,4 @@ export interface PredictionStats {
     /** 跳过率 */
     skipRate(): number;
 }
+/** 创建预测统计对象 */
