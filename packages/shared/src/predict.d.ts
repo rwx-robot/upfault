@@ -93,3 +93,4 @@ export interface AdaptiveThresholdConfig {
     /** 最小跳过阈值 */
     minSkipThreshold: number;
     /** 最大跳过阈值 */
+    maxSkipThreshold: number;
