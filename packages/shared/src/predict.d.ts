@@ -90,3 +90,4 @@ export interface AdaptiveThresholdConfig {
     targetAccuracy: number;
     /** 调整步长 */
     adjustmentStep: number;
+    /** 最小跳过阈值 */
