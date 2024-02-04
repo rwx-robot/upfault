@@ -117,3 +117,4 @@ export declare function createAdaptiveThreshold(config?: Partial<AdaptiveThresho
 export interface FastHashFn {
     (data: unknown): number;
 }
+/** 默认快速哈希 (FNV-1a 变体) */
