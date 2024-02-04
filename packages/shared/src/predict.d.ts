@@ -111,3 +111,4 @@ export interface AdaptiveThreshold {
     /** 重置 */
     reset(): void;
 }
+/** 创建自适应阈值调整器 */
