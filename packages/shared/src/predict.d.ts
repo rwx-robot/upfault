@@ -110,3 +110,4 @@ export interface AdaptiveThreshold {
     getThreshold(): number;
     /** 重置 */
     reset(): void;
+}
