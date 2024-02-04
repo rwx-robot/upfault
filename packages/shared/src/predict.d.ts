@@ -112,3 +112,4 @@ export interface AdaptiveThreshold {
     reset(): void;
 }
 /** 创建自适应阈值调整器 */
+export declare function createAdaptiveThreshold(config?: Partial<AdaptiveThresholdConfig>): AdaptiveThreshold;
