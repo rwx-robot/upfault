@@ -96,3 +96,4 @@ export interface AdaptiveThresholdConfig {
     maxSkipThreshold: number;
     /** 统计窗口大小 */
     windowSize: number;
+}
