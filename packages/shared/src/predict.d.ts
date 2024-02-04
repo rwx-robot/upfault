@@ -115,3 +115,4 @@ export interface AdaptiveThreshold {
 export declare function createAdaptiveThreshold(config?: Partial<AdaptiveThresholdConfig>): AdaptiveThreshold;
 /** 快速哈希函数接口 */
 export interface FastHashFn {
+    (data: unknown): number;
