@@ -97,3 +97,4 @@ export interface AdaptiveThresholdConfig {
     /** 统计窗口大小 */
     windowSize: number;
 }
+/** 默认自适应配置 */
