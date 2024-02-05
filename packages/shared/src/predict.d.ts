@@ -119,3 +119,4 @@ export interface FastHashFn {
 }
 /** 默认快速哈希 (FNV-1a 变体) */
 export declare function defaultFastHash(data: unknown): number;
+//# sourceMappingURL=predict.d.ts.map
