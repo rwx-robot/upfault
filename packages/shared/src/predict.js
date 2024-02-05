@@ -7,3 +7,4 @@
 /** 指纹配置常量 */
 export const FINGERPRINT_CONFIG = {
     /** 哈希历史长度 */
+    HASH_HISTORY_LENGTH: 8,
