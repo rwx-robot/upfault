@@ -14,3 +14,4 @@ export const FINGERPRINT_CONFIG = {
     COOL_DOWN_MS: 5000,
     /** 衰减常数 λ */
     DECAY_LAMBDA: 0.001,
+    /** 置信度增长步长 (命中时) */
