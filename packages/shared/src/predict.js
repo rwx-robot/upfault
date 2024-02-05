@@ -8,3 +8,4 @@
 export const FINGERPRINT_CONFIG = {
     /** 哈希历史长度 */
     HASH_HISTORY_LENGTH: 8,
+    /** 热点阈值 - 超过此分数不跳过 */
