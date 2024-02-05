@@ -5,3 +5,4 @@
  * 每节点 24 字节内存占用
  */
 /** 指纹配置常量 */
+export const FINGERPRINT_CONFIG = {
