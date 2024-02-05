@@ -118,3 +118,4 @@ export interface FastHashFn {
     (data: unknown): number;
 }
 /** 默认快速哈希 (FNV-1a 变体) */
+export declare function defaultFastHash(data: unknown): number;
