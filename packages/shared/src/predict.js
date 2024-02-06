@@ -35,3 +35,4 @@ export function createFingerprint() {
         decayScore: 0,
         hashHistory: new Array(FINGERPRINT_CONFIG.HASH_HISTORY_LENGTH).fill(0),
         hashHistoryPtr: 0,
+        skipConfidence: 0,
