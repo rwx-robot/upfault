@@ -17,3 +17,4 @@ export const FINGERPRINT_CONFIG = {
     /** 置信度增长步长 (命中时) */
     CONFIDENCE_STEP_UP: 0.1,
     /** 置信度增长步长 (冷却时) */
+    CONFIDENCE_STEP_COOL: 0.05,
