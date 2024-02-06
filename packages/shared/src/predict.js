@@ -24,3 +24,4 @@ export const FINGERPRINT_CONFIG = {
     SKIP_THRESHOLD: 0.9,
     /** 最大置信度 */
     MAX_CONFIDENCE: 1.0,
+    /** 最小置信度 */
