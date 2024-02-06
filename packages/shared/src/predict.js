@@ -25,3 +25,4 @@ export const FINGERPRINT_CONFIG = {
     /** 最大置信度 */
     MAX_CONFIDENCE: 1.0,
     /** 最小置信度 */
+    MIN_CONFIDENCE: 0.0,
