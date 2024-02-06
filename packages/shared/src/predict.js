@@ -31,3 +31,4 @@ export const FINGERPRINT_CONFIG = {
 export function createFingerprint() {
     return {
         updateCount: 0,
+        lastUpdateTime: 0,
