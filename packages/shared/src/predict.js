@@ -32,3 +32,4 @@ export function createFingerprint() {
     return {
         updateCount: 0,
         lastUpdateTime: 0,
+        decayScore: 0,
