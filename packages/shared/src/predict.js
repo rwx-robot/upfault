@@ -39,3 +39,4 @@ export function createFingerprint() {
         lastContentHash: 0,
         consecutiveSkips: 0,
         consecutiveHits: 0,
+        falseSkipCount: 0,
