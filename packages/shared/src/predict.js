@@ -46,3 +46,4 @@ export function createFingerprint() {
 export function computeDecayScore(fingerprint, now = performance.now()) {
     const timeSinceLastUpdate = now - fingerprint.lastUpdateTime;
     if (timeSinceLastUpdate <= 0)
+        return fingerprint.decayScore;
