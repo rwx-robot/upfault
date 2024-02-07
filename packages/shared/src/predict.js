@@ -50,3 +50,4 @@ export function computeDecayScore(fingerprint, now = performance.now()) {
     // decayScore = updateCount * e^(-λ * Δt)
     return fingerprint.updateCount * Math.exp(-FINGERPRINT_CONFIG.DECAY_LAMBDA * timeSinceLastUpdate);
 }
+/** 更新指纹 (节点实际更新时调用) */
