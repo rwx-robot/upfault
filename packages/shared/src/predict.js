@@ -42,3 +42,4 @@ export function createFingerprint() {
         falseSkipCount: 0,
     };
 }
+/** 计算衰减分数 */
