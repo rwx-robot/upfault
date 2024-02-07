@@ -51,3 +51,4 @@ export function computeDecayScore(fingerprint, now = performance.now()) {
     return fingerprint.updateCount * Math.exp(-FINGERPRINT_CONFIG.DECAY_LAMBDA * timeSinceLastUpdate);
 }
 /** 更新指纹 (节点实际更新时调用) */
+export function updateFingerprint(fingerprint, contentHash, now = performance.now()) {
