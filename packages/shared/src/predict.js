@@ -41,3 +41,4 @@ export function createFingerprint() {
         consecutiveHits: 0,
         falseSkipCount: 0,
     };
+}
