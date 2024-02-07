@@ -54,3 +54,4 @@ export function computeDecayScore(fingerprint, now = performance.now()) {
 export function updateFingerprint(fingerprint, contentHash, now = performance.now()) {
     fingerprint.updateCount++;
     fingerprint.lastUpdateTime = now;
+    fingerprint.decayScore = computeDecayScore(fingerprint, now);
