@@ -52,3 +52,4 @@ export function computeDecayScore(fingerprint, now = performance.now()) {
 }
 /** 更新指纹 (节点实际更新时调用) */
 export function updateFingerprint(fingerprint, contentHash, now = performance.now()) {
+    fingerprint.updateCount++;
