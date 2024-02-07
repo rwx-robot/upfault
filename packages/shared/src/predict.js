@@ -45,3 +45,4 @@ export function createFingerprint() {
 /** 计算衰减分数 */
 export function computeDecayScore(fingerprint, now = performance.now()) {
     const timeSinceLastUpdate = now - fingerprint.lastUpdateTime;
+    if (timeSinceLastUpdate <= 0)
