@@ -57,3 +57,4 @@ export function updateFingerprint(fingerprint, contentHash, now = performance.no
     fingerprint.decayScore = computeDecayScore(fingerprint, now);
     fingerprint.lastContentHash = contentHash;
     // 记录哈希历史
+    fingerprint.hashHistory[fingerprint.hashHistoryPtr] = contentHash;
