@@ -70,3 +70,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
     if (fingerprint.updateCount === 0) {
         const currentHash = fastHash(currentData);
         return currentHash === fingerprint.lastContentHash;
+    }
