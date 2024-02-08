@@ -68,3 +68,4 @@ export function updateFingerprint(fingerprint, contentHash, now = performance.no
 export function shouldSkip(fingerprint, currentData, fastHash, now = performance.now()) {
     // 规则 1: 从未更新过的节点 - 检查静态哈希
     if (fingerprint.updateCount === 0) {
+        const currentHash = fastHash(currentData);
