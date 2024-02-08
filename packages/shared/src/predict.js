@@ -72,3 +72,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
         return currentHash === fingerprint.lastContentHash;
     }
     // 规则 2: 高频更新节点 - 不跳过
+    const decayScore = computeDecayScore(fingerprint, now);
