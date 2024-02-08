@@ -71,3 +71,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
         const currentHash = fastHash(currentData);
         return currentHash === fingerprint.lastContentHash;
     }
+    // 规则 2: 高频更新节点 - 不跳过
