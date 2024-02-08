@@ -61,3 +61,4 @@ export function updateFingerprint(fingerprint, contentHash, now = performance.no
     fingerprint.hashHistoryPtr = (fingerprint.hashHistoryPtr + 1) % FINGERPRINT_CONFIG.HASH_HISTORY_LENGTH;
     // 重置连续跳过
     fingerprint.consecutiveSkips = 0;
+    // 置信度衰减 (更新发生 = 不应跳过)
