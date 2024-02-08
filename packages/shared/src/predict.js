@@ -66,3 +66,4 @@ export function updateFingerprint(fingerprint, contentHash, now = performance.no
 }
 /** 判断是否应跳过 Diff */
 export function shouldSkip(fingerprint, currentData, fastHash, now = performance.now()) {
+    // 规则 1: 从未更新过的节点 - 检查静态哈希
