@@ -58,3 +58,4 @@ export function updateFingerprint(fingerprint, contentHash, now = performance.no
     fingerprint.lastContentHash = contentHash;
     // 记录哈希历史
     fingerprint.hashHistory[fingerprint.hashHistoryPtr] = contentHash;
+    fingerprint.hashHistoryPtr = (fingerprint.hashHistoryPtr + 1) % FINGERPRINT_CONFIG.HASH_HISTORY_LENGTH;
