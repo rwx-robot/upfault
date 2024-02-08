@@ -76,3 +76,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
     if (decayScore > FINGERPRINT_CONFIG.HOT_THRESHOLD) {
         return false;
     }
+    // 规则 3: 内容哈希命中 - O(1) 比对
