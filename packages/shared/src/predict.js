@@ -89,3 +89,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
         fingerprint.skipConfidence = Math.min(FINGERPRINT_CONFIG.MAX_CONFIDENCE, fingerprint.skipConfidence + FINGERPRINT_CONFIG.CONFIDENCE_STEP_COOL);
         return fingerprint.skipConfidence > FINGERPRINT_CONFIG.SKIP_THRESHOLD;
     }
+    // 默认不跳过，置信度衰减
