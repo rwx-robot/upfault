@@ -84,3 +84,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
         return true;
     }
     // 规则 4: 时序衰减判断
+    const timeSinceLastUpdate = now - fingerprint.lastUpdateTime;
