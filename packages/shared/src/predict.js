@@ -97,3 +97,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
 /** 记录误跳过 (预测层发现跳过了但实际需要更新) */
 export function recordFalseSkip(fingerprint) {
     fingerprint.falseSkipCount++;
+    fingerprint.consecutiveSkips = 0;
