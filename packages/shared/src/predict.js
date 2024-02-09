@@ -93,3 +93,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
     fingerprint.skipConfidence = Math.max(FINGERPRINT_CONFIG.MIN_CONFIDENCE, fingerprint.skipConfidence - FINGERPRINT_CONFIG.CONFIDENCE_STEP_DOWN);
     fingerprint.consecutiveHits = 0;
     return false;
+}
