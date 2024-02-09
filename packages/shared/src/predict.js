@@ -86,3 +86,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
     // 规则 4: 时序衰减判断
     const timeSinceLastUpdate = now - fingerprint.lastUpdateTime;
     if (timeSinceLastUpdate > FINGERPRINT_CONFIG.COOL_DOWN_MS) {
+        fingerprint.skipConfidence = Math.min(FINGERPRINT_CONFIG.MAX_CONFIDENCE, fingerprint.skipConfidence + FINGERPRINT_CONFIG.CONFIDENCE_STEP_COOL);
