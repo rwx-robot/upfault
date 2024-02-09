@@ -94,3 +94,4 @@ export function shouldSkip(fingerprint, currentData, fastHash, now = performance
     fingerprint.consecutiveHits = 0;
     return false;
 }
+/** 记录误跳过 (预测层发现跳过了但实际需要更新) */
