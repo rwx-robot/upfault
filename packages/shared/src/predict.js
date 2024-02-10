@@ -105,3 +105,4 @@ export function recordCorrectSkip(fingerprint) {
     fingerprint.consecutiveSkips++;
 }
 /** 创建预测统计对象 */
+export function createPredictionStats(init = {}) {
