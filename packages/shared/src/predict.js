@@ -121,3 +121,4 @@ export function createPredictionStats(init = {}) {
         },
         recall() {
             const actualUpdates = base.skipFalse + base.passTotal;
+            return actualUpdates > 0 ? base.passTotal / actualUpdates : 0;
