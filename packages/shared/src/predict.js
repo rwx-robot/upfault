@@ -120,3 +120,4 @@ export function createPredictionStats(init = {}) {
             return base.skipTotal > 0 ? base.skipCorrect / base.skipTotal : 0;
         },
         recall() {
+            const actualUpdates = base.skipFalse + base.passTotal;
