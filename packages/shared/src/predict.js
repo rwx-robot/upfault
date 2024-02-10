@@ -112,3 +112,4 @@ export function createPredictionStats(init = {}) {
         skipFalse: 0,
         passTotal: 0,
         passNoChange: 0,
+        ...init,
