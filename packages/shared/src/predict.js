@@ -101,3 +101,4 @@ export function recordFalseSkip(fingerprint) {
     fingerprint.skipConfidence = Math.max(FINGERPRINT_CONFIG.MIN_CONFIDENCE, fingerprint.skipConfidence - FINGERPRINT_CONFIG.CONFIDENCE_STEP_DOWN * 2);
 }
 /** 记录正确跳过 */
+export function recordCorrectSkip(fingerprint) {
