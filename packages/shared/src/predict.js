@@ -113,3 +113,4 @@ export function createPredictionStats(init = {}) {
         passTotal: 0,
         passNoChange: 0,
         ...init,
+    };
