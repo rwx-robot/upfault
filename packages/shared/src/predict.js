@@ -108,3 +108,4 @@ export function recordCorrectSkip(fingerprint) {
 export function createPredictionStats(init = {}) {
     const base = {
         skipTotal: 0,
+        skipCorrect: 0,
