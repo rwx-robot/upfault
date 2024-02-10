@@ -115,3 +115,4 @@ export function createPredictionStats(init = {}) {
         ...init,
     };
     return {
+        ...base,
