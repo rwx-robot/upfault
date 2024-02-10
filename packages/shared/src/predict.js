@@ -109,3 +109,4 @@ export function createPredictionStats(init = {}) {
     const base = {
         skipTotal: 0,
         skipCorrect: 0,
+        skipFalse: 0,
