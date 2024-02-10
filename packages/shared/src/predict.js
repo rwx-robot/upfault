@@ -114,3 +114,4 @@ export function createPredictionStats(init = {}) {
         passNoChange: 0,
         ...init,
     };
+    return {
