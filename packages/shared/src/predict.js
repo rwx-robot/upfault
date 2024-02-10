@@ -102,3 +102,4 @@ export function recordFalseSkip(fingerprint) {
 }
 /** 记录正确跳过 */
 export function recordCorrectSkip(fingerprint) {
+    fingerprint.consecutiveSkips++;
