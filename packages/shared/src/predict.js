@@ -119,3 +119,4 @@ export function createPredictionStats(init = {}) {
         accuracy() {
             return base.skipTotal > 0 ? base.skipCorrect / base.skipTotal : 0;
         },
+        recall() {
