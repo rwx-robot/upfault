@@ -110,3 +110,4 @@ export function createPredictionStats(init = {}) {
         skipTotal: 0,
         skipCorrect: 0,
         skipFalse: 0,
+        passTotal: 0,
