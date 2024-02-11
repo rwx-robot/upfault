@@ -134,3 +134,4 @@ export function createPredictionStats(init = {}) {
         },
     };
 }
+/** 默认自适应配置 */
