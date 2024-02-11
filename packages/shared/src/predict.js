@@ -133,3 +133,4 @@ export function createPredictionStats(init = {}) {
             return total > 0 ? base.skipTotal / total : 0;
         },
     };
+}
