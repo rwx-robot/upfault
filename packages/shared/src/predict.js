@@ -130,3 +130,4 @@ export function createPredictionStats(init = {}) {
         },
         skipRate() {
             const total = base.skipTotal + base.passTotal;
+            return total > 0 ? base.skipTotal / total : 0;
