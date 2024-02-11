@@ -124,3 +124,4 @@ export function createPredictionStats(init = {}) {
             return actualUpdates > 0 ? base.passTotal / actualUpdates : 0;
         },
         f1() {
+            const p = this.accuracy();
