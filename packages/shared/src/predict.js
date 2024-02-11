@@ -139,3 +139,4 @@ export const DEFAULT_ADAPTIVE_CONFIG = {
     targetAccuracy: 0.95,
     adjustmentStep: 0.02,
     minSkipThreshold: 0.7,
+    maxSkipThreshold: 0.99,
