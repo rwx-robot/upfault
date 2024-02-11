@@ -125,3 +125,4 @@ export function createPredictionStats(init = {}) {
         },
         f1() {
             const p = this.accuracy();
+            const r = this.recall();
