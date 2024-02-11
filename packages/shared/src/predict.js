@@ -143,3 +143,4 @@ export const DEFAULT_ADAPTIVE_CONFIG = {
     windowSize: 100,
 };
 /** 创建自适应阈值调整器 */
+export function createAdaptiveThreshold(config = {}) {
