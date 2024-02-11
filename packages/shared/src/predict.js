@@ -127,3 +127,4 @@ export function createPredictionStats(init = {}) {
             const p = this.accuracy();
             const r = this.recall();
             return (p + r) > 0 ? 2 * p * r / (p + r) : 0;
+        },
