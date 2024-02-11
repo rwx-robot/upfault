@@ -135,3 +135,4 @@ export function createPredictionStats(init = {}) {
     };
 }
 /** 默认自适应配置 */
+export const DEFAULT_ADAPTIVE_CONFIG = {
