@@ -156,3 +156,4 @@ export function createAdaptiveThreshold(config = {}) {
             if (recentStats.length > mergedConfig.windowSize) {
                 recentStats.shift();
             }
+            // 计算窗口内平均准确率
