@@ -146,3 +146,4 @@ export const DEFAULT_ADAPTIVE_CONFIG = {
 export function createAdaptiveThreshold(config = {}) {
     const mergedConfig = { ...DEFAULT_ADAPTIVE_CONFIG, ...config };
     const recentStats = [];
+    let currentThreshold = mergedConfig.minSkipThreshold;
