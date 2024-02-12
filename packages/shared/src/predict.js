@@ -152,3 +152,4 @@ export function createAdaptiveThreshold(config = {}) {
         currentThreshold,
         recentStats,
         recordStats(stats) {
+            recentStats.push(stats);
