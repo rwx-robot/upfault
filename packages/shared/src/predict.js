@@ -153,3 +153,4 @@ export function createAdaptiveThreshold(config = {}) {
         recentStats,
         recordStats(stats) {
             recentStats.push(stats);
+            if (recentStats.length > mergedConfig.windowSize) {
