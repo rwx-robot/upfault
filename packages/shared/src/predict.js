@@ -164,3 +164,4 @@ export function createAdaptiveThreshold(config = {}) {
                 currentThreshold = Math.max(mergedConfig.minSkipThreshold, currentThreshold - mergedConfig.adjustmentStep);
             }
             else if (avgAccuracy > mergedConfig.targetAccuracy + 0.02) {
+                // 准确率很高，提高阈值 (更激进)
