@@ -160,3 +160,4 @@ export function createAdaptiveThreshold(config = {}) {
             const avgAccuracy = recentStats.reduce((sum, s) => sum + s.accuracy(), 0) / recentStats.length;
             // 自适应调整
             if (avgAccuracy < mergedConfig.targetAccuracy - 0.05) {
+                // 准确率太低，降低阈值 (更保守)
