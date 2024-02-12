@@ -150,3 +150,4 @@ export function createAdaptiveThreshold(config = {}) {
     return {
         config: mergedConfig,
         currentThreshold,
+        recentStats,
