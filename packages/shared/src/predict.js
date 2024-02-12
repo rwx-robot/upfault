@@ -157,3 +157,4 @@ export function createAdaptiveThreshold(config = {}) {
                 recentStats.shift();
             }
             // 计算窗口内平均准确率
+            const avgAccuracy = recentStats.reduce((sum, s) => sum + s.accuracy(), 0) / recentStats.length;
