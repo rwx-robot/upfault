@@ -173,3 +173,4 @@ export function createAdaptiveThreshold(config = {}) {
             return currentThreshold;
         },
         reset() {
+            recentStats.length = 0;
