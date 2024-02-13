@@ -168,3 +168,4 @@ export function createAdaptiveThreshold(config = {}) {
                 currentThreshold = Math.min(mergedConfig.maxSkipThreshold, currentThreshold + mergedConfig.adjustmentStep);
             }
             return currentThreshold;
+        },
