@@ -176,3 +176,4 @@ export function createAdaptiveThreshold(config = {}) {
             recentStats.length = 0;
             currentThreshold = mergedConfig.minSkipThreshold;
         },
+    };
