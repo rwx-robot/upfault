@@ -5,3 +5,4 @@
  * 支持 ref, computed, effect, watch, batch 等核心 API
  */
 export interface Ref<T> {
+    /** 当前值 (访问时自动追踪依赖) */
