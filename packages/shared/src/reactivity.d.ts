@@ -9,3 +9,4 @@ export interface Ref<T> {
     value: T;
     /** 内部标识 */
     readonly __v_isRef: true;
+    /** 仅读取不追踪 (内部用) */
