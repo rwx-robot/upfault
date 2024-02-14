@@ -186,3 +186,4 @@ export function defaultFastHash(data) {
         hash ^= str.charCodeAt(i);
         hash = (hash * 0x01000193) >>> 0;
     }
+    return hash >>> 0;
