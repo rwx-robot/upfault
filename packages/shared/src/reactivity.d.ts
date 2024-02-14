@@ -11,3 +11,4 @@ export interface Ref<T> {
     readonly __v_isRef: true;
     /** 仅读取不追踪 (内部用) */
     _getter?: () => T;
+    /** 仅设置不触发 (内部用) */
