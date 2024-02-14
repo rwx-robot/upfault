@@ -188,3 +188,4 @@ export function defaultFastHash(data) {
     }
     return hash >>> 0;
 }
+//# sourceMappingURL=predict.js.map
