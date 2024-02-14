@@ -15,3 +15,4 @@ export interface Ref<T> {
     _setter?: (value: T) => void;
 }
 /** 只读 Ref */
+export interface ReadonlyRef<T> {
