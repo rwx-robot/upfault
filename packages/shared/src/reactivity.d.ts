@@ -6,3 +6,4 @@
  */
 export interface Ref<T> {
     /** 当前值 (访问时自动追踪依赖) */
+    value: T;
