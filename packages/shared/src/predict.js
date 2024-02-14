@@ -187,3 +187,4 @@ export function defaultFastHash(data) {
         hash = (hash * 0x01000193) >>> 0;
     }
     return hash >>> 0;
+}
