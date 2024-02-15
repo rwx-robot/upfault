@@ -26,3 +26,4 @@ export interface ComputedRef<T> {
     readonly __v_isComputed: true;
     readonly __v_isReadonly: true;
 }
+/** 响应式对象标记 */
