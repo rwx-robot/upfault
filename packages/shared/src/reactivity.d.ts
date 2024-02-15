@@ -30,3 +30,4 @@ export interface ComputedRef<T> {
 export interface ReactiveMarker {
     readonly __v_isReactive: true;
     readonly __v_isReadonly?: true;
+    readonly __v_isShallow?: true;
