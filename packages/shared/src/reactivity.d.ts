@@ -47,3 +47,4 @@ export interface Dep {
     subs: Set<Effect>;
     /** 版本号 (用于优化) */
     version: number;
+    /** 依赖名称 (调试用) */
