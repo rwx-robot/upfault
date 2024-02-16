@@ -55,3 +55,4 @@ export interface Effect {
     /** 执行函数 */
     fn: () => void;
     /** 调度器 */
+    scheduler?: (fn: () => void) => void;
