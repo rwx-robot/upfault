@@ -51,3 +51,4 @@ export interface Dep {
     name?: string;
 }
 /** Effect 副作用函数 */
+export interface Effect {
