@@ -41,3 +41,4 @@ export type ReadonlyReactive<T extends object> = Readonly<T> & ReactiveMarker;
 export type ShallowReactive<T extends object> = T & ReactiveMarker & {
     readonly __v_isShallow: true;
 };
+/** 依赖追踪上下文 */
