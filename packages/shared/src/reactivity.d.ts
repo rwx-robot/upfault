@@ -38,3 +38,4 @@ export type Reactive<T extends object> = T & ReactiveMarker;
 /** 只读响应式对象 */
 export type ReadonlyReactive<T extends object> = Readonly<T> & ReactiveMarker;
 /** 浅层响应式 */
+export type ShallowReactive<T extends object> = T & ReactiveMarker & {
