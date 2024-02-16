@@ -45,3 +45,4 @@ export type ShallowReactive<T extends object> = T & ReactiveMarker & {
 export interface Dep {
     /** 订阅者 Set */
     subs: Set<Effect>;
+    /** 版本号 (用于优化) */
