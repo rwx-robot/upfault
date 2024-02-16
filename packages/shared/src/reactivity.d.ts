@@ -54,3 +54,4 @@ export interface Dep {
 export interface Effect {
     /** 执行函数 */
     fn: () => void;
+    /** 调度器 */
