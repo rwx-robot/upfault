@@ -42,3 +42,4 @@ export type ShallowReactive<T extends object> = T & ReactiveMarker & {
     readonly __v_isShallow: true;
 };
 /** 依赖追踪上下文 */
+export interface Dep {
