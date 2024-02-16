@@ -44,3 +44,4 @@ export type ShallowReactive<T extends object> = T & ReactiveMarker & {
 /** 依赖追踪上下文 */
 export interface Dep {
     /** 订阅者 Set */
+    subs: Set<Effect>;
