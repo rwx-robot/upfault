@@ -49,3 +49,4 @@ export interface Dep {
     version: number;
     /** 依赖名称 (调试用) */
     name?: string;
+}
