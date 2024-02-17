@@ -57,3 +57,4 @@ export interface Effect {
     /** 调度器 */
     scheduler?: (fn: () => void) => void;
     /** 依赖集合 */
+    deps: Dep[];
