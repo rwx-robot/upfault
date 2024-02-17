@@ -68,3 +68,4 @@ export interface Effect {
     onTrack?: (event: DebuggerEvent) => void;
     /** 触发时的回调 */
     onTrigger?: (event: DebuggerEvent) => void;
+    /** 清理函数 */
