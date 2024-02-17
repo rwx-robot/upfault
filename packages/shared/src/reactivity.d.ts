@@ -65,3 +65,4 @@ export interface Effect {
     /** 是否允许递归 */
     allowRecurse: boolean;
     /** 执行时的依赖追踪上下文 */
+    onTrack?: (event: DebuggerEvent) => void;
