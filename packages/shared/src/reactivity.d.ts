@@ -60,3 +60,4 @@ export interface Effect {
     deps: Dep[];
     /** 是否激活 */
     active: boolean;
+    /** 是否停止 */
