@@ -70,3 +70,4 @@ export interface Effect {
     onTrigger?: (event: DebuggerEvent) => void;
     /** 清理函数 */
     cleanup?: () => void;
+}
