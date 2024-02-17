@@ -72,3 +72,4 @@ export interface Effect {
     cleanup?: () => void;
 }
 /** 调试事件 */
+export interface DebuggerEvent {
