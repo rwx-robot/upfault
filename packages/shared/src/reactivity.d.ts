@@ -74,3 +74,4 @@ export interface Effect {
 /** 调试事件 */
 export interface DebuggerEvent {
     effect: Effect;
+    target: object;
