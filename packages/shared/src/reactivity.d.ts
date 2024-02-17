@@ -76,3 +76,4 @@ export interface DebuggerEvent {
     effect: Effect;
     target: object;
     key: string | symbol;
+    type: TrackOpTypes | TriggerOpTypes;
