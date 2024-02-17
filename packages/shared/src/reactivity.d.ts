@@ -58,3 +58,4 @@ export interface Effect {
     scheduler?: (fn: () => void) => void;
     /** 依赖集合 */
     deps: Dep[];
+    /** 是否激活 */
