@@ -59,3 +59,4 @@ export interface Effect {
     /** 依赖集合 */
     deps: Dep[];
     /** 是否激活 */
+    active: boolean;
