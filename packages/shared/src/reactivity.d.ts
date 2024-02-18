@@ -79,3 +79,4 @@ export interface DebuggerEvent {
     type: TrackOpTypes | TriggerOpTypes;
     newValue?: unknown;
     oldValue?: unknown;
+    oldTarget?: Map<unknown, unknown> | Set<unknown>;
