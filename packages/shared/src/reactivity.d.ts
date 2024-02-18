@@ -94,3 +94,4 @@ export declare const enum TriggerOpTypes {
     DELETE = "delete",
     CLEAR = "clear"
 }
+/** 响应式系统配置 */
