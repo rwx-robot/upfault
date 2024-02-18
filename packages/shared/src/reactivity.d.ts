@@ -87,3 +87,4 @@ export declare const enum TrackOpTypes {
     HAS = "has",
     ITERATE = "iterate"
 }
+/** 触发操作类型 */
