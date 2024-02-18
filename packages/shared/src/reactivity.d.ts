@@ -91,3 +91,4 @@ export declare const enum TrackOpTypes {
 export declare const enum TriggerOpTypes {
     SET = "set",
     ADD = "add",
+    DELETE = "delete",
