@@ -81,3 +81,4 @@ export interface DebuggerEvent {
     oldValue?: unknown;
     oldTarget?: Map<unknown, unknown> | Set<unknown>;
 }
+/** 依赖追踪操作类型 */
