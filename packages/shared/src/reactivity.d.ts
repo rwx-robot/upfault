@@ -90,3 +90,4 @@ export declare const enum TrackOpTypes {
 /** 触发操作类型 */
 export declare const enum TriggerOpTypes {
     SET = "set",
+    ADD = "add",
