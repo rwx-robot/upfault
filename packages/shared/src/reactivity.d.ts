@@ -78,3 +78,4 @@ export interface DebuggerEvent {
     key: string | symbol;
     type: TrackOpTypes | TriggerOpTypes;
     newValue?: unknown;
+    oldValue?: unknown;
