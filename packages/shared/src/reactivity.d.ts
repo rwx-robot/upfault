@@ -82,3 +82,4 @@ export interface DebuggerEvent {
     oldTarget?: Map<unknown, unknown> | Set<unknown>;
 }
 /** 依赖追踪操作类型 */
+export declare const enum TrackOpTypes {
