@@ -95,3 +95,4 @@ export declare const enum TriggerOpTypes {
     CLEAR = "clear"
 }
 /** 响应式系统配置 */
+export interface ReactivityOptions {
