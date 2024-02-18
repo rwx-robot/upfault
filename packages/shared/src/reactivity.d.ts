@@ -83,3 +83,4 @@ export interface DebuggerEvent {
 }
 /** 依赖追踪操作类型 */
 export declare const enum TrackOpTypes {
+    GET = "get",
