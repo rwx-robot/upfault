@@ -88,3 +88,4 @@ export declare const enum TrackOpTypes {
     ITERATE = "iterate"
 }
 /** 触发操作类型 */
+export declare const enum TriggerOpTypes {
