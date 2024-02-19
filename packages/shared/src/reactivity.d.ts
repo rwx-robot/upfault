@@ -97,3 +97,4 @@ export declare const enum TriggerOpTypes {
 /** 响应式系统配置 */
 export interface ReactivityOptions {
     /** 是否开启调试模式 */
+    debug: boolean;
