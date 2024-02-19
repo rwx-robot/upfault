@@ -116,3 +116,4 @@ export interface BatchContext {
     /** 嵌套层级 */
     depth: number;
 }
+/** Watch 选项 */
