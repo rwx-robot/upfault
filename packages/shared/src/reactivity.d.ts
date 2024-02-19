@@ -110,3 +110,4 @@ export declare const DEFAULT_REACTIVITY_OPTIONS: ReactivityOptions;
 /** 批处理上下文 */
 export interface BatchContext {
     /** 待执行的 effect 队列 */
+    effects: Effect[];
