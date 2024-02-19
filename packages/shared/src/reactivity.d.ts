@@ -101,3 +101,4 @@ export interface ReactivityOptions {
     /** 计算属性缓存策略 */
     computedCache: 'always' | 'never' | 'auto';
     /** Effect 默认调度器 */
+    effectScheduler?: (fn: () => void) => void;
