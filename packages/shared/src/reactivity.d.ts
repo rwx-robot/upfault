@@ -102,3 +102,4 @@ export interface ReactivityOptions {
     computedCache: 'always' | 'never' | 'auto';
     /** Effect 默认调度器 */
     effectScheduler?: (fn: () => void) => void;
+    /** 最大递归深度 */
