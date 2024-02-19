@@ -114,3 +114,4 @@ export interface BatchContext {
     /** 是否正在批处理 */
     isBatching: boolean;
     /** 嵌套层级 */
+    depth: number;
