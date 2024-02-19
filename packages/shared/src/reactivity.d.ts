@@ -117,3 +117,4 @@ export interface BatchContext {
     depth: number;
 }
 /** Watch 选项 */
+export interface WatchOptions<Immediate extends boolean = false> {
