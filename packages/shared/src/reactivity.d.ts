@@ -111,3 +111,4 @@ export declare const DEFAULT_REACTIVITY_OPTIONS: ReactivityOptions;
 export interface BatchContext {
     /** 待执行的 effect 队列 */
     effects: Effect[];
+    /** 是否正在批处理 */
