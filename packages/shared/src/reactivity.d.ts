@@ -107,3 +107,4 @@ export interface ReactivityOptions {
 }
 /** 默认响应式配置 */
 export declare const DEFAULT_REACTIVITY_OPTIONS: ReactivityOptions;
+/** 批处理上下文 */
