@@ -127,3 +127,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
     /** 调度器 */
     scheduler?: (fn: () => void) => void;
     /** 回调触发时的上下文 */
+    onTrack?: (event: DebuggerEvent) => void;
