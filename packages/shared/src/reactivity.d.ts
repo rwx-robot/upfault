@@ -137,3 +137,4 @@ export type WatchCallback<T, TPrev = T> = (value: T, oldValue: TPrev, onCleanup:
 export type WatchSource<T> = Ref<T> | ComputedRef<T> | (() => T) | T[];
 /** 停止监听函数 */
 export interface WatchStopHandle {
+    (): void;
