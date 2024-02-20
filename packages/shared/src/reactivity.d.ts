@@ -123,3 +123,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
     /** 深度监听 */
     deep?: boolean;
     /** 仅在值变化时触发 (引用相等) */
+    flush?: 'pre' | 'post' | 'sync';
