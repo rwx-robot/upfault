@@ -132,3 +132,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
     onTrigger?: (event: DebuggerEvent) => void;
 }
 /** Watch 回调类型 */
+export type WatchCallback<T, TPrev = T> = (value: T, oldValue: TPrev, onCleanup: (fn: () => void) => void) => void;
