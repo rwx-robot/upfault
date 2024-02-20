@@ -140,3 +140,4 @@ export interface WatchStopHandle {
     (): void;
     readonly __v_isWatchStopHandle: true;
 }
+/** 计算属性 getter 类型 */
