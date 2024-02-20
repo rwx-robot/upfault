@@ -135,3 +135,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
 export type WatchCallback<T, TPrev = T> = (value: T, oldValue: TPrev, onCleanup: (fn: () => void) => void) => void;
 /** Watch 源类型 */
 export type WatchSource<T> = Ref<T> | ComputedRef<T> | (() => T) | T[];
+/** 停止监听函数 */
