@@ -119,3 +119,4 @@ export interface BatchContext {
 /** Watch 选项 */
 export interface WatchOptions<Immediate extends boolean = false> {
     /** 立即执行 */
+    immediate?: Immediate;
