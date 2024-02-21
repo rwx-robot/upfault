@@ -151,3 +151,4 @@ export type UnwrapRef<T> = T extends Ref<infer V> ? V : T;
 export type UnwrapRefs<T> = {
     [K in keyof T]: UnwrapRef<T[K]>;
 };
+export type ShallowUnwrapRef<T> = T extends Ref<infer V> ? V : never;
