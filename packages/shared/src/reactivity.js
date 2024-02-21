@@ -5,3 +5,4 @@
  * 支持 ref, computed, effect, watch, batch 等核心 API
  */
 /** 依赖追踪操作类型 */
+export var TrackOpTypes;
