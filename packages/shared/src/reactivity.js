@@ -9,3 +9,4 @@ export var TrackOpTypes;
 (function (TrackOpTypes) {
     TrackOpTypes["GET"] = "get";
     TrackOpTypes["HAS"] = "has";
+    TrackOpTypes["ITERATE"] = "iterate";
