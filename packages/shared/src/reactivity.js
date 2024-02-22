@@ -7,3 +7,4 @@
 /** 依赖追踪操作类型 */
 export var TrackOpTypes;
 (function (TrackOpTypes) {
+    TrackOpTypes["GET"] = "get";
