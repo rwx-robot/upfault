@@ -16,3 +16,4 @@ export var TriggerOpTypes;
 (function (TriggerOpTypes) {
     TriggerOpTypes["SET"] = "set";
     TriggerOpTypes["ADD"] = "add";
+    TriggerOpTypes["DELETE"] = "delete";
