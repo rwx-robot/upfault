@@ -13,3 +13,4 @@ export var TrackOpTypes;
 })(TrackOpTypes || (TrackOpTypes = {}));
 /** 触发操作类型 */
 export var TriggerOpTypes;
+(function (TriggerOpTypes) {
