@@ -15,3 +15,4 @@ export var TrackOpTypes;
 export var TriggerOpTypes;
 (function (TriggerOpTypes) {
     TriggerOpTypes["SET"] = "set";
+    TriggerOpTypes["ADD"] = "add";
