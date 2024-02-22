@@ -24,3 +24,4 @@ export const DEFAULT_REACTIVITY_OPTIONS = {
     debug: false,
     computedCache: 'auto',
     effectScheduler: (fn) => queueMicrotask(fn),
+    maxRecursionDepth: 100,
