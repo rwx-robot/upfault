@@ -19,3 +19,4 @@ export var TriggerOpTypes;
     TriggerOpTypes["DELETE"] = "delete";
     TriggerOpTypes["CLEAR"] = "clear";
 })(TriggerOpTypes || (TriggerOpTypes = {}));
+/** 默认响应式配置 */
