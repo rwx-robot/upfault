@@ -26,3 +26,4 @@ export const DEFAULT_REACTIVITY_OPTIONS = {
     effectScheduler: (fn) => queueMicrotask(fn),
     maxRecursionDepth: 100,
 };
+//# sourceMappingURL=reactivity.js.map
