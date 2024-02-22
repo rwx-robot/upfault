@@ -10,3 +10,4 @@ export var TrackOpTypes;
     TrackOpTypes["GET"] = "get";
     TrackOpTypes["HAS"] = "has";
     TrackOpTypes["ITERATE"] = "iterate";
+})(TrackOpTypes || (TrackOpTypes = {}));
