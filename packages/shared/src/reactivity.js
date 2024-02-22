@@ -11,3 +11,4 @@ export var TrackOpTypes;
     TrackOpTypes["HAS"] = "has";
     TrackOpTypes["ITERATE"] = "iterate";
 })(TrackOpTypes || (TrackOpTypes = {}));
+/** 触发操作类型 */
