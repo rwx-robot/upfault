@@ -20,3 +20,4 @@ export var TriggerOpTypes;
     TriggerOpTypes["CLEAR"] = "clear";
 })(TriggerOpTypes || (TriggerOpTypes = {}));
 /** 默认响应式配置 */
+export const DEFAULT_REACTIVITY_OPTIONS = {
