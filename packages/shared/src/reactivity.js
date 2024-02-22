@@ -18,3 +18,4 @@ export var TriggerOpTypes;
     TriggerOpTypes["ADD"] = "add";
     TriggerOpTypes["DELETE"] = "delete";
     TriggerOpTypes["CLEAR"] = "clear";
+})(TriggerOpTypes || (TriggerOpTypes = {}));
