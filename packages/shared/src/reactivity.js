@@ -21,3 +21,4 @@ export var TriggerOpTypes;
 })(TriggerOpTypes || (TriggerOpTypes = {}));
 /** 默认响应式配置 */
 export const DEFAULT_REACTIVITY_OPTIONS = {
+    debug: false,
