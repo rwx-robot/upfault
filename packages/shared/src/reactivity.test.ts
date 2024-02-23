@@ -10,3 +10,4 @@ import {
   isReactive,
   isReadonly,
   hasChanged,
+} from './utils';
