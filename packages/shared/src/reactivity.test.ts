@@ -17,3 +17,4 @@ describe('Reactivity Types', () => {
     it('应定义正确的追踪操作类型', () => {
       expect(TrackOpTypes.GET).toBe('get');
       expect(TrackOpTypes.HAS).toBe('has');
+      expect(TrackOpTypes.ITERATE).toBe('iterate');
