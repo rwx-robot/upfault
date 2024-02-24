@@ -33,3 +33,4 @@ describe('Reactivity Types', () => {
   describe('DEFAULT_REACTIVITY_OPTIONS', () => {
     it('应包含合理的默认值', () => {
       expect(DEFAULT_REACTIVITY_OPTIONS.debug).toBe(false);
+      expect(DEFAULT_REACTIVITY_OPTIONS.computedCache).toBe('auto');
