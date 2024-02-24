@@ -34,3 +34,4 @@ describe('Reactivity Types', () => {
     it('应包含合理的默认值', () => {
       expect(DEFAULT_REACTIVITY_OPTIONS.debug).toBe(false);
       expect(DEFAULT_REACTIVITY_OPTIONS.computedCache).toBe('auto');
+      expect(DEFAULT_REACTIVITY_OPTIONS.maxRecursionDepth).toBe(100);
