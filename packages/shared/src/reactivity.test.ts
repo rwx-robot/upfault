@@ -35,3 +35,4 @@ describe('Reactivity Types', () => {
       expect(DEFAULT_REACTIVITY_OPTIONS.debug).toBe(false);
       expect(DEFAULT_REACTIVITY_OPTIONS.computedCache).toBe('auto');
       expect(DEFAULT_REACTIVITY_OPTIONS.maxRecursionDepth).toBe(100);
+      expect(typeof DEFAULT_REACTIVITY_OPTIONS.effectScheduler).toBe('function');
