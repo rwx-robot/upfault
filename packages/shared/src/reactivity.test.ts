@@ -41,3 +41,4 @@ describe('Reactivity Types', () => {
 
   describe('isRef', () => {
     it('Ref 对象应返回 true', () => {
+      const ref = { value: 1, __v_isRef: true };
