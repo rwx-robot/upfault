@@ -24,3 +24,4 @@ describe('Reactivity Types', () => {
   describe('TriggerOpTypes', () => {
     it('应定义正确的触发操作类型', () => {
       expect(TriggerOpTypes.SET).toBe('set');
+      expect(TriggerOpTypes.ADD).toBe('add');
