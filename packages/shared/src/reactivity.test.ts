@@ -28,3 +28,4 @@ describe('Reactivity Types', () => {
       expect(TriggerOpTypes.DELETE).toBe('delete');
       expect(TriggerOpTypes.CLEAR).toBe('clear');
     });
+  });
