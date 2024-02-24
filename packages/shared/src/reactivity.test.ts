@@ -29,3 +29,5 @@ describe('Reactivity Types', () => {
       expect(TriggerOpTypes.CLEAR).toBe('clear');
     });
   });
+
+  describe('DEFAULT_REACTIVITY_OPTIONS', () => {
