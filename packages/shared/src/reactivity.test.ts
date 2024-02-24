@@ -20,3 +20,5 @@ describe('Reactivity Types', () => {
       expect(TrackOpTypes.ITERATE).toBe('iterate');
     });
   });
+
+  describe('TriggerOpTypes', () => {
