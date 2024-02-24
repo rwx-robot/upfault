@@ -26,3 +26,4 @@ describe('Reactivity Types', () => {
       expect(TriggerOpTypes.SET).toBe('set');
       expect(TriggerOpTypes.ADD).toBe('add');
       expect(TriggerOpTypes.DELETE).toBe('delete');
+      expect(TriggerOpTypes.CLEAR).toBe('clear');
