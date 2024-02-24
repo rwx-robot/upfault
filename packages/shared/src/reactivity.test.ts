@@ -38,3 +38,5 @@ describe('Reactivity Types', () => {
       expect(typeof DEFAULT_REACTIVITY_OPTIONS.effectScheduler).toBe('function');
     });
   });
+
+  describe('isRef', () => {
