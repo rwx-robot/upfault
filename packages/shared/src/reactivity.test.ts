@@ -50,3 +50,4 @@ describe('Reactivity Types', () => {
       expect(isRef(null)).toBe(false);
       expect(isRef(undefined)).toBe(false);
       expect(isRef(1)).toBe(false);
+    });
