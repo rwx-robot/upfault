@@ -60,3 +60,4 @@ describe('Reactivity Types', () => {
     });
 
     it('普通对象应返回 false', () => {
+      expect(isComputedRef({ value: 1 })).toBe(false);
