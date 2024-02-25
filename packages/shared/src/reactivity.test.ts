@@ -51,3 +51,4 @@ describe('Reactivity Types', () => {
       expect(isRef(undefined)).toBe(false);
       expect(isRef(1)).toBe(false);
     });
+  });
