@@ -47,3 +47,4 @@ describe('Reactivity Types', () => {
 
     it('普通对象应返回 false', () => {
       expect(isRef({ value: 1 })).toBe(false);
+      expect(isRef(null)).toBe(false);
