@@ -58,3 +58,5 @@ describe('Reactivity Types', () => {
       const computed = { value: 1, __v_isComputed: true, __v_isReadonly: true };
       expect(isComputedRef(computed)).toBe(true);
     });
+
+    it('普通对象应返回 false', () => {
