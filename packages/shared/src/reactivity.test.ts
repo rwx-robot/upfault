@@ -64,3 +64,5 @@ describe('Reactivity Types', () => {
       expect(isComputedRef(null)).toBe(false);
     });
   });
+
+  describe('isReactive', () => {
