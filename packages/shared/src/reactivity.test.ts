@@ -75,3 +75,4 @@ describe('Reactivity Types', () => {
       expect(isReactive({ a: 1 })).toBe(false);
       expect(isReactive(null)).toBe(false);
     });
+  });
