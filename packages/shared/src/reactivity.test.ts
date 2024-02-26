@@ -66,3 +66,4 @@ describe('Reactivity Types', () => {
   });
 
   describe('isReactive', () => {
+    it('响应式对象应返回 true', () => {
