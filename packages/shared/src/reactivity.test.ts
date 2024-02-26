@@ -67,3 +67,4 @@ describe('Reactivity Types', () => {
 
   describe('isReactive', () => {
     it('响应式对象应返回 true', () => {
+      const reactive = { a: 1, __v_isReactive: true, __v_raw: {} };
