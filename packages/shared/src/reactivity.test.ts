@@ -71,3 +71,4 @@ describe('Reactivity Types', () => {
       expect(isReactive(reactive)).toBe(true);
     });
 
+    it('普通对象应返回 false', () => {
