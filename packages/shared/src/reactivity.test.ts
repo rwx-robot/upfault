@@ -76,3 +76,5 @@ describe('Reactivity Types', () => {
       expect(isReactive(null)).toBe(false);
     });
   });
+
+  describe('isReadonly', () => {
