@@ -78,3 +78,4 @@ describe('Reactivity Types', () => {
   });
 
   describe('isReadonly', () => {
+    it('只读标记对象应返回 true', () => {
