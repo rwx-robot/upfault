@@ -84,3 +84,4 @@ describe('Reactivity Types', () => {
     });
 
     it('非只读对象应返回 false', () => {
+      expect(isReadonly({ __v_isReactive: true })).toBe(false);
