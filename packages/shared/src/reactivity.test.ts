@@ -69,3 +69,4 @@ describe('Reactivity Types', () => {
     it('响应式对象应返回 true', () => {
       const reactive = { a: 1, __v_isReactive: true, __v_raw: {} };
       expect(isReactive(reactive)).toBe(true);
+    });
