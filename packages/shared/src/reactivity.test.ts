@@ -95,3 +95,4 @@ describe('Reactivity Types', () => {
       expect(hasChanged(1, 2)).toBe(true);
       expect(hasChanged('a', 'b')).toBe(true);
       expect(hasChanged({ a: 1 }, { a: 2 })).toBe(true);
+      expect(hasChanged(null, undefined)).toBe(true);
