@@ -97,3 +97,5 @@ describe('Reactivity Types', () => {
       expect(hasChanged({ a: 1 }, { a: 2 })).toBe(true);
       expect(hasChanged(null, undefined)).toBe(true);
     });
+
+    it('相同值应返回 false', () => {
