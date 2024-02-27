@@ -100,3 +100,4 @@ describe('Reactivity Types', () => {
 
     it('相同值应返回 false', () => {
       expect(hasChanged(1, 1)).toBe(false);
+      expect(hasChanged('a', 'a')).toBe(false);
