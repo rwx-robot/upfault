@@ -104,3 +104,5 @@ describe('Reactivity Types', () => {
       expect(hasChanged(null, null)).toBe(false);
       expect(hasChanged(undefined, undefined)).toBe(false);
     });
+
+    it('NaN 比较应返回 false (NaN === NaN 为 false，但 hasChanged 视为相同)', () => {
