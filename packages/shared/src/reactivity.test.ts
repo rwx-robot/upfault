@@ -90,3 +90,4 @@ describe('Reactivity Types', () => {
     });
   });
 
+  describe('hasChanged', () => {
