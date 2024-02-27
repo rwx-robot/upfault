@@ -91,3 +91,4 @@ describe('Reactivity Types', () => {
   });
 
   describe('hasChanged', () => {
+    it('不同值应返回 true', () => {
