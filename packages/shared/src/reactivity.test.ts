@@ -113,3 +113,4 @@ describe('Reactivity Types', () => {
       expect(hasChanged(NaN, 1)).toBe(true);
       expect(hasChanged(1, NaN)).toBe(true);
     });
+  });
