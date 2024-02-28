@@ -110,3 +110,4 @@ describe('Reactivity Types', () => {
     });
 
     it('NaN 与数字比较应返回 true', () => {
+      expect(hasChanged(NaN, 1)).toBe(true);
