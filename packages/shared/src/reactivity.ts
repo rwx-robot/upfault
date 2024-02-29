@@ -16,3 +16,4 @@ export interface Ref<T> {
   _getter?: () => T;
   
   /** 仅设置不触发 (内部用) */
+  _setter?: (value: T) => void;
