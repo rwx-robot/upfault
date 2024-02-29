@@ -27,3 +27,4 @@ export interface ReadonlyRef<T> {
 }
 
 /** 计算属性 */
+export interface ComputedRef<T> {
