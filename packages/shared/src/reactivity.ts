@@ -20,3 +20,4 @@ export interface Ref<T> {
 }
 
 /** 只读 Ref */
+export interface ReadonlyRef<T> {
