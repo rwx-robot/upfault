@@ -29,3 +29,4 @@ export interface ReadonlyRef<T> {
 /** 计算属性 */
 export interface ComputedRef<T> {
   readonly value: T;
+  readonly __v_isComputed: true;
