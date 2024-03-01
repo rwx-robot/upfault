@@ -54,3 +54,4 @@ export type ShallowReactive<T extends object> = T & ReactiveMarker & { readonly 
 export interface Dep {
   /** 订阅者 Set */
   subs: Set<Effect>;
+  
