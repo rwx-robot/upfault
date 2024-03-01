@@ -41,3 +41,4 @@ export interface ReactiveMarker {
   readonly __v_raw: object;
 }
 
+/** 响应式对象类型 */
