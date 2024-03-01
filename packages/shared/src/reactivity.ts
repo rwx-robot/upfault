@@ -42,3 +42,4 @@ export interface ReactiveMarker {
 }
 
 /** 响应式对象类型 */
+export type Reactive<T extends object> = T & ReactiveMarker;
