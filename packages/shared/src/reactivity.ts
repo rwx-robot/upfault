@@ -38,3 +38,4 @@ export interface ReactiveMarker {
   readonly __v_isReactive: true;
   readonly __v_isReadonly?: true;
   readonly __v_isShallow?: true;
+  readonly __v_raw: object;
