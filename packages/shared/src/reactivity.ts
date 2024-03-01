@@ -34,3 +34,4 @@ export interface ComputedRef<T> {
 }
 
 /** 响应式对象标记 */
+export interface ReactiveMarker {
