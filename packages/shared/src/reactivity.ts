@@ -57,3 +57,4 @@ export interface Dep {
   
   /** 版本号 (用于优化) */
   version: number;
+  
