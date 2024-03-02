@@ -65,3 +65,4 @@ export interface Dep {
 /** Effect 副作用函数 */
 export interface Effect {
   /** 执行函数 */
+  fn: () => void;
