@@ -69,3 +69,4 @@ export interface Effect {
   
   /** 调度器 */
   scheduler?: (fn: () => void) => void;
+  
