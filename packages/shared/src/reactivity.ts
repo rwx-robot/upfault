@@ -75,3 +75,4 @@ export interface Effect {
   
   /** 是否激活 */
   active: boolean;
+  
