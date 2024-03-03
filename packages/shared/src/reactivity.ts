@@ -77,3 +77,4 @@ export interface Effect {
   active: boolean;
   
   /** 是否停止 */
+  stopped: boolean;
