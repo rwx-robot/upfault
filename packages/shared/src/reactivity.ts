@@ -96,3 +96,4 @@ export interface Effect {
 }
 
 /** 调试事件 */
+export interface DebuggerEvent {
