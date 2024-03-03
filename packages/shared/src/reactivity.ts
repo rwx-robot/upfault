@@ -82,3 +82,4 @@ export interface Effect {
   /** 是否允许递归 */
   allowRecurse: boolean;
   
+  /** 是否懒惰执行 (用于 computed) */
