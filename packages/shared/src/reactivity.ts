@@ -83,3 +83,4 @@ export interface Effect {
   allowRecurse: boolean;
   
   /** 是否懒惰执行 (用于 computed) */
+  lazy?: boolean;
