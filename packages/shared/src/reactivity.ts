@@ -90,3 +90,4 @@ export interface Effect {
   
   /** 触发时的回调 */
   onTrigger?: (event: DebuggerEvent) => void;
+  
