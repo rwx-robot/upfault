@@ -86,3 +86,4 @@ export interface Effect {
   lazy?: boolean;
   
   /** 执行时的依赖追踪上下文 */
+  onTrack?: (event: DebuggerEvent) => void;
