@@ -80,3 +80,4 @@ export interface Effect {
   stopped: boolean;
   
   /** 是否允许递归 */
+  allowRecurse: boolean;
