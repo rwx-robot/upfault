@@ -99,3 +99,4 @@ export interface Effect {
 export interface DebuggerEvent {
   effect: Effect;
   target: object;
+  key: string | symbol;
