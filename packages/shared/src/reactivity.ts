@@ -88,3 +88,4 @@ export interface Effect {
   /** 执行时的依赖追踪上下文 */
   onTrack?: (event: DebuggerEvent) => void;
   
+  /** 触发时的回调 */
