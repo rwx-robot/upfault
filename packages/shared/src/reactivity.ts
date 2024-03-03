@@ -78,3 +78,4 @@ export interface Effect {
   
   /** 是否停止 */
   stopped: boolean;
+  
