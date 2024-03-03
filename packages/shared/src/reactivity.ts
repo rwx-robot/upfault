@@ -85,3 +85,4 @@ export interface Effect {
   /** 是否懒惰执行 (用于 computed) */
   lazy?: boolean;
   
+  /** 执行时的依赖追踪上下文 */
