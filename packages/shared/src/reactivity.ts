@@ -101,3 +101,4 @@ export interface DebuggerEvent {
   target: object;
   key: string | symbol;
   type: TrackOpTypes | TriggerOpTypes;
+  newValue?: unknown;
