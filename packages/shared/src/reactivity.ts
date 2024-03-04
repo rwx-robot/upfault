@@ -114,3 +114,4 @@ export const enum TrackOpTypes {
 }
 
 /** 触发操作类型 */
+export const enum TriggerOpTypes {
