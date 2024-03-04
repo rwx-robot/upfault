@@ -104,3 +104,4 @@ export interface DebuggerEvent {
   newValue?: unknown;
   oldValue?: unknown;
   oldTarget?: Map<unknown, unknown> | Set<unknown>;
+}
