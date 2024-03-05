@@ -133,3 +133,4 @@ export interface ReactivityOptions {
   effectScheduler?: (fn: () => void) => void;
   
   /** 最大递归深度 */
+  maxRecursionDepth: number;
