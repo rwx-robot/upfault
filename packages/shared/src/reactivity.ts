@@ -122,3 +122,4 @@ export const enum TriggerOpTypes {
 }
 
 /** 响应式系统配置 */
+export interface ReactivityOptions {
