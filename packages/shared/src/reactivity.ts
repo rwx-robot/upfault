@@ -136,3 +136,4 @@ export interface ReactivityOptions {
   maxRecursionDepth: number;
 }
 
+/** 默认响应式配置 */
