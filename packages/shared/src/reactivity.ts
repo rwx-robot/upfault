@@ -132,3 +132,4 @@ export interface ReactivityOptions {
   /** Effect 默认调度器 */
   effectScheduler?: (fn: () => void) => void;
   
+  /** 最大递归深度 */
