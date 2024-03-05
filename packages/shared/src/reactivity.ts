@@ -127,3 +127,4 @@ export interface ReactivityOptions {
   debug: boolean;
   
   /** 计算属性缓存策略 */
+  computedCache: 'always' | 'never' | 'auto';
