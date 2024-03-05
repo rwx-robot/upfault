@@ -140,3 +140,4 @@ export interface ReactivityOptions {
 export const DEFAULT_REACTIVITY_OPTIONS: ReactivityOptions = {
   debug: false,
   computedCache: 'auto',
+  effectScheduler: (fn) => queueMicrotask(fn),
