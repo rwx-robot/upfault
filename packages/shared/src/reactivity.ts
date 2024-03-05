@@ -139,3 +139,4 @@ export interface ReactivityOptions {
 /** 默认响应式配置 */
 export const DEFAULT_REACTIVITY_OPTIONS: ReactivityOptions = {
   debug: false,
+  computedCache: 'auto',
