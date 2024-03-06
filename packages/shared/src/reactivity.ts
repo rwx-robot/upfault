@@ -143,3 +143,5 @@ export const DEFAULT_REACTIVITY_OPTIONS: ReactivityOptions = {
   effectScheduler: (fn) => queueMicrotask(fn),
   maxRecursionDepth: 100,
 };
+
+/** 批处理上下文 */
