@@ -149,3 +149,4 @@ export interface BatchContext {
   /** 待执行的 effect 队列 */
   effects: Effect[];
   
+  /** 是否正在批处理 */
