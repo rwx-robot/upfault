@@ -153,3 +153,4 @@ export interface BatchContext {
   isBatching: boolean;
   
   /** 嵌套层级 */
+  depth: number;
