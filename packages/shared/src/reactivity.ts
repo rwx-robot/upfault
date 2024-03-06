@@ -145,3 +145,4 @@ export const DEFAULT_REACTIVITY_OPTIONS: ReactivityOptions = {
 };
 
 /** 批处理上下文 */
+export interface BatchContext {
