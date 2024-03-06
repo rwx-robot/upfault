@@ -161,3 +161,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
   /** 立即执行 */
   immediate?: Immediate;
   
+  /** 深度监听 */
