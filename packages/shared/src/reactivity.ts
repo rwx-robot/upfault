@@ -162,3 +162,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
   immediate?: Immediate;
   
   /** 深度监听 */
+  deep?: boolean;
