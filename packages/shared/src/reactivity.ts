@@ -150,3 +150,4 @@ export interface BatchContext {
   effects: Effect[];
   
   /** 是否正在批处理 */
+  isBatching: boolean;
