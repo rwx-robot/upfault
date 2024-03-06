@@ -166,3 +166,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
   
   /** 仅在值变化时触发 (引用相等) */
   flush?: 'pre' | 'post' | 'sync';
+  
