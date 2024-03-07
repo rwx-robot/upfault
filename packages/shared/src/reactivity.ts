@@ -183,3 +183,5 @@ export type WatchCallback<T, TPrev = T> = (
   oldValue: TPrev,
   onCleanup?: (fn: () => void) => void
 ) => void;
+
+/** Watch 源类型 */
