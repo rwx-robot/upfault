@@ -169,3 +169,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
   
   /** 调度器 */
   scheduler?: (fn: () => void) => void;
+  
