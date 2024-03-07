@@ -185,3 +185,4 @@ export type WatchCallback<T, TPrev = T> = (
 ) => void;
 
 /** Watch 源类型 */
+export type WatchSource<T> = Ref<T> | ComputedRef<T> | (() => T) | T[];
