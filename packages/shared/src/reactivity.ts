@@ -178,3 +178,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
 }
 
 /** Watch 回调类型 */
+export type WatchCallback<T, TPrev = T> = (
