@@ -176,3 +176,5 @@ export interface WatchOptions<Immediate extends boolean = false> {
   /** 回调触发时的上下文 */
   onTrigger?: (event: DebuggerEvent) => void;
 }
+
+/** Watch 回调类型 */
