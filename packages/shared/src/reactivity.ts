@@ -168,3 +168,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
   flush?: 'pre' | 'post' | 'sync';
   
   /** 调度器 */
+  scheduler?: (fn: () => void) => void;
