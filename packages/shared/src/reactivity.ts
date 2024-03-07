@@ -181,3 +181,4 @@ export interface WatchOptions<Immediate extends boolean = false> {
 export type WatchCallback<T, TPrev = T> = (
   value: T,
   oldValue: TPrev,
+  onCleanup?: (fn: () => void) => void
