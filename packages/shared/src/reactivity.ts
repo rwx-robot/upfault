@@ -194,3 +194,4 @@ export interface WatchStopHandle {
 }
 
 /** 计算属性 getter 类型 */
+export type ComputedGetter<T> = () => T;
