@@ -203,3 +203,4 @@ export type ComputedSetter<T> = (value: T) => void;
 export type RefUnwrapBailTypes = boolean;
 
 /** 响应式工具类型 */
+export type UnwrapRef<T> = T extends Ref<infer V> ? V : T;
