@@ -192,3 +192,4 @@ export interface WatchStopHandle {
   (): void;
   readonly __v_isWatchStopHandle: true;
 }
+
