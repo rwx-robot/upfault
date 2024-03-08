@@ -189,3 +189,4 @@ export type WatchSource<T> = Ref<T> | ComputedRef<T> | (() => T) | T[];
 
 /** 停止监听函数 */
 export interface WatchStopHandle {
+  (): void;
