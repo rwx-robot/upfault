@@ -191,3 +191,4 @@ export type WatchSource<T> = Ref<T> | ComputedRef<T> | (() => T) | T[];
 export interface WatchStopHandle {
   (): void;
   readonly __v_isWatchStopHandle: true;
+}
