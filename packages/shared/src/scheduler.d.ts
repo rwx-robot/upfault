@@ -12,3 +12,4 @@ export declare const enum Priority {
     /** 正常优先级 - 默认渲染、数据更新 (5s 内) */
     NORMAL = 5000,
     /** 低优先级 - 非可视区域、预取数据 (10s 内) */
+    LOW = 10000,
