@@ -5,3 +5,4 @@
  * 支持时间分片、优先级抢占、依赖感知调度
  */
 export declare const enum Priority {
+    /** 同步立即执行 - 用户输入、动画帧 */
