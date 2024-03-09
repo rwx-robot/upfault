@@ -17,3 +17,4 @@ export declare const enum Priority {
     IDLE = 2147483647
 }
 /**
+ * 优先级人类可读名称
