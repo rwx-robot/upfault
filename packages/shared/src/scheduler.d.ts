@@ -19,3 +19,4 @@ export declare const enum Priority {
 /**
  * 优先级人类可读名称
  */
+export declare const PriorityNames: Record<Priority, string>;
