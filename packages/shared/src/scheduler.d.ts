@@ -15,3 +15,4 @@ export declare const enum Priority {
     LOW = 10000,
     /** 空闲优先级 - 后台计算、GC、预编译 (无截止时间) */
     IDLE = 2147483647
+}
