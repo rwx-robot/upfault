@@ -30,3 +30,4 @@ export declare function priorityFromExpirationTime(expirationTime: number): Prio
 export declare function computeExpirationTime(priority: Priority): number;
 /**
  * 调度任务接口
+ * 每个 Block / 组件更新对应一个任务
