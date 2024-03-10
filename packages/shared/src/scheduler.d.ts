@@ -41,3 +41,4 @@ export interface SchedulerTask<T = unknown> {
     callback: (task: SchedulerTask<T>) => void;
     /** 过期时间戳 (ms) */
     expirationTime: number;
+    /** 关联的 VNode / Block */
