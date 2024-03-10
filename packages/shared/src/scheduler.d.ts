@@ -24,3 +24,4 @@ export declare const PriorityNames: Record<Priority, string>;
  * 从过期时间推算优先级
  */
 export declare function priorityFromExpirationTime(expirationTime: number): Priority;
+/**
