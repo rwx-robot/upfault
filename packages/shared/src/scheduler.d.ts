@@ -29,3 +29,4 @@ export declare function priorityFromExpirationTime(expirationTime: number): Prio
  */
 export declare function computeExpirationTime(priority: Priority): number;
 /**
+ * 调度任务接口
