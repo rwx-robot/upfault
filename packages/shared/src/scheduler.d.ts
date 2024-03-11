@@ -50,3 +50,4 @@ export interface SchedulerTask<T = unknown> {
     /** 创建时间 */
     createdAt: number;
     /** 开始执行时间 */
+    startedAt: number | null;
