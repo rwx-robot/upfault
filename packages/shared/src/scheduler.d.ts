@@ -61,3 +61,4 @@ export interface SchedulerOptions {
     /** 时间分片预算 (ms) - 每帧留给主线程的时间 */
     timeSliceBudget: number;
     /** 是否启用 requestIdleCallback 回退 */
+    useIdleCallback: boolean;
