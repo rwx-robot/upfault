@@ -47,3 +47,4 @@ export interface SchedulerTask<T = unknown> {
     data: T;
     /** 是否已取消 */
     cancelled: boolean;
+    /** 创建时间 */
