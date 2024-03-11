@@ -55,3 +55,4 @@ export interface SchedulerTask<T = unknown> {
     completedAt: number | null;
 }
 /**
+ * 调度器配置选项
