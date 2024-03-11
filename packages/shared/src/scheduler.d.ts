@@ -49,3 +49,4 @@ export interface SchedulerTask<T = unknown> {
     cancelled: boolean;
     /** 创建时间 */
     createdAt: number;
+    /** 开始执行时间 */
