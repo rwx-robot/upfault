@@ -45,3 +45,4 @@ export interface SchedulerTask<T = unknown> {
     fibre: VNode | Block | null;
     /** 任务携带的数据 */
     data: T;
+    /** 是否已取消 */
