@@ -52,3 +52,4 @@ export interface SchedulerTask<T = unknown> {
     /** 开始执行时间 */
     startedAt: number | null;
     /** 完成时间 */
+    completedAt: number | null;
