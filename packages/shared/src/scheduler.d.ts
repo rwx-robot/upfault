@@ -68,3 +68,4 @@ export interface SchedulerOptions {
     preemptionThreshold: Priority;
 }
 /** 默认调度器配置 */
+export declare const DEFAULT_SCHEDULER_OPTIONS: SchedulerOptions;
