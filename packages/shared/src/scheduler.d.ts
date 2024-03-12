@@ -69,3 +69,4 @@ export interface SchedulerOptions {
 }
 /** 默认调度器配置 */
 export declare const DEFAULT_SCHEDULER_OPTIONS: SchedulerOptions;
+/**
