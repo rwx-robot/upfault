@@ -80,3 +80,4 @@ export interface SchedulerStats {
     /** 已取消任务数 */
     cancelledTasks: number;
     /** 当前队列长度 */
+    queueLength: number;
