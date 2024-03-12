@@ -64,3 +64,4 @@ export interface SchedulerOptions {
     useIdleCallback: boolean;
     /** 最大并发任务数 */
     maxConcurrentTasks: number;
+    /** 优先级抢占阈值 - 高优任务可中断低优任务 */
