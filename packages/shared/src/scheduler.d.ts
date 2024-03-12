@@ -83,3 +83,4 @@ export interface SchedulerStats {
     queueLength: number;
     /** 平均执行时间 (ms) */
     avgExecutionTime: number;
+    /** 总执行时间 (ms) */
