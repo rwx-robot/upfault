@@ -67,3 +67,4 @@ export interface SchedulerOptions {
     /** 优先级抢占阈值 - 高优任务可中断低优任务 */
     preemptionThreshold: Priority;
 }
+/** 默认调度器配置 */
