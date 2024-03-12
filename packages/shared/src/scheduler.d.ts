@@ -82,3 +82,4 @@ export interface SchedulerStats {
     /** 当前队列长度 */
     queueLength: number;
     /** 平均执行时间 (ms) */
+    avgExecutionTime: number;
