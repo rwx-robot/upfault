@@ -78,3 +78,4 @@ export interface SchedulerStats {
     /** 已完成任务数 */
     completedTasks: number;
     /** 已取消任务数 */
+    cancelledTasks: number;
