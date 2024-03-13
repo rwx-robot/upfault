@@ -97,3 +97,4 @@ export interface TaskQueue {
     /** 入队 */
     push(task: SchedulerTask): void;
     /** 出队最高优先级任务 */
+    pop(): SchedulerTask | null;
