@@ -91,3 +91,4 @@ export interface SchedulerStats {
     priorityDistribution: Record<Priority, number>;
 }
 /**
+ * 任务队列接口 (最小堆实现)
