@@ -87,3 +87,4 @@ export interface SchedulerStats {
     totalExecutionTime: number;
     /** 抢占次数 */
     preemptionCount: number;
+    /** 按优先级分布 */
