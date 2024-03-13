@@ -104,3 +104,4 @@ export interface TaskQueue {
     hasHigherPriority(priority: Priority): boolean;
     /** 移除特定任务 */
     remove(task: SchedulerTask): boolean;
+    /** 清空队列 */
