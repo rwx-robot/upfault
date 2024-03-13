@@ -88,3 +88,4 @@ export interface SchedulerStats {
     /** 抢占次数 */
     preemptionCount: number;
     /** 按优先级分布 */
+    priorityDistribution: Record<Priority, number>;
