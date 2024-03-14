@@ -112,3 +112,4 @@ export interface TaskQueue {
     readonly isEmpty: boolean;
 }
 /**
+ * VNode 前向声明 (避免循环依赖)
