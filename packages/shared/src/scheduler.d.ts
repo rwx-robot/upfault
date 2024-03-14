@@ -110,3 +110,4 @@ export interface TaskQueue {
     readonly size: number;
     /** 是否为空 */
     readonly isEmpty: boolean;
+}
