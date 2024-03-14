@@ -123,3 +123,4 @@ export interface VNode {
 /**
  * Block 前向声明
  */
+export interface Block {
