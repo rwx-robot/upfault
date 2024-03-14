@@ -121,3 +121,4 @@ export interface VNode {
     children: VNode[];
 }
 /**
+ * Block 前向声明
