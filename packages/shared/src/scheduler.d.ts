@@ -119,3 +119,4 @@ export interface VNode {
     type: VNodeType;
     key: string | number | null;
     children: VNode[];
+}
