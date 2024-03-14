@@ -118,3 +118,4 @@ export interface VNode {
     flags: number;
     type: VNodeType;
     key: string | number | null;
+    children: VNode[];
