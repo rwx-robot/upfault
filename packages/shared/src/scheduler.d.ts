@@ -141,3 +141,4 @@ export declare const enum VNodeType {
     TELEPORT = "TELEPORT",
     SUSPENSE = "SUSPENSE"
 }
+//# sourceMappingURL=scheduler.d.ts.map
