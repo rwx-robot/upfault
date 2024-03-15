@@ -131,3 +131,4 @@ export interface Block {
 /**
  * VNode 类型枚举
  */
+export declare const enum VNodeType {
