@@ -129,3 +129,4 @@ export interface Block {
     priority: Priority;
 }
 /**
+ * VNode 类型枚举
