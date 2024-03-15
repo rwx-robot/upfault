@@ -126,3 +126,4 @@ export interface VNode {
 export interface Block {
     id: string;
     nodes: VNode[];
+    priority: Priority;
