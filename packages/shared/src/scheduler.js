@@ -5,3 +5,4 @@
  * 支持时间分片、优先级抢占、依赖感知调度
  */
 export var Priority;
+(function (Priority) {
