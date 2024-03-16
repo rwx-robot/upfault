@@ -12,3 +12,4 @@ export var Priority;
     Priority[Priority["USER_BLOCKING"] = 250] = "USER_BLOCKING";
     /** 正常优先级 - 默认渲染、数据更新 (5s 内) */
     Priority[Priority["NORMAL"] = 5000] = "NORMAL";
+    /** 低优先级 - 非可视区域、预取数据 (10s 内) */
