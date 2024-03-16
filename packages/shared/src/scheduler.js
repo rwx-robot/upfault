@@ -15,3 +15,4 @@ export var Priority;
     /** 低优先级 - 非可视区域、预取数据 (10s 内) */
     Priority[Priority["LOW"] = 10000] = "LOW";
     /** 空闲优先级 - 后台计算、GC、预编译 (无截止时间) */
+    Priority[Priority["IDLE"] = 2147483647] = "IDLE";
