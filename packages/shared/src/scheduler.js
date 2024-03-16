@@ -18,3 +18,4 @@ export var Priority;
     Priority[Priority["IDLE"] = 2147483647] = "IDLE";
 })(Priority || (Priority = {}));
 /**
+ * 优先级人类可读名称
