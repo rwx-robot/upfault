@@ -7,3 +7,4 @@
 export var Priority;
 (function (Priority) {
     /** 同步立即执行 - 用户输入、动画帧 */
+    Priority[Priority["IMMEDIATE"] = 0] = "IMMEDIATE";
