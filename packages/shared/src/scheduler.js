@@ -22,3 +22,4 @@ export var Priority;
  */
 export const PriorityNames = {
     [Priority.IMMEDIATE]: 'Immediate',
+    [Priority.USER_BLOCKING]: 'UserBlocking',
