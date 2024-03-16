@@ -9,3 +9,4 @@ export var Priority;
     /** 同步立即执行 - 用户输入、动画帧 */
     Priority[Priority["IMMEDIATE"] = 0] = "IMMEDIATE";
     /** 用户阻塞级 - 拖拽、滚动、交互反馈 (250ms 内) */
+    Priority[Priority["USER_BLOCKING"] = 250] = "USER_BLOCKING";
