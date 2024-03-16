@@ -21,3 +21,4 @@ export var Priority;
  * 优先级人类可读名称
  */
 export const PriorityNames = {
+    [Priority.IMMEDIATE]: 'Immediate',
