@@ -13,3 +13,4 @@ export var Priority;
     /** 正常优先级 - 默认渲染、数据更新 (5s 内) */
     Priority[Priority["NORMAL"] = 5000] = "NORMAL";
     /** 低优先级 - 非可视区域、预取数据 (10s 内) */
+    Priority[Priority["LOW"] = 10000] = "LOW";
