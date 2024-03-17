@@ -32,3 +32,4 @@ export const PriorityNames = {
  */
 export function priorityFromExpirationTime(expirationTime) {
     const now = performance.now();
+    const timeLeft = expirationTime - now;
