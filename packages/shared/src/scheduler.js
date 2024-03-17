@@ -28,3 +28,4 @@ export const PriorityNames = {
     [Priority.IDLE]: 'Idle',
 };
 /**
+ * 从过期时间推算优先级
