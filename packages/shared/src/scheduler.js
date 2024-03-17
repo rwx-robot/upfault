@@ -25,3 +25,4 @@ export const PriorityNames = {
     [Priority.USER_BLOCKING]: 'UserBlocking',
     [Priority.NORMAL]: 'Normal',
     [Priority.LOW]: 'Low',
+    [Priority.IDLE]: 'Idle',
