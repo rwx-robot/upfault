@@ -44,3 +44,4 @@ export function priorityFromExpirationTime(expirationTime) {
     return Priority.IDLE;
 }
 /**
+ * 计算过期时间 (ms)
