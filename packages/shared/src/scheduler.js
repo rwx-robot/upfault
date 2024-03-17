@@ -26,3 +26,4 @@ export const PriorityNames = {
     [Priority.NORMAL]: 'Normal',
     [Priority.LOW]: 'Low',
     [Priority.IDLE]: 'Idle',
+};
