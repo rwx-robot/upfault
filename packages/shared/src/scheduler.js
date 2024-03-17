@@ -38,3 +38,4 @@ export function priorityFromExpirationTime(expirationTime) {
     if (timeLeft <= 250)
         return Priority.USER_BLOCKING;
     if (timeLeft <= 5000)
+        return Priority.NORMAL;
