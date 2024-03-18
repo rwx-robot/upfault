@@ -49,3 +49,4 @@ export function priorityFromExpirationTime(expirationTime) {
 export function computeExpirationTime(priority) {
     const now = performance.now();
     switch (priority) {
+        case Priority.IMMEDIATE:
