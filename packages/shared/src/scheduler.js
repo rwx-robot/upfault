@@ -53,3 +53,4 @@ export function computeExpirationTime(priority) {
             return now; // 已过期，强制同步执行
         case Priority.USER_BLOCKING:
             return now + 250;
+        case Priority.NORMAL:
