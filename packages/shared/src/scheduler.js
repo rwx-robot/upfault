@@ -61,3 +61,4 @@ export function computeExpirationTime(priority) {
             return now + 0x7fffffff;
     }
 }
+/** 默认调度器配置 */
