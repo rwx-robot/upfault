@@ -46,3 +46,4 @@ export function priorityFromExpirationTime(expirationTime) {
 /**
  * 计算过期时间 (ms)
  */
+export function computeExpirationTime(priority) {
