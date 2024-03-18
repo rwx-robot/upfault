@@ -55,3 +55,4 @@ export function computeExpirationTime(priority) {
             return now + 250;
         case Priority.NORMAL:
             return now + 5000;
+        case Priority.LOW:
