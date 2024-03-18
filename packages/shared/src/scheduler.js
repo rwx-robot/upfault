@@ -54,3 +54,4 @@ export function computeExpirationTime(priority) {
         case Priority.USER_BLOCKING:
             return now + 250;
         case Priority.NORMAL:
+            return now + 5000;
