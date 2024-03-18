@@ -57,3 +57,4 @@ export function computeExpirationTime(priority) {
             return now + 5000;
         case Priority.LOW:
             return now + 10000;
+        case Priority.IDLE:
