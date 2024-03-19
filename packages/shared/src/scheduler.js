@@ -80,3 +80,4 @@ export var VNodeType;
     VNodeType["FRAGMENT"] = "FRAGMENT";
     VNodeType["COMMENT"] = "COMMENT";
     VNodeType["TELEPORT"] = "TELEPORT";
+    VNodeType["SUSPENSE"] = "SUSPENSE";
