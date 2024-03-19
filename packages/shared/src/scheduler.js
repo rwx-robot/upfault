@@ -79,3 +79,4 @@ export var VNodeType;
     VNodeType["BLOCK"] = "BLOCK";
     VNodeType["FRAGMENT"] = "FRAGMENT";
     VNodeType["COMMENT"] = "COMMENT";
+    VNodeType["TELEPORT"] = "TELEPORT";
