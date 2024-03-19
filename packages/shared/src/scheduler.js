@@ -77,3 +77,4 @@ export var VNodeType;
     VNodeType["ELEMENT"] = "ELEMENT";
     VNodeType["COMPONENT"] = "COMPONENT";
     VNodeType["BLOCK"] = "BLOCK";
+    VNodeType["FRAGMENT"] = "FRAGMENT";
