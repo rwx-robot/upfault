@@ -82,3 +82,4 @@ export var VNodeType;
     VNodeType["TELEPORT"] = "TELEPORT";
     VNodeType["SUSPENSE"] = "SUSPENSE";
 })(VNodeType || (VNodeType = {}));
+//# sourceMappingURL=scheduler.js.map
