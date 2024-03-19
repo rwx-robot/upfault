@@ -69,3 +69,4 @@ export const DEFAULT_SCHEDULER_OPTIONS = {
     preemptionThreshold: Priority.USER_BLOCKING,
 };
 /**
+ * VNode 类型枚举
