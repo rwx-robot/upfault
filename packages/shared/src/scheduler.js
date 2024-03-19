@@ -76,3 +76,4 @@ export var VNodeType;
     VNodeType["TEXT"] = "TEXT";
     VNodeType["ELEMENT"] = "ELEMENT";
     VNodeType["COMPONENT"] = "COMPONENT";
+    VNodeType["BLOCK"] = "BLOCK";
