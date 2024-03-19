@@ -81,3 +81,4 @@ export var VNodeType;
     VNodeType["COMMENT"] = "COMMENT";
     VNodeType["TELEPORT"] = "TELEPORT";
     VNodeType["SUSPENSE"] = "SUSPENSE";
+})(VNodeType || (VNodeType = {}));
