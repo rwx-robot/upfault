@@ -74,3 +74,4 @@ export const DEFAULT_SCHEDULER_OPTIONS = {
 export var VNodeType;
 (function (VNodeType) {
     VNodeType["TEXT"] = "TEXT";
+    VNodeType["ELEMENT"] = "ELEMENT";
