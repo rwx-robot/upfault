@@ -67,3 +67,4 @@ export const DEFAULT_SCHEDULER_OPTIONS = {
     useIdleCallback: true,
     maxConcurrentTasks: 100,
     preemptionThreshold: Priority.USER_BLOCKING,
+};
