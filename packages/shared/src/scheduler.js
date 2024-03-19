@@ -72,3 +72,4 @@ export const DEFAULT_SCHEDULER_OPTIONS = {
  * VNode 类型枚举
  */
 export var VNodeType;
+(function (VNodeType) {
