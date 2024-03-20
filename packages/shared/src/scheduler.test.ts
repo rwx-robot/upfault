@@ -4,3 +4,4 @@ import {
   PriorityNames,
   priorityFromExpirationTime,
   computeExpirationTime,
+  DEFAULT_SCHEDULER_OPTIONS,
