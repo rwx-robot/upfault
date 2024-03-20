@@ -9,3 +9,4 @@ import {
 } from './scheduler';
 
 describe('Scheduler Types', () => {
+  describe('Priority', () => {
