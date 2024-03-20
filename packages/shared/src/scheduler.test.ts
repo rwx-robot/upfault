@@ -7,3 +7,5 @@ import {
   DEFAULT_SCHEDULER_OPTIONS,
   VNodeType,
 } from './scheduler';
+
+describe('Scheduler Types', () => {
