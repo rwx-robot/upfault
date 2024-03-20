@@ -17,3 +17,5 @@ describe('Scheduler Types', () => {
       expect(Priority.LOW).toBe(10_000);
       expect(Priority.IDLE).toBe(0x7fffffff);
     });
+
+    it('优先级应单调递增', () => {
