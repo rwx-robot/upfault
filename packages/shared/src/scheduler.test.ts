@@ -5,3 +5,4 @@ import {
   priorityFromExpirationTime,
   computeExpirationTime,
   DEFAULT_SCHEDULER_OPTIONS,
+  VNodeType,
