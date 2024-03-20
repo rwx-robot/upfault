@@ -15,3 +15,4 @@ describe('Scheduler Types', () => {
       expect(Priority.USER_BLOCKING).toBe(250);
       expect(Priority.NORMAL).toBe(5_000);
       expect(Priority.LOW).toBe(10_000);
+      expect(Priority.IDLE).toBe(0x7fffffff);
