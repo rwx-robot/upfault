@@ -20,3 +20,4 @@ describe('Scheduler Types', () => {
 
     it('优先级应单调递增', () => {
       expect(Priority.IMMEDIATE).toBeLessThan(Priority.USER_BLOCKING);
+      expect(Priority.USER_BLOCKING).toBeLessThan(Priority.NORMAL);
