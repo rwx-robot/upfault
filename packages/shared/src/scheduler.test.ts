@@ -12,3 +12,4 @@ describe('Scheduler Types', () => {
   describe('Priority', () => {
     it('应定义正确的优先级值', () => {
       expect(Priority.IMMEDIATE).toBe(0);
+      expect(Priority.USER_BLOCKING).toBe(250);
