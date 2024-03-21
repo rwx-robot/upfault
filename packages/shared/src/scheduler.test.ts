@@ -40,3 +40,4 @@ describe('Scheduler Types', () => {
     const now = performance.now();
 
     it('已过期应返回 IMMEDIATE', () => {
+      expect(priorityFromExpirationTime(now - 100)).toBe(Priority.IMMEDIATE);
