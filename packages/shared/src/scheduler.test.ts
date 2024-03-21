@@ -34,3 +34,4 @@ describe('Scheduler Types', () => {
       expect(PriorityNames[Priority.LOW]).toBe('Low');
       expect(PriorityNames[Priority.IDLE]).toBe('Idle');
     });
+  });
