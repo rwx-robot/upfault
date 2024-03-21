@@ -37,3 +37,4 @@ describe('Scheduler Types', () => {
   });
 
   describe('priorityFromExpirationTime', () => {
+    const now = performance.now();
