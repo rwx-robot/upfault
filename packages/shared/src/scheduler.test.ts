@@ -38,3 +38,5 @@ describe('Scheduler Types', () => {
 
   describe('priorityFromExpirationTime', () => {
     const now = performance.now();
+
+    it('已过期应返回 IMMEDIATE', () => {
