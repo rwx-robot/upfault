@@ -25,3 +25,5 @@ describe('Scheduler Types', () => {
       expect(Priority.LOW).toBeLessThan(Priority.IDLE);
     });
   });
+
+  describe('PriorityNames', () => {
