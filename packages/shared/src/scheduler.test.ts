@@ -29,3 +29,4 @@ describe('Scheduler Types', () => {
   describe('PriorityNames', () => {
     it('应包含所有优先级的名称', () => {
       expect(PriorityNames[Priority.IMMEDIATE]).toBe('Immediate');
+      expect(PriorityNames[Priority.USER_BLOCKING]).toBe('UserBlocking');
