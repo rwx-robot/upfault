@@ -43,3 +43,4 @@ describe('Scheduler Types', () => {
       expect(priorityFromExpirationTime(now - 100)).toBe(Priority.IMMEDIATE);
       expect(priorityFromExpirationTime(now)).toBe(Priority.IMMEDIATE);
     });
+
