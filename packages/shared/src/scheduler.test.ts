@@ -31,3 +31,4 @@ describe('Scheduler Types', () => {
       expect(PriorityNames[Priority.IMMEDIATE]).toBe('Immediate');
       expect(PriorityNames[Priority.USER_BLOCKING]).toBe('UserBlocking');
       expect(PriorityNames[Priority.NORMAL]).toBe('Normal');
+      expect(PriorityNames[Priority.LOW]).toBe('Low');
