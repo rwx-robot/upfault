@@ -44,3 +44,4 @@ describe('Scheduler Types', () => {
       expect(priorityFromExpirationTime(now)).toBe(Priority.IMMEDIATE);
     });
 
+    it('250ms 内应返回 USER_BLOCKING', () => {
