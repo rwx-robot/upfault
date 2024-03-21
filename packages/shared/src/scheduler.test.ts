@@ -27,3 +27,4 @@ describe('Scheduler Types', () => {
   });
 
   describe('PriorityNames', () => {
+    it('应包含所有优先级的名称', () => {
