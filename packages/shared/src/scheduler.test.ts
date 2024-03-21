@@ -35,3 +35,5 @@ describe('Scheduler Types', () => {
       expect(PriorityNames[Priority.IDLE]).toBe('Idle');
     });
   });
+
+  describe('priorityFromExpirationTime', () => {
