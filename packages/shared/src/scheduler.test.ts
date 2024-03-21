@@ -23,3 +23,4 @@ describe('Scheduler Types', () => {
       expect(Priority.USER_BLOCKING).toBeLessThan(Priority.NORMAL);
       expect(Priority.NORMAL).toBeLessThan(Priority.LOW);
       expect(Priority.LOW).toBeLessThan(Priority.IDLE);
+    });
