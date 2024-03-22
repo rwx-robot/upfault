@@ -66,3 +66,4 @@ describe('Scheduler Types', () => {
 
   describe('computeExpirationTime', () => {
     it('IMMEDIATE 应返回当前时间', () => {
+      const before = performance.now();
