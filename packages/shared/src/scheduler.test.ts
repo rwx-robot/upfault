@@ -48,3 +48,5 @@ describe('Scheduler Types', () => {
       expect(priorityFromExpirationTime(now + 100)).toBe(Priority.USER_BLOCKING);
       expect(priorityFromExpirationTime(now + 250)).toBe(Priority.USER_BLOCKING);
     });
+
+    it('5s 内应返回 NORMAL', () => {
