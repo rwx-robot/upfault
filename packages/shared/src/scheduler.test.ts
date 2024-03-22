@@ -53,3 +53,5 @@ describe('Scheduler Types', () => {
       expect(priorityFromExpirationTime(now + 1_000)).toBe(Priority.NORMAL);
       expect(priorityFromExpirationTime(now + 5_000)).toBe(Priority.NORMAL);
     });
+
+    it('10s 内应返回 LOW', () => {
