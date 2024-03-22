@@ -50,3 +50,4 @@ describe('Scheduler Types', () => {
     });
 
     it('5s 内应返回 NORMAL', () => {
+      expect(priorityFromExpirationTime(now + 1_000)).toBe(Priority.NORMAL);
