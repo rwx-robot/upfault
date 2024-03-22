@@ -61,3 +61,4 @@ describe('Scheduler Types', () => {
 
     it('10s 以上应返回 IDLE', () => {
       expect(priorityFromExpirationTime(now + 11_000)).toBe(Priority.IDLE);
+    });
