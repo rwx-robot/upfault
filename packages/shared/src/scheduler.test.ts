@@ -63,3 +63,5 @@ describe('Scheduler Types', () => {
       expect(priorityFromExpirationTime(now + 11_000)).toBe(Priority.IDLE);
     });
   });
+
+  describe('computeExpirationTime', () => {
