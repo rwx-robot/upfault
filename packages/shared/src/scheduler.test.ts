@@ -86,3 +86,4 @@ describe('Scheduler Types', () => {
       const exp = computeExpirationTime(Priority.NORMAL);
       const after = performance.now();
       expect(exp).toBeGreaterThanOrEqual(before + 4_990);
+      expect(exp).toBeLessThanOrEqual(after + 5_010);
