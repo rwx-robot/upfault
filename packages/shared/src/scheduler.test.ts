@@ -68,3 +68,4 @@ describe('Scheduler Types', () => {
     it('IMMEDIATE 应返回当前时间', () => {
       const before = performance.now();
       const exp = computeExpirationTime(Priority.IMMEDIATE);
+      const after = performance.now();
