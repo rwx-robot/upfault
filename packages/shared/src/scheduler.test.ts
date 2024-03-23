@@ -74,3 +74,4 @@ describe('Scheduler Types', () => {
     });
 
     it('USER_BLOCKING 应返回 now + 250', () => {
+      const before = performance.now();
