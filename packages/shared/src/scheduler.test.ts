@@ -78,3 +78,4 @@ describe('Scheduler Types', () => {
       const exp = computeExpirationTime(Priority.USER_BLOCKING);
       const after = performance.now();
       expect(exp).toBeGreaterThanOrEqual(before + 240);
+      expect(exp).toBeLessThanOrEqual(after + 260);
