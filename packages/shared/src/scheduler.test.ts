@@ -81,3 +81,4 @@ describe('Scheduler Types', () => {
       expect(exp).toBeLessThanOrEqual(after + 260);
     });
 
+    it('NORMAL 应返回 now + 5000', () => {
