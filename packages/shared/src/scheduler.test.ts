@@ -79,3 +79,4 @@ describe('Scheduler Types', () => {
       const after = performance.now();
       expect(exp).toBeGreaterThanOrEqual(before + 240);
       expect(exp).toBeLessThanOrEqual(after + 260);
+    });
