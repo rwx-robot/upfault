@@ -72,3 +72,5 @@ describe('Scheduler Types', () => {
       expect(exp).toBeGreaterThanOrEqual(before);
       expect(exp).toBeLessThanOrEqual(after + 10);
     });
+
+    it('USER_BLOCKING 应返回 now + 250', () => {
