@@ -76,3 +76,4 @@ describe('Scheduler Types', () => {
     it('USER_BLOCKING 应返回 now + 250', () => {
       const before = performance.now();
       const exp = computeExpirationTime(Priority.USER_BLOCKING);
+      const after = performance.now();
