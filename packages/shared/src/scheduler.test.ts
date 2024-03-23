@@ -70,3 +70,4 @@ describe('Scheduler Types', () => {
       const exp = computeExpirationTime(Priority.IMMEDIATE);
       const after = performance.now();
       expect(exp).toBeGreaterThanOrEqual(before);
+      expect(exp).toBeLessThanOrEqual(after + 10);
