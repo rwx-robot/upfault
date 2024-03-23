@@ -82,3 +82,4 @@ describe('Scheduler Types', () => {
     });
 
     it('NORMAL 应返回 now + 5000', () => {
+      const before = performance.now();
