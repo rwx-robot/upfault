@@ -104,3 +104,4 @@ describe('Scheduler Types', () => {
   });
 
   describe('DEFAULT_SCHEDULER_OPTIONS', () => {
+    it('应包含合理的默认值', () => {
