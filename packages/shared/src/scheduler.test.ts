@@ -107,3 +107,4 @@ describe('Scheduler Types', () => {
     it('应包含合理的默认值', () => {
       expect(DEFAULT_SCHEDULER_OPTIONS.timeSliceBudget).toBe(5);
       expect(DEFAULT_SCHEDULER_OPTIONS.useIdleCallback).toBe(true);
+      expect(DEFAULT_SCHEDULER_OPTIONS.maxConcurrentTasks).toBe(100);
