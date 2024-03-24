@@ -99,3 +99,4 @@ describe('Scheduler Types', () => {
 
     it('IDLE 应返回极大值', () => {
       const exp = computeExpirationTime(Priority.IDLE);
+      expect(exp).toBeGreaterThan(performance.now() + 0x7ffffffe);
