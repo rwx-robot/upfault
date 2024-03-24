@@ -101,3 +101,4 @@ describe('Scheduler Types', () => {
       const exp = computeExpirationTime(Priority.IDLE);
       expect(exp).toBeGreaterThan(performance.now() + 0x7ffffffe);
     });
+  });
