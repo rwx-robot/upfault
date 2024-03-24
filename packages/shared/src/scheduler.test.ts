@@ -98,3 +98,4 @@ describe('Scheduler Types', () => {
     });
 
     it('IDLE 应返回极大值', () => {
+      const exp = computeExpirationTime(Priority.IDLE);
