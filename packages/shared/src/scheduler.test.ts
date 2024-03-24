@@ -95,3 +95,4 @@ describe('Scheduler Types', () => {
       const after = performance.now();
       expect(exp).toBeGreaterThanOrEqual(before + 9_990);
       expect(exp).toBeLessThanOrEqual(after + 10_010);
+    });
