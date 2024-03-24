@@ -93,3 +93,4 @@ describe('Scheduler Types', () => {
       const before = performance.now();
       const exp = computeExpirationTime(Priority.LOW);
       const after = performance.now();
+      expect(exp).toBeGreaterThanOrEqual(before + 9_990);
