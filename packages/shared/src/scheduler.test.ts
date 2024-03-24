@@ -106,3 +106,4 @@ describe('Scheduler Types', () => {
   describe('DEFAULT_SCHEDULER_OPTIONS', () => {
     it('应包含合理的默认值', () => {
       expect(DEFAULT_SCHEDULER_OPTIONS.timeSliceBudget).toBe(5);
+      expect(DEFAULT_SCHEDULER_OPTIONS.useIdleCallback).toBe(true);
