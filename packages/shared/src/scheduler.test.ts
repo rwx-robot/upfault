@@ -90,3 +90,4 @@ describe('Scheduler Types', () => {
     });
 
     it('LOW 应返回 now + 10000', () => {
+      const before = performance.now();
