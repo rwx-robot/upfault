@@ -89,3 +89,4 @@ describe('Scheduler Types', () => {
       expect(exp).toBeLessThanOrEqual(after + 5_010);
     });
 
+    it('LOW 应返回 now + 10000', () => {
