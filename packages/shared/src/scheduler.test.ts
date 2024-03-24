@@ -102,3 +102,5 @@ describe('Scheduler Types', () => {
       expect(exp).toBeGreaterThan(performance.now() + 0x7ffffffe);
     });
   });
+
+  describe('DEFAULT_SCHEDULER_OPTIONS', () => {
