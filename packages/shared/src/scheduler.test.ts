@@ -110,3 +110,4 @@ describe('Scheduler Types', () => {
       expect(DEFAULT_SCHEDULER_OPTIONS.maxConcurrentTasks).toBe(100);
       expect(DEFAULT_SCHEDULER_OPTIONS.preemptionThreshold).toBe(Priority.USER_BLOCKING);
     });
+  });
