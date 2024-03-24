@@ -96,3 +96,5 @@ describe('Scheduler Types', () => {
       expect(exp).toBeGreaterThanOrEqual(before + 9_990);
       expect(exp).toBeLessThanOrEqual(after + 10_010);
     });
+
+    it('IDLE 应返回极大值', () => {
