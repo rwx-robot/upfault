@@ -119,3 +119,4 @@ describe('Scheduler Types', () => {
       expect(VNodeType.COMPONENT).toBe('COMPONENT');
       expect(VNodeType.BLOCK).toBe('BLOCK');
       expect(VNodeType.FRAGMENT).toBe('FRAGMENT');
+      expect(VNodeType.COMMENT).toBe('COMMENT');
