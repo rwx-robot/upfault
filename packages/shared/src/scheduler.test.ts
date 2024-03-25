@@ -121,3 +121,4 @@ describe('Scheduler Types', () => {
       expect(VNodeType.FRAGMENT).toBe('FRAGMENT');
       expect(VNodeType.COMMENT).toBe('COMMENT');
       expect(VNodeType.TELEPORT).toBe('TELEPORT');
+      expect(VNodeType.SUSPENSE).toBe('SUSPENSE');
