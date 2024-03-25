@@ -123,3 +123,4 @@ describe('Scheduler Types', () => {
       expect(VNodeType.TELEPORT).toBe('TELEPORT');
       expect(VNodeType.SUSPENSE).toBe('SUSPENSE');
     });
+  });
