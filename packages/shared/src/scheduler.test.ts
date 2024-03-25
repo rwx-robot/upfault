@@ -114,3 +114,4 @@ describe('Scheduler Types', () => {
 
   describe('VNodeType', () => {
     it('应定义所有节点类型', () => {
+      expect(VNodeType.TEXT).toBe('TEXT');
