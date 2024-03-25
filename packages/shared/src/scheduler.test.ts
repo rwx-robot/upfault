@@ -117,3 +117,4 @@ describe('Scheduler Types', () => {
       expect(VNodeType.TEXT).toBe('TEXT');
       expect(VNodeType.ELEMENT).toBe('ELEMENT');
       expect(VNodeType.COMPONENT).toBe('COMPONENT');
+      expect(VNodeType.BLOCK).toBe('BLOCK');
