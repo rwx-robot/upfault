@@ -111,3 +111,5 @@ describe('Scheduler Types', () => {
       expect(DEFAULT_SCHEDULER_OPTIONS.preemptionThreshold).toBe(Priority.USER_BLOCKING);
     });
   });
+
+  describe('VNodeType', () => {
