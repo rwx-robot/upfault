@@ -124,3 +124,4 @@ describe('Scheduler Types', () => {
       expect(VNodeType.SUSPENSE).toBe('SUSPENSE');
     });
   });
+});
