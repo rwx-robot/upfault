@@ -14,3 +14,4 @@ export const enum Priority {
   
   /** 正常优先级 - 默认渲染、数据更新 (5s 内) */
   NORMAL = 5_000,
+  
