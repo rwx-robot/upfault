@@ -30,3 +30,4 @@ export const PriorityNames: Record<Priority, string> = {
   [Priority.USER_BLOCKING]: 'UserBlocking',
   [Priority.NORMAL]: 'Normal',
   [Priority.LOW]: 'Low',
+  [Priority.IDLE]: 'Idle',
