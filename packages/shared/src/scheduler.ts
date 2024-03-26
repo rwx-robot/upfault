@@ -31,3 +31,4 @@ export const PriorityNames: Record<Priority, string> = {
   [Priority.NORMAL]: 'Normal',
   [Priority.LOW]: 'Low',
   [Priority.IDLE]: 'Idle',
+};
