@@ -10,3 +10,4 @@ export const enum Priority {
   IMMEDIATE = 0,
   
   /** 用户阻塞级 - 拖拽、滚动、交互反馈 (250ms 内) */
+  USER_BLOCKING = 250,
