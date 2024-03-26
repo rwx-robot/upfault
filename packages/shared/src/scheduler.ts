@@ -8,3 +8,4 @@
 export const enum Priority {
   /** 同步立即执行 - 用户输入、动画帧 */
   IMMEDIATE = 0,
+  
