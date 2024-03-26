@@ -28,3 +28,4 @@ export const enum Priority {
 export const PriorityNames: Record<Priority, string> = {
   [Priority.IMMEDIATE]: 'Immediate',
   [Priority.USER_BLOCKING]: 'UserBlocking',
+  [Priority.NORMAL]: 'Normal',
