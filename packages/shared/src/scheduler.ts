@@ -54,3 +54,4 @@ export function computeExpirationTime(priority: Priority): number {
   const now = performance.now();
   switch (priority) {
     case Priority.IMMEDIATE:
+      return now; // 已过期，强制同步执行
