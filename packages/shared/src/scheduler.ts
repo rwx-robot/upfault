@@ -53,3 +53,4 @@ export function priorityFromExpirationTime(expirationTime: number): Priority {
 export function computeExpirationTime(priority: Priority): number {
   const now = performance.now();
   switch (priority) {
+    case Priority.IMMEDIATE:
