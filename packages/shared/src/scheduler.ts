@@ -55,3 +55,4 @@ export function computeExpirationTime(priority: Priority): number {
   switch (priority) {
     case Priority.IMMEDIATE:
       return now; // 已过期，强制同步执行
+    case Priority.USER_BLOCKING:
