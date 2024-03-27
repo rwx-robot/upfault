@@ -45,3 +45,4 @@ export function priorityFromExpirationTime(expirationTime: number): Priority {
   if (timeLeft <= 5_000) return Priority.NORMAL;
   if (timeLeft <= 10_000) return Priority.LOW;
   return Priority.IDLE;
+}
