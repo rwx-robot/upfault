@@ -38,3 +38,4 @@ export const PriorityNames: Record<Priority, string> = {
  */
 export function priorityFromExpirationTime(expirationTime: number): Priority {
   const now = performance.now();
+  const timeLeft = expirationTime - now;
