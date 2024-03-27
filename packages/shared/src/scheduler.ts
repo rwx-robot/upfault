@@ -40,3 +40,4 @@ export function priorityFromExpirationTime(expirationTime: number): Priority {
   const now = performance.now();
   const timeLeft = expirationTime - now;
   
+  if (timeLeft <= 0) return Priority.IMMEDIATE;
