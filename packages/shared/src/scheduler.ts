@@ -41,3 +41,4 @@ export function priorityFromExpirationTime(expirationTime: number): Priority {
   const timeLeft = expirationTime - now;
   
   if (timeLeft <= 0) return Priority.IMMEDIATE;
+  if (timeLeft <= 250) return Priority.USER_BLOCKING;
