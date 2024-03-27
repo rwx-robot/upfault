@@ -37,3 +37,4 @@ export const PriorityNames: Record<Priority, string> = {
  * 从过期时间推算优先级
  */
 export function priorityFromExpirationTime(expirationTime: number): Priority {
+  const now = performance.now();
