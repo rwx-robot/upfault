@@ -75,3 +75,4 @@ export interface SchedulerTask<T = unknown> {
   id: number;
   
   /** 优先级 */
+  priority: Priority;
