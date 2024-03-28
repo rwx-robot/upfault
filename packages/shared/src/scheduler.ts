@@ -74,3 +74,4 @@ export interface SchedulerTask<T = unknown> {
   /** 唯一任务 ID (单调递增) */
   id: number;
   
+  /** 优先级 */
