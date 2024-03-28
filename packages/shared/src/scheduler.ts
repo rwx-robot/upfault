@@ -71,3 +71,4 @@ export function computeExpirationTime(priority: Priority): number {
  * 每个 Block / 组件更新对应一个任务
  */
 export interface SchedulerTask<T = unknown> {
+  /** 唯一任务 ID (单调递增) */
