@@ -65,3 +65,5 @@ export function computeExpirationTime(priority: Priority): number {
       return now + 0x7fffffff;
   }
 }
+
+/**
