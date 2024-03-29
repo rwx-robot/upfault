@@ -79,3 +79,4 @@ export interface SchedulerTask<T = unknown> {
   
   /** 执行回调 */
   callback: (task: SchedulerTask<T>) => void;
+  
