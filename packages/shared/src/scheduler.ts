@@ -99,3 +99,4 @@ export interface SchedulerTask<T = unknown> {
   startedAt: number | null;
   
   /** 完成时间 */
+  completedAt: number | null;
