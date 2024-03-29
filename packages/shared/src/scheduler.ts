@@ -94,3 +94,4 @@ export interface SchedulerTask<T = unknown> {
   
   /** 创建时间 */
   createdAt: number;
+  
