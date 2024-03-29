@@ -88,3 +88,4 @@ export interface SchedulerTask<T = unknown> {
   
   /** 任务携带的数据 */
   data: T;
+  
