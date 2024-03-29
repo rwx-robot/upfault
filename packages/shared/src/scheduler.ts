@@ -83,3 +83,4 @@ export interface SchedulerTask<T = unknown> {
   /** 过期时间戳 (ms) */
   expirationTime: number;
   
+  /** 关联的 VNode / Block */
