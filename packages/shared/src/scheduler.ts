@@ -86,3 +86,4 @@ export interface SchedulerTask<T = unknown> {
   /** 关联的 VNode / Block */
   fibre: VNode | Block | null;
   
+  /** 任务携带的数据 */
