@@ -106,3 +106,4 @@ export interface SchedulerTask<T = unknown> {
  * 调度器配置选项
  */
 export interface SchedulerOptions {
+  /** 时间分片预算 (ms) - 每帧留给主线程的时间 */
