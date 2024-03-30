@@ -102,3 +102,4 @@ export interface SchedulerTask<T = unknown> {
   completedAt: number | null;
 }
 
+/**
