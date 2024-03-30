@@ -113,3 +113,4 @@ export interface SchedulerOptions {
   useIdleCallback: boolean;
   
   /** 最大并发任务数 */
+  maxConcurrentTasks: number;
