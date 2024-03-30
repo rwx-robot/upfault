@@ -108,3 +108,4 @@ export interface SchedulerTask<T = unknown> {
 export interface SchedulerOptions {
   /** 时间分片预算 (ms) - 每帧留给主线程的时间 */
   timeSliceBudget: number;
+  
