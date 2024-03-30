@@ -103,3 +103,4 @@ export interface SchedulerTask<T = unknown> {
 }
 
 /**
+ * 调度器配置选项
