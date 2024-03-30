@@ -119,3 +119,4 @@ export interface SchedulerOptions {
   preemptionThreshold: Priority;
 }
 
+/** 默认调度器配置 */
