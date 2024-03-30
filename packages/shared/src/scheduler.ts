@@ -114,3 +114,4 @@ export interface SchedulerOptions {
   
   /** 最大并发任务数 */
   maxConcurrentTasks: number;
+  
