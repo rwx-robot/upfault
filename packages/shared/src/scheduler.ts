@@ -112,3 +112,4 @@ export interface SchedulerOptions {
   /** 是否启用 requestIdleCallback 回退 */
   useIdleCallback: boolean;
   
+  /** 最大并发任务数 */
