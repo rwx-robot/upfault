@@ -120,3 +120,4 @@ export interface SchedulerOptions {
 }
 
 /** 默认调度器配置 */
+export const DEFAULT_SCHEDULER_OPTIONS: SchedulerOptions = {
