@@ -124,3 +124,4 @@ export const DEFAULT_SCHEDULER_OPTIONS: SchedulerOptions = {
   timeSliceBudget: 5, // 5ms per frame (60fps = 16.6ms, 留 11ms 给浏览器)
   useIdleCallback: true,
   maxConcurrentTasks: 100,
+  preemptionThreshold: Priority.USER_BLOCKING,
