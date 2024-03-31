@@ -130,3 +130,4 @@ export const DEFAULT_SCHEDULER_OPTIONS: SchedulerOptions = {
 /**
  * 调度器统计信息
  */
+export interface SchedulerStats {
