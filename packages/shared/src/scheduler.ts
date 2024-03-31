@@ -132,3 +132,4 @@ export const DEFAULT_SCHEDULER_OPTIONS: SchedulerOptions = {
  */
 export interface SchedulerStats {
   /** 总任务数 */
+  totalTasks: number;
