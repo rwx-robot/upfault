@@ -142,3 +142,4 @@ export interface SchedulerStats {
   
   /** 当前队列长度 */
   queueLength: number;
+  
