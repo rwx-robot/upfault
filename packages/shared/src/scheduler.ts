@@ -152,3 +152,4 @@ export interface SchedulerStats {
   /** 抢占次数 */
   preemptionCount: number;
   
+  /** 按优先级分布 */
