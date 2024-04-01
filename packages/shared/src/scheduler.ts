@@ -161,3 +161,4 @@ export interface SchedulerStats {
  */
 export interface TaskQueue {
   /** 入队 */
+  push(task: SchedulerTask): void;
