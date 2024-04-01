@@ -153,3 +153,4 @@ export interface SchedulerStats {
   preemptionCount: number;
   
   /** 按优先级分布 */
+  priorityDistribution: Record<Priority, number>;
