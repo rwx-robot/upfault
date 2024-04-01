@@ -141,3 +141,4 @@ export interface SchedulerStats {
   cancelledTasks: number;
   
   /** 当前队列长度 */
+  queueLength: number;
