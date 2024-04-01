@@ -159,3 +159,4 @@ export interface SchedulerStats {
 /**
  * 任务队列接口 (最小堆实现)
  */
+export interface TaskQueue {
