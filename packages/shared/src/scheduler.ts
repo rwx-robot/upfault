@@ -147,3 +147,4 @@ export interface SchedulerStats {
   avgExecutionTime: number;
   
   /** 总执行时间 (ms) */
+  totalExecutionTime: number;
