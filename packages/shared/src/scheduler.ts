@@ -170,3 +170,4 @@ export interface TaskQueue {
   peek(): SchedulerTask | null;
   
   /** 是否有更高优先级任务 */
+  hasHigherPriority(priority: Priority): boolean;
