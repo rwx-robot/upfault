@@ -175,3 +175,4 @@ export interface TaskQueue {
   /** 移除特定任务 */
   remove(task: SchedulerTask): boolean;
   
+  /** 清空队列 */
