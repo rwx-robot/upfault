@@ -167,3 +167,4 @@ export interface TaskQueue {
   pop(): SchedulerTask | null;
   
   /** 查看最高优先级任务 */
+  peek(): SchedulerTask | null;
