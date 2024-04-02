@@ -181,3 +181,4 @@ export interface TaskQueue {
   /** 队列长度 */
   readonly size: number;
   
+  /** 是否为空 */
