@@ -171,3 +171,4 @@ export interface TaskQueue {
   
   /** 是否有更高优先级任务 */
   hasHigherPriority(priority: Priority): boolean;
+  
