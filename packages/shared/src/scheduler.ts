@@ -165,3 +165,4 @@ export interface TaskQueue {
   
   /** 出队最高优先级任务 */
   pop(): SchedulerTask | null;
+  
