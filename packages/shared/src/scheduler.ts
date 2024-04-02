@@ -177,3 +177,4 @@ export interface TaskQueue {
   
   /** 清空队列 */
   clear(): void;
+  
