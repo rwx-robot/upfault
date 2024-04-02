@@ -169,3 +169,4 @@ export interface TaskQueue {
   /** 查看最高优先级任务 */
   peek(): SchedulerTask | null;
   
+  /** 是否有更高优先级任务 */
