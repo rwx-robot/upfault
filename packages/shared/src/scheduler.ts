@@ -191,3 +191,4 @@ export interface TaskQueue {
 export interface VNode {
   flags: number;
   type: VNodeType;
+  key: string | number | null;
