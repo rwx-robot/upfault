@@ -184,3 +184,5 @@ export interface TaskQueue {
   /** 是否为空 */
   readonly isEmpty: boolean;
 }
+
+/**
