@@ -189,3 +189,4 @@ export interface TaskQueue {
  * VNode 前向声明 (避免循环依赖)
  */
 export interface VNode {
+  flags: number;
