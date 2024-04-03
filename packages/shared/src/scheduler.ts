@@ -194,3 +194,4 @@ export interface VNode {
   key: string | number | null;
   children: VNode[];
   // ... 其他字段在 runtime 包中定义
+}
