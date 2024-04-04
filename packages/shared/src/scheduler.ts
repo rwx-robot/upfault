@@ -218,3 +218,4 @@ export const enum VNodeType {
   COMMENT = 'COMMENT',
   TELEPORT = 'TELEPORT',
   SUSPENSE = 'SUSPENSE',
+}
