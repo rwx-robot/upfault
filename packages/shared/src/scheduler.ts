@@ -213,3 +213,4 @@ export const enum VNodeType {
   TEXT = 'TEXT',
   ELEMENT = 'ELEMENT',
   COMPONENT = 'COMPONENT',
+  BLOCK = 'BLOCK',
