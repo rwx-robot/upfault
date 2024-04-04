@@ -210,3 +210,4 @@ export interface Block {
  * VNode 类型枚举
  */
 export const enum VNodeType {
+  TEXT = 'TEXT',
