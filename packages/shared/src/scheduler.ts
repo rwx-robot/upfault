@@ -208,3 +208,4 @@ export interface Block {
 
 /**
  * VNode 类型枚举
+ */
