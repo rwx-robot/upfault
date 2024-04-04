@@ -205,3 +205,5 @@ export interface Block {
   priority: Priority;
   // ... 其他字段在 runtime 包中定义
 }
+
+/**
