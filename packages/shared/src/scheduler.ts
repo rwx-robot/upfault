@@ -216,3 +216,4 @@ export const enum VNodeType {
   BLOCK = 'BLOCK',
   FRAGMENT = 'FRAGMENT',
   COMMENT = 'COMMENT',
+  TELEPORT = 'TELEPORT',
