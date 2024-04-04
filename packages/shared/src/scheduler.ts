@@ -215,3 +215,4 @@ export const enum VNodeType {
   COMPONENT = 'COMPONENT',
   BLOCK = 'BLOCK',
   FRAGMENT = 'FRAGMENT',
+  COMMENT = 'COMMENT',
