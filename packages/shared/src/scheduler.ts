@@ -211,3 +211,4 @@ export interface Block {
  */
 export const enum VNodeType {
   TEXT = 'TEXT',
+  ELEMENT = 'ELEMENT',
