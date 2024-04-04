@@ -204,3 +204,4 @@ export interface Block {
   nodes: VNode[];
   priority: Priority;
   // ... 其他字段在 runtime 包中定义
+}
