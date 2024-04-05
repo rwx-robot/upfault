@@ -19,3 +19,4 @@ export declare function isFunction(value: unknown): value is Function;
  * 判断是否为字符串
  */
 export declare function isString(value: unknown): value is string;
+/**
