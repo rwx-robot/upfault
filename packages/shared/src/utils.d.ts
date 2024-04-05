@@ -23,3 +23,4 @@ export declare function isString(value: unknown): value is string;
  * 判断是否为数字
  */
 export declare function isNumber(value: unknown): value is number;
+/**
