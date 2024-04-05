@@ -15,3 +15,4 @@ export declare function isObject(value: unknown): value is Record<string, unknow
  * 判断是否为函数
  */
 export declare function isFunction(value: unknown): value is Function;
+/**
