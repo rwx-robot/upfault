@@ -26,3 +26,4 @@ export declare function isNumber(value: unknown): value is number;
 /**
  * 判断是否为 Promise
  */
+export declare function isPromise<T>(value: unknown): value is Promise<T>;
