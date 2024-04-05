@@ -24,3 +24,4 @@ export declare function isString(value: unknown): value is string;
  */
 export declare function isNumber(value: unknown): value is number;
 /**
+ * 判断是否为 Promise
