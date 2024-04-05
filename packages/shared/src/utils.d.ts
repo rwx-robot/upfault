@@ -10,3 +10,4 @@ export declare function isSameNode(a: VNodeLike, b: VNodeLike): boolean;
 /**
  * 判断是否为对象
  */
+export declare function isObject(value: unknown): value is Record<string, unknown>;
