@@ -17,3 +17,4 @@ export declare function isObject(value: unknown): value is Record<string, unknow
 export declare function isFunction(value: unknown): value is Function;
 /**
  * 判断是否为字符串
+ */
