@@ -48,3 +48,4 @@ export declare function isReadonly(value: unknown): boolean;
  */
 export declare function isVNode(value: unknown): value is VNode;
 /**
+ * 空函数
