@@ -44,3 +44,4 @@ export declare function isReactive(value: unknown): value is Reactive<Record<str
  */
 export declare function isReadonly(value: unknown): boolean;
 /**
+ * 判断是否为 VNode
