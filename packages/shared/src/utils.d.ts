@@ -30,3 +30,4 @@ export declare function isPromise<T>(value: unknown): value is Promise<T>;
 /**
  * 判断是否为 Ref
  */
+export declare function isRef<T>(value: unknown): value is Ref<T>;
