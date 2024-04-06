@@ -46,3 +46,4 @@ export declare function isReadonly(value: unknown): boolean;
 /**
  * 判断是否为 VNode
  */
+export declare function isVNode(value: unknown): value is VNode;
