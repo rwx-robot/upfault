@@ -69,3 +69,4 @@ export declare function generateNumericId(): number;
  * 深度克隆 (仅支持 JSON 兼容类型)
  */
 export declare function deepClone<T>(obj: T): T;
+/**
