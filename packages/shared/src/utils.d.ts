@@ -50,3 +50,4 @@ export declare function isVNode(value: unknown): value is VNode;
 /**
  * 空函数
  */
+export declare const NOOP: () => void;
