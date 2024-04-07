@@ -64,3 +64,4 @@ export declare function hasChanged(a: unknown, b: unknown): boolean;
  */
 export declare function flatten<T>(arr: (T | T[])[]): T[];
 export declare function generateId(prefix?: string): string;
+export declare function generateNumericId(): number;
