@@ -54,3 +54,4 @@ export declare const NOOP: () => void;
 /**
  * 标识函数
  */
+export declare const IDENTITY: <T>(v: T) => T;
