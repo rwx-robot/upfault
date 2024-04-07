@@ -66,3 +66,4 @@ export declare function flatten<T>(arr: (T | T[])[]): T[];
 export declare function generateId(prefix?: string): string;
 export declare function generateNumericId(): number;
 /**
+ * 深度克隆 (仅支持 JSON 兼容类型)
