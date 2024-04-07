@@ -56,3 +56,4 @@ export declare const NOOP: () => void;
  */
 export declare const IDENTITY: <T>(v: T) => T;
 /**
+ * 判断值是否变化 (用于响应式比较)
