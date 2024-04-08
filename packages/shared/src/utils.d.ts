@@ -77,3 +77,4 @@ export declare function mergeObjects<T extends object, U extends object>(target:
  * 数组去重 (保持顺序)
  */
 export declare function unique<T>(arr: T[]): T[];
+/**
