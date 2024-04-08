@@ -85,3 +85,4 @@ export declare function chunk<T>(arr: T[], size: number): T[][];
  * 防抖
  */
 export declare function debounce<T extends (...args: unknown[]) => unknown>(fn: T, delay: number): (...args: Parameters<T>) => void;
+/**
