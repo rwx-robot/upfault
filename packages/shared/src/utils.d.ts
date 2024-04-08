@@ -81,3 +81,4 @@ export declare function unique<T>(arr: T[]): T[];
  * 数组分块
  */
 export declare function chunk<T>(arr: T[], size: number): T[][];
+/**
