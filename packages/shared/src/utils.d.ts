@@ -70,3 +70,4 @@ export declare function generateNumericId(): number;
  */
 export declare function deepClone<T>(obj: T): T;
 /**
+ * 对象浅拷贝合并
