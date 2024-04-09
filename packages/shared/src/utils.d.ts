@@ -90,3 +90,4 @@ export declare function debounce<T extends (...args: unknown[]) => unknown>(fn: 
  */
 export declare function throttle<T extends (...args: unknown[]) => unknown>(fn: T, limit: number): (...args: Parameters<T>) => void;
 /**
+ * 扁平化树结构 (深度优先)
