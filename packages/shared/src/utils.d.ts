@@ -89,3 +89,4 @@ export declare function debounce<T extends (...args: unknown[]) => unknown>(fn: 
  * 节流
  */
 export declare function throttle<T extends (...args: unknown[]) => unknown>(fn: T, limit: number): (...args: Parameters<T>) => void;
+/**
