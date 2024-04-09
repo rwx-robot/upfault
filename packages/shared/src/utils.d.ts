@@ -103,3 +103,4 @@ export declare function traverseTreeBFS<T>(root: T, getChildren: (node: T) => T[
 export declare class PerformanceTimer {
     private startTime;
     private endTime;
+    private running;
