@@ -105,3 +105,4 @@ export declare class PerformanceTimer {
     private endTime;
     private running;
     start(): this;
+    stop(): number;
