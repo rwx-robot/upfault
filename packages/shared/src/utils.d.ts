@@ -92,3 +92,4 @@ export declare function throttle<T extends (...args: unknown[]) => unknown>(fn: 
 /**
  * 扁平化树结构 (深度优先)
  */
+export declare function flattenTree<T>(nodes: T[], getChildren: (node: T) => T[] | undefined): T[];
