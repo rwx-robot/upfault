@@ -107,3 +107,4 @@ export declare class PerformanceTimer {
     start(): this;
     stop(): number;
     get elapsed(): number;
+    reset(): this;
