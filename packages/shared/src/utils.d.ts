@@ -106,3 +106,4 @@ export declare class PerformanceTimer {
     private running;
     start(): this;
     stop(): number;
+    get elapsed(): number;
