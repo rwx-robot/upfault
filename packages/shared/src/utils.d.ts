@@ -96,3 +96,4 @@ export declare function flattenTree<T>(nodes: T[], getChildren: (node: T) => T[]
 /**
  * 遍历树 (广度优先)
  */
+export declare function traverseTreeBFS<T>(root: T, getChildren: (node: T) => T[] | undefined, visitor: (node: T, depth: number) => boolean | void): void;
