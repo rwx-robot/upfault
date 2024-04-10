@@ -114,3 +114,4 @@ export declare class PerformanceTimer {
  */
 export declare class LRUCache<K, V> {
     private cache;
+    private readonly maxSize;
