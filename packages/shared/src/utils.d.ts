@@ -124,3 +124,4 @@ export declare class LRUCache<K, V> {
     get size(): number;
     keys(): IterableIterator<K>;
     values(): IterableIterator<V>;
+    entries(): IterableIterator<[K, V]>;
