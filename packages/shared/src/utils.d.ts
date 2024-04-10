@@ -120,3 +120,4 @@ export declare class LRUCache<K, V> {
     set(key: K, value: V): this;
     has(key: K): boolean;
     delete(key: K): boolean;
+    clear(): void;
