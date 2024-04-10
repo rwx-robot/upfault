@@ -117,3 +117,4 @@ export declare class LRUCache<K, V> {
     private readonly maxSize;
     constructor(maxSize?: number);
     get(key: K): V | undefined;
+    set(key: K, value: V): this;
