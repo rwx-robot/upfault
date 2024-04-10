@@ -110,3 +110,4 @@ export declare class PerformanceTimer {
     reset(): this;
 }
 /**
+ * 简单的 LRU 缓存
