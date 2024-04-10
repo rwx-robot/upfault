@@ -121,3 +121,4 @@ export declare class LRUCache<K, V> {
     has(key: K): boolean;
     delete(key: K): boolean;
     clear(): void;
+    get size(): number;
