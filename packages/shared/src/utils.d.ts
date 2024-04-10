@@ -127,3 +127,4 @@ export declare class LRUCache<K, V> {
     entries(): IterableIterator<[K, V]>;
 }
 /**
+ * 类型守卫：缩小联合类型
