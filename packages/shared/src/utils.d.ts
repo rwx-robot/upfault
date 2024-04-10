@@ -129,3 +129,4 @@ export declare class LRUCache<K, V> {
 /**
  * 类型守卫：缩小联合类型
  */
+export declare function isType<T>(value: unknown, guard: (v: unknown) => v is T): value is T;
