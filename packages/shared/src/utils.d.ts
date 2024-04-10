@@ -126,3 +126,4 @@ export declare class LRUCache<K, V> {
     values(): IterableIterator<V>;
     entries(): IterableIterator<[K, V]>;
 }
+/**
