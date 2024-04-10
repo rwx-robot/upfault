@@ -113,3 +113,4 @@ export declare class PerformanceTimer {
  * 简单的 LRU 缓存
  */
 export declare class LRUCache<K, V> {
+    private cache;
