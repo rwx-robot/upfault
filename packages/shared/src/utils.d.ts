@@ -122,3 +122,4 @@ export declare class LRUCache<K, V> {
     delete(key: K): boolean;
     clear(): void;
     get size(): number;
+    keys(): IterableIterator<K>;
