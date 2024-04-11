@@ -140,3 +140,4 @@ export declare function assert(condition: unknown, message?: string): asserts co
 export declare function warn(message: string, ...args: unknown[]): void;
 /**
  * 开发环境错误
+ */
