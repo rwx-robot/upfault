@@ -132,3 +132,4 @@ export declare class LRUCache<K, V> {
 export declare function isType<T>(value: unknown, guard: (v: unknown) => v is T): value is T;
 /**
  * 断言函数 (开发环境检查)
+ */
