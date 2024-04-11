@@ -133,3 +133,4 @@ export declare function isType<T>(value: unknown, guard: (v: unknown) => v is T)
 /**
  * 断言函数 (开发环境检查)
  */
+export declare function assert(condition: unknown, message?: string): asserts condition;
