@@ -137,3 +137,4 @@ export declare function assert(condition: unknown, message?: string): asserts co
 /**
  * 开发环境警告
  */
+export declare function warn(message: string, ...args: unknown[]): void;
