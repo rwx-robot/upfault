@@ -158,3 +158,4 @@ interface ComputedRef<T> {
     __v_isComputed: true;
 }
 interface Reactive<T> {
+    __v_isReactive: true;
