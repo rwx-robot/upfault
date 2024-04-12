@@ -163,3 +163,4 @@ interface Reactive<T> {
 interface VNode {
     __v_isVNode: true;
 }
+export {};
