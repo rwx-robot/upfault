@@ -161,3 +161,4 @@ interface Reactive<T> {
     __v_isReactive: true;
 }
 interface VNode {
+    __v_isVNode: true;
