@@ -10,3 +10,4 @@ export function isSameNode(a, b) {
     return a.type === b.type && a.key === b.key;
 }
 /**
+ * 判断是否为对象
