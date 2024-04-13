@@ -7,3 +7,4 @@
  * 判断两个值是否为同一节点 (用于 Diff)
  */
 export function isSameNode(a, b) {
+    return a.type === b.type && a.key === b.key;
