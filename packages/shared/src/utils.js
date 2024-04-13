@@ -17,3 +17,4 @@ export function isObject(value) {
 }
 /**
  * 判断是否为函数
+ */
