@@ -21,3 +21,4 @@ export function isObject(value) {
 export function isFunction(value) {
     return typeof value === 'function';
 }
+/**
