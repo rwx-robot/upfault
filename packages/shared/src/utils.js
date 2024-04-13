@@ -19,3 +19,4 @@ export function isObject(value) {
  * 判断是否为函数
  */
 export function isFunction(value) {
+    return typeof value === 'function';
