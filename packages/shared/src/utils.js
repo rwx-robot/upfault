@@ -16,3 +16,4 @@ export function isObject(value) {
     return value !== null && typeof value === 'object' && !Array.isArray(value);
 }
 /**
+ * 判断是否为函数
