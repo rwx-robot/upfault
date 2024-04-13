@@ -12,3 +12,4 @@ export function isSameNode(a, b) {
 /**
  * 判断是否为对象
  */
+export function isObject(value) {
