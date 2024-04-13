@@ -22,3 +22,4 @@ export function isFunction(value) {
     return typeof value === 'function';
 }
 /**
+ * 判断是否为字符串
