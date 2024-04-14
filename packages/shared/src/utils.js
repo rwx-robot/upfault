@@ -28,3 +28,4 @@ export function isString(value) {
     return typeof value === 'string';
 }
 /**
+ * 判断是否为数字
