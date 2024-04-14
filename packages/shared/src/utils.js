@@ -37,3 +37,4 @@ export function isNumber(value) {
  * 判断是否为 Promise
  */
 export function isPromise(value) {
+    return isObject(value) && isFunction(value.then);
