@@ -36,3 +36,4 @@ export function isNumber(value) {
 /**
  * 判断是否为 Promise
  */
+export function isPromise(value) {
