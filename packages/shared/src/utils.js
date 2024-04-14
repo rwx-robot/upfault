@@ -34,3 +34,4 @@ export function isNumber(value) {
     return typeof value === 'number' && !Number.isNaN(value);
 }
 /**
+ * 判断是否为 Promise
