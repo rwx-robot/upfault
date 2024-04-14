@@ -24,3 +24,4 @@ export function isFunction(value) {
 /**
  * 判断是否为字符串
  */
+export function isString(value) {
