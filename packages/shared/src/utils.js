@@ -39,3 +39,4 @@ export function isNumber(value) {
 export function isPromise(value) {
     return isObject(value) && isFunction(value.then);
 }
+/**
