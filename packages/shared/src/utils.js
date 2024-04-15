@@ -55,3 +55,4 @@ export function isComputedRef(value) {
  * 判断是否为响应式对象
  */
 export function isReactive(value) {
+    return isObject(value) && value.__v_isReactive === true;
