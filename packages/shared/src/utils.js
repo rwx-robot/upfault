@@ -49,3 +49,4 @@ export function isRef(value) {
  * 判断是否为 ComputedRef
  */
 export function isComputedRef(value) {
+    return isObject(value) && value.__v_isComputed === true;
