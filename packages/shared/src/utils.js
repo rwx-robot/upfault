@@ -70,3 +70,4 @@ export function isVNode(value) {
     return isObject(value) && '__v_isVNode' in value;
 }
 /**
+ * 空函数
