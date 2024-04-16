@@ -66,3 +66,4 @@ export function isReadonly(value) {
 /**
  * 判断是否为 VNode
  */
+export function isVNode(value) {
