@@ -61,3 +61,4 @@ export function isReactive(value) {
  * 判断是否为只读响应式
  */
 export function isReadonly(value) {
+    return isObject(value) && value.__v_isReadonly === true;
