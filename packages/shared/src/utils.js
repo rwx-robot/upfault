@@ -80,3 +80,4 @@ export const IDENTITY = (v) => v;
 /**
  * 判断值是否变化 (用于响应式比较)
  */
+export function hasChanged(a, b) {
