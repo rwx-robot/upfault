@@ -74,3 +74,4 @@ export function isVNode(value) {
  */
 export const NOOP = () => { };
 /**
+ * 标识函数
