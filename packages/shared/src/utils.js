@@ -71,3 +71,4 @@ export function isVNode(value) {
 }
 /**
  * 空函数
+ */
