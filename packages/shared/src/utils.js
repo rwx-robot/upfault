@@ -82,3 +82,4 @@ export const IDENTITY = (v) => v;
  */
 export function hasChanged(a, b) {
     return a !== b && (a === a || b === b); // NaN 检查
+}
