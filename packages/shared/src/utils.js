@@ -103,3 +103,4 @@ export function generateId(prefix = '') {
  */
 let numericIdCounter = 0;
 export function generateNumericId() {
+    return ++numericIdCounter;
