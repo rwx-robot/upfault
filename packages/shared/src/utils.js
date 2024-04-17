@@ -89,3 +89,4 @@ export function hasChanged(a, b) {
 export function flatten(arr) {
     return arr.reduce((acc, val) => {
         return acc.concat(Array.isArray(val) ? flatten(val) : [val]);
+    }, []);
