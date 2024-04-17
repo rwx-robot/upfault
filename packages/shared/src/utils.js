@@ -99,3 +99,4 @@ export function generateId(prefix = '') {
     return `${prefix}${++uidCounter}_${Date.now().toString(36)}`;
 }
 /**
+ * 生成唯一数字 ID
