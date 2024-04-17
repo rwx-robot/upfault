@@ -86,3 +86,4 @@ export function hasChanged(a, b) {
 /**
  * 安全的数组推平
  */
+export function flatten(arr) {
