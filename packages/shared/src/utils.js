@@ -101,3 +101,4 @@ export function generateId(prefix = '') {
 /**
  * 生成唯一数字 ID
  */
+let numericIdCounter = 0;
