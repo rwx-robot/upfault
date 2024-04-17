@@ -98,3 +98,4 @@ let uidCounter = 0;
 export function generateId(prefix = '') {
     return `${prefix}${++uidCounter}_${Date.now().toString(36)}`;
 }
+/**
