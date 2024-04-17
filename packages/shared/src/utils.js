@@ -84,3 +84,4 @@ export function hasChanged(a, b) {
     return a !== b && (a === a || b === b); // NaN 检查
 }
 /**
+ * 安全的数组推平
