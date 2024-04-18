@@ -121,3 +121,4 @@ export function mergeObjects(target, source) {
  * 数组去重 (保持顺序)
  */
 export function unique(arr) {
+    return [...new Set(arr)];
