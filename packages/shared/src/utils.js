@@ -116,3 +116,4 @@ export function deepClone(obj) {
  */
 export function mergeObjects(target, source) {
     return { ...target, ...source };
+}
