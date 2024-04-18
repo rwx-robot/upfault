@@ -115,3 +115,4 @@ export function deepClone(obj) {
  * 对象浅拷贝合并
  */
 export function mergeObjects(target, source) {
+    return { ...target, ...source };
