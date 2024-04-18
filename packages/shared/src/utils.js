@@ -109,3 +109,4 @@ export function generateNumericId() {
  * 深度克隆 (仅支持 JSON 兼容类型)
  */
 export function deepClone(obj) {
+    return JSON.parse(JSON.stringify(obj));
