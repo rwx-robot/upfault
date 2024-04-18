@@ -106,3 +106,4 @@ export function generateNumericId() {
     return ++numericIdCounter;
 }
 /**
+ * 深度克隆 (仅支持 JSON 兼容类型)
