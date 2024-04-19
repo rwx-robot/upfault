@@ -142,3 +142,4 @@ export function debounce(fn, delay) {
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => fn(...args), delay);
     };
+}
