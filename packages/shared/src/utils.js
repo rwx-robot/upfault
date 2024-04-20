@@ -151,3 +151,4 @@ export function throttle(fn, limit) {
     return (...args) => {
         if (!inThrottle) {
             fn(...args);
+            inThrottle = true;
