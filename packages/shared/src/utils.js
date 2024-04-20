@@ -161,3 +161,4 @@ export function throttle(fn, limit) {
  */
 export function flattenTree(nodes, getChildren) {
     const result = [];
+    const stack = [...nodes].reverse();
