@@ -150,3 +150,4 @@ export function throttle(fn, limit) {
     let inThrottle = false;
     return (...args) => {
         if (!inThrottle) {
+            fn(...args);
