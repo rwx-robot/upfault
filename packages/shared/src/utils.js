@@ -166,3 +166,4 @@ export function flattenTree(nodes, getChildren) {
         const node = stack.pop();
         result.push(node);
         const children = getChildren(node);
+        if (children?.length) {
