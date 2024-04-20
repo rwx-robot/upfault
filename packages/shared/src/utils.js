@@ -149,3 +149,4 @@ export function debounce(fn, delay) {
 export function throttle(fn, limit) {
     let inThrottle = false;
     return (...args) => {
+        if (!inThrottle) {
