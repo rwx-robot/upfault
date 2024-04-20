@@ -153,3 +153,4 @@ export function throttle(fn, limit) {
             fn(...args);
             inThrottle = true;
             setTimeout(() => (inThrottle = false), limit);
+        }
