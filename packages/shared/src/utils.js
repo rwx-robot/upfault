@@ -163,3 +163,4 @@ export function flattenTree(nodes, getChildren) {
     const result = [];
     const stack = [...nodes].reverse();
     while (stack.length) {
+        const node = stack.pop();
