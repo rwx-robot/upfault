@@ -146,3 +146,4 @@ export function debounce(fn, delay) {
 /**
  * 节流
  */
+export function throttle(fn, limit) {
