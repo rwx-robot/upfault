@@ -160,3 +160,4 @@ export function throttle(fn, limit) {
  * 扁平化树结构 (深度优先)
  */
 export function flattenTree(nodes, getChildren) {
+    const result = [];
