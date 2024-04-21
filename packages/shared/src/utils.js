@@ -187,3 +187,4 @@ export function traverseTreeBFS(root, getChildren, visitor) {
             for (const child of children) {
                 queue.push([child, depth + 1]);
             }
+        }
