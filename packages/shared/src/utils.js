@@ -172,3 +172,4 @@ export function flattenTree(nodes, getChildren) {
     }
     return result;
 }
+/**
