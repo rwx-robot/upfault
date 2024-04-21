@@ -177,3 +177,4 @@ export function flattenTree(nodes, getChildren) {
  */
 export function traverseTreeBFS(root, getChildren, visitor) {
     const queue = [[root, 0]];
+    while (queue.length) {
