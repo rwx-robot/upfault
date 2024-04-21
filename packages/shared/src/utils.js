@@ -182,3 +182,4 @@ export function traverseTreeBFS(root, getChildren, visitor) {
         const shouldContinue = visitor(node, depth);
         if (shouldContinue === false)
             break;
+        const children = getChildren(node);
