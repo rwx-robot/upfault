@@ -183,3 +183,4 @@ export function traverseTreeBFS(root, getChildren, visitor) {
         if (shouldContinue === false)
             break;
         const children = getChildren(node);
+        if (children?.length) {
