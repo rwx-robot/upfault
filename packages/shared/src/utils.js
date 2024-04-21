@@ -170,3 +170,4 @@ export function flattenTree(nodes, getChildren) {
             stack.push(...children.reverse());
         }
     }
+    return result;
