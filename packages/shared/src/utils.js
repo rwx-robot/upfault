@@ -179,3 +179,4 @@ export function traverseTreeBFS(root, getChildren, visitor) {
     const queue = [[root, 0]];
     while (queue.length) {
         const [node, depth] = queue.shift();
+        const shouldContinue = visitor(node, depth);
