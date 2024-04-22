@@ -204,3 +204,4 @@ export class PerformanceTimer {
         this.running = true;
         return this;
     }
+    stop() {
