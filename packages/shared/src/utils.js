@@ -199,3 +199,4 @@ export class PerformanceTimer {
         this.endTime = 0;
         this.running = false;
     }
+    start() {
