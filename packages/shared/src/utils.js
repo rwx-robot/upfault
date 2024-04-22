@@ -205,3 +205,4 @@ export class PerformanceTimer {
         return this;
     }
     stop() {
+        this.endTime = performance.now();
