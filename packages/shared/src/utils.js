@@ -188,3 +188,4 @@ export function traverseTreeBFS(root, getChildren, visitor) {
                 queue.push([child, depth + 1]);
             }
         }
+    }
