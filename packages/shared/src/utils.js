@@ -193,3 +193,4 @@ export function traverseTreeBFS(root, getChildren, visitor) {
 /**
  * 性能计时器
  */
+export class PerformanceTimer {
