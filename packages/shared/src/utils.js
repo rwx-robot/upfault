@@ -197,3 +197,4 @@ export class PerformanceTimer {
     constructor() {
         this.startTime = 0;
         this.endTime = 0;
+        this.running = false;
