@@ -189,3 +189,4 @@ export function traverseTreeBFS(root, getChildren, visitor) {
             }
         }
     }
+}
