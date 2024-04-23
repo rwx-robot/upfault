@@ -230,3 +230,4 @@ export class LRUCache {
         this.cache = new Map();
         this.maxSize = maxSize;
     }
+    get(key) {
