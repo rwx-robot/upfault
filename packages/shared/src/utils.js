@@ -228,3 +228,4 @@ export class PerformanceTimer {
 export class LRUCache {
     constructor(maxSize = 100) {
         this.cache = new Map();
+        this.maxSize = maxSize;
