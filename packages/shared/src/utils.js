@@ -239,3 +239,4 @@ export class LRUCache {
         }
         return value;
     }
+    set(key, value) {
