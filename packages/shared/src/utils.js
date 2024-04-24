@@ -249,3 +249,4 @@ export class LRUCache {
             if (firstKey !== undefined) {
                 this.cache.delete(firstKey);
             }
+        }
