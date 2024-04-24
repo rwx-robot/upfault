@@ -251,3 +251,4 @@ export class LRUCache {
             }
         }
         this.cache.set(key, value);
+        return this;
