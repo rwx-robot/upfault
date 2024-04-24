@@ -245,3 +245,4 @@ export class LRUCache {
         }
         else if (this.cache.size >= this.maxSize) {
             // 删除最旧的
+            const firstKey = this.cache.keys().next().value;
