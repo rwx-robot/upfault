@@ -231,3 +231,4 @@ export class LRUCache {
         this.maxSize = maxSize;
     }
     get(key) {
+        const value = this.cache.get(key);
