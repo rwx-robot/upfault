@@ -250,3 +250,4 @@ export class LRUCache {
                 this.cache.delete(firstKey);
             }
         }
+        this.cache.set(key, value);
