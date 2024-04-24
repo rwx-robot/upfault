@@ -242,3 +242,4 @@ export class LRUCache {
     set(key, value) {
         if (this.cache.has(key)) {
             this.cache.delete(key);
+        }
