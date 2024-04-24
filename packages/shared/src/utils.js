@@ -237,3 +237,4 @@ export class LRUCache {
             this.cache.delete(key);
             this.cache.set(key, value);
         }
+        return value;
