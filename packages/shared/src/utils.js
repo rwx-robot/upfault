@@ -247,3 +247,4 @@ export class LRUCache {
             // 删除最旧的
             const firstKey = this.cache.keys().next().value;
             if (firstKey !== undefined) {
+                this.cache.delete(firstKey);
