@@ -270,3 +270,4 @@ export class LRUCache {
     }
     values() {
         return this.cache.values();
+    }
