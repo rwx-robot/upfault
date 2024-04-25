@@ -254,3 +254,4 @@ export class LRUCache {
         return this;
     }
     has(key) {
+        return this.cache.has(key);
