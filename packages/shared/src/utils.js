@@ -265,3 +265,4 @@ export class LRUCache {
     get size() {
         return this.cache.size;
     }
+    keys() {
