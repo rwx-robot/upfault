@@ -260,3 +260,4 @@ export class LRUCache {
         return this.cache.delete(key);
     }
     clear() {
+        this.cache.clear();
