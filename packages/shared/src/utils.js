@@ -258,3 +258,4 @@ export class LRUCache {
     }
     delete(key) {
         return this.cache.delete(key);
+    }
