@@ -261,3 +261,4 @@ export class LRUCache {
     }
     clear() {
         this.cache.clear();
+    }
