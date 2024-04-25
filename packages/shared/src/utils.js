@@ -268,3 +268,4 @@ export class LRUCache {
     keys() {
         return this.cache.keys();
     }
+    values() {
