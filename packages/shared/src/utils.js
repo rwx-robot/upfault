@@ -262,3 +262,4 @@ export class LRUCache {
     clear() {
         this.cache.clear();
     }
+    get size() {
