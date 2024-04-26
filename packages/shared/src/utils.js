@@ -272,3 +272,4 @@ export class LRUCache {
         return this.cache.values();
     }
     entries() {
+        return this.cache.entries();
