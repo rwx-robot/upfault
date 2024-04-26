@@ -284,3 +284,4 @@ export function isType(value, guard) {
 /**
  * 断言函数 (开发环境检查)
  */
+export function assert(condition, message) {
