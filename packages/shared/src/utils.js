@@ -287,3 +287,4 @@ export function isType(value, guard) {
 export function assert(condition, message) {
     if (!condition) {
         throw new Error(`Assertion failed: ${message ?? 'Unknown error'}`);
+    }
