@@ -282,3 +282,4 @@ export function isType(value, guard) {
     return guard(value);
 }
 /**
+ * 断言函数 (开发环境检查)
