@@ -281,3 +281,4 @@ export class LRUCache {
 export function isType(value, guard) {
     return guard(value);
 }
+/**
