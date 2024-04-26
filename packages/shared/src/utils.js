@@ -278,3 +278,4 @@ export class LRUCache {
 /**
  * 类型守卫：缩小联合类型
  */
+export function isType(value, guard) {
