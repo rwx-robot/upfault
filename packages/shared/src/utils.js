@@ -289,3 +289,4 @@ export function assert(condition, message) {
         throw new Error(`Assertion failed: ${message ?? 'Unknown error'}`);
     }
 }
+/**
