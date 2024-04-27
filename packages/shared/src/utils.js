@@ -304,3 +304,4 @@ export function error(message, ...args) {
     if (typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production') {
         console.error(`[UpFault] ${message}`, ...args);
     }
+}
