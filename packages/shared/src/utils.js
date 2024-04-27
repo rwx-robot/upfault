@@ -295,3 +295,4 @@ export function assert(condition, message) {
 export function warn(message, ...args) {
     if (typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production') {
         console.warn(`[UpFault] ${message}`, ...args);
+    }
