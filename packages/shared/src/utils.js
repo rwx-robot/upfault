@@ -301,3 +301,4 @@ export function warn(message, ...args) {
  * 开发环境错误
  */
 export function error(message, ...args) {
+    if (typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production') {
