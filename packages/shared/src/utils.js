@@ -297,3 +297,4 @@ export function warn(message, ...args) {
         console.warn(`[UpFault] ${message}`, ...args);
     }
 }
+/**
