@@ -293,3 +293,4 @@ export function assert(condition, message) {
  * 开发环境警告
  */
 export function warn(message, ...args) {
+    if (typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production') {
