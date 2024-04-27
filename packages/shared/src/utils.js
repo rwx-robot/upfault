@@ -305,3 +305,4 @@ export function error(message, ...args) {
         console.error(`[UpFault] ${message}`, ...args);
     }
 }
+//# sourceMappingURL=utils.js.map
