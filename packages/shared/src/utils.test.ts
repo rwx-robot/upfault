@@ -3,3 +3,4 @@ import {
   isSameNode,
   isObject,
   isFunction,
+  isString,
