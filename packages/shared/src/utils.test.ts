@@ -6,3 +6,4 @@ import {
   isString,
   isNumber,
   isPromise,
+  isRef,
