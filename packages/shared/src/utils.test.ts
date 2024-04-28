@@ -9,3 +9,4 @@ import {
   isRef,
   isComputedRef,
   isReactive,
+  isReadonly,
