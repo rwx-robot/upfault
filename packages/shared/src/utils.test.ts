@@ -8,3 +8,4 @@ import {
   isPromise,
   isRef,
   isComputedRef,
+  isReactive,
