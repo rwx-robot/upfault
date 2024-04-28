@@ -12,3 +12,4 @@ import {
   isReadonly,
   isVNode,
   NOOP,
+  IDENTITY,
