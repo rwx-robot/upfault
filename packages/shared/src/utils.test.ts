@@ -10,3 +10,4 @@ import {
   isComputedRef,
   isReactive,
   isReadonly,
+  isVNode,
