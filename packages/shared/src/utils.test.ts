@@ -13,3 +13,4 @@ import {
   isVNode,
   NOOP,
   IDENTITY,
+  hasChanged,
