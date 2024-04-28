@@ -11,3 +11,4 @@ import {
   isReactive,
   isReadonly,
   isVNode,
+  NOOP,
