@@ -41,3 +41,4 @@ describe('Utils', () => {
     });
 
     it('不同 key 应返回 false', () => {
+      expect(isSameNode({ type: 'div', key: 'a' }, { type: 'div', key: 'b' })).toBe(false);
