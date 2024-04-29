@@ -33,3 +33,4 @@ import {
 describe('Utils', () => {
   describe('isSameNode', () => {
     it('相同 type 和 key 应返回 true', () => {
+      expect(isSameNode({ type: 'div', key: 'a' }, { type: 'div', key: 'a' })).toBe(true);
