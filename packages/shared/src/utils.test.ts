@@ -31,3 +31,4 @@ import {
 } from './utils';
 
 describe('Utils', () => {
+  describe('isSameNode', () => {
