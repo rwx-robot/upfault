@@ -51,3 +51,4 @@ describe('Utils', () => {
   });
 
   describe('类型守卫', () => {
+    describe('isObject', () => {
