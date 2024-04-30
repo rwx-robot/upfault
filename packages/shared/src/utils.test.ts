@@ -54,3 +54,4 @@ describe('Utils', () => {
     describe('isObject', () => {
       it('对象应返回 true', () => {
         expect(isObject({})).toBe(true);
+        expect(isObject({ a: 1 })).toBe(true);
