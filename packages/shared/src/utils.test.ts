@@ -67,3 +67,4 @@ describe('Utils', () => {
     });
 
     describe('isFunction', () => {
+      it('函数应返回 true', () => {
