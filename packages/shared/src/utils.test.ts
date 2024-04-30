@@ -63,3 +63,4 @@ describe('Utils', () => {
         expect(isObject(1)).toBe(false);
         expect(isObject('str')).toBe(false);
         expect(isObject(undefined)).toBe(false);
+      });
