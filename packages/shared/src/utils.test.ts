@@ -56,3 +56,4 @@ describe('Utils', () => {
         expect(isObject({})).toBe(true);
         expect(isObject({ a: 1 })).toBe(true);
       });
+
