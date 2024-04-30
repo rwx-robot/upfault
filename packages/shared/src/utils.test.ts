@@ -61,3 +61,4 @@ describe('Utils', () => {
         expect(isObject(null)).toBe(false);
         expect(isObject([])).toBe(false);
         expect(isObject(1)).toBe(false);
+        expect(isObject('str')).toBe(false);
