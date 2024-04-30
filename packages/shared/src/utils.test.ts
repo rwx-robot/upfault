@@ -57,3 +57,4 @@ describe('Utils', () => {
         expect(isObject({ a: 1 })).toBe(true);
       });
 
+      it('null、数组、原始值应返回 false', () => {
