@@ -49,3 +49,4 @@ describe('Utils', () => {
       expect(isSameNode({ type: 'div', key: 'a' }, { type: 'div', key: null })).toBe(false);
     });
   });
+
