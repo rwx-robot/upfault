@@ -47,3 +47,4 @@ describe('Utils', () => {
     it('null key 应正确比较', () => {
       expect(isSameNode({ type: 'div', key: null }, { type: 'div', key: null })).toBe(true);
       expect(isSameNode({ type: 'div', key: 'a' }, { type: 'div', key: null })).toBe(false);
+    });
