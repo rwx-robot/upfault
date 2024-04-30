@@ -52,3 +52,4 @@ describe('Utils', () => {
 
   describe('类型守卫', () => {
     describe('isObject', () => {
+      it('对象应返回 true', () => {
