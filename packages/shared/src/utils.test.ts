@@ -65,3 +65,5 @@ describe('Utils', () => {
         expect(isObject(undefined)).toBe(false);
       });
     });
+
+    describe('isFunction', () => {
