@@ -70,3 +70,4 @@ describe('Utils', () => {
       it('函数应返回 true', () => {
         expect(isFunction(() => {})).toBe(true);
         expect(isFunction(function() {})).toBe(true);
+        expect(isFunction(class {})).toBe(true);
