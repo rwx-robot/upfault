@@ -77,3 +77,4 @@ describe('Utils', () => {
         expect(isFunction({})).toBe(false);
         expect(isFunction(null)).toBe(false);
         expect(isFunction('str')).toBe(false);
+      });
