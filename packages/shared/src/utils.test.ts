@@ -71,3 +71,4 @@ describe('Utils', () => {
         expect(isFunction(() => {})).toBe(true);
         expect(isFunction(function() {})).toBe(true);
         expect(isFunction(class {})).toBe(true);
+      });
