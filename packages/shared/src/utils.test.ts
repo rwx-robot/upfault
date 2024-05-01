@@ -72,3 +72,5 @@ describe('Utils', () => {
         expect(isFunction(function() {})).toBe(true);
         expect(isFunction(class {})).toBe(true);
       });
+
+      it('非函数应返回 false', () => {
