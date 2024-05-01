@@ -81,3 +81,4 @@ describe('Utils', () => {
     });
 
     describe('isString', () => {
+      it('字符串应返回 true', () => {
