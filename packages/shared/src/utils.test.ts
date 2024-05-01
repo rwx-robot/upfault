@@ -76,3 +76,4 @@ describe('Utils', () => {
       it('非函数应返回 false', () => {
         expect(isFunction({})).toBe(false);
         expect(isFunction(null)).toBe(false);
+        expect(isFunction('str')).toBe(false);
