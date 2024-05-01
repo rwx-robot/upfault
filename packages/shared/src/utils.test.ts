@@ -83,3 +83,4 @@ describe('Utils', () => {
     describe('isString', () => {
       it('字符串应返回 true', () => {
         expect(isString('hello')).toBe(true);
+        expect(isString('')).toBe(true);
