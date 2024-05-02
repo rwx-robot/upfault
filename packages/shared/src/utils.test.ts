@@ -91,3 +91,5 @@ describe('Utils', () => {
         expect(isString(null)).toBe(false);
       });
     });
+
+    describe('isNumber', () => {
