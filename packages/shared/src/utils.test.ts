@@ -104,3 +104,4 @@ describe('Utils', () => {
         expect(isNumber(NaN)).toBe(false);
       });
 
+      it('非数字应返回 false', () => {
