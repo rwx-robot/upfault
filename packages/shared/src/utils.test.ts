@@ -108,3 +108,4 @@ describe('Utils', () => {
         expect(isNumber('1')).toBe(false);
         expect(isNumber(null)).toBe(false);
       });
+    });
