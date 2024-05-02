@@ -107,3 +107,4 @@ describe('Utils', () => {
       it('非数字应返回 false', () => {
         expect(isNumber('1')).toBe(false);
         expect(isNumber(null)).toBe(false);
+      });
