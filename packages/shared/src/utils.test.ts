@@ -96,3 +96,4 @@ describe('Utils', () => {
       it('数字应返回 true', () => {
         expect(isNumber(1)).toBe(true);
         expect(isNumber(0)).toBe(true);
+        expect(isNumber(-1)).toBe(true);
