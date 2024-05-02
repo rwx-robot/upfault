@@ -93,3 +93,4 @@ describe('Utils', () => {
     });
 
     describe('isNumber', () => {
+      it('数字应返回 true', () => {
