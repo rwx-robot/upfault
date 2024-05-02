@@ -94,3 +94,4 @@ describe('Utils', () => {
 
     describe('isNumber', () => {
       it('数字应返回 true', () => {
+        expect(isNumber(1)).toBe(true);
