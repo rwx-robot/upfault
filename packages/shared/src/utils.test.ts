@@ -99,3 +99,5 @@ describe('Utils', () => {
         expect(isNumber(-1)).toBe(true);
         expect(isNumber(1.5)).toBe(true);
       });
+
+      it('NaN 应返回 false', () => {
