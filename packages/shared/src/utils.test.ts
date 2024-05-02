@@ -98,3 +98,4 @@ describe('Utils', () => {
         expect(isNumber(0)).toBe(true);
         expect(isNumber(-1)).toBe(true);
         expect(isNumber(1.5)).toBe(true);
+      });
