@@ -89,3 +89,4 @@ describe('Utils', () => {
       it('非字符串应返回 false', () => {
         expect(isString(1)).toBe(false);
         expect(isString(null)).toBe(false);
+      });
