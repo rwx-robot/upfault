@@ -114,3 +114,4 @@ describe('Utils', () => {
       it('Promise 应返回 true', () => {
         expect(isPromise(Promise.resolve())).toBe(true);
         expect(isPromise(new Promise(() => {}))).toBe(true);
+        expect(isPromise({ then: () => {} })).toBe(true); // thenable
