@@ -112,3 +112,4 @@ describe('Utils', () => {
 
     describe('isPromise', () => {
       it('Promise 应返回 true', () => {
+        expect(isPromise(Promise.resolve())).toBe(true);
