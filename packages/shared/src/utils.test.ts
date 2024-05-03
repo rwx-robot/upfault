@@ -115,3 +115,4 @@ describe('Utils', () => {
         expect(isPromise(Promise.resolve())).toBe(true);
         expect(isPromise(new Promise(() => {}))).toBe(true);
         expect(isPromise({ then: () => {} })).toBe(true); // thenable
+      });
