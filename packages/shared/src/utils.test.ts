@@ -109,3 +109,4 @@ describe('Utils', () => {
         expect(isNumber(null)).toBe(false);
       });
     });
+
