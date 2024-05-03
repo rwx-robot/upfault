@@ -116,3 +116,5 @@ describe('Utils', () => {
         expect(isPromise(new Promise(() => {}))).toBe(true);
         expect(isPromise({ then: () => {} })).toBe(true); // thenable
       });
+
+      it('非 Promise 应返回 false', () => {
