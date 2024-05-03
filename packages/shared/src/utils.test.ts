@@ -122,3 +122,4 @@ describe('Utils', () => {
         expect(isPromise(null)).toBe(false);
         expect(isPromise(1)).toBe(false);
       });
+    });
