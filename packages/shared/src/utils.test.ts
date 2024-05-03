@@ -111,3 +111,4 @@ describe('Utils', () => {
     });
 
     describe('isPromise', () => {
+      it('Promise 应返回 true', () => {
