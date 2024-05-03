@@ -128,3 +128,4 @@ describe('Utils', () => {
       it('应正确识别标记对象', () => {
         expect(isRef({ __v_isRef: true })).toBe(true);
         expect(isComputedRef({ __v_isComputed: true })).toBe(true);
+        expect(isReactive({ __v_isReactive: true })).toBe(true);
