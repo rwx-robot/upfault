@@ -124,3 +124,4 @@ describe('Utils', () => {
       });
     });
 
+    describe('isRef / isComputedRef / isReactive / isReadonly / isVNode', () => {
