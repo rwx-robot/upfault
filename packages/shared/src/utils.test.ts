@@ -125,3 +125,4 @@ describe('Utils', () => {
     });
 
     describe('isRef / isComputedRef / isReactive / isReadonly / isVNode', () => {
+      it('应正确识别标记对象', () => {
