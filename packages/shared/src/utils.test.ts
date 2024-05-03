@@ -119,3 +119,4 @@ describe('Utils', () => {
 
       it('非 Promise 应返回 false', () => {
         expect(isPromise({})).toBe(false);
+        expect(isPromise(null)).toBe(false);
