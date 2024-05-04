@@ -150,3 +150,4 @@ describe('Utils', () => {
 
     it('IDENTITY 应返回原值', () => {
       expect(IDENTITY(1)).toBe(1);
+      expect(IDENTITY('test')).toBe('test');
