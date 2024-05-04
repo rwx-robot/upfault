@@ -144,3 +144,4 @@ describe('Utils', () => {
   });
 
   describe('NOOP / IDENTITY', () => {
+    it('NOOP 应不抛出错误', () => {
