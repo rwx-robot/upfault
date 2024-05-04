@@ -138,3 +138,4 @@ describe('Utils', () => {
         expect(isComputedRef({})).toBe(false);
         expect(isReactive({})).toBe(false);
         expect(isReadonly({})).toBe(false);
+        expect(isVNode({})).toBe(false);
