@@ -140,3 +140,4 @@ describe('Utils', () => {
         expect(isReadonly({})).toBe(false);
         expect(isVNode({})).toBe(false);
       });
+    });
