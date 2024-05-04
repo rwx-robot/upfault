@@ -132,3 +132,5 @@ describe('Utils', () => {
         expect(isReadonly({ __v_isReadonly: true })).toBe(true);
         expect(isVNode({ __v_isVNode: true })).toBe(true);
       });
+
+      it('未标记对象应返回 false', () => {
