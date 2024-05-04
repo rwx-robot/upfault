@@ -135,3 +135,4 @@ describe('Utils', () => {
 
       it('未标记对象应返回 false', () => {
         expect(isRef({})).toBe(false);
+        expect(isComputedRef({})).toBe(false);
