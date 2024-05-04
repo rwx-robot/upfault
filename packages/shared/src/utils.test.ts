@@ -147,3 +147,5 @@ describe('Utils', () => {
     it('NOOP 应不抛出错误', () => {
       expect(() => NOOP()).not.toThrow();
     });
+
+    it('IDENTITY 应返回原值', () => {
