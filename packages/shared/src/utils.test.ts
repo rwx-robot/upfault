@@ -139,3 +139,4 @@ describe('Utils', () => {
         expect(isReactive({})).toBe(false);
         expect(isReadonly({})).toBe(false);
         expect(isVNode({})).toBe(false);
+      });
