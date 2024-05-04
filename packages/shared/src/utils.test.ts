@@ -137,3 +137,4 @@ describe('Utils', () => {
         expect(isRef({})).toBe(false);
         expect(isComputedRef({})).toBe(false);
         expect(isReactive({})).toBe(false);
+        expect(isReadonly({})).toBe(false);
