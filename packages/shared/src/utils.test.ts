@@ -142,3 +142,5 @@ describe('Utils', () => {
       });
     });
   });
+
+  describe('NOOP / IDENTITY', () => {
