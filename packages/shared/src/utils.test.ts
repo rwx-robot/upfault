@@ -141,3 +141,4 @@ describe('Utils', () => {
         expect(isVNode({})).toBe(false);
       });
     });
+  });
