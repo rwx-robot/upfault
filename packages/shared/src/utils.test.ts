@@ -153,3 +153,4 @@ describe('Utils', () => {
       expect(IDENTITY('test')).toBe('test');
       expect(IDENTITY({ a: 1 })).toEqual({ a: 1 });
     });
+  });
