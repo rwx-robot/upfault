@@ -154,3 +154,5 @@ describe('Utils', () => {
       expect(IDENTITY({ a: 1 })).toEqual({ a: 1 });
     });
   });
+
+  describe('hasChanged', () => {
