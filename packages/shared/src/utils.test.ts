@@ -167,3 +167,4 @@ describe('Utils', () => {
       expect(hasChanged('a', 'a')).toBe(false);
       const obj = {};
       expect(hasChanged(obj, obj)).toBe(false); // 同引用
+    });
