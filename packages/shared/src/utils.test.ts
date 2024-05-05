@@ -156,3 +156,4 @@ describe('Utils', () => {
   });
 
   describe('hasChanged', () => {
+    it('不同值返回 true', () => {
