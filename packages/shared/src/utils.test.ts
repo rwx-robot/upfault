@@ -162,3 +162,4 @@ describe('Utils', () => {
       expect(hasChanged({}, {})).toBe(true); // 不同引用
     });
 
+    it('相同值返回 false', () => {
