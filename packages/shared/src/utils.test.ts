@@ -172,3 +172,4 @@ describe('Utils', () => {
     it('NaN 视为相同', () => {
       expect(hasChanged(NaN, NaN)).toBe(false);
     });
+  });
