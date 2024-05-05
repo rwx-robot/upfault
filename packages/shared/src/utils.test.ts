@@ -168,3 +168,5 @@ describe('Utils', () => {
       const obj = {};
       expect(hasChanged(obj, obj)).toBe(false); // 同引用
     });
+
+    it('NaN 视为相同', () => {
