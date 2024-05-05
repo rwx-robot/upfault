@@ -160,3 +160,4 @@ describe('Utils', () => {
       expect(hasChanged(1, 2)).toBe(true);
       expect(hasChanged('a', 'b')).toBe(true);
       expect(hasChanged({}, {})).toBe(true); // 不同引用
+    });
