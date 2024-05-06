@@ -173,3 +173,5 @@ describe('Utils', () => {
       expect(hasChanged(NaN, NaN)).toBe(false);
     });
   });
+
+  describe('flatten', () => {
