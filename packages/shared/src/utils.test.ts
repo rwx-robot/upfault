@@ -175,3 +175,4 @@ describe('Utils', () => {
   });
 
   describe('flatten', () => {
+    it('应扁平化嵌套数组', () => {
