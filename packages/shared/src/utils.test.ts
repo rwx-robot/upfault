@@ -189,3 +189,4 @@ describe('Utils', () => {
       const id2 = generateId('test');
       expect(id1).not.toBe(id2);
       expect(id1).toMatch(/^test\d+_/);
+    });
