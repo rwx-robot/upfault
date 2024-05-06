@@ -176,3 +176,4 @@ describe('Utils', () => {
 
   describe('flatten', () => {
     it('应扁平化嵌套数组', () => {
+      expect(flatten([1, [2, 3], 4])).toEqual([1, 2, 3, 4]);
