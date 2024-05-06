@@ -187,3 +187,4 @@ describe('Utils', () => {
     it('应生成唯一字符串', () => {
       const id1 = generateId('test');
       const id2 = generateId('test');
+      expect(id1).not.toBe(id2);
