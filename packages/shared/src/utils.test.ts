@@ -181,3 +181,4 @@ describe('Utils', () => {
       expect(flatten([1, 2, 3])).toEqual([1, 2, 3]);
       expect(flatten([])).toEqual([]);
     });
+  });
