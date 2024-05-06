@@ -185,3 +185,4 @@ describe('Utils', () => {
 
   describe('generateId', () => {
     it('应生成唯一字符串', () => {
+      const id1 = generateId('test');
