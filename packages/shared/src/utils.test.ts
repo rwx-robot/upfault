@@ -203,3 +203,4 @@ describe('Utils', () => {
   describe('deepClone', () => {
     it('应深度克隆对象', () => {
       const original = { a: 1, b: { c: 2 }, d: [3, 4] };
+      const cloned = deepClone(original);
