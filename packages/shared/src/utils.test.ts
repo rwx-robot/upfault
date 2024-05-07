@@ -196,3 +196,4 @@ describe('Utils', () => {
     it('应生成单调递增数字', () => {
       const id1 = generateNumericId();
       const id2 = generateNumericId();
+      expect(id2).toBe(id1 + 1);
