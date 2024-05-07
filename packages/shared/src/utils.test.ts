@@ -208,3 +208,4 @@ describe('Utils', () => {
       expect(cloned).toEqual(original);
       expect(cloned).not.toBe(original);
       expect(cloned.b).not.toBe(original.b);
+      expect(cloned.d).not.toBe(original.d);
