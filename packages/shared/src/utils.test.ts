@@ -205,3 +205,4 @@ describe('Utils', () => {
       const original = { a: 1, b: { c: 2 }, d: [3, 4] };
       const cloned = deepClone(original);
       
+      expect(cloned).toEqual(original);
