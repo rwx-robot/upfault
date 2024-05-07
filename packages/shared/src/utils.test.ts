@@ -206,3 +206,4 @@ describe('Utils', () => {
       const cloned = deepClone(original);
       
       expect(cloned).toEqual(original);
+      expect(cloned).not.toBe(original);
