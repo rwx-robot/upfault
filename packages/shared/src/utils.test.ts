@@ -213,3 +213,4 @@ describe('Utils', () => {
 
     it('应处理基本类型', () => {
       expect(deepClone(1)).toBe(1);
+      expect(deepClone('str')).toBe('str');
