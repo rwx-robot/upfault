@@ -198,3 +198,4 @@ describe('Utils', () => {
       const id2 = generateNumericId();
       expect(id2).toBe(id1 + 1);
     });
+  });
