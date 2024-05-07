@@ -210,3 +210,5 @@ describe('Utils', () => {
       expect(cloned.b).not.toBe(original.b);
       expect(cloned.d).not.toBe(original.d);
     });
+
+    it('应处理基本类型', () => {
