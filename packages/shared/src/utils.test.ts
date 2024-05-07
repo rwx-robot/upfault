@@ -216,3 +216,4 @@ describe('Utils', () => {
       expect(deepClone('str')).toBe('str');
       expect(deepClone(null)).toBe(null);
     });
+  });
