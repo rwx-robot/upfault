@@ -194,3 +194,4 @@ describe('Utils', () => {
 
   describe('generateNumericId', () => {
     it('应生成单调递增数字', () => {
+      const id1 = generateNumericId();
