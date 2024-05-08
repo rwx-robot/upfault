@@ -224,3 +224,4 @@ describe('Utils', () => {
       const source = { b: 3, c: 4 };
       const result = mergeObjects(target, source);
       
+      expect(result).toEqual({ a: 1, b: 3, c: 4 });
