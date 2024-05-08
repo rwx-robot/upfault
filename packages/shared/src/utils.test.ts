@@ -217,3 +217,5 @@ describe('Utils', () => {
       expect(deepClone(null)).toBe(null);
     });
   });
+
+  describe('mergeObjects', () => {
