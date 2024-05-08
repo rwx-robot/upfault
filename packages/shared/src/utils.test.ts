@@ -228,3 +228,5 @@ describe('Utils', () => {
       expect(target).toEqual({ a: 1, b: 2 }); // 不修改原对象
     });
   });
+
+  describe('unique', () => {
