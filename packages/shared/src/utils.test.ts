@@ -230,3 +230,4 @@ describe('Utils', () => {
   });
 
   describe('unique', () => {
+    it('应去重并保持顺序', () => {
