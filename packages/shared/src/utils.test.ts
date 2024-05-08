@@ -219,3 +219,4 @@ describe('Utils', () => {
   });
 
   describe('mergeObjects', () => {
+    it('应合并对象', () => {
