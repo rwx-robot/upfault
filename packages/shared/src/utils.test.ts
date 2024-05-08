@@ -237,3 +237,4 @@ describe('Utils', () => {
   });
 
   describe('chunk', () => {
+    it('应按大小分块', () => {
