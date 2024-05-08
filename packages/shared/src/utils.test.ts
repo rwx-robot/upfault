@@ -226,3 +226,4 @@ describe('Utils', () => {
       
       expect(result).toEqual({ a: 1, b: 3, c: 4 });
       expect(target).toEqual({ a: 1, b: 2 }); // 不修改原对象
+    });
