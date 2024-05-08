@@ -220,3 +220,4 @@ describe('Utils', () => {
 
   describe('mergeObjects', () => {
     it('应合并对象', () => {
+      const target = { a: 1, b: 2 };
