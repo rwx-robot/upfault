@@ -231,3 +231,4 @@ describe('Utils', () => {
 
   describe('unique', () => {
     it('应去重并保持顺序', () => {
+      expect(unique([1, 2, 2, 3, 1, 4])).toEqual([1, 2, 3, 4]);
