@@ -234,3 +234,4 @@ describe('Utils', () => {
       expect(unique([1, 2, 2, 3, 1, 4])).toEqual([1, 2, 3, 4]);
       expect(unique(['a', 'b', 'a', 'c'])).toEqual(['a', 'b', 'c']);
     });
+  });
