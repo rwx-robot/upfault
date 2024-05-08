@@ -235,3 +235,5 @@ describe('Utils', () => {
       expect(unique(['a', 'b', 'a', 'c'])).toEqual(['a', 'b', 'c']);
     });
   });
+
+  describe('chunk', () => {
