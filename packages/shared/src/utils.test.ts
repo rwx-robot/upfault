@@ -243,3 +243,5 @@ describe('Utils', () => {
       expect(chunk([], 2)).toEqual([]);
     });
   });
+
+  describe('debounce', () => {
