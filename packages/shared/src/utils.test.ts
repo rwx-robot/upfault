@@ -241,3 +241,4 @@ describe('Utils', () => {
       expect(chunk([1, 2, 3, 4, 5], 2)).toEqual([[1, 2], [3, 4], [5]]);
       expect(chunk([1, 2, 3], 3)).toEqual([[1, 2, 3]]);
       expect(chunk([], 2)).toEqual([]);
+    });
