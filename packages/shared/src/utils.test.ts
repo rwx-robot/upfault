@@ -257,3 +257,4 @@ describe('Utils', () => {
       await new Promise(r => setTimeout(r, 60));
       expect(count).toBe(1);
     });
+  });
