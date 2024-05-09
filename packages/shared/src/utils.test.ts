@@ -249,3 +249,4 @@ describe('Utils', () => {
       let count = 0;
       const fn = debounce(() => count++, 50);
       
+      fn();
