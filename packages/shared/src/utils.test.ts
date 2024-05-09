@@ -252,3 +252,4 @@ describe('Utils', () => {
       fn();
       fn();
       fn();
+      expect(count).toBe(0);
