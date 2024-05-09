@@ -247,3 +247,4 @@ describe('Utils', () => {
   describe('debounce', () => {
     it('应在延迟后执行', async () => {
       let count = 0;
+      const fn = debounce(() => count++, 50);
