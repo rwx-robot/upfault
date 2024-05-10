@@ -275,3 +275,4 @@ describe('Utils', () => {
     });
   });
 
+  describe('flattenTree', () => {
