@@ -258,3 +258,5 @@ describe('Utils', () => {
       expect(count).toBe(1);
     });
   });
+
+  describe('throttle', () => {
