@@ -269,3 +269,4 @@ describe('Utils', () => {
       fn();
       expect(count).toBe(1);
       
+      await new Promise(r => setTimeout(r, 60));
