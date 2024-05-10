@@ -263,3 +263,4 @@ describe('Utils', () => {
     it('应限制执行频率', async () => {
       let count = 0;
       const fn = throttle(() => count++, 50);
+      
