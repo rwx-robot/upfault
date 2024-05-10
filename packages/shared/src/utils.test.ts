@@ -266,3 +266,4 @@ describe('Utils', () => {
       
       fn();
       fn();
+      fn();
