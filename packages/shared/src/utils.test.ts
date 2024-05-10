@@ -260,3 +260,4 @@ describe('Utils', () => {
   });
 
   describe('throttle', () => {
+    it('应限制执行频率', async () => {
