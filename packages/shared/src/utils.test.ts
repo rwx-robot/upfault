@@ -273,3 +273,4 @@ describe('Utils', () => {
       fn();
       expect(count).toBe(2);
     });
+  });
