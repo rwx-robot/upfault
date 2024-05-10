@@ -278,3 +278,4 @@ describe('Utils', () => {
   describe('flattenTree', () => {
     it('应深度优先扁平化树', () => {
       const tree = [
+        { id: 1, children: [{ id: 2 }, { id: 3, children: [{ id: 4 }] }] },
