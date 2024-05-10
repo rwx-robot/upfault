@@ -264,3 +264,4 @@ describe('Utils', () => {
       let count = 0;
       const fn = throttle(() => count++, 50);
       
+      fn();
