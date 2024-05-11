@@ -299,3 +299,5 @@ describe('Utils', () => {
       
       expect(visited).toEqual([1, 2, 3, 4]);
     });
+
+    it('visitor 返回 false 应停止遍历', () => {
