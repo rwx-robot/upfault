@@ -282,3 +282,4 @@ describe('Utils', () => {
         { id: 5 },
       ];
       
+      const result = flattenTree(tree, n => n.children);
