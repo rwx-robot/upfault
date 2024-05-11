@@ -283,3 +283,4 @@ describe('Utils', () => {
       ];
       
       const result = flattenTree(tree, n => n.children);
+      expect(result.map(n => n.id)).toEqual([1, 2, 3, 4, 5]);
