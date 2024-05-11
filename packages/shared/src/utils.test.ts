@@ -295,3 +295,4 @@ describe('Utils', () => {
       traverseTreeBFS(tree, n => n.children, (n, depth) => {
         visited.push(n.id);
         expect(depth).toBeDefined();
+      });
