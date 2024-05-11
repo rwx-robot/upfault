@@ -298,3 +298,4 @@ describe('Utils', () => {
       });
       
       expect(visited).toEqual([1, 2, 3, 4]);
+    });
