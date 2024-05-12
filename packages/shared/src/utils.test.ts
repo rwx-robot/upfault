@@ -314,3 +314,4 @@ describe('Utils', () => {
   });
 
   describe('PerformanceTimer', () => {
+    it('应正确计时', () => {
