@@ -309,3 +309,4 @@ describe('Utils', () => {
         return n.id !== 2; // 遇到 2 停止
       });
       
+      expect(visited).toEqual([1, 2]);
