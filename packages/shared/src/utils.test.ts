@@ -302,3 +302,4 @@ describe('Utils', () => {
 
     it('visitor 返回 false 应停止遍历', () => {
       const tree = { id: 1, children: [{ id: 2 }, { id: 3 }] };
+      const visited: number[] = [];
