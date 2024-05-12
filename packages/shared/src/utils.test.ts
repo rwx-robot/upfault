@@ -315,3 +315,4 @@ describe('Utils', () => {
 
   describe('PerformanceTimer', () => {
     it('应正确计时', () => {
+      const timer = new PerformanceTimer();
