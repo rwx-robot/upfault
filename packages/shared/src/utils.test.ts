@@ -318,3 +318,4 @@ describe('Utils', () => {
       const timer = new PerformanceTimer();
       timer.start();
       
+      // 等待一小段时间 - 使用 setTimeout 更可靠
