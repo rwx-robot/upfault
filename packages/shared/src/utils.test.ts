@@ -323,3 +323,4 @@ describe('Utils', () => {
       while (Date.now() - start < 20) {}
       
       const elapsed = timer.stop();
+      expect(elapsed).toBeGreaterThanOrEqual(15);
