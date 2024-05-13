@@ -334,3 +334,4 @@ describe('Utils', () => {
       
       expect(timer.elapsed).toBe(0);
     });
+  });
