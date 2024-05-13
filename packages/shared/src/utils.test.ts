@@ -345,3 +345,4 @@ describe('Utils', () => {
       
       expect(cache.get('a')).toBe(1);
       expect(cache.get('b')).toBe(2);
+      expect(cache.get('c')).toBeUndefined();
