@@ -327,3 +327,4 @@ describe('Utils', () => {
       expect(elapsed).toBeLessThan(100); // 允许误差
     });
 
+    it('reset 应重置状态', () => {
