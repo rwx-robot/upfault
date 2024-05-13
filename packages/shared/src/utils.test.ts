@@ -338,3 +338,4 @@ describe('Utils', () => {
 
   describe('LRUCache', () => {
     it('应存储和获取值', () => {
+      const cache = new LRUCache<string, number>(3);
