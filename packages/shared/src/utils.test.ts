@@ -333,3 +333,4 @@ describe('Utils', () => {
       timer.reset();
       
       expect(timer.elapsed).toBe(0);
+    });
