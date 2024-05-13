@@ -330,3 +330,4 @@ describe('Utils', () => {
     it('reset 应重置状态', () => {
       const timer = new PerformanceTimer();
       timer.start();
+      timer.reset();
