@@ -331,3 +331,4 @@ describe('Utils', () => {
       const timer = new PerformanceTimer();
       timer.start();
       timer.reset();
+      
