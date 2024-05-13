@@ -344,3 +344,4 @@ describe('Utils', () => {
       cache.set('b', 2);
       
       expect(cache.get('a')).toBe(1);
+      expect(cache.get('b')).toBe(2);
