@@ -365,3 +365,4 @@ describe('Utils', () => {
       
       cache.set('a', 1);
       cache.set('b', 2);
+      cache.get('a'); // 'a' 变为最近使用
