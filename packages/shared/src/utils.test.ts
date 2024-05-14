@@ -347,3 +347,5 @@ describe('Utils', () => {
       expect(cache.get('b')).toBe(2);
       expect(cache.get('c')).toBeUndefined();
     });
+
+    it('应淘汰最久未使用', () => {
