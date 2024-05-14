@@ -359,3 +359,5 @@ describe('Utils', () => {
       expect(cache.get('b')).toBe(2);
       expect(cache.get('c')).toBe(3);
     });
+
+    it('获取值应更新为最近使用', () => {
