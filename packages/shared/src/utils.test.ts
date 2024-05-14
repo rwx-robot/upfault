@@ -349,3 +349,4 @@ describe('Utils', () => {
     });
 
     it('应淘汰最久未使用', () => {
+      const cache = new LRUCache<string, number>(2);
