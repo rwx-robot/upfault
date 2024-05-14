@@ -355,3 +355,4 @@ describe('Utils', () => {
       cache.set('b', 2);
       cache.set('c', 3); // 'a' 被淘汰
       
+      expect(cache.get('a')).toBeUndefined();
