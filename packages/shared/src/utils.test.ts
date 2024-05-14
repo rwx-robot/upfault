@@ -364,3 +364,4 @@ describe('Utils', () => {
       const cache = new LRUCache<string, number>(2);
       
       cache.set('a', 1);
+      cache.set('b', 2);
