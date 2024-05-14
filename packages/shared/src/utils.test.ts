@@ -362,3 +362,4 @@ describe('Utils', () => {
 
     it('获取值应更新为最近使用', () => {
       const cache = new LRUCache<string, number>(2);
+      
