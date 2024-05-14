@@ -353,3 +353,4 @@ describe('Utils', () => {
       
       cache.set('a', 1);
       cache.set('b', 2);
+      cache.set('c', 3); // 'a' 被淘汰
