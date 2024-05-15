@@ -378,3 +378,4 @@ describe('Utils', () => {
     it('真值不抛出', () => {
       expect(() => assert(true)).not.toThrow();
       expect(() => assert(1)).not.toThrow();
+      expect(() => assert('non-empty')).not.toThrow();
