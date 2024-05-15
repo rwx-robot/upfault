@@ -385,3 +385,4 @@ describe('Utils', () => {
       expect(() => assert(false)).toThrow('Assertion failed');
       expect(() => assert(0)).toThrow();
       expect(() => assert('')).toThrow();
+      expect(() => assert(null)).toThrow();
