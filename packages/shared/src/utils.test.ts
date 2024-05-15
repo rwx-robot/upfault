@@ -379,3 +379,4 @@ describe('Utils', () => {
       expect(() => assert(true)).not.toThrow();
       expect(() => assert(1)).not.toThrow();
       expect(() => assert('non-empty')).not.toThrow();
+    });
