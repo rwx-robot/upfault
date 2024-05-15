@@ -370,3 +370,4 @@ describe('Utils', () => {
       
       expect(cache.get('a')).toBe(1);
       expect(cache.get('b')).toBeUndefined();
+      expect(cache.get('c')).toBe(3);
