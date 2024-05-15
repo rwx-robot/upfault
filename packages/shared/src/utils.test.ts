@@ -373,3 +373,4 @@ describe('Utils', () => {
       expect(cache.get('c')).toBe(3);
     });
   });
+
