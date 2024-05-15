@@ -368,3 +368,4 @@ describe('Utils', () => {
       cache.get('a'); // 'a' 变为最近使用
       cache.set('c', 3); // 'b' 被淘汰
       
+      expect(cache.get('a')).toBe(1);
