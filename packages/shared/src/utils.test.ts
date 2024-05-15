@@ -380,3 +380,5 @@ describe('Utils', () => {
       expect(() => assert(1)).not.toThrow();
       expect(() => assert('non-empty')).not.toThrow();
     });
+
+    it('假值抛出错误', () => {
