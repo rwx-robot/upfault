@@ -382,3 +382,4 @@ describe('Utils', () => {
     });
 
     it('假值抛出错误', () => {
+      expect(() => assert(false)).toThrow('Assertion failed');
