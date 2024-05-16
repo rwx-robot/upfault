@@ -390,3 +390,4 @@ describe('Utils', () => {
 
     it('自定义消息', () => {
       expect(() => assert(false, 'custom message')).toThrow('custom message');
+    });
