@@ -10,3 +10,5 @@
 export function isSameNode(a: VNodeLike, b: VNodeLike): boolean {
   return a.type === b.type && a.key === b.key;
 }
+
+/**
