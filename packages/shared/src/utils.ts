@@ -13,3 +13,4 @@ export function isSameNode(a: VNodeLike, b: VNodeLike): boolean {
 
 /**
  * 判断是否为对象
+ */
