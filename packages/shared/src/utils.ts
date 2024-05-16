@@ -8,3 +8,4 @@
  * 判断两个值是否为同一节点 (用于 Diff)
  */
 export function isSameNode(a: VNodeLike, b: VNodeLike): boolean {
+  return a.type === b.type && a.key === b.key;
