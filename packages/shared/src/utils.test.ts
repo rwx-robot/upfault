@@ -387,3 +387,5 @@ describe('Utils', () => {
       expect(() => assert('')).toThrow();
       expect(() => assert(null)).toThrow();
     });
+
+    it('自定义消息', () => {
