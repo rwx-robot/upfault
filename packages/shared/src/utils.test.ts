@@ -392,3 +392,4 @@ describe('Utils', () => {
       expect(() => assert(false, 'custom message')).toThrow('custom message');
     });
   });
+});
