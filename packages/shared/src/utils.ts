@@ -31,3 +31,4 @@ export function isFunction(value: unknown): value is Function {
 export function isString(value: unknown): value is string {
   return typeof value === 'string';
 }
+
