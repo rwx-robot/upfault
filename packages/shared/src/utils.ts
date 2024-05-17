@@ -26,3 +26,4 @@ export function isFunction(value: unknown): value is Function {
 }
 
 /**
+ * 判断是否为字符串
