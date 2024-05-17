@@ -20,3 +20,4 @@ export function isObject(value: unknown): value is Record<string, unknown> {
 
 /**
  * 判断是否为函数
+ */
