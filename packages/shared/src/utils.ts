@@ -29,3 +29,4 @@ export function isFunction(value: unknown): value is Function {
  * 判断是否为字符串
  */
 export function isString(value: unknown): value is string {
+  return typeof value === 'string';
