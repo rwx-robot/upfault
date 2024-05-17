@@ -24,3 +24,4 @@ export function isObject(value: unknown): value is Record<string, unknown> {
 export function isFunction(value: unknown): value is Function {
   return typeof value === 'function';
 }
+
