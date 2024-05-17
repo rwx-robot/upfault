@@ -22,3 +22,4 @@ export function isObject(value: unknown): value is Record<string, unknown> {
  * 判断是否为函数
  */
 export function isFunction(value: unknown): value is Function {
+  return typeof value === 'function';
