@@ -33,3 +33,4 @@ export function isString(value: unknown): value is string {
 }
 
 /**
+ * 判断是否为数字
