@@ -50,3 +50,4 @@ export function isPromise<T>(value: unknown): value is Promise<T> {
  * 判断是否为 Ref
  */
 export function isRef<T>(value: unknown): value is Ref<T> {
+  return isObject(value) && (value as any).__v_isRef === true;
