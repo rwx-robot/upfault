@@ -43,3 +43,4 @@ export function isNumber(value: unknown): value is number {
  * 判断是否为 Promise
  */
 export function isPromise<T>(value: unknown): value is Promise<T> {
+  return isObject(value) && isFunction((value as any).then);
