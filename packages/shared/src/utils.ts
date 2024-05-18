@@ -36,3 +36,4 @@ export function isString(value: unknown): value is string {
  * 判断是否为数字
  */
 export function isNumber(value: unknown): value is number {
+  return typeof value === 'number' && !Number.isNaN(value);
