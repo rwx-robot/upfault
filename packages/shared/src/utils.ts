@@ -71,3 +71,4 @@ export function isReactive(value: unknown): value is Reactive<Record<string, unk
  * 判断是否为只读响应式
  */
 export function isReadonly(value: unknown): boolean {
+  return isObject(value) && (value as any).__v_isReadonly === true;
