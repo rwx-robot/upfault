@@ -78,3 +78,4 @@ export function isReadonly(value: unknown): boolean {
  * 判断是否为 VNode
  */
 export function isVNode(value: unknown): value is VNode {
+  return isObject(value) && '__v_isVNode' in value;
