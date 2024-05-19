@@ -65,3 +65,4 @@ export function isComputedRef<T>(value: unknown): value is ComputedRef<T> {
  */
 export function isReactive(value: unknown): value is Reactive<Record<string, unknown>> {
   return isObject(value) && (value as any).__v_isReactive === true;
+}
