@@ -64,3 +64,4 @@ export function isComputedRef<T>(value: unknown): value is ComputedRef<T> {
  * 判断是否为响应式对象
  */
 export function isReactive(value: unknown): value is Reactive<Record<string, unknown>> {
+  return isObject(value) && (value as any).__v_isReactive === true;
