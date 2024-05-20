@@ -87,3 +87,4 @@ export function isVNode(value: unknown): value is VNode {
 export const NOOP = (): void => {};
 
 /**
+ * 标识函数
