@@ -89,3 +89,4 @@ export const NOOP = (): void => {};
 /**
  * 标识函数
  */
+export const IDENTITY = <T>(v: T) => v;
