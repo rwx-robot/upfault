@@ -97,3 +97,5 @@ export const IDENTITY = <T>(v: T) => v;
 export function hasChanged(a: unknown, b: unknown): boolean {
   return a !== b && (a === a || b === b); // NaN 检查
 }
+
+/**
