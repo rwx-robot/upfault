@@ -83,3 +83,4 @@ export function isVNode(value: unknown): value is VNode {
 
 /**
  * 空函数
+ */
