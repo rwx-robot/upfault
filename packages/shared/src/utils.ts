@@ -81,3 +81,4 @@ export function isVNode(value: unknown): value is VNode {
   return isObject(value) && '__v_isVNode' in value;
 }
 
+/**
