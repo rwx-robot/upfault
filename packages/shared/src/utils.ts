@@ -108,3 +108,4 @@ export function flatten<T>(arr: (T | T[])[]): T[] {
 }
 
 /**
+ * 生成唯一 ID (单调递增)
