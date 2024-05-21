@@ -113,3 +113,4 @@ export function flatten<T>(arr: (T | T[])[]): T[] {
 let uidCounter = 0;
 export function generateId(prefix = ''): string {
   return `${prefix}${++uidCounter}_${Date.now().toString(36)}`;
+}
