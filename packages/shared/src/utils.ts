@@ -119,3 +119,4 @@ export function generateId(prefix = ''): string {
  * 生成唯一数字 ID
  */
 let numericIdCounter = 0;
+export function generateNumericId(): number {
