@@ -101,3 +101,4 @@ export function hasChanged(a: unknown, b: unknown): boolean {
 /**
  * 安全的数组推平
  */
+export function flatten<T>(arr: (T | T[])[]): T[] {
