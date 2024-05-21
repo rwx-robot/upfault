@@ -103,3 +103,4 @@ export function hasChanged(a: unknown, b: unknown): boolean {
  */
 export function flatten<T>(arr: (T | T[])[]): T[] {
   return arr.reduce((acc: T[], val: T | T[]) => {
+    return acc.concat(Array.isArray(val) ? flatten(val) : [val]);
