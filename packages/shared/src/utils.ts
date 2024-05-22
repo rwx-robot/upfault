@@ -140,3 +140,4 @@ export function mergeObjects<T extends object, U extends object>(target: T, sour
 /**
  * 数组去重 (保持顺序)
  */
+export function unique<T>(arr: T[]): T[] {
