@@ -126,3 +126,4 @@ export function generateNumericId(): number {
 /**
  * 深度克隆 (仅支持 JSON 兼容类型)
  */
+export function deepClone<T>(obj: T): T {
