@@ -134,3 +134,4 @@ export function deepClone<T>(obj: T): T {
  * 对象浅拷贝合并
  */
 export function mergeObjects<T extends object, U extends object>(target: T, source: U): T & U {
+  return { ...target, ...source };
