@@ -122,3 +122,5 @@ let numericIdCounter = 0;
 export function generateNumericId(): number {
   return ++numericIdCounter;
 }
+
+/**
