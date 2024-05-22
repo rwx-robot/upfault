@@ -121,3 +121,4 @@ export function generateId(prefix = ''): string {
 let numericIdCounter = 0;
 export function generateNumericId(): number {
   return ++numericIdCounter;
+}
