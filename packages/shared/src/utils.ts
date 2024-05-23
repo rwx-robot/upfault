@@ -147,3 +147,4 @@ export function unique<T>(arr: T[]): T[] {
 /**
  * 数组分块
  */
+export function chunk<T>(arr: T[], size: number): T[][] {
