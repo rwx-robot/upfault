@@ -184,3 +184,4 @@ export function throttle<T extends (...args: unknown[]) => unknown>(
       setTimeout(() => (inThrottle = false), limit);
     }
   };
+}
