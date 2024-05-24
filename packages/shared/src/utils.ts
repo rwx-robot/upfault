@@ -167,3 +167,4 @@ export function debounce<T extends (...args: unknown[]) => unknown>(
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => fn(...args), delay);
   };
+}
