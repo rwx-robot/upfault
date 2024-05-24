@@ -179,3 +179,4 @@ export function throttle<T extends (...args: unknown[]) => unknown>(
   let inThrottle = false;
   return (...args: Parameters<T>) => {
     if (!inThrottle) {
+      fn(...args);
