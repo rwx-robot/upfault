@@ -200,3 +200,4 @@ export function flattenTree<T>(
     const node = stack.pop()!;
     result.push(node);
     const children = getChildren(node);
+    if (children?.length) {
