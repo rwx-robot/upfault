@@ -193,3 +193,4 @@ export function flattenTree<T>(
   nodes: T[],
   getChildren: (node: T) => T[] | undefined
 ): T[] {
+  const result: T[] = [];
