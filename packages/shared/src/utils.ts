@@ -187,3 +187,4 @@ export function throttle<T extends (...args: unknown[]) => unknown>(
 }
 
 /**
+ * 扁平化树结构 (深度优先)
