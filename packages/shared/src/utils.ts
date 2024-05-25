@@ -199,3 +199,4 @@ export function flattenTree<T>(
   while (stack.length) {
     const node = stack.pop()!;
     result.push(node);
+    const children = getChildren(node);
