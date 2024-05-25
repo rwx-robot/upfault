@@ -196,3 +196,4 @@ export function flattenTree<T>(
   const result: T[] = [];
   const stack = [...nodes].reverse();
   
+  while (stack.length) {
