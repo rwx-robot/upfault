@@ -194,3 +194,4 @@ export function flattenTree<T>(
   getChildren: (node: T) => T[] | undefined
 ): T[] {
   const result: T[] = [];
+  const stack = [...nodes].reverse();
