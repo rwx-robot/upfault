@@ -202,3 +202,4 @@ export function flattenTree<T>(
     const children = getChildren(node);
     if (children?.length) {
       stack.push(...children.reverse());
+    }
