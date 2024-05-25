@@ -191,3 +191,4 @@ export function throttle<T extends (...args: unknown[]) => unknown>(
  */
 export function flattenTree<T>(
   nodes: T[],
+  getChildren: (node: T) => T[] | undefined
