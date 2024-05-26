@@ -225,3 +225,4 @@ export function traverseTreeBFS<T>(
     
     const children = getChildren(node);
     if (children?.length) {
+      for (const child of children) {
