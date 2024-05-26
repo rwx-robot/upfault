@@ -216,3 +216,4 @@ export function traverseTreeBFS<T>(
   getChildren: (node: T) => T[] | undefined,
   visitor: (node: T, depth: number) => boolean | void
 ): void {
+  const queue: [T, number][] = [[root, 0]];
