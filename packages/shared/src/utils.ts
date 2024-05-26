@@ -219,3 +219,4 @@ export function traverseTreeBFS<T>(
   const queue: [T, number][] = [[root, 0]];
   
   while (queue.length) {
+    const [node, depth] = queue.shift()!;
