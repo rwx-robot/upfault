@@ -214,3 +214,4 @@ export function flattenTree<T>(
 export function traverseTreeBFS<T>(
   root: T,
   getChildren: (node: T) => T[] | undefined,
+  visitor: (node: T, depth: number) => boolean | void
