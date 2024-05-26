@@ -221,3 +221,4 @@ export function traverseTreeBFS<T>(
   while (queue.length) {
     const [node, depth] = queue.shift()!;
     const shouldContinue = visitor(node, depth);
+    if (shouldContinue === false) break;
