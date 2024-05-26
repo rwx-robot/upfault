@@ -218,3 +218,4 @@ export function traverseTreeBFS<T>(
 ): void {
   const queue: [T, number][] = [[root, 0]];
   
+  while (queue.length) {
