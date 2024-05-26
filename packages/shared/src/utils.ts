@@ -223,3 +223,4 @@ export function traverseTreeBFS<T>(
     const shouldContinue = visitor(node, depth);
     if (shouldContinue === false) break;
     
+    const children = getChildren(node);
