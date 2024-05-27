@@ -241,3 +241,4 @@ export class PerformanceTimer {
   private running: boolean = false;
   
   start(): this {
+    this.startTime = performance.now();
