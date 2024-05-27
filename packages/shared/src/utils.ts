@@ -235,3 +235,4 @@ export function traverseTreeBFS<T>(
 /**
  * 性能计时器
  */
+export class PerformanceTimer {
