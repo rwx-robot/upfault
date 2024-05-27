@@ -240,3 +240,4 @@ export class PerformanceTimer {
   private endTime: number = 0;
   private running: boolean = false;
   
+  start(): this {
