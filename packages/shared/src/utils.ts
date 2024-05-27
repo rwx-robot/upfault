@@ -228,3 +228,4 @@ export function traverseTreeBFS<T>(
       for (const child of children) {
         queue.push([child, depth + 1]);
       }
+    }
