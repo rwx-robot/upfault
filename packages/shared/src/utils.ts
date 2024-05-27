@@ -252,3 +252,4 @@ export class PerformanceTimer {
     return this.endTime - this.startTime;
   }
   
+  get elapsed(): number {
