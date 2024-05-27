@@ -250,3 +250,4 @@ export class PerformanceTimer {
     this.endTime = performance.now();
     this.running = false;
     return this.endTime - this.startTime;
+  }
