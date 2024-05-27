@@ -237,3 +237,4 @@ export function traverseTreeBFS<T>(
  */
 export class PerformanceTimer {
   private startTime: number = 0;
+  private endTime: number = 0;
