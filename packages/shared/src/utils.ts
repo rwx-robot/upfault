@@ -246,3 +246,4 @@ export class PerformanceTimer {
     return this;
   }
   
+  stop(): number {
