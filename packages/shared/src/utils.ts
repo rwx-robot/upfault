@@ -229,3 +229,4 @@ export function traverseTreeBFS<T>(
         queue.push([child, depth + 1]);
       }
     }
+  }
