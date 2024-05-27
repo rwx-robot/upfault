@@ -248,3 +248,4 @@ export class PerformanceTimer {
   
   stop(): number {
     this.endTime = performance.now();
+    this.running = false;
