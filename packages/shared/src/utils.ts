@@ -268,3 +268,4 @@ export class PerformanceTimer {
 }
 
 /**
+ * 简单的 LRU 缓存
