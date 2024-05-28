@@ -266,3 +266,5 @@ export class PerformanceTimer {
     return this;
   }
 }
+
+/**
