@@ -256,3 +256,4 @@ export class PerformanceTimer {
     if (this.running) {
       return performance.now() - this.startTime;
     }
+    return this.endTime - this.startTime;
