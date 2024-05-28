@@ -274,3 +274,4 @@ export class LRUCache<K, V> {
   private cache = new Map<K, V>();
   private readonly maxSize: number;
   
+  constructor(maxSize = 100) {
