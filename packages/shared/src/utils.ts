@@ -272,3 +272,4 @@ export class PerformanceTimer {
  */
 export class LRUCache<K, V> {
   private cache = new Map<K, V>();
+  private readonly maxSize: number;
