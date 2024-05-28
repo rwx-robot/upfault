@@ -253,3 +253,4 @@ export class PerformanceTimer {
   }
   
   get elapsed(): number {
+    if (this.running) {
