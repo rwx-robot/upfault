@@ -275,3 +275,4 @@ export class LRUCache<K, V> {
   private readonly maxSize: number;
   
   constructor(maxSize = 100) {
+    this.maxSize = maxSize;
