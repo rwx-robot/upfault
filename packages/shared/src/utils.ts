@@ -263,3 +263,4 @@ export class PerformanceTimer {
     this.startTime = 0;
     this.endTime = 0;
     this.running = false;
+    return this;
