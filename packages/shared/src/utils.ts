@@ -271,3 +271,4 @@ export class PerformanceTimer {
  * 简单的 LRU 缓存
  */
 export class LRUCache<K, V> {
+  private cache = new Map<K, V>();
