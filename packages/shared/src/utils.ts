@@ -261,3 +261,4 @@ export class PerformanceTimer {
   
   reset(): this {
     this.startTime = 0;
+    this.endTime = 0;
