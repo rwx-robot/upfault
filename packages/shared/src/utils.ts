@@ -260,3 +260,4 @@ export class PerformanceTimer {
   }
   
   reset(): this {
+    this.startTime = 0;
