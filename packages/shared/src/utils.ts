@@ -254,3 +254,4 @@ export class PerformanceTimer {
   
   get elapsed(): number {
     if (this.running) {
+      return performance.now() - this.startTime;
