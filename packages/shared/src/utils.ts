@@ -279,3 +279,4 @@ export class LRUCache<K, V> {
   }
   
   get(key: K): V | undefined {
+    const value = this.cache.get(key);
