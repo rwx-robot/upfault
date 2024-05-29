@@ -278,3 +278,4 @@ export class LRUCache<K, V> {
     this.maxSize = maxSize;
   }
   
+  get(key: K): V | undefined {
