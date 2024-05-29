@@ -296,3 +296,4 @@ export class LRUCache<K, V> {
       const firstKey = this.cache.keys().next().value;
       if (firstKey !== undefined) {
         this.cache.delete(firstKey);
+      }
