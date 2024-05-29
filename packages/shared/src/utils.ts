@@ -281,3 +281,4 @@ export class LRUCache<K, V> {
   get(key: K): V | undefined {
     const value = this.cache.get(key);
     if (value !== undefined) {
+      // 移到最后 (最近使用)
