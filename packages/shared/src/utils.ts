@@ -290,3 +290,4 @@ export class LRUCache<K, V> {
   
   set(key: K, value: V): this {
     if (this.cache.has(key)) {
+      this.cache.delete(key);
