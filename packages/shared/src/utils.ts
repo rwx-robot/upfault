@@ -291,3 +291,4 @@ export class LRUCache<K, V> {
   set(key: K, value: V): this {
     if (this.cache.has(key)) {
       this.cache.delete(key);
+    } else if (this.cache.size >= this.maxSize) {
