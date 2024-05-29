@@ -283,3 +283,4 @@ export class LRUCache<K, V> {
     if (value !== undefined) {
       // 移到最后 (最近使用)
       this.cache.delete(key);
+      this.cache.set(key, value);
