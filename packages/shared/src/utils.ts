@@ -288,3 +288,4 @@ export class LRUCache<K, V> {
     return value;
   }
   
+  set(key: K, value: V): this {
