@@ -304,3 +304,4 @@ export class LRUCache<K, V> {
   
   has(key: K): boolean {
     return this.cache.has(key);
+  }
