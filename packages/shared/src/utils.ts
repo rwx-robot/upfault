@@ -306,3 +306,4 @@ export class LRUCache<K, V> {
     return this.cache.has(key);
   }
   
+  delete(key: K): boolean {
