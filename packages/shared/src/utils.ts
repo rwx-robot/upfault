@@ -302,3 +302,4 @@ export class LRUCache<K, V> {
     return this;
   }
   
+  has(key: K): boolean {
