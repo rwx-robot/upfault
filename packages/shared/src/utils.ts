@@ -310,3 +310,4 @@ export class LRUCache<K, V> {
     return this.cache.delete(key);
   }
   
+  clear(): void {
