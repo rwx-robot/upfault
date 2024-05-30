@@ -314,3 +314,4 @@ export class LRUCache<K, V> {
     this.cache.clear();
   }
   
+  get size(): number {
