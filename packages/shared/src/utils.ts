@@ -328,3 +328,4 @@ export class LRUCache<K, V> {
   
   entries(): IterableIterator<[K, V]> {
     return this.cache.entries();
+  }
