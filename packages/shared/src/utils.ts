@@ -319,3 +319,4 @@ export class LRUCache<K, V> {
   }
   
   keys(): IterableIterator<K> {
+    return this.cache.keys();
