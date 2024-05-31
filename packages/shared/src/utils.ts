@@ -335,3 +335,4 @@ export class LRUCache<K, V> {
  * 类型守卫：缩小联合类型
  */
 export function isType<T>(
+  value: unknown,
