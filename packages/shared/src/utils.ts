@@ -358,3 +358,4 @@ export function warn(message: string, ...args: unknown[]): void {
     console.warn(`[UpFault] ${message}`, ...args);
   }
 }
+
