@@ -340,3 +340,5 @@ export function isType<T>(
 ): value is T {
   return guard(value);
 }
+
+/**
