@@ -347,3 +347,4 @@ export function isType<T>(
 export function assert(condition: unknown, message?: string): asserts condition {
   if (!condition) {
     throw new Error(`Assertion failed: ${message ?? 'Unknown error'}`);
+  }
