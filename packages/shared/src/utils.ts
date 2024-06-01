@@ -345,3 +345,4 @@ export function isType<T>(
  * 断言函数 (开发环境检查)
  */
 export function assert(condition: unknown, message?: string): asserts condition {
+  if (!condition) {
