@@ -350,3 +350,4 @@ export function assert(condition: unknown, message?: string): asserts condition 
   }
 }
 
+/**
