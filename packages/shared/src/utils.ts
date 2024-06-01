@@ -354,3 +354,4 @@ export function assert(condition: unknown, message?: string): asserts condition 
  * 开发环境警告
  */
 export function warn(message: string, ...args: unknown[]): void {
+  if (typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production') {
