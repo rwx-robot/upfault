@@ -339,3 +339,4 @@ export function isType<T>(
   guard: (v: unknown) => v is T
 ): value is T {
   return guard(value);
+}
