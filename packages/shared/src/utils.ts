@@ -355,3 +355,4 @@ export function assert(condition: unknown, message?: string): asserts condition 
  */
 export function warn(message: string, ...args: unknown[]): void {
   if (typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production') {
+    console.warn(`[UpFault] ${message}`, ...args);
