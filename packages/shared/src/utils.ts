@@ -375,3 +375,5 @@ interface VNodeLike {
   type: unknown;
   key: string | number | null;
 }
+
+interface Ref<T> {
