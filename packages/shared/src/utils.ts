@@ -373,3 +373,4 @@ export function error(message: string, ...args: unknown[]): void {
  */
 interface VNodeLike {
   type: unknown;
+  key: string | number | null;
