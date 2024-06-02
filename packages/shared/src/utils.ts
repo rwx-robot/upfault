@@ -377,3 +377,4 @@ interface VNodeLike {
 }
 
 interface Ref<T> {
+  value: T;
