@@ -364,3 +364,4 @@ export function warn(message: string, ...args: unknown[]): void {
  */
 export function error(message: string, ...args: unknown[]): void {
   if (typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production') {
+    console.error(`[UpFault] ${message}`, ...args);
