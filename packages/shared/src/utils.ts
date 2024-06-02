@@ -367,3 +367,4 @@ export function error(message: string, ...args: unknown[]): void {
     console.error(`[UpFault] ${message}`, ...args);
   }
 }
+
