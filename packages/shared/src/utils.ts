@@ -371,3 +371,4 @@ export function error(message: string, ...args: unknown[]): void {
 /**
  * 类型定义 (前向声明，避免循环依赖)
  */
+interface VNodeLike {
