@@ -379,3 +379,4 @@ interface VNodeLike {
 interface Ref<T> {
   value: T;
   __v_isRef: true;
+}
