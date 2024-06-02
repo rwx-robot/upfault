@@ -362,3 +362,4 @@ export function warn(message: string, ...args: unknown[]): void {
 /**
  * 开发环境错误
  */
+export function error(message: string, ...args: unknown[]): void {
