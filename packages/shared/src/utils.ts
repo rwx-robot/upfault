@@ -382,3 +382,4 @@ interface Ref<T> {
 }
 
 interface ComputedRef<T> {
+  value: T;
