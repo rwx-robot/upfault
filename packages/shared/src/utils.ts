@@ -384,3 +384,4 @@ interface Ref<T> {
 interface ComputedRef<T> {
   value: T;
   __v_isComputed: true;
+}
