@@ -20,3 +20,4 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts",
     "clean": "rm -rf dist"
+  },
