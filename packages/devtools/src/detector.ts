@@ -4,3 +4,4 @@
  * 自动检测页面中是否运行 UpFault 应用，获取版本信息
  */
 
+export interface DetectionResult {
