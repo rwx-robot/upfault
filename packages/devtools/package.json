@@ -27,3 +27,4 @@
     "@upfault/shared": "workspace:*"
   },
   "devDependencies": {
+    "typescript": "^5.4.0",
