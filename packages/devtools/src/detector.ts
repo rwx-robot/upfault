@@ -22,3 +22,4 @@ export interface AppInfo {
     effectCount: number;
   };
   performance: {
+    mountTime: number;
