@@ -20,3 +20,4 @@ export interface AppInfo {
     refCount: number;
     computedCount: number;
     effectCount: number;
+  };
