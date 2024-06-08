@@ -12,3 +12,4 @@ export interface DetectionResult {
   rootComponent?: any;
 }
 
+export interface AppInfo {
