@@ -17,3 +17,4 @@ export interface AppInfo {
   rootElement: Element;
   componentTree: any;
   reactivitySystem: {
+    refCount: number;
