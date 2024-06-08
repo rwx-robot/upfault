@@ -21,3 +21,4 @@ export interface AppInfo {
     computedCount: number;
     effectCount: number;
   };
+  performance: {
