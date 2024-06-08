@@ -15,3 +15,4 @@ export interface DetectionResult {
 export interface AppInfo {
   version: string;
   rootElement: Element;
+  componentTree: any;
