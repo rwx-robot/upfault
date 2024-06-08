@@ -24,3 +24,4 @@ export interface AppInfo {
   performance: {
     mountTime: number;
     updateCount: number;
+    lastUpdateTime: number;
