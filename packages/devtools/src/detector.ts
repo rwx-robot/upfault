@@ -16,3 +16,4 @@ export interface AppInfo {
   version: string;
   rootElement: Element;
   componentTree: any;
+  reactivitySystem: {
