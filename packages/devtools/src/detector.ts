@@ -10,3 +10,4 @@ export interface DetectionResult {
   rootElement?: Element;
   componentCount?: number;
   rootComponent?: any;
+}
