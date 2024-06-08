@@ -25,3 +25,4 @@ export interface AppInfo {
     mountTime: number;
     updateCount: number;
     lastUpdateTime: number;
+  };
