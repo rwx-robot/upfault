@@ -8,3 +8,4 @@ export interface DetectionResult {
   detected: boolean;
   version?: string;
   rootElement?: Element;
+  componentCount?: number;
