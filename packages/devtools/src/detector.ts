@@ -9,3 +9,4 @@ export interface DetectionResult {
   version?: string;
   rootElement?: Element;
   componentCount?: number;
+  rootComponent?: any;
