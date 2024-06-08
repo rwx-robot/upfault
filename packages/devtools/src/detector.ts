@@ -19,3 +19,4 @@ export interface AppInfo {
   reactivitySystem: {
     refCount: number;
     computedCount: number;
+    effectCount: number;
