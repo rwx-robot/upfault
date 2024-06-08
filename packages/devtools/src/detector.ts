@@ -26,3 +26,4 @@ export interface AppInfo {
     updateCount: number;
     lastUpdateTime: number;
   };
+}
