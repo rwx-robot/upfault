@@ -36,3 +36,4 @@ const UF_COMPONENT_TREE_KEY = '__upfault_component_tree__';
  * 检测页面是否运行 UpFault 应用
  */
 export function detectUpFault(rootElement?: Element): DetectionResult {
+  const searchRoot = rootElement || document;
