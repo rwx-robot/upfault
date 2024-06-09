@@ -41,3 +41,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
   // 查找标记了 UpFault 的根元素
   const candidates = searchRoot.querySelectorAll(`[${UF_FAULT_MARKER}]`);
   
+  if (candidates.length === 0) {
