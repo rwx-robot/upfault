@@ -42,3 +42,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
   const candidates = searchRoot.querySelectorAll(`[${UF_FAULT_MARKER}]`);
   
   if (candidates.length === 0) {
+    return { detected: false };
