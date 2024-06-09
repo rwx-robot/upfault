@@ -38,3 +38,4 @@ const UF_COMPONENT_TREE_KEY = '__upfault_component_tree__';
 export function detectUpFault(rootElement?: Element): DetectionResult {
   const searchRoot = rootElement || document;
   
+  // 查找标记了 UpFault 的根元素
