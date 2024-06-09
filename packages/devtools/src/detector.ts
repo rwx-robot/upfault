@@ -33,3 +33,4 @@ const UF_VERSION_KEY = '__upfault_version__';
 const UF_COMPONENT_TREE_KEY = '__upfault_component_tree__';
 
 /**
+ * 检测页面是否运行 UpFault 应用
