@@ -45,3 +45,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
     return { detected: false };
   }
   
+  const root = candidates.item(0)!;
