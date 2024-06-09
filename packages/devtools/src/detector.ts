@@ -27,3 +27,5 @@ export interface AppInfo {
     lastUpdateTime: number;
   };
 }
+
+const UF_FAULT_MARKER = '__upfault_app__';
