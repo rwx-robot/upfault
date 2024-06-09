@@ -44,3 +44,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
   if (candidates.length === 0) {
     return { detected: false };
   }
+  
