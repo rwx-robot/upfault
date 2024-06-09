@@ -50,3 +50,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
   const componentCount = parseInt(root.getAttribute('data-uf-components') || '0', 10);
   
   return {
+    detected: true,
