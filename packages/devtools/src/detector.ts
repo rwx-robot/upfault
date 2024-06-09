@@ -47,3 +47,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
   
   const root = candidates.item(0)!;
   const version = root.getAttribute(UF_VERSION_KEY) || 'unknown';
+  const componentCount = parseInt(root.getAttribute('data-uf-components') || '0', 10);
