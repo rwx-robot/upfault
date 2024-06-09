@@ -30,3 +30,4 @@ export interface AppInfo {
 
 const UF_FAULT_MARKER = '__upfault_app__';
 const UF_VERSION_KEY = '__upfault_version__';
+const UF_COMPONENT_TREE_KEY = '__upfault_component_tree__';
