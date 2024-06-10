@@ -61,3 +61,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
  * 判断元素是否为 UpFault 应用根节点
  */
 export function isUpFaultApp(element: Element): boolean {
+  return element.hasAttribute(UF_FAULT_MARKER);
