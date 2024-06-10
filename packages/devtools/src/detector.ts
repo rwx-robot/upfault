@@ -59,3 +59,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
 
 /**
  * 判断元素是否为 UpFault 应用根节点
+ */
