@@ -55,3 +55,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
     rootElement: root,
     componentCount,
   };
+}
