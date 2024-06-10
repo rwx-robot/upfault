@@ -67,3 +67,4 @@ export function isUpFaultApp(element: Element): boolean {
 /**
  * 获取 UpFault 版本
  */
+export function getUpFaultVersion(rootElement?: Element): string | null {
