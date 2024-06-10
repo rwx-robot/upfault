@@ -63,3 +63,5 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
 export function isUpFaultApp(element: Element): boolean {
   return element.hasAttribute(UF_FAULT_MARKER);
 }
+
+/**
