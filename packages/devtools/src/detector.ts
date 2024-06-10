@@ -70,3 +70,4 @@ export function isUpFaultApp(element: Element): boolean {
 export function getUpFaultVersion(rootElement?: Element): string | null {
   const root = rootElement || document.querySelector(`[${UF_FAULT_MARKER}]`);
   return root?.getAttribute(UF_VERSION_KEY) || null;
+}
