@@ -52,3 +52,4 @@ export function detectUpFault(rootElement?: Element): DetectionResult {
   return {
     detected: true,
     version,
+    rootElement: root,
