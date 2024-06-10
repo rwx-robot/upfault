@@ -65,3 +65,4 @@ export function isUpFaultApp(element: Element): boolean {
 }
 
 /**
+ * 获取 UpFault 版本
