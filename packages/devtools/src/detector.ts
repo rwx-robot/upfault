@@ -92,3 +92,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
       refCount: 0,
       computedCount: 0,
       effectCount: 0,
+    },
