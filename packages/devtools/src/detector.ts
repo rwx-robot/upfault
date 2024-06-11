@@ -79,3 +79,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
   const detection = detectUpFault(rootElement);
   if (!detection.detected || !detection.rootElement) {
     return null;
+  }
