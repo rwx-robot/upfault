@@ -96,3 +96,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
     performance: {
       mountTime: parseInt(root.getAttribute('data-uf-mount-time') || '0', 10),
       updateCount: parseInt(root.getAttribute('data-uf-update-count') || '0', 10),
+      lastUpdateTime: parseInt(root.getAttribute('data-uf-last-update') || '0', 10),
