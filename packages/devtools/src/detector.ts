@@ -81,3 +81,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
     return null;
   }
   
+  const root = detection.rootElement!;
