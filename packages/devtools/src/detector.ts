@@ -80,3 +80,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
   if (!detection.detected || !detection.rootElement) {
     return null;
   }
+  
