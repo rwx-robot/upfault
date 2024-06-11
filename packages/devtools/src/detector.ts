@@ -83,3 +83,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
   
   const root = detection.rootElement!;
   const treeData = root.getAttribute(UF_COMPONENT_TREE_KEY);
+  
