@@ -93,3 +93,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
       computedCount: 0,
       effectCount: 0,
     },
+    performance: {
