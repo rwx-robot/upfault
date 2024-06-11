@@ -90,3 +90,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
     componentTree: treeData ? JSON.parse(treeData) : null,
     reactivitySystem: {
       refCount: 0,
+      computedCount: 0,
