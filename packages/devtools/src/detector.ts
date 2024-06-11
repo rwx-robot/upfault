@@ -91,3 +91,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
     reactivitySystem: {
       refCount: 0,
       computedCount: 0,
+      effectCount: 0,
