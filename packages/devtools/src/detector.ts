@@ -74,3 +74,4 @@ export function getUpFaultVersion(rootElement?: Element): string | null {
 
 /**
  * 获取应用详细信息
+ */
