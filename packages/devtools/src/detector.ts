@@ -85,3 +85,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
   const treeData = root.getAttribute(UF_COMPONENT_TREE_KEY);
   
   return {
+    version: detection.version || 'unknown',
