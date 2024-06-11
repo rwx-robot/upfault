@@ -77,3 +77,4 @@ export function getUpFaultVersion(rootElement?: Element): string | null {
  */
 export function getAppInfo(rootElement?: Element): AppInfo | null {
   const detection = detectUpFault(rootElement);
+  if (!detection.detected || !detection.rootElement) {
