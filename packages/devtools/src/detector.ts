@@ -94,3 +94,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
       effectCount: 0,
     },
     performance: {
+      mountTime: parseInt(root.getAttribute('data-uf-mount-time') || '0', 10),
