@@ -87,3 +87,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
   return {
     version: detection.version || 'unknown',
     rootElement: root,
+    componentTree: treeData ? JSON.parse(treeData) : null,
