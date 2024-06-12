@@ -110,3 +110,4 @@ export function markUpFaultApp(
   version: string,
   options: {
     componentCount?: number;
+    mountTime?: number;
