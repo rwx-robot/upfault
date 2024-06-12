@@ -99,3 +99,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
       lastUpdateTime: parseInt(root.getAttribute('data-uf-last-update') || '0', 10),
     },
   };
+}
