@@ -108,3 +108,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
 export function markUpFaultApp(
   element: Element,
   version: string,
+  options: {
