@@ -111,3 +111,4 @@ export function markUpFaultApp(
   options: {
     componentCount?: number;
     mountTime?: number;
+  } = {}
