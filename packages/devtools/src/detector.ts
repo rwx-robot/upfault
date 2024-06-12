@@ -109,3 +109,4 @@ export function markUpFaultApp(
   element: Element,
   version: string,
   options: {
+    componentCount?: number;
