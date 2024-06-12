@@ -101,3 +101,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
   };
 }
 
+/**
