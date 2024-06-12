@@ -113,3 +113,4 @@ export function markUpFaultApp(
     mountTime?: number;
   } = {}
 ): void {
+  element.setAttribute(UF_FAULT_MARKER, 'true');
