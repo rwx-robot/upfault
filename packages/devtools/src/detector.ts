@@ -112,3 +112,4 @@ export function markUpFaultApp(
     componentCount?: number;
     mountTime?: number;
   } = {}
+): void {
