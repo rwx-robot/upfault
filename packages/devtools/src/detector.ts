@@ -106,3 +106,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
  * 内部使用，由 runtime 调用
  */
 export function markUpFaultApp(
+  element: Element,
