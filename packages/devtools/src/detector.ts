@@ -104,3 +104,4 @@ export function getAppInfo(rootElement?: Element): AppInfo | null {
 /**
  * 标记元素为 UpFault 应用根节点
  * 内部使用，由 runtime 调用
+ */
