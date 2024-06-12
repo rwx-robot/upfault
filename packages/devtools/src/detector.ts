@@ -114,3 +114,4 @@ export function markUpFaultApp(
   } = {}
 ): void {
   element.setAttribute(UF_FAULT_MARKER, 'true');
+  element.setAttribute(UF_VERSION_KEY, version);
