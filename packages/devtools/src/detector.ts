@@ -119,3 +119,4 @@ export function markUpFaultApp(
     element.setAttribute('data-uf-components', String(options.componentCount));
   }
   if (options.mountTime !== undefined) {
+    element.setAttribute('data-uf-mount-time', String(options.mountTime));
