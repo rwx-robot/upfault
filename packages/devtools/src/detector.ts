@@ -118,3 +118,4 @@ export function markUpFaultApp(
   if (options.componentCount !== undefined) {
     element.setAttribute('data-uf-components', String(options.componentCount));
   }
+  if (options.mountTime !== undefined) {
