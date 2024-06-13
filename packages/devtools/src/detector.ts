@@ -132,3 +132,4 @@ export function updateAppInfo(
     componentCount?: number;
     updateCount?: number;
     lastUpdateTime?: number;
+    componentTree?: any;
