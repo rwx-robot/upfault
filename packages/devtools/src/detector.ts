@@ -121,3 +121,4 @@ export function markUpFaultApp(
   if (options.mountTime !== undefined) {
     element.setAttribute('data-uf-mount-time', String(options.mountTime));
   }
+}
