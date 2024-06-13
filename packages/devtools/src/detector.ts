@@ -116,3 +116,4 @@ export function markUpFaultApp(
   element.setAttribute(UF_FAULT_MARKER, 'true');
   element.setAttribute(UF_VERSION_KEY, version);
   if (options.componentCount !== undefined) {
+    element.setAttribute('data-uf-components', String(options.componentCount));
