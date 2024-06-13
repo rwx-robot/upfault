@@ -126,3 +126,4 @@ export function markUpFaultApp(
 /**
  * 更新应用信息
  */
+export function updateAppInfo(
