@@ -130,3 +130,4 @@ export function updateAppInfo(
   element: Element,
   updates: {
     componentCount?: number;
+    updateCount?: number;
