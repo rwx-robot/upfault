@@ -131,3 +131,4 @@ export function updateAppInfo(
   updates: {
     componentCount?: number;
     updateCount?: number;
+    lastUpdateTime?: number;
