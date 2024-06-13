@@ -125,3 +125,4 @@ export function markUpFaultApp(
 
 /**
  * 更新应用信息
+ */
