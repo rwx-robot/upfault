@@ -129,3 +129,4 @@ export function markUpFaultApp(
 export function updateAppInfo(
   element: Element,
   updates: {
+    componentCount?: number;
