@@ -146,3 +146,4 @@ export function updateAppInfo(
   }
   if (updates.componentTree !== undefined) {
     element.setAttribute(UF_COMPONENT_TREE_KEY, JSON.stringify(updates.componentTree));
+  }
