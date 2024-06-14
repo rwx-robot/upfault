@@ -135,3 +135,4 @@ export function updateAppInfo(
     componentTree?: any;
   }
 ): void {
+  if (updates.componentCount !== undefined) {
