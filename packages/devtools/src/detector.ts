@@ -152,3 +152,4 @@ export function updateAppInfo(
 /**
  * 移除 UpFault 标记
  */
+export function unmarkUpFaultApp(element: Element): void {
