@@ -148,3 +148,4 @@ export function updateAppInfo(
     element.setAttribute(UF_COMPONENT_TREE_KEY, JSON.stringify(updates.componentTree));
   }
 }
+
