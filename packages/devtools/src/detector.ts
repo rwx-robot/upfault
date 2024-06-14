@@ -145,3 +145,4 @@ export function updateAppInfo(
     element.setAttribute('data-uf-last-update', String(updates.lastUpdateTime));
   }
   if (updates.componentTree !== undefined) {
+    element.setAttribute(UF_COMPONENT_TREE_KEY, JSON.stringify(updates.componentTree));
