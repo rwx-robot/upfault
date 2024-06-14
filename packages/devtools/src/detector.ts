@@ -136,3 +136,4 @@ export function updateAppInfo(
   }
 ): void {
   if (updates.componentCount !== undefined) {
+    element.setAttribute('data-uf-components', String(updates.componentCount));
