@@ -134,3 +134,4 @@ export function updateAppInfo(
     lastUpdateTime?: number;
     componentTree?: any;
   }
+): void {
