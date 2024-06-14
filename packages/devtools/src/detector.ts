@@ -150,3 +150,4 @@ export function updateAppInfo(
 }
 
 /**
+ * 移除 UpFault 标记
