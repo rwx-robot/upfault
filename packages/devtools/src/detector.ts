@@ -143,3 +143,4 @@ export function updateAppInfo(
   }
   if (updates.lastUpdateTime !== undefined) {
     element.setAttribute('data-uf-last-update', String(updates.lastUpdateTime));
+  }
