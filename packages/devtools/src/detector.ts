@@ -160,3 +160,4 @@ export function unmarkUpFaultApp(element: Element): void {
   element.removeAttribute('data-uf-update-count');
   element.removeAttribute('data-uf-last-update');
   element.removeAttribute(UF_COMPONENT_TREE_KEY);
+}
