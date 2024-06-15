@@ -153,3 +153,4 @@ export function updateAppInfo(
  * 移除 UpFault 标记
  */
 export function unmarkUpFaultApp(element: Element): void {
+  element.removeAttribute(UF_FAULT_MARKER);
