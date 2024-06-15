@@ -168,3 +168,4 @@ export function unmarkUpFaultApp(element: Element): void {
 export function getAllUpFaultApps(): DetectionResult[] {
   const elements = document.querySelectorAll(`[${UF_FAULT_MARKER}]`);
   return Array.from(elements).map(el => ({
+    detected: true,
