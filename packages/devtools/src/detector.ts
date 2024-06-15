@@ -154,3 +154,4 @@ export function updateAppInfo(
  */
 export function unmarkUpFaultApp(element: Element): void {
   element.removeAttribute(UF_FAULT_MARKER);
+  element.removeAttribute(UF_VERSION_KEY);
