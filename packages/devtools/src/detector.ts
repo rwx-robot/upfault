@@ -156,3 +156,4 @@ export function unmarkUpFaultApp(element: Element): void {
   element.removeAttribute(UF_FAULT_MARKER);
   element.removeAttribute(UF_VERSION_KEY);
   element.removeAttribute('data-uf-components');
+  element.removeAttribute('data-uf-mount-time');
