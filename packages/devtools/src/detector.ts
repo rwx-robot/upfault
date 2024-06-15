@@ -169,3 +169,4 @@ export function getAllUpFaultApps(): DetectionResult[] {
   const elements = document.querySelectorAll(`[${UF_FAULT_MARKER}]`);
   return Array.from(elements).map(el => ({
     detected: true,
+    version: el.getAttribute(UF_VERSION_KEY) || 'unknown',
