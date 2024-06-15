@@ -166,3 +166,4 @@ export function unmarkUpFaultApp(element: Element): void {
  * 获取所有 UpFault 应用实例
  */
 export function getAllUpFaultApps(): DetectionResult[] {
+  const elements = document.querySelectorAll(`[${UF_FAULT_MARKER}]`);
