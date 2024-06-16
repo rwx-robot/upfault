@@ -176,3 +176,4 @@ export function getAllUpFaultApps(): DetectionResult[] {
 }
 
 /**
+ * 注入 DevTools 全局 API
