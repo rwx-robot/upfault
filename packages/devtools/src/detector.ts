@@ -182,3 +182,4 @@ export function getAllUpFaultApps(): DetectionResult[] {
 export function injectGlobalAPI(): void {
   if (typeof window !== 'undefined') {
     (window as any).__UPFAULT_DEVTOOLS__ = {
+      detect: detectUpFault,
