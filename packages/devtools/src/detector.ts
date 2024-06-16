@@ -171,3 +171,4 @@ export function getAllUpFaultApps(): DetectionResult[] {
     detected: true,
     version: el.getAttribute(UF_VERSION_KEY) || 'unknown',
     rootElement: el,
+    componentCount: parseInt(el.getAttribute('data-uf-components') || '0', 10),
