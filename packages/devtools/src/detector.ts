@@ -174,3 +174,5 @@ export function getAllUpFaultApps(): DetectionResult[] {
     componentCount: parseInt(el.getAttribute('data-uf-components') || '0', 10),
   }));
 }
+
+/**
