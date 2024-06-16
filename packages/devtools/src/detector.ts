@@ -184,3 +184,4 @@ export function injectGlobalAPI(): void {
     (window as any).__UPFAULT_DEVTOOLS__ = {
       detect: detectUpFault,
       getAppInfo,
+      getAllApps: getAllUpFaultApps,
