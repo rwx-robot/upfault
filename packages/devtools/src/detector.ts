@@ -187,3 +187,4 @@ export function injectGlobalAPI(): void {
       getAllApps: getAllUpFaultApps,
       VERSION: '0.2.0',
     };
+  }
