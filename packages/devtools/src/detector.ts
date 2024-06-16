@@ -180,3 +180,4 @@ export function getAllUpFaultApps(): DetectionResult[] {
  * 供浏览器控制台使用
  */
 export function injectGlobalAPI(): void {
+  if (typeof window !== 'undefined') {
