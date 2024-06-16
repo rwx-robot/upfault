@@ -188,3 +188,4 @@ export function injectGlobalAPI(): void {
       VERSION: '0.2.0',
     };
   }
+}
