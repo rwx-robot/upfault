@@ -12,3 +12,5 @@ export {
   getUpFaultVersion,
   getAppInfo,
 } from './detector';
+
+export type { DetectionResult, AppInfo } from './detector';
