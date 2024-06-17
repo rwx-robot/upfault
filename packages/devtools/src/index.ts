@@ -11,3 +11,4 @@ export {
   isUpFaultApp,
   getUpFaultVersion,
   getAppInfo,
+} from './detector';
