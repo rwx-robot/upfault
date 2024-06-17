@@ -7,3 +7,4 @@
 
 // 框架检测器
 export {
+  detectUpFault,
