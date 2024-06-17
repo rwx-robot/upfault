@@ -19,3 +19,5 @@ export type { DetectionResult, AppInfo } from './detector';
 export {
   createInspector,
 } from './inspector';
+
+export type { Inspector, ComponentInfo, VNodeInfo, ComponentInstance, VNode } from './inspector';
