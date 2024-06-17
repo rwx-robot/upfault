@@ -18,3 +18,4 @@ export type { DetectionResult, AppInfo } from './detector';
 // 组件检查器
 export {
   createInspector,
+} from './inspector';
