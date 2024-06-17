@@ -9,3 +9,4 @@
 export {
   detectUpFault,
   isUpFaultApp,
+  getUpFaultVersion,
