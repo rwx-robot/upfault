@@ -31,3 +31,5 @@ export {
 } from './timeline';
 
 export type { Timeline, TimelineEvent, EventType } from './timeline';
+
+// 版本信息
