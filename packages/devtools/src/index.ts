@@ -29,3 +29,5 @@ export {
   getTimelineEvents,
   clearTimeline,
 } from './timeline';
+
+export type { Timeline, TimelineEvent, EventType } from './timeline';
