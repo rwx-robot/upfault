@@ -23,3 +23,4 @@ export {
 export type { Inspector, ComponentInfo, VNodeInfo, ComponentInstance, VNode } from './inspector';
 
 // 时间线调试
+export {
