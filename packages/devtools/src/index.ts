@@ -26,3 +26,4 @@ export type { Inspector, ComponentInfo, VNodeInfo, ComponentInstance, VNode } fr
 export {
   createTimeline,
   recordEvent,
+  getTimelineEvents,
