@@ -25,3 +25,4 @@ export type { Inspector, ComponentInfo, VNodeInfo, ComponentInstance, VNode } fr
 // 时间线调试
 export {
   createTimeline,
+  recordEvent,
