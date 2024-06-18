@@ -28,3 +28,4 @@ export {
   recordEvent,
   getTimelineEvents,
   clearTimeline,
+} from './timeline';
