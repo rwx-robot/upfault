@@ -27,3 +27,4 @@ export {
   createTimeline,
   recordEvent,
   getTimelineEvents,
+  clearTimeline,
