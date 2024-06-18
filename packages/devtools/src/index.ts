@@ -34,3 +34,4 @@ export type { Timeline, TimelineEvent, EventType } from './timeline';
 
 // 版本信息
 export const VERSION = '0.2.0';
+export const PACKAGE_NAME = '@upfault/devtools';
