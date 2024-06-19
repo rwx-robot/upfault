@@ -19,3 +19,4 @@ export type {
   ComponentInstance, 
   VNode, 
   VNodeInfo, 
+  ComponentInfo, 
