@@ -21,3 +21,4 @@ export type {
   VNodeInfo, 
   ComponentInfo, 
   RefInfo, 
+  ComputedInfo, 
