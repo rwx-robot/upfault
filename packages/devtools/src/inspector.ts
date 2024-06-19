@@ -24,3 +24,4 @@ export type {
   ComputedInfo, 
   EffectInfo, 
   LifecycleInfo 
+} from './types';
