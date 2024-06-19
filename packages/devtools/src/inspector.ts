@@ -10,3 +10,4 @@ import type {
   VNodeInfo, 
   ComponentInfo, 
   RefInfo, 
+  ComputedInfo, 
