@@ -12,3 +12,4 @@ import type {
   RefInfo, 
   ComputedInfo, 
   EffectInfo, 
+  LifecycleInfo 
