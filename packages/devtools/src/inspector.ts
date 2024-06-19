@@ -16,3 +16,4 @@ import type {
 } from './types';
 
 export type { 
+  ComponentInstance, 
