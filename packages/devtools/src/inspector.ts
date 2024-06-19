@@ -22,3 +22,4 @@ export type {
   ComponentInfo, 
   RefInfo, 
   ComputedInfo, 
+  EffectInfo, 
