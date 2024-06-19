@@ -11,3 +11,4 @@ import type {
   ComponentInfo, 
   RefInfo, 
   ComputedInfo, 
+  EffectInfo, 
