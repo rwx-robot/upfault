@@ -8,3 +8,4 @@ import type {
   ComponentInstance, 
   VNode, 
   VNodeInfo, 
+  ComponentInfo, 
