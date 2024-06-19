@@ -18,3 +18,4 @@ import type {
 export type { 
   ComponentInstance, 
   VNode, 
+  VNodeInfo, 
