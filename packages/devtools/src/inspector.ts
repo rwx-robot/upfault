@@ -25,3 +25,5 @@ export type {
   EffectInfo, 
   LifecycleInfo 
 } from './types';
+
+export interface Inspector {
