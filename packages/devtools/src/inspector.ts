@@ -40,3 +40,4 @@ export interface Inspector {
  * 创建检查器实例
  */
 export function createInspector(): Inspector {
+  let highlightOverlay: HTMLElement | null = null;
