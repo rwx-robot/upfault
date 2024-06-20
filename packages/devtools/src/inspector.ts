@@ -33,3 +33,4 @@ export interface Inspector {
   findComponentByName(rootInstance: ComponentInstance, name: string): ComponentInfo | null;
   findComponentByUid(rootInstance: ComponentInstance, uid: number): ComponentInfo | null;
   highlightComponent(element: Element): void;
+  unhighlightComponent(): void;
