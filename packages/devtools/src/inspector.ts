@@ -35,3 +35,5 @@ export interface Inspector {
   highlightComponent(element: Element): void;
   unhighlightComponent(): void;
 }
+
+/**
