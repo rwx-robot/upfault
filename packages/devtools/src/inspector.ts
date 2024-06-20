@@ -31,3 +31,4 @@ export interface Inspector {
   inspectVNode(vnode: VNode): VNodeInfo;
   getComponentTree(rootInstance: ComponentInstance): ComponentInfo;
   findComponentByName(rootInstance: ComponentInstance, name: string): ComponentInfo | null;
+  findComponentByUid(rootInstance: ComponentInstance, uid: number): ComponentInfo | null;
