@@ -30,3 +30,4 @@ export interface Inspector {
   inspectComponent(instance: ComponentInstance): ComponentInfo;
   inspectVNode(vnode: VNode): VNodeInfo;
   getComponentTree(rootInstance: ComponentInstance): ComponentInfo;
+  findComponentByName(rootInstance: ComponentInstance, name: string): ComponentInfo | null;
