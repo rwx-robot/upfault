@@ -44,3 +44,4 @@ export function createInspector(): Inspector {
   
   return {
     inspectComponent,
+    inspectVNode,
