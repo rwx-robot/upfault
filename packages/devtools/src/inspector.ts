@@ -29,3 +29,4 @@ export type {
 export interface Inspector {
   inspectComponent(instance: ComponentInstance): ComponentInfo;
   inspectVNode(vnode: VNode): VNodeInfo;
+  getComponentTree(rootInstance: ComponentInstance): ComponentInfo;
