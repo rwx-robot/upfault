@@ -37,3 +37,4 @@ export interface Inspector {
 }
 
 /**
+ * 创建检查器实例
