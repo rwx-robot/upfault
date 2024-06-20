@@ -27,3 +27,4 @@ export type {
 } from './types';
 
 export interface Inspector {
+  inspectComponent(instance: ComponentInstance): ComponentInfo;
