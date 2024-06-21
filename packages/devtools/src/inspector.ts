@@ -48,3 +48,4 @@ export function createInspector(): Inspector {
     getComponentTree,
     findComponentByName,
     findComponentByUid,
+    highlightComponent,
