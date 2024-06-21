@@ -47,3 +47,4 @@ export function createInspector(): Inspector {
     inspectVNode,
     getComponentTree,
     findComponentByName,
+    findComponentByUid,
