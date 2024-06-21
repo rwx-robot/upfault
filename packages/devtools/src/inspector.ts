@@ -62,3 +62,4 @@ export function createInspector(): Inspector {
       refs: inspectRefs(instance),
       computed: inspectComputed(instance),
       effects: inspectEffects(instance),
+      lifecycle: inspectLifecycle(instance),
