@@ -50,3 +50,4 @@ export function createInspector(): Inspector {
     findComponentByUid,
     highlightComponent,
     unhighlightComponent,
+  };
