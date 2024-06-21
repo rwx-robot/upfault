@@ -60,3 +60,4 @@ export function createInspector(): Inspector {
       props: { ...instance.props },
       state: getReactiveState(instance),
       refs: inspectRefs(instance),
+      computed: inspectComputed(instance),
