@@ -53,3 +53,4 @@ export function createInspector(): Inspector {
   };
 
   function inspectComponent(instance: ComponentInstance): ComponentInfo {
+    return {
