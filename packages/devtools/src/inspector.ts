@@ -56,3 +56,4 @@ export function createInspector(): Inspector {
     return {
       uid: instance.uid,
       type: instance.type,
+      name: getComponentName(instance.type),
