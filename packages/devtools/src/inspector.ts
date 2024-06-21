@@ -57,3 +57,4 @@ export function createInspector(): Inspector {
       uid: instance.uid,
       type: instance.type,
       name: getComponentName(instance.type),
+      props: { ...instance.props },
