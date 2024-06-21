@@ -51,3 +51,5 @@ export function createInspector(): Inspector {
     highlightComponent,
     unhighlightComponent,
   };
+
+  function inspectComponent(instance: ComponentInstance): ComponentInfo {
