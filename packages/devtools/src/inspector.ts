@@ -61,3 +61,4 @@ export function createInspector(): Inspector {
       state: getReactiveState(instance),
       refs: inspectRefs(instance),
       computed: inspectComputed(instance),
+      effects: inspectEffects(instance),
