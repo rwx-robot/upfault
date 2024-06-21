@@ -63,3 +63,4 @@ export function createInspector(): Inspector {
       computed: inspectComputed(instance),
       effects: inspectEffects(instance),
       lifecycle: inspectLifecycle(instance),
+      parent: instance.parent ? inspectComponent(instance.parent) : undefined,
