@@ -65,3 +65,4 @@ export function createInspector(): Inspector {
       lifecycle: inspectLifecycle(instance),
       parent: instance.parent ? inspectComponent(instance.parent) : undefined,
       children: instance.children?.map(inspectComponent) || [],
+      vnode: inspectVNode(instance.vnode!),
