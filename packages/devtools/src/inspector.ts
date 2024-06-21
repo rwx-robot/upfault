@@ -58,3 +58,4 @@ export function createInspector(): Inspector {
       type: instance.type,
       name: getComponentName(instance.type),
       props: { ...instance.props },
+      state: getReactiveState(instance),
