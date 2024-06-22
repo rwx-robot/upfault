@@ -81,3 +81,4 @@ export function createInspector(): Inspector {
       children: Array.isArray(vnode.children) 
         ? vnode.children.map(inspectVNode)
         : typeof vnode.children === 'string' 
+          ? vnode.children 
