@@ -68,3 +68,4 @@ export function createInspector(): Inspector {
       vnode: inspectVNode(instance.vnode!),
       isMounted: instance.isMounted,
       isUnmounted: instance.isUnmounted,
+    };
