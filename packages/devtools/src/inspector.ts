@@ -77,3 +77,4 @@ export function createInspector(): Inspector {
     return {
       type: vnode.type,
       key: vnode.key,
+      props: vnode.props ? { ...vnode.props } : null,
