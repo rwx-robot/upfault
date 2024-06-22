@@ -84,3 +84,4 @@ export function createInspector(): Inspector {
           ? vnode.children 
           : null,
       el: vnode.el,
+      componentInstance: vnode.componentInstance,
