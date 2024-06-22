@@ -85,3 +85,4 @@ export function createInspector(): Inspector {
           : null,
       el: vnode.el,
       componentInstance: vnode.componentInstance,
+      shapeFlag: vnode.shapeFlag,
