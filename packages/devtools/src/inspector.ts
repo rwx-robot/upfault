@@ -82,3 +82,4 @@ export function createInspector(): Inspector {
         ? vnode.children.map(inspectVNode)
         : typeof vnode.children === 'string' 
           ? vnode.children 
+          : null,
