@@ -80,3 +80,4 @@ export function createInspector(): Inspector {
       props: vnode.props ? { ...vnode.props } : null,
       children: Array.isArray(vnode.children) 
         ? vnode.children.map(inspectVNode)
+        : typeof vnode.children === 'string' 
