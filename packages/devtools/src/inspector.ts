@@ -86,3 +86,4 @@ export function createInspector(): Inspector {
       el: vnode.el,
       componentInstance: vnode.componentInstance,
       shapeFlag: vnode.shapeFlag,
+      patchFlag: vnode.patchFlag,
