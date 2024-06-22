@@ -75,3 +75,4 @@ export function createInspector(): Inspector {
     if (!vnode) return null as any;
     
     return {
+      type: vnode.type,
