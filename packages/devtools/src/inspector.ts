@@ -70,3 +70,4 @@ export function createInspector(): Inspector {
       isUnmounted: instance.isUnmounted,
     };
   }
+
