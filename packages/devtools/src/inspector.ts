@@ -76,3 +76,4 @@ export function createInspector(): Inspector {
     
     return {
       type: vnode.type,
+      key: vnode.key,
