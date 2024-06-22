@@ -79,3 +79,4 @@ export function createInspector(): Inspector {
       key: vnode.key,
       props: vnode.props ? { ...vnode.props } : null,
       children: Array.isArray(vnode.children) 
+        ? vnode.children.map(inspectVNode)
