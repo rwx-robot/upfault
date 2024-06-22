@@ -67,3 +67,4 @@ export function createInspector(): Inspector {
       children: instance.children?.map(inspectComponent) || [],
       vnode: inspectVNode(instance.vnode!),
       isMounted: instance.isMounted,
+      isUnmounted: instance.isUnmounted,
