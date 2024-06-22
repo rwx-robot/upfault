@@ -74,3 +74,4 @@ export function createInspector(): Inspector {
   function inspectVNode(vnode: VNode): VNodeInfo {
     if (!vnode) return null as any;
     
+    return {
