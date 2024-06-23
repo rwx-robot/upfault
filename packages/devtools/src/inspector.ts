@@ -105,3 +105,4 @@ export function createInspector(): Inspector {
   }
 
   function findInTree(tree: ComponentInfo, predicate: (c: ComponentInfo) => boolean): ComponentInfo | null {
+    if (predicate(tree)) return tree;
