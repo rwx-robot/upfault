@@ -88,3 +88,4 @@ export function createInspector(): Inspector {
       shapeFlag: vnode.shapeFlag,
       patchFlag: vnode.patchFlag,
     };
+  }
