@@ -89,3 +89,5 @@ export function createInspector(): Inspector {
       patchFlag: vnode.patchFlag,
     };
   }
+
+  function getComponentTree(rootInstance: ComponentInstance): ComponentInfo {
