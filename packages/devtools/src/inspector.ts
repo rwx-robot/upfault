@@ -91,3 +91,4 @@ export function createInspector(): Inspector {
   }
 
   function getComponentTree(rootInstance: ComponentInstance): ComponentInfo {
+    return inspectComponent(rootInstance);
