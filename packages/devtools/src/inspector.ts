@@ -110,3 +110,4 @@ export function createInspector(): Inspector {
       const found = findInTree(child, predicate);
       if (found) return found;
     }
+    return null;
