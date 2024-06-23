@@ -98,3 +98,4 @@ export function createInspector(): Inspector {
     const tree = inspectComponent(rootInstance);
     return findInTree(tree, c => c.name === name);
   }
+
