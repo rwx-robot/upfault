@@ -100,3 +100,4 @@ export function createInspector(): Inspector {
   }
 
   function findComponentByUid(rootInstance: ComponentInstance, uid: number): ComponentInfo | null {
+    const tree = inspectComponent(rootInstance);
