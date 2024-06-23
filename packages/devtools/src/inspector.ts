@@ -109,3 +109,4 @@ export function createInspector(): Inspector {
     for (const child of tree.children) {
       const found = findInTree(child, predicate);
       if (found) return found;
+    }
