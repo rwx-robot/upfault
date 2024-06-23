@@ -99,3 +99,4 @@ export function createInspector(): Inspector {
     return findInTree(tree, c => c.name === name);
   }
 
+  function findComponentByUid(rootInstance: ComponentInstance, uid: number): ComponentInfo | null {
