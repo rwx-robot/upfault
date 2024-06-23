@@ -103,3 +103,5 @@ export function createInspector(): Inspector {
     const tree = inspectComponent(rootInstance);
     return findInTree(tree, c => c.uid === uid);
   }
+
+  function findInTree(tree: ComponentInfo, predicate: (c: ComponentInfo) => boolean): ComponentInfo | null {
