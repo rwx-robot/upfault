@@ -133,3 +133,4 @@ export function createInspector(): Inspector {
       box-sizing: border-box;
       transition: all 0.1s ease;
     `;
+    highlightOverlay.setAttribute('data-upfault-highlight', 'true');
