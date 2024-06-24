@@ -130,3 +130,4 @@ export function createInspector(): Inspector {
       background: rgba(59, 130, 246, 0.1);
       pointer-events: none;
       z-index: 2147483647;
+      box-sizing: border-box;
