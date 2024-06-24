@@ -120,3 +120,4 @@ export function createInspector(): Inspector {
     
     const rect = element.getBoundingClientRect();
     highlightOverlay = document.createElement('div');
+    highlightOverlay.style.cssText = `
