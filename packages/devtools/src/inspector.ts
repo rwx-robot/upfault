@@ -112,3 +112,5 @@ export function createInspector(): Inspector {
     }
     return null;
   }
+
+  function highlightComponent(element: Element): void {
