@@ -114,3 +114,4 @@ export function createInspector(): Inspector {
   }
 
   function highlightComponent(element: Element): void {
+    if (highlightOverlay) {
