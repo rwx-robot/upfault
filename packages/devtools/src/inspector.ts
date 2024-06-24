@@ -117,3 +117,4 @@ export function createInspector(): Inspector {
     if (highlightOverlay) {
       unhighlightComponent();
     }
+    
