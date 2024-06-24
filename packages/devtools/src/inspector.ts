@@ -111,3 +111,4 @@ export function createInspector(): Inspector {
       if (found) return found;
     }
     return null;
+  }
