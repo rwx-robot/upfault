@@ -124,3 +124,4 @@ export function createInspector(): Inspector {
       position: fixed;
       top: ${rect.top}px;
       left: ${rect.left}px;
+      width: ${rect.width}px;
