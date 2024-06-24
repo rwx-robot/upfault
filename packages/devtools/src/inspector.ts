@@ -123,3 +123,4 @@ export function createInspector(): Inspector {
     highlightOverlay.style.cssText = `
       position: fixed;
       top: ${rect.top}px;
+      left: ${rect.left}px;
