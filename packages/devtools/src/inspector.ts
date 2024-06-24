@@ -126,3 +126,4 @@ export function createInspector(): Inspector {
       left: ${rect.left}px;
       width: ${rect.width}px;
       height: ${rect.height}px;
+      border: 2px solid #3b82f6;
