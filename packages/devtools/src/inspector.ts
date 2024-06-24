@@ -118,3 +118,4 @@ export function createInspector(): Inspector {
       unhighlightComponent();
     }
     
+    const rect = element.getBoundingClientRect();
