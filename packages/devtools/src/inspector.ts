@@ -122,3 +122,4 @@ export function createInspector(): Inspector {
     highlightOverlay = document.createElement('div');
     highlightOverlay.style.cssText = `
       position: fixed;
+      top: ${rect.top}px;
