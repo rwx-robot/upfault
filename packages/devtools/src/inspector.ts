@@ -127,3 +127,4 @@ export function createInspector(): Inspector {
       width: ${rect.width}px;
       height: ${rect.height}px;
       border: 2px solid #3b82f6;
+      background: rgba(59, 130, 246, 0.1);
