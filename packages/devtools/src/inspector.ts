@@ -132,3 +132,4 @@ export function createInspector(): Inspector {
       z-index: 2147483647;
       box-sizing: border-box;
       transition: all 0.1s ease;
+    `;
