@@ -135,3 +135,4 @@ export function createInspector(): Inspector {
     `;
     highlightOverlay.setAttribute('data-upfault-highlight', 'true');
     document.body.appendChild(highlightOverlay);
+  }
