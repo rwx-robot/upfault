@@ -153,3 +153,4 @@ function getComponentName(type: any): string {
   if (type?.name) return type.name;
   if (type?.constructor?.name) return type.constructor.name;
   return 'Anonymous';
+}
