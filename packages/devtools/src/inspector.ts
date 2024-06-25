@@ -141,3 +141,4 @@ export function createInspector(): Inspector {
     if (highlightOverlay) {
       highlightOverlay.remove();
       highlightOverlay = null;
+    }
