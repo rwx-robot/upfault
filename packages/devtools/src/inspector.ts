@@ -146,3 +146,5 @@ export function createInspector(): Inspector {
 }
 
 let highlightOverlay: HTMLElement | null = null;
+
+function getComponentName(type: any): string {
