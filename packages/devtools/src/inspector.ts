@@ -144,3 +144,5 @@ export function createInspector(): Inspector {
     }
   }
 }
+
+let highlightOverlay: HTMLElement | null = null;
