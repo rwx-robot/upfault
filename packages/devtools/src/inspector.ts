@@ -156,3 +156,4 @@ function getComponentName(type: any): string {
 }
 
 function getReactiveState(instance: ComponentInstance): Record<string, any> {
+  const state: Record<string, any> = {};
