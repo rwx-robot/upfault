@@ -134,3 +134,4 @@ export function createInspector(): Inspector {
       transition: all 0.1s ease;
     `;
     highlightOverlay.setAttribute('data-upfault-highlight', 'true');
+    document.body.appendChild(highlightOverlay);
