@@ -154,3 +154,5 @@ function getComponentName(type: any): string {
   if (type?.constructor?.name) return type.constructor.name;
   return 'Anonymous';
 }
+
+function getReactiveState(instance: ComponentInstance): Record<string, any> {
