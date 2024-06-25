@@ -151,3 +151,4 @@ function getComponentName(type: any): string {
   if (typeof type === 'string') return type;
   if (type?.displayName) return type.displayName;
   if (type?.name) return type.name;
+  if (type?.constructor?.name) return type.constructor.name;
