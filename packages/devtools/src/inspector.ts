@@ -159,3 +159,4 @@ function getReactiveState(instance: ComponentInstance): Record<string, any> {
   const state: Record<string, any> = {};
   const proxy = instance.proxy;
   if (proxy) {
+    for (const key of Object.keys(proxy)) {
