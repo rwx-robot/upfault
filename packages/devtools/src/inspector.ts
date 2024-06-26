@@ -176,3 +176,4 @@ function inspectRefs(instance: ComponentInstance): Record<string, any> {
     if (value && typeof value === 'object' && '__v_isRef' in value) {
       refs[key] = {
         key,
+        value: value.value,
