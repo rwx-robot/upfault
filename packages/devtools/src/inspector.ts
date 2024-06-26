@@ -163,3 +163,4 @@ function getReactiveState(instance: ComponentInstance): Record<string, any> {
       if (!key.startsWith('_') && key !== 'constructor') {
         state[key] = proxy[key];
       }
+    }
