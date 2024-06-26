@@ -168,3 +168,4 @@ function getReactiveState(instance: ComponentInstance): Record<string, any> {
   return state;
 }
 
+function inspectRefs(instance: ComponentInstance): Record<string, any> {
