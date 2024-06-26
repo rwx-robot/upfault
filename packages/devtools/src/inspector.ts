@@ -181,3 +181,4 @@ function inspectRefs(instance: ComponentInstance): Record<string, any> {
         isShallow: '__v_isShallow' in value,
       };
     }
+  }
