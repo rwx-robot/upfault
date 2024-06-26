@@ -164,3 +164,4 @@ function getReactiveState(instance: ComponentInstance): Record<string, any> {
         state[key] = proxy[key];
       }
     }
+  }
