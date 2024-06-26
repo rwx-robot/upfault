@@ -179,3 +179,4 @@ function inspectRefs(instance: ComponentInstance): Record<string, any> {
         value: value.value,
         isReadonly: '__v_isReadonly' in value,
         isShallow: '__v_isShallow' in value,
+      };
