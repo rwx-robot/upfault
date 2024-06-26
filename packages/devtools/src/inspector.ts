@@ -177,3 +177,4 @@ function inspectRefs(instance: ComponentInstance): Record<string, any> {
       refs[key] = {
         key,
         value: value.value,
+        isReadonly: '__v_isReadonly' in value,
