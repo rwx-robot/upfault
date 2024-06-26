@@ -166,3 +166,4 @@ function getReactiveState(instance: ComponentInstance): Record<string, any> {
     }
   }
   return state;
+}
