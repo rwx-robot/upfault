@@ -162,3 +162,4 @@ function getReactiveState(instance: ComponentInstance): Record<string, any> {
     for (const key of Object.keys(proxy)) {
       if (!key.startsWith('_') && key !== 'constructor') {
         state[key] = proxy[key];
+      }
