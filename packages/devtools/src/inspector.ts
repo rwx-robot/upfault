@@ -193,3 +193,4 @@ function inspectComputed(instance: ComponentInstance): Record<string, any> {
     if (value && typeof value === 'object' && '__v_isComputed' in value) {
       computed[key] = {
         key,
+        value: value.value,
