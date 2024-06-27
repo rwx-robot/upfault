@@ -194,3 +194,4 @@ function inspectComputed(instance: ComponentInstance): Record<string, any> {
       computed[key] = {
         key,
         value: value.value,
+        dependencies: [],
