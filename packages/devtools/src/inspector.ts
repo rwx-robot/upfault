@@ -190,3 +190,4 @@ function inspectComputed(instance: ComponentInstance): Record<string, any> {
   const state = getReactiveState(instance);
   
   for (const [key, value] of Object.entries(state)) {
+    if (value && typeof value === 'object' && '__v_isComputed' in value) {
