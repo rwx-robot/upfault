@@ -197,3 +197,4 @@ function inspectComputed(instance: ComponentInstance): Record<string, any> {
         dependencies: [],
         isDirty: '__v_isDirty' in value ? value.__v_isDirty : false,
       };
+    }
