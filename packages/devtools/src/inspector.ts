@@ -184,3 +184,5 @@ function inspectRefs(instance: ComponentInstance): Record<string, any> {
   }
   return refs;
 }
+
+function inspectComputed(instance: ComponentInstance): Record<string, any> {
