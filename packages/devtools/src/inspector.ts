@@ -187,3 +187,4 @@ function inspectRefs(instance: ComponentInstance): Record<string, any> {
 
 function inspectComputed(instance: ComponentInstance): Record<string, any> {
   const computed: Record<string, any> = {};
+  const state = getReactiveState(instance);
