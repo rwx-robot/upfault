@@ -183,3 +183,4 @@ function inspectRefs(instance: ComponentInstance): Record<string, any> {
     }
   }
   return refs;
+}
