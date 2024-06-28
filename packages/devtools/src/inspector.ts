@@ -219,3 +219,4 @@ function inspectLifecycle(instance: ComponentInstance): any {
     onBeforeUnmount: Array.isArray(instance.onBeforeUnmount) && instance.onBeforeUnmount.length > 0,
     onUnmounted: Array.isArray(instance.onUnmounted) && instance.onUnmounted.length > 0,
   };
+}
