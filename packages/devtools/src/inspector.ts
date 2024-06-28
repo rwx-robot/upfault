@@ -212,3 +212,4 @@ function inspectEffects(instance: any): any[] {
 
 function inspectLifecycle(instance: ComponentInstance): any {
   return {
+    onBeforeMount: Array.isArray(instance.onBeforeMount) && instance.onBeforeMount.length > 0,
