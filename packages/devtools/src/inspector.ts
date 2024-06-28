@@ -206,3 +206,4 @@ function inspectEffects(instance: any): any[] {
   return (instance.effects || []).map((effect: any, index: number) => ({
     id: index,
     deps: effect.deps?.map((d: any) => d.name || 'unknown') || [],
+    active: effect.active,
