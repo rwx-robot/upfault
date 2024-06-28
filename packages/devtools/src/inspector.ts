@@ -211,3 +211,4 @@ function inspectEffects(instance: any): any[] {
 }
 
 function inspectLifecycle(instance: ComponentInstance): any {
+  return {
