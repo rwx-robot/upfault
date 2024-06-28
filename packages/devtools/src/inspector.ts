@@ -216,3 +216,4 @@ function inspectLifecycle(instance: ComponentInstance): any {
     onMounted: Array.isArray(instance.onMounted) && instance.onMounted.length > 0,
     onBeforeUpdate: Array.isArray(instance.onBeforeUpdate) && instance.onBeforeUpdate.length > 0,
     onUpdated: Array.isArray(instance.onUpdated) && instance.onUpdated.length > 0,
+    onBeforeUnmount: Array.isArray(instance.onBeforeUnmount) && instance.onBeforeUnmount.length > 0,
