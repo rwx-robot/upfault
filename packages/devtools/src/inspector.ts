@@ -208,3 +208,4 @@ function inspectEffects(instance: any): any[] {
     deps: effect.deps?.map((d: any) => d.name || 'unknown') || [],
     active: effect.active,
   }));
+}
