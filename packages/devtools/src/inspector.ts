@@ -205,3 +205,4 @@ function inspectComputed(instance: ComponentInstance): Record<string, any> {
 function inspectEffects(instance: any): any[] {
   return (instance.effects || []).map((effect: any, index: number) => ({
     id: index,
+    deps: effect.deps?.map((d: any) => d.name || 'unknown') || [],
