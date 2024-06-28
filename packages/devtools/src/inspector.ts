@@ -202,3 +202,4 @@ function inspectComputed(instance: ComponentInstance): Record<string, any> {
   return computed;
 }
 
+function inspectEffects(instance: any): any[] {
