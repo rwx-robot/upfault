@@ -9,3 +9,4 @@ export type EventType =
   | 'update' 
   | 'unmount' 
   | 'effect' 
+  | 'ref-change' 
