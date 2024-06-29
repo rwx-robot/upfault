@@ -13,3 +13,4 @@ export type EventType =
   | 'computed-eval' 
   | 'lifecycle' 
   | 'error' 
+  | 'custom';
