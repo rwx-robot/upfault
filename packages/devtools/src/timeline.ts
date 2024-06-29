@@ -10,3 +10,4 @@ export type EventType =
   | 'unmount' 
   | 'effect' 
   | 'ref-change' 
+  | 'computed-eval' 
