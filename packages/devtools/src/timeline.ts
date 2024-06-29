@@ -16,3 +16,4 @@ export type EventType =
   | 'custom';
 
 export interface TimelineEvent {
+  id: number;
