@@ -21,3 +21,4 @@ export interface TimelineEvent {
   type: EventType;
   componentUid?: number;
   componentName?: string;
+  data: any;
