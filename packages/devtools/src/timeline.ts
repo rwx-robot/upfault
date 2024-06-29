@@ -7,3 +7,4 @@
 export type EventType = 
   | 'mount' 
   | 'update' 
+  | 'unmount' 
