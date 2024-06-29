@@ -23,3 +23,4 @@ export interface TimelineEvent {
   componentName?: string;
   data: any;
   duration?: number;
+  stackTrace?: string;
