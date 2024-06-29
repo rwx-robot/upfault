@@ -15,3 +15,4 @@ export type EventType =
   | 'error' 
   | 'custom';
 
+export interface TimelineEvent {
