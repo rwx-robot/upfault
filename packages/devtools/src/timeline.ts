@@ -3,3 +3,5 @@
  * 
  * 记录和分析应用生命周期事件、渲染性能、状态变更
  */
+
+export type EventType = 
