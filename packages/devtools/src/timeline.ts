@@ -12,3 +12,4 @@ export type EventType =
   | 'ref-change' 
   | 'computed-eval' 
   | 'lifecycle' 
+  | 'error' 
