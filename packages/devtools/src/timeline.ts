@@ -14,3 +14,4 @@ export type EventType =
   | 'lifecycle' 
   | 'error' 
   | 'custom';
+
