@@ -11,3 +11,4 @@ export type EventType =
   | 'effect' 
   | 'ref-change' 
   | 'computed-eval' 
+  | 'lifecycle' 
