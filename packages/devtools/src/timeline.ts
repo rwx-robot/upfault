@@ -17,3 +17,4 @@ export type EventType =
 
 export interface TimelineEvent {
   id: number;
+  timestamp: number;
