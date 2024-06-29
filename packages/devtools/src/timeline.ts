@@ -19,3 +19,4 @@ export interface TimelineEvent {
   id: number;
   timestamp: number;
   type: EventType;
+  componentUid?: number;
