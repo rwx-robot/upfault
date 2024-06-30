@@ -27,3 +27,4 @@ export interface TimelineEvent {
 }
 
 export interface Timeline {
+  events: TimelineEvent[];
