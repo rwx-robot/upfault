@@ -28,3 +28,4 @@ export interface TimelineEvent {
 
 export interface Timeline {
   events: TimelineEvent[];
+  maxEvents: number;
