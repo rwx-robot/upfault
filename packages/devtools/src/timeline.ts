@@ -42,3 +42,4 @@ let timeline: Timeline = {
 };
 
 /**
+ * 创建时间线实例
