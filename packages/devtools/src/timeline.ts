@@ -25,3 +25,5 @@ export interface TimelineEvent {
   duration?: number;
   stackTrace?: string;
 }
+
+export interface Timeline {
