@@ -32,3 +32,4 @@ export interface Timeline {
   isRecording: boolean;
   startTime: number;
 }
+
