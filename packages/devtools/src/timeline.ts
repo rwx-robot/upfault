@@ -33,3 +33,4 @@ export interface Timeline {
   startTime: number;
 }
 
+let eventId = 0;
