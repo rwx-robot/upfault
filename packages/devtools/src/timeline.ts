@@ -24,3 +24,4 @@ export interface TimelineEvent {
   data: any;
   duration?: number;
   stackTrace?: string;
+}
