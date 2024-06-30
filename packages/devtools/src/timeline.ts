@@ -35,3 +35,4 @@ export interface Timeline {
 
 let eventId = 0;
 let timeline: Timeline = {
+  events: [],
