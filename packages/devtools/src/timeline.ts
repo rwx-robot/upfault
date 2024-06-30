@@ -38,3 +38,4 @@ let timeline: Timeline = {
   events: [],
   maxEvents: 10000,
   isRecording: true,
+  startTime: Date.now(),
