@@ -36,3 +36,4 @@ export interface Timeline {
 let eventId = 0;
 let timeline: Timeline = {
   events: [],
+  maxEvents: 10000,
