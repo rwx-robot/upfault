@@ -40,3 +40,5 @@ let timeline: Timeline = {
   isRecording: true,
   startTime: Date.now(),
 };
+
+/**
