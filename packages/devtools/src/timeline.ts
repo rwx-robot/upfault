@@ -31,3 +31,4 @@ export interface Timeline {
   maxEvents: number;
   isRecording: boolean;
   startTime: number;
+}
