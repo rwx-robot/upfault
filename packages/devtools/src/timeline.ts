@@ -46,3 +46,4 @@ let timeline: Timeline = {
  */
 export function createTimeline(options: { maxEvents?: number } = {}): Timeline {
   return {
+    events: [],
