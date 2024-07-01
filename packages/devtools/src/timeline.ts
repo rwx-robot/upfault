@@ -45,3 +45,4 @@ let timeline: Timeline = {
  * 创建时间线实例
  */
 export function createTimeline(options: { maxEvents?: number } = {}): Timeline {
+  return {
