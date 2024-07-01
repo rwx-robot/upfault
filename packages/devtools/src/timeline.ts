@@ -55,3 +55,4 @@ export function createTimeline(options: { maxEvents?: number } = {}): Timeline {
 
 /**
  * 记录事件
+ */
