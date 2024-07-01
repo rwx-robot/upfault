@@ -58,3 +58,4 @@ export function createTimeline(options: { maxEvents?: number } = {}): Timeline {
  */
 export function recordEvent(
   type: EventType,
+  data: any,
