@@ -61,3 +61,4 @@ export function recordEvent(
   data: any,
   options: {
     componentUid?: number;
+    componentName?: string;
