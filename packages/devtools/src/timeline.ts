@@ -49,3 +49,4 @@ export function createTimeline(options: { maxEvents?: number } = {}): Timeline {
     events: [],
     maxEvents: options.maxEvents || 10000,
     isRecording: true,
+    startTime: Date.now(),
