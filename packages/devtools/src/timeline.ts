@@ -52,3 +52,5 @@ export function createTimeline(options: { maxEvents?: number } = {}): Timeline {
     startTime: Date.now(),
   };
 }
+
+/**
