@@ -60,3 +60,4 @@ export function recordEvent(
   type: EventType,
   data: any,
   options: {
+    componentUid?: number;
