@@ -63,3 +63,4 @@ export function recordEvent(
     componentUid?: number;
     componentName?: string;
     duration?: number;
+    captureStack?: boolean;
