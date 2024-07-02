@@ -80,3 +80,4 @@ export function recordEvent(
   };
 
   timeline.events.push(event);
+  
