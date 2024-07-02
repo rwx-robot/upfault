@@ -69,3 +69,4 @@ export function recordEvent(
   if (!timeline.isRecording) return null as any;
 
   const event: TimelineEvent = {
+    id: ++eventId,
