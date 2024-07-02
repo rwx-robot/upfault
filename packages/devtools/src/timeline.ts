@@ -65,3 +65,4 @@ export function recordEvent(
     duration?: number;
     captureStack?: boolean;
   } = {}
+): TimelineEvent {
