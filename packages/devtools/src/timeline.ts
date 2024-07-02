@@ -76,3 +76,4 @@ export function recordEvent(
     componentName: options.componentName,
     data,
     duration: options.duration,
+    stackTrace: options.captureStack ? new Error().stack : undefined,
