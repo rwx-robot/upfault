@@ -74,3 +74,4 @@ export function recordEvent(
     type,
     componentUid: options.componentUid,
     componentName: options.componentName,
+    data,
