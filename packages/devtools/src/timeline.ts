@@ -66,3 +66,4 @@ export function recordEvent(
     captureStack?: boolean;
   } = {}
 ): TimelineEvent {
+  if (!timeline.isRecording) return null as any;
