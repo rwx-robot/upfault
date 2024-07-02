@@ -72,3 +72,4 @@ export function recordEvent(
     id: ++eventId,
     timestamp: Date.now() - timeline.startTime,
     type,
+    componentUid: options.componentUid,
