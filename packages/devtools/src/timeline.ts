@@ -82,3 +82,4 @@ export function recordEvent(
   timeline.events.push(event);
   
   // 限制事件数量
+  if (timeline.events.length > timeline.maxEvents) {
