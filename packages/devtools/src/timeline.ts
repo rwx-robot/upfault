@@ -79,3 +79,4 @@ export function recordEvent(
     stackTrace: options.captureStack ? new Error().stack : undefined,
   };
 
+  timeline.events.push(event);
