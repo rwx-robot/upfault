@@ -71,3 +71,4 @@ export function recordEvent(
   const event: TimelineEvent = {
     id: ++eventId,
     timestamp: Date.now() - timeline.startTime,
+    type,
