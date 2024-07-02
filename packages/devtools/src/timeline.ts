@@ -68,3 +68,4 @@ export function recordEvent(
 ): TimelineEvent {
   if (!timeline.isRecording) return null as any;
 
+  const event: TimelineEvent = {
