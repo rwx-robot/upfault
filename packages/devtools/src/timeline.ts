@@ -83,3 +83,4 @@ export function recordEvent(
   
   // 限制事件数量
   if (timeline.events.length > timeline.maxEvents) {
+    timeline.events.shift();
