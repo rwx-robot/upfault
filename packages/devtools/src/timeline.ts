@@ -93,3 +93,4 @@ export function recordEvent(
  * 获取时间线事件
  */
 export function getTimelineEvents(filter?: {
+  type?: EventType;
