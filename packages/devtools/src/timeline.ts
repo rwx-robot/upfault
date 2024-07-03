@@ -98,3 +98,4 @@ export function getTimelineEvents(filter?: {
   since?: number;
   limit?: number;
 }): TimelineEvent[] {
+  let events = [...timeline.events];
