@@ -100,3 +100,4 @@ export function getTimelineEvents(filter?: {
 }): TimelineEvent[] {
   let events = [...timeline.events];
   
+  if (filter) {
