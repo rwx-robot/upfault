@@ -101,3 +101,4 @@ export function getTimelineEvents(filter?: {
   let events = [...timeline.events];
   
   if (filter) {
+    if (filter.type) {
