@@ -97,3 +97,4 @@ export function getTimelineEvents(filter?: {
   componentUid?: number;
   since?: number;
   limit?: number;
+}): TimelineEvent[] {
