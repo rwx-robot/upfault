@@ -104,3 +104,4 @@ export function getTimelineEvents(filter?: {
     if (filter.type) {
       events = events.filter(e => e.type === filter.type);
     }
+    if (filter.componentUid) {
