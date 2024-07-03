@@ -85,3 +85,5 @@ export function recordEvent(
   if (timeline.events.length > timeline.maxEvents) {
     timeline.events.shift();
   }
+
+  return event;
