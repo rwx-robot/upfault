@@ -94,3 +94,4 @@ export function recordEvent(
  */
 export function getTimelineEvents(filter?: {
   type?: EventType;
+  componentUid?: number;
