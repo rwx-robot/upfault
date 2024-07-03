@@ -108,3 +108,4 @@ export function getTimelineEvents(filter?: {
       events = events.filter(e => e.componentUid === filter.componentUid);
     }
     if (filter.since) {
+      events = events.filter(e => e.timestamp >= filter.since!);
