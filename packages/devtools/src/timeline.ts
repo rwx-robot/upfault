@@ -114,3 +114,4 @@ export function getTimelineEvents(filter?: {
       events = events.slice(-filter.limit);
     }
   }
+  
