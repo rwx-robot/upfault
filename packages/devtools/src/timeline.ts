@@ -123,3 +123,4 @@ export function getTimelineEvents(filter?: {
  */
 export function clearTimeline(): void {
   timeline.events = [];
+  eventId = 0;
