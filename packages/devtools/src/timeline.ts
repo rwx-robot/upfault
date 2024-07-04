@@ -125,3 +125,4 @@ export function clearTimeline(): void {
   timeline.events = [];
   eventId = 0;
   timeline.startTime = Date.now();
+}
