@@ -126,3 +126,5 @@ export function clearTimeline(): void {
   eventId = 0;
   timeline.startTime = Date.now();
 }
+
+/**
