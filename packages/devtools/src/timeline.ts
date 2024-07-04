@@ -122,3 +122,4 @@ export function getTimelineEvents(filter?: {
  * 清空时间线
  */
 export function clearTimeline(): void {
+  timeline.events = [];
