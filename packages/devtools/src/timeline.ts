@@ -113,3 +113,4 @@ export function getTimelineEvents(filter?: {
     if (filter.limit) {
       events = events.slice(-filter.limit);
     }
+  }
