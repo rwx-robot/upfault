@@ -110,3 +110,4 @@ export function getTimelineEvents(filter?: {
     if (filter.since) {
       events = events.filter(e => e.timestamp >= filter.since!);
     }
+    if (filter.limit) {
