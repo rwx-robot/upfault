@@ -132,3 +132,4 @@ export function clearTimeline(): void {
  */
 export function setRecording(enabled: boolean): void {
   timeline.isRecording = enabled;
+}
