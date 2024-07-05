@@ -148,3 +148,4 @@ export function getTimelineStats(): {
     eventTypes: {},
     totalDuration: 0,
     avgEventDuration: 0,
+  };
