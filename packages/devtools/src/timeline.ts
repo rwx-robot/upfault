@@ -142,3 +142,4 @@ export function getTimelineStats(): {
   eventTypes: Record<EventType, number>;
   totalDuration: number;
   avgEventDuration: number;
+} {
