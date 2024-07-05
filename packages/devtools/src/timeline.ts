@@ -144,3 +144,4 @@ export function getTimelineStats(): {
   avgEventDuration: number;
 } {
   const stats: any = {
+    totalEvents: timeline.events.length,
