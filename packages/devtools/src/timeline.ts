@@ -145,3 +145,4 @@ export function getTimelineStats(): {
 } {
   const stats: any = {
     totalEvents: timeline.events.length,
+    eventTypes: {},
