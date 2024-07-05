@@ -137,3 +137,4 @@ export function setRecording(enabled: boolean): void {
 /**
  * 获取时间线统计信息
  */
+export function getTimelineStats(): {
