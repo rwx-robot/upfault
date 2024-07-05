@@ -139,3 +139,4 @@ export function setRecording(enabled: boolean): void {
  */
 export function getTimelineStats(): {
   totalEvents: number;
+  eventTypes: Record<EventType, number>;
