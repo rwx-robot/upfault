@@ -161,3 +161,4 @@ export function getTimelineStats(): {
     }
   }
 
+  stats.totalDuration = totalDuration;
