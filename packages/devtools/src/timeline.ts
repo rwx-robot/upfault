@@ -166,3 +166,5 @@ export function getTimelineStats(): {
 
   return stats;
 }
+
+/**
