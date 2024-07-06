@@ -150,3 +150,4 @@ export function getTimelineStats(): {
     avgEventDuration: 0,
   };
 
+  let totalDuration = 0;
