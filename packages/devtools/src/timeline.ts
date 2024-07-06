@@ -155,3 +155,4 @@ export function getTimelineStats(): {
 
   for (const event of timeline.events) {
     stats.eventTypes[event.type] = (stats.eventTypes[event.type] || 0) + 1;
+    if (event.duration !== undefined) {
