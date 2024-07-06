@@ -157,3 +157,4 @@ export function getTimelineStats(): {
     stats.eventTypes[event.type] = (stats.eventTypes[event.type] || 0) + 1;
     if (event.duration !== undefined) {
       totalDuration += event.duration;
+      durationCount++;
