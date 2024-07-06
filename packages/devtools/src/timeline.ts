@@ -165,3 +165,4 @@ export function getTimelineStats(): {
   stats.avgEventDuration = durationCount > 0 ? totalDuration / durationCount : 0;
 
   return stats;
+}
