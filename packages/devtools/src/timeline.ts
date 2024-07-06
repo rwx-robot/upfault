@@ -153,3 +153,4 @@ export function getTimelineStats(): {
   let totalDuration = 0;
   let durationCount = 0;
 
+  for (const event of timeline.events) {
