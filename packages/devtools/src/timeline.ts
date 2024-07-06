@@ -159,3 +159,4 @@ export function getTimelineStats(): {
       totalDuration += event.duration;
       durationCount++;
     }
+  }
