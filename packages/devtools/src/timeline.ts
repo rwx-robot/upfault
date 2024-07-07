@@ -187,3 +187,4 @@ export function importTimeline(json: string): void {
   timeline.events = data.events || [];
   timeline.startTime = data.startTime || Date.now();
   eventId = timeline.events.length > 0 
+    ? Math.max(...timeline.events.map(e => e.id)) 
