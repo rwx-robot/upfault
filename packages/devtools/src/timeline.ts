@@ -184,3 +184,4 @@ export function exportTimeline(): string {
  */
 export function importTimeline(json: string): void {
   const data = JSON.parse(json);
+  timeline.events = data.events || [];
