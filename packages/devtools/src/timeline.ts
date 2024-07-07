@@ -182,3 +182,4 @@ export function exportTimeline(): string {
 /**
  * 导入时间线数据
  */
+export function importTimeline(json: string): void {
