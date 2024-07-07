@@ -186,3 +186,4 @@ export function importTimeline(json: string): void {
   const data = JSON.parse(json);
   timeline.events = data.events || [];
   timeline.startTime = data.startTime || Date.now();
+  eventId = timeline.events.length > 0 
