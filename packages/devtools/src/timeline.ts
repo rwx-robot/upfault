@@ -173,3 +173,4 @@ export function getTimelineStats(): {
 export function exportTimeline(): string {
   return JSON.stringify({
     startTime: timeline.startTime,
+    endTime: Date.now(),
