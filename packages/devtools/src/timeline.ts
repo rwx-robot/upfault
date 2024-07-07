@@ -174,3 +174,4 @@ export function exportTimeline(): string {
   return JSON.stringify({
     startTime: timeline.startTime,
     endTime: Date.now(),
+    events: timeline.events,
