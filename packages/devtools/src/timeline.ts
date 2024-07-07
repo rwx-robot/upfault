@@ -177,3 +177,4 @@ export function exportTimeline(): string {
     events: timeline.events,
     stats: getTimelineStats(),
   }, null, 2);
+}
