@@ -178,3 +178,5 @@ export function exportTimeline(): string {
     stats: getTimelineStats(),
   }, null, 2);
 }
+
+/**
