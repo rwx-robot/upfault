@@ -207,3 +207,4 @@ export const perf = {
       : Date.now() - timeline.startTime;
     
     if (startEvent && endTime !== undefined) {
+      const duration = endTime - startEvent.timestamp;
