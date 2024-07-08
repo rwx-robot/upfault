@@ -198,3 +198,5 @@ export const perf = {
   mark(name: string, data?: any): void {
     recordEvent('custom', { mark: name, ...data });
   },
+
+  measure(name: string, startMark: string, endMark?: string): number {
