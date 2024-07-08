@@ -196,3 +196,4 @@ export function importTimeline(json: string): void {
  */
 export const perf = {
   mark(name: string, data?: any): void {
+    recordEvent('custom', { mark: name, ...data });
