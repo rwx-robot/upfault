@@ -190,3 +190,5 @@ export function importTimeline(json: string): void {
     ? Math.max(...timeline.events.map(e => e.id)) 
     : 0;
 }
+
+/**
