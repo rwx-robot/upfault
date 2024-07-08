@@ -200,3 +200,4 @@ export const perf = {
   },
 
   measure(name: string, startMark: string, endMark?: string): number {
+    const events = getTimelineEvents({ type: 'custom' });
