@@ -203,3 +203,4 @@ export const perf = {
     const events = getTimelineEvents({ type: 'custom' });
     const startEvent = events.find(e => e.data?.mark === startMark);
     const endTime = endMark 
+      ? events.find(e => e.data?.mark === endMark)?.timestamp
