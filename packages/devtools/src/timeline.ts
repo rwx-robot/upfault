@@ -192,3 +192,4 @@ export function importTimeline(json: string): void {
 }
 
 /**
+ * 性能标记 - 便捷方法
