@@ -206,3 +206,4 @@ export const perf = {
       ? events.find(e => e.data?.mark === endMark)?.timestamp
       : Date.now() - timeline.startTime;
     
+    if (startEvent && endTime !== undefined) {
