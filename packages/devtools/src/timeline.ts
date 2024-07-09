@@ -213,3 +213,5 @@ export const perf = {
     }
     return 0;
   },
+
+  time(name: string): () => number {
