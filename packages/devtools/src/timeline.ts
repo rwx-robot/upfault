@@ -217,3 +217,4 @@ export const perf = {
   time(name: string): () => number {
     const startTime = Date.now();
     return () => {
+      const duration = Date.now() - startTime;
