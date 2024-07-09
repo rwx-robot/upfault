@@ -211,3 +211,4 @@ export const perf = {
       recordEvent('custom', { measure: name, duration, start: startMark, end: endMark });
       return duration;
     }
+    return 0;
