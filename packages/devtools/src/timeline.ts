@@ -221,3 +221,4 @@ export const perf = {
       recordEvent('custom', { timing: name, duration });
       return duration;
     };
+  },
