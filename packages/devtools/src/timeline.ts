@@ -229,3 +229,4 @@ export const perf = {
  */
 export const lifecycle = {
   mount(componentUid: number, componentName: string, duration?: number): void {
+    recordEvent('mount', {}, { componentUid, componentName, duration, captureStack: true });
