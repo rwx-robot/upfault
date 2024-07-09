@@ -227,3 +227,4 @@ export const perf = {
 /**
  * 生命周期追踪 - 便捷方法
  */
+export const lifecycle = {
