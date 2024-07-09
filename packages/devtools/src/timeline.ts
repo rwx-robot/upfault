@@ -218,3 +218,4 @@ export const perf = {
     const startTime = Date.now();
     return () => {
       const duration = Date.now() - startTime;
+      recordEvent('custom', { timing: name, duration });
