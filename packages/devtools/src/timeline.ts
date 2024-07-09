@@ -215,3 +215,4 @@ export const perf = {
   },
 
   time(name: string): () => number {
+    const startTime = Date.now();
