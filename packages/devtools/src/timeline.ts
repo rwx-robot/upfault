@@ -212,3 +212,4 @@ export const perf = {
       return duration;
     }
     return 0;
+  },
