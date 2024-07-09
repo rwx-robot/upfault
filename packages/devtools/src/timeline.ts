@@ -210,3 +210,4 @@ export const perf = {
       const duration = endTime - startEvent.timestamp;
       recordEvent('custom', { measure: name, duration, start: startMark, end: endMark });
       return duration;
+    }
