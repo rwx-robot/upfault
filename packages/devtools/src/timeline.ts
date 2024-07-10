@@ -236,3 +236,4 @@ export const lifecycle = {
     recordEvent('update', {}, { componentUid, componentName, duration });
   },
 
+  unmount(componentUid: number, componentName: string): void {
