@@ -249,3 +249,4 @@ export const lifecycle = {
  * 响应式追踪 - 便捷方法
  */
 export const reactivity = {
+  refChange(refName: string, oldValue: any, newValue: any, componentUid?: number): void {
