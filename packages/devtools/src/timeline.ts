@@ -239,3 +239,5 @@ export const lifecycle = {
   unmount(componentUid: number, componentName: string): void {
     recordEvent('unmount', {}, { componentUid, componentName });
   },
+
+  lifecycle(hook: string, componentUid: number, componentName: string, duration?: number): void {
