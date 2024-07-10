@@ -235,3 +235,4 @@ export const lifecycle = {
   update(componentUid: number, componentName: string, duration?: number): void {
     recordEvent('update', {}, { componentUid, componentName, duration });
   },
+
