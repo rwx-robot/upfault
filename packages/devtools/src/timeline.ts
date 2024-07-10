@@ -248,3 +248,4 @@ export const lifecycle = {
 /**
  * 响应式追踪 - 便捷方法
  */
+export const reactivity = {
