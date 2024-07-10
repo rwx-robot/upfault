@@ -251,3 +251,4 @@ export const lifecycle = {
 export const reactivity = {
   refChange(refName: string, oldValue: any, newValue: any, componentUid?: number): void {
     recordEvent('ref-change', { refName, oldValue, newValue }, { componentUid });
+  },
