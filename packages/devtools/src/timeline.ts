@@ -244,3 +244,4 @@ export const lifecycle = {
     recordEvent('lifecycle', { hook }, { componentUid, componentName, duration });
   },
 };
+
