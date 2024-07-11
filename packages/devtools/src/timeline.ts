@@ -257,3 +257,4 @@ export const reactivity = {
     recordEvent('computed-eval', { computedName, value, dependencies }, { componentUid });
   },
 
+  effectTrigger(effectId: number, deps: string[], componentUid?: number): void {
