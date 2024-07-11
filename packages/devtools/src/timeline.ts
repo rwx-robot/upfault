@@ -271,3 +271,4 @@ export const error = {
       message: error.message, 
       stack: error.stack,
       info 
+    }, { componentUid, componentName, captureStack: true });
