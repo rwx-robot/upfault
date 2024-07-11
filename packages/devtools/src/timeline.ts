@@ -252,3 +252,5 @@ export const reactivity = {
   refChange(refName: string, oldValue: any, newValue: any, componentUid?: number): void {
     recordEvent('ref-change', { refName, oldValue, newValue }, { componentUid });
   },
+
+  computedEval(computedName: string, value: any, dependencies: string[], componentUid?: number): void {
