@@ -266,3 +266,4 @@ export const reactivity = {
  * 错误追踪
  */
 export const error = {
+  capture(error: Error, componentUid?: number, componentName?: string, info?: string): void {
