@@ -268,3 +268,4 @@ export const reactivity = {
 export const error = {
   capture(error: Error, componentUid?: number, componentName?: string, info?: string): void {
     recordEvent('error', { 
+      message: error.message, 
