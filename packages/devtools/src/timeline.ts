@@ -258,3 +258,4 @@ export const reactivity = {
   },
 
   effectTrigger(effectId: number, deps: string[], componentUid?: number): void {
+    recordEvent('effect', { effectId, deps }, { componentUid });
