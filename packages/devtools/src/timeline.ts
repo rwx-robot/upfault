@@ -265,3 +265,4 @@ export const reactivity = {
 /**
  * 错误追踪
  */
+export const error = {
