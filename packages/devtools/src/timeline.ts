@@ -270,3 +270,4 @@ export const error = {
     recordEvent('error', { 
       message: error.message, 
       stack: error.stack,
+      info 
