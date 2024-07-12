@@ -289,3 +289,4 @@ export function resetGlobalTimeline(): void {
   timeline = {
     events: [],
     maxEvents: 10000,
+    isRecording: true,
