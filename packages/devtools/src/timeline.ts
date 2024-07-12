@@ -292,3 +292,4 @@ export function resetGlobalTimeline(): void {
     isRecording: true,
     startTime: Date.now(),
   };
+  eventId = 0;
