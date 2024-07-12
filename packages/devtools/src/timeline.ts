@@ -288,3 +288,4 @@ export function getGlobalTimeline(): typeof timeline {
 export function resetGlobalTimeline(): void {
   timeline = {
     events: [],
+    maxEvents: 10000,
