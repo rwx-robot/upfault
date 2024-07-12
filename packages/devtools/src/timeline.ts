@@ -291,3 +291,4 @@ export function resetGlobalTimeline(): void {
     maxEvents: 10000,
     isRecording: true,
     startTime: Date.now(),
+  };
