@@ -293,3 +293,4 @@ export function resetGlobalTimeline(): void {
     startTime: Date.now(),
   };
   eventId = 0;
+}
