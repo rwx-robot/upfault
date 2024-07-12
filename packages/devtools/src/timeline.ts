@@ -273,3 +273,4 @@ export const error = {
       info 
     }, { componentUid, componentName, captureStack: true });
   },
+};
