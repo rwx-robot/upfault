@@ -279,3 +279,4 @@ export const error = {
  * 获取全局时间线实例 (单例模式)
  */
 export function getGlobalTimeline(): typeof timeline {
+  return timeline;
