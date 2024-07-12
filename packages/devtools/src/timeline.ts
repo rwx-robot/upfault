@@ -283,3 +283,4 @@ export function getGlobalTimeline(): typeof timeline {
 }
 
 /**
+ * 重置全局时间线
