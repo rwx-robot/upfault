@@ -272,3 +272,4 @@ export const error = {
       stack: error.stack,
       info 
     }, { componentUid, componentName, captureStack: true });
+  },
