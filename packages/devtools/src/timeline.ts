@@ -280,3 +280,4 @@ export const error = {
  */
 export function getGlobalTimeline(): typeof timeline {
   return timeline;
+}
