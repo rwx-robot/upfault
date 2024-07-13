@@ -8,3 +8,4 @@ export interface ComponentInstance {
   type: any;
   vnode: any;
   parent: ComponentInstance | null;
+  root: ComponentInstance | null;
