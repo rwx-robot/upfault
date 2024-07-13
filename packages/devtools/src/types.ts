@@ -15,3 +15,4 @@ export interface ComponentInstance {
   props: Record<string, any>;
   isMounted: boolean;
   isUnmounted: boolean;
+  isDeactivated: boolean;
