@@ -13,3 +13,4 @@ export interface ComponentInstance {
   provides: Record<string, any>;
   inject: Record<string, any>;
   props: Record<string, any>;
+  isMounted: boolean;
