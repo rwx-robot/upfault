@@ -10,3 +10,4 @@ export interface ComponentInstance {
   parent: ComponentInstance | null;
   root: ComponentInstance | null;
   proxy: any;
+  provides: Record<string, any>;
