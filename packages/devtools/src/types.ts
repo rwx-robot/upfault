@@ -18,3 +18,4 @@ export interface ComponentInstance {
   isDeactivated: boolean;
   render: (() => any) | null;
   update: (() => void) | null;
+  effects: any[];
