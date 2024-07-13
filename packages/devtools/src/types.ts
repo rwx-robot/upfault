@@ -9,3 +9,4 @@ export interface ComponentInstance {
   vnode: any;
   parent: ComponentInstance | null;
   root: ComponentInstance | null;
+  proxy: any;
