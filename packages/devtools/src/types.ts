@@ -7,3 +7,4 @@ export interface ComponentInstance {
   uid: number;
   type: any;
   vnode: any;
+  parent: ComponentInstance | null;
