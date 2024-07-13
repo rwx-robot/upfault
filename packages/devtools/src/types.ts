@@ -4,3 +4,4 @@
 
 // 组件实例接口 (简化版，避免依赖 @upfault/runtime)
 export interface ComponentInstance {
+  uid: number;
