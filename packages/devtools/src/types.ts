@@ -17,3 +17,4 @@ export interface ComponentInstance {
   isUnmounted: boolean;
   isDeactivated: boolean;
   render: (() => any) | null;
+  update: (() => void) | null;
