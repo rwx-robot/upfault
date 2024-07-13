@@ -12,3 +12,4 @@ export interface ComponentInstance {
   proxy: any;
   provides: Record<string, any>;
   inject: Record<string, any>;
+  props: Record<string, any>;
