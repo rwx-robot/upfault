@@ -11,3 +11,4 @@ export interface ComponentInstance {
   root: ComponentInstance | null;
   proxy: any;
   provides: Record<string, any>;
+  inject: Record<string, any>;
