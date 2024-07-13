@@ -14,3 +14,4 @@ export interface ComponentInstance {
   inject: Record<string, any>;
   props: Record<string, any>;
   isMounted: boolean;
+  isUnmounted: boolean;
