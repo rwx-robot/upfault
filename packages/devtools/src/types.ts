@@ -2,3 +2,4 @@
  * UpFault DevTools 类型定义 (内部定义，避免依赖 workspace 包类型问题)
  */
 
+// 组件实例接口 (简化版，避免依赖 @upfault/runtime)
