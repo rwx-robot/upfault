@@ -19,3 +19,4 @@ export interface ComponentInstance {
   render: (() => any) | null;
   update: (() => void) | null;
   effects: any[];
+  onBeforeMount: (() => void)[];
