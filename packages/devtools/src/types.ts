@@ -34,3 +34,5 @@ export interface ComponentInstance {
   subTreeAnchor: any;
   children?: ComponentInstance[];
 }
+
+// VNode 类型 (简化版)
