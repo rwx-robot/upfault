@@ -37,3 +37,4 @@ export interface ComponentInstance {
 
 // VNode 类型 (简化版)
 export interface VNode {
+  type: any;
