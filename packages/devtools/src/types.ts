@@ -33,3 +33,4 @@ export interface ComponentInstance {
   subTree: any;
   subTreeAnchor: any;
   children?: ComponentInstance[];
+}
