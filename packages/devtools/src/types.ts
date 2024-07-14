@@ -39,3 +39,4 @@ export interface ComponentInstance {
 export interface VNode {
   type: any;
   key: string | number | null;
+  props: Record<string, any> | null;
