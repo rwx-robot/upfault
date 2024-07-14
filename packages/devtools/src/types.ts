@@ -32,3 +32,4 @@ export interface ComponentInstance {
   onRenderTriggered: any[];
   subTree: any;
   subTreeAnchor: any;
+  children?: ComponentInstance[];
