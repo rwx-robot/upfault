@@ -24,3 +24,4 @@ export interface ComponentInstance {
   onBeforeUpdate: (() => void)[];
   onUpdated: (() => void)[];
   onBeforeUnmount: (() => void)[];
+  onUnmounted: (() => void)[];
