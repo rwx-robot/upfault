@@ -30,3 +30,4 @@ export interface ComponentInstance {
   onErrorCaptured: any[];
   onRenderTracked: any[];
   onRenderTriggered: any[];
+  subTree: any;
