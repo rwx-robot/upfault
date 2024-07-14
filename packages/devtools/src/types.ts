@@ -28,3 +28,4 @@ export interface ComponentInstance {
   onActivated: (() => void)[];
   onDeactivated: (() => void)[];
   onErrorCaptured: any[];
+  onRenderTracked: any[];
