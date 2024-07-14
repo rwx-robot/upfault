@@ -21,3 +21,4 @@ export interface ComponentInstance {
   effects: any[];
   onBeforeMount: (() => void)[];
   onMounted: (() => void)[];
+  onBeforeUpdate: (() => void)[];
