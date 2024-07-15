@@ -46,3 +46,5 @@ export interface VNode {
   shapeFlag: number;
   patchFlag: number;
 }
+
+// Ref 类型 (简化版)
