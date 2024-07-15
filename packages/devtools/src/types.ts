@@ -59,3 +59,4 @@ export interface Ref<T = any> {
 export interface RefInfo {
   key: string;
   value: any;
+  isReadonly: boolean;
