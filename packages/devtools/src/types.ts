@@ -61,3 +61,4 @@ export interface RefInfo {
   value: any;
   isReadonly: boolean;
   isShallow: boolean;
+}
