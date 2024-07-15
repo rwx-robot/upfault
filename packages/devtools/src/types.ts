@@ -52,3 +52,4 @@ export interface Ref<T = any> {
   value: T;
   __v_isRef: true;
   __v_isReadonly?: boolean;
+  __v_isShallow?: boolean;
