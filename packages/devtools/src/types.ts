@@ -43,3 +43,4 @@ export interface VNode {
   children: any[] | string | null;
   el: Element | null;
   componentInstance: ComponentInstance | null;
+  shapeFlag: number;
