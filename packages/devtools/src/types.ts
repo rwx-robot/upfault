@@ -58,3 +58,4 @@ export interface Ref<T = any> {
 // Ref 信息
 export interface RefInfo {
   key: string;
+  value: any;
