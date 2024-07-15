@@ -40,3 +40,4 @@ export interface VNode {
   type: any;
   key: string | number | null;
   props: Record<string, any> | null;
+  children: any[] | string | null;
