@@ -50,3 +50,4 @@ export interface VNode {
 // Ref 类型 (简化版)
 export interface Ref<T = any> {
   value: T;
+  __v_isRef: true;
