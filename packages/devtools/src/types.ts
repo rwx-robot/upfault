@@ -45,3 +45,4 @@ export interface VNode {
   componentInstance: ComponentInstance | null;
   shapeFlag: number;
   patchFlag: number;
+}
