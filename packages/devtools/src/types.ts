@@ -42,3 +42,4 @@ export interface VNode {
   props: Record<string, any> | null;
   children: any[] | string | null;
   el: Element | null;
+  componentInstance: ComponentInstance | null;
