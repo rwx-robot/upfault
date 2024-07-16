@@ -75,3 +75,4 @@ export interface ComputedInfo {
 export interface EffectInfo {
   id: number;
   deps: string[];
+  active: boolean;
