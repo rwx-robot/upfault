@@ -79,3 +79,4 @@ export interface EffectInfo {
 }
 
 // 生命周期信息
+export interface LifecycleInfo {
