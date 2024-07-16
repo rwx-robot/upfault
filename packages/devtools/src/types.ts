@@ -69,3 +69,4 @@ export interface ComputedInfo {
   value: any;
   dependencies: string[];
   isDirty: boolean;
+}
