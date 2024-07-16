@@ -77,3 +77,5 @@ export interface EffectInfo {
   deps: string[];
   active: boolean;
 }
+
+// 生命周期信息
