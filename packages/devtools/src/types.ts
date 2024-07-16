@@ -70,3 +70,5 @@ export interface ComputedInfo {
   dependencies: string[];
   isDirty: boolean;
 }
+
+// Effect 信息
