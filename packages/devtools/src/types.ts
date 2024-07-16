@@ -83,3 +83,4 @@ export interface LifecycleInfo {
   onBeforeMount: boolean;
   onMounted: boolean;
   onBeforeUpdate: boolean;
+  onUpdated: boolean;
