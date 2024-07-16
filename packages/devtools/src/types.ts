@@ -82,3 +82,4 @@ export interface EffectInfo {
 export interface LifecycleInfo {
   onBeforeMount: boolean;
   onMounted: boolean;
+  onBeforeUpdate: boolean;
