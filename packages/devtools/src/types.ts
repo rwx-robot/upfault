@@ -67,3 +67,4 @@ export interface RefInfo {
 export interface ComputedInfo {
   key: string;
   value: any;
+  dependencies: string[];
