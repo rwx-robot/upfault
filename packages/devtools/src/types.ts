@@ -76,3 +76,4 @@ export interface EffectInfo {
   id: number;
   deps: string[];
   active: boolean;
+}
