@@ -81,3 +81,4 @@ export interface EffectInfo {
 // 生命周期信息
 export interface LifecycleInfo {
   onBeforeMount: boolean;
+  onMounted: boolean;
