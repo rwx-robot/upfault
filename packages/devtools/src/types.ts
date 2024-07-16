@@ -64,3 +64,4 @@ export interface RefInfo {
 }
 
 // Computed 信息
+export interface ComputedInfo {
