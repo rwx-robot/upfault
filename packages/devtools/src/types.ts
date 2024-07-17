@@ -90,3 +90,4 @@ export interface LifecycleInfo {
 
 // VNode 信息
 export interface VNodeInfo {
+  type: any;
