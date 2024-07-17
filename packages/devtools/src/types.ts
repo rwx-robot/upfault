@@ -94,3 +94,4 @@ export interface VNodeInfo {
   key: string | number | null;
   props: Record<string, any> | null;
   children: VNodeInfo[] | string | null;
+  el: Element | null;
