@@ -87,3 +87,5 @@ export interface LifecycleInfo {
   onBeforeUnmount: boolean;
   onUnmounted: boolean;
 }
+
+// VNode 信息
