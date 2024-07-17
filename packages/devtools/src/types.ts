@@ -95,3 +95,4 @@ export interface VNodeInfo {
   props: Record<string, any> | null;
   children: VNodeInfo[] | string | null;
   el: Element | null;
+  componentInstance: ComponentInstance | null;
