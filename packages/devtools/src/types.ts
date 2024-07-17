@@ -85,3 +85,4 @@ export interface LifecycleInfo {
   onBeforeUpdate: boolean;
   onUpdated: boolean;
   onBeforeUnmount: boolean;
+  onUnmounted: boolean;
