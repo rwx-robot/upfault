@@ -101,3 +101,4 @@ export interface VNodeInfo {
 }
 
 // 组件信息
+export interface ComponentInfo {
