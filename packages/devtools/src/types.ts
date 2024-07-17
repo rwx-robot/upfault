@@ -96,3 +96,4 @@ export interface VNodeInfo {
   children: VNodeInfo[] | string | null;
   el: Element | null;
   componentInstance: ComponentInstance | null;
+  shapeFlag: number;
