@@ -92,3 +92,4 @@ export interface LifecycleInfo {
 export interface VNodeInfo {
   type: any;
   key: string | number | null;
+  props: Record<string, any> | null;
