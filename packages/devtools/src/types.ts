@@ -99,3 +99,5 @@ export interface VNodeInfo {
   shapeFlag: number;
   patchFlag: number;
 }
+
+// 组件信息
