@@ -98,3 +98,4 @@ export interface VNodeInfo {
   componentInstance: ComponentInstance | null;
   shapeFlag: number;
   patchFlag: number;
+}
