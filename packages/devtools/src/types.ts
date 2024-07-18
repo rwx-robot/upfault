@@ -110,3 +110,4 @@ export interface ComponentInfo {
   refs: Record<string, RefInfo>;
   computed: Record<string, ComputedInfo>;
   effects: EffectInfo[];
+  lifecycle: LifecycleInfo;
