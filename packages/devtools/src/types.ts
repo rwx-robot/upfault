@@ -115,3 +115,4 @@ export interface ComponentInfo {
   children: ComponentInfo[];
   vnode: VNodeInfo;
   isMounted: boolean;
+  isUnmounted: boolean;
