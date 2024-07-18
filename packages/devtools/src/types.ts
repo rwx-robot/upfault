@@ -122,3 +122,4 @@ export interface ComponentInfo {
 export interface RefInfo {
   key: string;
   value: any;
+  isReadonly: boolean;
