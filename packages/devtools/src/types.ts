@@ -117,3 +117,5 @@ export interface ComponentInfo {
   isMounted: boolean;
   isUnmounted: boolean;
 }
+
+// Ref 信息
