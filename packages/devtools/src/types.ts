@@ -104,3 +104,4 @@ export interface VNodeInfo {
 export interface ComponentInfo {
   uid: number;
   type: any;
+  name: string;
