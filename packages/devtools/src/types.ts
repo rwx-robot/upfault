@@ -120,3 +120,4 @@ export interface ComponentInfo {
 
 // Ref 信息
 export interface RefInfo {
+  key: string;
