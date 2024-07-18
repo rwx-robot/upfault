@@ -105,3 +105,4 @@ export interface ComponentInfo {
   uid: number;
   type: any;
   name: string;
+  props: Record<string, any>;
