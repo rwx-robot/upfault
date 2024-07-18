@@ -116,3 +116,4 @@ export interface ComponentInfo {
   vnode: VNodeInfo;
   isMounted: boolean;
   isUnmounted: boolean;
+}
