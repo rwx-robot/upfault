@@ -114,3 +114,4 @@ export interface ComponentInfo {
   parent?: ComponentInfo;
   children: ComponentInfo[];
   vnode: VNodeInfo;
+  isMounted: boolean;
