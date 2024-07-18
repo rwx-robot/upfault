@@ -107,3 +107,4 @@ export interface ComponentInfo {
   name: string;
   props: Record<string, any>;
   state: Record<string, any>;
+  refs: Record<string, RefInfo>;
