@@ -112,3 +112,4 @@ export interface ComponentInfo {
   effects: EffectInfo[];
   lifecycle: LifecycleInfo;
   parent?: ComponentInfo;
+  children: ComponentInfo[];
