@@ -111,3 +111,4 @@ export interface ComponentInfo {
   computed: Record<string, ComputedInfo>;
   effects: EffectInfo[];
   lifecycle: LifecycleInfo;
+  parent?: ComponentInfo;
