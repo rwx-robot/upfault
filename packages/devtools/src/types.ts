@@ -109,3 +109,4 @@ export interface ComponentInfo {
   state: Record<string, any>;
   refs: Record<string, RefInfo>;
   computed: Record<string, ComputedInfo>;
+  effects: EffectInfo[];
