@@ -113,3 +113,4 @@ export interface ComponentInfo {
   lifecycle: LifecycleInfo;
   parent?: ComponentInfo;
   children: ComponentInfo[];
+  vnode: VNodeInfo;
