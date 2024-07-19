@@ -134,3 +134,4 @@ export interface ComputedInfo {
   isDirty: boolean;
 }
 
+// Effect 信息
