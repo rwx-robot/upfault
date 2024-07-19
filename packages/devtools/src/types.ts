@@ -123,3 +123,4 @@ export interface RefInfo {
   key: string;
   value: any;
   isReadonly: boolean;
+  isShallow: boolean;
