@@ -135,3 +135,4 @@ export interface ComputedInfo {
 }
 
 // Effect 信息
+export interface EffectInfo {
