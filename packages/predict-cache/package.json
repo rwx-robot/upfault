@@ -4,3 +4,4 @@
   "description": "UpFault Predict Cache - 预测缓存层",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
