@@ -2,3 +2,4 @@
   "name": "@upfault/predict-cache",
   "version": "0.2.0",
   "description": "UpFault Predict Cache - 预测缓存层",
+  "main": "dist/index.js",
