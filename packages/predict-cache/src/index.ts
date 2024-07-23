@@ -9,3 +9,4 @@
 // 核心类型
 export type {
   UpdateFingerprint,
+  PredictionStats,
