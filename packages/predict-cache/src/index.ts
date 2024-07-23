@@ -11,3 +11,4 @@ export type {
   UpdateFingerprint,
   PredictionStats,
   AdaptiveThresholdConfig,
+  AdaptiveThreshold,
