@@ -13,3 +13,4 @@ export type {
   AdaptiveThresholdConfig,
   AdaptiveThreshold,
   FastHashFn,
+} from './predict';
