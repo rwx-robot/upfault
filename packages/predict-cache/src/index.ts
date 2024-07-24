@@ -21,3 +21,4 @@ export {
   createFingerprint,
   computeDecayScore,
   updateFingerprint,
+  shouldSkip,
