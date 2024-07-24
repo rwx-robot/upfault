@@ -26,3 +26,4 @@ export {
   recordCorrectSkip,
   createPredictionStats,
   DEFAULT_ADAPTIVE_CONFIG,
+  createAdaptiveThreshold,
