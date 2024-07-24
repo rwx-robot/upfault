@@ -19,3 +19,4 @@ export type {
 export {
   FINGERPRINT_CONFIG,
   createFingerprint,
+  computeDecayScore,
