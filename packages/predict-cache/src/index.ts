@@ -23,3 +23,4 @@ export {
   updateFingerprint,
   shouldSkip,
   recordFalseSkip,
+  recordCorrectSkip,
