@@ -28,3 +28,4 @@ export {
   DEFAULT_ADAPTIVE_CONFIG,
   createAdaptiveThreshold,
   defaultFastHash,
+} from './predict';
