@@ -12,3 +12,4 @@ export type {
   PredictionStats,
   AdaptiveThresholdConfig,
   AdaptiveThreshold,
+  FastHashFn,
