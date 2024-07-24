@@ -16,3 +16,4 @@ export type {
 } from './predict';
 
 // 核心函数
+export {
