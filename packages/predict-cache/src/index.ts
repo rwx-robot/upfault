@@ -30,3 +30,4 @@ export {
   defaultFastHash,
 } from './predict';
 
+// 版本信息
