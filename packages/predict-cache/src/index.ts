@@ -17,3 +17,4 @@ export type {
 
 // 核心函数
 export {
+  FINGERPRINT_CONFIG,
