@@ -12,3 +12,4 @@ import {
   defaultFastHash,
 } from './predict';
 
+describe('Predict Cache - Fingerprint', () => {
