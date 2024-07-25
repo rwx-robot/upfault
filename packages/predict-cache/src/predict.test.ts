@@ -15,3 +15,4 @@ import {
 describe('Predict Cache - Fingerprint', () => {
   it('should create initial fingerprint', () => {
     const fp = createFingerprint();
+    expect(fp.updateCount).toBe(0);
