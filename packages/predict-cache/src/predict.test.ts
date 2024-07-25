@@ -9,3 +9,4 @@ import {
   createPredictionStats,
   DEFAULT_ADAPTIVE_CONFIG,
   createAdaptiveThreshold,
+  defaultFastHash,
