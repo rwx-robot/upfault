@@ -5,3 +5,4 @@ import {
   updateFingerprint,
   shouldSkip,
   recordFalseSkip,
+  recordCorrectSkip,
