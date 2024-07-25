@@ -13,3 +13,4 @@ import {
 } from './predict';
 
 describe('Predict Cache - Fingerprint', () => {
+  it('should create initial fingerprint', () => {
