@@ -24,3 +24,4 @@ describe('Predict Cache - Fingerprint', () => {
   });
 
   it('should compute decay score', () => {
+    const fp = createFingerprint();
