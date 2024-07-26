@@ -17,3 +17,4 @@ describe('Predict Cache - Fingerprint', () => {
     const fp = createFingerprint();
     expect(fp.updateCount).toBe(0);
     expect(fp.lastUpdateTime).toBe(0);
+    expect(fp.decayScore).toBe(0);
