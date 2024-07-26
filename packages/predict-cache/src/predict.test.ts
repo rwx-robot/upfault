@@ -27,3 +27,4 @@ describe('Predict Cache - Fingerprint', () => {
     const fp = createFingerprint();
     fp.updateCount = 5;
     fp.lastUpdateTime = 1000;
+    
