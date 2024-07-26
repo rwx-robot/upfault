@@ -35,3 +35,4 @@ describe('Predict Cache - Fingerprint', () => {
 
   it('should update fingerprint', () => {
     const fp = createFingerprint();
+    const now = performance.now();
