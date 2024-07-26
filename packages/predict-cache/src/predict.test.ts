@@ -33,3 +33,4 @@ describe('Predict Cache - Fingerprint', () => {
     expect(score).toBeLessThan(5);
   });
 
+  it('should update fingerprint', () => {
