@@ -29,3 +29,4 @@ describe('Predict Cache - Fingerprint', () => {
     fp.lastUpdateTime = 1000;
     
     const score = computeDecayScore(fp, 2000);
+    expect(score).toBeGreaterThan(0);
