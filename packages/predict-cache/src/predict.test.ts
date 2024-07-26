@@ -22,3 +22,5 @@ describe('Predict Cache - Fingerprint', () => {
     expect(fp.hashHistory.every(h => h === 0)).toBe(true);
     expect(fp.skipConfidence).toBe(0);
   });
+
+  it('should compute decay score', () => {
