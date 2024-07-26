@@ -18,3 +18,4 @@ describe('Predict Cache - Fingerprint', () => {
     expect(fp.updateCount).toBe(0);
     expect(fp.lastUpdateTime).toBe(0);
     expect(fp.decayScore).toBe(0);
+    expect(fp.hashHistory).toHaveLength(8);
