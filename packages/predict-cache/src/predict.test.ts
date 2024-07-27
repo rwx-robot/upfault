@@ -57,3 +57,4 @@ describe('Predict Cache - Fingerprint', () => {
     fp.hashHistory = [contentHash, 0, 0, 0, 0, 0, 0, 0];
     
     const result = shouldSkip(fp, testData, defaultFastHash);
+    expect(result).toBe(true);
