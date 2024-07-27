@@ -58,3 +58,4 @@ describe('Predict Cache - Fingerprint', () => {
     
     const result = shouldSkip(fp, testData, defaultFastHash);
     expect(result).toBe(true);
+  });
