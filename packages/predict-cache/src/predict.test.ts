@@ -49,3 +49,4 @@ describe('Predict Cache - Fingerprint', () => {
   it('should skip unchanged content', () => {
     const fp = createFingerprint();
     fp.updateCount = 1;
+    const testData = { data: 'same' };
