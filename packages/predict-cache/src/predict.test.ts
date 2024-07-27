@@ -47,3 +47,4 @@ describe('Predict Cache - Fingerprint', () => {
   });
 
   it('should skip unchanged content', () => {
+    const fp = createFingerprint();
