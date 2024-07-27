@@ -51,3 +51,4 @@ describe('Predict Cache - Fingerprint', () => {
     fp.updateCount = 1;
     const testData = { data: 'same' };
     const contentHash = defaultFastHash(testData);
+    
