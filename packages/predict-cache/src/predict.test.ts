@@ -45,3 +45,5 @@ describe('Predict Cache - Fingerprint', () => {
     expect(fp.consecutiveSkips).toBe(0);
     expect(fp.consecutiveHits).toBe(0);
   });
+
+  it('should skip unchanged content', () => {
