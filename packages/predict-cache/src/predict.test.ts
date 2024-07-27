@@ -42,3 +42,4 @@ describe('Predict Cache - Fingerprint', () => {
     expect(fp.updateCount).toBe(1);
     expect(fp.lastUpdateTime).toBe(now);
     expect(fp.lastContentHash).toBe(0x1234);
+    expect(fp.consecutiveSkips).toBe(0);
