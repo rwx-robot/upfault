@@ -39,3 +39,4 @@ describe('Predict Cache - Fingerprint', () => {
     
     updateFingerprint(fp, 0x1234, now);
     
+    expect(fp.updateCount).toBe(1);
