@@ -54,3 +54,4 @@ describe('Predict Cache - Fingerprint', () => {
     
     fp.updateCount = 1;
     fp.lastContentHash = contentHash;
+    fp.hashHistory = [contentHash, 0, 0, 0, 0, 0, 0, 0];
