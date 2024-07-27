@@ -53,3 +53,4 @@ describe('Predict Cache - Fingerprint', () => {
     const contentHash = defaultFastHash(testData);
     
     fp.updateCount = 1;
+    fp.lastContentHash = contentHash;
