@@ -70,3 +70,4 @@ describe('Predict Cache - Fingerprint', () => {
   });
 });
 
+describe('Predict Cache - Statistics', () => {
