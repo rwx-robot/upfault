@@ -78,3 +78,4 @@ describe('Predict Cache - Statistics', () => {
     expect(stats.f1()).toBeCloseTo(2 * 0.9 * (5/6) / (0.9 + 5/6));
     expect(stats.skipRate()).toBe(10 / 15);
   });
+});
