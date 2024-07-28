@@ -62,3 +62,4 @@ describe('Predict Cache - Fingerprint', () => {
 
   it('should not skip hot nodes', () => {
     const fp = createFingerprint();
+    fp.updateCount = 100;
