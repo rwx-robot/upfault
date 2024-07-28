@@ -79,3 +79,4 @@ describe('Predict Cache - Statistics', () => {
     expect(stats.skipRate()).toBe(10 / 15);
   });
 });
+
