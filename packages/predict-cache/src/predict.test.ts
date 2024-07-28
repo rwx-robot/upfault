@@ -75,3 +75,4 @@ describe('Predict Cache - Statistics', () => {
     const stats = createPredictionStats({ skipTotal: 10, skipCorrect: 9, skipFalse: 1, passTotal: 5 });
     expect(stats.accuracy()).toBe(0.9);
     expect(stats.recall()).toBe(5 / 6); // 5 / (1 + 5)
+    expect(stats.f1()).toBeCloseTo(2 * 0.9 * (5/6) / (0.9 + 5/6));
