@@ -74,3 +74,4 @@ describe('Predict Cache - Statistics', () => {
   it('should create prediction stats', () => {
     const stats = createPredictionStats({ skipTotal: 10, skipCorrect: 9, skipFalse: 1, passTotal: 5 });
     expect(stats.accuracy()).toBe(0.9);
+    expect(stats.recall()).toBe(5 / 6); // 5 / (1 + 5)
