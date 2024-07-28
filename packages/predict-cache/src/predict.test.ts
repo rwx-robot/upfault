@@ -72,3 +72,4 @@ describe('Predict Cache - Fingerprint', () => {
 
 describe('Predict Cache - Statistics', () => {
   it('should create prediction stats', () => {
+    const stats = createPredictionStats({ skipTotal: 10, skipCorrect: 9, skipFalse: 1, passTotal: 5 });
