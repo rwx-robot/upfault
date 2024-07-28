@@ -81,3 +81,4 @@ describe('Predict Cache - Statistics', () => {
 });
 
 describe('Predict Cache - Adaptive Threshold', () => {
+  it('should create adaptive threshold', () => {
