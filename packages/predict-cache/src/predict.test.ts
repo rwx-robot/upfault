@@ -64,3 +64,4 @@ describe('Predict Cache - Fingerprint', () => {
     const fp = createFingerprint();
     fp.updateCount = 100;
     fp.lastUpdateTime = performance.now();
+    
