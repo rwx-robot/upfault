@@ -71,3 +71,4 @@ describe('Predict Cache - Fingerprint', () => {
 });
 
 describe('Predict Cache - Statistics', () => {
+  it('should create prediction stats', () => {
