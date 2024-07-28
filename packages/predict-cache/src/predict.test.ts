@@ -65,3 +65,4 @@ describe('Predict Cache - Fingerprint', () => {
     fp.updateCount = 100;
     fp.lastUpdateTime = performance.now();
     
+    const result = shouldSkip(fp, { data: 'any' }, defaultFastHash);
