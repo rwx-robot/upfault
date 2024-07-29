@@ -99,3 +99,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
       skipTotal: 10, 
       skipCorrect: 7,  // 70% accuracy
       passTotal: 5 
+    });
