@@ -92,3 +92,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
       adjustmentStep: 0.1,
       minSkipThreshold: 0.3,
       windowSize: 3 
+    });
