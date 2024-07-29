@@ -95,3 +95,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
     });
     
     // Add low accuracy stats
+    const stats = createPredictionStats({ 
