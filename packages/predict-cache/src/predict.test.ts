@@ -90,3 +90,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
     const threshold = createAdaptiveThreshold({ 
       targetAccuracy: 0.9, 
       adjustmentStep: 0.1,
+      minSkipThreshold: 0.3,
