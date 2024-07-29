@@ -85,3 +85,5 @@ describe('Predict Cache - Adaptive Threshold', () => {
     const threshold = createAdaptiveThreshold({ targetAccuracy: 0.9, adjustmentStep: 0.1 });
     expect(threshold.getThreshold()).toBe(0.7);
   });
+
+  it('should adjust threshold based on accuracy', () => {
