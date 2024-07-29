@@ -98,3 +98,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
     const stats = createPredictionStats({ 
       skipTotal: 10, 
       skipCorrect: 7,  // 70% accuracy
+      passTotal: 5 
