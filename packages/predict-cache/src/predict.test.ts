@@ -94,3 +94,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
       windowSize: 3 
     });
     
+    // Add low accuracy stats
