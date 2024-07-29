@@ -83,3 +83,4 @@ describe('Predict Cache - Statistics', () => {
 describe('Predict Cache - Adaptive Threshold', () => {
   it('should create adaptive threshold', () => {
     const threshold = createAdaptiveThreshold({ targetAccuracy: 0.9, adjustmentStep: 0.1 });
+    expect(threshold.getThreshold()).toBe(0.7);
