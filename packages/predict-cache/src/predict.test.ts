@@ -113,3 +113,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
 describe('Predict Cache - Fast Hash', () => {
   it('should produce consistent hash', () => {
     const data = { a: 1, b: 'test' };
+    const hash1 = defaultFastHash(data);
