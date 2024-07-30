@@ -122,3 +122,4 @@ describe('Predict Cache - Fast Hash', () => {
     const hash1 = defaultFastHash({ a: 1 });
     const hash2 = defaultFastHash({ a: 2 });
     expect(hash1).not.toBe(hash2);
+  });
