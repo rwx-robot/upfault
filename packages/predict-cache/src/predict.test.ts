@@ -105,3 +105,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
       threshold.recordStats(stats);
     }
     
+    // Accuracy 70% < 85% (target - 0.05), should lower threshold
