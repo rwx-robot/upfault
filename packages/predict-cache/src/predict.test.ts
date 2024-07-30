@@ -114,3 +114,4 @@ describe('Predict Cache - Fast Hash', () => {
   it('should produce consistent hash', () => {
     const data = { a: 1, b: 'test' };
     const hash1 = defaultFastHash(data);
+    const hash2 = defaultFastHash(data);
