@@ -110,3 +110,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
   });
 });
 
+describe('Predict Cache - Fast Hash', () => {
