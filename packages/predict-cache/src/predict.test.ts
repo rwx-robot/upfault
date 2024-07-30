@@ -103,3 +103,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
     
     for (let i = 0; i < 3; i++) {
       threshold.recordStats(stats);
+    }
