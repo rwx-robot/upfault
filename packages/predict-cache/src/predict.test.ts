@@ -117,3 +117,4 @@ describe('Predict Cache - Fast Hash', () => {
     const hash2 = defaultFastHash(data);
     expect(hash1).toBe(hash2);
   });
+
