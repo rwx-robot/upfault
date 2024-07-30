@@ -120,3 +120,4 @@ describe('Predict Cache - Fast Hash', () => {
 
   it('should produce different hashes for different data', () => {
     const hash1 = defaultFastHash({ a: 1 });
+    const hash2 = defaultFastHash({ a: 2 });
