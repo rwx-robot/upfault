@@ -107,3 +107,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
     
     // Accuracy 70% < 85% (target - 0.05), should lower threshold
     expect(threshold.getThreshold()).toBeLessThan(0.7);
+  });
