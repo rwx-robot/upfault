@@ -109,3 +109,4 @@ describe('Predict Cache - Adaptive Threshold', () => {
     expect(threshold.getThreshold()).toBeLessThan(0.7);
   });
 });
+
