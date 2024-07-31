@@ -18,3 +18,4 @@ export interface UpdateFingerprint {
   /** 最近 N 次内容哈希 (环形缓冲区) */
   hashHistory: number[];
   
+  /** 哈希历史写入指针 */
