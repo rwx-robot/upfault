@@ -19,3 +19,4 @@ export interface UpdateFingerprint {
   hashHistory: number[];
   
   /** 哈希历史写入指针 */
+  hashHistoryPtr: number;
