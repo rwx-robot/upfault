@@ -11,3 +11,4 @@ export interface UpdateFingerprint {
   
   /** 上次更新时间戳 (ms) */
   lastUpdateTime: number;
+  
