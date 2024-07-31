@@ -8,3 +8,4 @@
 export interface UpdateFingerprint {
   /** 历史更新次数 */
   updateCount: number;
+  
