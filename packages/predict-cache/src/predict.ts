@@ -5,3 +5,4 @@
  * 每节点 24 字节内存占用
  */
 
+export interface UpdateFingerprint {
