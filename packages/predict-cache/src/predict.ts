@@ -13,3 +13,4 @@ export interface UpdateFingerprint {
   lastUpdateTime: number;
   
   /** 时序衰减得分 */
+  decayScore: number;
