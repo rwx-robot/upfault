@@ -41,3 +41,4 @@ export interface UpdateFingerprint {
 export const FINGERPRINT_CONFIG = {
   /** 哈希历史长度 */
   HASH_HISTORY_LENGTH: 8,
+  
