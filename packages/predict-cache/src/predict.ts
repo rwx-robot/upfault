@@ -29,3 +29,4 @@ export interface UpdateFingerprint {
   
   /** 连续跳过次数 */
   consecutiveSkips: number;
+  
