@@ -22,3 +22,4 @@ export interface UpdateFingerprint {
   hashHistoryPtr: number;
   
   /** 跳过置信度 [0, 1] */
+  skipConfidence: number;
