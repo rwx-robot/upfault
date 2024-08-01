@@ -38,3 +38,4 @@ export interface UpdateFingerprint {
 }
 
 /** 指纹配置常量 */
+export const FINGERPRINT_CONFIG = {
