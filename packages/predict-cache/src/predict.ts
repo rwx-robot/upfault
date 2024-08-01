@@ -36,3 +36,4 @@ export interface UpdateFingerprint {
   /** 误跳过次数 (应更新但跳过了) */
   falseSkipCount: number;
 }
+
