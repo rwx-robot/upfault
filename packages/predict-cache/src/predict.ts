@@ -37,3 +37,4 @@ export interface UpdateFingerprint {
   falseSkipCount: number;
 }
 
+/** 指纹配置常量 */
