@@ -26,3 +26,4 @@ export interface UpdateFingerprint {
   
   /** 最后一次内容哈希 */
   lastContentHash: number;
+  
