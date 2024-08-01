@@ -21,3 +21,4 @@ export interface UpdateFingerprint {
   /** 哈希历史写入指针 */
   hashHistoryPtr: number;
   
+  /** 跳过置信度 [0, 1] */
