@@ -47,3 +47,4 @@ export const FINGERPRINT_CONFIG = {
   
   /** 冷却时间 (ms) - 超过此时间未更新视为冷节点 */
   COOL_DOWN_MS: 5_000,
+  
