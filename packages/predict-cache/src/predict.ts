@@ -49,3 +49,4 @@ export const FINGERPRINT_CONFIG = {
   COOL_DOWN_MS: 5_000,
   
   /** 衰减常数 λ */
+  DECAY_LAMBDA: 0.001,
