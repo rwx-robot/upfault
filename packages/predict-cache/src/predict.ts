@@ -50,3 +50,4 @@ export const FINGERPRINT_CONFIG = {
   
   /** 衰减常数 λ */
   DECAY_LAMBDA: 0.001,
+  
