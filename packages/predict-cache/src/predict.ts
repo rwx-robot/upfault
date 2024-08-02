@@ -58,3 +58,4 @@ export const FINGERPRINT_CONFIG = {
   CONFIDENCE_STEP_COOL: 0.05,
   
   /** 置信度衰减步长 (未命中时) */
+  CONFIDENCE_STEP_DOWN: 0.2,
