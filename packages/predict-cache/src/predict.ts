@@ -61,3 +61,4 @@ export const FINGERPRINT_CONFIG = {
   CONFIDENCE_STEP_DOWN: 0.2,
   
   /** 跳过决策阈值 */
+  SKIP_THRESHOLD: 0.9,
