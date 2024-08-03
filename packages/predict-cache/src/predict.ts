@@ -70,3 +70,4 @@ export const FINGERPRINT_CONFIG = {
   MIN_CONFIDENCE: 0.0,
 };
 
+/** 创建初始指纹 */
