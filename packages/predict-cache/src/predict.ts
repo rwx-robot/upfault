@@ -83,3 +83,4 @@ export function createFingerprint(): UpdateFingerprint {
     consecutiveSkips: 0,
     consecutiveHits: 0,
     falseSkipCount: 0,
+  };
