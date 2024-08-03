@@ -75,3 +75,4 @@ export function createFingerprint(): UpdateFingerprint {
   return {
     updateCount: 0,
     lastUpdateTime: 0,
+    decayScore: 0,
