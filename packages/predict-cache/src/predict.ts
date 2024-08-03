@@ -87,3 +87,4 @@ export function createFingerprint(): UpdateFingerprint {
 }
 
 /** 计算衰减分数 */
+export function computeDecayScore(fingerprint: UpdateFingerprint, now: number = performance.now()): number {
