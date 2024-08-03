@@ -81,3 +81,4 @@ export function createFingerprint(): UpdateFingerprint {
     skipConfidence: 0,
     lastContentHash: 0,
     consecutiveSkips: 0,
+    consecutiveHits: 0,
