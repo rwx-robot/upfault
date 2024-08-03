@@ -86,3 +86,4 @@ export function createFingerprint(): UpdateFingerprint {
   };
 }
 
+/** 计算衰减分数 */
