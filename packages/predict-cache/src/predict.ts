@@ -73,3 +73,4 @@ export const FINGERPRINT_CONFIG = {
 /** 创建初始指纹 */
 export function createFingerprint(): UpdateFingerprint {
   return {
+    updateCount: 0,
