@@ -102,3 +102,4 @@ export function updateFingerprint(
   now: number = performance.now()
 ): void {
   fingerprint.updateCount++;
+  fingerprint.lastUpdateTime = now;
