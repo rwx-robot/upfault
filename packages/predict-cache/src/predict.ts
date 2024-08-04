@@ -107,3 +107,4 @@ export function updateFingerprint(
   fingerprint.lastContentHash = contentHash;
   
   // 记录哈希历史
+  fingerprint.hashHistory[fingerprint.hashHistoryPtr] = contentHash;
