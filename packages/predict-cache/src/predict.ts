@@ -90,3 +90,4 @@ export function createFingerprint(): UpdateFingerprint {
 export function computeDecayScore(fingerprint: UpdateFingerprint, now: number = performance.now()): number {
   const timeSinceLastUpdate = now - fingerprint.lastUpdateTime;
   if (timeSinceLastUpdate <= 0) return fingerprint.decayScore;
+  
