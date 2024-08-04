@@ -104,3 +104,4 @@ export function updateFingerprint(
   fingerprint.updateCount++;
   fingerprint.lastUpdateTime = now;
   fingerprint.decayScore = computeDecayScore(fingerprint, now);
+  fingerprint.lastContentHash = contentHash;
