@@ -92,3 +92,4 @@ export function computeDecayScore(fingerprint: UpdateFingerprint, now: number = 
   if (timeSinceLastUpdate <= 0) return fingerprint.decayScore;
   
   // decayScore = updateCount * e^(-λ * Δt)
+  return fingerprint.updateCount * Math.exp(-FINGERPRINT_CONFIG.DECAY_LAMBDA * timeSinceLastUpdate);
