@@ -101,3 +101,4 @@ export function updateFingerprint(
   contentHash: number,
   now: number = performance.now()
 ): void {
+  fingerprint.updateCount++;
