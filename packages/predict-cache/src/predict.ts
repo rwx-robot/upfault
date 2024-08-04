@@ -103,3 +103,4 @@ export function updateFingerprint(
 ): void {
   fingerprint.updateCount++;
   fingerprint.lastUpdateTime = now;
+  fingerprint.decayScore = computeDecayScore(fingerprint, now);
