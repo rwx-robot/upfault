@@ -97,3 +97,4 @@ export function computeDecayScore(fingerprint: UpdateFingerprint, now: number = 
 
 /** 更新指纹 (节点实际更新时调用) */
 export function updateFingerprint(
+  fingerprint: UpdateFingerprint,
