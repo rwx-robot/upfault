@@ -91,3 +91,4 @@ export function computeDecayScore(fingerprint: UpdateFingerprint, now: number = 
   const timeSinceLastUpdate = now - fingerprint.lastUpdateTime;
   if (timeSinceLastUpdate <= 0) return fingerprint.decayScore;
   
+  // decayScore = updateCount * e^(-λ * Δt)
