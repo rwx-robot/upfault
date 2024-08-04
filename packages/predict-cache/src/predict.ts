@@ -100,3 +100,4 @@ export function updateFingerprint(
   fingerprint: UpdateFingerprint,
   contentHash: number,
   now: number = performance.now()
+): void {
