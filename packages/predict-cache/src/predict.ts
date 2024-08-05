@@ -111,3 +111,4 @@ export function updateFingerprint(
   fingerprint.hashHistoryPtr = (fingerprint.hashHistoryPtr + 1) % FINGERPRINT_CONFIG.HASH_HISTORY_LENGTH;
   
   // 重置连续跳过
+  fingerprint.consecutiveSkips = 0;
