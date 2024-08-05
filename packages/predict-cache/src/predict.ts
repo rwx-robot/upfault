@@ -113,3 +113,4 @@ export function updateFingerprint(
   // 重置连续跳过
   fingerprint.consecutiveSkips = 0;
   
+  // 置信度衰减 (更新发生 = 不应跳过)
