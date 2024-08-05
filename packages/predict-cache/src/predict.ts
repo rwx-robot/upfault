@@ -122,3 +122,4 @@ export function updateFingerprint(
 
 /** 判断是否应跳过 Diff */
 export function shouldSkip(
+  fingerprint: UpdateFingerprint,
