@@ -124,3 +124,4 @@ export function updateFingerprint(
 export function shouldSkip(
   fingerprint: UpdateFingerprint,
   currentData: unknown,
+  fastHash: (data: unknown) => number,
