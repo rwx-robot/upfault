@@ -119,3 +119,5 @@ export function updateFingerprint(
     fingerprint.skipConfidence - FINGERPRINT_CONFIG.CONFIDENCE_STEP_DOWN
   );
 }
+
+/** 判断是否应跳过 Diff */
