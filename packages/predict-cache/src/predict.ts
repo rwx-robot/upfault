@@ -115,3 +115,4 @@ export function updateFingerprint(
   
   // 置信度衰减 (更新发生 = 不应跳过)
   fingerprint.skipConfidence = Math.max(
+    FINGERPRINT_CONFIG.MIN_CONFIDENCE,
