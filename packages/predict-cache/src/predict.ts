@@ -114,3 +114,4 @@ export function updateFingerprint(
   fingerprint.consecutiveSkips = 0;
   
   // 置信度衰减 (更新发生 = 不应跳过)
+  fingerprint.skipConfidence = Math.max(
