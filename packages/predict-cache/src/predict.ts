@@ -126,3 +126,4 @@ export function shouldSkip(
   currentData: unknown,
   fastHash: (data: unknown) => number,
   now: number = performance.now()
+): boolean {
