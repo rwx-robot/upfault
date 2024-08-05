@@ -112,3 +112,4 @@ export function updateFingerprint(
   
   // 重置连续跳过
   fingerprint.consecutiveSkips = 0;
+  
