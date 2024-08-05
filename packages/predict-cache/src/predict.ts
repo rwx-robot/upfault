@@ -117,3 +117,4 @@ export function updateFingerprint(
   fingerprint.skipConfidence = Math.max(
     FINGERPRINT_CONFIG.MIN_CONFIDENCE,
     fingerprint.skipConfidence - FINGERPRINT_CONFIG.CONFIDENCE_STEP_DOWN
+  );
