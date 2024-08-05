@@ -118,3 +118,4 @@ export function updateFingerprint(
     FINGERPRINT_CONFIG.MIN_CONFIDENCE,
     fingerprint.skipConfidence - FINGERPRINT_CONFIG.CONFIDENCE_STEP_DOWN
   );
+}
