@@ -127,3 +127,4 @@ export function shouldSkip(
   fastHash: (data: unknown) => number,
   now: number = performance.now()
 ): boolean {
+  // 规则 1: 从未更新过的节点 - 检查静态哈希
