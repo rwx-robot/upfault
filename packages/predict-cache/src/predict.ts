@@ -144,3 +144,4 @@ export function shouldSkip(
   if (fingerprint.hashHistory.includes(currentHash)) {
     fingerprint.skipConfidence = Math.min(
       FINGERPRINT_CONFIG.MAX_CONFIDENCE,
+      fingerprint.skipConfidence + FINGERPRINT_CONFIG.CONFIDENCE_STEP_UP
