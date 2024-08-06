@@ -137,3 +137,4 @@ export function shouldSkip(
   const decayScore = computeDecayScore(fingerprint, now);
   if (decayScore > FINGERPRINT_CONFIG.HOT_THRESHOLD) {
     return false;
+  }
