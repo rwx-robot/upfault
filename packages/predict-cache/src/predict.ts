@@ -134,3 +134,4 @@ export function shouldSkip(
   }
   
   // 规则 2: 高频更新节点 - 不跳过
+  const decayScore = computeDecayScore(fingerprint, now);
