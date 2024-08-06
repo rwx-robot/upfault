@@ -141,3 +141,4 @@ export function shouldSkip(
   
   // 规则 3: 内容哈希命中 - O(1) 比对
   const currentHash = fastHash(currentData);
+  if (fingerprint.hashHistory.includes(currentHash)) {
