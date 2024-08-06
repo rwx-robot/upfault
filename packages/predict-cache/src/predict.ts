@@ -138,3 +138,4 @@ export function shouldSkip(
   if (decayScore > FINGERPRINT_CONFIG.HOT_THRESHOLD) {
     return false;
   }
+  
