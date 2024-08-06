@@ -132,3 +132,4 @@ export function shouldSkip(
     const currentHash = fastHash(currentData);
     return currentHash === fingerprint.lastContentHash;
   }
+  
