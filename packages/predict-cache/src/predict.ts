@@ -129,3 +129,4 @@ export function shouldSkip(
 ): boolean {
   // 规则 1: 从未更新过的节点 - 检查静态哈希
   if (fingerprint.updateCount === 0) {
+    const currentHash = fastHash(currentData);
