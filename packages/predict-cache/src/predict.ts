@@ -147,3 +147,4 @@ export function shouldSkip(
       fingerprint.skipConfidence + FINGERPRINT_CONFIG.CONFIDENCE_STEP_UP
     );
     fingerprint.consecutiveHits++;
+    return true;
