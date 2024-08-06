@@ -133,3 +133,4 @@ export function shouldSkip(
     return currentHash === fingerprint.lastContentHash;
   }
   
+  // 规则 2: 高频更新节点 - 不跳过
