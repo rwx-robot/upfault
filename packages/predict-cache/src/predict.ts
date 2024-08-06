@@ -139,3 +139,4 @@ export function shouldSkip(
     return false;
   }
   
+  // 规则 3: 内容哈希命中 - O(1) 比对
