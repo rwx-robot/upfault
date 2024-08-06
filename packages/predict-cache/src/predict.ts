@@ -143,3 +143,4 @@ export function shouldSkip(
   const currentHash = fastHash(currentData);
   if (fingerprint.hashHistory.includes(currentHash)) {
     fingerprint.skipConfidence = Math.min(
+      FINGERPRINT_CONFIG.MAX_CONFIDENCE,
