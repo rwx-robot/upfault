@@ -150,3 +150,4 @@ export function shouldSkip(
     return true;
   }
   
+  // 规则 4: 时序衰减判断
