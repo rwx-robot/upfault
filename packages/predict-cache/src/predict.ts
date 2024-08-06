@@ -148,3 +148,4 @@ export function shouldSkip(
     );
     fingerprint.consecutiveHits++;
     return true;
+  }
