@@ -160,3 +160,4 @@ export function shouldSkip(
     return fingerprint.skipConfidence > FINGERPRINT_CONFIG.SKIP_THRESHOLD;
   }
   
+  // 默认不跳过，置信度衰减
