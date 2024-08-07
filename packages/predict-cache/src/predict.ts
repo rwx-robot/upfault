@@ -151,3 +151,4 @@ export function shouldSkip(
   }
   
   // 规则 4: 时序衰减判断
+  const timeSinceLastUpdate = now - fingerprint.lastUpdateTime;
