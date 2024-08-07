@@ -155,3 +155,4 @@ export function shouldSkip(
   if (timeSinceLastUpdate > FINGERPRINT_CONFIG.COOL_DOWN_MS) {
     fingerprint.skipConfidence = Math.min(
       FINGERPRINT_CONFIG.MAX_CONFIDENCE,
+      fingerprint.skipConfidence + FINGERPRINT_CONFIG.CONFIDENCE_STEP_COOL
