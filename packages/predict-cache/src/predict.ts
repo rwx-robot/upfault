@@ -167,3 +167,4 @@ export function shouldSkip(
   );
   fingerprint.consecutiveHits = 0;
   return false;
+}
