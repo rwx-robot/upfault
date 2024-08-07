@@ -157,3 +157,4 @@ export function shouldSkip(
       FINGERPRINT_CONFIG.MAX_CONFIDENCE,
       fingerprint.skipConfidence + FINGERPRINT_CONFIG.CONFIDENCE_STEP_COOL
     );
+    return fingerprint.skipConfidence > FINGERPRINT_CONFIG.SKIP_THRESHOLD;
