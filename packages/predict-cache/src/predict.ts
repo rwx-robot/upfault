@@ -162,3 +162,4 @@ export function shouldSkip(
   
   // 默认不跳过，置信度衰减
   fingerprint.skipConfidence = Math.max(
+    FINGERPRINT_CONFIG.MIN_CONFIDENCE,
