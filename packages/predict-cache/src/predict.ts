@@ -191,3 +191,4 @@ export interface PredictionStats {
   
   /** 正确跳过数 */
   skipCorrect: number;
+  
