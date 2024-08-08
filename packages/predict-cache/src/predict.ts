@@ -185,3 +185,4 @@ export function recordCorrectSkip(fingerprint: UpdateFingerprint): void {
 }
 
 /** 预测统计 */
+export interface PredictionStats {
