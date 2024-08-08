@@ -190,3 +190,4 @@ export interface PredictionStats {
   skipTotal: number;
   
   /** 正确跳过数 */
+  skipCorrect: number;
