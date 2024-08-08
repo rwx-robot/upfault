@@ -183,3 +183,5 @@ export function recordFalseSkip(fingerprint: UpdateFingerprint): void {
 export function recordCorrectSkip(fingerprint: UpdateFingerprint): void {
   fingerprint.consecutiveSkips++;
 }
+
+/** 预测统计 */
