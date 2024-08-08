@@ -178,3 +178,5 @@ export function recordFalseSkip(fingerprint: UpdateFingerprint): void {
     fingerprint.skipConfidence - FINGERPRINT_CONFIG.CONFIDENCE_STEP_DOWN * 2
   );
 }
+
+/** 记录正确跳过 */
