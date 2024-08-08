@@ -172,3 +172,4 @@ export function shouldSkip(
 /** 记录误跳过 (预测层发现跳过了但实际需要更新) */
 export function recordFalseSkip(fingerprint: UpdateFingerprint): void {
   fingerprint.falseSkipCount++;
+  fingerprint.consecutiveSkips = 0;
