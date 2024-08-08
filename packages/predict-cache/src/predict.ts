@@ -188,3 +188,4 @@ export function recordCorrectSkip(fingerprint: UpdateFingerprint): void {
 export interface PredictionStats {
   /** 跳过总数 */
   skipTotal: number;
+  
