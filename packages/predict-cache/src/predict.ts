@@ -174,3 +174,4 @@ export function recordFalseSkip(fingerprint: UpdateFingerprint): void {
   fingerprint.falseSkipCount++;
   fingerprint.consecutiveSkips = 0;
   fingerprint.skipConfidence = Math.max(
+    FINGERPRINT_CONFIG.MIN_CONFIDENCE,
