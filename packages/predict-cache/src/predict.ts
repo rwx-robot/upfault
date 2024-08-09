@@ -206,3 +206,4 @@ export interface PredictionStats {
   
   /** 召回率 (实际更新中被正确识别的比例) */
   recall(): number;
+  
