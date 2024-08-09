@@ -210,3 +210,4 @@ export interface PredictionStats {
   /** F1 分数 */
   f1(): number;
   
+  /** 跳过率 */
