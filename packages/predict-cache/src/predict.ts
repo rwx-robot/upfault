@@ -218,3 +218,4 @@ export interface PredictionStats {
 export function createPredictionStats(init: Partial<PredictionStats> = {}): PredictionStats {
   const base = {
     skipTotal: 0,
+    skipCorrect: 0,
