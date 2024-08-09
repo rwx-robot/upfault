@@ -202,3 +202,4 @@ export interface PredictionStats {
   passNoChange: number;
   
   /** 准确率 */
+  accuracy(): number;
