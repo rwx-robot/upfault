@@ -216,3 +216,4 @@ export interface PredictionStats {
 
 /** 创建预测统计对象 */
 export function createPredictionStats(init: Partial<PredictionStats> = {}): PredictionStats {
+  const base = {
