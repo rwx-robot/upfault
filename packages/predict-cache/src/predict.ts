@@ -219,3 +219,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
   const base = {
     skipTotal: 0,
     skipCorrect: 0,
+    skipFalse: 0,
