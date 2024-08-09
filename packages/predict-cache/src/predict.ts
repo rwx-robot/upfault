@@ -199,3 +199,4 @@ export interface PredictionStats {
   passTotal: number;
   
   /** 通过但无变化数 (浪费计算) */
+  passNoChange: number;
