@@ -212,3 +212,4 @@ export interface PredictionStats {
   
   /** 跳过率 */
   skipRate(): number;
+}
