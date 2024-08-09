@@ -201,3 +201,4 @@ export interface PredictionStats {
   /** 通过但无变化数 (浪费计算) */
   passNoChange: number;
   
+  /** 准确率 */
