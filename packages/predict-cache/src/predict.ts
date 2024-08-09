@@ -203,3 +203,4 @@ export interface PredictionStats {
   
   /** 准确率 */
   accuracy(): number;
+  
