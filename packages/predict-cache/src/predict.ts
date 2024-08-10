@@ -220,3 +220,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
     skipTotal: 0,
     skipCorrect: 0,
     skipFalse: 0,
+    passTotal: 0,
