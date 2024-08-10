@@ -223,3 +223,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
     passTotal: 0,
     passNoChange: 0,
     ...init,
+  };
