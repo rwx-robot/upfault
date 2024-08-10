@@ -235,3 +235,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
       return actualUpdates > 0 ? base.passTotal / actualUpdates : 0;
     },
     f1() {
+      const p = this.accuracy();
