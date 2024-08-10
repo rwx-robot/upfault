@@ -228,3 +228,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
   return {
     ...base,
     accuracy() {
+      return base.skipTotal > 0 ? base.skipCorrect / base.skipTotal : 0;
