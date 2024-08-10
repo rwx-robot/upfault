@@ -234,3 +234,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
       const actualUpdates = base.skipFalse + base.passTotal;
       return actualUpdates > 0 ? base.passTotal / actualUpdates : 0;
     },
+    f1() {
