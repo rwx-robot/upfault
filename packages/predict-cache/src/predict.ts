@@ -226,3 +226,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
   };
   
   return {
+    ...base,
