@@ -236,3 +236,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
     },
     f1() {
       const p = this.accuracy();
+      const r = this.recall();
