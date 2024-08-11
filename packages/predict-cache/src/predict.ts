@@ -244,3 +244,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
       return total > 0 ? base.skipTotal / total : 0;
     },
   };
+}
