@@ -252,3 +252,4 @@ export interface AdaptiveThresholdConfig {
   targetAccuracy: number;
   
   /** 调整步长 */
+  adjustmentStep: number;
