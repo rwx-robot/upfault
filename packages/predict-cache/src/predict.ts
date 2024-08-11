@@ -245,3 +245,5 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
     },
   };
 }
+
+/** 自适应阈值配置 */
