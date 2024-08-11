@@ -250,3 +250,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
 export interface AdaptiveThresholdConfig {
   /** 目标准确率 */
   targetAccuracy: number;
+  
