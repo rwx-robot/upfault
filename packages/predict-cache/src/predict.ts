@@ -254,3 +254,4 @@ export interface AdaptiveThresholdConfig {
   /** 调整步长 */
   adjustmentStep: number;
   
+  /** 最小跳过阈值 */
