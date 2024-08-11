@@ -242,3 +242,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
     skipRate() {
       const total = base.skipTotal + base.passTotal;
       return total > 0 ? base.skipTotal / total : 0;
+    },
