@@ -253,3 +253,4 @@ export interface AdaptiveThresholdConfig {
   
   /** 调整步长 */
   adjustmentStep: number;
+  
