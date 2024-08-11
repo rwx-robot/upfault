@@ -248,3 +248,4 @@ export function createPredictionStats(init: Partial<PredictionStats> = {}): Pred
 
 /** 自适应阈值配置 */
 export interface AdaptiveThresholdConfig {
+  /** 目标准确率 */
