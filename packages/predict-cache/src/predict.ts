@@ -259,3 +259,4 @@ export interface AdaptiveThresholdConfig {
   
   /** 最大跳过阈值 */
   maxSkipThreshold: number;
+  
