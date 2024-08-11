@@ -256,3 +256,4 @@ export interface AdaptiveThresholdConfig {
   
   /** 最小跳过阈值 */
   minSkipThreshold: number;
+  
