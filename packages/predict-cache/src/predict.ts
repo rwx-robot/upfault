@@ -272,3 +272,5 @@ export const DEFAULT_ADAPTIVE_CONFIG: AdaptiveThresholdConfig = {
   maxSkipThreshold: 0.99,
   windowSize: 100,
 };
+
+/** 自适应调整器 */
