@@ -270,3 +270,4 @@ export const DEFAULT_ADAPTIVE_CONFIG: AdaptiveThresholdConfig = {
   adjustmentStep: 0.02,
   minSkipThreshold: 0.7,
   maxSkipThreshold: 0.99,
+  windowSize: 100,
