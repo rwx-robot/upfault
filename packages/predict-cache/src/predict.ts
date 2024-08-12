@@ -276,3 +276,4 @@ export const DEFAULT_ADAPTIVE_CONFIG: AdaptiveThresholdConfig = {
 /** 自适应调整器 */
 export interface AdaptiveThreshold {
   config: AdaptiveThresholdConfig;
+  currentThreshold: number;
