@@ -277,3 +277,4 @@ export const DEFAULT_ADAPTIVE_CONFIG: AdaptiveThresholdConfig = {
 export interface AdaptiveThreshold {
   config: AdaptiveThresholdConfig;
   currentThreshold: number;
+  recentStats: PredictionStats[];
