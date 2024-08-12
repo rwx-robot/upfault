@@ -264,3 +264,4 @@ export interface AdaptiveThresholdConfig {
   windowSize: number;
 }
 
+/** 默认自适应配置 */
