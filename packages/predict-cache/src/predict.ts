@@ -267,3 +267,4 @@ export interface AdaptiveThresholdConfig {
 /** 默认自适应配置 */
 export const DEFAULT_ADAPTIVE_CONFIG: AdaptiveThresholdConfig = {
   targetAccuracy: 0.95,
+  adjustmentStep: 0.02,
