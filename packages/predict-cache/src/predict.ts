@@ -263,3 +263,4 @@ export interface AdaptiveThresholdConfig {
   /** 统计窗口大小 */
   windowSize: number;
 }
+
