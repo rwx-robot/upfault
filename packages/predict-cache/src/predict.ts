@@ -278,3 +278,4 @@ export interface AdaptiveThreshold {
   config: AdaptiveThresholdConfig;
   currentThreshold: number;
   recentStats: PredictionStats[];
+  
