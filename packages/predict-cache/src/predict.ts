@@ -279,3 +279,4 @@ export interface AdaptiveThreshold {
   currentThreshold: number;
   recentStats: PredictionStats[];
   
+  /** 记录统计并调整阈值 */
