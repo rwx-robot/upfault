@@ -265,3 +265,4 @@ export interface AdaptiveThresholdConfig {
 }
 
 /** 默认自适应配置 */
+export const DEFAULT_ADAPTIVE_CONFIG: AdaptiveThresholdConfig = {
