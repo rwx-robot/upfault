@@ -282,3 +282,4 @@ export interface AdaptiveThreshold {
   /** 记录统计并调整阈值 */
   recordStats(stats: PredictionStats): number;
   
+  /** 获取当前阈值 */
