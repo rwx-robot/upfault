@@ -290,3 +290,4 @@ export interface AdaptiveThreshold {
 }
 
 /** 创建自适应阈值调整器 */
+export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig> = {}): AdaptiveThreshold {
