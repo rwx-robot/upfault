@@ -297,3 +297,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
   
   return {
     config: mergedConfig,
+    currentThreshold,
