@@ -287,3 +287,4 @@ export interface AdaptiveThreshold {
   
   /** 重置 */
   reset(): void;
+}
