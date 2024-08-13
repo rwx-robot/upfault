@@ -301,3 +301,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
     recentStats,
     
     recordStats(stats: PredictionStats) {
+      recentStats.push(stats);
