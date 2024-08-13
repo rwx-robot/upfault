@@ -296,3 +296,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
   let currentThreshold = mergedConfig.minSkipThreshold;
   
   return {
+    config: mergedConfig,
