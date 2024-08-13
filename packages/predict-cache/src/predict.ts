@@ -284,3 +284,4 @@ export interface AdaptiveThreshold {
   
   /** 获取当前阈值 */
   getThreshold(): number;
+  
