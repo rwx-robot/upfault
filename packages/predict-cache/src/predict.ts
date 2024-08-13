@@ -295,3 +295,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
   const recentStats: PredictionStats[] = [];
   let currentThreshold = mergedConfig.minSkipThreshold;
   
+  return {
