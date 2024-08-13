@@ -283,3 +283,4 @@ export interface AdaptiveThreshold {
   recordStats(stats: PredictionStats): number;
   
   /** 获取当前阈值 */
+  getThreshold(): number;
