@@ -306,3 +306,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
         recentStats.shift();
       }
       
+      // 计算窗口内平均准确率
