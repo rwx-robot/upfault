@@ -312,3 +312,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
       // 自适应调整
       if (avgAccuracy < mergedConfig.targetAccuracy - 0.05) {
         // 准确率太低，降低阈值 (更保守)
+        currentThreshold = Math.max(
