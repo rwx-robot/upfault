@@ -314,3 +314,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
         // 准确率太低，降低阈值 (更保守)
         currentThreshold = Math.max(
           mergedConfig.minSkipThreshold,
+          currentThreshold - mergedConfig.adjustmentStep
