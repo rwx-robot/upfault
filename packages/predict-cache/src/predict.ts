@@ -322,3 +322,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
           mergedConfig.maxSkipThreshold,
           currentThreshold + mergedConfig.adjustmentStep
         );
+      }
