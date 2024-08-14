@@ -321,3 +321,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
         currentThreshold = Math.min(
           mergedConfig.maxSkipThreshold,
           currentThreshold + mergedConfig.adjustmentStep
+        );
