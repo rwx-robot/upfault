@@ -305,3 +305,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
       if (recentStats.length > mergedConfig.windowSize) {
         recentStats.shift();
       }
+      
