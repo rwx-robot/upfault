@@ -316,3 +316,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
           mergedConfig.minSkipThreshold,
           currentThreshold - mergedConfig.adjustmentStep
         );
+      } else if (avgAccuracy > mergedConfig.targetAccuracy + 0.02) {
