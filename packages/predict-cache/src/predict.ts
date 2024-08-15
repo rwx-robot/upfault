@@ -333,3 +333,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
     
     reset() {
       recentStats.length = 0;
+      currentThreshold = mergedConfig.minSkipThreshold;
