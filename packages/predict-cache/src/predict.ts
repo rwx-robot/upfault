@@ -347,3 +347,4 @@ export interface FastHashFn {
 export function defaultFastHash(data: unknown): number {
   const str = JSON.stringify(data);
   let hash = 0x811c9dc5;
+  for (let i = 0; i < str.length; i++) {
