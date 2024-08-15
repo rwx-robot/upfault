@@ -335,3 +335,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
       recentStats.length = 0;
       currentThreshold = mergedConfig.minSkipThreshold;
     },
+  };
