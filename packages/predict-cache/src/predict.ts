@@ -345,3 +345,4 @@ export interface FastHashFn {
 
 /** 默认快速哈希 (FNV-1a 变体) */
 export function defaultFastHash(data: unknown): number {
+  const str = JSON.stringify(data);
