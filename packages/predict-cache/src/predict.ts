@@ -331,3 +331,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
       return currentThreshold;
     },
     
+    reset() {
