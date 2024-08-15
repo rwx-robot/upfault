@@ -339,3 +339,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
 }
 
 /** 快速哈希函数接口 */
+export interface FastHashFn {
