@@ -328,3 +328,4 @@ export function createAdaptiveThreshold(config: Partial<AdaptiveThresholdConfig>
     },
     
     getThreshold() {
+      return currentThreshold;
