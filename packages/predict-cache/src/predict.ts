@@ -350,3 +350,4 @@ export function defaultFastHash(data: unknown): number {
   for (let i = 0; i < str.length; i++) {
     hash ^= str.charCodeAt(i);
     hash = (hash * 0x01000193) >>> 0;
+  }
