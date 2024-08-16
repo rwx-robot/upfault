@@ -352,3 +352,4 @@ export function defaultFastHash(data: unknown): number {
     hash = (hash * 0x01000193) >>> 0;
   }
   return hash >>> 0;
+}
