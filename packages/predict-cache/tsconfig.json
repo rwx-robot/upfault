@@ -9,3 +9,4 @@
     "sourceMap": true,
     "outDir": "./dist",
     "strict": true,
+    "noUncheckedIndexedAccess": true,
