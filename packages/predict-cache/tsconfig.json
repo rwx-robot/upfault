@@ -20,3 +20,4 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
+      "@upfault/*": ["../*/src"]
