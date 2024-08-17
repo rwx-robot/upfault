@@ -21,3 +21,4 @@
     "baseUrl": ".",
     "paths": {
       "@upfault/*": ["../*/src"]
+    }
