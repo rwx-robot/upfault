@@ -12,3 +12,4 @@
       "require": "./dist/index.js"
     },
     "./render": {
+      "types": "./dist/render.d.ts",
