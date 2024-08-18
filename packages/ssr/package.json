@@ -1,3 +1,4 @@
 {
   "name": "@upfault/ssr",
   "version": "0.2.0",
+  "description": "UpFault 服务端渲染",
