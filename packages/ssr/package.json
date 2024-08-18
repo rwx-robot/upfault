@@ -4,3 +4,4 @@
   "description": "UpFault 服务端渲染",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
