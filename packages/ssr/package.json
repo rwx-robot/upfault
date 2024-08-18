@@ -20,3 +20,4 @@
       "types": "./dist/streaming.d.ts",
       "import": "./dist/streaming.mjs",
       "require": "./dist/streaming.js"
+    },
