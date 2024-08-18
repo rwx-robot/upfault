@@ -21,3 +21,4 @@
       "import": "./dist/streaming.mjs",
       "require": "./dist/streaming.js"
     },
+    "./hydration": {
