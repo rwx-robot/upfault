@@ -18,3 +18,4 @@
     },
     "./streaming": {
       "types": "./dist/streaming.d.ts",
+      "import": "./dist/streaming.mjs",
