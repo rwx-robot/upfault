@@ -22,3 +22,4 @@
       "require": "./dist/streaming.js"
     },
     "./hydration": {
+      "types": "./dist/hydration.d.ts",
