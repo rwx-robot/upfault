@@ -27,3 +27,4 @@
       "require": "./dist/hydration.js"
     },
     "./middleware": {
+      "types": "./dist/middleware.d.ts",
