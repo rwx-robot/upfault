@@ -29,3 +29,4 @@
     "./middleware": {
       "types": "./dist/middleware.d.ts",
       "import": "./dist/middleware.mjs",
+      "require": "./dist/middleware.js"
