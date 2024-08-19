@@ -37,3 +37,4 @@
       "require": "./dist/components.js"
     }
   },
+  "scripts": {
