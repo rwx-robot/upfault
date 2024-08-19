@@ -35,3 +35,4 @@
       "types": "./dist/components.d.ts",
       "import": "./dist/components.mjs",
       "require": "./dist/components.js"
+    }
