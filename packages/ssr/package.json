@@ -32,3 +32,4 @@
       "require": "./dist/middleware.js"
     },
     "./components": {
+      "types": "./dist/components.d.ts",
