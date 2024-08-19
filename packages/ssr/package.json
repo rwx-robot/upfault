@@ -23,3 +23,4 @@
     },
     "./hydration": {
       "types": "./dist/hydration.d.ts",
+      "import": "./dist/hydration.mjs",
