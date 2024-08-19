@@ -31,3 +31,4 @@
       "import": "./dist/middleware.mjs",
       "require": "./dist/middleware.js"
     },
+    "./components": {
