@@ -59,3 +59,4 @@
     "esbuild": "^0.20.0"
   },
   "publishConfig": {
+    "access": "public",
