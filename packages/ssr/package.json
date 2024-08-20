@@ -50,3 +50,4 @@
     "@upfault/runtime": "workspace:*",
     "@upfault/reactivity": "workspace:*",
     "@upfault/shared": "workspace:*",
+    "@upfault/diff": "workspace:*",
