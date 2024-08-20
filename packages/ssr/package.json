@@ -47,3 +47,4 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
+    "@upfault/runtime": "workspace:*",
