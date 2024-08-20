@@ -52,3 +52,4 @@
     "@upfault/shared": "workspace:*",
     "@upfault/diff": "workspace:*",
     "@upfault/scheduler": "workspace:*"
+  },
