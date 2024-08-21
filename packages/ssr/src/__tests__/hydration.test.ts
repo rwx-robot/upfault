@@ -15,3 +15,5 @@ const mockIntersectionObserver = vi.fn().mockImplementation((callback, options) 
   const unobserve = vi.fn();
   return { observe, unobserve, disconnect: vi.fn(), takeRecords: vi.fn(), callback, options };
 });
+
+vi.stubGlobal('IntersectionObserver', mockIntersectionObserver);
