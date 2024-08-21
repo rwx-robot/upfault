@@ -12,3 +12,4 @@ import {
 // Mock IntersectionObserver for jsdom
 const mockIntersectionObserver = vi.fn().mockImplementation((callback, options) => {
   const observe = vi.fn();
+  const unobserve = vi.fn();
