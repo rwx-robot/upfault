@@ -10,3 +10,4 @@ import {
 } from '../hydration';
 
 // Mock IntersectionObserver for jsdom
+const mockIntersectionObserver = vi.fn().mockImplementation((callback, options) => {
