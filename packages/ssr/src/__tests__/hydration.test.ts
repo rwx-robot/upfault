@@ -3,3 +3,4 @@ import {
   hydrate, 
   hydrateRoot, 
   partialHydrate, 
+  lazyHydrate, 
