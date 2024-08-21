@@ -8,3 +8,5 @@ import {
   markHydrated, 
   getHydrationState 
 } from '../hydration';
+
+// Mock IntersectionObserver for jsdom
