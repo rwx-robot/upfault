@@ -6,3 +6,4 @@ import {
   lazyHydrate, 
   isHydrated, 
   markHydrated, 
+  getHydrationState 
