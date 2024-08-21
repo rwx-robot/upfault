@@ -17,3 +17,5 @@ const mockIntersectionObserver = vi.fn().mockImplementation((callback, options) 
 });
 
 vi.stubGlobal('IntersectionObserver', mockIntersectionObserver);
+
+describe('SSR Hydration', () => {
