@@ -30,3 +30,4 @@ describe('SSR Hydration', () => {
     if (container.parentNode) {
       document.body.removeChild(container);
     }
+    vi.clearAllMocks();
