@@ -27,3 +27,4 @@ describe('SSR Hydration', () => {
   });
   
   afterEach(() => {
+    if (container.parentNode) {
