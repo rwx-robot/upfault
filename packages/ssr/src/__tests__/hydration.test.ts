@@ -31,3 +31,4 @@ describe('SSR Hydration', () => {
       document.body.removeChild(container);
     }
     vi.clearAllMocks();
+  });
