@@ -23,3 +23,4 @@ describe('SSR Hydration', () => {
   
   beforeEach(() => {
     container = document.createElement('div');
+    document.body.appendChild(container);
