@@ -43,3 +43,4 @@ describe('SSR Hydration', () => {
       const el = document.createElement('div');
       markHydrated(el);
       expect(isHydrated(el)).toBe(true);
+    });
