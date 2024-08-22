@@ -36,3 +36,4 @@ describe('SSR Hydration', () => {
   describe('isHydrated / markHydrated', () => {
     it('should return false for unhydrated element', () => {
       const el = document.createElement('div');
+      expect(isHydrated(el)).toBe(false);
