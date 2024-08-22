@@ -26,3 +26,4 @@ describe('SSR Hydration', () => {
     document.body.appendChild(container);
   });
   
+  afterEach(() => {
