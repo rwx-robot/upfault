@@ -35,3 +35,4 @@ describe('SSR Hydration', () => {
 
   describe('isHydrated / markHydrated', () => {
     it('should return false for unhydrated element', () => {
+      const el = document.createElement('div');
