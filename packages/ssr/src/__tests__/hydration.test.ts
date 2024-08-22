@@ -41,3 +41,4 @@ describe('SSR Hydration', () => {
 
     it('should return true after markHydrated', () => {
       const el = document.createElement('div');
+      markHydrated(el);
