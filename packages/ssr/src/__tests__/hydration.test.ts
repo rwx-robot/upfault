@@ -32,3 +32,5 @@ describe('SSR Hydration', () => {
     }
     vi.clearAllMocks();
   });
+
+  describe('isHydrated / markHydrated', () => {
