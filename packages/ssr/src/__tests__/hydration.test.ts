@@ -21,3 +21,4 @@ vi.stubGlobal('IntersectionObserver', mockIntersectionObserver);
 describe('SSR Hydration', () => {
   let container: HTMLElement;
   
+  beforeEach(() => {
