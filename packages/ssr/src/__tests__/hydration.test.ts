@@ -29,3 +29,4 @@ describe('SSR Hydration', () => {
   afterEach(() => {
     if (container.parentNode) {
       document.body.removeChild(container);
+    }
