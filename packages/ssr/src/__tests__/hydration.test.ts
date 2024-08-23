@@ -58,3 +58,4 @@ describe('SSR Hydration', () => {
 
   describe('partialHydrate', () => {
     it('should hydrate elements matching selector', () => {
+      const el1 = document.createElement('div');
