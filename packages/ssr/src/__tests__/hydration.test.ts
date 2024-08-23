@@ -62,3 +62,4 @@ describe('SSR Hydration', () => {
       el1.setAttribute('data-hydrate', 'test');
       document.body.appendChild(el1);
       
+      const el2 = document.createElement('div');
