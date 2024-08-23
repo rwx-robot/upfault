@@ -45,3 +45,5 @@ describe('SSR Hydration', () => {
       expect(isHydrated(el)).toBe(true);
     });
   });
+
+  describe('getHydrationState', () => {
