@@ -55,3 +55,5 @@ describe('SSR Hydration', () => {
       expect(typeof state.pendingCount).toBe('number');
     });
   });
+
+  describe('partialHydrate', () => {
