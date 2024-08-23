@@ -49,3 +49,4 @@ describe('SSR Hydration', () => {
   describe('getHydrationState', () => {
     it('should return counts', () => {
       const state = getHydrationState();
+      expect(state).toHaveProperty('hydratedCount');
