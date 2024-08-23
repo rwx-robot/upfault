@@ -44,3 +44,4 @@ describe('SSR Hydration', () => {
       markHydrated(el);
       expect(isHydrated(el)).toBe(true);
     });
+  });
