@@ -52,3 +52,4 @@ describe('SSR Hydration', () => {
       expect(state).toHaveProperty('hydratedCount');
       expect(state).toHaveProperty('pendingCount');
       expect(typeof state.hydratedCount).toBe('number');
+      expect(typeof state.pendingCount).toBe('number');
