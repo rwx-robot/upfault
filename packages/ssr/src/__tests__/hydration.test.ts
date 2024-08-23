@@ -47,3 +47,4 @@ describe('SSR Hydration', () => {
   });
 
   describe('getHydrationState', () => {
+    it('should return counts', () => {
