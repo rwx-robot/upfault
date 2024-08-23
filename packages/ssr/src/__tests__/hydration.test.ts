@@ -54,3 +54,4 @@ describe('SSR Hydration', () => {
       expect(typeof state.hydratedCount).toBe('number');
       expect(typeof state.pendingCount).toBe('number');
     });
+  });
