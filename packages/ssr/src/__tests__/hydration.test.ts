@@ -81,3 +81,4 @@ describe('SSR Hydration', () => {
 
       const onHydrated = vi.fn();
       partialHydrate('[data-hydrate="test"]', {}, { onHydrated });
+      
