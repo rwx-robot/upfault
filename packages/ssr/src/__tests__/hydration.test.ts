@@ -83,3 +83,4 @@ describe('SSR Hydration', () => {
       partialHydrate('[data-hydrate="test"]', {}, { onHydrated });
       
       expect(onHydrated).toHaveBeenCalledWith(expect.any(HTMLElement));
+    });
