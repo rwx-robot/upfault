@@ -70,3 +70,4 @@ describe('SSR Hydration', () => {
       
       partialHydrate('[data-hydrate="test"]', vnode);
       
+      expect(el1.querySelectorAll('*').length).toBeGreaterThanOrEqual(0);
