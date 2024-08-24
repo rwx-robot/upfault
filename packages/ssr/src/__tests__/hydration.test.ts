@@ -76,3 +76,4 @@ describe('SSR Hydration', () => {
 
     it('should call onHydrated callback', () => {
       const el = document.createElement('div');
+      el.setAttribute('data-hydrate', 'test');
