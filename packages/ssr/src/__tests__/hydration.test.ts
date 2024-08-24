@@ -78,3 +78,5 @@ describe('SSR Hydration', () => {
       const el = document.createElement('div');
       el.setAttribute('data-hydrate', 'test');
       document.body.appendChild(el);
+
+      const onHydrated = vi.fn();
