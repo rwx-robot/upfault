@@ -84,3 +84,4 @@ describe('SSR Hydration', () => {
       
       expect(onHydrated).toHaveBeenCalledWith(expect.any(HTMLElement));
     });
+  });
