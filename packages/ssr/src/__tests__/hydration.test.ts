@@ -74,3 +74,4 @@ describe('SSR Hydration', () => {
       expect(el2.querySelectorAll('*').length).toBeGreaterThanOrEqual(0);
     });
 
+    it('should call onHydrated callback', () => {
