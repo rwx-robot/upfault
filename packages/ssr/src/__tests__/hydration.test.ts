@@ -67,3 +67,4 @@ describe('SSR Hydration', () => {
       document.body.appendChild(el2);
 
       const vnode = { type: 'span', props: {}, children: 'hydrated' };
+      
