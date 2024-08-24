@@ -82,3 +82,4 @@ describe('SSR Hydration', () => {
       const onHydrated = vi.fn();
       partialHydrate('[data-hydrate="test"]', {}, { onHydrated });
       
+      expect(onHydrated).toHaveBeenCalledWith(expect.any(HTMLElement));
