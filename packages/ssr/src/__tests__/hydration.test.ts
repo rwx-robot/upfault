@@ -68,3 +68,4 @@ describe('SSR Hydration', () => {
 
       const vnode = { type: 'span', props: {}, children: 'hydrated' };
       
+      partialHydrate('[data-hydrate="test"]', vnode);
