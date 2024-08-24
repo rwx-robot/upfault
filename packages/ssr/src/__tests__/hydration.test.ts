@@ -80,3 +80,4 @@ describe('SSR Hydration', () => {
       document.body.appendChild(el);
 
       const onHydrated = vi.fn();
+      partialHydrate('[data-hydrate="test"]', {}, { onHydrated });
