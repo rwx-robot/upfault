@@ -87,3 +87,4 @@ describe('SSR Hydration', () => {
   });
 
   describe('lazyHydrate', () => {
+    it('should return IntersectionObserver', () => {
