@@ -72,3 +72,4 @@ describe('SSR Hydration', () => {
       
       expect(el1.querySelectorAll('*').length).toBeGreaterThanOrEqual(0);
       expect(el2.querySelectorAll('*').length).toBeGreaterThanOrEqual(0);
+    });
