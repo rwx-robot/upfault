@@ -100,3 +100,4 @@ describe('SSR Hydration', () => {
 
       const el2 = document.createElement('div');
       el2.setAttribute('data-lazy', 'test');
+      document.body.appendChild(el2);
