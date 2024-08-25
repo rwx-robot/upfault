@@ -103,3 +103,4 @@ describe('SSR Hydration', () => {
       document.body.appendChild(el2);
 
       const observer = lazyHydrate('[data-lazy]', () => ({ type: 'div' }));
+      
