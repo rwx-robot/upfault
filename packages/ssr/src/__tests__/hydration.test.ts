@@ -104,3 +104,4 @@ describe('SSR Hydration', () => {
 
       const observer = lazyHydrate('[data-lazy]', () => ({ type: 'div' }));
       
+      expect(observer.observe).toHaveBeenCalledWith(el1);
