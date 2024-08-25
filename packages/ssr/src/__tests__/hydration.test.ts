@@ -89,3 +89,4 @@ describe('SSR Hydration', () => {
   describe('lazyHydrate', () => {
     it('should return IntersectionObserver', () => {
       const observer = lazyHydrate('[data-lazy]', () => ({ type: 'div' }));
+      expect(observer).toBeDefined();
