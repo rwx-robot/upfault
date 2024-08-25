@@ -108,3 +108,4 @@ describe('SSR Hydration', () => {
       expect(observer.observe).toHaveBeenCalledWith(el2);
     });
   });
+});
