@@ -92,3 +92,5 @@ describe('SSR Hydration', () => {
       expect(observer).toBeDefined();
       expect(typeof observer.observe).toBe('function');
     });
+
+    it('should observe matching elements', () => {
