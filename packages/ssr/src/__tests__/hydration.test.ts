@@ -94,3 +94,4 @@ describe('SSR Hydration', () => {
     });
 
     it('should observe matching elements', () => {
+      const el1 = document.createElement('div');
