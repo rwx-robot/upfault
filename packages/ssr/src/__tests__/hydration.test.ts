@@ -106,3 +106,4 @@ describe('SSR Hydration', () => {
       
       expect(observer.observe).toHaveBeenCalledWith(el1);
       expect(observer.observe).toHaveBeenCalledWith(el2);
+    });
