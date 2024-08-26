@@ -14,3 +14,4 @@ export interface StreamingOptions {
   preloadModules?: boolean;
   suspenseFallback?: string;
   onShellReady?: () => void;
+  onAllReady?: () => void;
