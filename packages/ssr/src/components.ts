@@ -16,3 +16,4 @@ export interface StreamingOptions {
   onShellReady?: () => void;
   onAllReady?: () => void;
   onError?: (error: Error) => void;
+}
