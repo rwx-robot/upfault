@@ -12,3 +12,4 @@ export interface StreamingOptions {
   bootstrapScripts?: string[];
   inlineStyles?: boolean;
   preloadModules?: boolean;
+  suspenseFallback?: string;
