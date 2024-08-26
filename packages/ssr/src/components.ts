@@ -15,3 +15,4 @@ export interface StreamingOptions {
   suspenseFallback?: string;
   onShellReady?: () => void;
   onAllReady?: () => void;
+  onError?: (error: Error) => void;
