@@ -22,3 +22,4 @@ export interface StreamRenderer {
   render(vnode: VNode): ReadableStream;
   pipeToNodeWritable(writable: NodeJS.WritableStream): Promise<void>;
   pipeToWebWritable(writable: WritableStream): Promise<void>;
+  abort(): void;
