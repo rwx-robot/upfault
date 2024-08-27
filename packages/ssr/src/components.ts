@@ -38,3 +38,4 @@ export interface SuspenseBoundary {
 export function createStreamRenderer(options: StreamingOptions = {}): StreamRenderer {
   let aborted = false;
   let shellSent = false;
+  
