@@ -23,3 +23,4 @@ export interface StreamRenderer {
   pipeToNodeWritable(writable: NodeJS.WritableStream): Promise<void>;
   pipeToWebWritable(writable: WritableStream): Promise<void>;
   abort(): void;
+}
