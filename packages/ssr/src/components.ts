@@ -29,3 +29,4 @@ export interface SuspenseBoundary {
   fallback: VNode | string | (() => VNode | string);
   onResolve?: (data: any) => void;
   onReject?: (error: Error) => void;
+  timeout?: number;
