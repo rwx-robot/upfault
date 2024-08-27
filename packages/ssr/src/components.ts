@@ -31,3 +31,5 @@ export interface SuspenseBoundary {
   onReject?: (error: Error) => void;
   timeout?: number;
 }
+
+/**
