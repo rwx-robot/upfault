@@ -26,3 +26,4 @@ export interface StreamRenderer {
 }
 
 export interface SuspenseBoundary {
+  fallback: VNode | string | (() => VNode | string);
