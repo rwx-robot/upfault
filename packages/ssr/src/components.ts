@@ -33,3 +33,4 @@ export interface SuspenseBoundary {
 }
 
 /**
+ * Create streaming renderer
