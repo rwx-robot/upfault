@@ -25,3 +25,4 @@ export interface StreamRenderer {
   abort(): void;
 }
 
+export interface SuspenseBoundary {
