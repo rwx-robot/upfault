@@ -40,3 +40,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
   let shellSent = false;
   
   return {
+    render(vnode: VNode): ReadableStream {
