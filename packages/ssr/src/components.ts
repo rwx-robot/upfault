@@ -46,3 +46,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
           try {
             if (!shellSent) {
               const shell = renderShell(vnode);
+              controller.enqueue(new TextEncoder().encode(shell));
