@@ -51,3 +51,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
             }
             
             await renderStreaming(vnode, (chunk) => {
+              controller.enqueue(new TextEncoder().encode(chunk));
