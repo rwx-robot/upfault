@@ -48,3 +48,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
               const shell = renderShell(vnode);
               controller.enqueue(new TextEncoder().encode(shell));
               shellSent = true;
+            }
