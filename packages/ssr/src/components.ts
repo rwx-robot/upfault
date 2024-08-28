@@ -39,3 +39,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
   let aborted = false;
   let shellSent = false;
   
+  return {
