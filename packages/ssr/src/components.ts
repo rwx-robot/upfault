@@ -45,3 +45,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
         async start(controller) {
           try {
             if (!shellSent) {
+              const shell = renderShell(vnode);
