@@ -54,3 +54,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
               controller.enqueue(new TextEncoder().encode(chunk));
             });
             
+            controller.enqueue(new TextEncoder().encode('<!--stream-end-->'));
