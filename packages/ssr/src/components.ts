@@ -70,3 +70,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
           const { done, value } = await reader.read();
           if (done) break;
           await new Promise<void>((resolve, reject) => {
+            writable.write(value, (err) => err ? reject(err) : resolve());
