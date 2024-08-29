@@ -76,3 +76,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
       } finally {
         reader.releaseLock();
         writable.end();
+      }
