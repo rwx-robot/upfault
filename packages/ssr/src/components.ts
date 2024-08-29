@@ -69,3 +69,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
         while (true) {
           const { done, value } = await reader.read();
           if (done) break;
+          await new Promise<void>((resolve, reject) => {
