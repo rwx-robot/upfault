@@ -78,3 +78,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
         writable.end();
       }
     },
+    async pipeToWebWritable(writable: WritableStream): Promise<void> {
