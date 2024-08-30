@@ -98,3 +98,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
  */
 export function renderToPipeableStream(
   vnode: VNode,
+  options: StreamingOptions = {}
