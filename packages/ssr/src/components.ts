@@ -80,3 +80,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
     },
     async pipeToWebWritable(writable: WritableStream): Promise<void> {
       const stream = this.render({ 
+        type: VNodeType.ELEMENT, 
