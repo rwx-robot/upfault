@@ -97,3 +97,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
  * Render to pipeable stream
  */
 export function renderToPipeableStream(
+  vnode: VNode,
