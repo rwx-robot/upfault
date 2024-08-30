@@ -82,3 +82,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
       const stream = this.render({ 
         type: VNodeType.ELEMENT, 
         tag: 'div', 
+        props: {}, 
