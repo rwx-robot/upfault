@@ -86,3 +86,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
         children: [] 
       } as any);
       await stream.pipeTo(writable);
+    },
