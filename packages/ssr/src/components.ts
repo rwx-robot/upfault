@@ -121,3 +121,4 @@ export function renderToReadableStream(
 function renderShell(vnode: VNode): string {
   const headHtml = extractHead(vnode);
   const bodyHtml = extractBody(vnode);
+  
