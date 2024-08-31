@@ -122,3 +122,4 @@ function renderShell(vnode: VNode): string {
   const headHtml = extractHead(vnode);
   const bodyHtml = extractBody(vnode);
   
+  return '<!DOCTYPE html>\n<html>\n<head>\n' + headHtml + '\n</head>\n<body>\n' + bodyHtml + '\n</body>\n</html>';
