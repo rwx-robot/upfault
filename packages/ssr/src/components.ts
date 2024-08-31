@@ -114,3 +114,5 @@ export function renderToReadableStream(
   const renderer = createStreamRenderer(options);
   return renderer.render(vnode);
 }
+
+/**
