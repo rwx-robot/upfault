@@ -113,3 +113,4 @@ export function renderToReadableStream(
 ): ReadableStream {
   const renderer = createStreamRenderer(options);
   return renderer.render(vnode);
+}
