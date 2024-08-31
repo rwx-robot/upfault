@@ -109,3 +109,4 @@ export function renderToPipeableStream(
  */
 export function renderToReadableStream(
   vnode: VNode,
+  options: StreamingOptions = {}
