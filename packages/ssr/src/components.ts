@@ -131,3 +131,4 @@ function extractHead(vnode: VNode): string {
   }
   return '';
 }
+
