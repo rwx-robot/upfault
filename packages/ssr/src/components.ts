@@ -142,3 +142,4 @@ function extractBody(vnode: VNode): string {
 function renderVNodeToString(vnode: VNode): string {
   if (!vnode) return '';
   if (typeof vnode === 'string') return escapeHtml(vnode);
+  if (typeof vnode === 'number') return String(vnode);
