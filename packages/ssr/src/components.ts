@@ -130,3 +130,4 @@ function extractHead(vnode: VNode): string {
     return renderVNodeToString(vnode);
   }
   return '';
+}
