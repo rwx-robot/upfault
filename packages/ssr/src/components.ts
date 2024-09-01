@@ -132,3 +132,4 @@ function extractHead(vnode: VNode): string {
   return '';
 }
 
+function extractBody(vnode: VNode): string {
