@@ -126,3 +126,4 @@ function renderShell(vnode: VNode): string {
 }
 
 function extractHead(vnode: VNode): string {
+  if (typeof vnode === 'object' && vnode && (vnode as any).type === VNodeType.ELEMENT && (vnode as any).tag === 'head') {
