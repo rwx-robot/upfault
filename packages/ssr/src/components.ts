@@ -140,3 +140,4 @@ function extractBody(vnode: VNode): string {
 }
 
 function renderVNodeToString(vnode: VNode): string {
+  if (!vnode) return '';
