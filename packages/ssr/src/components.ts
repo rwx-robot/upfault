@@ -160,3 +160,4 @@ function renderVNodeToString(vnode: VNode): string {
     return children.map(renderVNodeToString).join('');
   }
   
+  const tag = typeof (vnode as any).type === 'string' ? (vnode as any).type : 'div';
