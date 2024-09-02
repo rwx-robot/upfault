@@ -152,3 +152,4 @@ function renderVNodeToString(vnode: VNode): string {
   }
   
   if (type === VNodeType.COMMENT) {
+    return '<!--' + (vnode as any).children + '-->';
