@@ -151,3 +151,4 @@ function renderVNodeToString(vnode: VNode): string {
     return escapeHtml((vnode as any).children as string);
   }
   
+  if (type === VNodeType.COMMENT) {
