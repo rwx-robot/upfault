@@ -150,3 +150,4 @@ function renderVNodeToString(vnode: VNode): string {
   if (type === VNodeType.TEXT) {
     return escapeHtml((vnode as any).children as string);
   }
+  
