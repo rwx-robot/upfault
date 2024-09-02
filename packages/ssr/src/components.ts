@@ -164,3 +164,4 @@ function renderVNodeToString(vnode: VNode): string {
   const props = (vnode as any).props || {};
   const children = (vnode as any).children as VNode[];
   
+  const attrs = Object.entries(props)
