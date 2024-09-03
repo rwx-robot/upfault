@@ -169,3 +169,4 @@ function renderVNodeToString(vnode: VNode): string {
     .map(([k, v]) => {
       if (v === true) return k;
       return k + '="' + escapeHtml(String(v)) + '"';
+    })
