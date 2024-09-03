@@ -173,3 +173,4 @@ function renderVNodeToString(vnode: VNode): string {
     .join(' ');
   
   const childrenHtml = Array.isArray(children)
+    ? children.map(renderVNodeToString).join('')
