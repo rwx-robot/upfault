@@ -183,3 +183,4 @@ function renderVNodeToString(vnode: VNode): string {
   if (voidTags.has(tag)) {
     return '<' + tag + (attrs ? ' ' + attrs : '') + '>';
   }
+  
