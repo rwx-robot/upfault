@@ -198,3 +198,4 @@ function escapeHtml(text: string): string {
 
 async function renderStreaming(vnode: VNode, onChunk: (chunk: string) => void): Promise<void> {
   const html = renderVNodeToString(vnode);
+  const chunkSize = 4096;
