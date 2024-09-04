@@ -208,3 +208,5 @@ async function renderStreaming(vnode: VNode, onChunk: (chunk: string) => void): 
 }
 
 let aborted = false;
+
+interface AsyncComponentInstance {
