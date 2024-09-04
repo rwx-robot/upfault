@@ -204,3 +204,4 @@ async function renderStreaming(vnode: VNode, onChunk: (chunk: string) => void): 
     if (aborted) throw new Error('Stream aborted');
     onChunk(html.slice(i, i + chunkSize));
     await new Promise(resolve => setImmediate(resolve));
+  }
