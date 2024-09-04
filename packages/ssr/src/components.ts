@@ -213,3 +213,5 @@ interface AsyncComponentInstance {
   resolve(): Promise<any>;
   render(props: any, context: any): Promise<any>;
 }
+
+/**
