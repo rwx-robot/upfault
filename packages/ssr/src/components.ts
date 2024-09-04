@@ -206,3 +206,5 @@ async function renderStreaming(vnode: VNode, onChunk: (chunk: string) => void): 
     await new Promise(resolve => setImmediate(resolve));
   }
 }
+
+let aborted = false;
