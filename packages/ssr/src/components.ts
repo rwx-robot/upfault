@@ -224,3 +224,4 @@ export function Suspense(props: {
   onReject?: (error: Error) => void;
   timeout?: number;
   suspenseKey?: string;
+}): VNode {
