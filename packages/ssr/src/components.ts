@@ -229,3 +229,4 @@ export function Suspense(props: {
     type: VNodeType.SUSPENSE,
     tag: 'suspense',
     props: {
+      fallback: props.fallback,
