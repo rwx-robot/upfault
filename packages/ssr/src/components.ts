@@ -228,3 +228,4 @@ export function Suspense(props: {
   return {
     type: VNodeType.SUSPENSE,
     tag: 'suspense',
+    props: {
