@@ -220,3 +220,4 @@ interface AsyncComponentInstance {
 export function Suspense(props: {
   fallback?: VNode | string | (() => VNode | string);
   children: VNode | VNode[];
+  onResolve?: (data: any) => void;
