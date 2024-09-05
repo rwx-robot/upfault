@@ -218,3 +218,4 @@ interface AsyncComponentInstance {
  * Suspense component - supports async boundaries
  */
 export function Suspense(props: {
+  fallback?: VNode | string | (() => VNode | string);
