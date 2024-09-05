@@ -230,3 +230,4 @@ export function Suspense(props: {
     tag: 'suspense',
     props: {
       fallback: props.fallback,
+      children: props.children,
