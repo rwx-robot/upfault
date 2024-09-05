@@ -223,3 +223,4 @@ export function Suspense(props: {
   onResolve?: (data: any) => void;
   onReject?: (error: Error) => void;
   timeout?: number;
+  suspenseKey?: string;
