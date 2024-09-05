@@ -235,3 +235,4 @@ export function Suspense(props: {
       onReject: props.onReject,
       timeout: props.timeout,
       suspenseKey: props.suspenseKey,
+    },
