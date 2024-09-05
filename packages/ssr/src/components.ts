@@ -215,3 +215,4 @@ interface AsyncComponentInstance {
 }
 
 /**
+ * Suspense component - supports async boundaries
