@@ -225,3 +225,4 @@ export function Suspense(props: {
   timeout?: number;
   suspenseKey?: string;
 }): VNode {
+  return {
