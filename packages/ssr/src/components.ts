@@ -222,3 +222,4 @@ export function Suspense(props: {
   children: VNode | VNode[];
   onResolve?: (data: any) => void;
   onReject?: (error: Error) => void;
+  timeout?: number;
