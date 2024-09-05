@@ -226,3 +226,4 @@ export function Suspense(props: {
   suspenseKey?: string;
 }): VNode {
   return {
+    type: VNodeType.SUSPENSE,
