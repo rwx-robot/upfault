@@ -231,3 +231,4 @@ export function Suspense(props: {
     props: {
       fallback: props.fallback,
       children: props.children,
+      onResolve: props.onResolve,
