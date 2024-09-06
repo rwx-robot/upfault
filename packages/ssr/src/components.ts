@@ -255,3 +255,4 @@ export function defineAsyncComponent(
   loader: () => Promise<{ default: any }>,
   options: {
     loadingComponent?: VNode;
+    errorComponent?: VNode;
