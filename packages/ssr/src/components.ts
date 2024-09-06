@@ -242,3 +242,4 @@ export function Suspense(props: {
     el: null,
     parent: null,
     component: null,
+    block: null,
