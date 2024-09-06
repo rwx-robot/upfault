@@ -256,3 +256,4 @@ export function defineAsyncComponent(
   options: {
     loadingComponent?: VNode;
     errorComponent?: VNode;
+    delay?: number;
