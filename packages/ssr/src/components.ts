@@ -237,3 +237,4 @@ export function Suspense(props: {
       suspenseKey: props.suspenseKey,
     },
     children: Array.isArray(props.children) ? props.children : [props.children],
+    key: null,
