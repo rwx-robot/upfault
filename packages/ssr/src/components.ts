@@ -251,3 +251,4 @@ export function Suspense(props: {
 /**
  * Define async component
  */
+export function defineAsyncComponent(
