@@ -244,3 +244,4 @@ export function Suspense(props: {
     component: null,
     block: null,
     patchFlag: 0,
+    dynamicProps: null,
