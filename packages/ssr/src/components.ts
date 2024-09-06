@@ -239,3 +239,4 @@ export function Suspense(props: {
     children: Array.isArray(props.children) ? props.children : [props.children],
     key: null,
     flags: 0,
+    el: null,
