@@ -246,3 +246,4 @@ export function Suspense(props: {
     patchFlag: 0,
     dynamicProps: null,
   } as any;
+}
