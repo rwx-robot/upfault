@@ -254,3 +254,4 @@ export function Suspense(props: {
 export function defineAsyncComponent(
   loader: () => Promise<{ default: any }>,
   options: {
+    loadingComponent?: VNode;
