@@ -269,3 +269,4 @@ export function defineAsyncComponent(
   
   const AsyncComponent = {
     type: 'AsyncComponent',
+    loader,
