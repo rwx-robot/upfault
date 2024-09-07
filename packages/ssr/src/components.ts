@@ -277,3 +277,4 @@ export function defineAsyncComponent(
       if (component) return component;
       
       if (loading) {
+        await new Promise(resolve => setTimeout(resolve, 50));
