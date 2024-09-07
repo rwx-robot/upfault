@@ -265,3 +265,4 @@ export function defineAsyncComponent(
   let component: any = null;
   let loading = false;
   let error: Error | null = null;
+  let retries = 0;
