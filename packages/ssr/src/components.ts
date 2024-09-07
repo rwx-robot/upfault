@@ -271,3 +271,4 @@ export function defineAsyncComponent(
     type: 'AsyncComponent',
     loader,
     options,
+    isAsync: true,
