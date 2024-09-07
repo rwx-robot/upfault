@@ -273,3 +273,4 @@ export function defineAsyncComponent(
     options,
     isAsync: true,
     
+    async resolve(this: AsyncComponentInstance): Promise<any> {
