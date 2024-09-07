@@ -259,3 +259,4 @@ export function defineAsyncComponent(
     delay?: number;
     timeout?: number;
     suspense?: boolean;
+    onError?: (error: Error, retry: () => void) => void;
