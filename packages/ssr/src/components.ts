@@ -272,3 +272,4 @@ export function defineAsyncComponent(
     loader,
     options,
     isAsync: true,
+    
