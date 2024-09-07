@@ -264,3 +264,4 @@ export function defineAsyncComponent(
 ): any {
   let component: any = null;
   let loading = false;
+  let error: Error | null = null;
