@@ -276,3 +276,4 @@ export function defineAsyncComponent(
     async resolve(this: AsyncComponentInstance): Promise<any> {
       if (component) return component;
       
+      if (loading) {
