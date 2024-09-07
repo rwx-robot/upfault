@@ -258,3 +258,4 @@ export function defineAsyncComponent(
     errorComponent?: VNode;
     delay?: number;
     timeout?: number;
+    suspense?: boolean;
