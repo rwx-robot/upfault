@@ -268,3 +268,4 @@ export function defineAsyncComponent(
   let retries = 0;
   
   const AsyncComponent = {
+    type: 'AsyncComponent',
