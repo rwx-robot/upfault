@@ -302,3 +302,4 @@ export function defineAsyncComponent(
           return typeof comp === 'function' 
             ? comp(props) 
             : (comp.render ? comp.render() : h('div', null, 'Loaded'));
+        }
