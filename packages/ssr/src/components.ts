@@ -288,3 +288,4 @@ export function defineAsyncComponent(
         component = mod.default;
         return component;
       } catch (err) {
+        error = err as Error;
