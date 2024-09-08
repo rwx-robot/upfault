@@ -295,3 +295,4 @@ export function defineAsyncComponent(
       }
     },
     
+    async render(this: AsyncComponentInstance, props: any, context: any) {
