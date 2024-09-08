@@ -293,3 +293,4 @@ export function defineAsyncComponent(
       } finally {
         loading = false;
       }
+    },
