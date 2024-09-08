@@ -285,3 +285,4 @@ export function defineAsyncComponent(
       
       try {
         const mod = await loader();
+        component = mod.default;
