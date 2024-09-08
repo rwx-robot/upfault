@@ -281,3 +281,4 @@ export function defineAsyncComponent(
         return this.resolve();
       }
       
+      loading = true;
