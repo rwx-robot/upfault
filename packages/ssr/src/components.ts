@@ -284,3 +284,4 @@ export function defineAsyncComponent(
       loading = true;
       
       try {
+        const mod = await loader();
