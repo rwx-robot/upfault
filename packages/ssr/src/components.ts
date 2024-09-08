@@ -280,3 +280,4 @@ export function defineAsyncComponent(
         await new Promise(resolve => setTimeout(resolve, 50));
         return this.resolve();
       }
+      
