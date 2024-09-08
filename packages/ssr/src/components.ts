@@ -283,3 +283,4 @@ export function defineAsyncComponent(
       
       loading = true;
       
+      try {
