@@ -299,3 +299,4 @@ export function defineAsyncComponent(
       try {
         const comp = await this.resolve();
         if (comp) {
+          return typeof comp === 'function' 
