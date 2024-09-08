@@ -292,3 +292,4 @@ export function defineAsyncComponent(
         throw err;
       } finally {
         loading = false;
+      }
