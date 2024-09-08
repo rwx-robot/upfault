@@ -287,3 +287,4 @@ export function defineAsyncComponent(
         const mod = await loader();
         component = mod.default;
         return component;
+      } catch (err) {
