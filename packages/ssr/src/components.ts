@@ -290,3 +290,4 @@ export function defineAsyncComponent(
       } catch (err) {
         error = err as Error;
         throw err;
+      } finally {
