@@ -314,3 +314,4 @@ export function defineAsyncComponent(
         return options.loadingComponent;
       }
       
+      return h('div', { class: 'async-loading' }, 'Loading...');
