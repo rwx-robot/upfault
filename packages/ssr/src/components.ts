@@ -325,3 +325,4 @@ export function defineAsyncComponent(
  * Teleport component
  */
 export function Teleport(props: {
+  to: string | Element;
