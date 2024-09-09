@@ -312,3 +312,4 @@ export function defineAsyncComponent(
       
       if (options.loadingComponent) {
         return options.loadingComponent;
+      }
