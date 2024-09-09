@@ -307,3 +307,4 @@ export function defineAsyncComponent(
         if (options.errorComponent) {
           return options.errorComponent;
         }
+        return h('div', { class: 'async-error' }, 'Error: ' + (err as Error).message);
