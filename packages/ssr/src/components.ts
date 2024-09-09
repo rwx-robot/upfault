@@ -304,3 +304,4 @@ export function defineAsyncComponent(
             : (comp.render ? comp.render() : h('div', null, 'Loaded'));
         }
       } catch (err) {
+        if (options.errorComponent) {
