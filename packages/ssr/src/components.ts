@@ -319,3 +319,4 @@ export function defineAsyncComponent(
   };
   
   return AsyncComponent;
+}
