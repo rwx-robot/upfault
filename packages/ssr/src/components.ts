@@ -305,3 +305,4 @@ export function defineAsyncComponent(
         }
       } catch (err) {
         if (options.errorComponent) {
+          return options.errorComponent;
