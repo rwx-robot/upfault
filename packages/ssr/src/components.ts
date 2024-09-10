@@ -330,3 +330,4 @@ export function Teleport(props: {
   disabled?: boolean;
 }): VNode {
   return {
+    type: VNodeType.TELEPORT,
