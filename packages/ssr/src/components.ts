@@ -343,3 +343,4 @@ export function Teleport(props: {
     el: null,
     parent: null,
     component: null,
+    block: null,
