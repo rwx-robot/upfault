@@ -345,3 +345,4 @@ export function Teleport(props: {
     component: null,
     block: null,
     patchFlag: 0,
+    dynamicProps: null,
