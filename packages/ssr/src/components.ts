@@ -332,3 +332,4 @@ export function Teleport(props: {
   return {
     type: VNodeType.TELEPORT,
     tag: 'teleport',
+    props: {
