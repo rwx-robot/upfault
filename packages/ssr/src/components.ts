@@ -341,3 +341,4 @@ export function Teleport(props: {
     key: null,
     flags: 0,
     el: null,
+    parent: null,
