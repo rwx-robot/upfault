@@ -335,3 +335,4 @@ export function Teleport(props: {
     props: {
       to: props.to,
       children: props.children,
+      disabled: props.disabled || false,
