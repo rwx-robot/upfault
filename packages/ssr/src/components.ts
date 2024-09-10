@@ -338,3 +338,4 @@ export function Teleport(props: {
       disabled: props.disabled || false,
     },
     children: Array.isArray(props.children) ? props.children : [props.children],
+    key: null,
