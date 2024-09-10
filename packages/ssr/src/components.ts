@@ -334,3 +334,4 @@ export function Teleport(props: {
     tag: 'teleport',
     props: {
       to: props.to,
+      children: props.children,
