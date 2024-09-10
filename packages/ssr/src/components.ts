@@ -329,3 +329,4 @@ export function Teleport(props: {
   children: VNode | VNode[];
   disabled?: boolean;
 }): VNode {
+  return {
