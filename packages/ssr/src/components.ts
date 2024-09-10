@@ -327,3 +327,4 @@ export function defineAsyncComponent(
 export function Teleport(props: {
   to: string | Element;
   children: VNode | VNode[];
+  disabled?: boolean;
