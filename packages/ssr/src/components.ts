@@ -346,3 +346,4 @@ export function Teleport(props: {
     block: null,
     patchFlag: 0,
     dynamicProps: null,
+  } as any;
