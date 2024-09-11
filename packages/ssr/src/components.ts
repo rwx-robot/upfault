@@ -360,3 +360,4 @@ export function KeepAlive(props: {
 }): VNode {
   return {
     type: VNodeType.KEEPALIVE,
+    tag: 'keepalive',
