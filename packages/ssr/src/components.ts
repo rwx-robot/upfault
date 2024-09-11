@@ -352,3 +352,4 @@ export function Teleport(props: {
 /**
  * KeepAlive component
  */
+export function KeepAlive(props: {
