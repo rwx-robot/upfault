@@ -354,3 +354,4 @@ export function Teleport(props: {
  */
 export function KeepAlive(props: {
   children: VNode;
+  include?: string | RegExp | (string | RegExp)[];
