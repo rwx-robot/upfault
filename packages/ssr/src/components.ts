@@ -364,3 +364,4 @@ export function KeepAlive(props: {
     props: {
       children: props.children,
       include: props.include,
+      exclude: props.exclude,
