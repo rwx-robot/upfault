@@ -347,3 +347,4 @@ export function Teleport(props: {
     patchFlag: 0,
     dynamicProps: null,
   } as any;
+}
