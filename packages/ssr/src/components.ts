@@ -362,3 +362,4 @@ export function KeepAlive(props: {
     type: VNodeType.KEEPALIVE,
     tag: 'keepalive',
     props: {
+      children: props.children,
