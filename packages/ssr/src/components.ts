@@ -361,3 +361,4 @@ export function KeepAlive(props: {
   return {
     type: VNodeType.KEEPALIVE,
     tag: 'keepalive',
+    props: {
