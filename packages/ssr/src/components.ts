@@ -359,3 +359,4 @@ export function KeepAlive(props: {
   max?: number;
 }): VNode {
   return {
+    type: VNodeType.KEEPALIVE,
