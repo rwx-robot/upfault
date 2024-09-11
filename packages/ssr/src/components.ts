@@ -363,3 +363,4 @@ export function KeepAlive(props: {
     tag: 'keepalive',
     props: {
       children: props.children,
+      include: props.include,
