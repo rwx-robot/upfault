@@ -357,3 +357,4 @@ export function KeepAlive(props: {
   include?: string | RegExp | (string | RegExp)[];
   exclude?: string | RegExp | (string | RegExp)[];
   max?: number;
+}): VNode {
