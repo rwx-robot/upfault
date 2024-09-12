@@ -369,3 +369,4 @@ export function KeepAlive(props: {
     },
     children: props.children,
     key: null,
+    flags: 0,
