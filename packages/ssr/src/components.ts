@@ -387,3 +387,4 @@ export function createAsyncComponent(
   options: {
     loadingComponent?: VNode;
     errorComponent?: VNode;
+    delay?: number;
