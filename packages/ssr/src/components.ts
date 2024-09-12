@@ -368,3 +368,4 @@ export function KeepAlive(props: {
       max: props.max,
     },
     children: props.children,
+    key: null,
