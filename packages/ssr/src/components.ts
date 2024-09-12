@@ -376,3 +376,4 @@ export function KeepAlive(props: {
     block: null,
     patchFlag: 0,
     dynamicProps: null,
+  } as any;
