@@ -382,3 +382,4 @@ export function KeepAlive(props: {
 /**
  * Create async component factory
  */
+export function createAsyncComponent(
