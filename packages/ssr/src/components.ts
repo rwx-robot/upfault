@@ -372,3 +372,4 @@ export function KeepAlive(props: {
     flags: 0,
     el: null,
     parent: null,
+    component: null,
