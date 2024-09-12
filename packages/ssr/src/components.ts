@@ -366,3 +366,4 @@ export function KeepAlive(props: {
       include: props.include,
       exclude: props.exclude,
       max: props.max,
+    },
