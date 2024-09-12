@@ -386,3 +386,4 @@ export function createAsyncComponent(
   loader: () => Promise<{ default: any }>,
   options: {
     loadingComponent?: VNode;
+    errorComponent?: VNode;
