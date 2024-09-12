@@ -384,3 +384,4 @@ export function KeepAlive(props: {
  */
 export function createAsyncComponent(
   loader: () => Promise<{ default: any }>,
+  options: {
