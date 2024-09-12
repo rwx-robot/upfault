@@ -365,3 +365,4 @@ export function KeepAlive(props: {
       children: props.children,
       include: props.include,
       exclude: props.exclude,
+      max: props.max,
