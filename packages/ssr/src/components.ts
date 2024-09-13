@@ -391,3 +391,4 @@ export function createAsyncComponent(
     timeout?: number;
     suspense?: boolean;
     onError?: (error: Error, retry: () => void) => void;
+  } = {}
