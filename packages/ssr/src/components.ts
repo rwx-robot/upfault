@@ -393,3 +393,4 @@ export function createAsyncComponent(
     onError?: (error: Error, retry: () => void) => void;
   } = {}
 ): any {
+  let component: any = null;
