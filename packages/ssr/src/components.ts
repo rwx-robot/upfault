@@ -397,3 +397,4 @@ export function createAsyncComponent(
   let loading = false;
   let error: Error | null = null;
   let retries = 0;
+  
