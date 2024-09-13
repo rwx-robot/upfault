@@ -400,3 +400,4 @@ export function createAsyncComponent(
   
   const AsyncComponent = {
     type: 'AsyncComponent',
+    loader,
