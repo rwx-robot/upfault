@@ -398,3 +398,4 @@ export function createAsyncComponent(
   let error: Error | null = null;
   let retries = 0;
   
+  const AsyncComponent = {
