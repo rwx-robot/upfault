@@ -392,3 +392,4 @@ export function createAsyncComponent(
     suspense?: boolean;
     onError?: (error: Error, retry: () => void) => void;
   } = {}
+): any {
