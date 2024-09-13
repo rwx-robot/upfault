@@ -404,3 +404,4 @@ export function createAsyncComponent(
     options,
     isAsync: true,
     
+    async resolve(this: AsyncComponentInstance): Promise<any> {
