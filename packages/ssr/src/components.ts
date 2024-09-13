@@ -399,3 +399,4 @@ export function createAsyncComponent(
   let retries = 0;
   
   const AsyncComponent = {
+    type: 'AsyncComponent',
