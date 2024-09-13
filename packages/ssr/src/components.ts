@@ -402,3 +402,4 @@ export function createAsyncComponent(
     type: 'AsyncComponent',
     loader,
     options,
+    isAsync: true,
