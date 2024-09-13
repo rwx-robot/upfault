@@ -388,3 +388,4 @@ export function createAsyncComponent(
     loadingComponent?: VNode;
     errorComponent?: VNode;
     delay?: number;
+    timeout?: number;
