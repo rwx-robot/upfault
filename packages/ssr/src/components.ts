@@ -408,3 +408,4 @@ export function createAsyncComponent(
       if (component) return component;
       
       if (loading) {
+        await new Promise(resolve => setTimeout(resolve, 50));
