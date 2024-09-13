@@ -405,3 +405,4 @@ export function createAsyncComponent(
     isAsync: true,
     
     async resolve(this: AsyncComponentInstance): Promise<any> {
+      if (component) return component;
