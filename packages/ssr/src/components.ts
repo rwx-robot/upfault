@@ -389,3 +389,4 @@ export function createAsyncComponent(
     errorComponent?: VNode;
     delay?: number;
     timeout?: number;
+    suspense?: boolean;
