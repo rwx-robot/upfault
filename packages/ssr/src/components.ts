@@ -417,3 +417,4 @@ export function createAsyncComponent(
       try {
         const mod = await loader();
         component = mod.default;
+        return component;
