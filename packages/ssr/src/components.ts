@@ -418,3 +418,4 @@ export function createAsyncComponent(
         const mod = await loader();
         component = mod.default;
         return component;
+      } catch (err) {
