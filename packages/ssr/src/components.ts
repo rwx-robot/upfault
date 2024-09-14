@@ -429,3 +429,4 @@ export function createAsyncComponent(
     async render(this: AsyncComponentInstance, props: any, context: any) {
       try {
         const comp = await this.resolve();
+        if (comp) {
