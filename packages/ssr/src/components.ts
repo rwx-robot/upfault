@@ -420,3 +420,4 @@ export function createAsyncComponent(
         return component;
       } catch (err) {
         error = err as Error;
+        throw err;
