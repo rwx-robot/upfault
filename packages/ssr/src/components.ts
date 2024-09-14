@@ -412,3 +412,4 @@ export function createAsyncComponent(
         return this.resolve();
       }
       
+      loading = true;
