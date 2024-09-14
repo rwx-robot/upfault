@@ -424,3 +424,4 @@ export function createAsyncComponent(
       } finally {
         loading = false;
       }
+    },
