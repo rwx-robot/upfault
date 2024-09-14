@@ -422,3 +422,4 @@ export function createAsyncComponent(
         error = err as Error;
         throw err;
       } finally {
+        loading = false;
