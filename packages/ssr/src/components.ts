@@ -423,3 +423,4 @@ export function createAsyncComponent(
         throw err;
       } finally {
         loading = false;
+      }
