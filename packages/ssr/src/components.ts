@@ -443,3 +443,4 @@ export function createAsyncComponent(
       
       if (options.loadingComponent) {
         return options.loadingComponent;
+      }
