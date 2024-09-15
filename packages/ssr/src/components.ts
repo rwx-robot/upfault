@@ -440,3 +440,4 @@ export function createAsyncComponent(
         }
         return h('div', { class: 'async-error' }, 'Error: ' + (err as Error).message);
       }
+      
