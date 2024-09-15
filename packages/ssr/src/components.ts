@@ -434,3 +434,4 @@ export function createAsyncComponent(
             ? comp(props) 
             : (comp.render ? comp.render() : h('div', null, 'Loaded'));
         }
+      } catch (err) {
