@@ -431,3 +431,4 @@ export function createAsyncComponent(
         const comp = await this.resolve();
         if (comp) {
           return typeof comp === 'function' 
+            ? comp(props) 
