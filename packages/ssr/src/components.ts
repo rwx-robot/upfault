@@ -436,3 +436,4 @@ export function createAsyncComponent(
         }
       } catch (err) {
         if (options.errorComponent) {
+          return options.errorComponent;
