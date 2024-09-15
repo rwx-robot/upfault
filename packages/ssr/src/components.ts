@@ -447,3 +447,4 @@ export function createAsyncComponent(
       
       return h('div', { class: 'async-loading' }, 'Loading...');
     },
+  };
