@@ -468,3 +468,4 @@ export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
             if (idx > -1) order.splice(idx, 1);
           } else if (target.size >= maxSize) {
             const oldest = order.shift();
+            if (oldest) target.delete(oldest);
