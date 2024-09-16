@@ -465,3 +465,4 @@ export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
         return function(key: string, instance: any): Map<string, any> {
           if (target.has(key)) {
             const idx = order.indexOf(key);
+            if (idx > -1) order.splice(idx, 1);
