@@ -469,3 +469,4 @@ export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
           } else if (target.size >= maxSize) {
             const oldest = order.shift();
             if (oldest) target.delete(oldest);
+          }
