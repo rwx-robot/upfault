@@ -461,3 +461,4 @@ export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
   
   const extendedCache: Map<string, any> = new Proxy(cache, {
     get(target, prop, receiver) {
+      if (prop === 'set') {
