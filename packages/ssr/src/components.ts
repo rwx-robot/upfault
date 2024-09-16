@@ -456,3 +456,4 @@ export function createAsyncComponent(
  * Create KeepAlive cache
  */
 export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
+  const cache = new Map<string, any>();
