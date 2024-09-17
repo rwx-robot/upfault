@@ -472,3 +472,4 @@ export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
           }
           target.set(key, instance);
           order.push(key);
+          return target;
