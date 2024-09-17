@@ -487,3 +487,4 @@ export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
  */
 export function matchesKeepAlive(
   name: string,
+  include?: string | RegExp | (string | RegExp)[],
