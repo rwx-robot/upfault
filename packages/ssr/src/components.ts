@@ -491,3 +491,4 @@ export function matchesKeepAlive(
   exclude?: string | RegExp | (string | RegExp)[]
 ): boolean {
   if (include) {
+    const includes = Array.isArray(include) ? include : [include];
