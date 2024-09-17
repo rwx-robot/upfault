@@ -479,3 +479,4 @@ export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
     }
   });
   
+  return extendedCache;
