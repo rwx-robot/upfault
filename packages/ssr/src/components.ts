@@ -492,3 +492,4 @@ export function matchesKeepAlive(
 ): boolean {
   if (include) {
     const includes = Array.isArray(include) ? include : [include];
+    if (!includes.some(pattern => matchPattern(name, pattern))) {
