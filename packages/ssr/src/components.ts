@@ -500,3 +500,4 @@ export function matchesKeepAlive(
   if (exclude) {
     const excludes = Array.isArray(exclude) ? exclude : [exclude];
     if (excludes.some(pattern => matchPattern(name, pattern))) {
+      return false;
