@@ -512,3 +512,4 @@ function matchPattern(name: string, pattern: string | RegExp): boolean {
     return name === pattern || name.includes(pattern);
   }
   return pattern.test(name);
+}
