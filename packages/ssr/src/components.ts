@@ -495,3 +495,4 @@ export function matchesKeepAlive(
     if (!includes.some(pattern => matchPattern(name, pattern))) {
       return false;
     }
+  }
