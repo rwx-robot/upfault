@@ -506,3 +506,5 @@ export function matchesKeepAlive(
   
   return true;
 }
+
+function matchPattern(name: string, pattern: string | RegExp): boolean {
