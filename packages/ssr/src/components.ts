@@ -510,3 +510,4 @@ export function matchesKeepAlive(
 function matchPattern(name: string, pattern: string | RegExp): boolean {
   if (typeof pattern === 'string') {
     return name === pattern || name.includes(pattern);
+  }
