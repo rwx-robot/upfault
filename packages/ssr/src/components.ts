@@ -498,3 +498,4 @@ export function matchesKeepAlive(
   }
   
   if (exclude) {
+    const excludes = Array.isArray(exclude) ? exclude : [exclude];
