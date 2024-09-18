@@ -502,3 +502,4 @@ export function matchesKeepAlive(
     if (excludes.some(pattern => matchPattern(name, pattern))) {
       return false;
     }
+  }
