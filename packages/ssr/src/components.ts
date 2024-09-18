@@ -508,3 +508,4 @@ export function matchesKeepAlive(
 }
 
 function matchPattern(name: string, pattern: string | RegExp): boolean {
+  if (typeof pattern === 'string') {
