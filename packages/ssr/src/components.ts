@@ -515,3 +515,4 @@ function matchPattern(name: string, pattern: string | RegExp): boolean {
 }
 
 /**
+ * Fragment component
