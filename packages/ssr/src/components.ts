@@ -517,3 +517,4 @@ function matchPattern(name: string, pattern: string | RegExp): boolean {
 /**
  * Fragment component
  */
+export function Fragment(props: { children?: any }): any {
