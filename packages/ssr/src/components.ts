@@ -513,3 +513,5 @@ function matchPattern(name: string, pattern: string | RegExp): boolean {
   }
   return pattern.test(name);
 }
+
+/**
