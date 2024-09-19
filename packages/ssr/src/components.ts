@@ -530,3 +530,4 @@ export function Fragment(props: { children?: any }): any {
     component: null,
     block: null,
     patchFlag: 0,
+    dynamicProps: null,
