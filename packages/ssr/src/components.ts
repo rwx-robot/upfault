@@ -526,3 +526,4 @@ export function Fragment(props: { children?: any }): any {
     key: null,
     flags: 0,
     el: null,
+    parent: null,
