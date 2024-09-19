@@ -522,3 +522,4 @@ export function Fragment(props: { children?: any }): any {
     type: VNodeType.FRAGMENT,
     tag: 'fragment',
     props,
+    children: props.children,
