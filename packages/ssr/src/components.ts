@@ -519,3 +519,4 @@ function matchPattern(name: string, pattern: string | RegExp): boolean {
  */
 export function Fragment(props: { children?: any }): any {
   return {
+    type: VNodeType.FRAGMENT,
