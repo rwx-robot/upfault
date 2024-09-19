@@ -523,3 +523,4 @@ export function Fragment(props: { children?: any }): any {
     tag: 'fragment',
     props,
     children: props.children,
+    key: null,
