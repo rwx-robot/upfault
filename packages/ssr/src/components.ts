@@ -521,3 +521,4 @@ export function Fragment(props: { children?: any }): any {
   return {
     type: VNodeType.FRAGMENT,
     tag: 'fragment',
+    props,
