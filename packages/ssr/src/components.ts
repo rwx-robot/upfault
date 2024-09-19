@@ -531,3 +531,4 @@ export function Fragment(props: { children?: any }): any {
     block: null,
     patchFlag: 0,
     dynamicProps: null,
+  } as any;
