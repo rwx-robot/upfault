@@ -11,3 +11,4 @@ export interface HydrationContext {
   container: HTMLElement;
   vnode: VNode;
   isHydrating: boolean;
+  teleports: Map<string, HTMLElement>;
