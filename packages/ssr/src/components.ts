@@ -537,3 +537,4 @@ export function Fragment(props: { children?: any }): any {
 /**
  * Version info
  */
+export const SSR_COMPONENTS_VERSION = '0.2.0';
