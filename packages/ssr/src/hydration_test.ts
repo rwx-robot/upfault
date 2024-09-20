@@ -14,3 +14,5 @@ export interface HydrationContext {
   teleports: Map<string, HTMLElement>;
   pendingTeleports: Map<string, VNode[]>;
 }
+
+export interface HydrationOptions {
