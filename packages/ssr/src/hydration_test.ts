@@ -35,3 +35,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
   const renderer = createRenderer({
     ...defaultRendererOptions,
     patchProp: (el: HTMLElement, key: string, _: any, value: any) => {
+      if (key.startsWith('on')) {
