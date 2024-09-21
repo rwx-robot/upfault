@@ -28,3 +28,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
     ? (document.querySelector(container) as HTMLElement)! 
     : container;
   
+  if (!containerEl) {
