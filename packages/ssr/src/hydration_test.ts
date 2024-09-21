@@ -27,3 +27,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
   const containerEl = typeof container === 'string' 
     ? (document.querySelector(container) as HTMLElement)! 
     : container;
+  
