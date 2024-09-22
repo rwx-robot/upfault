@@ -50,3 +50,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
         } else {
           el.style.cssText = '';
         }
+      } else if (key in el) {
