@@ -45,3 +45,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
       } else if (key === 'style') {
         if (typeof value === 'string') {
           el.style.cssText = value;
+        } else if (value && typeof value === 'object') {
