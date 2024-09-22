@@ -56,3 +56,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
         el.removeAttribute(key);
       } else {
         el.setAttribute(key, value);
+      }
