@@ -49,3 +49,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
           Object.assign(el.style, value);
         } else {
           el.style.cssText = '';
+        }
