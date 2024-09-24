@@ -94,3 +94,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
   });
   
   return instance;
+}
