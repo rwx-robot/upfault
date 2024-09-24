@@ -90,3 +90,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
     (vnode as any).__hydrated = true;
     if (instance && (instance as any).vnode?.componentInstance?.onMounted) {
       (instance as any).vnode.componentInstance.onMounted.forEach((hook: () => void) => hook());
+    }
