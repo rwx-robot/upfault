@@ -125,3 +125,4 @@ export function hydrateNodeStream(
       }
     });
     stream.on('error', reject);
+  });
