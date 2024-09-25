@@ -105,3 +105,4 @@ export function hydrateNodeStream(
   } = {}
 ): Promise<void> {
   return new Promise((resolve, reject) => {
+    let html = '';
