@@ -122,3 +122,4 @@ export function hydrateNodeStream(
         resolve();
       } catch (err) {
         reject(err);
+      }
