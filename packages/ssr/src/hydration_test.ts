@@ -140,3 +140,4 @@ export async function hydrateWebStream(
   let html = '';
   
   try {
+    while (true) {
