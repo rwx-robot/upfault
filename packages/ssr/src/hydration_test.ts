@@ -146,3 +146,4 @@ export async function hydrateWebStream(
       html += new TextDecoder().decode(value);
     }
     
+    const containerEl = typeof container === 'string' 
