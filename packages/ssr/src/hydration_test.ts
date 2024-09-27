@@ -159,3 +159,5 @@ export async function hydrateWebStream(
     throw err;
   }
 }
+
+function parseHtmlToVNode(html: string): any {
