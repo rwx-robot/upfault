@@ -192,3 +192,4 @@ function parseElement(el: Element): any {
     }
   }
   
+  return {
