@@ -188,3 +188,4 @@ function parseElement(el: Element): any {
       const text = child.textContent?.trim();
       if (text) children.push(text);
     } else if (child.nodeType === Node.ELEMENT_NODE) {
+      children.push(parseElement(child as Element));
