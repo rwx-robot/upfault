@@ -215,3 +215,5 @@ export function partialHydrate(
   });
 }
 
+
+export function isHydrated(element: HTMLElement): boolean {
