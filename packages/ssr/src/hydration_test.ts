@@ -195,3 +195,4 @@ function parseElement(el: Element): any {
   return {
     type: children.length === 0 ? 'text' : 'element',
     tag: children.length === 0 ? undefined : el.tagName.toLowerCase(),
+    props: Object.keys(props).length > 0 ? props : null,
