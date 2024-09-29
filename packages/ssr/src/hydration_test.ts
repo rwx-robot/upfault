@@ -205,3 +205,4 @@ export function partialHydrate(
   vnode: any,
   options: {
     onHydrated?: (el: HTMLElement) => void;
+  } = {}
