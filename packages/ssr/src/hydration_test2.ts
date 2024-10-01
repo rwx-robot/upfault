@@ -9,3 +9,4 @@ import { aeroDiff, DiffOpType } from '@upfault/diff';
 
 export interface HydrationContext {
   container: HTMLElement;
+  vnode: VNode;
