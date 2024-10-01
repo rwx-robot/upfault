@@ -16,3 +16,4 @@ export interface HydrationContext {
 }
 
 export interface HydrationOptions {
+  container: HTMLElement | string;
