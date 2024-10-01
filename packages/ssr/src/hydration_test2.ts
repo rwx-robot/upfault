@@ -26,3 +26,4 @@ export interface HydrationOptions {
 export function hydrate(vnode: VNode, container: HTMLElement | string): ComponentInstance {
   const containerEl = typeof container === 'string' 
     ? (document.querySelector(container) as HTMLElement)! 
+    : container;
