@@ -8,3 +8,4 @@ import { h, createRenderer, defaultRendererOptions, type VNode, type ComponentIn
 import { aeroDiff, DiffOpType } from '@upfault/diff';
 
 export interface HydrationContext {
+  container: HTMLElement;
