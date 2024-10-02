@@ -38,3 +38,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
       if (key.startsWith('on')) {
         const event = key.slice(2).toLowerCase();
         if (value) {
+          el.addEventListener(event, value);
