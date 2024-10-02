@@ -41,3 +41,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
           el.addEventListener(event, value);
         }
       } else if (key === 'class') {
+        el.className = value || '';
