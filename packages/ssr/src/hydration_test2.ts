@@ -37,3 +37,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
     patchProp: (el: HTMLElement, key: string, _: any, value: any) => {
       if (key.startsWith('on')) {
         const event = key.slice(2).toLowerCase();
+        if (value) {
