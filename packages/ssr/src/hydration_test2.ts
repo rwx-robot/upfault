@@ -62,3 +62,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
       parent.insertBefore(child, anchor || null);
     },
     remove: (child: Node) => {
+      child.parentNode?.removeChild(child);
