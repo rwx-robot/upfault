@@ -58,3 +58,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
         el.setAttribute(key, value);
       }
     },
+    insert: (child: Node, parent: HTMLElement, anchor?: Node | null) => {
