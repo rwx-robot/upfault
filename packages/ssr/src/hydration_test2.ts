@@ -68,3 +68,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
     nextSibling: (node: Node) => node.nextSibling as HTMLElement | null,
   });
   
+  const instance = renderer.render(vnode, containerEl);
