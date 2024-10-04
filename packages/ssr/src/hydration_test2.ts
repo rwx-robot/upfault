@@ -88,3 +88,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
   
   queueMicrotask(() => {
     (vnode as any).__hydrated = true;
+    if (instance && (instance as any).vnode?.componentInstance?.onMounted) {
