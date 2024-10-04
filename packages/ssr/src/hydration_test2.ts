@@ -72,3 +72,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
   return instance;
 }
 
+export function hydrateRoot(vnode: VNode, container: HTMLElement | string, options: {
