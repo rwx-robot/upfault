@@ -70,3 +70,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
   
   const instance = renderer.render(vnode, containerEl);
   return instance;
+}
