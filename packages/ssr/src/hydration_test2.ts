@@ -80,3 +80,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
     ? (document.querySelector(container) as HTMLElement)! 
     : container;
   
+  if (!containerEl) {
