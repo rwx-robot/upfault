@@ -75,3 +75,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
 export function hydrateRoot(vnode: VNode, container: HTMLElement | string, options: {
   onHydrated?: () => void;
   onError?: (error: Error) => void;
+} = {}): ComponentInstance {
