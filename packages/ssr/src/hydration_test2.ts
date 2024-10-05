@@ -102,3 +102,4 @@ export function hydrateNodeStream(
   options: {
     onHydrated?: () => void;
     onError?: (error: Error) => void;
+  } = {}
