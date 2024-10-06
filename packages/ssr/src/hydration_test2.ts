@@ -117,3 +117,4 @@ export function hydrateNodeStream(
         if (!containerEl) throw new Error('Container not found');
         
         const vnode = parseHtmlToVNode(html);
+        hydrate(vnode, containerEl);
