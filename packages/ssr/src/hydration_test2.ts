@@ -136,3 +136,4 @@ export async function hydrateWebStream(
     onError?: (error: Error) => void;
   } = {}
 ): Promise<void> {
+  const reader = stream.getReader();
