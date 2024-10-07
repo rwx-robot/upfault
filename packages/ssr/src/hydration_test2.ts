@@ -139,3 +139,4 @@ export async function hydrateWebStream(
   const reader = stream.getReader();
   let html = '';
   
+  try {
