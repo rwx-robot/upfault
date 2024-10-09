@@ -171,3 +171,4 @@ function parseElement(el: Element): any {
   const props: Record<string, any> = {};
   
   for (const attr of el.attributes) {
+    if (attr.name === 'class') {
