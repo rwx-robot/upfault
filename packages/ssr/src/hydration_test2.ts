@@ -180,3 +180,4 @@ function parseElement(el: Element): any {
     } else {
       props[attr.name] = attr.value || true;
     }
+  }
