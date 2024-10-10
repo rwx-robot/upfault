@@ -203,3 +203,4 @@ function parseElement(el: Element): any {
 export function partialHydrate(
   selector: string,
   vnode: any,
+  options: {
