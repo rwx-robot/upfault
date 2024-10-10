@@ -198,3 +198,4 @@ function parseElement(el: Element): any {
     props: Object.keys(props).length > 0 ? props : null,
     children: children.length > 0 ? children : undefined,
   };
+}
