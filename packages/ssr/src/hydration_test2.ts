@@ -197,3 +197,4 @@ function parseElement(el: Element): any {
     tag: children.length === 0 ? undefined : el.tagName.toLowerCase(),
     props: Object.keys(props).length > 0 ? props : null,
     children: children.length > 0 ? children : undefined,
+  };
