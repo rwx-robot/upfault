@@ -220,3 +220,4 @@ export function isHydrated(element: HTMLElement): boolean {
   return (element as any).__upfault_hydrated === true;
 }
 
+export function markHydrated(element: HTMLElement): void {
