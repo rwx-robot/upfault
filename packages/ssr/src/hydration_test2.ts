@@ -211,3 +211,4 @@ export function partialHydrate(
   elements.forEach((el, index) => {
     const clone = typeof vnode === 'function' ? vnode(index, el) : vnode;
     hydrate(vnode, el as HTMLElement);
+    options.onHydrated?.(el as HTMLElement);
