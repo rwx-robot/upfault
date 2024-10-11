@@ -219,3 +219,4 @@ export function partialHydrate(
 export function isHydrated(element: HTMLElement): boolean {
   return (element as any).__upfault_hydrated === true;
 }
+
