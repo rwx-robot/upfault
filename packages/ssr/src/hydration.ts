@@ -22,3 +22,5 @@ export interface HydrationOptions {
   onError?: (error: Error) => void;
   removeContainer?: boolean;
 }
+
+export function hydrate(vnode: VNode, container: HTMLElement | string): ComponentInstance {
