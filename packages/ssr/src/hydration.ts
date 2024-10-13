@@ -20,3 +20,4 @@ export interface HydrationOptions {
   vnode: VNode;
   onHydrated?: () => void;
   onError?: (error: Error) => void;
+  removeContainer?: boolean;
