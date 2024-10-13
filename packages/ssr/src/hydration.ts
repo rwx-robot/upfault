@@ -21,3 +21,4 @@ export interface HydrationOptions {
   onHydrated?: () => void;
   onError?: (error: Error) => void;
   removeContainer?: boolean;
+}
