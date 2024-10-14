@@ -48,3 +48,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
         } else if (value && typeof value === 'object') {
           Object.assign(el.style, value);
         } else {
+          el.style.cssText = '';
