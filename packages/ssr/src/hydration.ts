@@ -51,3 +51,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
           el.style.cssText = '';
         }
       } else if (key in el) {
+        (el as any)[key] = value;
