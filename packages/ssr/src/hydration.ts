@@ -57,3 +57,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
       } else {
         el.setAttribute(key, value);
       }
+    },
