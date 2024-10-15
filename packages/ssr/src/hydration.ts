@@ -79,3 +79,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
   const containerEl = typeof container === 'string' 
     ? (document.querySelector(container) as HTMLElement)! 
     : container;
+  
