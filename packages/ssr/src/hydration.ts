@@ -77,3 +77,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
   onError?: (error: Error) => void;
 } = {}): ComponentInstance {
   const containerEl = typeof container === 'string' 
+    ? (document.querySelector(container) as HTMLElement)! 
