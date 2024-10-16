@@ -101,3 +101,4 @@ export function hydrateNodeStream(
   container: HTMLElement | string,
   options: {
     onHydrated?: () => void;
+    onError?: (error: Error) => void;
