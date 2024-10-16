@@ -99,3 +99,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
 export function hydrateNodeStream(
   stream: NodeJS.ReadableStream,
   container: HTMLElement | string,
+  options: {
