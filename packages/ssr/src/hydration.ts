@@ -85,3 +85,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
   }
   
   const instance = hydrate(vnode, containerEl as HTMLElement);
+  
