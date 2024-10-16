@@ -87,3 +87,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
   const instance = hydrate(vnode, containerEl as HTMLElement);
   
   queueMicrotask(() => {
+    (vnode as any).__hydrated = true;
