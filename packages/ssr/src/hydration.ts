@@ -119,3 +119,4 @@ export function hydrateNodeStream(
         const vnode = parseHtmlToVNode(html);
         hydrate(vnode, containerEl);
         options.onHydrated?.();
+        resolve();
