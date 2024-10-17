@@ -115,3 +115,4 @@ export function hydrateNodeStream(
           ? (document.querySelector(container) as HTMLElement)! 
           : container;
         if (!containerEl) throw new Error('Container not found');
+        
