@@ -120,3 +120,4 @@ export function hydrateNodeStream(
         hydrate(vnode, containerEl);
         options.onHydrated?.();
         resolve();
+      } catch (err) {
