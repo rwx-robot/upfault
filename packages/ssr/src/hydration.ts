@@ -133,3 +133,4 @@ export async function hydrateWebStream(
   container: HTMLElement | string,
   options: {
     onHydrated?: () => void;
+    onError?: (error: Error) => void;
