@@ -155,3 +155,4 @@ export async function hydrateWebStream(
     hydrate(vnode, containerEl);
     options.onHydrated?.();
   } catch (err) {
+    options.onError?.(err as Error);
