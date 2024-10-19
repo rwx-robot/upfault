@@ -143,3 +143,4 @@ export async function hydrateWebStream(
     while (true) {
       const { done, value } = await reader.read();
       if (done) break;
+      html += new TextDecoder().decode(value);
