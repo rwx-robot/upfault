@@ -151,3 +151,4 @@ export async function hydrateWebStream(
       : container;
     if (!containerEl) throw new Error('Container not found');
     
+    const vnode = parseHtmlToVNode(html);
