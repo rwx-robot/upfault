@@ -175,3 +175,4 @@ function parseElement(el: Element): any {
       props.class = attr.value;
     } else if (attr.name === 'style') {
       props.style = attr.value;
+    } else if (attr.name.startsWith('data-') || attr.name.startsWith('aria-')) {
