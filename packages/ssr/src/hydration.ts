@@ -206,3 +206,4 @@ export function partialHydrate(
   options: {
     onHydrated?: (el: HTMLElement) => void;
   } = {}
+): void {
