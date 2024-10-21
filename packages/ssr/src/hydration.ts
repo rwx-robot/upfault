@@ -200,3 +200,4 @@ function parseElement(el: Element): any {
   };
 }
 
+export function partialHydrate(
