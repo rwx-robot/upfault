@@ -207,3 +207,4 @@ export function partialHydrate(
     onHydrated?: (el: HTMLElement) => void;
   } = {}
 ): void {
+  const elements = document.querySelectorAll(selector);
