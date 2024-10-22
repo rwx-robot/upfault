@@ -224,3 +224,4 @@ export function lazyHydrate(
   } = {}
 ): IntersectionObserver {
   const observer = new IntersectionObserver(
+    (entries) => {
