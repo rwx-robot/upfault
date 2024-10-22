@@ -219,3 +219,4 @@ export function lazyHydrate(
   selector: string,
   getVNode: (el: HTMLElement) => any,
   options: {
+    rootMargin?: string;
