@@ -213,3 +213,4 @@ export function partialHydrate(
     hydrate(vnode, el as HTMLElement);
     options.onHydrated?.(el as HTMLElement);
   });
+}
