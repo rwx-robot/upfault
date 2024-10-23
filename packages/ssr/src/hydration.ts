@@ -228,3 +228,4 @@ export function lazyHydrate(
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const el = entry.target as HTMLElement;
+          const vnode = getVNode(el);
