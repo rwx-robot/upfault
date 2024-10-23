@@ -231,3 +231,4 @@ export function lazyHydrate(
           const vnode = getVNode(el);
           hydrate(vnode, el);
           observer.unobserve(el);
+        }
