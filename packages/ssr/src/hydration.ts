@@ -240,3 +240,4 @@ export function lazyHydrate(
     }
   );
   
+  document.querySelectorAll(selector).forEach((el) => observer.observe(el));
