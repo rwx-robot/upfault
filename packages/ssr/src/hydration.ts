@@ -232,3 +232,4 @@ export function lazyHydrate(
           hydrate(vnode, el);
           observer.unobserve(el);
         }
+      });
