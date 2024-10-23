@@ -235,3 +235,4 @@ export function lazyHydrate(
       });
     },
     {
+      rootMargin: options.rootMargin || '100px',
