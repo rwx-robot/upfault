@@ -230,3 +230,4 @@ export function lazyHydrate(
           const el = entry.target as HTMLElement;
           const vnode = getVNode(el);
           hydrate(vnode, el);
+          observer.unobserve(el);
