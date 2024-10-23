@@ -237,3 +237,4 @@ export function lazyHydrate(
     {
       rootMargin: options.rootMargin || '100px',
       threshold: options.threshold || 0.1,
+    }
