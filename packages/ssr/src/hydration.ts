@@ -252,3 +252,4 @@ export function markHydrated(element: HTMLElement): void {
   (element as any).__upfault_hydrated = true;
 }
 
+export function getHydrationState(): {
