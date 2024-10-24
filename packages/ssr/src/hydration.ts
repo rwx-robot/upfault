@@ -253,3 +253,4 @@ export function markHydrated(element: HTMLElement): void {
 }
 
 export function getHydrationState(): {
+  hydratedCount: number;
