@@ -257,3 +257,4 @@ export function getHydrationState(): {
   pendingCount: number;
 } {
   const hydrated = document.querySelectorAll('[data-hydrated="true"]').length;
+  const pending = document.querySelectorAll('[data-hydrating="true"]').length;
