@@ -12,3 +12,4 @@ export interface HydrationContext {
   vnode: VNode;
   isHydrating: boolean;
   teleports: Map<string, HTMLElement>;
+  pendingTeleports: Map<string, VNode[]>;
