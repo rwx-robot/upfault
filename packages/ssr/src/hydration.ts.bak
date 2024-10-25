@@ -19,3 +19,4 @@ export interface HydrationOptions {
   container: HTMLElement | string;
   vnode: VNode;
   onHydrated?: () => void;
+  onError?: (error: Error) => void;
