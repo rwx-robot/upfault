@@ -43,3 +43,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
       } else if (key === 'class') {
         el.className = value || '';
       } else if (key === 'style') {
+        if (typeof value === 'string') {
