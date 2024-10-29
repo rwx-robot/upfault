@@ -100,3 +100,4 @@ export function hydrateNodeStream(
   stream: NodeJS.ReadableStream,
   container: HTMLElement | string,
   options: {
+    onHydrated?: () => void;
