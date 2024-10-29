@@ -112,3 +112,4 @@ export function hydrateNodeStream(
     stream.on('end', () => {
       try {
         const containerEl = typeof container === 'string' 
+          ? (document.querySelector(container) as HTMLElement)! 
