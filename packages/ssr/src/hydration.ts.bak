@@ -129,3 +129,4 @@ export function hydrateNodeStream(
 }
 
 export async function hydrateWebStream(
+  stream: ReadableStream,
