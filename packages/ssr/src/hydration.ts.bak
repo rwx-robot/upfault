@@ -121,3 +121,4 @@ export function hydrateNodeStream(
         options.onHydrated?.();
         resolve();
       } catch (err) {
+        reject(err);
