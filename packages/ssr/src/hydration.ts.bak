@@ -132,3 +132,4 @@ export async function hydrateWebStream(
   stream: ReadableStream,
   container: HTMLElement | string,
   options: {
+    onHydrated?: () => void;
