@@ -154,3 +154,4 @@ export async function hydrateWebStream(
     const vnode = parseHtmlToVNode(html);
     hydrate(vnode, containerEl);
     options.onHydrated?.();
+  } catch (err) {
