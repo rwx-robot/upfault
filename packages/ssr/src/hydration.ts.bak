@@ -165,3 +165,5 @@ function parseHtmlToVNode(html: string): any {
   const doc = parser.parseFromString(html, 'text/html');
   return parseElement(doc.body.firstElementChild!);
 }
+
+function parseElement(el: Element): any {
