@@ -158,3 +158,4 @@ export async function hydrateWebStream(
     options.onError?.(err as Error);
     throw err;
   }
+}
