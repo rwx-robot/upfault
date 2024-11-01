@@ -162,3 +162,4 @@ export async function hydrateWebStream(
 
 function parseHtmlToVNode(html: string): any {
   const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
