@@ -189,3 +189,4 @@ function parseElement(el: Element): any {
       if (text) children.push(text);
     } else if (child.nodeType === Node.ELEMENT_NODE) {
       children.push(parseElement(child as Element));
+    }
