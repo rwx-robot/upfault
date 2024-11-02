@@ -191,3 +191,4 @@ function parseElement(el: Element): any {
       children.push(parseElement(child as Element));
     }
   }
+  
