@@ -232,3 +232,4 @@ export function lazyHydrate(
         observer.unobserve(el);
       }
     }, {
+      rootMargin: options.rootMargin || '100px',
