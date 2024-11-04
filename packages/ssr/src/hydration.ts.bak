@@ -226,3 +226,4 @@ export function lazyHydrate(
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        const el = entry.target as HTMLElement;
