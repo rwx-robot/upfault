@@ -218,3 +218,4 @@ export function partialHydrate(
 export function lazyHydrate(
   selector: string,
   getVNode: (el: HTMLElement) => any,
+  options: {
