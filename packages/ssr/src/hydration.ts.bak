@@ -221,3 +221,4 @@ export function lazyHydrate(
   options: {
     rootMargin?: string;
     threshold?: number;
+  } = {}
