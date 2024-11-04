@@ -216,3 +216,4 @@ export function partialHydrate(
 }
 
 export function lazyHydrate(
+  selector: string,
