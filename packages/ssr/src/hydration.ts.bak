@@ -222,3 +222,4 @@ export function lazyHydrate(
     rootMargin?: string;
     threshold?: number;
   } = {}
+): IntersectionObserver {
