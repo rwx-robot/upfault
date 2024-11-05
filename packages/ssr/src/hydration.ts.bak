@@ -236,3 +236,4 @@ export function lazyHydrate(
       threshold: options.threshold || 0.1,
     });
   
+  document.querySelectorAll(selector).forEach(el => observer.observe(el));
