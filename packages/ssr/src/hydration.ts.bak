@@ -258,3 +258,4 @@ export function getHydrationState(): {
 }
 
 export type { 
+  HydrationContext, 
