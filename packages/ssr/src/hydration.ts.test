@@ -6,3 +6,5 @@
 
 import { h, createRenderer, defaultRendererOptions, type VNode, type ComponentInstance } from '@upfault/runtime';
 import { aeroDiff, DiffOpType } from '@upfault/diff';
+
+export interface HydrationContext {
