@@ -33,3 +33,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
   }
   
   const renderer = createRenderer({
+    ...defaultRendererOptions,
