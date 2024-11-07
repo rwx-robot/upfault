@@ -29,3 +29,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
     : container;
   
   if (!containerEl) {
+    throw new Error('Container not found: ' + container);
