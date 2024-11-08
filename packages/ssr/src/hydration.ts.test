@@ -40,3 +40,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
         if (value) {
           el.addEventListener(event, value);
         }
+      } else if (key === 'class') {
