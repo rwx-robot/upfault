@@ -64,3 +64,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
     remove: (child: Node) => {
       child.parentNode?.removeChild(child);
     },
+    parentNode: (node: Node) => node.parentNode as HTMLElement | null,
