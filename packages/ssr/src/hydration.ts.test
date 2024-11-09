@@ -66,3 +66,4 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
     },
     parentNode: (node: Node) => node.parentNode as HTMLElement | null,
     nextSibling: (node: Node) => node.nextSibling as HTMLElement | null,
+  });
