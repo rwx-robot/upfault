@@ -83,3 +83,4 @@ export function hydrateRoot(vnode: VNode, container: HTMLElement | string, optio
   if (!containerEl) {
     throw new Error('Container not found: ' + container);
   }
+  
