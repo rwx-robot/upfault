@@ -108,3 +108,4 @@ export function hydrateNodeStream(
     let html = '';
     stream.on('data', (chunk) => {
       html += chunk.toString();
+    });
