@@ -110,3 +110,4 @@ export function hydrateNodeStream(
       html += chunk.toString();
     });
     stream.on('end', () => {
+      try {
