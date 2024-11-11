@@ -103,3 +103,4 @@ export function hydrateNodeStream(
     onHydrated?: () => void;
     onError?: (error: Error) => void;
   } = {}
+): Promise<void> {
