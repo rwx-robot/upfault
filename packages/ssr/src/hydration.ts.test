@@ -124,3 +124,4 @@ export function hydrateNodeStream(
         reject(err);
       }
     });
+    stream.on('error', reject);
