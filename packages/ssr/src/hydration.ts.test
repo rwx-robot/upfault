@@ -127,3 +127,5 @@ export function hydrateNodeStream(
     stream.on('error', reject);
   });
 }
+
+export async function hydrateWebStream(
