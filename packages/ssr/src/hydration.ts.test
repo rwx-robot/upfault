@@ -156,3 +156,4 @@ export async function hydrateWebStream(
     options.onHydrated?.();
   } catch (err) {
     options.onError?.(err as Error);
+    throw err;
