@@ -148,3 +148,4 @@ export async function hydrateWebStream(
     
     const containerEl = typeof container === 'string' 
       ? (document.querySelector(container) as HTMLElement)! 
+      : container;
