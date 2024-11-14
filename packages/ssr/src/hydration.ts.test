@@ -173,3 +173,4 @@ function parseElement(el: Element): any {
   for (const attr of el.attributes) {
     if (attr.name === 'class') {
       props.class = attr.value;
+    } else if (attr.name === 'style') {
