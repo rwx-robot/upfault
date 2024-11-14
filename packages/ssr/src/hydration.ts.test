@@ -183,3 +183,4 @@ function parseElement(el: Element): any {
   }
   
   const children: any[] = [];
+  for (const child of el.childNodes) {
