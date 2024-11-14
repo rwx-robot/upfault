@@ -169,3 +169,4 @@ function parseHtmlToVNode(html: string): any {
 function parseElement(el: Element): any {
   const tag = el.tagName.toLowerCase();
   const props: Record<string, any> = {};
+  
