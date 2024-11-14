@@ -178,3 +178,4 @@ function parseElement(el: Element): any {
     } else if (attr.name.startsWith('data-') || attr.name.startsWith('aria-')) {
       props[attr.name] = attr.value;
     } else {
+      props[attr.name] = attr.value || true;
