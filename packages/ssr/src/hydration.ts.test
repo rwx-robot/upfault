@@ -181,3 +181,4 @@ function parseElement(el: Element): any {
       props[attr.name] = attr.value || true;
     }
   }
+  
