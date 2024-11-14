@@ -170,3 +170,4 @@ function parseElement(el: Element): any {
   const tag = el.tagName.toLowerCase();
   const props: Record<string, any> = {};
   
+  for (const attr of el.attributes) {
