@@ -182,3 +182,4 @@ function parseElement(el: Element): any {
     }
   }
   
+  const children: any[] = [];
