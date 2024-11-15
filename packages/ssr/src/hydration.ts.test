@@ -199,3 +199,4 @@ function parseElement(el: Element): any {
     children: children.length > 0 ? children : undefined,
   };
 }
+
