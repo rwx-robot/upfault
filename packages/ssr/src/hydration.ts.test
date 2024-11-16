@@ -208,3 +208,4 @@ export function partialHydrate(
   } = {}
 ): void {
   const elements = document.querySelectorAll(selector);
+  elements.forEach((el, index) => {
