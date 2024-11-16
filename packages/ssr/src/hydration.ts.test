@@ -210,3 +210,4 @@ export function partialHydrate(
   const elements = document.querySelectorAll(selector);
   elements.forEach((el, index) => {
     const clone = typeof vnode === 'function' ? vnode(index, el) : vnode;
+    hydrate(vnode, el as HTMLElement);
