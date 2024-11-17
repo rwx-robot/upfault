@@ -10,3 +10,4 @@ export {
   renderToString,
   renderToNodeStream,
   renderToWebStream,
+  pipeToNodeWritable,
