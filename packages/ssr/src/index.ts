@@ -7,3 +7,4 @@
 
 // 核心渲染
 export {
+  renderToString,
