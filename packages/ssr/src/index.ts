@@ -9,3 +9,4 @@
 export {
   renderToString,
   renderToNodeStream,
+  renderToWebStream,
