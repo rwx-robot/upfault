@@ -20,3 +20,4 @@ export type { SSRContext, RenderOptions } from './render';
 export {
   renderToPipeableStream,
   renderToReadableStream,
+  createStreamRenderer,
