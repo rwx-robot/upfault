@@ -32,3 +32,4 @@ export {
   hydrateNodeStream,
   hydrateWebStream,
   partialHydrate,
+  lazyHydrate,
