@@ -19,3 +19,4 @@ export type { SSRContext, RenderOptions } from './render';
 // 流式渲染
 export {
   renderToPipeableStream,
+  renderToReadableStream,
