@@ -12,3 +12,4 @@ export {
   renderToWebStream,
   pipeToNodeWritable,
   pipeToWebWritable,
+} from './render';
