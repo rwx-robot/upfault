@@ -11,3 +11,4 @@ export {
   renderToNodeStream,
   renderToWebStream,
   pipeToNodeWritable,
+  pipeToWebWritable,
