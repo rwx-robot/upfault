@@ -23,3 +23,4 @@ export {
   createStreamRenderer,
 } from './streaming';
 
+export type { StreamingOptions, StreamRenderer } from './streaming';
