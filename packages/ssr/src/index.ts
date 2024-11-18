@@ -21,3 +21,4 @@ export {
   renderToPipeableStream,
   renderToReadableStream,
   createStreamRenderer,
+} from './streaming';
