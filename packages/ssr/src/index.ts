@@ -29,3 +29,4 @@ export type { StreamingOptions, StreamRenderer } from './streaming';
 export {
   hydrate,
   hydrateRoot,
+  hydrateNodeStream,
