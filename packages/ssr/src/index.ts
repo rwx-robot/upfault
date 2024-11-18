@@ -13,3 +13,5 @@ export {
   pipeToNodeWritable,
   pipeToWebWritable,
 } from './render';
+
+export type { SSRContext, RenderOptions } from './render';
