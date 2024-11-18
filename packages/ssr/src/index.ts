@@ -27,3 +27,4 @@ export type { StreamingOptions, StreamRenderer } from './streaming';
 
 // 客户端水合
 export {
+  hydrate,
