@@ -30,3 +30,4 @@ export {
   hydrate,
   hydrateRoot,
   hydrateNodeStream,
+  hydrateWebStream,
