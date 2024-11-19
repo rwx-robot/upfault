@@ -52,3 +52,5 @@ export type { MiddlewareOptions, SSRRequest, SSRResponse } from './middleware';
 
 // 组件导出
 export { defineAsyncComponent, Suspense, Teleport, KeepAlive } from './components';
+
+// 版本信息
