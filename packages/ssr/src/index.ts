@@ -35,3 +35,4 @@ export {
   lazyHydrate,
   
   isHydrated,
+  markHydrated,
