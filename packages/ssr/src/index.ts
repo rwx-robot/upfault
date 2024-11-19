@@ -44,3 +44,4 @@ export type { HydrationContext, HydrationOptions } from './hydration';
 // 中间件集成
 export {
   createSSRMiddleware,
+  createDevMiddleware,
