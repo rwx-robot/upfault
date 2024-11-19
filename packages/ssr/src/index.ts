@@ -46,3 +46,4 @@ export {
   createSSRMiddleware,
   createDevMiddleware,
   createProdMiddleware,
+} from './middleware';
