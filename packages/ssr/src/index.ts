@@ -45,3 +45,4 @@ export type { HydrationContext, HydrationOptions } from './hydration';
 export {
   createSSRMiddleware,
   createDevMiddleware,
+  createProdMiddleware,
