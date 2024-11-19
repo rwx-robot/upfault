@@ -36,3 +36,4 @@ export {
   
   isHydrated,
   markHydrated,
+  getHydrationState,
