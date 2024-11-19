@@ -38,3 +38,5 @@ export {
   markHydrated,
   getHydrationState,
 } from './hydration';
+
+export type { HydrationContext, HydrationOptions } from './hydration';
