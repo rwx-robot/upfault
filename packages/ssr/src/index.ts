@@ -34,3 +34,4 @@ export {
   partialHydrate,
   lazyHydrate,
   
+  isHydrated,
