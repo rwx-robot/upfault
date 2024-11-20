@@ -1,1 +1,2 @@
 /**
+ * UpFault SSR - Middleware Integration
