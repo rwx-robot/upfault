@@ -13,3 +13,4 @@ export interface SSRRequest {
   headers: Record<string, string>;
   query: Record<string, string>;
   params: Record<string, string>;
+  body?: any;
