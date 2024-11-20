@@ -15,3 +15,5 @@ export interface SSRRequest {
   params: Record<string, string>;
   body?: any;
 }
+
+export interface SSRResponse {
