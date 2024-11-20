@@ -6,3 +6,5 @@
 
 import { renderToString, renderToNodeStream, pipeToNodeWritable, type SSRContext, type RenderOptions } from './render';
 import { h } from '@upfault/runtime';
+
+export interface SSRRequest {
