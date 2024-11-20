@@ -9,3 +9,4 @@ import { h } from '@upfault/runtime';
 
 export interface SSRRequest {
   url: string;
+  method: string;
