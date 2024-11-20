@@ -11,3 +11,4 @@ export interface SSRRequest {
   url: string;
   method: string;
   headers: Record<string, string>;
+  query: Record<string, string>;
