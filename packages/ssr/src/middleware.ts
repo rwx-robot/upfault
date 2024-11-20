@@ -17,3 +17,4 @@ export interface SSRRequest {
 }
 
 export interface SSRResponse {
+  status(code: number): this;
