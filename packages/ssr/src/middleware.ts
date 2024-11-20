@@ -8,3 +8,4 @@ import { renderToString, renderToNodeStream, pipeToNodeWritable, type SSRContext
 import { h } from '@upfault/runtime';
 
 export interface SSRRequest {
+  url: string;
