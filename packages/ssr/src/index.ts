@@ -54,3 +54,4 @@ export type { MiddlewareOptions, SSRRequest, SSRResponse } from './middleware';
 export { defineAsyncComponent, Suspense, Teleport, KeepAlive } from './components';
 
 // 版本信息
+export const VERSION = '0.2.0';
