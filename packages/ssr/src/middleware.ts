@@ -26,3 +26,4 @@ export interface SSRResponse {
 }
 
 export interface MiddlewareOptions {
+  renderOptions?: RenderOptions;
