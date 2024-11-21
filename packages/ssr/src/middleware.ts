@@ -33,3 +33,4 @@ export interface MiddlewareOptions {
     handler: (req: SSRRequest) => Promise<any> | any;
   }>;
   streaming?: boolean;
+  staticPrefix?: string;
