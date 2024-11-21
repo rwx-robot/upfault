@@ -24,3 +24,5 @@ export interface SSRResponse {
   end(chunk?: string): void;
   pipe(stream: NodeJS.ReadableStream): this;
 }
+
+export interface MiddlewareOptions {
