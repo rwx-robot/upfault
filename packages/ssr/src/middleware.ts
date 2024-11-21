@@ -27,3 +27,4 @@ export interface SSRResponse {
 
 export interface MiddlewareOptions {
   renderOptions?: RenderOptions;
+  render?: (vnode: any, options: any) => Promise<string>;
