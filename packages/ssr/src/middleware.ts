@@ -32,3 +32,4 @@ export interface MiddlewareOptions {
     pattern: string | RegExp;
     handler: (req: SSRRequest) => Promise<any> | any;
   }>;
+  streaming?: boolean;
