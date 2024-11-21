@@ -23,3 +23,4 @@ export interface SSRResponse {
   write(chunk: string): void;
   end(chunk?: string): void;
   pipe(stream: NodeJS.ReadableStream): this;
+}
