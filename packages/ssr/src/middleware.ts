@@ -36,3 +36,4 @@ export interface MiddlewareOptions {
   staticPrefix?: string;
   onError?: (error: Error, req: SSRRequest, res: SSRResponse) => void;
   onRequest?: (req: SSRRequest) => Promise<void> | void;
+  onResponse?: (html: string, req: SSRRequest, res: SSRResponse) => Promise<string> | string;
