@@ -21,3 +21,4 @@ export interface SSRResponse {
   setHeader(name: string, value: string): this;
   send(html: string): void;
   write(chunk: string): void;
+  end(chunk?: string): void;
