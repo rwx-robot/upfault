@@ -30,3 +30,4 @@ export interface MiddlewareOptions {
   render?: (vnode: any, options: any) => Promise<string>;
   routes?: Array<{
     pattern: string | RegExp;
+    handler: (req: SSRRequest) => Promise<any> | any;
