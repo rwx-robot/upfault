@@ -35,3 +35,4 @@ export interface MiddlewareOptions {
   streaming?: boolean;
   staticPrefix?: string;
   onError?: (error: Error, req: SSRRequest, res: SSRResponse) => void;
+  onRequest?: (req: SSRRequest) => Promise<void> | void;
