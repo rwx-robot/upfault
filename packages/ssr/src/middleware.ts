@@ -38,3 +38,5 @@ export interface MiddlewareOptions {
   onRequest?: (req: SSRRequest) => Promise<void> | void;
   onResponse?: (html: string, req: SSRRequest, res: SSRResponse) => Promise<string> | string;
 }
+
+function pathToRegex(pattern: string): RegExp {
