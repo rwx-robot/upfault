@@ -43,3 +43,4 @@ function pathToRegex(pattern: string): RegExp {
   const regexPattern = pattern
     .replace(/\*/g, '.*')
     .replace(/\?/g, '.')
+    .replace(/:([^/]+)/g, '([^/]+)');
