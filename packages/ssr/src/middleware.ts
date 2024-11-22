@@ -46,3 +46,4 @@ function pathToRegex(pattern: string): RegExp {
     .replace(/:([^/]+)/g, '([^/]+)');
   return new RegExp('^' + regexPattern + '$');
 }
+
