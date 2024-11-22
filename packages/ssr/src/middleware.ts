@@ -56,3 +56,5 @@ function parseQuery(url: string): Record<string, string> {
   }
   return query;
 }
+
+export function createSSRMiddleware(options: MiddlewareOptions = {}) {
