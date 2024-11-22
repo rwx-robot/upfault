@@ -47,3 +47,4 @@ function pathToRegex(pattern: string): RegExp {
   return new RegExp('^' + regexPattern + '$');
 }
 
+function parseQuery(url: string): Record<string, string> {
