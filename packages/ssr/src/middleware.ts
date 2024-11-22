@@ -59,3 +59,4 @@ function parseQuery(url: string): Record<string, string> {
 
 export function createSSRMiddleware(options: MiddlewareOptions = {}) {
   const {
+    renderOptions = {},
