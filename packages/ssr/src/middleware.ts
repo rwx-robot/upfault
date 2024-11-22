@@ -53,3 +53,4 @@ function parseQuery(url: string): Record<string, string> {
   for (const pair of queryString.split('&')) {
     const [key, value] = pair.split('=');
     if (key) query[decodeURIComponent(key)] = decodeURIComponent(value || '');
+  }
