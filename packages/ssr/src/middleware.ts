@@ -42,3 +42,4 @@ export interface MiddlewareOptions {
 function pathToRegex(pattern: string): RegExp {
   const regexPattern = pattern
     .replace(/\*/g, '.*')
+    .replace(/\?/g, '.')
