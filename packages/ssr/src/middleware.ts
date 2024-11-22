@@ -61,3 +61,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
   const {
     renderOptions = {},
     render: customRender,
+    routes = [],
