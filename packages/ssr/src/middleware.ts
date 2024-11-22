@@ -55,3 +55,4 @@ function parseQuery(url: string): Record<string, string> {
     if (key) query[decodeURIComponent(key)] = decodeURIComponent(value || '');
   }
   return query;
+}
