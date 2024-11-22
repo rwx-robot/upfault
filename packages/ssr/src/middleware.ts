@@ -45,3 +45,4 @@ function pathToRegex(pattern: string): RegExp {
     .replace(/\?/g, '.')
     .replace(/:([^/]+)/g, '([^/]+)');
   return new RegExp('^' + regexPattern + '$');
+}
