@@ -48,3 +48,4 @@ function pathToRegex(pattern: string): RegExp {
 }
 
 function parseQuery(url: string): Record<string, string> {
+  const query: Record<string, string> = {};
