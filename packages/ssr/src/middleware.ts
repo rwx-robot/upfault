@@ -62,3 +62,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     renderOptions = {},
     render: customRender,
     routes = [],
+    streaming = false,
