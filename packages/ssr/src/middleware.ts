@@ -51,3 +51,4 @@ function parseQuery(url: string): Record<string, string> {
   const query: Record<string, string> = {};
   const queryString = url.split('?')[1] || '';
   for (const pair of queryString.split('&')) {
+    const [key, value] = pair.split('=');
