@@ -65,3 +65,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     streaming = false,
     staticPrefix = '/static/',
     onError,
+    onRequest,
