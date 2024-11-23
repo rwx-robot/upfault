@@ -78,3 +78,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
   
   return async function ssrMiddleware(
     req: SSRRequest,
+    res: SSRResponse,
