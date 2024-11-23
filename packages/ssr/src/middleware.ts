@@ -66,3 +66,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     staticPrefix = '/static/',
     onError,
     onRequest,
+    onResponse,
