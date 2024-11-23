@@ -70,3 +70,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
   } = options;
   
   const compiledRoutes = routes.map((route) => {
+    return {
