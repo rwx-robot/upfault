@@ -72,3 +72,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
   const compiledRoutes = routes.map((route) => {
     return {
       regex: route.pattern instanceof RegExp ? route.pattern : pathToRegex(route.pattern),
+      handler: route.handler,
