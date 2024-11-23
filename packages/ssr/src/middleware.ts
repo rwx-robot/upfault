@@ -75,3 +75,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       handler: route.handler,
     };
   });
+  
