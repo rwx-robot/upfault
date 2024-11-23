@@ -80,3 +80,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     req: SSRRequest,
     res: SSRResponse,
     next?: () => Promise<void>
+  ): Promise<void> {
