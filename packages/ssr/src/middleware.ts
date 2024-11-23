@@ -84,3 +84,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     const startTime = Date.now();
     
     try {
+      if (onRequest) await onRequest(req);
