@@ -73,3 +73,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     return {
       regex: route.pattern instanceof RegExp ? route.pattern : pathToRegex(route.pattern),
       handler: route.handler,
+    };
