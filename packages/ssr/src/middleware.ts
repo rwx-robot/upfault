@@ -85,3 +85,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     
     try {
       if (onRequest) await onRequest(req);
+      
