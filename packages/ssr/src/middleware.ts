@@ -67,3 +67,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     onError,
     onRequest,
     onResponse,
+  } = options;
