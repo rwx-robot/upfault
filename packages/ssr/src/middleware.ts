@@ -81,3 +81,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     res: SSRResponse,
     next?: () => Promise<void>
   ): Promise<void> {
+    const startTime = Date.now();
