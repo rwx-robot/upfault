@@ -90,3 +90,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       
       if (matchedRoute) {
         const pageData = await matchedRoute.handler(req);
+        
