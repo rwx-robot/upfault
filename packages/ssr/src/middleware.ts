@@ -104,3 +104,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
             meta: {
               title: pageData.title || 'UpFault App',
               description: pageData.description || '',
+              ...pageData.meta,
