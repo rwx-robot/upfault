@@ -98,3 +98,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         }
         
         const renderOpts: any = {
+          ...renderOptions,
