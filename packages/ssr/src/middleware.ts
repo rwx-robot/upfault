@@ -106,3 +106,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
               description: pageData.description || '',
               ...pageData.meta,
             },
+            state: {
