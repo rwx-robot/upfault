@@ -101,3 +101,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           ...renderOptions,
           context: {
             ...renderOptions.context,
+            meta: {
