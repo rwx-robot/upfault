@@ -89,3 +89,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       const matchedRoute = compiledRoutes.find(route => route.regex.test(req.url));
       
       if (matchedRoute) {
+        const pageData = await matchedRoute.handler(req);
