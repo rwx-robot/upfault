@@ -93,3 +93,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         
         const vnode = pageData.vnode || pageData.default?.();
         
+        if (!vnode) {
