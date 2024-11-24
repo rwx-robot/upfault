@@ -96,3 +96,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         if (!vnode) {
           throw new Error('Route handler must return a VNode');
         }
+        
