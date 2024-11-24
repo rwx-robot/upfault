@@ -97,3 +97,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           throw new Error('Route handler must return a VNode');
         }
         
+        const renderOpts: any = {
