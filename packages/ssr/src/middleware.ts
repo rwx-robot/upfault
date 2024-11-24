@@ -92,3 +92,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         const pageData = await matchedRoute.handler(req);
         
         const vnode = pageData.vnode || pageData.default?.();
+        
