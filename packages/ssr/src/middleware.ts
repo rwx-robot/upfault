@@ -114,3 +114,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         };
         
         let html: string;
+        
