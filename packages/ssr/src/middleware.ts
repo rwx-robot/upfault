@@ -109,3 +109,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
             state: {
               ...renderOptions.context?.state,
               ...pageData.state,
+            },
