@@ -111,3 +111,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
               ...pageData.state,
             },
           },
+        };
