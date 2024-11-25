@@ -120,3 +120,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           res.setHeader('Transfer-Encoding', 'chunked');
           res.setHeader('X-Content-Type-Options', 'nosniff');
           
+          const { renderToNodeStream } = await import('./render');
