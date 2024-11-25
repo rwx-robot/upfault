@@ -124,3 +124,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           const stream = renderToNodeStream(vnode, renderOpts);
           
           for await (const chunk of stream) {
+            res.write(String(chunk));
