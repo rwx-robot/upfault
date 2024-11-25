@@ -125,3 +125,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           
           for await (const chunk of stream) {
             res.write(String(chunk));
+          }
