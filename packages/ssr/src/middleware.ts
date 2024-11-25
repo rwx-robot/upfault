@@ -119,3 +119,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           res.setHeader('Content-Type', 'text/html; charset=utf-8');
           res.setHeader('Transfer-Encoding', 'chunked');
           res.setHeader('X-Content-Type-Options', 'nosniff');
+          
