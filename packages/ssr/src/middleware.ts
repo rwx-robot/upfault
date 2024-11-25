@@ -128,3 +128,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           }
           res.end();
         } else {
+          const { renderToString } = await import('./render');
