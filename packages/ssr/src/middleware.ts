@@ -121,3 +121,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           res.setHeader('X-Content-Type-Options', 'nosniff');
           
           const { renderToNodeStream } = await import('./render');
+          const stream = renderToNodeStream(vnode, renderOpts);
