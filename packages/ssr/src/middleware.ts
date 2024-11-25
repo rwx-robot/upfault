@@ -127,3 +127,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
             res.write(String(chunk));
           }
           res.end();
+        } else {
