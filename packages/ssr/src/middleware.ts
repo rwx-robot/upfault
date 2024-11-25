@@ -116,3 +116,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         let html: string;
         
         if (streaming) {
+          res.setHeader('Content-Type', 'text/html; charset=utf-8');
