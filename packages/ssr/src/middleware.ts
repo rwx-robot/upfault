@@ -132,3 +132,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           html = renderToString(vnode, renderOpts);
           
           if (onResponse) {
+            html = await onResponse(html, req, res);
