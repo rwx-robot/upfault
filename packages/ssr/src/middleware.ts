@@ -145,3 +145,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       
       if (req.url.startsWith(staticPrefix)) {
         if (next) await next();
+        return;
