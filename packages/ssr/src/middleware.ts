@@ -130,3 +130,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         } else {
           const { renderToString } = await import('./render');
           html = renderToString(vnode, renderOpts);
+          
