@@ -135,3 +135,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
             html = await onResponse(html, req, res);
           }
           
+          res.setHeader('Content-Type', 'text/html; charset=utf-8');
