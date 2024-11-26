@@ -140,3 +140,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           res.send(html);
         }
         
+        return;
