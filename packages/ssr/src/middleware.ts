@@ -136,3 +136,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           }
           
           res.setHeader('Content-Type', 'text/html; charset=utf-8');
+          res.setHeader('X-Response-Time', String(Date.now() - startTime) + 'ms');
