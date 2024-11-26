@@ -142,3 +142,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         
         return;
       }
+      
