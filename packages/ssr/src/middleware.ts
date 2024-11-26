@@ -152,3 +152,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       const { renderToString } = await import('./render');
       const h1 = h('h1', null, '404 - Not Found');
       const hp = h('p', null, 'Page not found: ' + req.url);
+      const notFoundHtml = renderToString(h('div', { class: 'not-found' }, [h1, hp]));
