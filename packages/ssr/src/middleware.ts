@@ -139,3 +139,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           res.setHeader('X-Response-Time', String(Date.now() - startTime) + 'ms');
           res.send(html);
         }
+        
