@@ -151,3 +151,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       res.status(404);
       const { renderToString } = await import('./render');
       const h1 = h('h1', null, '404 - Not Found');
+      const hp = h('p', null, 'Page not found: ' + req.url);
