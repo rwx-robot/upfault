@@ -133,3 +133,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
           
           if (onResponse) {
             html = await onResponse(html, req, res);
+          }
