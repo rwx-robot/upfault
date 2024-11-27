@@ -167,3 +167,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         res.send('<!DOCTYPE html>\n<html>\n<head><title>500 - Server Error</title></head>\n<body>\n<h1>500 - Internal Server Error</h1>\n<p>' + error.message + '</p>\n</body>\n</html>');
       }
     }
+  };
