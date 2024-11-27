@@ -158,3 +158,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
     } catch (err) {
       const error = err as Error;
       console.error('[SSR] Render error:', error);
+      
