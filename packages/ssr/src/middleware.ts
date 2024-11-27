@@ -163,3 +163,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
         onError(error, req, res);
       } else {
         res.status(500);
+        res.setHeader('Content-Type', 'text/html; charset=utf-8');
