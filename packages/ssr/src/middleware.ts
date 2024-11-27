@@ -154,3 +154,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       const hp = h('p', null, 'Page not found: ' + req.url);
       const notFoundHtml = renderToString(h('div', { class: 'not-found' }, [h1, hp]));
       res.send(notFoundHtml);
+      
