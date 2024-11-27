@@ -161,3 +161,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       
       if (onError) {
         onError(error, req, res);
+      } else {
