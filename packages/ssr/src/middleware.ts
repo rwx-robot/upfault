@@ -155,3 +155,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       const notFoundHtml = renderToString(h('div', { class: 'not-found' }, [h1, hp]));
       res.send(notFoundHtml);
       
+    } catch (err) {
