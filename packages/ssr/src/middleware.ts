@@ -172,3 +172,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
 
 export function createExpressMiddleware(options: MiddlewareOptions = {}) {
   const middleware = createSSRMiddleware(options);
+  
