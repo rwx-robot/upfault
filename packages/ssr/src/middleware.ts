@@ -156,3 +156,4 @@ export function createSSRMiddleware(options: MiddlewareOptions = {}) {
       res.send(notFoundHtml);
       
     } catch (err) {
+      const error = err as Error;
