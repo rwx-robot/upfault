@@ -177,3 +177,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
     const adaptedReq = {
       url: req.url,
       method: req.method,
+      headers: req.headers,
