@@ -186,3 +186,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
     const adaptedRes = {
       status: (code: number) => { res.statusCode = code; return adaptedRes; },
       setHeader: (name: string, value: string) => { res.setHeader(name, value); return adaptedRes; },
+      send: (html: string) => { res.send(html); },
