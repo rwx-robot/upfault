@@ -184,3 +184,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
     };
     
     const adaptedRes = {
+      status: (code: number) => { res.statusCode = code; return adaptedRes; },
