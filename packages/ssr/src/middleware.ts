@@ -180,3 +180,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
       headers: req.headers,
       query: req.query,
       params: req.params,
+      body: req.body,
