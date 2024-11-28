@@ -194,3 +194,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
     
     middleware(adaptedReq, adaptedRes).then(() => {}).catch(next);
   };
+}
