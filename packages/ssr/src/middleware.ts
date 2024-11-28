@@ -189,3 +189,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
       send: (html: string) => { res.send(html); },
       write: (chunk: string) => { res.write(chunk); return true; },
       end: (chunk?: string) => { res.end(chunk); },
+      pipe: (stream: any) => { stream.pipe(res); return adaptedRes; },
