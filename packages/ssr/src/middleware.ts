@@ -178,3 +178,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
       url: req.url,
       method: req.method,
       headers: req.headers,
+      query: req.query,
