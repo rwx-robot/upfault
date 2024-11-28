@@ -174,3 +174,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
   const middleware = createSSRMiddleware(options);
   
   return function expressMiddleware(req: any, res: any, next: () => void) {
+    const adaptedReq = {
