@@ -199,3 +199,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
 export function createKoaMiddleware(options: MiddlewareOptions = {}) {
   const middleware = createSSRMiddleware(options);
   
+  return async function koaMiddleware(ctx: any, next: () => Promise<void>) {
