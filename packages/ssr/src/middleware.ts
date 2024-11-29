@@ -203,3 +203,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
     const adaptedReq = {
       url: ctx.url,
       method: ctx.method,
+      headers: ctx.headers,
