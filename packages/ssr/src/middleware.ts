@@ -210,3 +210,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
     };
     
     const adaptedRes = {
+      status: (code: number) => { ctx.status = code; return adaptedRes; },
