@@ -198,3 +198,4 @@ export function createExpressMiddleware(options: MiddlewareOptions = {}) {
 
 export function createKoaMiddleware(options: MiddlewareOptions = {}) {
   const middleware = createSSRMiddleware(options);
+  
