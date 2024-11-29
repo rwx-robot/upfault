@@ -211,3 +211,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
     
     const adaptedRes = {
       status: (code: number) => { ctx.status = code; return adaptedRes; },
+      setHeader: (name: string, value: string) => { ctx.set(name, value); return adaptedRes; },
