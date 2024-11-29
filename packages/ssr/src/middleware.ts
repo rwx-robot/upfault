@@ -214,3 +214,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
       setHeader: (name: string, value: string) => { ctx.set(name, value); return adaptedRes; },
       send: (html: string) => { ctx.body = html; },
       write: (chunk: string) => { ctx.body = chunk; },
+      end: (chunk?: string) => { if (chunk) ctx.body = chunk; },
