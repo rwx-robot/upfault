@@ -201,3 +201,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
   
   return async function koaMiddleware(ctx: any, next: () => Promise<void>) {
     const adaptedReq = {
+      url: ctx.url,
