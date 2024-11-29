@@ -204,3 +204,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
       url: ctx.url,
       method: ctx.method,
       headers: ctx.headers,
+      query: ctx.query,
