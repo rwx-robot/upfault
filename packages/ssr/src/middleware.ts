@@ -208,3 +208,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
       params: ctx.params,
       body: ctx.request.body,
     };
+    
