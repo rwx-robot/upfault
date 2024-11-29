@@ -215,3 +215,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
       send: (html: string) => { ctx.body = html; },
       write: (chunk: string) => { ctx.body = chunk; },
       end: (chunk?: string) => { if (chunk) ctx.body = chunk; },
+      pipe: (stream: any) => { stream.pipe(ctx.res); return adaptedRes; },
