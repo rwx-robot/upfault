@@ -209,3 +209,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
       body: ctx.request.body,
     };
     
+    const adaptedRes = {
