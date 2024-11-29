@@ -200,3 +200,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
   const middleware = createSSRMiddleware(options);
   
   return async function koaMiddleware(ctx: any, next: () => Promise<void>) {
+    const adaptedReq = {
