@@ -220,3 +220,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
     
     await middleware(adaptedReq, adaptedRes);
   };
+}
