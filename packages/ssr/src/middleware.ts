@@ -226,3 +226,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
   const middleware = createSSRMiddleware(options);
   
   return async function fastifyMiddleware(req: any, reply: any) {
+    const adaptedReq = {
