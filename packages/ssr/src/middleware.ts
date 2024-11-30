@@ -224,3 +224,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
 
 export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
   const middleware = createSSRMiddleware(options);
+  
