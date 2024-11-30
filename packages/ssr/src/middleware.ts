@@ -221,3 +221,5 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
     await middleware(adaptedReq, adaptedRes);
   };
 }
+
+export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
