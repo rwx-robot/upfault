@@ -218,3 +218,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
       pipe: (stream: any) => { stream.pipe(ctx.res); return adaptedRes; },
     };
     
+    await middleware(adaptedReq, adaptedRes);
