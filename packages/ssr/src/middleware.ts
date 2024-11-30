@@ -231,3 +231,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
       method: req.method,
       headers: req.headers,
       query: req.query,
+      params: req.params,
