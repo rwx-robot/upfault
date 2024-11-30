@@ -228,3 +228,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
   return async function fastifyMiddleware(req: any, reply: any) {
     const adaptedReq = {
       url: req.url,
+      method: req.method,
