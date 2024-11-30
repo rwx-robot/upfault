@@ -234,3 +234,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
       params: req.params,
       body: req.body,
     };
+    
