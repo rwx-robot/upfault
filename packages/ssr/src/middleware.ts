@@ -216,3 +216,4 @@ export function createKoaMiddleware(options: MiddlewareOptions = {}) {
       write: (chunk: string) => { ctx.body = chunk; },
       end: (chunk?: string) => { if (chunk) ctx.body = chunk; },
       pipe: (stream: any) => { stream.pipe(ctx.res); return adaptedRes; },
+    };
