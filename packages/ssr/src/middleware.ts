@@ -235,3 +235,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
       body: req.body,
     };
     
+    const adaptedRes = {
