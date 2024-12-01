@@ -239,3 +239,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
       status: (code: number) => { reply.status(code); return adaptedRes; },
       setHeader: (name: string, value: string) => { reply.header(name, value); return adaptedRes; },
       send: (html: string) => { reply.send(html); },
+      write: (chunk: string) => { reply.write(chunk); },
