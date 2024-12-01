@@ -244,3 +244,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
       pipe: (stream: any) => { stream.pipe(reply.raw); return adaptedRes; },
     };
     
+    await middleware(adaptedReq, adaptedRes);
