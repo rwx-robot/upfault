@@ -253,3 +253,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
   
   return function nodeHttpHandler(req: any, res: any) {
     const adaptedReq = {
+      url: req.url,
