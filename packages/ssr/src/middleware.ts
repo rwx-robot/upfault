@@ -248,3 +248,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
   };
 }
 
+export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
