@@ -251,3 +251,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
 export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
   const middleware = createSSRMiddleware(options);
   
+  return function nodeHttpHandler(req: any, res: any) {
