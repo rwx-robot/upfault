@@ -237,3 +237,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
     
     const adaptedRes = {
       status: (code: number) => { reply.status(code); return adaptedRes; },
+      setHeader: (name: string, value: string) => { reply.header(name, value); return adaptedRes; },
