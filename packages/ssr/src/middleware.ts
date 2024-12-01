@@ -247,3 +247,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
     await middleware(adaptedReq, adaptedRes);
   };
 }
+
