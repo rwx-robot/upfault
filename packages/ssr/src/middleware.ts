@@ -242,3 +242,4 @@ export function createFastifyMiddleware(options: MiddlewareOptions = {}) {
       write: (chunk: string) => { reply.write(chunk); },
       end: (chunk?: string) => { if (chunk) reply.send(chunk); },
       pipe: (stream: any) => { stream.pipe(reply.raw); return adaptedRes; },
+    };
