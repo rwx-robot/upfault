@@ -275,3 +275,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
       res.statusCode = 500;
       res.end('Internal Server Error');
     });
+  };
