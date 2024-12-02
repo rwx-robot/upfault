@@ -258,3 +258,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
       headers: req.headers,
       query: parseQuery(req.url),
       params: {},
+      body: undefined,
