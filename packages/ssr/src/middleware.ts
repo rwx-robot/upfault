@@ -270,3 +270,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
       pipe: (stream: any) => { stream.pipe(res); return adaptedRes; },
     };
     
+    middleware(adaptedReq, adaptedRes).catch(err => {
