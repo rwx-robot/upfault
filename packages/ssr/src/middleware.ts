@@ -260,3 +260,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
       params: {},
       body: undefined,
     };
+    
