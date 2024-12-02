@@ -262,3 +262,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
     };
     
     const adaptedRes = {
+      status: (code: number) => { res.statusCode = code; return adaptedRes; },
