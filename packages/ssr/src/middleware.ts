@@ -271,3 +271,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
     };
     
     middleware(adaptedReq, adaptedRes).catch(err => {
+      console.error('[SSR] Unhandled error:', err);
