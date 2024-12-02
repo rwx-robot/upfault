@@ -274,3 +274,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
       console.error('[SSR] Unhandled error:', err);
       res.statusCode = 500;
       res.end('Internal Server Error');
+    });
