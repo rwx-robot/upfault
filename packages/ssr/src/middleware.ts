@@ -269,3 +269,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
       end: (chunk?: string) => res.end(chunk),
       pipe: (stream: any) => { stream.pipe(res); return adaptedRes; },
     };
+    
