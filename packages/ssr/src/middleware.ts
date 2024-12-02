@@ -276,3 +276,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
       res.end('Internal Server Error');
     });
   };
+}
