@@ -261,3 +261,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
       body: undefined,
     };
     
+    const adaptedRes = {
