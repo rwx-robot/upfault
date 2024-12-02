@@ -265,3 +265,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
       status: (code: number) => { res.statusCode = code; return adaptedRes; },
       setHeader: (name: string, value: string) => { res.setHeader(name, value); return adaptedRes; },
       send: (html: string) => { res.end(html); },
+      write: (chunk: string) => res.write(chunk),
