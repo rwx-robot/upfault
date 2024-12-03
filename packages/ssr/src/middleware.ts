@@ -299,3 +299,4 @@ export function createDevMiddleware(
         '  const ws = new WebSocket(\'ws://localhost:' + hmrPort + hmrPath + '\');\n' +
         '  ws.onmessage = (event) => {\n' +
         '    if (event.data === \'reload\') location.reload();\n' +
+        '    else if (event.data === \'update\') console.log(\'[HMR] Updated\');\n' +
