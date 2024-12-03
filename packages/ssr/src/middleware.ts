@@ -281,3 +281,4 @@ export function createNodeHttpHandler(options: MiddlewareOptions = {}) {
 export function createDevMiddleware(
   options: MiddlewareOptions & {
     hmrPort?: number;
+    hmrPath?: string;
