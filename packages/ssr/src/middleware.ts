@@ -284,3 +284,4 @@ export function createDevMiddleware(
     hmrPath?: string;
   } = {}
 ) {
+  const baseMiddleware = createSSRMiddleware(options);
