@@ -283,3 +283,4 @@ export function createDevMiddleware(
     hmrPort?: number;
     hmrPath?: string;
   } = {}
+) {
