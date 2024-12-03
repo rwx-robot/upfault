@@ -298,3 +298,4 @@ export function createDevMiddleware(
         '(function() {\n' +
         '  const ws = new WebSocket(\'ws://localhost:' + hmrPort + hmrPath + '\');\n' +
         '  ws.onmessage = (event) => {\n' +
+        '    if (event.data === \'reload\') location.reload();\n' +
