@@ -292,3 +292,4 @@ export function createDevMiddleware(
       return;
     }
     
+    const originalSend = res.send;
