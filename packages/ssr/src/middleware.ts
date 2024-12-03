@@ -288,3 +288,4 @@ export function createDevMiddleware(
   const { hmrPort = 3001, hmrPath = '/__hmr' } = options;
   
   return async function devMiddleware(req: SSRRequest, res: SSRResponse, next?: () => Promise<void>) {
+    if (req.url.startsWith(hmrPath)) {
