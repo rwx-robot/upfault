@@ -300,3 +300,4 @@ export function createDevMiddleware(
         '  ws.onmessage = (event) => {\n' +
         '    if (event.data === \'reload\') location.reload();\n' +
         '    else if (event.data === \'update\') console.log(\'[HMR] Updated\');\n' +
+        '  };\n' +
