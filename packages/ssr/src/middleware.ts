@@ -294,3 +294,4 @@ export function createDevMiddleware(
     
     const originalSend = res.send;
     res.send = function(html: string) {
+      const hmrScript = '<script>\n' +
