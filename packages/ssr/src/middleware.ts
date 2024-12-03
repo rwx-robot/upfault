@@ -296,3 +296,4 @@ export function createDevMiddleware(
     res.send = function(html: string) {
       const hmrScript = '<script>\n' +
         '(function() {\n' +
+        '  const ws = new WebSocket(\'ws://localhost:' + hmrPort + hmrPath + '\');\n' +
