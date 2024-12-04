@@ -304,3 +304,4 @@ export function createDevMiddleware(
         '  ws.onclose = () => setTimeout(() => location.reload(), 1000);\n' +
         '})();\n' +
         '</script>\n';
+      return originalSend.call(this, html.replace('</body>', hmrScript + '</body>'));
