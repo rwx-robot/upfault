@@ -317,3 +317,4 @@ export function createProdMiddleware(options: MiddlewareOptions = {}) {
     streaming: true,
     renderOptions: {
       ...options.renderOptions,
+      injectStyles: true,
