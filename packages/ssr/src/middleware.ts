@@ -319,3 +319,4 @@ export function createProdMiddleware(options: MiddlewareOptions = {}) {
       ...options.renderOptions,
       injectStyles: true,
       injectScripts: false,
+      preload: true,
