@@ -314,3 +314,4 @@ export function createDevMiddleware(
 export function createProdMiddleware(options: MiddlewareOptions = {}) {
   const baseMiddleware = createSSRMiddleware({
     ...options,
+    streaming: true,
