@@ -307,3 +307,4 @@ export function createDevMiddleware(
       return originalSend.call(this, html.replace('</body>', hmrScript + '</body>'));
     };
     
+    return baseMiddleware(req, res, next);
