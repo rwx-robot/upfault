@@ -310,3 +310,5 @@ export function createDevMiddleware(
     return baseMiddleware(req, res, next);
   };
 }
+
+export function createProdMiddleware(options: MiddlewareOptions = {}) {
