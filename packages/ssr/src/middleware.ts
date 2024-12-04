@@ -302,3 +302,4 @@ export function createDevMiddleware(
         '    else if (event.data === \'update\') console.log(\'[HMR] Updated\');\n' +
         '  };\n' +
         '  ws.onclose = () => setTimeout(() => location.reload(), 1000);\n' +
+        '})();\n' +
