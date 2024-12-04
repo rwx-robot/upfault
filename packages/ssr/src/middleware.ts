@@ -303,3 +303,4 @@ export function createDevMiddleware(
         '  };\n' +
         '  ws.onclose = () => setTimeout(() => location.reload(), 1000);\n' +
         '})();\n' +
+        '</script>\n';
