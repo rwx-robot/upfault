@@ -305,3 +305,4 @@ export function createDevMiddleware(
         '})();\n' +
         '</script>\n';
       return originalSend.call(this, html.replace('</body>', hmrScript + '</body>'));
+    };
