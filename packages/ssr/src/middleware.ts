@@ -323,3 +323,4 @@ export function createProdMiddleware(options: MiddlewareOptions = {}) {
     },
   });
   
+  return async function prodMiddleware(req: SSRRequest, res: SSRResponse, next?: () => Promise<void>) {
