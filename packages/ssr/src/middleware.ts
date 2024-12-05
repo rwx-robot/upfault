@@ -321,3 +321,4 @@ export function createProdMiddleware(options: MiddlewareOptions = {}) {
       injectScripts: false,
       preload: true,
     },
+  });
