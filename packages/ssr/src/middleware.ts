@@ -335,3 +335,4 @@ export function createProdMiddleware(options: MiddlewareOptions = {}) {
     
     return baseMiddleware(req, res, next);
   };
+}
