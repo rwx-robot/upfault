@@ -325,3 +325,4 @@ export function createProdMiddleware(options: MiddlewareOptions = {}) {
   
   return async function prodMiddleware(req: SSRRequest, res: SSRResponse, next?: () => Promise<void>) {
     if (req.url.match(/\.(js|css|png|jpg|jpeg|gif|svg|woff2?|ico)$/)) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
