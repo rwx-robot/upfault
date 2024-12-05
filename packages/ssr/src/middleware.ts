@@ -333,3 +333,4 @@ export function createProdMiddleware(options: MiddlewareOptions = {}) {
     res.setHeader('X-XSS-Protection', '1; mode=block');
     res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
     
+    return baseMiddleware(req, res, next);
