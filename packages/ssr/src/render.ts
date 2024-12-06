@@ -15,3 +15,4 @@ export interface SSRContext {
   preloadLinks: string[];
   meta: Record<string, string>;
   state: Record<string, any>;
+  teleports: Map<string, string[]>;
