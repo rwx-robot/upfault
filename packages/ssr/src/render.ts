@@ -25,3 +25,4 @@ export interface RenderOptions {
   injectStyles?: boolean;
   injectScripts?: boolean;
   preload?: boolean;
+  nonce?: string;
