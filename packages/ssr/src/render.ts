@@ -20,3 +20,4 @@ export interface SSRContext {
 }
 
 export interface RenderOptions {
+  context?: Partial<SSRContext>;
