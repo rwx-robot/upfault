@@ -11,3 +11,4 @@ import { VNodeType } from '@upfault/shared';
 export interface SSRContext {
   modules: Set<string>;
   styles: Set<string>;
+  scripts: Set<string>;
