@@ -24,3 +24,4 @@ export interface RenderOptions {
   clientManifest?: Record<string, string>;
   injectStyles?: boolean;
   injectScripts?: boolean;
+  preload?: boolean;
