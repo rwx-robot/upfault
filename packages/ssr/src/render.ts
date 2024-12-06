@@ -13,3 +13,4 @@ export interface SSRContext {
   styles: Set<string>;
   scripts: Set<string>;
   preloadLinks: string[];
+  meta: Record<string, string>;
