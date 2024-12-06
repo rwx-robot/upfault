@@ -18,3 +18,5 @@ export interface SSRContext {
   teleports: Map<string, string[]>;
   suspenseFallbacks: Map<string, string>;
 }
+
+export interface RenderOptions {
