@@ -12,3 +12,4 @@ export interface SSRContext {
   modules: Set<string>;
   styles: Set<string>;
   scripts: Set<string>;
+  preloadLinks: string[];
