@@ -23,3 +23,4 @@ export interface RenderOptions {
   context?: Partial<SSRContext>;
   clientManifest?: Record<string, string>;
   injectStyles?: boolean;
+  injectScripts?: boolean;
