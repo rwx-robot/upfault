@@ -21,3 +21,4 @@ export interface SSRContext {
 
 export interface RenderOptions {
   context?: Partial<SSRContext>;
+  clientManifest?: Record<string, string>;
