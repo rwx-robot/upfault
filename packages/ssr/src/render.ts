@@ -5,3 +5,4 @@
  */
 
 import { h, type VNode, type ComponentInstance } from '@upfault/runtime';
+import { Priority, type SchedulerTask } from '@upfault/scheduler';
