@@ -17,3 +17,4 @@ export interface SSRContext {
   state: Record<string, any>;
   teleports: Map<string, string[]>;
   suspenseFallbacks: Map<string, string>;
+}
