@@ -44,3 +44,4 @@ const DEFAULT_CONTEXT: SSRContext = {
  * 将 VNode 渲染为 HTML 字符串
  */
 export function renderToString(
+  vnode: VNode,
