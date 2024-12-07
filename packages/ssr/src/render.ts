@@ -27,3 +27,4 @@ export interface RenderOptions {
   preload?: boolean;
   nonce?: string;
   serializeState?: boolean;
+}
