@@ -45,3 +45,4 @@ const DEFAULT_CONTEXT: SSRContext = {
  */
 export function renderToString(
   vnode: VNode,
+  options: RenderOptions = {}
