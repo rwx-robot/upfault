@@ -39,3 +39,5 @@ const DEFAULT_CONTEXT: SSRContext = {
   teleports: new Map(),
   suspenseFallbacks: new Map(),
 };
+
+/**
