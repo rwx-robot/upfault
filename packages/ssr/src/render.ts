@@ -28,3 +28,5 @@ export interface RenderOptions {
   nonce?: string;
   serializeState?: boolean;
 }
+
+const DEFAULT_CONTEXT: SSRContext = {
