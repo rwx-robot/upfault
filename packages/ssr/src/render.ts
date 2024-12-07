@@ -41,3 +41,4 @@ const DEFAULT_CONTEXT: SSRContext = {
 };
 
 /**
+ * 将 VNode 渲染为 HTML 字符串
