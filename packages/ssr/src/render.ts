@@ -26,3 +26,4 @@ export interface RenderOptions {
   injectScripts?: boolean;
   preload?: boolean;
   nonce?: string;
+  serializeState?: boolean;
