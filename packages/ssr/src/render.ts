@@ -31,3 +31,4 @@ export interface RenderOptions {
 
 const DEFAULT_CONTEXT: SSRContext = {
   modules: new Set(),
+  styles: new Set(),
