@@ -35,3 +35,4 @@ const DEFAULT_CONTEXT: SSRContext = {
   scripts: new Set<string>(),
   preloadLinks: [],
   meta: {},
+  state: {},
