@@ -36,3 +36,4 @@ const DEFAULT_CONTEXT: SSRContext = {
   preloadLinks: [],
   meta: {},
   state: {},
+  teleports: new Map(),
