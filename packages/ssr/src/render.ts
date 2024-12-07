@@ -34,3 +34,4 @@ const DEFAULT_CONTEXT: SSRContext = {
   styles: new Set(),
   scripts: new Set<string>(),
   preloadLinks: [],
+  meta: {},
