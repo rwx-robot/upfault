@@ -51,3 +51,4 @@ export function renderToString(
   const renderer = createSSRRenderer(context);
   
   const html = renderer.renderToString(vnode);
+  
