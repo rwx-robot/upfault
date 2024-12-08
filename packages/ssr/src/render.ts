@@ -52,3 +52,4 @@ export function renderToString(
   
   const html = renderer.renderToString(vnode);
   
+  return injectHead(html, context, options);
