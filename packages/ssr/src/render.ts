@@ -62,3 +62,4 @@ export function renderToNodeStream(
   vnode: VNode,
   options: RenderOptions = {}
 ): NodeJS.ReadableStream {
+  const { Readable } = require('stream');
