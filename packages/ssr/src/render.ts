@@ -54,3 +54,5 @@ export function renderToString(
   
   return injectHead(html, context, options);
 }
+
+/**
