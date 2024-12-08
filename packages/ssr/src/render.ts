@@ -66,3 +66,4 @@ export function renderToNodeStream(
   const context = createContext(options);
   const renderer = createSSRRenderer(context);
   
+  const stream = new Readable({
