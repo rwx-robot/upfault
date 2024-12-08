@@ -61,3 +61,4 @@ export function renderToString(
 export function renderToNodeStream(
   vnode: VNode,
   options: RenderOptions = {}
+): NodeJS.ReadableStream {
