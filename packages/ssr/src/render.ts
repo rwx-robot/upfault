@@ -50,3 +50,4 @@ export function renderToString(
   const context = createContext(options);
   const renderer = createSSRRenderer(context);
   
+  const html = renderer.renderToString(vnode);
