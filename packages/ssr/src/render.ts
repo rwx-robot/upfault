@@ -48,3 +48,4 @@ export function renderToString(
   options: RenderOptions = {}
 ): string {
   const context = createContext(options);
+  const renderer = createSSRRenderer(context);
