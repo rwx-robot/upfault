@@ -56,3 +56,4 @@ export function renderToString(
 }
 
 /**
+ * 将 VNode 渲染为 Node.js Readable Stream
