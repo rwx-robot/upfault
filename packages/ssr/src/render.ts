@@ -63,3 +63,4 @@ export function renderToNodeStream(
   options: RenderOptions = {}
 ): NodeJS.ReadableStream {
   const { Readable } = require('stream');
+  const context = createContext(options);
