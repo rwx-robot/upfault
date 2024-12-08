@@ -47,3 +47,4 @@ export function renderToString(
   vnode: VNode,
   options: RenderOptions = {}
 ): string {
+  const context = createContext(options);
