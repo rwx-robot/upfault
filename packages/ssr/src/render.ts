@@ -82,3 +82,4 @@ export function renderToNodeStream(
     stream.destroy(err);
   });
   
+  return stream;
