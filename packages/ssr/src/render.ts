@@ -86,3 +86,4 @@ export function renderToNodeStream(
 }
 
 /**
+ * 将 VNode 渲染为 Web ReadableStream
