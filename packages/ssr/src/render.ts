@@ -69,3 +69,4 @@ export function renderToNodeStream(
   const stream = new Readable({
     read() {},
     objectMode: false,
+  });
