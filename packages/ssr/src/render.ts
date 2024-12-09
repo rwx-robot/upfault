@@ -71,3 +71,4 @@ export function renderToNodeStream(
     objectMode: false,
   });
   
+  // 异步渲染到流
