@@ -79,3 +79,4 @@ export function renderToNodeStream(
     stream.unshift(headHtml);
     stream.push(null);
   }).catch(err => {
+    stream.destroy(err);
