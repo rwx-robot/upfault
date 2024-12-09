@@ -75,3 +75,4 @@ export function renderToNodeStream(
   renderer.renderToStream(vnode, (chunk) => {
     stream.push(chunk);
   }).then(() => {
+    const headHtml = generateHeadHtml(context, options);
