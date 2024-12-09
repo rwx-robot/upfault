@@ -78,3 +78,4 @@ export function renderToNodeStream(
     const headHtml = generateHeadHtml(context, options);
     stream.unshift(headHtml);
     stream.push(null);
+  }).catch(err => {
