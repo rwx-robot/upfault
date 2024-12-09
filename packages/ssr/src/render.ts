@@ -80,3 +80,4 @@ export function renderToNodeStream(
     stream.push(null);
   }).catch(err => {
     stream.destroy(err);
+  });
