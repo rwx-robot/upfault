@@ -72,3 +72,4 @@ export function renderToNodeStream(
   });
   
   // 异步渲染到流
+  renderer.renderToStream(vnode, (chunk) => {
