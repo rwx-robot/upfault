@@ -92,3 +92,4 @@ export function renderToWebStream(
   vnode: VNode,
   options: RenderOptions = {}
 ): ReadableStream {
+  const context = createContext(options);
