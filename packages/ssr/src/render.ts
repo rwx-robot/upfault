@@ -98,3 +98,4 @@ export function renderToWebStream(
   return new ReadableStream({
     async start(controller) {
       try {
+        await renderer.renderToStream(vnode, (chunk) => {
