@@ -100,3 +100,4 @@ export function renderToWebStream(
       try {
         await renderer.renderToStream(vnode, (chunk) => {
           controller.enqueue(new TextEncoder().encode(chunk));
+        });
