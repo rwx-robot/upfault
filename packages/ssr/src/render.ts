@@ -91,3 +91,4 @@ export function renderToNodeStream(
 export function renderToWebStream(
   vnode: VNode,
   options: RenderOptions = {}
+): ReadableStream {
