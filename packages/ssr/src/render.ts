@@ -105,3 +105,4 @@ export function renderToWebStream(
         controller.enqueue(new TextEncoder().encode(generateHeadHtml(context, options)));
         controller.close();
       } catch (err) {
+        controller.error(err);
