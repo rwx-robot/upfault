@@ -106,3 +106,4 @@ export function renderToWebStream(
         controller.close();
       } catch (err) {
         controller.error(err);
+      }
