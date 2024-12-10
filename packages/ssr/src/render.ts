@@ -93,3 +93,4 @@ export function renderToWebStream(
   options: RenderOptions = {}
 ): ReadableStream {
   const context = createContext(options);
+  const renderer = createSSRRenderer(context);
