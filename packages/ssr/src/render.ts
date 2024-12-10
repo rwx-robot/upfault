@@ -108,3 +108,4 @@ export function renderToWebStream(
         controller.error(err);
       }
     },
+  });
