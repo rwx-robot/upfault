@@ -104,3 +104,4 @@ export function renderToWebStream(
         const headHtml = generateHeadHtml(context, options);
         controller.enqueue(new TextEncoder().encode(generateHeadHtml(context, options)));
         controller.close();
+      } catch (err) {
