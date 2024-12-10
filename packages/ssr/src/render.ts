@@ -96,3 +96,4 @@ export function renderToWebStream(
   const renderer = createSSRRenderer(context);
   
   return new ReadableStream({
+    async start(controller) {
