@@ -127,3 +127,4 @@ export function pipeToNodeWritable(
       if (!writable.write(chunk)) {
         writable.once('drain', () => {});
       }
+    }).then(() => {
