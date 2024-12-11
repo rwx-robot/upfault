@@ -124,3 +124,4 @@ export function pipeToNodeWritable(
   
   return new Promise((resolve, reject) => {
     renderer.renderToStream(vnode, (chunk) => {
+      if (!writable.write(chunk)) {
