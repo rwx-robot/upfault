@@ -119,3 +119,4 @@ export function pipeToNodeWritable(
   writable: NodeJS.WritableStream,
   options: RenderOptions = {}
 ): Promise<void> {
+  const context = createContext(options);
