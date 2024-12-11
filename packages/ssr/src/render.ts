@@ -118,3 +118,4 @@ export function pipeToNodeWritable(
   vnode: VNode,
   writable: NodeJS.WritableStream,
   options: RenderOptions = {}
+): Promise<void> {
