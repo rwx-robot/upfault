@@ -122,3 +122,4 @@ export function pipeToNodeWritable(
   const context = createContext(options);
   const renderer = createSSRRenderer(context);
   
+  return new Promise((resolve, reject) => {
