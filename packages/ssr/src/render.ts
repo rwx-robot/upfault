@@ -117,3 +117,4 @@ export function renderToWebStream(
 export function pipeToNodeWritable(
   vnode: VNode,
   writable: NodeJS.WritableStream,
+  options: RenderOptions = {}
