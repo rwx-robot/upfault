@@ -128,3 +128,4 @@ export function pipeToNodeWritable(
         writable.once('drain', () => {});
       }
     }).then(() => {
+      const headHtml = generateHeadHtml(context, options);
