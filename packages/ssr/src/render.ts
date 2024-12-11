@@ -123,3 +123,4 @@ export function pipeToNodeWritable(
   const renderer = createSSRRenderer(context);
   
   return new Promise((resolve, reject) => {
+    renderer.renderToStream(vnode, (chunk) => {
