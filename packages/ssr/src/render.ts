@@ -126,3 +126,4 @@ export function pipeToNodeWritable(
     renderer.renderToStream(vnode, (chunk) => {
       if (!writable.write(chunk)) {
         writable.once('drain', () => {});
+      }
