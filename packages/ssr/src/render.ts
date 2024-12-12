@@ -135,3 +135,5 @@ export function pipeToNodeWritable(
     }).catch(reject);
   });
 }
+
+/**
