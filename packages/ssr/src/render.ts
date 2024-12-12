@@ -139,3 +139,4 @@ export function pipeToNodeWritable(
 /**
  * 将渲染结果管道输出到 Web WritableStream
  */
+export function pipeToWebWritable(
