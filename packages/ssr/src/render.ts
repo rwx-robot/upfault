@@ -149,3 +149,4 @@ export function pipeToWebWritable(
   const writer = writable.getWriter();
   
   return renderer.renderToStream(vnode, (chunk) => {
+    return writer.write(new TextEncoder().encode(chunk));
