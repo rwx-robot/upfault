@@ -144,3 +144,4 @@ export function pipeToWebWritable(
   writable: WritableStream,
   options: RenderOptions = {}
 ): Promise<void> {
+  const context = createContext(options);
