@@ -142,3 +142,4 @@ export function pipeToNodeWritable(
 export function pipeToWebWritable(
   vnode: VNode,
   writable: WritableStream,
+  options: RenderOptions = {}
