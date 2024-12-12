@@ -134,3 +134,4 @@ export function pipeToNodeWritable(
       resolve();
     }).catch(reject);
   });
+}
