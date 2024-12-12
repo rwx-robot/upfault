@@ -146,3 +146,4 @@ export function pipeToWebWritable(
 ): Promise<void> {
   const context = createContext(options);
   const renderer = createSSRRenderer(context);
+  const writer = writable.getWriter();
