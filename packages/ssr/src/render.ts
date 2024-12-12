@@ -145,3 +145,4 @@ export function pipeToWebWritable(
   options: RenderOptions = {}
 ): Promise<void> {
   const context = createContext(options);
+  const renderer = createSSRRenderer(context);
