@@ -143,3 +143,4 @@ export function pipeToWebWritable(
   vnode: VNode,
   writable: WritableStream,
   options: RenderOptions = {}
+): Promise<void> {
