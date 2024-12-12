@@ -148,3 +148,4 @@ export function pipeToWebWritable(
   const renderer = createSSRRenderer(context);
   const writer = writable.getWriter();
   
+  return renderer.renderToStream(vnode, (chunk) => {
