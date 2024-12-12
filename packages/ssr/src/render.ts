@@ -131,3 +131,4 @@ export function pipeToNodeWritable(
       const headHtml = generateHeadHtml(context, options);
       writable.write(headHtml);
       writable.end();
+      resolve();
