@@ -132,3 +132,4 @@ export function pipeToNodeWritable(
       writable.write(headHtml);
       writable.end();
       resolve();
+    }).catch(reject);
