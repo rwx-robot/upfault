@@ -167,3 +167,5 @@ function createContext(options: RenderOptions): SSRContext {
     ...options.context,
   };
 }
+
+interface SSRRenderer {
