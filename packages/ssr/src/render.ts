@@ -160,3 +160,5 @@ export function pipeToWebWritable(
 // ============================================================================
 // 内部实现
 // ============================================================================
+
+function createContext(options: RenderOptions): SSRContext {
