@@ -155,3 +155,4 @@ export function pipeToWebWritable(
     await writer.write(new TextEncoder().encode(generateHeadHtml(context, options)));
     await writer.close();
   });
+}
