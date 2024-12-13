@@ -169,3 +169,4 @@ function createContext(options: RenderOptions): SSRContext {
 }
 
 interface SSRRenderer {
+  renderToString(vnode: VNode): string;
