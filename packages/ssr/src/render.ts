@@ -151,3 +151,4 @@ export function pipeToWebWritable(
   return renderer.renderToStream(vnode, (chunk) => {
     return writer.write(new TextEncoder().encode(chunk));
   }).then(async () => {
+    const headHtml = generateHeadHtml(context, options);
