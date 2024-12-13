@@ -166,3 +166,4 @@ function createContext(options: RenderOptions): SSRContext {
     ...DEFAULT_CONTEXT,
     ...options.context,
   };
+}
