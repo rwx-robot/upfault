@@ -164,3 +164,4 @@ export function pipeToWebWritable(
 function createContext(options: RenderOptions): SSRContext {
   return {
     ...DEFAULT_CONTEXT,
+    ...options.context,
