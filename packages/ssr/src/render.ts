@@ -152,3 +152,4 @@ export function pipeToWebWritable(
     return writer.write(new TextEncoder().encode(chunk));
   }).then(async () => {
     const headHtml = generateHeadHtml(context, options);
+    await writer.write(new TextEncoder().encode(generateHeadHtml(context, options)));
