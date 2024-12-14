@@ -189,3 +189,4 @@ function renderVNodeToString(vnode: VNode): string {
   
   if (typeof vnode === 'string') return escapeHtml(vnode);
   if (typeof vnode === 'number') return String(vnode);
+  if (!vnode || typeof vnode !== 'object') return '';
