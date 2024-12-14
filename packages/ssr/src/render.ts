@@ -174,3 +174,4 @@ interface SSRRenderer {
 }
 
 function createSSRRenderer(context: SSRContext) {
+  return {
