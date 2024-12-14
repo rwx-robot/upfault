@@ -187,3 +187,4 @@ function createSSRRenderer(context: SSRContext) {
 function renderVNodeToString(vnode: VNode): string {
   if (!vnode) return '';
   
+  if (typeof vnode === 'string') return escapeHtml(vnode);
