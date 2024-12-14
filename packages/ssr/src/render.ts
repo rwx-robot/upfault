@@ -172,3 +172,5 @@ interface SSRRenderer {
   renderToString(vnode: VNode): string;
   renderToStream(vnode: VNode, onChunk: (chunk: string) => void): Promise<void>;
 }
+
+function createSSRRenderer(context: SSRContext) {
