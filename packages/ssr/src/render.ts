@@ -185,3 +185,4 @@ function createSSRRenderer(context: SSRContext) {
 }
 
 function renderVNodeToString(vnode: VNode): string {
+  if (!vnode) return '';
