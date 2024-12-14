@@ -178,3 +178,4 @@ function createSSRRenderer(context: SSRContext) {
     renderToString(vnode: VNode): string {
       return renderVNodeToString(vnode);
     },
+    async renderToStream(vnode: VNode, onChunk: (chunk: string) => void) {
