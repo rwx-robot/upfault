@@ -182,3 +182,4 @@ function createSSRRenderer(context: SSRContext) {
       await renderVNodeToStream(vnode, onChunk);
     },
   };
+}
