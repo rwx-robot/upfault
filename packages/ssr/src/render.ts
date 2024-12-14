@@ -176,3 +176,4 @@ interface SSRRenderer {
 function createSSRRenderer(context: SSRContext) {
   return {
     renderToString(vnode: VNode): string {
+      return renderVNodeToString(vnode);
