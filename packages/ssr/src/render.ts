@@ -208,3 +208,4 @@ function renderVNodeToString(vnode: VNode): string {
   
   // Element or Component
   const tag = typeof (vnode as any).type === 'string' ? (vnode as any).type : 'div';
+  const props = (vnode as any).props || {};
