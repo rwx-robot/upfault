@@ -206,3 +206,4 @@ function renderVNodeToString(vnode: VNode): string {
     return children.map(renderVNodeToString).join('');
   }
   
+  // Element or Component
