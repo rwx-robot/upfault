@@ -201,3 +201,4 @@ function renderVNodeToString(vnode: VNode): string {
     return '<!--' + (vnode as any).children + '-->';
   }
   
+  if (type === VNodeType.FRAGMENT) {
