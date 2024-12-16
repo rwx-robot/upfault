@@ -222,3 +222,4 @@ function renderVNodeToString(vnode: VNode): string {
   const childrenHtml = Array.isArray(children)
     ? children.map(renderVNodeToString).join('')
     : typeof children === 'string'
+      ? escapeHtml(children)
