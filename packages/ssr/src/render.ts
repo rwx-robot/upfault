@@ -232,3 +232,4 @@ function renderVNodeToString(vnode: VNode): string {
   }
   
   return `<${tag}${attrs ? ' ' + attrs : ''}>${childrenHtml}</${tag}>`;
+}
