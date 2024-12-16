@@ -214,3 +214,4 @@ function renderVNodeToString(vnode: VNode): string {
   const attrs = Object.entries(props)
     .filter(([k, v]) => k !== 'children' && v != null && v !== false && !k.startsWith('on'))
     .map(([k, v]) => {
+      if (v === true) return k;
