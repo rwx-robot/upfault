@@ -241,3 +241,4 @@ async function renderVNodeToStream(vnode: VNode, onChunk: (chunk: string) => voi
   for (let i = 0; i < html.length; i += chunkSize) {
     onChunk(html.slice(i, i + chunkSize));
     // 允许事件循环
+    await new Promise(resolve => setImmediate(resolve));
