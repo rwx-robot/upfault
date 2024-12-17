@@ -233,3 +233,5 @@ function renderVNodeToString(vnode: VNode): string {
   
   return `<${tag}${attrs ? ' ' + attrs : ''}>${childrenHtml}</${tag}>`;
 }
+
+async function renderVNodeToStream(vnode: VNode, onChunk: (chunk: string) => void): Promise<void> {
