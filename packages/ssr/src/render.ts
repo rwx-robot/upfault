@@ -253,3 +253,5 @@ function escapeHtml(text: string): string {
     .replace(/"/g, '"')
     .replace(/'/g, '&apos;');
 }
+
+function injectHead(html: string, context: SSRContext, options: RenderOptions): string {
