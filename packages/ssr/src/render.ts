@@ -239,3 +239,4 @@ async function renderVNodeToStream(vnode: VNode, onChunk: (chunk: string) => voi
   const html = renderVNodeToString(vnode);
   const chunkSize = 8192;
   for (let i = 0; i < html.length; i += chunkSize) {
+    onChunk(html.slice(i, i + chunkSize));
