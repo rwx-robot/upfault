@@ -244,3 +244,5 @@ async function renderVNodeToStream(vnode: VNode, onChunk: (chunk: string) => voi
     await new Promise(resolve => setImmediate(resolve));
   }
 }
+
+function escapeHtml(text: string): string {
