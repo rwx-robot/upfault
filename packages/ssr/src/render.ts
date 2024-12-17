@@ -246,3 +246,4 @@ async function renderVNodeToStream(vnode: VNode, onChunk: (chunk: string) => voi
 }
 
 function escapeHtml(text: string): string {
+  return text
