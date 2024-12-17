@@ -236,3 +236,4 @@ function renderVNodeToString(vnode: VNode): string {
 
 async function renderVNodeToStream(vnode: VNode, onChunk: (chunk: string) => void): Promise<void> {
   // 简化实现：直接生成字符串然后分块发送
+  const html = renderVNodeToString(vnode);
