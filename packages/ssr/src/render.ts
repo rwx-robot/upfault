@@ -243,3 +243,4 @@ async function renderVNodeToStream(vnode: VNode, onChunk: (chunk: string) => voi
     // 允许事件循环
     await new Promise(resolve => setImmediate(resolve));
   }
+}
