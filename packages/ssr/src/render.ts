@@ -266,3 +266,4 @@ function injectHead(html: string, context: SSRContext, options: RenderOptions): 
   if (html.includes('<body>')) {
     return html.replace('<body>', `${headHtml}<body>`);
   }
+  
