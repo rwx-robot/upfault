@@ -275,3 +275,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
   const parts: string[] = [];
   
   // Meta 标签
+  for (const [name, content] of Object.entries(context.meta)) {
