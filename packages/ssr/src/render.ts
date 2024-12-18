@@ -256,3 +256,4 @@ function escapeHtml(text: string): string {
 
 function injectHead(html: string, context: SSRContext, options: RenderOptions): string {
   const headHtml = generateHeadHtml(context, options);
+  
