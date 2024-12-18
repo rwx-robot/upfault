@@ -258,3 +258,4 @@ function injectHead(html: string, context: SSRContext, options: RenderOptions): 
   const headHtml = generateHeadHtml(context, options);
   
   // 注入到 <head> 标签中
+  if (html.includes('<head>')) {
