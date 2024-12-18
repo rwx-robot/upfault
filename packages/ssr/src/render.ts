@@ -262,3 +262,4 @@ function injectHead(html: string, context: SSRContext, options: RenderOptions): 
     return html.replace('<head>', `<head>${headHtml}`);
   }
   
+  // 如果没有 head 标签，在 body 前注入
