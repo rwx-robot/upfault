@@ -265,3 +265,4 @@ function injectHead(html: string, context: SSRContext, options: RenderOptions): 
   // 如果没有 head 标签，在 body 前注入
   if (html.includes('<body>')) {
     return html.replace('<body>', `${headHtml}<body>`);
+  }
