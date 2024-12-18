@@ -267,3 +267,4 @@ function injectHead(html: string, context: SSRContext, options: RenderOptions): 
     return html.replace('<body>', `${headHtml}<body>`);
   }
   
+  // 兜底：直接前置
