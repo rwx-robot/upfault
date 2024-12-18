@@ -270,3 +270,5 @@ function injectHead(html: string, context: SSRContext, options: RenderOptions): 
   // 兜底：直接前置
   return headHtml + html;
 }
+
+function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
