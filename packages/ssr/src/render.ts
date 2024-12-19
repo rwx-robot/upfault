@@ -296,3 +296,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
   // Scripts (仅注入 preload，实际脚本由客户端加载)
   if (options.injectScripts !== false) {
     for (const script of context.scripts) {
+      parts.push(`<link rel="modulepreload" href="${script}">`);
