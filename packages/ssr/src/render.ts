@@ -279,3 +279,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
     parts.push(`<meta name="${name}" content="${escapeHtml(content)}">`);
   }
   
+  // Preload links
