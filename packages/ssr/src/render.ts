@@ -281,3 +281,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
   
   // Preload links
   if (options.preload !== false) {
+    for (const link of context.preloadLinks) {
