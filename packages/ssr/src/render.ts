@@ -293,3 +293,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
     }
   }
   
+  // Scripts (仅注入 preload，实际脚本由客户端加载)
