@@ -298,3 +298,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
     for (const script of context.scripts) {
       parts.push(`<link rel="modulepreload" href="${script}">`);
     }
+  }
