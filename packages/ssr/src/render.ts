@@ -301,3 +301,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
   }
   
   // 状态序列化
+  if (options.serializeState !== false && Object.keys(context.state).length > 0) {
