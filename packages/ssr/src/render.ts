@@ -287,3 +287,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
   }
   
   // Styles
+  if (options.injectStyles !== false) {
