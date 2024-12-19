@@ -300,3 +300,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
     }
   }
   
+  // 状态序列化
