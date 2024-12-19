@@ -283,3 +283,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
   if (options.preload !== false) {
     for (const link of context.preloadLinks) {
       parts.push(`<link rel="preload" href="${link}" as="script">`);
+    }
