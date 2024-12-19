@@ -291,3 +291,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
     for (const style of context.styles) {
       parts.push(`<style>${style}</style>`);
     }
+  }
