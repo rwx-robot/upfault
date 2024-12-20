@@ -305,3 +305,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
     parts.push(`<script id="__UPFAULT_STATE__" type="application/json">${JSON.stringify(context.state)}</script>`);
   }
   
+  // Teleports
