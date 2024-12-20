@@ -5,3 +5,4 @@ import type { VNode, VNodeProps, VNodeType } from '@upfault/shared/diff';
 
 declare module '@upfault/runtime' {
   // VNode creation
+  export function h(
