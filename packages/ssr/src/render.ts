@@ -310,3 +310,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
     parts.push(`<template id="teleport-${target}">${content.join('')}</template>`);
   }
   
+  return parts.join('\n');
