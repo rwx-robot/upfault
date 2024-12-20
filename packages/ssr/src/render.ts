@@ -302,3 +302,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
   
   // 状态序列化
   if (options.serializeState !== false && Object.keys(context.state).length > 0) {
+    parts.push(`<script id="__UPFAULT_STATE__" type="application/json">${JSON.stringify(context.state)}</script>`);
