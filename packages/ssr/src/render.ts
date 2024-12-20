@@ -306,3 +306,4 @@ function generateHeadHtml(context: SSRContext, options: RenderOptions): string {
   }
   
   // Teleports
+  for (const [target, content] of context.teleports) {
