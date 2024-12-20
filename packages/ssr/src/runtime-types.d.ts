@@ -1,0 +1,1 @@
+// Minimal type declarations for @upfault/runtime to satisfy SSR package's tsc
