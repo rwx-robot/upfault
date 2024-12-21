@@ -15,3 +15,4 @@ declare module '@upfault/runtime' {
     props: VNodeProps | null,
     ...children: any[]
   ): VNode;
+  
