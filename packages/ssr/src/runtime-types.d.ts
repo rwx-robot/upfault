@@ -25,3 +25,4 @@ declare module '@upfault/runtime' {
   export const FragmentSymbol: VNodeType.FRAGMENT;
   
   // Types
+  export type VNodeChild = VNode | string | number | boolean | null | undefined | VNodeChild[];
