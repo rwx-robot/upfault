@@ -7,3 +7,4 @@ declare module '@upfault/runtime' {
   // VNode creation
   export function h(
     type: string | any,
+    props?: VNodeProps | null,
