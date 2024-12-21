@@ -20,3 +20,4 @@ declare module '@upfault/runtime' {
   export function Comment(text: string): VNode;
   
   export const jsx: typeof h;
+  export const jsxs: typeof h;
