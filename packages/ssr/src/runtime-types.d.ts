@@ -8,3 +8,4 @@ declare module '@upfault/runtime' {
   export function h(
     type: string | any,
     props?: VNodeProps | null,
+    ...children: any[]
