@@ -18,3 +18,4 @@ declare module '@upfault/runtime' {
   
   export function Text(text: string | number): VNode;
   export function Comment(text: string): VNode;
+  
