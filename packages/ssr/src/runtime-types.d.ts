@@ -21,3 +21,4 @@ declare module '@upfault/runtime' {
   
   export const jsx: typeof h;
   export const jsxs: typeof h;
+  export const jsxDEV: typeof h;
