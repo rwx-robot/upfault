@@ -26,3 +26,4 @@ declare module '@upfault/runtime' {
   
   // Types
   export type VNodeChild = VNode | string | number | boolean | null | undefined | VNodeChild[];
+  export type ComponentType = string | any;
