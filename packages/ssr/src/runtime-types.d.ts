@@ -9,3 +9,4 @@ declare module '@upfault/runtime' {
     type: string | any,
     props?: VNodeProps | null,
     ...children: any[]
+  ): VNode;
