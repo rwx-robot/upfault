@@ -28,3 +28,4 @@ declare module '@upfault/runtime' {
   export type VNodeChild = VNode | string | number | boolean | null | undefined | VNodeChild[];
   export type ComponentType = string | any;
   export type HFunction = typeof h;
+  
