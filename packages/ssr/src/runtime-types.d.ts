@@ -16,3 +16,4 @@ declare module '@upfault/runtime' {
     ...children: any[]
   ): VNode;
   
+  export function Text(text: string | number): VNode;
