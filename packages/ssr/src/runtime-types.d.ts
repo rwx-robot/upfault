@@ -14,3 +14,4 @@ declare module '@upfault/runtime' {
   export function Fragment(
     props: VNodeProps | null,
     ...children: any[]
+  ): VNode;
