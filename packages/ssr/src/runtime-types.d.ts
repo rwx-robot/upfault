@@ -24,3 +24,4 @@ declare module '@upfault/runtime' {
   export const jsxDEV: typeof h;
   export const FragmentSymbol: VNodeType.FRAGMENT;
   
+  // Types
