@@ -11,3 +11,4 @@ declare module '@upfault/runtime' {
     ...children: any[]
   ): VNode;
   
+  export function Fragment(
