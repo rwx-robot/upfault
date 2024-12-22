@@ -29,3 +29,4 @@ declare module '@upfault/runtime' {
   export type ComponentType = string | any;
   export type HFunction = typeof h;
   
+  // Lifecycle hooks
