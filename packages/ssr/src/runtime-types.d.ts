@@ -33,3 +33,4 @@ declare module '@upfault/runtime' {
   export function onBeforeMount(fn: () => void | Promise<void>): void;
   export function onMounted(fn: () => void | Promise<void>): void;
   export function onBeforeUpdate(fn: () => void | Promise<void>): void;
+  export function onUpdated(fn: () => void | Promise<void>): void;
