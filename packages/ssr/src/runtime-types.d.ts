@@ -43,3 +43,4 @@ declare module '@upfault/runtime' {
   export function onRenderTriggered(fn: (e: any) => void): void;
   export function getCurrentInstance(): any;
   export function setCurrentInstance(instance: any): void;
+  
