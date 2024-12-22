@@ -44,3 +44,4 @@ declare module '@upfault/runtime' {
   export function getCurrentInstance(): any;
   export function setCurrentInstance(instance: any): void;
   
+  export type LifecycleHook = () => void | Promise<void>;
