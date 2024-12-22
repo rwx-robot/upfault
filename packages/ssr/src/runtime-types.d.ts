@@ -48,3 +48,4 @@ declare module '@upfault/runtime' {
   export interface LifecycleHooks {
     onBeforeMount?: LifecycleHook;
     onMounted?: LifecycleHook;
+    onBeforeUpdate?: LifecycleHook;
