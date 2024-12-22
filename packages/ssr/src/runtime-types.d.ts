@@ -38,3 +38,4 @@ declare module '@upfault/runtime' {
   export function onUnmounted(fn: () => void | Promise<void>): void;
   export function onActivated(fn: () => void | Promise<void>): void;
   export function onDeactivated(fn: () => void | Promise<void>): void;
+  export function onErrorCaptured(fn: (err: Error, instance: any, info: string) => boolean | void): void;
