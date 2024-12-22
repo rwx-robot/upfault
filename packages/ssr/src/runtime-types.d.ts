@@ -41,3 +41,4 @@ declare module '@upfault/runtime' {
   export function onErrorCaptured(fn: (err: Error, instance: any, info: string) => boolean | void): void;
   export function onRenderTracked(fn: (e: any) => void): void;
   export function onRenderTriggered(fn: (e: any) => void): void;
+  export function getCurrentInstance(): any;
