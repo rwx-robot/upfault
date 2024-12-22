@@ -46,3 +46,4 @@ declare module '@upfault/runtime' {
   
   export type LifecycleHook = () => void | Promise<void>;
   export interface LifecycleHooks {
+    onBeforeMount?: LifecycleHook;
