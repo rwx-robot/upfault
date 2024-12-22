@@ -30,3 +30,4 @@ declare module '@upfault/runtime' {
   export type HFunction = typeof h;
   
   // Lifecycle hooks
+  export function onBeforeMount(fn: () => void | Promise<void>): void;
