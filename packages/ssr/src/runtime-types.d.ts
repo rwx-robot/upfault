@@ -31,3 +31,4 @@ declare module '@upfault/runtime' {
   
   // Lifecycle hooks
   export function onBeforeMount(fn: () => void | Promise<void>): void;
+  export function onMounted(fn: () => void | Promise<void>): void;
