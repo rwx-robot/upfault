@@ -52,3 +52,4 @@ declare module '@upfault/runtime' {
     onUpdated?: LifecycleHook;
     onBeforeUnmount?: LifecycleHook;
     onUnmounted?: LifecycleHook;
+    onActivated?: LifecycleHook;
