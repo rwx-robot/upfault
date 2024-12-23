@@ -59,3 +59,4 @@ declare module '@upfault/runtime' {
     onRenderTriggered?: (event: any) => void;
   }
   
+  // Renderer
