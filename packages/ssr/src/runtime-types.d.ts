@@ -63,3 +63,4 @@ declare module '@upfault/runtime' {
   export interface RendererOptions<
     HostElement = Element,
     HostText = Text,
+    HostComment = Comment
