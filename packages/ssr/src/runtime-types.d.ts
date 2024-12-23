@@ -65,3 +65,4 @@ declare module '@upfault/runtime' {
     HostText = Text,
     HostComment = Comment
   > {
+    createElement: (tag: string, isSVG?: boolean) => HostElement;
