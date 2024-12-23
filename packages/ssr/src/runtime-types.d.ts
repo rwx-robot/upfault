@@ -64,3 +64,4 @@ declare module '@upfault/runtime' {
     HostElement = Element,
     HostText = Text,
     HostComment = Comment
+  > {
