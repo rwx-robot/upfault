@@ -56,3 +56,4 @@ declare module '@upfault/runtime' {
     onDeactivated?: LifecycleHook;
     onErrorCaptured?: (error: Error, instance: any, info: string) => boolean | void;
     onRenderTracked?: (event: any) => void;
+    onRenderTriggered?: (event: any) => void;
