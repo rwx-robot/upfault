@@ -54,3 +54,4 @@ declare module '@upfault/runtime' {
     onUnmounted?: LifecycleHook;
     onActivated?: LifecycleHook;
     onDeactivated?: LifecycleHook;
+    onErrorCaptured?: (error: Error, instance: any, info: string) => boolean | void;
