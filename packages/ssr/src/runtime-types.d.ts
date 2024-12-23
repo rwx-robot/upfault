@@ -58,3 +58,4 @@ declare module '@upfault/runtime' {
     onRenderTracked?: (event: any) => void;
     onRenderTriggered?: (event: any) => void;
   }
+  
