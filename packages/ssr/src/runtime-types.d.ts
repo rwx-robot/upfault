@@ -80,3 +80,4 @@ declare module '@upfault/runtime' {
     _nodeToElement?: (node: Node) => HostElement | null;
   }
   
+  export function createRenderer<HostElement = Element>(
