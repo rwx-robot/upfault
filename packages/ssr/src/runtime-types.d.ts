@@ -79,3 +79,4 @@ declare module '@upfault/runtime' {
     removeEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
     _nodeToElement?: (node: Node) => HostElement | null;
   }
+  
