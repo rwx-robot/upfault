@@ -84,3 +84,4 @@ declare module '@upfault/runtime' {
     options: RendererOptions<HostElement>
   ): any;
   
+  export const defaultRendererOptions: RendererOptions;
