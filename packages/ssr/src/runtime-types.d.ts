@@ -69,3 +69,4 @@ declare module '@upfault/runtime' {
     createText: (text: string) => HostText;
     createComment: (text: string) => HostComment;
     setElementText: (el: HostElement, text: string) => void;
+    setText: (node: HostText, text: string) => void;
