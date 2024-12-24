@@ -75,3 +75,4 @@ declare module '@upfault/runtime' {
     patchProp: (el: HostElement, key: string, prevValue: any, nextValue: any) => void;
     parentNode?: (node: HostElement) => HostElement | null;
     nextSibling?: (node: HostElement) => HostElement | null;
+    addEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
