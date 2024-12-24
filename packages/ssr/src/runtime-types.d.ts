@@ -73,3 +73,4 @@ declare module '@upfault/runtime' {
     insert: (child: Node, parent: HostElement, anchor?: HostElement | null) => void;
     remove: (child: Node) => void;
     patchProp: (el: HostElement, key: string, prevValue: any, nextValue: any) => void;
+    parentNode?: (node: HostElement) => HostElement | null;
