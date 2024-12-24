@@ -81,3 +81,4 @@ declare module '@upfault/runtime' {
   }
   
   export function createRenderer<HostElement = Element>(
+    options: RendererOptions<HostElement>
