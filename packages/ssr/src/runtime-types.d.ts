@@ -90,3 +90,4 @@ declare module '@upfault/runtime' {
   export type { RendererOptions };
   
   // Version
+  export const VERSION = '0.2.0';
