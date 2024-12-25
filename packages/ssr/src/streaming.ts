@@ -8,3 +8,4 @@ import { type VNode } from '@upfault/runtime';
 import { VNodeType } from '@upfault/shared';
 
 export interface StreamingOptions {
+  bootstrapScripts?: string[];
