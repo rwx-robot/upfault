@@ -93,3 +93,4 @@ declare module '@upfault/runtime' {
   export const VERSION = '0.2.0';
   export const PACKAGE_NAME = '@upfault/runtime';
   
+  // Re-export from shared
