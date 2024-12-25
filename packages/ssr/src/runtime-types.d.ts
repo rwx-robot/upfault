@@ -87,3 +87,4 @@ declare module '@upfault/runtime' {
   export const defaultRendererOptions: RendererOptions;
   export const renderer: ReturnType<typeof createRenderer>;
   
+  export type { RendererOptions };
