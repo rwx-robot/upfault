@@ -96,3 +96,4 @@ declare module '@upfault/runtime' {
   // Re-export from shared
   export type { VNode, VNodeType, VNodeProps, NormalizedProps, VNodeChild, ComponentType, HFunction, Component, ComponentInstance } from '@upfault/shared/diff';
   export { VNodeType } from '@upfault/shared/diff';
+}
