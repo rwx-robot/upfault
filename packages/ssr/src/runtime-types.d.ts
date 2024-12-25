@@ -94,3 +94,4 @@ declare module '@upfault/runtime' {
   export const PACKAGE_NAME = '@upfault/runtime';
   
   // Re-export from shared
+  export type { VNode, VNodeType, VNodeProps, NormalizedProps, VNodeChild, ComponentType, HFunction, Component, ComponentInstance } from '@upfault/shared/diff';
