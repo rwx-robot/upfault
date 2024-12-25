@@ -10,3 +10,4 @@ import { VNodeType } from '@upfault/shared';
 export interface StreamingOptions {
   bootstrapScripts?: string[];
   inlineStyles?: boolean;
+  preloadModules?: boolean;
