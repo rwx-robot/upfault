@@ -5,3 +5,4 @@
  */
 
 import { type VNode } from '@upfault/runtime';
+import { VNodeType } from '@upfault/shared';
