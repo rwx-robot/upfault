@@ -4,3 +4,4 @@
  * Supports HTTP streaming response, Suspense boundaries, async component streaming
  */
 
+import { type VNode } from '@upfault/runtime';
