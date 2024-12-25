@@ -89,3 +89,4 @@ declare module '@upfault/runtime' {
   
   export type { RendererOptions };
   
+  // Version
