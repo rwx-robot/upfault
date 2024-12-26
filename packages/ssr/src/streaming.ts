@@ -19,3 +19,4 @@ export interface StreamingOptions {
 
 export interface StreamRenderer {
   render(vnode: VNode): ReadableStream;
+  pipeToNodeWritable(writable: NodeJS.WritableStream): Promise<void>;
