@@ -28,3 +28,4 @@ export interface StreamRenderer {
  * Create streaming renderer
  */
 export function createStreamRenderer(options: StreamingOptions = {}): StreamRenderer {
+  let aborted = false;
