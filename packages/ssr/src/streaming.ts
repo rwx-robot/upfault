@@ -26,3 +26,4 @@ export interface StreamRenderer {
 
 /**
  * Create streaming renderer
+ */
