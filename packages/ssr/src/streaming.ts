@@ -23,3 +23,5 @@ export interface StreamRenderer {
   pipeToWebWritable(writable: WritableStream): Promise<void>;
   abort(): void;
 }
+
+/**
