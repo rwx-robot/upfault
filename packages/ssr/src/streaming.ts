@@ -16,3 +16,5 @@ export interface StreamingOptions {
   onAllReady?: () => void;
   onError?: (error: Error) => void;
 }
+
+export interface StreamRenderer {
