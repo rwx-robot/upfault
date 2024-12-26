@@ -34,3 +34,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
   return {
     render(vnode: VNode): ReadableStream {
       return new ReadableStream({
+        async start(controller) {
