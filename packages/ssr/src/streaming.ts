@@ -27,3 +27,4 @@ export interface StreamRenderer {
 /**
  * Create streaming renderer
  */
+export function createStreamRenderer(options: StreamingOptions = {}): StreamRenderer {
