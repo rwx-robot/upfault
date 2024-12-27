@@ -50,3 +50,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
             controller.close();
           } catch (err) {
             controller.error(err);
+          }
