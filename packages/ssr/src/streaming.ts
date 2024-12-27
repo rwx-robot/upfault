@@ -49,3 +49,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
             controller.enqueue(new TextEncoder().encode('<!--stream-end-->'));
             controller.close();
           } catch (err) {
+            controller.error(err);
