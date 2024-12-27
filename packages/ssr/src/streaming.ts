@@ -54,3 +54,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
         },
       });
     },
+    async pipeToNodeWritable(writable: NodeJS.WritableStream): Promise<void> {
