@@ -55,3 +55,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
       });
     },
     async pipeToNodeWritable(writable: NodeJS.WritableStream): Promise<void> {
+      const stream = this.render({ type: VNodeType.ELEMENT, tag: 'div', props: {}, children: [] } as any);
