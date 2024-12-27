@@ -36,3 +36,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
       return new ReadableStream({
         async start(controller) {
           try {
+            if (!shellSent) {
