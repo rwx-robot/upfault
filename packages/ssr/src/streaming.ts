@@ -42,3 +42,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
               shellSent = true;
             }
             
+            await renderStreaming(vnode, (chunk) => {
