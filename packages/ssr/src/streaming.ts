@@ -76,3 +76,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
         tag: 'div', 
         props: {}, 
         children: [] 
+      } as any);
