@@ -60,3 +60,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
       try {
         while (true) {
           const { done, value } = await reader.read();
+          if (done) break;
