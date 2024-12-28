@@ -69,3 +69,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
         reader.releaseLock();
         writable.end();
       }
+    },
