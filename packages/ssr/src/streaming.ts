@@ -59,3 +59,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
       const reader = stream.getReader();
       try {
         while (true) {
+          const { done, value } = await reader.read();
