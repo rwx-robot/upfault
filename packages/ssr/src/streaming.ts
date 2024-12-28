@@ -58,3 +58,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
       const stream = this.render({ type: VNodeType.ELEMENT, tag: 'div', props: {}, children: [] } as any);
       const reader = stream.getReader();
       try {
+        while (true) {
