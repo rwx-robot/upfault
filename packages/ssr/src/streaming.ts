@@ -65,3 +65,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
             writable.write(value, (err) => err ? reject(err) : resolve());
           });
         }
+      } finally {
