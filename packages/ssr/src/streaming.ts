@@ -75,3 +75,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
         type: VNodeType.ELEMENT, 
         tag: 'div', 
         props: {}, 
+        children: [] 
