@@ -92,3 +92,4 @@ export function renderToPipeableStream(
   vnode: VNode,
   options: StreamingOptions = {}
 ): ReadableStream {
+  const renderer = createStreamRenderer(options);
