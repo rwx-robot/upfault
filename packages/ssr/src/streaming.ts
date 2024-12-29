@@ -77,3 +77,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
         props: {}, 
         children: [] 
       } as any);
+      await stream.pipeTo(writable);
