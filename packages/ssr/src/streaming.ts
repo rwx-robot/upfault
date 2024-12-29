@@ -81,3 +81,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
     },
     abort() {
       aborted = true;
+    },
