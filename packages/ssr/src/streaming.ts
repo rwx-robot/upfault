@@ -80,3 +80,4 @@ export function createStreamRenderer(options: StreamingOptions = {}): StreamRend
       await stream.pipeTo(writable);
     },
     abort() {
+      aborted = true;
