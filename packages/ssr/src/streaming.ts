@@ -197,3 +197,4 @@ async function renderStreaming(vnode: VNode, onChunk: (chunk: string) => void): 
     onChunk(html.slice(i, i + chunkSize));
     await new Promise(resolve => setImmediate(resolve));
   }
+}
