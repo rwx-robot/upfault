@@ -1,0 +1,1 @@
+export function isHydrated(element: Element): boolean {
