@@ -137,3 +137,4 @@ function renderVNodeToString(vnode: VNode): string {
   if (typeof vnode === 'number') return String(vnode);
   if (!vnode || typeof vnode !== 'object') return '';
   
+  const type = (vnode as any).type;
