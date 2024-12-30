@@ -139,3 +139,4 @@ function renderVNodeToString(vnode: VNode): string {
   
   const type = (vnode as any).type;
   
+  if (type === VNodeType.TEXT) {
