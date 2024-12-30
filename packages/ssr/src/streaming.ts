@@ -193,3 +193,4 @@ async function renderStreaming(vnode: VNode, onChunk: (chunk: string) => void): 
   const chunkSize = 4096;
   
   for (let i = 0; i < html.length; i += chunkSize) {
+    if (aborted) throw new Error('Stream aborted');
