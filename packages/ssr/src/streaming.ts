@@ -110,3 +110,4 @@ export function renderToReadableStream(
 /**
  * Render HTML Shell (initial framework)
  */
+function renderShell(vnode: VNode): string {
