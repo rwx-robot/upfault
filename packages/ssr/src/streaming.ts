@@ -138,3 +138,4 @@ function renderVNodeToString(vnode: VNode): string {
   if (!vnode || typeof vnode !== 'object') return '';
   
   const type = (vnode as any).type;
+  
