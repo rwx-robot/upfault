@@ -151,3 +151,4 @@ function renderVNodeToString(vnode: VNode): string {
     const children = (vnode as any).children as VNode[];
     return children.map(renderVNodeToString).join('');
   }
+  
