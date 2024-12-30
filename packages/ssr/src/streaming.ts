@@ -163,3 +163,4 @@ function renderVNodeToString(vnode: VNode): string {
       return k + '="' + escapeHtml(String(v)) + '"';
     })
     .join(' ');
+  
