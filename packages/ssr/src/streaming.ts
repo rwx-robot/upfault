@@ -181,3 +181,4 @@ function renderVNodeToString(vnode: VNode): string {
 
 function escapeHtml(text: string): string {
   return text
+    .replace(/&/g, '&')
