@@ -103,3 +103,4 @@ export function renderToReadableStream(
   vnode: VNode,
   options: StreamingOptions = {}
 ): ReadableStream {
+  const renderer = createStreamRenderer(options);
