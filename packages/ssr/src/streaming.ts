@@ -187,3 +187,4 @@ function escapeHtml(text: string): string {
     .replace(/"/g, '"')
     .replace(/'/g, '&apos;');
 }
+
