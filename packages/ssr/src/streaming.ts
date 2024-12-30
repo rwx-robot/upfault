@@ -149,3 +149,4 @@ function renderVNodeToString(vnode: VNode): string {
   
   if (type === VNodeType.FRAGMENT) {
     const children = (vnode as any).children as VNode[];
+    return children.map(renderVNodeToString).join('');
