@@ -188,3 +188,4 @@ function escapeHtml(text: string): string {
     .replace(/'/g, '&apos;');
 }
 
+async function renderStreaming(vnode: VNode, onChunk: (chunk: string) => void): Promise<void> {
