@@ -162,3 +162,4 @@ function renderVNodeToString(vnode: VNode): string {
       if (v === true) return k;
       return k + '="' + escapeHtml(String(v)) + '"';
     })
+    .join(' ');
