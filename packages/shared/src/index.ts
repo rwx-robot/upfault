@@ -76,30 +76,15 @@ export type {
   Component,
   ComponentInstance,
   Ref as DiffRef,
+  UpdateFingerprint,
 } from './diff';
 
 // VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS are const enums/values
 export { VNodeType, PatchFlags, DiffOpType, DEFAULT_AERODIFF_OPTIONS } from './diff';
 
-// Predict - 预测缓存层 (from @upfault/predict-cache)
-export type {
-  UpdateFingerprint,
-  FINGERPRINT_CONFIG,
-  createFingerprint,
-  computeDecayScore,
-  updateFingerprint,
-  shouldSkip,
-  recordFalseSkip,
-  recordCorrectSkip,
-  PredictionStats,
-  createPredictionStats,
-  AdaptiveThresholdConfig,
-  DEFAULT_ADAPTIVE_CONFIG,
-  AdaptiveThreshold,
-  createAdaptiveThreshold,
-  FastHashFn,
-  defaultFastHash,
-} from '@upfault/predict-cache';
+// UpdateFingerprint 类型由 ./diff 本地定义（VNode.fingerprint 契约）。
+// 此前这里错误地 re-export 了 @upfault/predict-cache（上层包），构成
+// shared -> predict-cache -> shared 的循环依赖，已移除。
 
 // Utils - 通用工具函数
 export {

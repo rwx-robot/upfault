@@ -25,7 +25,7 @@ import {
   Block 
 } from '@upfault/shared';
 
-import { defaultFastHash, isSameNode } from '@upfault/shared';
+import { isSameNode } from '@upfault/shared';
 
 // ============================================================================
 // 类型扩展（用于 Diff 算法内部标记）

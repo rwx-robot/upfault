@@ -46,14 +46,16 @@ const VNodeType = {
 import type { RendererOptions } from './renderer-options';
 
 import { 
-  callBeforeMount, 
-  callMounted, 
-  callBeforeUpdate, 
+  callBeforeMount,
+  callMounted,
+  callBeforeUpdate,
   callUpdated,
   callBeforeUnmount,
   callUnmounted,
   callActivated,
   callDeactivated,
+  createRenderEffect,
+  stopRenderEffect,
   handleError,
   pushInstance,
   popInstance,
@@ -184,7 +186,8 @@ export function createRenderer<HostElement = Element>(
           patchProp(el, key, null, props[key]);
         }
       }
-     
+    }
+
     // 挂载 children
     if (shapeFlag & VNodeShapeFlags.TEXT_NODE) {
       // 文本节点
@@ -524,7 +527,8 @@ export function createRenderer<HostElement = Element>(
           break;
       }
     }
-  
+  }
+
   function getAnchor(parent: HostElement, index: number): HostElement | null {
     if (!parentNode || !nextSibling) return null;
     const p = parentNode(parent);
@@ -708,5 +712,4 @@ export const defaultRendererOptions: RendererOptions = {
   nextSibling: (node: Element) => node.nextElementSibling,
   _nodeToElement: (node: Node) => node as Element | null,
 };
-}
-}
+

@@ -17,7 +17,8 @@ describe('Renderer debug', () => {
 
   it('should have VNodeType available in renderer', () => {
     // This tests if the renderer's VNodeType import works
-    const vnode = { type: 'div', props: { id: 'test' }, children: 'hello', key: null, flags: 0, patchFlag: 0, dynamicProps: null, vnodeType: 2, shapeFlag: 0, ref: null, el: null, parent: null, component: null, block: null };
+    // shapeFlag 4 = VNodeShapeFlags.TEXT_NODE（children 为字符串必须标记，否则不挂载文本）
+    const vnode = { type: 'div', props: { id: 'test' }, children: 'hello', key: null, flags: 0, patchFlag: 0, dynamicProps: null, vnodeType: 2, shapeFlag: 4, ref: null, el: null, parent: null, component: null, block: null };
     renderer.render(vnode as any, container);
     expect(container.innerHTML).toBe('<div id="test">hello</div>');
   });

@@ -56,8 +56,8 @@ export type {
   ComponentInstance as LifecycleComponentInstance,
 } from './lifecycle';
 
-// 渲染器
-export { createRenderer, defaultRendererOptions } from './renderer-options';
+// 渲染器（完整实现在 renderer.ts；renderer-options.ts 仅保留类型定义）
+export { createRenderer, defaultRendererOptions } from './renderer';
 export type { RendererOptions } from './renderer-options';
 
 // Reactivity (re-export from @upfault/reactivity)

@@ -1,6 +1,10 @@
 # UpFault Framework - Changelog
 
-## v0.2.0 "Intelligence" (2026-09-21)
+## v0.2.0 "Intelligence" (2024-12-31)
+
+> **发版评审说明**：本版本按「发版前评审测试与修正」流程执行——全部 244 个单元
+> 测试在 jsdom 环境下实测通过（18 个测试文件），并修复评审暴露的多处存量缺陷
+> （详见下方「发版评审修正」）。verify-release 门禁 31/31 通过。
 
 > **版本修正说明**：首个发布版本原标为 v0.1.0，与实际交付能力不符，现修正为 **v0.2.0**。
 > 依据 `version-plan.md`：v0.1 规划仅 7 个包（shared / compiler / reactivity /
@@ -12,10 +16,43 @@
 >
 > 本版本同时包含 v0.1 "Foundation" 的全部能力。
 
+### 🔍 发版评审修正（2024-12-31 评审，v0.2.0 正式发布前）
+
+评审前实测：31 失败 + 3 个测试文件 OOM（所谓的"185 通过"从未可复现）；
+评审后：**244/244 全部通过**。
+
+#### 阻断级
+- **runtime 渲染器从未生效**: `src/index.ts` 导出的是 `renderer-options.ts` 里的
+  SSR 空壳（`mount` 为空函数），完整实现 `renderer.ts`（700 行）从未被导出。
+  修正导出后 dist 产物才首次包含真实渲染逻辑
+- **renderer.ts 结构性语法错误**: `mountElement` 的 props 循环少一个 `}`、
+  `patchKeyedChildren` 少一个 `}`，将后续 500+ 行代码吞入函数体；
+  文件尾又多两个 `}`。此前因不在构建依赖图（index 未导出）而未暴露
+- **compiler parser 三重死循环**: ① `parseChildren` 会吞掉闭合标签导致外层
+  `expect('</')` 失败；② `parseElementImpl` 先 `expect('<')` 再查
+  `startsWith('</')`（永远为 false）；③ `parseAttributeName` 字符集不含 `@`，
+  解析 `@click` 时零推进死循环。任何含元素/事件的模板都 100% 挂死
+- **74 个 tsc 编译产物混入 src/**: vite 解析 `.js` 优先于 `.ts`，测试与构建
+  实际加载的是旧产物而非源码（如 `diff.js` 缺少 9 个 VNodeType 单独常量）。
+  已全部清除并加 .gitignore 防复发
+- **shared→predict-cache 循环依赖**: shared 的 index.ts 越权 re-export
+  predict-cache（上层包），且 `diff.ts` 悬空引用不存在的 `./predict` 模块
+  （一直靠产物 .d.ts 遮掩）。UpdateFingerprint 类型改为 shared 本地定义
+
+#### 功能修正
+- **renderer 事件/渲染效果断链**: `createRenderEffect` / `stopRenderEffect`
+  未 import，渲染期 effect 全部抛错
+- **compiler 属性语义**: `v-bind:id`/`v-on:submit` 的 name 归一化修正；
+  `v-on:` 正确标记 isEvent 并拆分 `.prevent` 等修饰符；布尔属性简写
+  value 为 null；`<my-component>` 连字符标签正确识别为组件；注释内容
+  不再 trim
+- **reactivity watch 回调签名**: 不再对两参回调强行传入第三个 undefined
+  参数（vi.toHaveBeenCalledWith 参数个数敏感）
+
 ### 🎉 核心里程碑
 - **SSR 水合修复**: 修复 `hydration.ts` TS1005 编译错误，支持流式/部分/懒加载水合
 - **10 个核心包完整构建**: shared, scheduler, diff, reactivity, predict-cache, compiler, cli, devtools, ssr, runtime
-- **185 单元测试通过**: Diff 算法、调度器、响应式、预测缓存、SSR 水合全覆盖
+- **244 单元测试通过**（18 个测试文件，jsdom 环境）: Diff 算法、调度器、响应式、预测缓存、SSR 水合全覆盖
 - **Counter 端到端验证**: dev 模式热重载、生产构建 6.22 kB gzipped
 
 ### ✨ 新增功能

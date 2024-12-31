@@ -46,9 +46,6 @@
     "lint": "eslint src --ext .ts",
     "clean": "rm -rf dist"
   },
-  "dependencies": {
-    "@upfault/predict-cache": "workspace:*"
-  },
   "devDependencies": {
     "@types/node": "^20.19.43",
     "esbuild": "^0.20.0",

@@ -30,3 +30,9 @@ coverage/
 *.tgz
 .cache/
 .temp/
+
+# tsc 产物不得混入 src/（vite 解析 .js 优先于 .ts，会让测试加载旧产物 —— 2026-09-21 评审教训）
+packages/*/src/**/*.js
+packages/*/src/**/*.js.map
+packages/*/src/**/*.d.ts
+packages/*/src/**/*.d.ts.map

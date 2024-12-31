@@ -5,8 +5,38 @@
  * O(n) 线性时间复杂度
  */
 
-import type { UpdateFingerprint } from './predict';
 import type { Priority } from './scheduler';
+
+/**
+ * 运行时更新指纹（预测层共享结构）
+ *
+ * 此类型属于 shared 的 VNode 契约（VNode.fingerprint 字段），
+ * 结构与 @upfault/predict-cache 中的实现保持一致（TS 结构化兼容）。
+ * 注意：此前这里错误地悬空引用了不存在的 './predict' 模块，
+ * 一直靠混入 src 的 tsc 产物 .d.ts 才得以编译通过。
+ */
+export interface UpdateFingerprint {
+  /** 历史更新次数 */
+  updateCount: number;
+  /** 上次更新时间戳 (ms) */
+  lastUpdateTime: number;
+  /** 时序衰减得分 */
+  decayScore: number;
+  /** 最近 N 次内容哈希 (环形缓冲区) */
+  hashHistory: number[];
+  /** 哈希历史写入指针 */
+  hashHistoryPtr: number;
+  /** 跳过置信度 [0, 1] */
+  skipConfidence: number;
+  /** 最后一次内容哈希 */
+  lastContentHash: number;
+  /** 连续跳过次数 */
+  consecutiveSkips: number;
+  /** 连续命中次数 */
+  consecutiveHits: number;
+  /** 误跳过次数 (应更新但跳过了) */
+  falseSkipCount: number;
+}
 
 /** VNode 类型 */
 export const VNodeType = {

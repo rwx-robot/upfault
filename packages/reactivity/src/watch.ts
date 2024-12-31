@@ -118,7 +118,8 @@ export function watch<T>(
       if (callback.length >= 3) {
         callback(newValue, isDeep ? oldValueSnapshot : oldValue, onCleanup);
       } else {
-        callback(newValue, isDeep ? oldValueSnapshot : oldValue, undefined);
+        // 只传 2 个参数：显式传 undefined 会使 vi.fn 的 toHaveBeenCalledWith(2, 1) 不匹配
+        (callback as any)(newValue, isDeep ? oldValueSnapshot : oldValue);
       }
       
       // Call cleanup after callback (like finally)
@@ -159,7 +160,7 @@ export function watch<T>(
     if (callback.length >= 3) {
       callback(newValue, oldVal as any, onCleanup);
     } else {
-      callback(newValue, oldVal as any, undefined);
+      (callback as any)(newValue, oldVal as any);
     }
     oldValue = newValue;
     if (isDeep) {

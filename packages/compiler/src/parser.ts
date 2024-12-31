@@ -258,6 +258,9 @@ class TemplateParser {
   private parseChildren(): TemplateNode[] {
     const nodes: TemplateNode[] = [];
     while (!this.isEnd()) {
+      // 闭合标签不在此层消费，交还给外层 parseElementImpl 的 expect('</')
+      // （否则闭合标签被吞后外层 expect 失败；此前该路径还会导致死循环）
+      if (this.startsWith('</')) break;
       if (this.startsWith('{{')) {
         nodes.push(this.parseInterpolation());
       } else if (this.startsWith('<!--')) {
@@ -280,14 +283,18 @@ private parseElement(): TemplateNode | null {
     const start = this.getPosition();
     this.expect('<');
     
-    // 处理闭合标签
-    if (this.startsWith('</')) {
+    // 处理闭合标签：'<'> 已被 expect 消费，此处只需检查 '/'
+    // （原写法 startsWith('</') 在消费 '<' 后永远为 false，是死循环根源之一）
+    if (this.current() === '/') {
       this.skipTag();
       return null;
     }
     
     const tag = this.parseTagName();
-    const isComponent = tag.length > 0 && tag[0] !== undefined && tag[0] === tag[0].toUpperCase() && tag.length > 1;
+    // 组件判定：大写开头（<MyComponent>）或含连字符（<my-component>，与 Vue 一致）
+    const isComponent =
+      tag.length > 1 &&
+      (tag[0] !== undefined && tag[0] === tag[0].toUpperCase() || tag.includes('-'));
     
     const props = this.parseProps();
     
@@ -335,7 +342,7 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         type: isComponent ? 'Component' : 'Element',
         name: isComponent ? tag : undefined,
         tag: isComponent ? undefined : tag,
-        props: props.filter(p => !p.isDirective),
+        props,
         children: [],
         isSelfClosing: true,
         isComponent,
@@ -396,7 +403,7 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       type: isComponent ? 'Component' : 'Element',
       name: isComponent ? tag : undefined,
       tag: isComponent ? undefined : tag,
-      props: props.filter(p => !p.isDirective),
+      props,
       children,
       isSelfClosing: false,
       isComponent,
@@ -412,23 +419,45 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
       if (this.isEnd() || this.startsWith('>') || this.startsWith('/>')) break;
       
       const start = this.getPosition();
-      const name = this.parseAttributeName();
+      const raw = this.parseAttributeName();
       
-      // 指令
-      const isDirective = name.startsWith('v-') || name.startsWith(':') || name.startsWith('@');
+      // 防御：属性名解析不出且未推进 → 死循环风险，强制跳过当前字符
+      if (raw === '' && this.getPosition().offset === start.offset) {
+        this.advance();
+        continue;
+      }
+      
+      // 归一化：@click / :class / v-on:submit.prevent / v-bind:id / v-if
+      // name 统一为裸名（click / class / submit / id / if），
+      // 事件名与修饰符拆分（submit.prevent → name=submit, modifiers=[prevent]）
       let isDynamic = false;
       let isEvent = false;
-      let isSlot = false;
+      let name = raw;
+      const eventModifiers: string[] = [];
       
-      if (name.startsWith('@')) {
+      if (raw.startsWith('@')) {
         isEvent = true;
         isDynamic = true;
-      } else if (name.startsWith(':')) {
+        name = raw.slice(1);
+      } else if (raw.startsWith('v-on:')) {
+        isEvent = true;
         isDynamic = true;
-      } else if (name.startsWith('v-')) {
+        name = raw.slice(5);
+      } else if (raw.startsWith(':')) {
         isDynamic = true;
-      } else if (name.startsWith('v-bind:') || name.startsWith(':')) {
+        name = raw.slice(1);
+      } else if (raw.startsWith('v-bind:')) {
         isDynamic = true;
+        name = raw.slice(7);
+      } else if (raw.startsWith('v-')) {
+        isDynamic = true;
+        name = raw.slice(2);
+      }
+      
+      if (isEvent && name.includes('.')) {
+        const parts = name.split('.');
+        name = parts[0] ?? name;
+        eventModifiers.push(...parts.slice(1));
       }
       
       let value: PropValue | null = null;
@@ -438,27 +467,16 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
         this.expect('=');
         this.skipWhitespace();
         value = this.parseAttributeValue();
-      } else {
-        // 布尔简写
-        value = { type: 'Literal', value: true };
       }
-      
-      // 处理修饰符
-      const eventModifiers: string[] = [];
-      if (isEvent) {
-        const parts = name.split('.');
-        if (parts.length > 1) {
-          eventModifiers.push(...parts.slice(1));
-        }
-      }
+      // 布尔简写：value 保持 null（PropNode 契约：null = boolean shorthand）
       
       props.push({
         type: 'Prop',
-        name: name.replace(/^[@:]/, '').replace(/^v-/, ''),
+        name,
         value,
         isDynamic,
         isEvent,
-        isDirective,
+        isDirective: raw.startsWith('v-') && !raw.startsWith('v-on:'),
         eventModifiers,
         loc: this.makeLoc(start, this.getPosition()),
       });
@@ -531,7 +549,8 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.expect('-->');
     return {
       type: 'Comment',
-      content: content.trim(),
+      // 注释内容保留原样（含首尾空格）—— 与 Vue 行为一致
+      content,
       loc: this.makeLoc(start, this.getPosition()),
     };
   }
@@ -549,7 +568,9 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
   private parseAttributeName(): string {
     this.skipWhitespace();
     let name = '';
-    while (!this.isEnd() && this.current().match(/[a-zA-Z0-9-_:.]/)) {
+    // '@' 必须在字符集内：事件指令 @click 的 '@' 若不消费，
+    // 本方法返回空串且 pos 不推进，parseProps 的 while 会死循环
+    while (!this.isEnd() && this.current().match(/[a-zA-Z0-9-_:.@]/)) {
       name += this.current();
       this.advance();
     }
