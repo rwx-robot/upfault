@@ -24,6 +24,9 @@ export {
   getSchedulerStats,
 } from './work-loop';
 
+// Worker 协作层 (v0.3 M1: 计算移入 Worker，主线程仅提交)
+export * from './worker';
+
 // Types (re-export from shared)
 export type { Priority, SchedulerTask, SchedulerOptions, DEFAULT_SCHEDULER_OPTIONS, SchedulerStats } from '@upfault/shared';
 
