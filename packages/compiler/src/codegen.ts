@@ -5,8 +5,11 @@
  * 产出：带有编译时 metadata 的渲染函数，支持运行时高效 Diff
  */
 
-import { BlockType, type Block, type BlockNode, type BlockTreeResult, type BlockGranularity } from './block-tree';
-import type { TemplateAST, CompileContext, ImportSpec, CompileError, CompileWarning } from './parser';
+import { BlockType, buildBlockTree, BlockGranularity, type Block, type BlockNode, type BlockTreeResult, type BlockGranularity as BlockGranularityType } from './block-tree';
+// parse 必须以值形式静态导入：此前这里用 require('./parser')，
+// 在 ESM（Vite/vitest）环境下 require 未定义，compile() 会直接抛
+// MODULE_NOT_FOUND —— 该缺陷使整个 compile() API 在 ESM 下不可用。
+import { parse, type TemplateAST, type CompileContext, type ImportSpec, type CompileError, type CompileWarning } from './parser';
 import { VNodeType, PatchFlags } from '@upfault/shared';
 import type { VNodeFlags } from '@upfault/shared';
 
@@ -431,23 +434,22 @@ export interface CompilerResult {
 }
 
 export function compile(template: string, options: CompilerOptions): CompilerResult {
-  // 1. Parse
-  const { parse } = require('./parser');
+  // 1. Parse（静态导入，见文件头说明）
   const { ast, context } = parse(template, { 
     filename: options.filename, 
     sourceMap: options.sourceMap 
   });
   
   // 2. Build Block Tree
-  const { buildBlockTree } = require('./block-tree');
   const blockTree = buildBlockTree(ast, context, { 
-    granularity: options.granularity || 'medium',
+    // BlockGranularity 是 const enum，必须引用枚举成员而非字符串字面量
+    granularity: options.granularity ?? BlockGranularity.Medium,
     maxBlockDepth: 10,
     enableFineGrained: true,
   });
   
-  // 3. Generate Code
-  const { generateRenderFunction } = require('./codegen');
+  // 3. Generate Code（generateRenderFunction 定义在本文件内，
+  //    此前错误地使用 require('./codegen') 自引用）
   const result = generateRenderFunction(ast, context, blockTree, {
     mode: 'module',
     target: 'es2020',

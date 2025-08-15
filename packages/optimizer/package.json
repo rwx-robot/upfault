@@ -1,0 +1,34 @@
+{
+  "name": "@upfault/optimizer",
+  "version": "0.2.0",
+  "description": "UpFault Compile-Time Optimizer — constant folding, dead code elimination, static hoisting",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && pnpm run build:esm",
+    "build:esm": "esbuild src/index.ts --bundle --format=esm --outfile=dist/index.mjs --platform=neutral",
+    "dev": "tsc -w -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

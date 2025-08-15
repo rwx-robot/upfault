@@ -29,6 +29,7 @@ export default defineConfig({
       '@upfault/cli': path.resolve(__dirname, 'packages/cli/src'),
       '@upfault/devtools': path.resolve(__dirname, 'packages/devtools/src'),
       '@upfault/predict-cache': path.resolve(__dirname, 'packages/predict-cache/src'),
+      '@upfault/optimizer': path.resolve(__dirname, 'packages/optimizer/src'),
     },
   },
   esbuild: {

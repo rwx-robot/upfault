@@ -267,12 +267,52 @@ class TemplateParser {
         nodes.push(this.parseComment());
       } else if (this.startsWith('<')) {
         const node = this.parseElement();
-        if (node) nodes.push(node);
+        // v-else / v-else-if 必须挂到前一个 v-if 节点上，否则会被当成
+        // 独立元素渲染（此前缺失该逻辑，v-else 分支无法被编译期裁剪）
+        if (node && !this.attachElseBranch(nodes, node)) {
+          nodes.push(node);
+        }
       } else {
         nodes.push(this.parseText());
       }
     }
     return nodes;
+  }
+
+  /**
+   * 将 v-else / v-else-if 元素挂到紧邻的前一个 If 节点上。
+   * 返回 true 表示已挂载（调用方不应再 push 为独立节点）。
+   */
+  private attachElseBranch(nodes: TemplateNode[], node: TemplateNode): boolean {
+    if (node.type !== 'Element') return false;
+
+    const idx = node.props.findIndex((p) => p.name === 'else' || p.name === 'else-if');
+    if (idx < 0) return false;
+
+    const prev = nodes[nodes.length - 1];
+    if (!prev || prev.type !== 'If') return false; // 孤立的 v-else：保持为普通元素
+
+    const prop = node.props[idx]!;
+    let condition: string | null = null;
+    if (prop.name === 'else-if' && prop.value) {
+      condition = prop.value.type === 'Expression' ? prop.value.value : String(prop.value.value);
+    }
+
+    const branch: IfBranchNode = {
+      condition,
+      children: [{ ...node, props: node.props.filter((_, i) => i !== idx) }],
+      loc: node.loc,
+    };
+
+    // 若尾部存在 parser 预置的空 else 占位分支，替换它而不是追加
+    const last = prev.branches[prev.branches.length - 1];
+    if (last && last.condition === null && last.children.length === 0) {
+      prev.branches[prev.branches.length - 1] = branch;
+    } else {
+      prev.branches.push(branch);
+    }
+
+    return true;
   }
 
 private parseElement(): TemplateNode | null {
