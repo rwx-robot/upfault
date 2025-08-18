@@ -289,14 +289,24 @@ class TemplateParser {
     const idx = node.props.findIndex((p) => p.name === 'else' || p.name === 'else-if');
     if (idx < 0) return false;
 
-    const prev = nodes[nodes.length - 1];
-    if (!prev || prev.type !== 'If') return false; // 孤立的 v-else：保持为普通元素
-
     const prop = node.props[idx]!;
     let condition: string | null = null;
     if (prop.name === 'else-if' && prop.value) {
       condition = prop.value.type === 'Expression' ? prop.value.value : String(prop.value.value);
     }
+
+    // 向前查找紧邻的 v-if 节点：允许中间存在纯空白文本（模板缩进/换行），
+    // 但不允许夹杂其他元素或注释（与 Vue 的配对规则一致）
+    let ifIndex = -1;
+    for (let i = nodes.length - 1; i >= 0; i--) {
+      const n = nodes[i]!;
+      if (n.type === 'Text' && n.content.trim() === '') continue; // 跳过空白
+      ifIndex = n.type === 'If' ? i : -1;
+      break;
+    }
+    if (ifIndex < 0) return false; // 孤立的 v-else：保持为普通元素
+
+    const prev = nodes[ifIndex] as Extract<TemplateNode, { type: 'If' }>;
 
     const branch: IfBranchNode = {
       condition,

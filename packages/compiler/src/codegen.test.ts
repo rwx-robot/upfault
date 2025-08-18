@@ -119,7 +119,10 @@ describe('Code Generator', () => {
       // 组件名从文件名提取
       expect(result.metadata.templateHash).toMatch(/^0x[0-9a-f]{8}$/);
       expect(result.metadata.compileFlags).toBeGreaterThan(0);
-      expect(result.metadata.helpers).toContain('h');
+      // helpers 按需收集：只含实际使用的，未使用的（如 h）不应出现
+      expect(result.metadata.helpers.length).toBeGreaterThan(0);
+      expect(result.metadata.helpers).toContain('createTextVNode');
+      expect(result.metadata.helpers).not.toContain('h');
     });
   });
 
@@ -149,14 +152,19 @@ describe('Code Generator', () => {
   });
 
   describe('导入生成', () => {
-    it('应生成必要的运行时导入', () => {
+    it('应按需生成运行时导入', () => {
       const result = compileTemplate('<div>{{ x }}</div>');
       
       expect(result.code).toContain("import {");
       expect(result.code).toContain('@upfault/runtime');
-      expect(result.code).toContain('createVNode');
+      // 实际用到的 helper 必须出现
+      expect(result.code).toContain('createTextVNode');
       expect(result.code).toContain('createElementVNode');
-      expect(result.code).toContain('openBlock');
+      // 未使用的 helper 不得注入：此前 18 个 helper 无条件全量引入，
+      // 在小模板中占产物体积一半以上
+      for (const unused of ['openBlock', 'withDirectives', 'normalizeClass', 'vModel', 'toHandlers']) {
+        expect(result.code).not.toContain(unused);
+      }
     });
   });
 });

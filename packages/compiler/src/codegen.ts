@@ -93,16 +93,21 @@ class CodeGenerator {
   }
 
   generate(): CodegenResult {
-    // 1. 生成 imports
-    this.generateImports();
-    
-    // 2. 生成 hoisted 静态节点
+    // 1. 生成 hoisted 静态节点
     if (this.options.hoistStatic) {
       this.generateHoisted(this.blockTree.rootBlock);
     }
     
-    // 3. 生成渲染函数
+    // 2. 生成渲染函数（过程中通过 useHelper() 登记实际用到的 helper）
     this.generateRenderFunction();
+    
+    // 3. imports 必须最后生成并前置到顶部：helper 依赖只有在主体代码
+    //    生成完毕后才能确定。此前顺序颠倒（先 imports 后主体），
+    //    产物里的 import 区块恒为空 —— 生成的代码无法运行。
+    const importBlock = this.buildImports();
+    if (importBlock) {
+      this.code.unshift(importBlock, '');
+    }
     
     // 4. 生成 metadata
     const metadata = this.generateMetadata();
@@ -115,7 +120,8 @@ class CodeGenerator {
     };
   }
 
-  private generateImports(): void {
+  /** 构造 import 区块（在主体代码生成之后调用） */
+  private buildImports(): string {
     // 核心运行时 imports
     const coreImports = [
       'h',
@@ -137,8 +143,14 @@ class CodeGenerator {
       'toHandlers',
     ];
     
-    for (const helper of coreImports) {
-      this.helpers.add(helper);
+    // 按需引入：只导出生成过程中实际用到的 helper。
+    // 此前这里无条件把 18 个 helper 全部注入（且完全忽略 optimizeImports 选项），
+    // 导致每个产物都带 18 行 import —— 在小模板中占产物体积的一半以上。
+    // 各 generate*Code 在生成时调用 useHelper() 登记依赖。
+    if (!this.options.optimizeImports) {
+      for (const helper of coreImports) {
+        this.helpers.add(helper);
+      }
     }
     
     // 用户导入
@@ -146,13 +158,16 @@ class CodeGenerator {
       this.helpers.add(imp.name);
     }
     
-    if (this.helpers.size > 0) {
-      const imports = Array.from(this.helpers)
-        .map(h => `import { ${h} } from '@upfault/runtime'`)
-        .join('\n');
-      this.code.push(imports);
-      this.code.push('');
-    }
+    if (this.helpers.size === 0) return '';
+    
+    return Array.from(this.helpers)
+      .map(h => `import { ${h} } from '@upfault/runtime'`)
+      .join('\n');
+  }
+
+  /** 登记运行时 helper 依赖（供按需 import 使用） */
+  private useHelper(name: string): void {
+    this.helpers.add(name);
   }
 
   private generateHoisted(block: Block): void {
@@ -285,6 +300,7 @@ class CodeGenerator {
     }
     
     const fn = isDynamic ? 'createElementVNode' : 'createVNode';
+    this.useHelper(fn);
     return `${fn}(${args.join(', ')})`;
   }
 
@@ -311,23 +327,45 @@ class CodeGenerator {
       args.push(patchFlags.toString());
     }
     
+    this.useHelper('createVNode');
     return `createVNode(${args.join(', ')})`;
   }
 
   private generateTextCode(node: BlockNode, hoisted?: boolean): string {
+    this.useHelper('createTextVNode');
     if (node.isDynamic) {
-      return `createTextVNode(_ctx.${node.dynamicProps[0] || 'textContent'})`;
+      // 插值表达式：纯标识符/成员路径（count / item.name）加 `_ctx.` 前缀；
+      // 其他表达式（字符串字面量、运算、调用）原样输出。
+      // 此前一律拼 `_ctx.${expr}`，遇到 `'a' + 'b'` 会生成
+      // `_ctx.'a' + 'b'` —— 非法的 JS。
+      const expr = node.dynamicProps[0] || 'textContent';
+      return `createTextVNode(${this.renderExpression(expr)})`;
     }
     return `createTextVNode(${this.quote(node.textContent || '')})`;
   }
 
   private generateCommentCode(node: BlockNode, hoisted?: boolean): string {
+    this.useHelper('createCommentVNode');
     return `createCommentVNode(${this.quote(node.tag)})`;
+  }
+
+  /**
+   * 渲染插值表达式：
+   * - 纯标识符 / 成员路径 → `_ctx.count` / `_ctx.item.name`
+   * - 其他表达式 → 原样输出（`'a' + 'b'`、`format(x)`、字面量等）
+   */
+  private renderExpression(expr: string): string {
+    const trimmed = expr.trim();
+    if (/^[A-Za-z_$][A-Za-z0-9_$]*(\.[A-Za-z_$][A-Za-z0-9_$]*)*$/.test(trimmed)) {
+      return `_ctx.${trimmed}`;
+    }
+    return trimmed;
   }
 
   private generateFragmentCode(node: BlockNode, hoisted?: boolean): string {
     const childrenCode = this.generateChildrenCode(node.children);
     const patchFlag = node.patchFlags === 64 ? 64 : 0; // KEYED_FRAGMENT
+    this.useHelper('Fragment');
     
     if (childrenCode) {
       return `Fragment(${childrenCode}${patchFlag ? `, ${patchFlag}` : ''})`;
@@ -337,7 +375,7 @@ class CodeGenerator {
 
   private generateBlockCode(node: BlockNode, hoisted?: boolean): string {
     if (!node.block) return 'null';
-    
+    this.useHelper('openBlock');
     return `openBlock(${node.block.priority})`;
   }
 
@@ -349,17 +387,21 @@ class CodeGenerator {
     for (const prop of props) {
       const key = this.quote(prop.name);
       let value: string;
-      
-      if (prop.isEvent) {
-        value = `_ctx.${prop.name.replace('on', '').toLowerCase()}`;
-      } else if (prop.valueType === 'expression') {
-        value = `_ctx.${prop.name}`;
-      } else if (prop.valueType === 'dynamic') {
-        value = `_ctx.${prop.name}`;
+
+      // 此前这里取值用的是 prop.name（属性名），导致 `class="page"` 被生成成
+      // `{ "class": "class" }`；且判断依据是 PropNode 上并不存在的
+      // `prop.valueType` 字段，动态/表达式分支从未命中。
+      // 现按真实契约取值：value === null 为布尔简写，其余按 PropValue 渲染。
+      if (prop.value === null || prop.value === undefined) {
+        // 布尔属性简写：<input disabled /> → { "disabled": true }
+        value = 'true';
+      } else if (prop.value.type === 'Literal') {
+        value = this.quote(String(prop.value.value));
       } else {
-        value = this.quote(prop.name); // 简化
+        // Expression / Dynamic：标识符路径加 _ctx. 前缀，其余原样输出
+        value = this.renderExpression(String(prop.value.value));
       }
-      
+
       obj.push(`${key}: ${value}`);
     }
     

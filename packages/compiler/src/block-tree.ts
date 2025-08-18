@@ -6,7 +6,7 @@
  */
 
 import { VNodeFlags, VNodeType } from '@upfault/shared';
-import type { TemplateAST, TemplateNode, ElementNode, ComponentNode, SlotNode, IfNode, ForNode, InterpolationNode, CommentNode, TextNode, CompileTimeFlags, CompileContext } from './parser';
+import type { TemplateAST, TemplateNode, ElementNode, ComponentNode, SlotNode, IfNode, ForNode, InterpolationNode, CommentNode, TextNode, CompileTimeFlags, CompileContext, PropValue } from './parser';
 
 // ============================================================================
 // Block 类型定义
@@ -68,6 +68,12 @@ export interface BlockNode {
 
 export interface PropMeta {
   name: string;
+  /**
+   * 属性值。此前该字段缺失（convertProp 只保留元信息），
+   * codegen 无法生成真实属性值，只能退化为 `{ "class": true }`。
+   * null 表示布尔简写（<input disabled />）。
+   */
+  value: PropValue | null;
   isDynamic: boolean;
   isEvent: boolean;
   isKey: boolean;
@@ -467,6 +473,7 @@ class BlockTreeBuilder {
   private convertProp(prop: any): PropMeta {
     return {
       name: prop.name,
+      value: prop.value ?? null, // 保留属性值，供 codegen 生成真实 props
       isDynamic: prop.isDynamic,
       isEvent: prop.isEvent,
       isKey: prop.name === 'key',
