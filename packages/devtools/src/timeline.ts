@@ -42,12 +42,12 @@ let timeline: Timeline = {
 };
 
 /**
- * 创建时间线实例
+ * 创建时间线实例（每次调用返回新对象）
  */
 export function createTimeline(options: { maxEvents?: number } = {}): Timeline {
   return {
     events: [],
-    maxEvents: options.maxEvents || 10000,
+    maxEvents: options.maxEvents ?? 10000,
     isRecording: true,
     startTime: Date.now(),
   };
@@ -55,35 +55,38 @@ export function createTimeline(options: { maxEvents?: number } = {}): Timeline {
 
 /**
  * 记录事件
+ * @param timelineInstance 可选：指定目标 timeline 实例（供测试使用），默认写模块级单例
  */
 export function recordEvent(
   type: EventType,
-  data: any,
-  options: {
+  data?: any,
+  options?: {
     componentUid?: number;
     componentName?: string;
     duration?: number;
     captureStack?: boolean;
-  } = {}
+  },
+  timelineInstance?: Timeline,
 ): TimelineEvent {
-  if (!timeline.isRecording) return null as any;
+  const tl = timelineInstance ?? timeline;
+  if (!tl.isRecording) return null as any;
 
   const event: TimelineEvent = {
     id: ++eventId,
-    timestamp: Date.now() - timeline.startTime,
+    timestamp: Date.now() - tl.startTime,
     type,
-    componentUid: options.componentUid,
-    componentName: options.componentName,
+    componentUid: options?.componentUid,
+    componentName: options?.componentName,
     data,
-    duration: options.duration,
-    stackTrace: options.captureStack ? new Error().stack : undefined,
+    duration: options?.duration,
+    stackTrace: options?.captureStack ? new Error().stack : undefined,
   };
 
-  timeline.events.push(event);
-  
-  // 限制事件数量
-  if (timeline.events.length > timeline.maxEvents) {
-    timeline.events.shift();
+  tl.events.push(event);
+
+  // 限制事件数量（FIFO）：精确裁剪到 maxEvents
+  while (tl.maxEvents > 0 && tl.events.length > tl.maxEvents) {
+    tl.events.shift();
   }
 
   return event;
@@ -91,14 +94,20 @@ export function recordEvent(
 
 /**
  * 获取时间线事件
+ * @param filter 可选过滤条件
+ * @param timelineInstance 可选：指定目标 timeline 实例，默认读模块级单例
  */
-export function getTimelineEvents(filter?: {
-  type?: EventType;
-  componentUid?: number;
-  since?: number;
-  limit?: number;
-}): TimelineEvent[] {
-  let events = [...timeline.events];
+export function getTimelineEvents(
+  filter?: {
+    type?: EventType;
+    componentUid?: number;
+    since?: number;
+    limit?: number;
+  },
+  timelineInstance?: Timeline,
+): TimelineEvent[] {
+  const tl = timelineInstance ?? timeline;
+  let events = [...tl.events];
   
   if (filter) {
     if (filter.type) {
@@ -120,11 +129,34 @@ export function getTimelineEvents(filter?: {
 
 /**
  * 清空时间线
+ * @param timelineInstance 可选：指定目标 timeline 实例，默认清模块级单例
  */
-export function clearTimeline(): void {
-  timeline.events = [];
+export function clearTimeline(timelineInstance?: Timeline): void {
+  const tl = timelineInstance ?? timeline;
+  tl.events = [];
   eventId = 0;
-  timeline.startTime = Date.now();
+  tl.startTime = Date.now();
+}
+
+/** 创建并立即开始记录的 timeline 实例（recordEvent 的便捷替代，用于不需要传参的场景） */
+export function createActiveTimeline(options: { maxEvents?: number } = {}): Timeline {
+  const tl = createTimeline(options);
+  return tl;
+}
+
+/** 向指定 timeline 追加事件（createActiveTimeline 的配套函数） */
+export function addEvent(
+  type: EventType,
+  data?: any,
+  options?: {
+    componentUid?: number;
+    componentName?: string;
+    duration?: number;
+    captureStack?: boolean;
+  },
+  timelineInstance?: Timeline,
+): TimelineEvent {
+  return recordEvent(type, data, options, timelineInstance);
 }
 
 /**
