@@ -36,3 +36,13 @@ packages/*/src/**/*.js
 packages/*/src/**/*.js.map
 packages/*/src/**/*.d.ts
 packages/*/src/**/*.d.ts.map
+
+# CLI 临时输出（dev/preview/init 命令产生）
+.upfault-dev/
+.upfault-preview/
+# 单元测试副作用（init 命令在测试 cwd 下创建的项目）
+/a
+/b
+/existing
+/my-app
+/proj

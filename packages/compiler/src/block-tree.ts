@@ -387,6 +387,7 @@ class BlockTreeBuilder {
         isRef: false,
         isSlot: false,
         valueType: 'expression',
+        value: { type: 'Expression', value: node.key },
       });
     }
     
