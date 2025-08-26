@@ -16,6 +16,8 @@ export {
   getCurrentEffect,
   pushEffect,
   popEffect,
+  runEffect,
+  runEffectSync,
 } from './dep';
 
 export {

@@ -4,7 +4,7 @@
  * 生命周期管理，参考 Vue 3 设计
  */
 
-import { effect, watchEffect, stopEffect } from '@upfault/reactivity';
+import { effect, watchEffect, stopEffect, runEffectSync } from '@upfault/reactivity';
 import type { ComponentInstance, VNode } from '@upfault/shared/diff';
 
 import type { Effect } from '@upfault/reactivity';
@@ -299,6 +299,17 @@ export function createRenderEffect(
   });
   // effect() 返回 runner，实际 Effect 在 runner.effect
   return runner.effect;
+}
+
+/**
+ * 在依赖追踪上下文中执行渲染 effect（首次渲染与更新都走这里）
+ *
+ * ⚠️ 必须用 runEffectSync 而非直接 effect.fn()：只有 runEffectSync 会把 effect
+ * 压入 effectStack，track() 才能把 render 中读取的 ref 登记为依赖。
+ * 直接调 effect.fn() 会导致依赖收集不到、响应式更新永不触发。
+ */
+export function runRenderEffect(effect: Effect): void {
+  runEffectSync(effect);
 }
 
 /**

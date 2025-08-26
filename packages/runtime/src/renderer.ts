@@ -55,6 +55,7 @@ import {
   callActivated,
   callDeactivated,
   createRenderEffect,
+  runRenderEffect,
   stopRenderEffect,
   handleError,
   pushInstance,
@@ -264,27 +265,30 @@ export function createRenderer<HostElement extends Node = Element>(
         return renderFn(instance.proxy, { slots });
       };
       
-      // 创建渲染 effect
+      // 创建渲染 effect：首次渲染即挂载子树，依赖变化后重渲染 diff + patch。
+      // 渲染必须在依赖追踪上下文中执行（见 runRenderEffect），否则 effect
+      // 收集不到 render 内读取的 ref，响应式更新永不触发。
       const effect = createRenderEffect(instance, () => {
-        if (!instance.isMounted) {
-          return instance.render!();
+        const nextTree = instance.render!();
+        const prevTree = instance.subTree ?? null;
+        instance.subTree = nextTree;
+        if (nextTree) {
+          patch(prevTree, nextTree, parent, anchor);
+          vnode.el = nextTree.el;
+        } else if (prevTree) {
+          unmount(prevTree, parent);
         }
-        return instance.render!();
+        return nextTree;
       });
       
       (instance.effects ??= []).push(effect);
-      instance.update = () => effect.fn();
+      instance.update = () => runRenderEffect(effect);
       
       // 执行 beforeMount (同步)
       callBeforeMount(instance);
       
-      // 挂载子树
-      const subTree = instance.render!();
-      instance.subTree = subTree;
-      if (subTree) {
-        patch(null, subTree, parent, anchor);
-        vnode.el = subTree.el;
-      }
+      // 首次渲染（effect 上下文中执行：建立依赖收集 + 挂载子树）
+      runRenderEffect(effect);
       
       // 执行 mounted
       callMounted(instance);
@@ -524,7 +528,7 @@ export function createRenderer<HostElement extends Node = Element>(
     
     // 组件卸载
     if (vnodeType === VNodeType.COMPONENT && componentInstance) {
-      unmountComponent(componentInstance);
+      unmountComponent(componentInstance, parent);
       return;
     }
     
@@ -550,7 +554,7 @@ export function createRenderer<HostElement extends Node = Element>(
     }
   }
   
-  function unmountComponent(instance: ComponentInstance): void {
+  function unmountComponent(instance: ComponentInstance, parent: HostElement | null = null): void {
     if (instance.isUnmounted) return;
     
     instance.isUnmounted = true;
@@ -558,9 +562,9 @@ export function createRenderer<HostElement extends Node = Element>(
     // 执行 beforeUnmount
     callBeforeUnmount(instance);
     
-    // 卸载子树
+    // 卸载子树（必须带 parent，否则 unmount 不执行 DOM 移除）
     if (instance.subTree) {
-      unmount(instance.subTree);
+      unmount(instance.subTree, parent);
     }
     
     // 执行 unmounted
