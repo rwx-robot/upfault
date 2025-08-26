@@ -257,8 +257,8 @@ export interface DiffIndex {
   /** Key -> 旧节点索引映射 */
   keyMap: Map<string | number, number>;
   
-  /** Type -> 旧节点索引列表映射 */
-  typeMap: Map<VNodeType, number[]>;
+  /** Type/身份 -> 旧节点索引列表映射（键为 tag：真实标签名或组件对象；无 tag 时回退 VNodeType） */
+  typeMap: Map<unknown, number[]>;
   
   /** 旧节点数组 */
   oldNodes: VNode[];

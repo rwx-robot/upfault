@@ -41,6 +41,20 @@ interface BlockWithChildren extends Block {
 
 type VNodeLike = { type: unknown; key: string | number | null };
 
+/**
+ * Diff 的「节点身份键」。
+ *
+ * ⚠️ VNode 契约（2026-09-22 统一）：`type` 是 VNodeType 枚举，真实标签名 /
+ * 组件对象在 `tag`。若拿枚举当身份，则所有元素、所有组件彼此「同型」，
+ * 兜底匹配会把 `div` 与 `span`、`Header` 与 `TodoList` 配成可复用节点。
+ * 故身份一律取 tag，仅在调用方给的是旧式裸对象时回退到 type。
+ */
+function nodeIdentity(node: VNodeLike): unknown {
+  const tag = (node as { tag?: unknown }).tag;
+  return tag === undefined ? node.type : tag;
+}
+
+
 // ============================================================================
 // 核心 Diff 算法
 // ============================================================================
@@ -196,7 +210,7 @@ function buildDiffIndex(
   end: number
 ): DiffIndex {
   const keyMap = new Map<string | number, number>();
-  const typeMap = new Map<VNodeType, number[]>();
+  const typeMap = new Map<unknown, number[]>();
   
   for (let i = start; i <= end; i++) {
     const node = oldChildren[i]!;
@@ -206,10 +220,11 @@ function buildDiffIndex(
       keyMap.set(node.key, i);
     }
     
-    // Type 索引
-    const typeList = typeMap.get(node.type) || [];
+    // 身份索引（tag：真实标签名 / 组件对象）
+    const identity = nodeIdentity(node);
+    const typeList = typeMap.get(identity) || [];
     typeList.push(i);
-    typeMap.set(node.type, typeList);
+    typeMap.set(identity, typeList);
   }
   
   return {
@@ -248,9 +263,9 @@ function performGreedyMatch(
       }
     }
     
-    // 优先级 2：Type + Shape 兜底匹配
+    // 优先级 2：身份（tag）+ Shape 兜底匹配
     if (oldIdx === -1 && config.enableTypeFallback) {
-      const typeMatches = index.typeMap.get(newNode.type) || [];
+      const typeMatches = index.typeMap.get(nodeIdentity(newNode)) || [];
       for (const candidateIdx of typeMatches) {
         if (!oldChildren[candidateIdx]!._used) {
           // 可选：Shape 匹配检查
@@ -297,8 +312,8 @@ function performGreedyMatch(
  * 简单的 Shape 匹配：比较 children 结构深度
  */
 function shapeMatch(oldNode: VNodeWithUsed, newNode: VNodeWithUsed): boolean {
-  // 类型不同直接 false
-  if (oldNode.type !== newNode.type) return false;
+  // 身份不同（标签名 / 组件不同）直接 false
+  if (nodeIdentity(oldNode) !== nodeIdentity(newNode)) return false;
   
   // 简单启发式：比较动态 props 数量
   const oldDynCount = (oldNode as any).dynamicProps?.length || 0;

@@ -6,9 +6,21 @@
 
 /**
  * 判断两个值是否为同一节点 (用于 Diff)
+ *
+ * ⚠️ VNode 契约（2026-09-22 统一）：`type` 存放 VNodeType 枚举，真实标签名 /
+ * 组件对象存放在 `tag`。因此**不能只比 `type`** —— 那样所有元素之间、所有组件
+ * 之间都会被判为「同一节点」，diff 会把 `div` 和 `span`、`Header` 和 `TodoList`
+ * 当成可复用节点配对（曾导致未键控列表错配、重复 DOM）。
+ *
+ * 兼容：调用方若未提供 `tag`（旧式裸对象 / 纯类型比较场景），退回仅比较
+ * type + key 的历史语义。
  */
 export function isSameNode(a: VNodeLike, b: VNodeLike): boolean {
-  return a.type === b.type && a.key === b.key;
+  if (a.type !== b.type || a.key !== b.key) return false;
+  const aTag = (a as { tag?: unknown }).tag;
+  const bTag = (b as { tag?: unknown }).tag;
+  if (aTag === undefined && bTag === undefined) return true;
+  return aTag === bTag;
 }
 
 /**

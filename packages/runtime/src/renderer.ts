@@ -116,8 +116,6 @@ export function createRenderer<HostElement extends Node = Element>(
     insert,
     remove,
     patchProp,
-    parentNode,
-    nextSibling,
   } = options;
   
   // 使用 WeakMap 存储容器的根 VNode
@@ -300,6 +298,29 @@ export function createRenderer<HostElement extends Node = Element>(
     }
   }
   
+  /**
+   * 更新一个已挂载的组件：复用实例、刷新 props，再触发重渲染。
+   * 组件 vnode 与元素 vnode 的复用语义不同，必须走这里而非 patchElement。
+   */
+  function updateComponent(n1: VNode, n2: VNode): void {
+    const instance = n1.componentInstance;
+    if (!instance) {
+      // 没有实例（异常情况）→ 退化为元素级 patch
+      patchElement(n1, n2);
+      return;
+    }
+    n2.componentInstance = instance;
+    n2.el = n1.el;
+
+    // 刷新 props / proxy（render 每次读取 instance.proxy，故重建即可生效）
+    const resolvedProps = resolveProps(instance.type, n2.props || {});
+    instance.props = resolvedProps;
+    instance.proxy = createComponentProxy(instance, resolvedProps);
+
+    // 触发重渲染（经依赖追踪上下文执行）
+    instance.update();
+  }
+
   function resolveProps(comp: Component, props: VNodeProps): VNodeProps {
     // 简单实现：直接返回 props
     // TODO: 合并默认值、类型转换等
@@ -357,7 +378,12 @@ export function createRenderer<HostElement extends Node = Element>(
   ): void {
     // 类型相同（同标签/同组件），复用
     if (n1 && n1.tag === n2.tag && n1.key === n2.key) {
-      patchElement(n1, n2);
+      if (n2.type === VNodeType.COMPONENT) {
+        // 组件 vnode 不能走 patchElement：应复用实例、刷新 props 后重渲染
+        updateComponent(n1, n2);
+      } else {
+        patchElement(n1, n2);
+      }
       return;
     }
     
@@ -508,15 +534,24 @@ export function createRenderer<HostElement extends Node = Element>(
     }
   }
 
+  /**
+   * 取 `parent` 自身第 index 个子节点，作为 insert 的锚点。
+   *
+   * 历史 Bug（2026-09-23 M5 基准发现）：旧实现先 `parentNode(parent)` 再取
+   * `firstChild`，实际遍历的是 **parent 的父节点** 的子节点，返回的根本不是
+   * parent 的孩子 —— `insertBefore(child, parent, 锚点)` 于是抛
+   * `NotFoundError: The child can not be found in the parent`，
+   * 导致 keyed 列表移动/中插时整条更新链中断（DOM 停在旧状态）。
+   *
+   * 索引越界（含纯追加场景）返回 null，由 insert 追加到末尾。
+   */
   function getAnchor(parent: HostElement, index: number): HostElement | null {
-    if (!parentNode || !nextSibling) return null;
-    const p = parentNode(parent);
-    if (!p) return null;
-    let child: HostElement | null = (p.firstChild as unknown as HostElement | null);
+    if (index < 0) return null;
+    let child: Node | null = (parent as unknown as Node).firstChild;
     for (let i = 0; i < index && child; i++) {
-      child = nextSibling(child as HostElement);
+      child = child.nextSibling;
     }
-    return child;
+    return (child as unknown as HostElement) ?? null;
   }
   
   // ========================================================================
