@@ -249,7 +249,8 @@ describe('异常与边界', () => {
     const t = new WorkerTransport({ factory: () => slow, maxPending: 1 });
     await t.init();
 
-    void t.compute('keyedSequenceDiff', [['a'], ['a']]); // 占用唯一 pending 名额
+    // 占用唯一 pending 名额（随后会被 dispose 拒绝，显式兜底避免 unhandled rejection）
+    void t.compute('keyedSequenceDiff', [['a'], ['a']]).catch(() => {});
     const second = await t.compute<number[]>('keyedSequenceDiff', [['b'], ['b']]);
 
     expect(second).toEqual([0]);
@@ -281,7 +282,8 @@ describe('异常与边界', () => {
     const t = new WorkerTransport({ factory: () => worker });
     await t.init();
 
-    void t.compute('keyedSequenceDiff', [['a'], ['a']]);
+    // 不回复的 Worker：compute 会保持 pending，随后被 dispose 拒绝（显式兜底避免 unhandled rejection）
+    void t.compute('keyedSequenceDiff', [['a'], ['a']]).catch(() => {});
     await tick(); // 确保已进入 pending
     t.dispose();
 
