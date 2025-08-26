@@ -34,7 +34,8 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
   
   const renderer = createRenderer({
     ...defaultRendererOptions,
-    patchProp: (el: HTMLElement, key: string, _: any, value: any) => {
+    patchProp: (el: Element, key: string, _: any, value: any) => {
+      const htmlEl = el as HTMLElement;
       if (key.startsWith('on')) {
         const event = key.slice(2).toLowerCase();
         if (value) {
@@ -44,11 +45,11 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
         el.className = value || '';
       } else if (key === 'style') {
         if (typeof value === 'string') {
-          el.style.cssText = value;
+          htmlEl.style.cssText = value;
         } else if (value && typeof value === 'object') {
-          Object.assign(el.style, value);
+          Object.assign(htmlEl.style, value);
         } else {
-          el.style.cssText = '';
+          htmlEl.style.cssText = '';
         }
       } else if (key in el) {
         (el as any)[key] = value;
@@ -58,7 +59,7 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
         el.setAttribute(key, value);
       }
     },
-    insert: (child: Node, parent: HTMLElement, anchor?: Node | null) => {
+    insert: (child: Node, parent: Element, anchor?: Node | null) => {
       parent.insertBefore(child, anchor || null);
     },
     remove: (child: Node) => {
@@ -68,8 +69,14 @@ export function hydrate(vnode: VNode, container: HTMLElement | string): Componen
     nextSibling: (node: Node) => node.nextSibling as HTMLElement | null,
   });
   
-  const instance = renderer.render(vnode, containerEl);
-  return instance;
+  renderer.render(vnode, containerEl);
+  // 构造 ComponentInstance（hydrate 包装层）
+  return {
+    vnode,
+    container: containerEl,
+    hydrated: true,
+    mounted: false,
+  } as unknown as ComponentInstance;
 }
 
 export function hydrateRoot(vnode: VNode, container: HTMLElement | string, options: {

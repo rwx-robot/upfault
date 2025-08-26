@@ -460,7 +460,7 @@ export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
   const order: string[] = [];
   
   const extendedCache: Map<string, any> = new Proxy(cache, {
-    get(target, prop, receiver) {
+    get(target, prop) {
       if (prop === 'set') {
         return function(key: string, instance: any): Map<string, any> {
           if (target.has(key)) {
@@ -475,7 +475,10 @@ export function createKeepAliveCache(maxSize: number = 10): Map<string, any> {
           return target;
         };
       }
-      return Reflect.get(target, prop, receiver);
+      // 关键修复：不传 receiver（避免 Map 内部 get/has 等访问内部槽位时拿 Proxy 自身作 this）
+      const value = Reflect.get(target, prop);
+      // 绑定 this 到原始 target，让 Map.prototype.get 正常工作
+      return typeof value === 'function' ? value.bind(target) : value;
     }
   });
   
