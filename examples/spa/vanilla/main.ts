@@ -1,9 +1,13 @@
 /**
  * 基线：用原生 DOM API 构建与 UpFault SPA 结构等价的界面。
  * 用于量化「框架首次挂载」相对「手写 DOM」的开销。
+ *
+ * 度量口径（四实现统一）：renderMs = 入口模块开始执行 → 首屏 DOM 就绪。
  */
 
 type Todo = { id: number; text: string; done: boolean };
+
+const t0 = performance.now();
 
 const N = Math.max(0, Number(new URLSearchParams(location.search).get('n') ?? '200') || 200);
 
@@ -25,8 +29,6 @@ const el = (tag: string, cls?: string, text?: string): HTMLElement => {
   if (text != null) n.textContent = text;
   return n;
 };
-
-const t0 = performance.now();
 
 const todos = seed(N);
 const active = todos.filter((t) => !t.done).length;
@@ -52,7 +54,9 @@ input.placeholder = 'Add a task…';
 controls.appendChild(input);
 controls.appendChild(el('button', 'add-btn', 'Add'));
 for (const f of ['all', 'active', 'done']) {
-  controls.appendChild(el('button', 'filter-btn' + (f === 'all' ? ' is-active' : ''), f));
+  const btn = el('button', 'filter-btn' + (f === 'all' ? ' is-active' : ''), f);
+  btn.setAttribute('data-filter', f);
+  controls.appendChild(btn);
 }
 root.appendChild(controls);
 
@@ -73,7 +77,8 @@ container.appendChild(root);
 
 const t1 = performance.now();
 
-(window as any).__vanilla = {
+// 统一的基准取数口径（四实现同名）
+(window as any).__spa = {
   renderMs: t1 - t0,
   nodes: container.querySelectorAll('*').length,
 };
