@@ -11,17 +11,17 @@
  */
 
 export interface RendererOptions<
-  HostElement = Element,
-  HostText = Text,
-  HostComment = Comment
+  HostElement extends Node = Element,
+  HostText extends Node = Text,
+  HostComment extends Node = Comment
 > {
   createElement: (tag: string, isSVG?: boolean) => HostElement;
   createText: (text: string) => HostText;
   createComment: (text: string) => HostComment;
   setElementText: (el: HostElement, text: string) => void;
   setText: (node: HostText, text: string) => void;
-  insert: (child: HostElement, parent: HostElement, anchor?: HostElement | null) => void;
-  remove: (child: HostElement) => void;
+  insert: (child: Node, parent: HostElement, anchor?: HostElement | null) => void;
+  remove: (child: Node) => void;
   patchProp: (el: HostElement, key: string, prevValue: any, nextValue: any) => void;
   parentNode?: (node: HostElement) => HostElement | null;
   nextSibling?: (node: HostElement) => HostElement | null;

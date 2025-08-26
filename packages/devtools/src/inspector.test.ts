@@ -11,7 +11,9 @@ import type { ComponentInstance, VNode } from '@upfault/devtools';
 
 function makeVNode(overrides: Partial<VNode> = {}): VNode {
   return {
-    type: 'div',
+    // 新模型契约：vnode.type 为 VNodeType 枚举，真实标签/组件存入 tag
+    type: 2 as any,
+    tag: 'div',
     key: null,
     props: null,
     children: null,
@@ -105,7 +107,7 @@ describe('Inspector', () => {
   // ── inspectVNode ───────────────────────────────────────────────────────────
 
   it('应返回 VNodeInfo', () => {
-    const vnode = makeVNode({ type: 'span', key: 'a', patchFlag: 1 });
+    const vnode = makeVNode({ tag: 'span', key: 'a', patchFlag: 1 });
     const info = inspector.inspectVNode(vnode);
     expect(info.type).toBe('span');
     expect(info.key).toBe('a');
@@ -122,7 +124,7 @@ describe('Inspector', () => {
   });
 
   it('children 为数组时应递归映射', () => {
-    const child = makeVNode({ type: 'span' });
+    const child = makeVNode({ tag: 'span' });
     const parent = makeVNode({ children: [child] });
     const info = inspector.inspectVNode(parent);
     expect(Array.isArray(info.children)).toBe(true);
@@ -207,7 +209,7 @@ describe('Inspector', () => {
   });
 
   it('vnode 字段应被填充为 VNodeInfo', () => {
-    const instance = makeInstance({ vnode: makeVNode({ type: 'Article' }) });
+    const instance = makeInstance({ vnode: makeVNode({ tag: 'Article' }) });
     const info = inspector.inspectComponent(instance);
     expect(info.vnode.type).toBe('Article');
   });

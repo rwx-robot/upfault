@@ -28,7 +28,7 @@ export { VNodeType } from '@upfault/shared/diff';
  * Props 标准化后的类型
  */
 export interface NormalizedProps extends Record<string, any> {
-  key?: string | number | null;
+  key?: string | number;
   ref?: Ref<any> | ((value: any) => void);
   class?: string | Record<string, boolean> | string[];
   style?: string | Record<string, string | number>;
@@ -36,7 +36,6 @@ export interface NormalizedProps extends Record<string, any> {
   onInput?: (e: Event) => void;
   onChange?: (e: Event) => void;
   onSubmit?: (e: Event) => void;
-  [key: `on${string}`]: ((e: Event) => void) | undefined;
   [key: string]: any;
 }
 
@@ -125,10 +124,10 @@ function kebabCase(str: string): string {
 /**
  * 标准化 props
  */
-function normalizeProps(props: NormalizedProps | null | undefined): VNodeProps {
+function normalizeProps(props: NormalizedProps | null | undefined): NormalizedProps {
   if (!props) return {};
   
-  const normalized: VNodeProps = { ...props };
+  const normalized: NormalizedProps = { ...props };
   
   // 处理 class
   if (normalized.class != null) {
@@ -156,20 +155,22 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
     const child = children[0];
     if (child == null) return [];
     if (typeof child === 'string' || typeof child === 'number') {
-      return [{ type: Text, children: String(child), props: null, key: null, ref: null, shapeFlag: VNodeShapeFlags.TEXT_NODE, patchFlag: SharedPatchFlags.NONE, dynamicProps: [], el: null, anchor: null, parent: null, componentInstance: null, component: undefined, vnodeType: VNodeType.TEXT }];
+      return [{ type: VNodeType.TEXT, tag: '', children: String(child), props: null, key: null, ref: null, flags: 0, block: null, shapeFlag: VNodeShapeFlags.TEXT_NODE, patchFlag: SharedPatchFlags.NONE, dynamicProps: [], el: null, anchor: null, parent: null, componentInstance: null, component: null, vnodeType: VNodeType.TEXT }];
     }
     if (Array.isArray(child)) {
       return normalizeChildren(child);
     }
+    if (typeof child === 'boolean') return [];
     return [child];
   }
   // 多个子节点，展平数组
   return children.flatMap(child => {
     if (child == null) return [];
-    if (Array.isArray(child)) return normalizeChildren(child);
+    if (Array.isArray(child)) return normalizeChildren(child) ?? [];
     if (typeof child === 'string' || typeof child === 'number') {
-      return [{ type: Text, children: String(child), props: null, key: null, ref: null, shapeFlag: VNodeShapeFlags.TEXT_NODE, patchFlag: SharedPatchFlags.NONE, dynamicProps: [], el: null, anchor: null, parent: null, componentInstance: null, component: undefined, vnodeType: VNodeType.TEXT }];
+      return [{ type: VNodeType.TEXT, tag: '', children: String(child), props: null, key: null, ref: null, flags: 0, block: null, shapeFlag: VNodeShapeFlags.TEXT_NODE, patchFlag: SharedPatchFlags.NONE, dynamicProps: [], el: null, anchor: null, parent: null, componentInstance: null, component: null, vnodeType: VNodeType.TEXT }];
     }
+    if (typeof child === 'boolean') return [];
     return [child];
   });
 }
@@ -228,7 +229,7 @@ export function h(
   ...children: VNodeChild[]
 ): VNode {
   // 处理无 props 只有 children 的情况
-  let normalizedProps: VNodeProps;
+  let normalizedProps: NormalizedProps;
   let normalizedChildren: VNode['children'];
   let key: string | number | null = null;
   let ref: VNode['ref'] = null;
@@ -246,23 +247,14 @@ export function h(
   
   // 确定 VNode 类型
   let vnodeType: VNodeType;
-  let component: VNode['component'] = undefined;
-  
   if (typeof type === 'string') {
     vnodeType = VNodeType.ELEMENT;
   } else if (typeof type === 'function' || (type && typeof type === 'object')) {
-    // 组件类型判断
+    // 组件类型判断（Fragment 标记除外）
     if ((type as any).__v_isFragment) {
       vnodeType = VNodeType.FRAGMENT;
-    } else if ('__v_isComponent' in (type as any)) {
-      vnodeType = VNodeType.COMPONENT;
-      component = type as Component;
-    } else if ('render' in (type as any)) {
-      vnodeType = VNodeType.COMPONENT;
-      component = type as Component;
     } else {
       vnodeType = VNodeType.COMPONENT;
-      component = type as Component;
     }
   } else {
     vnodeType = VNodeType.TEXT;
@@ -272,14 +264,18 @@ export function h(
   const patchFlag = computeFlags(vnodeType, normalizedProps, normalizedChildren);
   
   // 创建 VNode
+  // 注意：shared 契约要求 type 字段为 VNodeType 枚举，真实标签/组件存入 tag
   const vnode: VNode = {
-    type,
+    type: vnodeType,
+    tag: type as string | Component,
     props: normalizedProps,
     children: normalizedChildren,
     key,
     ref,
-    component,
+    component: null,
     vnodeType,
+    flags: 0,
+    block: null,
     patchFlag,
     dynamicProps: patchFlag & SharedPatchFlags.PROPS 
       ? Object.keys(normalizedProps).filter(k => !['class', 'style'].includes(k))
@@ -375,11 +371,14 @@ export function Fragment(props: NormalizedProps | null, ...children: VNodeChild[
  */
 export function Text(text: string | number): VNode {
   return {
-    type: Text,
+    type: VNodeType.TEXT,
+    tag: '',
     props: null,
     children: String(text),
     key: null,
     ref: null,
+    flags: 0,
+    block: null,
     shapeFlag: VNodeShapeFlags.TEXT_NODE,
     patchFlag: SharedPatchFlags.NONE,
     dynamicProps: [],
@@ -387,7 +386,7 @@ export function Text(text: string | number): VNode {
     anchor: null,
     parent: null,
     componentInstance: null,
-    component: undefined,
+    component: null,
     vnodeType: VNodeType.TEXT,
   };
 }
@@ -397,11 +396,14 @@ export function Text(text: string | number): VNode {
  */
 export function Comment(text: string): VNode {
   return {
-    type: Comment,
+    type: VNodeType.COMMENT,
+    tag: '',
     props: null,
     children: text,
     key: null,
     ref: null,
+    flags: 0,
+    block: null,
     shapeFlag: VNodeShapeFlags.TEXT_NODE,
     patchFlag: SharedPatchFlags.NONE,
     dynamicProps: [],
@@ -409,7 +411,7 @@ export function Comment(text: string): VNode {
     anchor: null,
     parent: null,
     componentInstance: null,
-    component: undefined,
+    component: null,
     vnodeType: VNodeType.COMMENT,
   };
 }
@@ -428,10 +430,3 @@ export const FragmentSymbol = VNodeType.FRAGMENT;
 // ============================================================================
 // 导出类型
 // ============================================================================
-
-export type { 
-  NormalizedProps, 
-  VNodeChild, 
-  ComponentType, 
-  HFunction 
-} from './h';

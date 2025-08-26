@@ -152,7 +152,8 @@ function renderVNodeToString(vnode: VNode): string {
     return children.map(renderVNodeToString).join('');
   }
   
-  const tag = typeof (vnode as any).type === 'string' ? (vnode as any).type : 'div';
+  // 新模型契约：真实标签/组件存入 vnode.tag，vnode.type 为 VNodeType 枚举
+  const tag = typeof (vnode as any).tag === 'string' ? (vnode as any).tag : 'div';
   const props = (vnode as any).props || {};
   const children = (vnode as any).children as VNode[];
   

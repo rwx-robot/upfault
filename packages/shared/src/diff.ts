@@ -308,21 +308,31 @@ export interface ComponentInstance {
   type: Component;
   props: VNodeProps;
   state: Record<string, unknown>;
-  render: () => VNode;
+  /** render 可能返回 null（首次挂载前子树尚未生成） */
+  render: () => VNode | null;
   update: () => void;
   unmount: () => void;
-  // 生命周期
-  onMounted?: () => void;
-  onUnmounted?: () => void;
-  onUpdated?: () => void;
+  // 生命周期钩子（以数组形式存储，支持同钩子多次注册）
+  onBeforeMount?: Array<(...args: any[]) => any>;
+  onMounted?: Array<(...args: any[]) => any>;
+  onBeforeUpdate?: Array<(...args: any[]) => any>;
+  onUpdated?: Array<(...args: any[]) => any>;
+  onBeforeUnmount?: Array<(...args: any[]) => any>;
+  onUnmounted?: Array<(...args: any[]) => any>;
+  onActivated?: Array<(...args: any[]) => any>;
+  onDeactivated?: Array<(...args: any[]) => any>;
+  onErrorCaptured?: Array<(...args: any[]) => any>;
+  onRenderTracked?: Array<(...args: any[]) => any>;
+  onRenderTriggered?: Array<(...args: any[]) => any>;
   // 运行时内部字段
   isUnmounted?: boolean;
   isMounted?: boolean;
-  subTree?: VNode;
+  subTree?: VNode | null;
   subTreeAnchor?: Node | null;
-  effects?: Array<() => void>;
-  root?: ComponentInstance;
-  parent?: ComponentInstance;
+  /** 渲染副作用列表（render effect 对象，非纯函数） */
+  effects?: any[];
+  root?: ComponentInstance | null;
+  parent?: ComponentInstance | null;
   proxy?: any;
   name?: string;
 }

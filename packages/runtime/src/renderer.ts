@@ -45,7 +45,7 @@ const VNodeType = {
 
 import type { RendererOptions } from './renderer-options';
 
-import { 
+import {
   callBeforeMount,
   callMounted,
   callBeforeUpdate,
@@ -82,35 +82,7 @@ const VNodeShapeFlags = {
 // 渲染器选项接口
 // ============================================================================
 
-export interface RendererOptions<
-  HostElement = Element,
-  HostText = Text,
-  HostComment = Comment
-> {
-  // DOM 操作
-  createElement: (tag: string, isSVG?: boolean) => HostElement;
-  createText: (text: string) => HostText;
-  createComment: (text: string) => HostComment;
-  
-  setElementText: (el: HostElement, text: string) => void;
-  setText: (node: HostText, text: string) => void;
-  
-  insert: (child: Node, parent: HostElement, anchor?: HostElement | null) => void;
-  remove: (child: Node) => void;
-  
-  patchProp: (el: HostElement, key: string, prevValue: any, nextValue: any) => void;
-  
-  // 生命周期
-  parentNode: (node: HostElement) => HostElement | null;
-  nextSibling: (node: HostElement) => HostElement | null;
-  
-  // 额外类型转换辅助
-  _nodeToElement?: (node: Node) => HostElement | null;
-  
-  // 可选：自定义事件处理
-  addEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
-  removeEventListener?: (el: HostElement, event: string, handler: EventListener) => void;
-}
+// RendererOptions 类型从 './renderer-options' 导入（见文件顶部 import type）
 
 // ============================================================================
 // 内部类型
@@ -131,7 +103,7 @@ interface RendererWithHydrate<HostElement> extends RendererInternals<HostElement
 // 创建渲染器主函数
 // ============================================================================
 
-export function createRenderer<HostElement = Element>(
+export function createRenderer<HostElement extends Node = Element>(
   options: RendererOptions<HostElement>
 ): RendererWithHydrate<HostElement> {
   const {
@@ -170,11 +142,12 @@ export function createRenderer<HostElement = Element>(
     parent: HostElement,
     anchor: HostElement | null = null
   ): void {
-    const { type, props, children, shapeFlag, patchFlag, ref } = vnode;
-    
-    // 创建 DOM 元素
-    const isSVG = type === 'svg' || (vnode as any).isSVG;
-    const el = createElement(type as string, isSVG);
+    const { tag, props, children, patchFlag, ref } = vnode;
+    const shapeFlag = vnode.shapeFlag ?? 0;
+
+    // 创建 DOM 元素（tag 承载真实标签名，type 字段已由 VNodeType 枚举接管）
+    const isSVG = tag === 'svg' || (vnode as any).isSVG;
+    const el = createElement(tag as string, isSVG);
         
     // 关联 VNode 与 DOM
     vnode.el = el;
@@ -244,8 +217,8 @@ export function createRenderer<HostElement = Element>(
     parent: HostElement,
     anchor: HostElement | null
   ): void {
-    const { type, props, children, componentInstance } = vnode;
-    const component = type as Component;
+    const { tag, props, children, componentInstance } = vnode;
+    const component = tag as Component;
     
     // 创建组件实例
     const instance: ComponentInstance = {
@@ -299,7 +272,7 @@ export function createRenderer<HostElement = Element>(
         return instance.render!();
       });
       
-      instance.effects.push(effect);
+      (instance.effects ??= []).push(effect);
       instance.update = () => effect.fn();
       
       // 执行 beforeMount (同步)
@@ -308,14 +281,16 @@ export function createRenderer<HostElement = Element>(
       // 挂载子树
       const subTree = instance.render!();
       instance.subTree = subTree;
-      patch(null, subTree, parent, anchor);
-      
-      // 标记已挂载
-      instance.isMounted = true;
-      vnode.el = subTree.el;
+      if (subTree) {
+        patch(null, subTree, parent, anchor);
+        vnode.el = subTree.el;
+      }
       
       // 执行 mounted
       callMounted(instance);
+
+      // 标记组件已完成挂载（供 getCurrentInstance().isMounted 等查询）
+      instance.isMounted = true;
     } catch (err) {
       handleError(err as Error, instance, 'mountComponent');
     }
@@ -330,12 +305,12 @@ export function createRenderer<HostElement = Element>(
   function createComponentProxy(instance: ComponentInstance, props: VNodeProps): any {
     return new Proxy(props, {
       get(target, key) {
-        if (key in target) return target[key];
+        if (key in target) return (target as any)[key];
         // TODO: 访问 setup 返回的状态、方法、computed 等
         return undefined;
       },
       set(target, key, value) {
-        target[key] = value;
+        (target as any)[key] = value;
         return true;
       },
     });
@@ -376,8 +351,8 @@ export function createRenderer<HostElement = Element>(
     parent: HostElement,
     anchor: HostElement | null = null
   ): void {
-    // 类型相同，复用
-    if (n1 && n1.type === n2.type && n1.key === n2.key) {
+    // 类型相同（同标签/同组件），复用
+    if (n1 && n1.tag === n2.tag && n1.key === n2.key) {
       patchElement(n1, n2);
       return;
     }
@@ -408,7 +383,7 @@ export function createRenderer<HostElement = Element>(
   }
   
   function patchElement(n1: VNode, n2: VNode): void {
-    const el = n1.el!;
+    const el = n1.el! as HostElement;
     n2.el = el;
     
     const oldProps = n1.props || {};
@@ -509,7 +484,7 @@ export function createRenderer<HostElement = Element>(
           if (op.oldNode && op.newNode) {
             patch(op.oldNode, op.newNode, parent);
             if (op.oldNode.el) {
-              insert(op.oldNode.el, parent, getAnchor(parent, op.toIndex));
+              insert(op.oldNode.el, parent, getAnchor(parent, op.toIndex ?? 0));
             }
           }
           break;
@@ -533,9 +508,9 @@ export function createRenderer<HostElement = Element>(
     if (!parentNode || !nextSibling) return null;
     const p = parentNode(parent);
     if (!p) return null;
-    let child = p.firstChild as HostElement;
+    let child: HostElement | null = (p.firstChild as unknown as HostElement | null);
     for (let i = 0; i < index && child; i++) {
-      child = nextSibling(child);
+      child = nextSibling(child as HostElement);
     }
     return child;
   }
@@ -592,10 +567,12 @@ export function createRenderer<HostElement = Element>(
     callUnmounted(instance);
     
     // 清理 effect
-    for (const effect of instance.effects) {
-      stopRenderEffect(effect);
+    if (instance.effects) {
+      for (const effect of instance.effects) {
+        stopRenderEffect(effect);
+      }
+      instance.effects.length = 0;
     }
-    instance.effects.length = 0;
   }
   
   // ========================================================================
@@ -672,7 +649,7 @@ export const defaultRendererOptions: RendererOptions = {
       throw e;
     }
   },
-  remove: (child: Element) => {
+  remove: (child: Node) => {
     child.parentNode?.removeChild(child);
   },
   patchProp: (el: Element, key: string, prevValue: any, nextValue: any) => {

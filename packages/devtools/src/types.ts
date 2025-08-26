@@ -37,7 +37,10 @@ export interface ComponentInstance {
 
 // VNode 类型 (简化版)
 export interface VNode {
+  /** VNodeType 枚举（shared 契约） */
   type: any;
+  /** 真实标签名或组件（shared 契约：type 为枚举，tag 承载实际类型） */
+  tag?: any;
   key: string | number | null;
   props: Record<string, any> | null;
   children: any[] | string | null;

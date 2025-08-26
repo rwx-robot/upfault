@@ -64,7 +64,7 @@ export function pushInstance(instance: ComponentInstance): void {
 export function popInstance(): ComponentInstance | null {
   const instance = instanceStack.pop();
   currentInstance = instanceStack[instanceStack.length - 1] || null;
-  return instance;
+  return instance ?? null;
 }
 
 // ============================================================================
@@ -73,7 +73,7 @@ export function popInstance(): ComponentInstance | null {
 
 function injectHook(
   hookName: keyof LifecycleHooks,
-  hook: LifecycleHook,
+  hook: (...args: any[]) => any,
   instance: ComponentInstance | null = currentInstance
 ): boolean {
   if (!instance) {
@@ -391,9 +391,3 @@ function warn(msg: string): void {
     console.warn(msg);
   }
 }
-
-// ============================================================================
-// 导出类型
-// ============================================================================
-
-export type { LifecycleHook, LifecycleHooks } from './lifecycle';

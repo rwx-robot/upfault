@@ -26,8 +26,7 @@ export type {
   HFunction,
 } from './h';
 
-// Re-export from shared (diff)
-export type { VNodeType } from '@upfault/shared/diff';
+// Re-export from shared (diff) — VNodeType 同时是值(枚举)与类型，单行导出即可
 export { VNodeType } from '@upfault/shared/diff';
 
 // Re-export from shared (diff)
@@ -53,8 +52,10 @@ export {
 export type {
   LifecycleHook,
   LifecycleHooks,
-  ComponentInstance as LifecycleComponentInstance,
 } from './lifecycle';
+
+// ComponentInstance 实际定义在 @upfault/shared/diff，此处转译为生命周期别名
+export type { ComponentInstance as LifecycleComponentInstance } from '@upfault/shared/diff';
 
 // 渲染器（完整实现在 renderer.ts；renderer-options.ts 仅保留类型定义）
 export { createRenderer, defaultRendererOptions } from './renderer';

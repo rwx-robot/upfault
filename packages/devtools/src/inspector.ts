@@ -75,7 +75,8 @@ export function createInspector(): Inspector {
     if (!vnode) return null as any;
     
     return {
-      type: vnode.type,
+      // 新模型契约：vnode.type 为 VNodeType 枚举，真实标签/组件存入 vnode.tag
+      type: vnode.tag,
       key: vnode.key,
       props: vnode.props ? { ...vnode.props } : null,
       children: Array.isArray(vnode.children) 

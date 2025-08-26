@@ -21,8 +21,10 @@ describe('UpFault Runtime', () => {
   describe('h() - VNode Creation', () => {
     it('should create element VNode', () => {
       const vnode = h('div', { id: 'test' }, 'hello');
-      
-      expect(vnode.type).toBe('div');
+
+      // 新模型：type 为 VNodeType 枚举，真实标签存入 tag
+      expect(vnode.type).toBe(VNodeType.ELEMENT);
+      expect(vnode.tag).toBe('div');
       expect(vnode.props.id).toBe('test');
       // children is now a Text VNode object
       expect(vnode.children).toBeInstanceOf(Object);
@@ -34,8 +36,9 @@ describe('UpFault Runtime', () => {
         h('li', null, 'item 1'),
         h('li', null, 'item 2'),
       ]);
-      
-      expect(vnode.type).toBe('ul');
+
+      expect(vnode.type).toBe(VNodeType.ELEMENT);
+      expect(vnode.tag).toBe('ul');
       expect(Array.isArray(vnode.children)).toBe(true);
       expect((vnode.children as any[]).length).toBe(2);
     });
@@ -45,23 +48,26 @@ describe('UpFault Runtime', () => {
         h('span', null, 'a'),
         h('span', null, 'b'),
       ]);
-      
-      expect(vnode.type).toBe(Fragment);
+
+      expect(vnode.type).toBe(VNodeType.FRAGMENT);
+      expect(vnode.tag).toBe(Fragment);
       expect(vnode.vnodeType).toBe(VNodeType.FRAGMENT);
     });
 
     it('should create Text node', () => {
       const vnode = Text('hello world');
-      
-      expect(vnode.type).toBe(Text);
+
+      expect(vnode.type).toBe(VNodeType.TEXT);
+      expect(vnode.tag).toBe('');
       expect(vnode.children).toBe('hello world');
       expect(vnode.vnodeType).toBe(VNodeType.TEXT);
     });
 
     it('should create Comment node', () => {
       const vnode = Comment('comment');
-      
-      expect(vnode.type).toBe(Comment);
+
+      expect(vnode.type).toBe(VNodeType.COMMENT);
+      expect(vnode.tag).toBe('');
       expect(vnode.vnodeType).toBe(VNodeType.COMMENT);
     });
 
