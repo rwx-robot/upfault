@@ -1,0 +1,21 @@
+{
+  "name": "upfault-spa-example",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "M5 真实 SPA 首屏基准的被测应用（含原生 DOM 基线）",
+  "scripts": {
+    "build": "esbuild src/main.ts --bundle --format=esm --outfile=dist/upfault.js --platform=browser",
+    "build:vanilla": "esbuild vanilla/main.ts --bundle --format=esm --outfile=dist/vanilla.js --platform=browser"
+  },
+  "dependencies": {
+    "@upfault/runtime": "workspace:*",
+    "@upfault/shared": "workspace:*",
+    "@upfault/reactivity": "workspace:*",
+    "@upfault/scheduler": "workspace:*",
+    "@upfault/diff": "workspace:*"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.0"
+  }
+}
