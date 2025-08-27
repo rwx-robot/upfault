@@ -415,7 +415,15 @@ class CodeGenerator {
     if (mods.includes('self')) statements.push('if ($event.target !== $event.currentTarget) return;');
     if (mods.includes('stop')) statements.push('$event.stopPropagation();');
     if (mods.includes('prevent')) statements.push('$event.preventDefault();');
-    if (raw) statements.push(`${this.rewrite(raw).replace(/;+$/, '')};`);
+    if (raw) {
+      const expr = this.rewrite(raw).replace(/;+$/, '');
+      // 有修饰符时处理函数被包进箭头函数体，语句位置**必须调用**：
+      // `@submit.prevent="add"` 的语义是「提交时调用 add」，
+      // 只写 `_ctx.add` 会求值成一个函数引用后丢弃（此前正是这个缺陷，
+      // 表现为带修饰符的事件静默失效）。
+      const isPlainReference = /^[A-Za-z_$][\w$]*(\.[\w$]+)*$/.test(raw);
+      statements.push(isPlainReference ? `${expr}();` : `${expr};`);
+    }
     return statements.join(' ');
   }
 

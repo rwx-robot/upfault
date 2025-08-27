@@ -596,9 +596,16 @@ private parseElement(): TemplateNode | null {
       content += this.current();
       this.advance();
     }
+    // 空白压缩规则（与 HTML / Vue 的 condense 一致）：
+    //   - 纯空白且含换行（模板缩进）→ 丢弃
+    //   - 其余把连续空白折叠为单个空格，但**保留首尾空格**
+    // 此前一律 `content.trim()`，导致 `共 {{ n }} 项` 被渲染成 `共2项` ——
+    // 文本与插值之间的空格是有意义的内容，不能当格式空白丢掉。
+    const condensed = content.replace(/\s+/g, ' ');
+    const isIndent = condensed.trim() === '' && content.includes('\n');
     return {
       type: 'Text',
-      content: content.trim(),
+      content: isIndent ? '' : condensed,
       loc: this.makeLoc(start, this.getPosition()),
     };
   }

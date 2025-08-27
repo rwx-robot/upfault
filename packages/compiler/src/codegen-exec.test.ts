@@ -205,11 +205,14 @@ describe('编译产物可执行性（compile → runtime → 真实 DOM）', () 
       expect(n.value).toBe(1);
     });
 
-    it('.prevent 修饰符在函数体内展开', () => {
-      const { render } = makeRender('<a href="#" @click.prevent="noop">x</a>');
+    it('.prevent 修饰符在函数体内展开且处理函数被调用', () => {
+      const { code, render } = makeRender('<a href="#" @click.prevent="noop">x</a>');
+      // 有修饰符 → 包箭头函数，函数引用必须被调用（`_ctx.noop()`）
+      expect(code).toContain('_ctx.noop();');
       let defaultPrevented = false;
+      let called = 0;
       const el = mountInto({
-        setup: () => ({ noop: () => {} }),
+        setup: () => ({ noop: () => { called += 1; } }),
         render,
       });
 
@@ -220,6 +223,22 @@ describe('编译产物可执行性（compile → runtime → 真实 DOM）', () 
       // 渲染出的 handler 必须先 preventDefault
       link.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
       expect(defaultPrevented).toBe(true);
+      expect(called).toBe(1);
+    });
+
+    it('带修饰符的方法引用事件（@submit.prevent="add"）确实调用方法', async () => {
+      const { code, render } = makeRender(
+        '<form @submit.prevent="add"><button type="submit">go</button></form>'
+      );
+      expect(code).toContain('_ctx.add();');
+
+      const added: string[] = [];
+      const el = mountInto({
+        setup: () => ({ add: () => added.push('called') }),
+        render,
+      });
+      el.querySelector('button')!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
+      expect(added).toEqual(['called']);
     });
 
     it('不支持的事件修饰符给出告警', () => {
