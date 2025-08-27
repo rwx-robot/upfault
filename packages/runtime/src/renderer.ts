@@ -527,7 +527,7 @@ export function createRenderer<HostElement extends Node = Element>(
     if (shapeFlag2 & VNodeShapeFlags.TEXT_NODE) {
       if (shapeFlag1 & VNodeShapeFlags.ARRAY_CHILDREN) {
         // 旧是数组，新是文本
-        unmountChildren(c1 as VNode[]);
+        unmountChildren(c1 as VNode[], parent);
       }
       if (c1 !== c2) {
         setElementText(parent, c2 as string);
@@ -552,7 +552,7 @@ export function createRenderer<HostElement extends Node = Element>(
     
     // 新是空或 Fragment
     if (shapeFlag1 & VNodeShapeFlags.ARRAY_CHILDREN) {
-      unmountChildren(c1 as VNode[]);
+      unmountChildren(c1 as VNode[], parent);
     } else if (shapeFlag1 & VNodeShapeFlags.TEXT_NODE) {
       setElementText(parent, '');
     }
@@ -636,9 +636,9 @@ export function createRenderer<HostElement extends Node = Element>(
       return;
     }
     
-    // 卸载 children
+    // 卸载 children（元素自身的 el 就是这些孩子的宿主）
     if (shapeFlag & VNodeShapeFlags.ARRAY_CHILDREN) {
-      unmountChildren(vnode.children as VNode[]);
+      unmountChildren(vnode.children as VNode[], (el as HostElement | null) ?? parent);
     }
     
     // 卸载 ref
@@ -652,9 +652,17 @@ export function createRenderer<HostElement extends Node = Element>(
     }
   }
   
-  function unmountChildren(children: VNode[]): void {
+  /**
+   * 卸载一组子节点。
+   *
+   * **必须把 parent 传下去**：`unmount` 只在 `el && parent` 时才真正执行
+   * `remove(el)`，丢掉 parent 会让卸载变成「只跑钩子、DOM 原样留着」——
+   * 表现为列表清空后旧节点仍挂在页面上（M6 SFC 示例的过滤/清空交互暴露）。
+   * 历史：unmountComponent 早有同样教训（见下方注释），这里是同类缺陷的第二处。
+   */
+  function unmountChildren(children: VNode[], parent: HostElement | null = null): void {
     for (const child of children) {
-      if (child) unmount(child);
+      if (child) unmount(child, parent);
     }
   }
   

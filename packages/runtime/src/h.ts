@@ -158,7 +158,10 @@ function normalizeChildren(children: VNodeChild[]): VNode[] | null {
       return [{ type: VNodeType.TEXT, tag: '', children: String(child), props: null, key: null, ref: null, flags: 0, block: null, shapeFlag: VNodeShapeFlags.TEXT_NODE, patchFlag: SharedPatchFlags.NONE, dynamicProps: [], el: null, anchor: null, parent: null, componentInstance: null, component: null, vnodeType: VNodeType.TEXT }];
     }
     if (Array.isArray(child)) {
-      return normalizeChildren(child);
+      // 空数组保持「显式空列表」语义（返回 [] 而不是 null）：
+      // null 表示「没有 children」，会让 patchChildren 走不到 array→array 的
+      // diff 分支，列表清空/重建时容易出现旧节点残留。
+      return normalizeChildren(child) ?? [];
     }
     if (typeof child === 'boolean') return [];
     return [child];
