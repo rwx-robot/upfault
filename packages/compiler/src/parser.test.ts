@@ -156,4 +156,55 @@ describe('Template Parser', () => {
       expect(el.loc.end.line).toBe(1);
     });
   });
+
+  // 契约测试：v-if / v-for 的宿主元素必须保留，v-else 链必须挂到 v-if 上。
+  // 旧实现直接返回 If/For，children 取元素自身的 children，导致
+  // `<li v-for>` 丢掉 li 标签、`<p v-if>` 丢掉 p 标签；且 else/else-if
+  // 在 attachElseBranch 之前就被剥离，分支被当成普通元素无条件渲染。
+  describe('指令宿主元素与分支链契约', () => {
+    const host = (node: any) => node.children[0];
+
+    it('v-if 分支保留宿主元素及其属性', () => {
+      const { ast } = parse('<p v-if="n > 2" class="big">hi</p>');
+      const node = ast.children[0] as any;
+      expect(node.type).toBe('If');
+      expect(node.branches).toHaveLength(2);
+      const branch = host(node.branches[0]);
+      expect(branch.type).toBe('Element');
+      expect(branch.tag).toBe('p');
+      expect(branch.props.map((p: any) => p.name)).toEqual(['class']);
+      expect(branch.children[0].type).toBe('Text');
+    });
+
+    it('v-for 分支保留宿主元素，:key 提升为 ForNode.key', () => {
+      const { ast } = parse('<ul><li v-for="t in items" :key="t.id" class="row">{{ t.text }}</li></ul>');
+      const ul = ast.children[0] as any;
+      const forNode = ul.children[0];
+      expect(forNode.type).toBe('For');
+      expect(forNode.key).toBe('t.id');
+      const hostEl = host(forNode);
+      expect(hostEl.tag).toBe('li');
+      // key 不得留在宿主 props 里（否则会渲染成 DOM 属性）
+      expect(hostEl.props.map((p: any) => p.name)).toEqual(['class']);
+    });
+
+    it('v-if / v-else-if / v-else 合并为单一 If 节点', () => {
+      const { ast } = parse('<p v-if="a">A</p><p v-else-if="b">B</p><p v-else>C</p>');
+      expect(ast.children).toHaveLength(1);
+      const node = ast.children[0] as any;
+      expect(node.type).toBe('If');
+      expect(node.branches.map((b: any) => b.condition)).toEqual(['a', 'b', null]);
+      expect(node.branches.map((b: any) => host(b).children[0].content)).toEqual(['A', 'B', 'C']);
+      // else / else-if 不得作为属性留在宿主元素上
+      for (const b of node.branches) {
+        expect(host(b).props.map((p: any) => p.name)).not.toContain('else');
+        expect(host(b).props.map((p: any) => p.name)).not.toContain('else-if');
+      }
+    });
+
+    it('孤立的 v-else 不被吞掉（保持为普通元素）', () => {
+      const { ast } = parse('<p v-else>lonely</p>');
+      expect(ast.children[0].type).toBe('Element');
+    });
+  });
 });

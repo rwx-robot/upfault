@@ -99,17 +99,23 @@ describe('Block Tree Builder', () => {
     it('应正确构建父子 Block 关系', () => {
       const { ast, context } = parse('<div v-if="show"><span v-for="i in items">{{ i }}</span></div>');
       const result = buildBlockTree(ast, context, { granularity: BlockGranularity.Medium });
-      
+
       const ifBlock = result.allBlocks.find(b => b.type === 'if');
       const forBlock = result.allBlocks.find(b => b.type === 'for');
-      
+
       expect(ifBlock).toBeDefined();
       expect(forBlock).toBeDefined();
-      
-      // for Block 应是 if Block 的子 Block
-      if (ifBlock && forBlock) {
-        expect(forBlock.parent).toBe(ifBlock);
-      }
+
+      // v-if 宿主元素（div）是 If Block 的根 —— 由 parser 保留宿主元素保证
+      expect((ifBlock as any).root.tag).toBe('div');
+
+      // for Block 位于 if Block 子树内。
+      // 注意：此前断言的是直接父子（forBlock.parent === ifBlock），那是
+      // 「v-if 宿主元素被 parser 丢弃」时代的产物 —— 分支体里直接躺着 For 节点。
+      // 现在分支体是宿主元素，中间隔着分支包装 Block，因此按祖先关系断言。
+      const ancestors: any[] = [];
+      for (let b: any = forBlock; b; b = b.parent) ancestors.push(b);
+      expect(ancestors).toContain(ifBlock);
     });
   });
 });

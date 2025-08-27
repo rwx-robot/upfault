@@ -1,17 +1,52 @@
 /**
  * UpFault Compiler - Code Generator
- * 
- * 从 Block Tree 生成渲染函数代码
- * 产出：带有编译时 metadata 的渲染函数，支持运行时高效 Diff
+ *
+ * 把模板 AST **直译**为可直接执行的渲染函数：
+ *
+ *     export function render(_ctx, _cache) {
+ *       return <VNode 表达式>;
+ *     }
+ *
+ * 元素 → `h(tag, props, children)`，v-for → `.map()` 展开，v-if → 嵌套三元，
+ * 事件 → 函数引用或内联箭头函数。
+ *
+ * ---------------------------------------------------------------------------
+ * 历史缺陷（2026-09-23 定位并修复）
+ *
+ * 旧实现走 Block Tree 生成 `createElementVNode` / `createTextVNode` 调用，而这两个
+ * API 在 `@upfault/runtime` 里**根本不存在**（runtime 只导出 `h/Fragment/Text/Comment`）；
+ * 同时 `<li v-for>` 丢失 li 标签与 :key、`<p v-if>` 丢失 p 标签、`@click="dec"` 被
+ * 生成成字符串字面量。产物从未被执行过 —— 既有测试只做 `toContain` 字符串断言，
+ * 所以整条链路的缺陷长期潜伏（M6 生态工具链让产物第一次真的跑起来时暴露）。
+ *
+ * 对策有两层：
+ *   1. 生成器直译 AST，只使用 runtime 真实存在的 API；
+ *   2. 测试改为「编译 → 求值 → 挂载 → 断言真实 DOM」，见 codegen-exec.test.ts。
+ * ---------------------------------------------------------------------------
  */
 
-import { BlockType, buildBlockTree, BlockGranularity, type Block, type BlockNode, type BlockTreeResult, type BlockGranularity as BlockGranularityType } from './block-tree';
+import { BlockGranularity, buildBlockTree, type BlockTreeResult } from './block-tree';
 // parse 必须以值形式静态导入：此前这里用 require('./parser')，
 // 在 ESM（Vite/vitest）环境下 require 未定义，compile() 会直接抛
 // MODULE_NOT_FOUND —— 该缺陷使整个 compile() API 在 ESM 下不可用。
-import { parse, type TemplateAST, type CompileContext, type ImportSpec, type CompileError, type CompileWarning } from './parser';
-import { VNodeType, PatchFlags } from '@upfault/shared';
-import type { VNodeFlags } from '@upfault/shared';
+import {
+  parse,
+  DIRECTIVE_PROP_NAMES,
+  type TemplateAST,
+  type TemplateNode,
+  type ElementNode,
+  type TextNode,
+  type InterpolationNode,
+  type ComponentNode,
+  type IfNode,
+  type ForNode,
+  type PropNode,
+  type SourceLocation,
+  type CompileContext,
+  type ImportSpec,
+  type CompileError,
+  type CompileWarning,
+} from './parser';
 
 // ============================================================================
 // 代码生成配置
@@ -46,6 +81,20 @@ export interface RenderMetadata {
   helpers: string[];
 }
 
+/**
+ * 生成 props 时需要跳过的编译期指令属性，从 parser 的指令集合派生。
+ *
+ * **排除 `key`**：v-for 的 `:key` 必须作为普通 prop 传给 `h()`，
+ * 由 `h()` 内部提升为 `vnode.key`（见 `withKey`）。
+ */
+const CODEGEN_SKIP_PROPS = new Set([...DIRECTIVE_PROP_NAMES].filter((n) => n !== 'key'));
+
+/** 可以在处理函数体内展开的事件修饰符（其余修饰符仅告警，不静默改变语义） */
+const HANDLER_MODIFIERS = new Set(['stop', 'prevent', 'self']);
+
+/** 运行时真实导出的 helper —— 生成器只会登记这里的名字 */
+const RUNTIME_HELPERS = new Set(['h', 'Fragment', 'Text', 'Comment']);
+
 // ============================================================================
 // 渲染函数代码生成
 // ============================================================================
@@ -75,10 +124,32 @@ class CodeGenerator {
   private blockTree: BlockTreeResult;
   private options: CodegenOptions;
   private code: string[] = [];
-  private indentLevel: number = 0;
   private helpers: Set<string> = new Set();
-  private hoisted: string[] = [];
-  private hoistId: number = 0;
+
+  /** 编译期绑定的名字：模板里裸写这些标识符时不做 `_ctx.` 改写 */
+  private readonly locals: Set<string> = new Set([
+    '_ctx', '_cache', '$event', '$props', '$slots', '$emit', '$attrs', '$refs',
+  ]);
+
+  /** 当前生效的 v-for 别名（嵌套时逐层入栈） */
+  private forScopes: string[] = [];
+
+  private static readonly RESERVED = new Set([
+    'true', 'false', 'null', 'undefined', 'this', 'typeof', 'instanceof', 'void', 'delete',
+    'in', 'of', 'new', 'return', 'if', 'else', 'for', 'while', 'do', 'switch', 'case',
+    'break', 'continue', 'default', 'function', 'class', 'extends', 'super', 'try', 'catch',
+    'finally', 'throw', 'yield', 'await', 'async', 'let', 'const', 'var', 'import', 'export',
+    'from', 'as', 'with', 'debugger', 'static', 'get', 'set', 'enum',
+  ]);
+
+  private static readonly GLOBALS = new Set([
+    'Math', 'JSON', 'Date', 'Array', 'Object', 'String', 'Number', 'Boolean', 'RegExp',
+    'Map', 'Set', 'WeakMap', 'WeakSet', 'Promise', 'Symbol', 'BigInt', 'Error', 'TypeError',
+    'RangeError', 'parseInt', 'parseFloat', 'isNaN', 'isFinite', 'NaN', 'Infinity', 'console',
+    'window', 'document', 'globalThis', 'encodeURIComponent', 'decodeURIComponent',
+    'setTimeout', 'clearTimeout', 'setInterval', 'clearInterval', 'requestAnimationFrame',
+    'cancelAnimationFrame', 'queueMicrotask', 'structuredClone', 'localStorage',
+  ]);
 
   constructor(
     ast: TemplateAST,
@@ -93,25 +164,21 @@ class CodeGenerator {
   }
 
   generate(): CodegenResult {
-    // 1. 生成 hoisted 静态节点
-    if (this.options.hoistStatic) {
-      this.generateHoisted(this.blockTree.rootBlock);
-    }
-    
-    // 2. 生成渲染函数（过程中通过 useHelper() 登记实际用到的 helper）
-    this.generateRenderFunction();
-    
-    // 3. imports 必须最后生成并前置到顶部：helper 依赖只有在主体代码
-    //    生成完毕后才能确定。此前顺序颠倒（先 imports 后主体），
-    //    产物里的 import 区块恒为空 —— 生成的代码无法运行。
+    // 1. 生成渲染函数主体（过程中通过 useHelper() 登记实际用到的 helper）
+    const body = this.emitRoot();
+
+    // 2. imports 必须最后生成并前置到顶部：helper 依赖只有在主体代码
+    //    生成完毕后才能确定。
     const importBlock = this.buildImports();
     if (importBlock) {
-      this.code.unshift(importBlock, '');
+      this.code.push(importBlock, '');
     }
-    
-    // 4. 生成 metadata
+
+    this.code.push('export function render(_ctx, _cache) {', `  return ${body};`, '}');
+
+    // 3. 生成 metadata
     const metadata = this.generateMetadata();
-    
+
     return {
       code: this.code.join('\n'),
       ast: this.ast,
@@ -122,47 +189,25 @@ class CodeGenerator {
 
   /** 构造 import 区块（在主体代码生成之后调用） */
   private buildImports(): string {
-    // 核心运行时 imports
-    const coreImports = [
-      'h',
-      'Fragment',
-      'Text',
-      'Comment',
-      'openBlock',
-      'createBlock',
-      'createVNode',
-      'createElementVNode',
-      'createTextVNode',
-      'createCommentVNode',
-      'withDirectives',
-      'vShow',
-      'vModel',
-      'mergeProps',
-      'normalizeClass',
-      'normalizeStyle',
-      'toHandlers',
-    ];
-    
-    // 按需引入：只导出生成过程中实际用到的 helper。
-    // 此前这里无条件把 18 个 helper 全部注入（且完全忽略 optimizeImports 选项），
-    // 导致每个产物都带 18 行 import —— 在小模板中占产物体积的一半以上。
-    // 各 generate*Code 在生成时调用 useHelper() 登记依赖。
-    if (!this.options.optimizeImports) {
-      for (const helper of coreImports) {
-        this.helpers.add(helper);
-      }
+    const lines: string[] = [];
+
+    // 运行时 helper：只引入生成过程中实际用到的（useHelper 登记）
+    const runtimeHelpers = Array.from(this.helpers)
+      .filter((name) => RUNTIME_HELPERS.has(name))
+      .sort();
+    if (runtimeHelpers.length > 0) {
+      lines.push(`import { ${runtimeHelpers.join(', ')} } from '@upfault/runtime';`);
     }
-    
-    // 用户导入
+
+    // 用户导入（组件、工具函数）：来自各自的模块，**不是** runtime。
+    // 旧实现把它们一律拼成 `import { X } from '@upfault/runtime'`。
     for (const imp of this.context.imports) {
-      this.helpers.add(imp.name);
+      if (RUNTIME_HELPERS.has(imp.name)) continue;
+      const spec = imp.as ? `${imp.name} as ${imp.as}` : imp.name;
+      lines.push(`import { ${spec} } from '${imp.from}';`);
     }
-    
-    if (this.helpers.size === 0) return '';
-    
-    return Array.from(this.helpers)
-      .map(h => `import { ${h} } from '@upfault/runtime'`)
-      .join('\n');
+
+    return lines.join('\n');
   }
 
   /** 登记运行时 helper 依赖（供按需 import 使用） */
@@ -170,256 +215,382 @@ class CodeGenerator {
     this.helpers.add(name);
   }
 
-  private generateHoisted(block: Block): void {
-    for (const node of block.dynamicNodes) {
-      // 静态子树提升
-      this.hoistStaticSubtree(node, block);
-    }
-    
-    for (const childBlock of block.children) {
-      this.generateHoisted(childBlock);
-    }
+  private warn(node: { loc: SourceLocation }, message: string): void {
+    this.context.warnings.push({ message, loc: node.loc, code: 'CODEGEN_UNSUPPORTED' });
   }
 
-  private hoistStaticSubtree(node: BlockNode, block: Block): void {
-    // 查找纯静态子树
-    const staticChildren = this.findStaticChildren(node);
-    
-    for (const child of staticChildren) {
-      const hoistCode = this.generateHoistedNode(child);
-      if (hoistCode) {
-        this.hoisted.push(`const _hoisted_${++this.hoistId} = ${hoistCode}`);
-        child.hoisted = `_hoisted_${this.hoistId}`;
+  // --------------------------------------------------------------------------
+  // 发射器
+  // --------------------------------------------------------------------------
+
+  private h(args: string[]): string {
+    this.useHelper('h');
+    return `h(${args.join(', ')})`;
+  }
+
+  private fragment(childrenCode: string): string {
+    this.useHelper('h');
+    this.useHelper('Fragment');
+    return `h(Fragment, null, ${childrenCode})`;
+  }
+
+  /** 根节点：单根直接返回，多根包 Fragment */
+  private emitRoot(): string {
+    const children = this.ast.children;
+    const nodes = this.meaningfulChildren(children);
+    if (nodes.length === 0) return 'null';
+    if (nodes.length === 1) return this.emitNode(nodes[0]!);
+    return this.fragment(this.emitChildren(children));
+  }
+
+  /**
+   * 过滤注释与「无意义的空白文本」。
+   *
+   * parser 的 parseText 已经 `trim()` 过，缩进/换行都会变成空串，
+   * 因此这里只需按 trim 结果判断，不会误伤有内容的文本。
+   */
+  private meaningfulChildren(children: TemplateNode[]): TemplateNode[] {
+    return children.filter((child) => {
+      if (child.type === 'Comment') return false;
+      if (child.type === 'Text') return child.content.trim() !== '';
+      return true;
+    });
+  }
+
+  /** 子节点 → 数组字面量；v-for 以展开语法内联 */
+  private emitChildren(children: TemplateNode[]): string {
+    const parts: string[] = [];
+    for (const child of this.meaningfulChildren(children)) {
+      parts.push(child.type === 'For' ? this.emitForSpread(child) : this.emitNode(child));
+    }
+    return `[${parts.join(', ')}]`;
+  }
+
+  private emitNode(node: TemplateNode): string {
+    switch (node.type) {
+      case 'Element': {
+        const el = node as ElementNode;
+        // parser 不产出 SlotNode（`<slot>` 会走普通元素分支），这里按标签名兜底：
+        // 插槽语义尚未支持，生成 null 占位比渲染一个游离的 <slot> 元素更诚实
+        if (el.tag === 'slot') {
+          this.warn(node, '<slot> 插槽尚未支持，已生成 null 占位');
+          return 'null';
+        }
+        return this.emitTagCall(this.quote(el.tag), el.props, el.children, false);
       }
-    }
-  }
-
-  private findStaticChildren(node: BlockNode): BlockNode[] {
-    const result: BlockNode[] = [];
-    
-    for (const child of node.children) {
-      if (!child.isDynamic && child.children.length > 0) {
-        result.push(child);
-      }
-      result.push(...this.findStaticChildren(child));
-    }
-    
-    return result;
-  }
-
-  private generateHoistedNode(node: BlockNode): string {
-    // 生成静态节点的创建代码
-    return this.generateNodeCode(node, { hoisted: true });
-  }
-
-  private generateRenderFunction(): void {
-    const componentName = this.extractComponentName();
-    
-    this.code.push(`export function render(_ctx, _cache) {`);
-    this.indentLevel++;
-    
-    this.code.push(`return (`);
-    this.indentLevel++;
-    
-    this.generateBlockRender(this.blockTree.rootBlock);
-    
-    this.indentLevel--;
-    this.code.push(`)`);
-    this.indentLevel--;
-    this.code.push(`}`);
-  }
-
-  private generateBlockRender(block: Block): void {
-    if (block.type === BlockType.Root) {
-      this.generateNodeRender(block.root);
-    } else {
-      this.code.push(`openBlock(${block.priority})`);
-      this.code.push(`createBlock(`);
-      this.indentLevel++;
-      this.generateNodeRender(block.root);
-      this.indentLevel--;
-      this.code.push(`)`);
-    }
-  }
-
-  private generateNodeRender(node: BlockNode): void {
-    if (node.hoisted) {
-      this.code.push(node.hoisted);
-      return;
-    }
-    
-    const code = this.generateNodeCode(node);
-    this.code.push(code);
-  }
-
-  private generateNodeCode(node: BlockNode, options: { hoisted?: boolean } = {}): string {
-    const { hoisted } = options;
-    
-    switch (node.nodeType) {
-      case VNodeType.ELEMENT:
-        return this.generateElementCode(node, hoisted);
-      case VNodeType.COMPONENT:
-        return this.generateComponentCode(node, hoisted);
-      case VNodeType.TEXT:
-        return this.generateTextCode(node, hoisted);
-      case VNodeType.COMMENT:
-        return this.generateCommentCode(node, hoisted);
-      case VNodeType.FRAGMENT:
-        return this.generateFragmentCode(node, hoisted);
-      case VNodeType.BLOCK:
-        return this.generateBlockCode(node, hoisted);
+      case 'Component':
+        return this.emitComponent(node as ComponentNode);
+      case 'Text':
+        // 模板里的换行 + 缩进折叠成单个空格（与 Vue 的空白压缩一致）
+        return this.quote((node as TextNode).content.replace(/\s*\n\s*/g, ' '));
+      case 'Interpolation':
+        return this.rewrite((node as InterpolationNode).expression);
+      case 'If':
+        return this.emitIf(node as IfNode);
+      case 'For':
+        // 非数组位置的 v-for（例如 v-if 分支体）→ 包一层 Fragment
+        return this.fragment(this.emitChildren([node]));
+      case 'Slot':
+        this.warn(node, '<slot> 插槽尚未支持，已生成 null 占位');
+        return 'null';
       default:
+        this.warn(node, `不支持的节点类型 ${node.type}，已生成 null 占位`);
         return 'null';
     }
   }
 
-  private generateElementCode(node: BlockNode, hoisted?: boolean): string {
-    const { tag, props, children, patchFlags, dynamicProps, isDynamic } = node;
-    
-    const args: string[] = [this.quote(tag)];
-    
-    // Props
-    const propsCode = this.generatePropsCode(props, dynamicProps);
-    if (propsCode) {
-      args.push(propsCode);
-    } else {
-      args.push('null');
-    }
-    
-    // Children
-    const childrenCode = this.generateChildrenCode(children);
-    if (childrenCode) {
-      args.push(childrenCode);
-    } else {
-      args.push('null');
-    }
-    
-    // Patch flags
-    if (patchFlags > 0) {
-      args.push(patchFlags.toString());
-    }
-    
-    const fn = isDynamic ? 'createElementVNode' : 'createVNode';
-    this.useHelper(fn);
-    return `${fn}(${args.join(', ')})`;
+  /**
+   * 组件引用解析：模板里 `<Child>` → `_ctx.Child`。
+   *
+   * 组件对象由 `setup()` 返回（`return { Child }`），与「模板只读 _ctx」的
+   * 模型保持一致；若编译器已收到同名用户导入，则直接用裸标识符。
+   */
+  private emitComponent(node: ComponentNode): string {
+    const ident = this.componentIdentifier(node.name);
+    const imported = this.context.imports.some((i) => i.name === ident || i.as === ident);
+    const expr = imported ? ident : `_ctx.${ident}`;
+    return this.emitTagCall(expr, node.props, node.children, true);
   }
 
-  private generateComponentCode(node: BlockNode, hoisted?: boolean): string {
-    const { tag, props, children, patchFlags } = node;
-    
-    const args: string[] = [this.quote(tag)];
-    
-    const propsCode = this.generatePropsCode(props, node.dynamicProps);
-    if (propsCode) {
-      args.push(propsCode);
-    } else {
-      args.push('null');
-    }
-    
-    const childrenCode = this.generateChildrenCode(children);
-    if (childrenCode) {
-      args.push(childrenCode);
-    } else {
-      args.push('null');
-    }
-    
-    if (patchFlags > 0) {
-      args.push(patchFlags.toString());
-    }
-    
-    this.useHelper('createVNode');
-    return `createVNode(${args.join(', ')})`;
+  /** 标签名 → 模块作用域标识符：`<my-child>` → `MyChild`（与 Vue 一致） */
+  private componentIdentifier(name: string): string {
+    if (!name.includes('-')) return name;
+    return name
+      .split('-')
+      .filter(Boolean)
+      .map((s) => s[0]!.toUpperCase() + s.slice(1))
+      .join('');
   }
 
-  private generateTextCode(node: BlockNode, hoisted?: boolean): string {
-    this.useHelper('createTextVNode');
-    if (node.isDynamic) {
-      // 插值表达式：纯标识符/成员路径（count / item.name）加 `_ctx.` 前缀；
-      // 其他表达式（字符串字面量、运算、调用）原样输出。
-      // 此前一律拼 `_ctx.${expr}`，遇到 `'a' + 'b'` 会生成
-      // `_ctx.'a' + 'b'` —— 非法的 JS。
-      const expr = node.dynamicProps[0] || 'textContent';
-      return `createTextVNode(${this.renderExpression(expr)})`;
+  private emitTagCall(
+    tagExpr: string,
+    props: PropNode[],
+    children: TemplateNode[],
+    isComponent: boolean
+  ): string {
+    const args = [tagExpr, this.emitProps(props, isComponent) || 'null'];
+    if (this.meaningfulChildren(children).length > 0) {
+      args.push(this.emitChildren(children));
     }
-    return `createTextVNode(${this.quote(node.textContent || '')})`;
+    return this.h(args);
   }
 
-  private generateCommentCode(node: BlockNode, hoisted?: boolean): string {
-    this.useHelper('createCommentVNode');
-    return `createCommentVNode(${this.quote(node.tag)})`;
+  private emitProps(props: PropNode[], isComponent: boolean): string {
+    const entries: string[] = [];
+
+    for (const prop of props) {
+      if (CODEGEN_SKIP_PROPS.has(prop.name)) continue;
+
+      // 事件：@click → onClick
+      if (prop.isEvent) {
+        const handler = `on${prop.name[0]!.toUpperCase()}${prop.name.slice(1)}`;
+        entries.push(`${this.quote(handler)}: ${this.emitHandler(prop)}`);
+        continue;
+      }
+
+      // v-model：元素 → value + onInput；组件 → modelValue + onUpdate:modelValue
+      if (prop.name === 'model' || prop.name === 'v-model') {
+        const expr = prop.value ? String(prop.value.value).trim() : '';
+        if (!expr) {
+          this.warn(prop, 'v-model 缺少绑定目标，已忽略');
+          continue;
+        }
+        const target = this.rewrite(expr);
+        if (isComponent) {
+          entries.push(`modelValue: ${target}`);
+          entries.push(`${this.quote('onUpdate:modelValue')}: ($event) => { ${target} = $event; }`);
+        } else {
+          entries.push(`value: ${target}`);
+          entries.push(`onInput: ($event) => { ${target} = $event.target.value; }`);
+        }
+        continue;
+      }
+
+      if (prop.isDirective) {
+        this.warn(prop, `v-${prop.name} 指令尚未支持，已忽略`);
+        continue;
+      }
+
+      const key = this.quote(prop.name);
+      if (prop.value === null || prop.value === undefined) {
+        // 布尔简写：<input disabled /> → { disabled: true }
+        entries.push(`${key}: true`);
+      } else if (prop.isDynamic) {
+        // parser 把动态值也标成 Literal（value 即表达式原文），按 isDynamic 取义
+        entries.push(`${key}: ${this.rewrite(String(prop.value.value))}`);
+      } else {
+        entries.push(`${key}: ${this.quote(String(prop.value.value))}`);
+      }
+    }
+
+    return entries.length ? `{ ${entries.join(', ')} }` : '';
   }
 
   /**
-   * 渲染插值表达式：
-   * - 纯标识符 / 成员路径 → `_ctx.count` / `_ctx.item.name`
-   * - 其他表达式 → 原样输出（`'a' + 'b'`、`format(x)`、字面量等）
+   * 事件处理：
+   * - `@click="dec"` / `@click="form.submit"` → 直接引用（`_ctx.dec`）
+   * - 其余（`count++`、`toggle(t.id)`）→ 内联箭头函数包裹
+   * - `.stop` / `.prevent` / `.self` 在函数体内展开
    */
-  private renderExpression(expr: string): string {
-    const trimmed = expr.trim();
-    if (/^[A-Za-z_$][A-Za-z0-9_$]*(\.[A-Za-z_$][A-Za-z0-9_$]*)*$/.test(trimmed)) {
-      return `_ctx.${trimmed}`;
-    }
-    return trimmed;
-  }
+  private emitHandler(prop: PropNode): string {
+    const raw = prop.value ? String(prop.value.value).trim() : '';
+    const allMods = prop.eventModifiers ?? [];
 
-  private generateFragmentCode(node: BlockNode, hoisted?: boolean): string {
-    const childrenCode = this.generateChildrenCode(node.children);
-    const patchFlag = node.patchFlags === 64 ? 64 : 0; // KEYED_FRAGMENT
-    this.useHelper('Fragment');
-    
-    if (childrenCode) {
-      return `Fragment(${childrenCode}${patchFlag ? `, ${patchFlag}` : ''})`;
-    }
-    return `Fragment(null${patchFlag ? `, ${patchFlag}` : ''})`;
-  }
-
-  private generateBlockCode(node: BlockNode, hoisted?: boolean): string {
-    if (!node.block) return 'null';
-    this.useHelper('openBlock');
-    return `openBlock(${node.block.priority})`;
-  }
-
-  private generatePropsCode(props: any[], dynamicProps: string[]): string {
-    if (props.length === 0) return '';
-    
-    const obj: string[] = [];
-    
-    for (const prop of props) {
-      const key = this.quote(prop.name);
-      let value: string;
-
-      // 此前这里取值用的是 prop.name（属性名），导致 `class="page"` 被生成成
-      // `{ "class": "class" }`；且判断依据是 PropNode 上并不存在的
-      // `prop.valueType` 字段，动态/表达式分支从未命中。
-      // 现按真实契约取值：value === null 为布尔简写，其余按 PropValue 渲染。
-      if (prop.value === null || prop.value === undefined) {
-        // 布尔属性简写：<input disabled /> → { "disabled": true }
-        value = 'true';
-      } else if (prop.value.type === 'Literal') {
-        value = this.quote(String(prop.value.value));
-      } else {
-        // Expression / Dynamic：标识符路径加 _ctx. 前缀，其余原样输出
-        value = this.renderExpression(String(prop.value.value));
+    for (const mod of allMods) {
+      if (!HANDLER_MODIFIERS.has(mod)) {
+        this.warn(prop, `@${prop.name}.${mod} 修饰符尚未支持，已忽略`);
       }
-
-      obj.push(`${key}: ${value}`);
     }
-    
-    return `{ ${obj.join(', ')} }`;
+    const mods = allMods.filter((m) => HANDLER_MODIFIERS.has(m));
+
+    const isPlainReference = /^[A-Za-z_$][\w$]*(\.[\w$]+)*$/.test(raw);
+    if (mods.length === 0 && isPlainReference) return this.rewrite(raw);
+    if (!raw) this.warn(prop, `@${prop.name} 缺少处理函数，已生成空函数`);
+
+    return `($event) => { ${this.applyModifiers(raw, mods)} }`;
   }
 
-  private generateChildrenCode(children: BlockNode[]): string {
-    if (children.length === 0) return '';
-    
-    if (children.length === 1) {
-      const child = children[0];
-      if (!child) return '';
-      return this.generateNodeCode(child);
-    }
-    
-    const codes = children.map(c => this.generateNodeCode(c));
-    return `[${codes.join(', ')}]`;
+  private applyModifiers(raw: string, mods: string[]): string {
+    const statements: string[] = [];
+    if (mods.includes('self')) statements.push('if ($event.target !== $event.currentTarget) return;');
+    if (mods.includes('stop')) statements.push('$event.stopPropagation();');
+    if (mods.includes('prevent')) statements.push('$event.preventDefault();');
+    if (raw) statements.push(`${this.rewrite(raw).replace(/;+$/, '')};`);
+    return statements.join(' ');
   }
+
+  /** 分支链 → 嵌套三元表达式（无 else 时以 null 兜底） */
+  private emitIf(node: IfNode): string {
+    let out = 'null';
+    for (let i = node.branches.length - 1; i >= 0; i--) {
+      const branch = node.branches[i]!;
+      const body = this.emitBranchBody(branch.children);
+      out = branch.condition === null ? body : `${this.rewrite(branch.condition)} ? ${body} : ${out}`;
+    }
+    return out;
+  }
+
+  private emitBranchBody(children: TemplateNode[]): string {
+    const nodes = this.meaningfulChildren(children);
+    if (nodes.length === 0) return 'null';
+    if (nodes.length === 1) return this.emitNode(nodes[0]!);
+    return this.fragment(this.emitChildren(children));
+  }
+
+  /** v-for → `...<source>.map((alias, index) => <host>)` */
+  private emitForSpread(node: ForNode): string {
+    const host = node.children.find((c) => c.type === 'Element' || c.type === 'Component');
+    if (!host) {
+      this.warn(node, 'v-for 缺少可循环的宿主元素，已生成 null 占位');
+      return 'null';
+    }
+    // 别名必须是单个标识符（v-for 解构语法尚未支持），且 source 必须已由
+    // parser 解析成右侧表达式（仍含 `in` / `of` 说明 parseForExpression 没认出）
+    if (
+      !/^[A-Za-z_$][\w$]*$/.test(node.value) ||
+      /\s(?:in|of)\s/.test(node.source)
+    ) {
+      this.warn(node, `v-for 表达式无法解析（${node.source}），已生成 null 占位（暂不支持解构型别名）`);
+      return 'null';
+    }
+
+    this.forScopes.push(node.value);
+    if (node.indexAlias) this.forScopes.push(node.indexAlias);
+    let body: string;
+    try {
+      body = this.emitNode(this.withKey(host, node.key));
+    } finally {
+      if (node.indexAlias) this.forScopes.pop();
+      this.forScopes.pop();
+    }
+
+    const params = node.indexAlias ? `(${node.value}, ${node.indexAlias})` : `(${node.value})`;
+    return `...${this.rewrite(node.source)}.map(${params} => ${body})`;
+  }
+
+  /**
+   * 宿主元素的 `:key` 在 parser 里被提升为 `ForNode.key`（并已从 props 剥离），
+   * 这里再作为普通 prop 注入回去 —— `h()` 会把它提升为 `vnode.key`。
+   */
+  private withKey(host: TemplateNode, key: string | null): TemplateNode {
+    if (!key) return host;
+    const keyProp: PropNode = {
+      type: 'Prop',
+      name: 'key',
+      value: { type: 'Literal', value: key },
+      isDynamic: true,
+      isEvent: false,
+      isDirective: false,
+      eventModifiers: [],
+      loc: host.loc,
+    };
+    const props = ((host as ElementNode).props ?? []).concat(keyProp);
+    return { ...host, props } as TemplateNode;
+  }
+
+  // --------------------------------------------------------------------------
+  // 标识符改写
+  // --------------------------------------------------------------------------
+
+  /**
+   * 自由标识符改写：模板表达式里裸写的标识符一律视为组件状态（`_ctx.x`）。
+   *
+   * 不改写：属性访问的右半（`a.b` 的 `b`）、对象字面量键、箭头函数参数、
+   * JS 保留字与全局对象、编译期局部名（`_ctx` / `$event`）、v-for 别名、
+   * 以及任何以 `_` 开头的标识符（约定：下划线开头表示模块作用域）。
+   * 字符串字面量先屏蔽再还原，避免误改字符串内容。
+   */
+  private rewrite(code: string): string {
+    if (!code) return code;
+
+    const literals: string[] = [];
+    const masked = code.replace(/(['"`])(?:\\.|(?!\1)[^\\])*\1/g, (m) => {
+      literals.push(m);
+      return `\u0000${literals.length - 1}\u0000`;
+    });
+
+    const arrowParams = this.collectArrowParams(masked);
+
+    let out = '';
+    let last = 0;
+    const re = /[A-Za-z_$][A-Za-z0-9_$]*/g;
+    let m: RegExpExecArray | null;
+
+    while ((m = re.exec(masked)) !== null) {
+      const id = m[0];
+      const start = m.index;
+
+      let p = start - 1;
+      while (p >= 0 && /\s/.test(masked[p]!)) p--;
+      const prev = p >= 0 ? masked[p]! : '';
+
+      let q = start + id.length;
+      while (q < masked.length && /\s/.test(masked[q]!)) q++;
+      const next = q < masked.length ? masked[q]! : '';
+
+      const afterDot = prev === '.' || (prev === '?' && masked[p - 1] === '.');
+      const objectKey = next === ':' && (prev === '' || prev === '{' || prev === ',');
+      const skip =
+        afterDot ||
+        objectKey ||
+        CodeGenerator.RESERVED.has(id) ||
+        CodeGenerator.GLOBALS.has(id) ||
+        this.locals.has(id) ||
+        this.forScopes.includes(id) ||
+        arrowParams.has(id) ||
+        id.startsWith('_');
+
+      out += masked.slice(last, start);
+      out += skip ? id : `_ctx.${id}`;
+      last = start + id.length;
+    }
+    out += masked.slice(last);
+
+    return out.replace(/\u0000(\d+)\u0000/g, (_s, i: string) => literals[Number(i)] ?? '');
+  }
+
+  /**
+   * 收集表达式里箭头函数的形参名，避免 `items.filter(x => x.done)`
+   * 被改写成 `_ctx.items.filter(_ctx.x => _ctx.x.done)`。
+   *
+   * 支持 `x => ` 与 `(a, b) => ` 两种形态（含解构参数 —— 括号内标识符
+   * 全部视为形参，这对模板场景足够）。
+   */
+  private collectArrowParams(masked: string): Set<string> {
+    const names = new Set<string>();
+    const re = /=>/g;
+    let m: RegExpExecArray | null;
+
+    while ((m = re.exec(masked)) !== null) {
+      let i = m.index - 1;
+      while (i >= 0 && /\s/.test(masked[i]!)) i--;
+      if (i < 0) continue;
+
+      if (masked[i] === ')') {
+        let depth = 0;
+        let j = i;
+        for (; j >= 0; j--) {
+          if (masked[j] === ')') depth++;
+          else if (masked[j] === '(') {
+            depth--;
+            if (depth === 0) break;
+          }
+        }
+        for (const id of masked.slice(j + 1, i).match(/[A-Za-z_$][\w$]*/g) ?? []) {
+          names.add(id);
+        }
+      } else {
+        const single = /[A-Za-z_$][\w$]*$/.exec(masked.slice(0, i + 1));
+        if (single) names.add(single[0]);
+      }
+    }
+
+    return names;
+  }
+
+  // --------------------------------------------------------------------------
+  // Metadata
+  // --------------------------------------------------------------------------
 
   private generateMetadata(): RenderMetadata {
     return {
@@ -428,8 +599,9 @@ class CodeGenerator {
       templateHash: this.hashTemplate(this.ast.source),
       compileFlags: this.blockTree.rootBlock.compileFlags,
       hasDynamicSlots: this.blockTree.rootBlock.hasSlot,
-      hasHoisted: this.hoisted.length > 0,
-      helpers: Array.from(this.helpers),
+      // 静态提升尚未实现：生成器当前不产出 hoisted 常量
+      hasHoisted: false,
+      helpers: Array.from(this.helpers).sort(),
     };
   }
 
@@ -477,21 +649,21 @@ export interface CompilerResult {
 
 export function compile(template: string, options: CompilerOptions): CompilerResult {
   // 1. Parse（静态导入，见文件头说明）
-  const { ast, context } = parse(template, { 
-    filename: options.filename, 
-    sourceMap: options.sourceMap 
+  const { ast, context } = parse(template, {
+    filename: options.filename,
+    sourceMap: options.sourceMap,
   });
-  
-  // 2. Build Block Tree
-  const blockTree = buildBlockTree(ast, context, { 
+
+  // 2. Build Block Tree（供 metadata / DevTools / 优化器使用；
+  //    渲染代码本身不再依赖它 —— 见文件头的缺陷说明）
+  const blockTree = buildBlockTree(ast, context, {
     // BlockGranularity 是 const enum，必须引用枚举成员而非字符串字面量
     granularity: options.granularity ?? BlockGranularity.Medium,
     maxBlockDepth: 10,
     enableFineGrained: true,
   });
-  
-  // 3. Generate Code（generateRenderFunction 定义在本文件内，
-  //    此前错误地使用 require('./codegen') 自引用）
+
+  // 3. Generate Code
   const result = generateRenderFunction(ast, context, blockTree, {
     mode: 'module',
     target: 'es2020',
@@ -502,7 +674,7 @@ export function compile(template: string, options: CompilerOptions): CompilerRes
     cacheHandlers: options.cacheHandlers !== false,
     generateAnnotations: options.devTools !== false,
   });
-  
+
   return {
     code: result.code,
     ast: result.ast,

@@ -45,6 +45,9 @@ const VNodeType = {
 
 import type { RendererOptions } from './renderer-options';
 
+// ref 判定用于组件上下文代理：读取时解包、写入时回写 .value（见 createComponentProxy）
+import { isRef } from '@upfault/reactivity';
+
 import {
   callBeforeMount,
   callMounted,
@@ -251,9 +254,13 @@ export function createRenderer<HostElement extends Node = Element>(
       
       // 解析插槽
       const slots = resolveSlots(children);
-      
-      // 获取 render 函数
-      const renderFn = getRenderFunction(component!);
+
+      // 执行 setup()：组件状态的唯一来源。
+      // 模板编译产物里的 `_ctx.count` 就是从这里解析出来的（见 createComponentProxy）。
+      runSetup(instance, component!, resolvedProps, slots);
+
+      // 获取 render 函数：setup 返回渲染函数时优先使用它
+      const renderFn = instance.setupRender ?? getRenderFunction(component!);
       if (!renderFn) {
         throw new Error(`[UpFault] Component ${component!.name || 'Anonymous'} 没有 render 函数`);
       }
@@ -327,16 +334,79 @@ export function createRenderer<HostElement extends Node = Element>(
     return props;
   }
   
+  /**
+   * 执行组件 `setup()`。
+   *
+   * setup 返回的对象合并进 `instance.state`，成为模板 `_ctx.xxx` 的解析目标；
+   * 返回函数时按 Vue 语义视为渲染函数（挂到 `instance.setupRender`）。
+   *
+   * 没有 setup 的组件（纯 `{ render }`）保持原行为不变。
+   */
+  function runSetup(
+    instance: ComponentInstance,
+    component: Component,
+    props: VNodeProps,
+    slots: Record<string, any>
+  ): void {
+    if (!component || typeof component !== 'object') return;
+    const setup = (component as { setup?: unknown }).setup;
+    if (typeof setup !== 'function') return;
+
+    const context = {
+      slots,
+      attrs: {},
+      emit: () => {},
+      expose: () => {},
+    };
+
+    const result = (setup as (p: VNodeProps, c: any) => unknown).call(component, props, context);
+
+    if (typeof result === 'function') {
+      instance.setupRender = result as (proxy: any, ctx: any) => VNode | null;
+      return;
+    }
+    if (result && typeof result === 'object') {
+      Object.assign(instance.state, result);
+    }
+  }
+
+  /**
+   * 组件渲染上下文代理。
+   *
+   * 读取顺序：props → setup 状态（state）；ref 自动解包，因此模板里写
+   * `{{ count }}` 而不是 `{{ count.value }}`。
+   * 写入（v-model、事件处理函数里的赋值）会回写到对应 ref 的 `.value`，
+   * 而不是把 ref 本身替换掉 —— 否则响应式链会断。
+   *
+   * 历史：此前 get 只查 props，其余一律返回 undefined，所以 setup() 返回的
+   * 状态、方法、computed 全部读不到，编译产物里的 `_ctx.count` 恒为 undefined。
+   */
   function createComponentProxy(instance: ComponentInstance, props: VNodeProps): any {
+    const state = instance.state;
     return new Proxy(props, {
       get(target, key) {
         if (key in target) return (target as any)[key];
-        // TODO: 访问 setup 返回的状态、方法、computed 等
+        if (typeof key === 'string' && key in state) {
+          const value = (state as Record<string, unknown>)[key];
+          return isRef(value) ? value.value : value;
+        }
         return undefined;
       },
       set(target, key, value) {
+        if (typeof key === 'string' && key in state) {
+          const existing = (state as Record<string, unknown>)[key];
+          if (isRef(existing)) {
+            (existing as { value: unknown }).value = value;
+          } else {
+            (state as Record<string, unknown>)[key] = value;
+          }
+          return true;
+        }
         (target as any)[key] = value;
         return true;
+      },
+      has(target, key) {
+        return key in target || (typeof key === 'string' && key in state);
       },
     });
   }
@@ -356,13 +426,12 @@ export function createRenderer<HostElement extends Node = Element>(
     if (typeof comp === 'function') {
       return comp as any;
     }
-    if (comp && typeof comp === 'object' && 'render' in comp) {
+    if (comp && typeof comp === 'object' && typeof (comp as any).render === 'function') {
       return (comp as any).render;
     }
-    if (comp && typeof comp === 'object' && 'setup' in comp) {
-      // setup 组件
-      return (comp as any).setup;
-    }
+    // 注意：`setup` 本身**不是**渲染函数 —— 它的返回值是状态（或渲染函数，
+    // 由 runSetup 挂到 instance.setupRender）。此前这里直接返回 setup，
+    // 会把状态对象当成 VNode 渲染。
     return null;
   }
   
@@ -692,8 +761,10 @@ export const defaultRendererOptions: RendererOptions = {
     child.parentNode?.removeChild(child);
   },
   patchProp: (el: Element, key: string, prevValue: any, nextValue: any) => {
-    if (key.startsWith('on')) {
-      // 事件监听器
+    if (/^on[A-Z]/.test(key)) {
+      // 事件监听器：约定 `on` + 首字母大写（onClick / onInput），
+      // 与编译器产物一致。此前用 key.startsWith('on') 会把 `once` 这类
+      // 普通属性误判成事件 'ce'。
       const event = key.slice(2).toLowerCase();
       if (prevValue) {
         el.removeEventListener(event, prevValue);

@@ -177,6 +177,38 @@ export interface CompileWarning {
 // 解析器主入口
 // ============================================================================
 
+/**
+ * 编译期指令名集合：这些不是真实 DOM 属性，构造宿主元素节点时必须剥离，
+ * 否则会被当成 `if="count>2"` 这样的原生属性渲染到 DOM 上。
+ *
+ * 注意 `else` / `else-if` **故意不在此集合内**：它们必须活到
+ * `attachElseBranch()` 才能把元素挂到前一个 `v-if` 上。若在这里剥离，
+ * attachElseBranch 就再也认不出 v-else，分支会被当成普通元素无条件渲染
+ * （此前正是这个顺序错误使 `v-else-if` / `v-else` 全部失效）。
+ * 挂载成功后由 attachElseBranch 负责剔除这两个 prop。
+ */
+export const DIRECTIVE_PROP_NAMES = new Set([
+  'if', 'v-if', 'for', 'v-for', 'key', 'slot', 'v-slot',
+]);
+
+/**
+ * 取指令/动态属性的「表达式文本」。
+ *
+ * 注意：parser 把所有动态属性值统一标为 `{type:'Literal'}`（值即表达式原文），
+ * 因此这里不能按 value.type 分支，直接取字符串即可。
+ */
+function propCondition(prop: PropNode): string {
+  if (!prop.value) return 'true';
+  return prop.value.type === 'Expression' ? prop.value.value : String(prop.value.value ?? 'true');
+}
+
+/** 解析 `item in items` / `(item, index) of items` 三种形态 */
+function parseForExpression(expr: string): { value: string; source: string; indexAlias: string | null } {
+  const m = expr.match(/^\s*\(?\s*([\w$]+)\s*(?:,\s*([\w$]+)\s*)?\)?\s+(?:in|of)\s+([\s\S]+?)\s*$/);
+  if (!m) return { value: 'item', source: expr, indexAlias: null };
+  return { value: m[1]!, indexAlias: m[2] ?? null, source: m[3]! };
+}
+
 export interface ParseOptions {
   filename?: string;
   sourceMap?: boolean;
@@ -284,7 +316,8 @@ class TemplateParser {
    * 返回 true 表示已挂载（调用方不应再 push 为独立节点）。
    */
   private attachElseBranch(nodes: TemplateNode[], node: TemplateNode): boolean {
-    if (node.type !== 'Element') return false;
+    // 宿主元素既可能是原生元素（<p v-else>）也可能是组件（<Child v-else>）
+    if (node.type !== 'Element' && node.type !== 'Component') return false;
 
     const idx = node.props.findIndex((p) => p.name === 'else' || p.name === 'else-if');
     if (idx < 0) return false;
@@ -353,52 +386,41 @@ private parseElement(): TemplateNode | null {
     if (isSelfClosing) {
       this.expect('/>');
       const end = this.getPosition();
-      
-      // v-if 转换为 IfNode
+
+      // v-if / v-for 转换：**宿主元素必须保留**（作为分支/循环体的唯一子节点）。
+      // 旧实现直接返回 If/For 并把 children 设为元素自身的 children，
+      // 导致 `<li v-for="t in items">` 的 li 标签、class、:key 全部丢失，
+      // `<p v-if="x">` 的 p 标签同样丢失 —— 见 parser 契约测试。
+      const hostElement = this.buildHostElement(tag, props, [], true, isComponent, start, end);
+
       const ifProp = props.find(p => p.name === 'if' || p.name === 'v-if');
       if (ifProp) {
         return {
           type: 'If',
           branches: [
-            { condition: ifProp.value?.type === 'Expression' ? ifProp.value.value : ifProp.value?.value?.toString() || 'true', children: [], loc: ifProp.loc },
+            { condition: propCondition(ifProp), children: [hostElement], loc: ifProp.loc },
             { condition: null, children: [], loc: ifProp.loc },
           ],
-          loc: this.makeLoc(start, end),
+          loc: hostElement.loc,
         } as IfNode;
       }
-      
-      // v-for 转换为 ForNode
+
       const forProp = props.find(p => p.name === 'for' || p.name === 'v-for');
       if (forProp) {
-const forValue = forProp.value?.type === 'Expression' ? forProp.value.value : forProp.value?.value?.toString() || '';
-        const match = forValue.match(/^\s*(\w+)\s+(?:in|of)\s+(.+)\s*$/);
-        const value = match ? match[1] : 'item';
-        const source = match ? match[2] : forValue;
+        const parsed = parseForExpression(propCondition(forProp));
         const keyProp = props.find(p => p.name === 'key');
-const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.value : keyProp?.value?.value?.toString() || null;
-        
         return {
           type: 'For',
-          source,
-          value,
-          key,
-          children: [],
-          indexAlias: null,
-          loc: this.makeLoc(start, end),
+          source: parsed.source,
+          value: parsed.value,
+          key: keyProp ? propCondition(keyProp) : null,
+          children: [hostElement],
+          indexAlias: parsed.indexAlias,
+          loc: hostElement.loc,
         } as ForNode;
       }
-      
-      return {
-        type: isComponent ? 'Component' : 'Element',
-        name: isComponent ? tag : undefined,
-        tag: isComponent ? undefined : tag,
-        props,
-        children: [],
-        isSelfClosing: true,
-        isComponent,
-        componentName: isComponent ? tag : undefined,
-        loc: this.makeLoc(start, end),
-      } as TemplateNode;
+
+      return hostElement;
     }
     
     this.expect('>');
@@ -413,49 +435,59 @@ const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.valu
     this.expect('>');
     
     const end = this.getPosition();
-    
-    // v-if 转换为 IfNode
+    const hostElement = this.buildHostElement(tag, props, children, false, isComponent, start, end);
+
+    // v-if / v-for 转换（宿主元素作为唯一子节点，理由同上）
     const ifProp = props.find(p => p.name === 'if' || p.name === 'v-if');
     if (ifProp) {
       return {
         type: 'If',
         branches: [
-          { condition: ifProp.value?.type === 'Expression' ? ifProp.value.value : ifProp.value?.value?.toString() || 'true', children, loc: ifProp.loc },
+          { condition: propCondition(ifProp), children: [hostElement], loc: ifProp.loc },
           { condition: null, children: [], loc: ifProp.loc },
         ],
-        loc: this.makeLoc(start, end),
+        loc: hostElement.loc,
       } as IfNode;
     }
-    
-    // v-for 转换为 ForNode
+
     const forProp = props.find(p => p.name === 'for' || p.name === 'v-for');
     if (forProp) {
-      const forValue = forProp.value?.type === 'Expression' ? forProp.value.value : forProp.value?.value?.toString() || '';
-      const match = forValue.match(/^\s*(\w+)\s+(?:in|of)\s+(.+)\s*$/);
-      const value = match ? match[1] : 'item';
-      const source = match ? match[2] : forValue;
+      const parsed = parseForExpression(propCondition(forProp));
       const keyProp = props.find(p => p.name === 'key');
-      const key = keyProp && keyProp.value?.type === 'Expression' ? keyProp.value.value : keyProp?.value?.value?.toString() || null;
-      
       return {
         type: 'For',
-        source,
-        value,
-        key,
-        children,
-        indexAlias: null,
-        loc: this.makeLoc(start, end),
+        source: parsed.source,
+        value: parsed.value,
+        key: keyProp ? propCondition(keyProp) : null,
+        children: [hostElement],
+        indexAlias: parsed.indexAlias,
+        loc: hostElement.loc,
       } as ForNode;
     }
-    
-    // 普通元素或组件
+
+    return hostElement;
+  }
+
+  /**
+   * 构造宿主元素节点：剥离 v-if / v-for / :key / v-slot 等「编译期指令」，
+   * 只保留真正的元素属性。If 分支与 For 循环体都以该节点作为唯一子节点。
+   */
+  private buildHostElement(
+    tag: string,
+    props: PropNode[],
+    children: TemplateNode[],
+    isSelfClosing: boolean,
+    isComponent: boolean,
+    start: Position,
+    end: Position
+  ): TemplateNode {
     return {
       type: isComponent ? 'Component' : 'Element',
       name: isComponent ? tag : undefined,
       tag: isComponent ? undefined : tag,
-      props,
+      props: props.filter(p => !DIRECTIVE_PROP_NAMES.has(p.name)),
       children,
-      isSelfClosing: false,
+      isSelfClosing,
       isComponent,
       componentName: isComponent ? tag : undefined,
       loc: this.makeLoc(start, end),

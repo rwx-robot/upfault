@@ -310,6 +310,11 @@ export interface ComponentInstance {
   state: Record<string, unknown>;
   /** render 可能返回 null（首次挂载前子树尚未生成） */
   render: () => VNode | null;
+  /**
+   * `setup()` 返回渲染函数的形态：setup 执行后把返回值挂在这里，
+   * 与对象字面量的 `render` 字段二选一（见 renderer.mountComponent）。
+   */
+  setupRender?: (proxy: any, ctx: any) => VNode | null;
   update: () => void;
   unmount: () => void;
   // 生命周期钩子（以数组形式存储，支持同钩子多次注册）
