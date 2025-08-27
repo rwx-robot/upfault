@@ -1,0 +1,26 @@
+<template>
+  <ul class="todos">
+    <li
+      v-for="t in items"
+      :key="t.id"
+      :class="{ done: t.done }"
+      @click="toggle(t.id)"
+    >
+      {{ t.text }}
+    </li>
+  </ul>
+</template>
+
+<script>
+export default {
+  name: 'TodoList',
+  // items / toggle 直接来自 props：模板里的 `items`、`toggle` 会先查 props
+  // （见 runtime 的 createComponentProxy），因此无需显式 setup。
+};
+</script>
+
+<style>
+.todos { list-style: none; padding: 0; margin: 0; }
+.todos li { padding: 10px 12px; border: 1px solid #e4e7ec; border-radius: 6px; margin-bottom: 6px; cursor: pointer; }
+.todos li.done { color: #98a2b3; text-decoration: line-through; }
+</style>

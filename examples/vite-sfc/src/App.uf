@@ -1,0 +1,90 @@
+<template>
+  <section class="app">
+    <h1>UpFault SFC</h1>
+
+    <form class="add" @submit.prevent="add">
+      <input v-model="draft" placeholder="今天要做什么？" />
+      <button type="submit">添加</button>
+    </form>
+
+    <div class="filters">
+      <button
+        v-for="f in filters"
+        :key="f.value"
+        :data-filter="f.value"
+        :class="{ active: filter === f.value }"
+        @click="filter = f.value"
+      >
+        {{ f.label }}
+      </button>
+    </div>
+
+    <TodoList :items="visible" :toggle="toggle" />
+
+    <p class="stats">共 {{ stats.total }} 项 · 待办 {{ stats.active }} · 已完成 {{ stats.done }}</p>
+  </section>
+</template>
+
+<script>
+import { ref, computed } from '@upfault/runtime';
+import TodoList from './TodoList.uf';
+
+export default {
+  name: 'App',
+
+  setup() {
+    const draft = ref('');
+    const filter = ref('all');
+    let nextId = 3;
+
+    const todos = ref([
+      { id: 1, text: '读完 @upfault/compiler 的 codegen', done: true },
+      { id: 2, text: '跑通 .uf 单文件组件', done: false },
+    ]);
+
+    const filters = [
+      { value: 'all', label: '全部' },
+      { value: 'active', label: '待办' },
+      { value: 'done', label: '已完成' },
+    ];
+
+    const visible = computed(() => {
+      if (filter.value === 'active') return todos.value.filter((t) => !t.done);
+      if (filter.value === 'done') return todos.value.filter((t) => t.done);
+      return todos.value;
+    });
+
+    const stats = computed(() => ({
+      total: todos.value.length,
+      active: todos.value.filter((t) => !t.done).length,
+      done: todos.value.filter((t) => t.done).length,
+    }));
+
+    function toggle(id) {
+      todos.value = todos.value.map((t) => (t.id === id ? { ...t, done: !t.done } : t));
+    }
+
+    function add() {
+      const text = draft.value.trim();
+      if (!text) return;
+      todos.value = [...todos.value, { id: nextId++, text, done: false }];
+      draft.value = '';
+    }
+
+    // 说明：子组件必须在 setup 返回值里暴露 —— 编译器把 <TodoList> 解析为
+    // `_ctx.TodoList`（与「模板只读 _ctx」的模型一致），暂不支持编译期组件解析。
+    return { draft, filter, filters, visible, stats, todos, toggle, add, TodoList };
+  },
+};
+</script>
+
+<style>
+.app { max-width: 560px; }
+.add { display: flex; gap: 8px; margin: 16px 0; }
+.add input { flex: 1; padding: 8px 10px; border: 1px solid #d0d5dd; border-radius: 6px; font-size: 14px; }
+.add button { padding: 8px 16px; border: 0; border-radius: 6px; background: #2b6cff; color: #fff; cursor: pointer; }
+.filters { display: flex; gap: 8px; margin-bottom: 12px; }
+.filters button { padding: 4px 12px; border: 1px solid #d0d5dd; background: #fff; border-radius: 999px; cursor: pointer; }
+.filters button.active { border-color: #2b6cff; color: #2b6cff; }
+.stats { color: #6b7280; font-size: 13px; }
+</style>

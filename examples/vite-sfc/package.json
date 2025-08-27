@@ -1,0 +1,23 @@
+{
+  "name": "upfault-vite-sfc-example",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "M6 生态工具链示例：@upfault/vite-plugin + .uf 单文件组件",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@upfault/runtime": "workspace:*",
+    "@upfault/shared": "workspace:*",
+    "@upfault/reactivity": "workspace:*",
+    "@upfault/diff": "workspace:*",
+    "@upfault/scheduler": "workspace:*"
+  },
+  "devDependencies": {
+    "@upfault/vite-plugin": "workspace:*",
+    "vite": "^5.0.0"
+  }
+}

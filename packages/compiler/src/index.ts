@@ -58,6 +58,21 @@ export {
   type RenderMetadata,
 } from './codegen';
 
+export {
+  // SFC（.uf 单文件组件）
+  parseSFC,
+  compileSFC,
+  SFC_COMPONENT_IDENT,
+  SFC_EXPORT_IDENT,
+  type SFCBlock,
+  type SFCStyleBlock,
+  type SFCParseOptions,
+  type SFCParseResult,
+  type SFCCompileOptions,
+  type SFCCompileResult,
+  type ScriptPayload,
+} from './sfc';
+
 // 版本信息
 export const VERSION = '0.2.0';
 export const PACKAGE_NAME = '@upfault/compiler';
