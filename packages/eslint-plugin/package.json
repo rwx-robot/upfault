@@ -1,0 +1,52 @@
+{
+  "name": "@upfault/eslint-plugin",
+  "version": "0.2.0",
+  "description": "UpFault ESLint 插件 —— .uf 单文件组件的模板与响应式规则",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./parser": {
+      "types": "./dist/parser.d.ts",
+      "import": "./dist/parser.mjs",
+      "require": "./dist/parser.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && pnpm run build:esm && pnpm run build:cjs",
+    "build:esm": "esbuild src/index.ts src/parser.ts --bundle --format=esm --outdir=dist --out-extension:.js=.mjs --external:@upfault/* --external:acorn --external:eslint-visitor-keys --platform=node",
+    "build:cjs": "esbuild src/index.ts src/parser.ts --bundle --format=cjs --outdir=dist --external:@upfault/* --external:acorn --external:eslint-visitor-keys --platform=node --footer:js=if(module.exports&&module.exports.default&&module.exports.default.meta){const d=module.exports.default;module.exports=d;d.default=d;}",
+    "dev": "tsc -w -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@upfault/compiler": "workspace:*",
+    "acorn": "^8.11.0",
+    "eslint-visitor-keys": "^4.2.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "esbuild": "^0.20.0",
+    "eslint": "^9.39.5",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
