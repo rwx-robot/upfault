@@ -101,6 +101,15 @@ export interface ForNode extends BaseNode {
   key: string | null; // e.g. "item.id"
   children: TemplateNode[];
   indexAlias: string | null;
+  /**
+   * `v-for` 指令自身的位置。
+   *
+   * ForNode.loc 是**宿主元素**的位置（与 If 一致），拿它无法反推指令写在哪，
+   * 工具链（ESLint / DevTools / source map）要精确定位模板变量就必须有它。
+   */
+  directiveLoc: SourceLocation;
+  /** `:key` 指令自身的位置；未写 key 时为 null */
+  keyLoc: SourceLocation | null;
 }
 
 export interface PropNode extends BaseNode {
@@ -207,6 +216,23 @@ function parseForExpression(expr: string): { value: string; source: string; inde
   const m = expr.match(/^\s*\(?\s*([\w$]+)\s*(?:,\s*([\w$]+)\s*)?\)?\s+(?:in|of)\s+([\s\S]+?)\s*$/);
   if (!m) return { value: 'item', source: expr, indexAlias: null };
   return { value: m[1]!, indexAlias: m[2] ?? null, source: m[3]! };
+}
+
+/**
+ * 取「指令宿主元素」：真正承载 `v-else` / `v-for` 等指令的那个元素节点。
+ *
+ * - `Element` / `Component` → 自身
+ * - `For` → 循环体唯一子节点（wrapControlFlow 保证）
+ *
+ * 返回 null 表示该节点不可能承载 `v-else`（如 If / Text / Interpolation）。
+ */
+function hostElementOf(node: TemplateNode): ElementNode | ComponentNode | null {
+  if (node.type === 'Element' || node.type === 'Component') return node;
+  if (node.type === 'For') {
+    const inner = node.children[0];
+    if (inner && (inner.type === 'Element' || inner.type === 'Component')) return inner;
+  }
+  return null;
 }
 
 export interface ParseOptions {
@@ -316,13 +342,16 @@ class TemplateParser {
    * 返回 true 表示已挂载（调用方不应再 push 为独立节点）。
    */
   private attachElseBranch(nodes: TemplateNode[], node: TemplateNode): boolean {
-    // 宿主元素既可能是原生元素（<p v-else>）也可能是组件（<Child v-else>）
-    if (node.type !== 'Element' && node.type !== 'Component') return false;
+    // 宿主元素既可能是原生元素（<p v-else>）也可能是组件（<Child v-else>）；
+    // 当 `v-else` 与 `v-for` 共存时节点已被 wrapControlFlow 包成 For，
+    // `else` / `else-if` 指令则留在 For 的宿主元素上（见 hostElementOf）
+    const host = hostElementOf(node);
+    if (!host) return false;
 
-    const idx = node.props.findIndex((p) => p.name === 'else' || p.name === 'else-if');
+    const idx = host.props.findIndex((p) => p.name === 'else' || p.name === 'else-if');
     if (idx < 0) return false;
 
-    const prop = node.props[idx]!;
+    const prop = host.props[idx]!;
     let condition: string | null = null;
     if (prop.name === 'else-if' && prop.value) {
       condition = prop.value.type === 'Expression' ? prop.value.value : String(prop.value.value);
@@ -341,9 +370,17 @@ class TemplateParser {
 
     const prev = nodes[ifIndex] as Extract<TemplateNode, { type: 'If' }>;
 
+    // 从宿主元素上摘掉 else / else-if。For 节点必须连同宿主一起替换，
+    // 否则循环体的宿主仍带着 else 指令（会渲染成 `else` 属性并触发告警）
+    const cleaned = { ...host, props: host.props.filter((_, i) => i !== idx) };
+    let branchBody: TemplateNode = cleaned;
+    if (node.type === 'For') {
+      branchBody = { ...(node as ForNode), children: [cleaned] };
+    }
+
     const branch: IfBranchNode = {
       condition,
-      children: [{ ...node, props: node.props.filter((_, i) => i !== idx) }],
+      children: [branchBody],
       loc: node.loc,
     };
 
@@ -392,35 +429,7 @@ private parseElement(): TemplateNode | null {
       // 导致 `<li v-for="t in items">` 的 li 标签、class、:key 全部丢失，
       // `<p v-if="x">` 的 p 标签同样丢失 —— 见 parser 契约测试。
       const hostElement = this.buildHostElement(tag, props, [], true, isComponent, start, end);
-
-      const ifProp = props.find(p => p.name === 'if' || p.name === 'v-if');
-      if (ifProp) {
-        return {
-          type: 'If',
-          branches: [
-            { condition: propCondition(ifProp), children: [hostElement], loc: ifProp.loc },
-            { condition: null, children: [], loc: ifProp.loc },
-          ],
-          loc: hostElement.loc,
-        } as IfNode;
-      }
-
-      const forProp = props.find(p => p.name === 'for' || p.name === 'v-for');
-      if (forProp) {
-        const parsed = parseForExpression(propCondition(forProp));
-        const keyProp = props.find(p => p.name === 'key');
-        return {
-          type: 'For',
-          source: parsed.source,
-          value: parsed.value,
-          key: keyProp ? propCondition(keyProp) : null,
-          children: [hostElement],
-          indexAlias: parsed.indexAlias,
-          loc: hostElement.loc,
-        } as ForNode;
-      }
-
-      return hostElement;
+      return this.wrapControlFlow(hostElement, props);
     }
     
     this.expect('>');
@@ -436,25 +445,29 @@ private parseElement(): TemplateNode | null {
     
     const end = this.getPosition();
     const hostElement = this.buildHostElement(tag, props, children, false, isComponent, start, end);
+    return this.wrapControlFlow(hostElement, props);
+  }
 
-    // v-if / v-for 转换（宿主元素作为唯一子节点，理由同上）
-    const ifProp = props.find(p => p.name === 'if' || p.name === 'v-if');
-    if (ifProp) {
-      return {
-        type: 'If',
-        branches: [
-          { condition: propCondition(ifProp), children: [hostElement], loc: ifProp.loc },
-          { condition: null, children: [], loc: ifProp.loc },
-        ],
-        loc: hostElement.loc,
-      } as IfNode;
-    }
-
+  /**
+   * 把同一个元素上的 `v-for` / `v-if` 包装成 For / If 节点。
+   *
+   * 嵌套顺序固定为 **`v-if` 在外、`v-for` 在内**：`v-if` 的条件属于元素自身作用域，
+   * 看不到 `v-for` 的迭代变量，因此 `<li v-if="show" v-for="t in items">`
+   * 的语义是「show 为真时渲染整个列表」。
+   *
+   * 旧实现先查 `v-if` 并直接 return，`v-for` / `:key` 已在 buildHostElement 中
+   * 被剥离且无人接手 —— 列表静默退化为单次渲染，模板里的 `t` 变成未定义引用
+   * （产物 `_ctx.show ? h("li", null, [_ctx.t.name]) : null`，无任何报错）。
+   * 见 parser 契约测试「v-if 与 v-for 共存」。
+   */
+  private wrapControlFlow(hostElement: TemplateNode, props: PropNode[]): TemplateNode {
     const forProp = props.find(p => p.name === 'for' || p.name === 'v-for');
+    let node: TemplateNode = hostElement;
+
     if (forProp) {
       const parsed = parseForExpression(propCondition(forProp));
       const keyProp = props.find(p => p.name === 'key');
-      return {
+      node = {
         type: 'For',
         source: parsed.source,
         value: parsed.value,
@@ -462,10 +475,24 @@ private parseElement(): TemplateNode | null {
         children: [hostElement],
         indexAlias: parsed.indexAlias,
         loc: hostElement.loc,
+        directiveLoc: forProp.loc,
+        keyLoc: keyProp ? keyProp.loc : null,
       } as ForNode;
     }
 
-    return hostElement;
+    const ifProp = props.find(p => p.name === 'if' || p.name === 'v-if');
+    if (ifProp) {
+      return {
+        type: 'If',
+        branches: [
+          { condition: propCondition(ifProp), children: [node], loc: ifProp.loc },
+          { condition: null, children: [], loc: ifProp.loc },
+        ],
+        loc: hostElement.loc,
+      } as IfNode;
+    }
+
+    return node;
   }
 
   /**

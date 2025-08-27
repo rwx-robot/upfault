@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { parse } from './parser';
+import { compile } from './codegen';
 
 describe('Template Parser', () => {
   describe('基础解析', () => {
@@ -186,6 +187,47 @@ describe('Template Parser', () => {
       expect(hostEl.tag).toBe('li');
       // key 不得留在宿主 props 里（否则会渲染成 DOM 属性）
       expect(hostEl.props.map((p: any) => p.name)).toEqual(['class']);
+    });
+
+    // 回归：同一元素同时写 v-if 与 v-for 时，旧实现先判 v-if 就 return，
+    // v-for / :key 已在 buildHostElement 中被剥离且无人接手 —— 列表静默退化为
+    // 单次渲染，模板里的迭代变量变成未定义引用（产物无任何报错）。
+    it('v-if 与 v-for 共存：v-if 在外、v-for 在内，两个指令都不丢', () => {
+      const { ast } = parse('<ul><li v-if="show" v-for="t in items" :key="t.id">{{ t.text }}</li></ul>');
+      const ul = ast.children[0] as any;
+      const ifNode = ul.children[0];
+      expect(ifNode.type).toBe('If');
+      expect(ifNode.branches[0].condition).toBe('show');
+      const forNode = host(ifNode.branches[0]);
+      expect(forNode.type).toBe('For');
+      expect(forNode.source).toBe('items');
+      expect(forNode.value).toBe('t');
+      expect(forNode.key).toBe('t.id');
+      const hostEl = host(forNode);
+      expect(hostEl.tag).toBe('li');
+      expect(hostEl.props).toEqual([]);
+    });
+
+    it('v-if 与 v-for 共存的产物仍为 keyed 列表', () => {
+      const { code } = compile('<ul><li v-if="show" v-for="t in items" :key="t.id">{{ t.text }}</li></ul>', {
+        filename: 't.uf',
+      });
+      expect(code).toContain('_ctx.show');
+      expect(code).toContain('.map(');
+      expect(code).toContain('"key"');
+    });
+
+    it('v-else 与 v-for 共存：else 分支挂到前一个 v-if 上', () => {
+      const { ast } = parse('<p v-if="a">A</p><li v-else v-for="t in items" :key="t.id">{{ t.text }}</li>');
+      expect(ast.children).toHaveLength(1);
+      const ifNode = ast.children[0] as any;
+      expect(ifNode.type).toBe('If');
+      expect(ifNode.branches.map((b: any) => b.condition)).toEqual(['a', null]);
+      const forNode = host(ifNode.branches[1]);
+      expect(forNode.type).toBe('For');
+      expect(forNode.key).toBe('t.id');
+      // else 指令不得残留在循环体宿主元素上
+      expect(host(forNode).props).toEqual([]);
     });
 
     it('v-if / v-else-if / v-else 合并为单一 If 节点', () => {
